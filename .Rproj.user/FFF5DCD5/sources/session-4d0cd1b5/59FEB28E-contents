@@ -290,7 +290,7 @@ Data security often refers to the hardware, software, storage devices, and user 
 
 -   Data privacy is a broad topic, which includes data security, encryption, access to data, etc. We will not be covering privacy breaches from unauthorized access to a database (e.g., hackers).
 
-### Ethics
+### Ethics and Equity
 
 ::: callout-tip
 ## Ethics
@@ -299,8 +299,6 @@ Data security often refers to the hardware, software, storage devices, and user 
 :::
 
 Most research institutions and government entities have an Institutional Review Board (IRB), an institution that applies research ethics by reviewing the methods proposed for research involving human subjects, to ensure that the projects are ethical. IRBs **do not** evaluate the quality of the research. They evaluate the the ethical protection of human subjects.
-
-### Equity
 
 ::: callout-tip
 ## Equity

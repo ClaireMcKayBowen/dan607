@@ -3,7 +3,7 @@
     "path": "~/GitHub/dan607/02_security-privacy-ethics-equity.qmd",
     "project_path": "02_security-privacy-ethics-equity.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "1634356607",
     "contents": "",
     "dirty": false,
     "created": 1716498096916.0,
@@ -13,15 +13,15 @@
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "256,86",
-        "scrollLine": "253"
+        "cursorPosition": "300,364",
+        "scrollLine": "301"
     },
     "folds": "",
-    "lastKnownWriteTime": 1716498145,
+    "lastKnownWriteTime": 1716498265,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1716498145477,
+    "last_content_update": 1716498265108,
     "read_only": false,
     "read_only_alternatives": []
 }
