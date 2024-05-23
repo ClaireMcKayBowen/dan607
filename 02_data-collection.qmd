@@ -1,0 +1,84 @@
+---
+title: "Data Collection and Acquitition"
+format: 
+  html:
+    toc: true
+    code-line-numbers: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| echo: false
+
+exercise_number <- 1
+
+```
+
+## Quick recap
+
+![Key stakeholders in the security and privacy ecosystem](www/images/stakeholders.png){#fig-stakeholders fig-align="center"}
+
+We should think about the interactions of this ecosystem the data life cycle in the context of security, privacy, ethics, and equity.
+
+## Data types
+There are generally three principal types of qualitative and quantitative data:
+
+1.	*Primary:* Any data directly collected by an entity. 
+
+2.	*Secondary:* Any data collected by another organization that a stakeholder uses for analysis.
+
+3.	*Administrative:* Any data collected by governments or other organizations, as part of their management and operation of a program or service, that provide information on registrations, transactions, and other regular tasks.
+
+### Primary data
+Direct data collection includes both quantitative data (e.g., from a survey) and qualitative data (e.g., from focus groups, site visits, qualitative interviews, or trained observations) collected from individuals or organizations.
+
+### Secondary data
+Secondary data also include both quantitative and qualitative data; depending on the source, they may also include some paradata.[^paradata] Often, secondary data are in public-use files that have been sanitized for general release and use. 
+
+[^paradata]: Paradata are a by-product of data collection. Types of paradata vary from contact attempt history records for interviewer-assisted operations, to form tracing using tracking numbers in mail surveys, to keystroke or mouse-click history for internet self-response surveys. Because paradata are a by-product of a given data collection operation, their format, layout, and content are a function of the system that generated the data.
+
+### Administrative data
+Administrative data records are usually not public-use data files and tend to only be accessed through strict confidentiality agreements, such as non-disclosure agreements or memorandum of understanding.
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+What are examples of each kind of data?
+
+:::
+
+## Discussion on DNHG: SOGI Questions
+
+If SOGI or other questions are not part of the data collection design, then what is the point?
+
+## Week 3 Assignment
+
+::: {.callout-important}
+## DEADLINE
+Due June 6, at 11:59 PM EDT on Canvas
+::: 
+
+### Read
+
+- Chapter 3: How Do Data Privacy Methods Expand Access to Data?
+
+### Optional additional read
+
+[Do No Harm Guide: Applying Equity Awareness in Data Privacy Methods](https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-privacy-methods).
+
+### Write (600 to 1200 words)
+
+We learned that one way to define data equity in the context of privacy is to consider equal privacy loss or equal access for different subgroups. Answer the following questions:
+
+- Do you agree that these are helpful ways to define equity in the context of privacy?
+- Are there additional ways you would define equity in the context of privacy?
+- Are there other equity considerations to take into account?
+- What are the ethical implications of defining equity in the context of privacy in these ways?

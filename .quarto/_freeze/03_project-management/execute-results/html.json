@@ -1,0 +1,15 @@
+{
+  "hash": "8ee2f12a70a5ca40036c9d6a227c9143",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Project Management\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added at the start of week 3.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

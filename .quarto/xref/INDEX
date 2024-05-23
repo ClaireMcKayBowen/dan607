@@ -1,0 +1,41 @@
+{
+  "index.qmd": {
+    "index.html": "9d568bfd"
+  },
+  "01_introduction.qmd": {
+    "01_introduction.html": "e17d0fb7"
+  },
+  "02_data-collection.qmd": {
+    "02_data-collection.html": "fd0241d5"
+  },
+  "03_data-storage-sharing.qmd": {
+    "03_data-storage-sharing.html": "d4332d90"
+  },
+  "04_data-analysis-dissemination-part1.qmd": {
+    "04_data-analysis-dissemination-part1.html": "d302b97f"
+  },
+  "05_data-analysis-dissemination-part2.qmd": {
+    "05_data-analysis-dissemination-part2.html": "a42fb2b6"
+  },
+  "06_data-termination.qmd": {
+    "06_data-termination.html": "716b14b8"
+  },
+  "references.qmd": {
+    "references.html": "23fb45db"
+  },
+  "02_security-privacy-ethics-equity.qmd": {
+    "02_security-privacy-ethics-equity.html": "1865527a"
+  },
+  "02_written-verbal-communication.qmd": {
+    "02_written-verbal-communication.html": "98d3eefe"
+  },
+  "03_project-management.qmd": {
+    "03_project-management.html": "cd999291"
+  },
+  "04_better-presentations.qmd": {
+    "04_better-presentations.html": "67da7440"
+  },
+  "05_communication-collaboration-culture.qmd": {
+    "05_communication-collaboration-culture.html": "2d043ce8"
+  }
+}

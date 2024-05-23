@@ -1,0 +1,145 @@
+{
+    "sources": [
+        {
+            "author": [
+                {
+                    "family": "Glickman",
+                    "given": "Jodi"
+                }
+            ],
+            "id": "glickman2011great",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "publisher": "St. Martin’s Griffin",
+            "title": "Great on the job: What to say, how to say it. The secrets of getting ahead.",
+            "title-short": "Great on the job",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Turow",
+                    "given": "Joseph"
+                },
+                {
+                    "family": "Lelkes",
+                    "given": "Yphtach"
+                },
+                {
+                    "family": "Draper",
+                    "given": "Nora"
+                },
+                {
+                    "family": "Waldman",
+                    "given": "Ari Ezra"
+                }
+            ],
+            "container-title": "Say They’re Helpless to Control It, and Believe They’re Harmed When Firms Use Their Data–Making What Companies Do Illegitimate (February 15, 2023)",
+            "id": "turow2023americans",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "title": "Americans can’t consent to companies’ use of their data: They admit they don’t understand it, say they’re helpless to control it, and believe they’re harmed when firms use their data–making what companies do illegitimate",
+            "title-short": "Americans can’t consent to companies’ use of their data",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Denning",
+                    "given": "Dorothy Elizabeth Robling"
+                }
+            ],
+            "id": "denning1982cryptography",
+            "issued": {
+                "date-parts": [
+                    [
+                        1982
+                    ]
+                ]
+            },
+            "publisher": "Addison-Wesley Reading",
+            "title": "Cryptography and data security",
+            "type": "book",
+            "volume": "112"
+        },
+        {
+            "author": [
+                {
+                    "family": "Fienberg",
+                    "given": "Stephen E"
+                },
+                {
+                    "family": "Jin",
+                    "given": "Jiashun"
+                }
+            ],
+            "container-title": "Encyclopedia of database systems (2nd ed.)",
+            "id": "fienberg2018statistical",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "title": "Statistical disclosure limitation for~ data~ access",
+            "type": "paper-conference"
+        },
+        {
+            "author": [
+                {
+                    "family": "Fellegi",
+                    "given": "Ivan P"
+                }
+            ],
+            "container-title": "Journal of the American Statistical Association",
+            "id": "fellegi1972question",
+            "issue": "337",
+            "issued": {
+                "date-parts": [
+                    [
+                        1972
+                    ]
+                ]
+            },
+            "page": "7-18",
+            "publisher": "Taylor & Francis",
+            "title": "On the question of statistical confidentiality",
+            "type": "article-journal",
+            "volume": "67"
+        },
+        {
+            "author": [
+                {
+                    "family": "Kitchin",
+                    "given": "Rob"
+                }
+            ],
+            "id": "kitchin2014data",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "publisher": "Sage",
+            "title": "The data revolution: Big data, open data, data infrastructures and their consequences",
+            "title-short": "The data revolution",
+            "type": "book"
+        }
+    ],
+    "project_biblios": [
+        "references.bib"
+    ]
+}

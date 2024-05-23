@@ -1,0 +1,27 @@
+{
+    "id": "B8ECE774",
+    "path": "~/GitHub/dan607/01_introduction.qmd",
+    "project_path": "01_introduction.qmd",
+    "type": "quarto_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1716429383531.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "chunk_output_type": "console",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "40,37",
+        "scrollLine": "35"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1716466679,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1716466679993,
+    "read_only": false,
+    "read_only_alternatives": []
+}

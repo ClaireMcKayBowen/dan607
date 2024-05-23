@@ -1,0 +1,546 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Security, Privacy, and Ethics (+ Equity)",
+    "section": "",
+    "text": "Welcome to DAN 607\nThis book is the notes for DAN 607: Security, Privacy, and Ethics (+Equity) in the Business Analytics Program at Meehan School of Business within Stonehill College.",
+    "crumbs": [
+      "Welcome to DAN 607"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "Security, Privacy, and Ethics (+ Equity)",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThank you Aaron R. Williams for teaching me how to create teaching materials within a Quarto document, which is what we use for all our teaching and training materials at the Urban Institute.\nCheck out his Quarto book for his Data Science for Public Policy course in the McCourt School of Public Policy at Georgetown University.",
+    "crumbs": [
+      "Welcome to DAN 607"
+    ]
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Security, Privacy, and Ethics (+ Equity)",
+    "section": "Course Description",
+    "text": "Course Description\nAt what point does the sacrifice to our personal information outweigh the public good? In a data-driven era, data users and researchers frequently leverage personal or confidential data to help policymakers make evidence-based, data-informed decisions, such as improving economic recovery or creating a more efficient COVID-19 vaccine distribution. However, access to confidential data comes with several privacy concerns, especially for underrepresented groups. Striking the right balance is crucial to avoid real disclosure risks that may not be obvious, like stalkers utilizing excessive location data or malicious parties learning sensitive medical information through linkable health or genetic data.\nThis course will cover the security, privacy, ethics, and equity considerations the U.S. government and private sector must navigate throughout the data life cycle: data acquisition or collection, data storage, data sharing and transfer, data analysis and dissemination, and data destruction or termination. Specifically, students will understand the legal, social, and ethical ramifications of data security and privacy as well as the concepts behind data guardianship, and custodianship, and data permissions.\nAt a high level, the main learning objectives/topic areas of this course are learning the:\n\nimportance of data security, privacy, ethics, and equity\nways experts develop privacy preserving methods throughout the data life cycle\nprivacy laws governing and protecting people’s information\nissues that society must consider advancing and improving security, privacy, ethics, and equity",
+    "crumbs": [
+      "Welcome to DAN 607"
+    ]
+  },
+  {
+    "objectID": "02_data-collection.html",
+    "href": "02_data-collection.html",
+    "title": "4  Data Collection and Acquitition",
+    "section": "",
+    "text": "4.1 Quick recap\nWe should think about the interactions of this ecosystem the data life cycle in the context of security, privacy, ethics, and equity.",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Collection and Acquitition</span>"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html",
+    "href": "01_introduction.html",
+    "title": "1  DAN 607 Basics",
+    "section": "",
+    "text": "1.1 Goals and Expectations\nThe primary aim is to foster an understanding of privacy, security, ethics, and equity when using data throughout its life cycle (i.e., from collection to termination). Throughout the course, we will explore the significance, historical context, current methodologies, privacy legislation, and forthcoming developments in this field.\nThe course is predominantly conceptual, recognizing that students will possess varying levels of analytical skills. I expect students to be actively engaged in discussions, which is why “Community Contributions” accounts for 25% of your grade. Another 25% is your writing assignments. Please take your writing assignments seriously. While I will not grade based on writing quality (this is not an English course), I do expect minimal typos, grammar, and mechanics errors. The purpose of the writing assignments is for you to reflect on the content you have learned and see how it applies to the real world, your potential professional work, community, and personal life.\nThe final will be a presentation. We will discuss further details about the presentation during our week 4 class on June 14th. The main reason I have chosen a presentation for your final is that verbal communication is crucial in most professions and is often not taught in courses. Part of our week 4 class will involve learning how to create better presentations and how to present more technical content to a broader audience.",
+    "crumbs": [
+      "Prelude",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAN 607 Basics</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#course-meeting-time-edt",
+    "href": "index.html#course-meeting-time-edt",
+    "title": "Security, Privacy, and Ethics (+ Equity)",
+    "section": "Course Meeting Time (EDT)",
+    "text": "Course Meeting Time (EDT)\n\nMay 31st, Friday, 5:00 pm – 9:00 pm\nJune 7th, Friday, 5:00 pm – 9:00 pm\nJune 14th, Friday, 5:00 pm – 9:00 pm\nJune 21st, Friday, 5:00 pm – 9:00 pm\nJune 28th, Friday, 5:00 pm – 9:00 pm",
+    "crumbs": [
+      "Welcome to DAN 607"
+    ]
+  },
+  {
+    "objectID": "index.html#textbook",
+    "href": "index.html#textbook",
+    "title": "Security, Privacy, and Ethics (+ Equity)",
+    "section": "Textbook",
+    "text": "Textbook\nTitle: Protecting Your Privacy in a Data-Driven World\nAuthor: Claire McKay Bowen\nPublisher: Routledge\nISBN: 978-0367640743",
+    "crumbs": [
+      "Welcome to DAN 607"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html#welcome-to-dan-607",
+    "href": "01_introduction.html#welcome-to-dan-607",
+    "title": "1  Introduction to DAN 607",
+    "section": "",
+    "text": "1.1.1 Goals and Expectations\nThe primary aim is to foster an understanding of privacy, security, ethics, and equity when using data throughout its lifecycle (i.e., from collection to termination). Throughout the course, we will explore the significance, historical context, current methodologies, privacy legislation, and forthcoming developments in this field.\nThe course is predominantly conceptual, recognizing that students will possess varying levels of analytical skills. I expect students to be actively engaged in discussions, which is why “Community Contributions” accounts for 25% of your grade. Another 25% is your writing assignments. Please take your writing assignments seriously. While I will not grade based on writing quality (this is not an English course), I do expect minimal typos, grammar, and mechanics errors. The purpose of the writing assignments is for you to reflect on the content you have learned and see how it applies to the real world, your potential professional work, community, and personal life.\nThe final will be a presentation. We will discuss further details about the presentation during our week 4 class on June 14th. The main reason I have chosen a presentation for your final is that verbal communication is crucial in most professions and is often not taught in courses. Part of our week 4 class will involve learning how to create better presentations and how to present more technical content to a broader audience.\n\n\n1.1.2 Developing Your Professional Skills\nIn line with learning more professional non-technical skills (like week 4 class on presentations), each class will cover a professional topic, such as effective communication, in addition to learning about data security, privacy, ethics, and equity. The purpose of this is to provide additional information that is often not taught in courses, helping to prepare you for the professional environment.\n\n\n1.1.3 First Assignment + Reading\nRead:\n\nChapter 1: Why Is Data Privacy Important?\nChapter 2: How Did Data Privacy Change Over Time? Watch: Coded Bias (Netflix link). Please let me know ASAP if you cannot watch it.",
+    "crumbs": [
+      "Welcome to DAN 607",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to DAN 607</span>"
+    ]
+  },
+  {
+    "objectID": "02_security-privacy-ethics-equity.html",
+    "href": "02_security-privacy-ethics-equity.html",
+    "title": "2  Security, Privacy, Ethics, and Equity",
+    "section": "",
+    "text": "2.1 How well do you know about basic corporate and governmental internet Practices and policies",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Security, Privacy, Ethics, and Equity</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html",
+    "href": "02_written-verbal-communication.html",
+    "title": "3  Written and Verbal Communication",
+    "section": "",
+    "text": "3.1 Hello. My name is Inigo Montoya…\nThis is a popular meme, and one I like a lot, that covers all the essential aspects when reaching out to someone for the first time or after a prolonged period.\nSimilarly in Glickman (2011), the “hello” be three parts:\nI will focus on these three parts.",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_data-collection.html#secondary-data",
+    "href": "02_data-collection.html#secondary-data",
+    "title": "4  Data Collection and Acquitition",
+    "section": "4.2 Secondary data",
+    "text": "4.2 Secondary data\nSecondary data also include both quantitative and qualitative data; depending on the source, they may also include some paradata.1 Often, secondary data are in public-use files that have been sanitized for general release and use.",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Collection and Acquitition</span>"
+    ]
+  },
+  {
+    "objectID": "02_data-collection.html#administrative-data",
+    "href": "02_data-collection.html#administrative-data",
+    "title": "4  Data Collection and Acquitition",
+    "section": "4.3 Administrative data",
+    "text": "4.3 Administrative data\nAdministrative data records are usually not public-use data files and tend to only be accessed through strict confidentiality agreements, such as non-disclosure agreements or memorandum of understanding.\n\n\n\n\n\n\nClass Activity 1\n\n\n\nWhat are examples of each kind of data?\n\n\nIf SOGI or other questions are not part of the data collection design, then what is the point?",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Collection and Acquitition</span>"
+    ]
+  },
+  {
+    "objectID": "02_data-collection.html#footnotes",
+    "href": "02_data-collection.html#footnotes",
+    "title": "4  Data Collection and Acquitition",
+    "section": "",
+    "text": "Paradata are a by-product of data collection. Types of paradata vary from contact attempt history records for interviewer-assisted operations, to form tracing using tracking numbers in mail surveys, to keystroke or mouse-click history for internet self-response surveys. Because paradata are a by-product of a given data collection operation, their format, layout, and content are a function of the system that generated the data.↩︎",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Collection and Acquitition</span>"
+    ]
+  },
+  {
+    "objectID": "03_data-storage-sharing.html",
+    "href": "03_data-storage-sharing.html",
+    "title": "5  Data Storage + Data Sharing and Transfer",
+    "section": "",
+    "text": "To be added at the start of week 3.",
+    "crumbs": [
+      "Data Storage and Sharing",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Storage + Data Sharing and Transfer</span>"
+    ]
+  },
+  {
+    "objectID": "03_project-management.html",
+    "href": "03_project-management.html",
+    "title": "6  Project Management",
+    "section": "",
+    "text": "To be added at the start of week 3.",
+    "crumbs": [
+      "Data Storage",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Project Management</span>"
+    ]
+  },
+  {
+    "objectID": "04_data-analysis-dissemination-part1.html",
+    "href": "04_data-analysis-dissemination-part1.html",
+    "title": "7  Data Analysis and Dissemination Part 1",
+    "section": "",
+    "text": "To be added at the start of week 4.",
+    "crumbs": [
+      "Data Analysis and Dissemination Part 1",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Analysis and Dissemination Part 1</span>"
+    ]
+  },
+  {
+    "objectID": "04_better-presentations.html",
+    "href": "04_better-presentations.html",
+    "title": "8  Better Presentations",
+    "section": "",
+    "text": "To be added at the start of week 4.",
+    "crumbs": [
+      "Data Analysis and Dissemination Part 1",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Better Presentations</span>"
+    ]
+  },
+  {
+    "objectID": "05_data-analysis-dissemination-part2.html",
+    "href": "05_data-analysis-dissemination-part2.html",
+    "title": "9  Data Analysis and Dissemination Part 2",
+    "section": "",
+    "text": "To be added at the start of week 5.",
+    "crumbs": [
+      "Data Analysis and Dissemination Part 2",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Data Analysis and Dissemination Part 2</span>"
+    ]
+  },
+  {
+    "objectID": "05_communication-collaboration-culture.html",
+    "href": "05_communication-collaboration-culture.html",
+    "title": "10  Communication, Collaboration, and Culture",
+    "section": "",
+    "text": "To be added at the start of week 5.",
+    "crumbs": [
+      "Data Analysis and Dissemination Part 2",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Communication, Collaboration, and Culture</span>"
+    ]
+  },
+  {
+    "objectID": "06_data-termination.html",
+    "href": "06_data-termination.html",
+    "title": "11  Data Destruction or Termination",
+    "section": "",
+    "text": "To be added at the start of week 6.",
+    "crumbs": [
+      "Data Destruction and Termination",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Data Destruction or Termination</span>"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html#developing-your-professional-skills",
+    "href": "01_introduction.html#developing-your-professional-skills",
+    "title": "1  DAN 607 Basics",
+    "section": "1.2 Developing Your Professional Skills",
+    "text": "1.2 Developing Your Professional Skills\nIn line with learning more professional non-technical skills (like week 4 class on presentations), each class will cover a professional topic, such as effective communication, in addition to learning about data security, privacy, ethics, and equity. The purpose of this is to provide additional information that is often not taught in courses, helping to prepare you for the professional environment.",
+    "crumbs": [
+      "Prelude",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAN 607 Basics</span>"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html#first-assignment-reading",
+    "href": "01_introduction.html#first-assignment-reading",
+    "title": "1  Introduction to DAN 607",
+    "section": "1.3 First Assignment + Reading",
+    "text": "1.3 First Assignment + Reading\n\n1.3.1 Read\n\nChapter 1: Why Is Data Privacy Important?\nChapter 2: How Did Data Privacy Change Over Time?\n\n\n\n1.3.2 Watch\nCoded Bias (Netflix link). Please let me know ASAP if you cannot watch it.\n\n\n1.3.3 Write (600 to 1200 words)\nFind and summarize a real-world example of data being used unethically and/or had violated people’s privacy. The example must be recent (i.e., since 2021, so after all the examples listed in both “Coded Bias” and the book). Try to keep the following in mind:\n\nWhat is the example? Introduce the situation and explain why it is important, providing any relevant background for the reader.\nHow did the example demonstrate a violation of a person’s privacy? Does it apply to everyone or only a subgroup of people? Why is that?\nWhat are the takeaways from this situation? Has this situation been resolved? Why or why not?",
+    "crumbs": [
+      "Welcome to DAN 607",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to DAN 607</span>"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html#assignments",
+    "href": "01_introduction.html#assignments",
+    "title": "1  DAN 607 Basics",
+    "section": "1.3 Assignments",
+    "text": "1.3 Assignments\nThe first assignment starts on day one (May 20) but is not due until the day before we first meet (May 30, at 11:59 PM EDT). Since all the assignments are listed out, you may choose to get a head start on them, but I advise pacing yourself with the class, as you will want the content you read and/or watch to be top of mind for in-class discussions.",
+    "crumbs": [
+      "Prelude",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAN 607 Basics</span>"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html#week-1-assignment---due-may-30-at-1159-pm-edt",
+    "href": "01_introduction.html#week-1-assignment---due-may-30-at-1159-pm-edt",
+    "title": "1  Introduction to DAN 607",
+    "section": "1.4 Week 1 Assignment - Due May 30, at 11:59 PM EDT",
+    "text": "1.4 Week 1 Assignment - Due May 30, at 11:59 PM EDT\n\n1.4.1 Read\n\nChapter 1: Why Is Data Privacy Important?\nChapter 2: How Did Data Privacy Change Over Time?\n\n\n\n1.4.2 Watch\nCoded Bias (Netflix link). Please let me know ASAP if you cannot watch it.\n\n\n1.4.3 Write (600 to 1200 words)\nFind and summarize a real-world example of data being used unethically and/or had violated people’s privacy. The example must be recent (i.e., since 2021, so after all the examples listed in both “Coded Bias” and the book). Try to keep the following in mind:\n\nWhat is the example? Introduce the situation and explain why it is important, providing any relevant background for the reader.\nHow did the example demonstrate a violation of a person’s privacy? Does it apply to everyone or only a subgroup of people? Why is that?\nWhat are the takeaways from this situation? Has this situation been resolved? Why or why not?",
+    "crumbs": [
+      "Welcome to DAN 607",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to DAN 607</span>"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html#week-2-assignment-no-writing",
+    "href": "01_introduction.html#week-2-assignment-no-writing",
+    "title": "1  DAN 607 Basics",
+    "section": "1.5 Week 2 Assignment (No writing)",
+    "text": "1.5 Week 2 Assignment (No writing)\nNo writing assignment. Make sure to complete week 1 writing assignment.\nCome prepared to be engaged in discussion about the various ways data is collected.\n\n1.5.1 Read\n\nDo No Harm Guide: Collecting, Analyzing, and Report Gender and Sexual Orientation Data – Parts 1, 2, and 3.",
+    "crumbs": [
+      "Prelude",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAN 607 Basics</span>"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html#week-1-assignment",
+    "href": "01_introduction.html#week-1-assignment",
+    "title": "1  DAN 607 Basics",
+    "section": "1.4 Week 1 Assignment",
+    "text": "1.4 Week 1 Assignment\n\n\n\n\n\n\nDEADLINE\n\n\n\nDue May 30, at 11:59 PM EDT on Canvas\n\n\n\n1.4.1 Read\n\nChapter 1: Why Is Data Privacy Important?\nChapter 2: How Did Data Privacy Change Over Time?\n\n\n\n1.4.2 Watch\nCoded Bias (Netflix link). Please let me know ASAP if you cannot watch it.\n\n\n1.4.3 Write (600 to 1200 words)\nFind and summarize a real-world example of data being used unethically and/or had violated people’s privacy. The example must be recent (i.e., since 2021, so after all the examples listed in both “Coded Bias” and the book). Try to keep the following in mind:\n\nWhat is the example? Introduce the situation and explain why it is important, providing any relevant background for the reader.\nHow did the example demonstrate a violation of a person’s privacy? Does it apply to everyone or only a subgroup of people? Why is that?\nWhat are the takeaways from this situation? Has this situation been resolved? Why or why not?",
+    "crumbs": [
+      "Prelude",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAN 607 Basics</span>"
+    ]
+  },
+  {
+    "objectID": "02_security-privacy-ethics-equity.html#what-is-data-security-privacy-ethics-and-equity",
+    "href": "02_security-privacy-ethics-equity.html#what-is-data-security-privacy-ethics-and-equity",
+    "title": "2  Security, Privacy, Ethics, and Equity",
+    "section": "2.2 What is data security, privacy, ethics, and equity?",
+    "text": "2.2 What is data security, privacy, ethics, and equity?\nFor this week, you were assigned to read the first two chapters of the textbook, watched “Coded Bias,” researched a real-world example of data being used unethically and/or violated people’s privacy.\n\n\n\n\n\n\nClass Activity 3\n\n\n\nDrawing from the readings, documentaries, and your assignment, let’s delve into the following:\n\nWhat data did AI, algorithms, or the example you found use to determine what you see?\nDoes the scenario you mentioned apply all people or only to a specific subgroup of individuals? Why or why not?\nCould the scenario you brought up be used for a public good? If so, what changes would be necessary concerning security, privacy, ethics, and equity?\nWhat implications does security, privacy, ethics, and equity mean to you in this scenario?\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nDid you notice that the AI narrator in “Coded Bias” speaks with a female voice. Consider other AI interfaces we interact with daily. Do they also predominantly feature a female voice? What biases might this perpetuate within society?\n\n\n\n2.2.1 Defining key data privacy stakeholders\n\n\n\n\n\n\nFigure 2.4: Key stakeholders in the security and privacy ecosystem\n\n\n\n\n\n2.2.2 Security, Privacy, and Confidentiality\n\n\n\n\n\n\nData Security\n\n\n\nData Security is the “…science of methods of protecting computer data and communication systems that apply various types of controls such as cryptography, access control, information flow paths and inference control, including backup and recover” (Denning 1982).\n\n\nData security often refers to the hardware, software, storage devices, and user devices; access and administrative controls; and organizations’ policies and procedures. For example, many organizations have switched to two factor authentication and VPN to access their systems.\n\n\n\n\n\n\nData Privacy\n\n\n\nData Privacy is the ability “to determine what information about ourselves we will share with others” (Fellegi 1972). Data privacy is a broad topic, which includes data security, encryption, access to data, etc. We will not be covering privacy breaches from unauthorized access to a database (e.g., hackers).\n\n\n\n\n\n\n\n\nConfidentiality\n\n\n\nConfidentiality is “the agreement, explicit or implicit, between data subject and data collector regarding the extent to which access by others to personal information is allowed” (Fienberg and Jin 2018).\n\n\n\nThere are at least three major threats to data security and privacy.\n\nHackers: adversaries who steal confidential information through unauthorized access.\nSnoopers: adversaries who reconstruct confidential information from data releases.\nHoarders: stewards who collect data but don’t release the data even if respondents want the information releasesd.\n\nThere are differing notions of what should and shouldn’t be private, which may include being able to opt out of or opt into disclosure protections.\nData privacy is a broad topic, which includes data security, encryption, access to data, etc. We will not be covering privacy breaches from unauthorized access to a database (e.g., hackers).\n\n\n\n2.2.3 Ethics\n\n\n\n\n\n\nEthics\n\n\n\nData ethics is the “…systemizing, defending, and recommending concepts of right and wrong conduct in relation to data, in particular personal data” (Kitchin 2014).\n\n\nMost research institutions and government entities have an Institutional Review Board (IRB), an institution that applies research ethics by reviewing the methods proposed for research involving human subjects, to ensure that the projects are ethical. IRBs do not evaluate the quality of the research. They evaluate the the ethical protection of human subjects.\n\n\n2.2.4 Equity\n\n\n\n\n\n\nEquity\n\n\n\nData Equity is …\n\nrepresentation\naccess\nprocess\noutcomes\nand more\n\n\n\nData equity is also a complex concept, which should be thought of throughout the data life cycle. How do we ensure people are properly represented in data or various organizations in the United States have access to that data to better communities?\n\n\n\n\n\n\nClass Activity 4\n\n\n\nPrior to starting this course, how would you have defined data security, privacy, ethics, and equity? How has your definition of these different terms changed since the assignments and these discussions? Why or why not?",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Security, Privacy, Ethics, and Equity</span>"
+    ]
+  },
+  {
+    "objectID": "02_security-privacy-ethics-equity.html#how-well-do-you-know",
+    "href": "02_security-privacy-ethics-equity.html#how-well-do-you-know",
+    "title": "2  Introduction to Security, Privacy, Ethics, and Equity",
+    "section": "",
+    "text": "Activity 1\n\n\n\nTake this 17 true-or-false question quiz created by researchers from the Annenberg School for Communication at the University of Pennsylvania (Turow et al. 2023).\nFor in our class discussion, we will review the answers and additional information that provides context.\n\nDid the answer surprise you? Why or why not?\nWhat assumptions did you have prior to knowing the answer?\nWhat answer would you prefer? What steps would be necessary for the answer to change?\n\n\n\n\n\n\n\n\n\nANSWERS BEYOND THIS POINT!\n\n\n\nAnswers to each question are beyond this point along with additional information. Please do not proceed till you completed the quiz!\n\n\n\n2.1.1 Questions 1\n\n\n\n\n\n\nWhen I go to a web site, it can collect information about my online behaviors even if I don’t register using my name or email address.\n\n\n\n\n\nTRUE\n\n\n\nCompanies have an ability to see what we do on our websites and apps (through first-party cookies and other such trackers); to follow us across the media content we visit (via third-party cookies and emerging versions); to view our activities as we move from one media technology to another— for example, from the web to our smartphone to our tablet to our “connected” TV to the in-store trackers we pass in the aisles, to outdoor message boards we stop to view. Whether with first- party data, third-party data, or more, the goal is to give us tags or personas and have computers decide whether and how we ought to be the companies’ targets.\n\n\n2.1.2 Questions 2\n\n\n\n\n\n\nA Smart TV can help advertisers send an ad to a viewer’s smartphone based on the show they are watching.\n\n\n\n\n\nTRUE\n\n\n\nSee answer to question 1.\n\n\n2.1.3 Question 3\n\n\n\n\n\n\nA company can tell that I have opened its email even if I don’t click on any links.\n\n\n\n\n\nTRUE\n\n\n\nEmail tracking is a method that sends a signal to email sender’s server that the email has been opened. Many services does this (Urban Institute does for their newsletters!). However, some email providers such as Outlook and Gmail have features that can block this type of tracking. You should check out your email settings.\n\n\n2.1.4 Question 4\n\n\n\n\n\n\nA website cannot track my activity across devices unless I log into the same account on those devices.\n\n\n\n\n\nFALSE\n\n\n\nSee the answers to the previous questions. Cookies, IP address tracking, email tracking, and more can be linked together to track an individual across devices (albeit, the accuracy might be wrose, such as coarsened to the household).\n\n\n2.1.5 Question 5\n\n\n\n\n\n\nWhen a website has a privacy policy, it means the site will not share my information with other websites or companies without my permission.\n\n\n\n\n\nFALSE\n\n\n\nPrivacy policy does not mean a site won’t share a person’s information with other sites without the person’s permission.\nChrome’s New Privacy Policy \n\n\n2.1.6 Question 6\n\n\n\n\n\n\nFacebook’s user privacy settings allow me to limit the information about me that Facebook shares with advertisers.\n\n\n\n\n\nTRUE\n\n\n\nCheck all the apps you use to change your privacy settings!\n\n\n\n\n\n\nFigure 2.1\n\n\n\n\n\n2.1.7 Question 7\n\n\n\n\n\n\nAll fifty states have laws requiring companies to notify individuals of security breaches involving personally identifiable information.\n\n\n\n\n\nTRUE\n\n\n\nThere was a recent Federal Register Notice (FRN)1 on “Data Breach Reporting Requirements.”\n\n\n\n\n\n\nFigure 2.2\n\n\n\n\n\n2.1.8 Question 8\n\n\n\n\n\n\nIt is illegal for internet marketers to record my computer’s IP address.\n\n\n\n\n\nFALSE\n\n\n\nThere is no federal law in the United States that protects consumer data privacy.\n\n\n2.1.9 Question 9\n\n\n\n\n\n\nIt is legal for an online store to charge people different prices depending on where they are located.\n\n\n\n\n\nTRUE\n\n\n\nThink about your local area and whether grocery stores change the prices of their goods based on their proximity to certain neighborhoods.\n\n\n2.1.10 Question 10\n\n\n\n\n\n\nThe doorbell company Ring has a policy of not sharing recordings with law enforcement without the homeowner’s permission.\n\n\n\n\n\nTRUE\n\n\n\nCheck out this Associate Press article about the new policy!\n\n\n\n\n\n\nFigure 2.3\n\n\n\n\n\n2.1.11 Question 11\n\n\n\n\n\n\nBy law, a travel site such as Expedia or Orbitz that compares prices on different airlines must include the lowest airline prices.\n\n\n\n\n\nFALSE\n\n\n\nThere are no laws that require such travel sites to provide the lowest airline prices.\n\n\n2.1.12 Question 12\n\n\n\n\n\n\nIn the United States, the federal government regulates the types of digital information companies collect about individuals.\n\n\n\n\n\nFALSE\n\n\n\nAgain…THERE IS NO FEDERAL CONSUMER DATA PRIVACY LAW!\n\n\n2.1.13 Question 13\n\n\n\n\n\n\nSome large American cities have banned the use of facial recognition technology by law enforcement.\n\n\n\n\n\nTRUE\n\n\n\nSan Francisco became the first United States city to ban facial recognition.\nBBC article\nNYTimes article\n\n\n2.1.14 Question 14\n\n\n\n\n\n\nThe US Federal government requires that companies ask internet users to opt-in to being tracked.\n\n\n\n\n\nFALSE\n\n\n\nFor the third time, THERE ARE NO FEDERAL DATA PRIVACY LAWS!\nWhat you see on sites that ask you are “opt-out”. If they have an “opt-in” option is because the website designers are too lazy to differentiate if a website visitor is from the United States or a European Union country, which has “opt-out” data privacy laws.\n\n\n2.1.15 Questions 15\n\n\n\n\n\n\nSection 230 of the Communication Decency Act ensures that digital platforms like Facebook, Twitter, and YouTube can be held responsible for illegal content posted on their platforms.\n\n\n\n\n\nFALSE\n\n\n\nSection 230 of the Communications Act of 1934, enacted as part of the Communications Decency Act of 1996, provides limited federal immunity to providers and users of interactive computer services.\n\n\n2.1.16 Questions 16\n\n\n\n\n\n\nThe Health Insurance Portability and Accountability Act (HIPAA) prevents apps that provide information about health from selling data collected about app users to marketers.\n\n\n\n\n\nFALSE\n\n\n\nThe Federal Health Insurance and Portability Act (HIPAA) does not stop apps that provide information about health – such as exercise and fertility apps – from selling data collected about the app users to marketers. HIPAA came into law in 1996 to “improve portability and continuity of health insurance coverage in the group and individual markets, to combat waste, fraud, and abuse in health insurance and health care delivery, to promote the use of medical savings accounts, to improve access to long-term care services and coverage, to simplify the administration of health insurance, and for other purposes.” Therefore, HIPAA does not prevent apps that provide information about health from selling data collected about app users to marketers.\n\n\n2.1.17 Question 17\n\n\n\n\n\n\nSome social media platforms activate users’ smartphone speakers to listen to conversations and identify their interests in order to sell them ads.\n\n\n\n\n\nFALSE\n\n\n\nThere has never been a recorded case of a social media platform that activate users’ smartphone speakers to listen to conversations and identify their interests in order to sell them ads. Your browser history provides enough information on that!",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Security, Privacy, Ethics, and Equity</span>"
+    ]
+  },
+  {
+    "objectID": "02_security-privacy-ethics-equity.html#a-smart-tv-can-help-advertisers-send-an-ad-to-a-viewers-smartphone-based-on-the-show-they-are-watching.",
+    "href": "02_security-privacy-ethics-equity.html#a-smart-tv-can-help-advertisers-send-an-ad-to-a-viewers-smartphone-based-on-the-show-they-are-watching.",
+    "title": "2  Introduction to Security, Privacy, Ethics, and Equity",
+    "section": "",
+    "text": "TRUE",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Security, Privacy, Ethics, and Equity</span>"
+    ]
+  },
+  {
+    "objectID": "02_security-privacy-ethics-equity.html#footnotes",
+    "href": "02_security-privacy-ethics-equity.html#footnotes",
+    "title": "2  Security, Privacy, Ethics, and Equity",
+    "section": "",
+    "text": "FRN is for proposed rule-makings and updates, proposed settlements, public meetings and workshops, and other important agency activities↩︎",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Security, Privacy, Ethics, and Equity</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Fellegi, Ivan P. 1972. “On the Question of Statistical\nConfidentiality.” Journal of the American Statistical\nAssociation 67 (337): 7–18.\n\n\nFienberg, Stephen E, and Jiashun Jin. 2018. “Statistical\nDisclosure Limitation for~ Data~ Access.” In Encyclopedia of\nDatabase Systems (2nd Ed.).\n\n\nTurow, Joseph, Yphtach Lelkes, Nora Draper, and Ari Ezra Waldman. 2023.\n“Americans Can’t Consent to Companies’ Use of Their Data: They\nAdmit They Don’t Understand It, Say They’re Helpless to Control It, and\nBelieve They’re Harmed When Firms Use Their Data–Making What Companies\nDo Illegitimate.” Say They’re Helpless to Control It, and\nBelieve They’re Harmed When Firms Use Their Data–Making What Companies\nDo Illegitimate (February 15, 2023).",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "02_security-privacy-ethics-equity.html#how-well-do-you-know-about-basic-corporate-and-governmental-internet-practices-and-policies",
+    "href": "02_security-privacy-ethics-equity.html#how-well-do-you-know-about-basic-corporate-and-governmental-internet-practices-and-policies",
+    "title": "2  Security, Privacy, Ethics, and Equity",
+    "section": "",
+    "text": "2.1.1 Test your knowledge\n\n\n\n\n\n\nClass Activity 1\n\n\n\nComplete this 17 true-or-false question quiz created by researchers from the Annenberg School for Communication at the University of Pennsylvania (Turow et al. 2023). You will have 6 minutes to complete it (it should take you roughly 3 to 4 minutes).\n\n\n\n\n\n\n\n\nANSWERS BEYOND THIS POINT!\n\n\n\nAnswers to each question are beyond this point along with additional information. Please do not proceed until you have completed the quiz!\n\n\n\n\n2.1.2 Answers to the quiz and discussion\n\n\n\n\n\n\nClass Activity 2\n\n\n\nWe will review the answers to the quiz along with additional information that helps answer those questions.\n\nDid the answer surprise you? Why or why not?\nWhat assumptions did you have prior to knowing the answer?\nWhat answer would you prefer? What steps would be necessary for the answer to change? For example, if the answer is “False,” would you rather the answer be “True”? If so, what would it take to make the statement true?\n\n\n\n\n\n\n\n\n\nWhen I go to a web site, it can collect information about my online behaviors even if I don’t register using my name or email address.\n\n\n\n\n\nTRUE\nFrom Turow et al. (2023),\n\nCompanies have an ability to see what we do on our websites and apps (through first-party cookies and other such trackers); to follow us across the media content we visit (via third-party cookies and emerging versions); to view our activities as we move from one media technology to another— for example, from the web to our smartphone to our tablet to our “connected” TV to the in-store trackers we pass in the aisles, to outdoor message boards we stop to view. Whether with first- party data, third-party data, or more, the goal is to give us tags or personas and have computers decide whether and how we ought to be the companies’ targets.\n\n\n\n\n\n\n\n\n\n\nA Smart TV can help advertisers send an ad to a viewer’s smartphone based on the show they are watching.\n\n\n\n\n\nTRUE\nSee answer to question 1.\n\n\n\n\n\n\n\n\n\nA company can tell that I have opened its email even if I don’t click on any links.\n\n\n\n\n\nTRUE\nEmail tracking is a method that sends a signal to the sender’s server that the email has been opened. Many services use this method (the Urban Institute does this for their newsletters!). However, some email providers, such as Outlook and Gmail, have features that can block this type of tracking. You should check your email settings.\n\n\n\n\n\n\n\n\n\nA website cannot track my activity across devices unless I log into the same account on those devices.\n\n\n\n\n\nFALSE\nSee the answers to the previous questions. Cookies, IP address tracking, email tracking, and more can be linked together to track an individual across devices (although the accuracy might be reduced, such as being coarsened to the household level).\n\n\n\n\n\n\n\n\n\nWhen a website has a privacy policy, it means the site will not share my information with other websites or companies without my permission.\n\n\n\n\n\nFALSE\nA privacy policy does not mean a site won’t share a person’s information with other sites without the person’s permission.\nChrome’s New Privacy Policy \n\n\n\n\n\n\n\n\n\nFacebook’s user privacy settings allow me to limit the information about me that Facebook shares with advertisers.\n\n\n\n\n\nTRUE\nCheck all the apps you use to adjust your privacy settings!\n\n\n\n\n\n\nFigure 2.1\n\n\n\n\n\n\n\n\n\n\n\n\nAll fifty states have laws requiring companies to notify individuals of security breaches involving personally identifiable information.\n\n\n\n\n\nTRUE\nThere was a recent Federal Register Notice (FRN)1 on “Data Breach Reporting Requirements.”\n\n\n\n\n\n\nFigure 2.2\n\n\n\n\n\n\n\n\n\n\n\n\nIt is illegal for internet marketers to record my computer’s IP address.\n\n\n\n\n\nFALSE\nThere is no federal law in the United States that protects consumer data privacy.\n\n\n\n\n\n\n\n\n\nIt is legal for an online store to charge people different prices depending on where they are located.\n\n\n\n\n\nTRUE\nThink about your local area and whether grocery stores change the prices of their goods based on their proximity to certain neighborhoods.\n\n\n\n\n\n\n\n\n\nThe doorbell company Ring has a policy of not sharing recordings with law enforcement without the homeowner’s permission.\n\n\n\n\n\nTRUE\nCheck out this Associate Press article about the new policy!\n\n\n\n\n\n\nFigure 2.3\n\n\n\n\n\n\n\n\n\n\n\n\nBy law, a travel site such as Expedia or Orbitz that compares prices on different airlines must include the lowest airline prices.\n\n\n\n\n\nFALSE\nThere are no United States laws mandating that such travel sites offer the lowest airline prices.\n\n\n\n\n\n\n\n\n\nIn the United States, the federal government regulates the types of digital information companies collect about individuals.\n\n\n\n\n\nFALSE\nAgain…THERE IS NO FEDERAL CONSUMER DATA PRIVACY LAW!\n\n\n\n\n\n\n\n\n\nSome large American cities have banned the use of facial recognition technology by law enforcement.\n\n\n\n\n\nTRUE\nSan Francisco became the first United States city to ban facial recognition.\nBBC article\nNYTimes article\n\n\n\n\n\n\n\n\n\nThe US Federal government requires that companies ask internet users to opt-in to being tracked.\n\n\n\n\n\nFALSE\nFor the third time, THERE ARE NO FEDERAL DATA PRIVACY LAWS!\nIn the United States, what you encounter on sites that prompt you to choose are usually ‘opt-out’ settings. If there’s an ‘opt-in’ alternative, it’s often because website designers have streamlined the site, not wanting to differentiate visitors from the United States or European Union countries, which have ‘opt-out’ data privacy laws\n\n\n\n\n\n\n\n\n\nSection 230 of the Communication Decency Act ensures that digital platforms like Facebook, Twitter, and YouTube can be held responsible for illegal content posted on their platforms.\n\n\n\n\n\nFALSE\nFrom Section 230 of the Communication Decency Act: &gt; No provider or user of an interactive computer service shall be treated as the publisher or speaker of any information provided by another information content provider.\n\n\n\n\n\n\n\n\n\nThe Health Insurance Portability and Accountability Act (HIPAA) prevents apps that provide information about health from selling data collected about app users to marketers.\n\n\n\n\n\nFALSE\nFrom Turow et al. (2023), &gt; The Federal Health Insurance and Portability Act (HIPAA) does not stop apps that provide information about health – such as exercise and fertility apps – from selling data collected about the app users to marketers. HIPAA came into law in 1996 to “improve portability and continuity of health insurance coverage in the group and individual markets, to combat waste, fraud, and abuse in health insurance and health care delivery, to promote the use of medical savings accounts, to improve access to long-term care services and coverage, to simplify the administration of health insurance, and for other purposes.” Therefore, HIPAA does not prevent apps that provide information about health from selling data collected about app users to marketers.\n\n\n\n\n\n\n\n\n\nSome social media platforms activate users’ smartphone speakers to listen to conversations and identify their interests in order to sell them ads.\n\n\n\n\n\nFALSE\nThere has never been a documented case of a social media platform activating users’ smartphone speakers to eavesdrop on conversations and identify their interests for targeted advertising. Your browsing history already furnishes enough information for that!",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Security, Privacy, Ethics, and Equity</span>"
+    ]
+  },
+  {
+    "objectID": "02_security-privacy-ethics-equity.html#data-life-cycle",
+    "href": "02_security-privacy-ethics-equity.html#data-life-cycle",
+    "title": "2  Security, Privacy, Ethics, and Equity",
+    "section": "2.3 Data life cycle",
+    "text": "2.3 Data life cycle\nWe’ve just started exploring the world of security, privacy, ethics, and equity. Throughout this course, we’ll integrate these definitions, concepts, and ideas into our discussions, applying them to the data life cycle, which we define as:\n\ndata collection or acquisition (week 2)\ndata storage (week 3)\ndata sharing and transfer (week 3)\ndata analysis and dissemination (weeks 4 and 5)\ndata destruction or termination (week 6)\n\n\n\n\n\nDenning, Dorothy Elizabeth Robling. 1982. Cryptography and Data Security. Vol. 112. Addison-Wesley Reading.\n\n\nFellegi, Ivan P. 1972. “On the Question of Statistical Confidentiality.” Journal of the American Statistical Association 67 (337): 7–18.\n\n\nFienberg, Stephen E, and Jiashun Jin. 2018. “Statistical Disclosure Limitation for~ Data~ Access.” In Encyclopedia of Database Systems (2nd Ed.).\n\n\nKitchin, Rob. 2014. The Data Revolution: Big Data, Open Data, Data Infrastructures and Their Consequences. Sage.\n\n\nTurow, Joseph, Yphtach Lelkes, Nora Draper, and Ari Ezra Waldman. 2023. “Americans Can’t Consent to Companies’ Use of Their Data: They Admit They Don’t Understand It, Say They’re Helpless to Control It, and Believe They’re Harmed When Firms Use Their Data–Making What Companies Do Illegitimate.” Say They’re Helpless to Control It, and Believe They’re Harmed When Firms Use Their Data–Making What Companies Do Illegitimate (February 15, 2023).",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Security, Privacy, Ethics, and Equity</span>"
+    ]
+  },
+  {
+    "objectID": "02_data-collection.html#data-types",
+    "href": "02_data-collection.html#data-types",
+    "title": "4  Data Collection and Acquitition",
+    "section": "4.2 Data types",
+    "text": "4.2 Data types\nThere are generally three principal types of qualitative and quantitative data:\n\nPrimary: Any data directly collected by an entity.\nSecondary: Any data collected by another organization that a stakeholder uses for analysis.\nAdministrative: Any data collected by governments or other organizations, as part of their management and operation of a program or service, that provide information on registrations, transactions, and other regular tasks.\n\n\n4.2.1 Primary data\nDirect data collection includes both quantitative data (e.g., from a survey) and qualitative data (e.g., from focus groups, site visits, qualitative interviews, or trained observations) collected from individuals or organizations.\n\n\n4.2.2 Secondary data\nSecondary data also include both quantitative and qualitative data; depending on the source, they may also include some paradata.1 Often, secondary data are in public-use files that have been sanitized for general release and use.\n\n\n4.2.3 Administrative data\nAdministrative data records are usually not public-use data files and tend to only be accessed through strict confidentiality agreements, such as non-disclosure agreements or memorandum of understanding.\n\n\n\n\n\n\nClass Activity 1\n\n\n\nWhat are examples of each kind of data?",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Collection and Acquitition</span>"
+    ]
+  },
+  {
+    "objectID": "02_data-collection.html#discussion-on-dnhg-sogi-questions",
+    "href": "02_data-collection.html#discussion-on-dnhg-sogi-questions",
+    "title": "4  Data Collection and Acquitition",
+    "section": "4.3 Discussion on DNHG: SOGI Questions",
+    "text": "4.3 Discussion on DNHG: SOGI Questions\nIf SOGI or other questions are not part of the data collection design, then what is the point?",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Collection and Acquitition</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#other-tips-and-tricks",
+    "href": "02_written-verbal-communication.html#other-tips-and-tricks",
+    "title": "3  Written and Verbal Communication",
+    "section": "3.2 Other tips and tricks",
+    "text": "3.2 Other tips and tricks\n\n\n\n\nGlickman, Jodi. 2011. Great on the Job: What to Say, How to Say It. The Secrets of Getting Ahead. St. Martin’s Griffin.",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#email-ettiquitte",
+    "href": "02_written-verbal-communication.html#email-ettiquitte",
+    "title": "3  Written and Verbal Communication",
+    "section": "",
+    "text": "3.1.1 The basics",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#mastering-the-hello-and-goodbye",
+    "href": "02_written-verbal-communication.html#mastering-the-hello-and-goodbye",
+    "title": "3  Written and Verbal Communication",
+    "section": "",
+    "text": "3.1.1 Hello. My name is Inigo Montoya…\nThis is a popular meme, and one I like a lot, that covers all the essential aspects when reaching out to someone for the first time or after a prolonged period.\n\n\n\n\n\n\nFigure 3.1\n\n\n\n\nBe polite\nProvide your name\nState your relationship\nManage expectations\n\nSimilarly in Glickman (2011), the “hello” be three parts:\n\nIntroduction\nPurpose of your call or email\nKey question\n\nI will focus on these three parts.\n\nIntroduction\nThe general idea here is to avoid assuming that everyone knows who you are, your affiliation with a school or company, or how you were connected to them. I took a similar approach in our initial email exchange for this course. Given my role as an adjunct professor rather than full-time faculty at Stonehill College, I’ve provided a more detailed introduction to offer some background.\n\n\n\n\n\n\nEmail to 2024 DAN 607 Students\n\n\n\nDear Students,\nI am Claire Bowen, your instructor for DAN 607: Security, Privacy, and Ethics. I am a senior fellow and lead the Data Governance and Privacy Team at the Urban Institute; a non-profit, non-partisan, public policy research institute HQed in Washington DC. However, I am a remote worker in Santa Fe, NM. My research focuses on developing technical and policy solutions aimed at safely expanding access to confidential data for advancing evidence-based policy-making. If interested, you can learn more here.\n\n\nHow a colleague introduced himself to me. Even though we had worked together previously, several months had passed. Steven didn’t presume that I remembered him and made sure to clearly state who he is and our prior connection.\n\n\n\n\n\n\nEmail to Claire about IRS-Census Data Sharing\n\n\n\nHi Claire,\nThis is Steven Brown – a former colleague from Urban. I’m currently on detail to the Treasury Department, where I sit on the racial equity team here supporting on efforts related to research and data. A big part of my role is engaging with the Office of Tax Policy on efforts related to equity and tax administration.\n\n\nHere’s another example, this time introducing two individuals I know to each other. I’ve even embedded links to help them learn more about each and their work as well as relevant references.\n\n\n\n\n\n\nEmail to connect two colleagues about the new Do No Harm Guide on SOGI\n\n\n\nGood morning Jon,\nI hope you’re doing well.\nI would like to introduce you to Naomi Goldberg, the incoming Executive Director of the Movement Advancement Project. She recently saw the latest Do No Harm Guide on Collecting, Analyzing, and Report Gender and Sexual Orientation Data and wanted to connect with the people behind the report.\nNaomi, this is Jon Schwabish, senior fellow in the Income and Benefits Policy Center at the Urban Institute. He is the mastermind on the Do No Harm Guide project, a series of guides on how researchers and practitioners can better approach their work with a DEI lens.\nPlease let me know if you need anything else.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nPlease note that I didn’t spell out “DEI” because I assumed both individuals, given their line of work, were familiar with the term. However, it’s generally advisable not to make this assumption unless you’re almost certain!\n\n\n\n\nPurpose\nNext, it’s crucial to clearly state the purpose of the conversation. This should follow immediately after the introduction and should be concise, ideally in one or two sentences. The goal of any verbal and written communication is to ensure clarity within the first three sentences, as most people are busy and tend to skim emails or only listen for the first 15 seconds. This approach helps the recipient prioritize their responses, especially in cases where they receive a high volume of emails, such as myself, who typically receives around 50 emails a day.\nIn this next example, I’m reaching out to my colleagues at the Nebraska Statewide Workforce & Educational Reporting System (NSWERS) following a training session on data privacy techniques, specifically synthetic data generation. Given our recent communications, I skipped reintroducing myself and proceed directly to the purpose of this email after a brief greeting.\n\n\n\n\n\n\nEmail to , clients for a project at Urban\n\n\n\nGood morning everyone,\nI hope you are doing well and had a wonderful weekend.\nThe Urban team is reaching out to discuss scheduling office hours or support sessions to aid the NSWERS staff in implementing the required modifications to the tidysynthesis and syntheval code for generating synthetic data.\nPlease let us know of your preferred start time for these sessions, their frequency, and any additional support you may need.\nWe look forward to continuing to work with you.\nClaire McKay Bowen, PhD\n\n\n\n\nKey question\nMake sure to have the specific ask or key question in the verbal or written exchange, such as:\n\nDo you have a few minutes to talk X through?\nIs this a good time to talk?\nCould you send the document that we discussed at in our check-in meeting last week?\nI am trying to reach Mike in Accounting. Do you have his contact information?\n\nIn the previous example, my key question is what is the preferred start time for the “office hours” or “support sessions” to aid the NSWERS staff.\n\n\n\n3.1.2 Other important tips",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#mastering-the-hello-and-goodbye-1",
+    "href": "02_written-verbal-communication.html#mastering-the-hello-and-goodbye-1",
+    "title": "3  Written and Verbal Communication",
+    "section": "3.2 Mastering the hello and goodbye",
+    "text": "3.2 Mastering the hello and goodbye",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#how-to-say-goodbye",
+    "href": "02_written-verbal-communication.html#how-to-say-goodbye",
+    "title": "3  Written and Verbal Communication",
+    "section": "3.2 How to say “goodbye”",
+    "text": "3.2 How to say “goodbye”\nFor most hello or introduction written and verbal communication, you want to have “next steps”, “action items”, or some sort of “forward momentum” (as Glickman (2011) refers to it). After you achieve your goal of your initial communication (was it a follow-up conversation or completing a task) you should keep the door open in some way.\nThe goodbye should include these two parts.\n\nThank you\nForward momentum\n\n\n3.2.1 Always thank people for their time\nEven if the conversation or interaction wasn’t productive or had the desired outcome, it’s always important to express gratitude for people’s time and effort. Being polite can go a long way.\nThe following is an email from a colleague who had asked me about how to explain another privacy concept, differential privacy, at a high level for a presentation. Below is his response after I took the time to provide him with a high-level conceptual example. Notice that Lance thanked me several times throughout the email, which I bold.\n\n\n\n\n\n\nConceptual question on differential privacy\n\n\n\nThanks Claire:\nGreat insight, very helpful. It’s an interesting exercise that helps me better understand what’s going on. The strategic spending of privacy bucks suggest some design/strategy ideas (giving away my operations research degree)…in some settings, it might be worth asking the same question a few times to get a sense of variability (with a cap on the number of questions, you might not be able to ask enough times to get a good estimate of the variance, but you might gain insight on the potential magnitude to some order…).\nThanks for the thoughts on this, I’m going to the Federal Cmt on Stat Methods next week and am summarizing some of our work…there are other talks in my session on DP, specifically, but I wanted to have an intuition-building statement before jumping to results. This was great. I’ll keep thinking about it and feel free to send any further thoughts. You do a really nice job of explaining these issues!\nThanks again for the time and thoughts!\nLance\n\n\nThe following is an email after I met with a recent graduate who was interested in what it is like to work at the Urban Institute.\n\n\n\n\n\n\nClass Activity 2\n\n\n\nWhat is missing from this email based on what is recommended for a goodbye email?\n\n\n\n\n\n\n\n\nUrban Institute opportunities\n\n\n\nHi Claire,\nThank you again for taking the time to speak with me yesterday! I loved getting to hear more about the Urban Institute and how it engages with current issues to seek to build a better society, and I appreciate your willingness to share some about your own journey and experiences. It’s inspiring to learn about the different paths people take to find what they are passionate about and discover ways to put those passions into practice for the good of others. Thank you as well for your advice regarding communication skills as I apply for Urban Institute, and for your encouragement to explore my interests and passions. I look forward to discovering where my path leads!\nBest,\nHannah\n\n\n\n\n3.2.2 Forward momentum / next steps\nAs Glickman (2011) states,\n\nEvery conversation presents an opportunity to build upon and expand your network. With each new itneraction, you have an opportunity to establish or build rapport and leverage professional relationships going forward. Building on the “thank you” is where the tru skill comes in.\n\nThere are numerous methods to sustain that momentum or identifying potential next steps. This could be as straightforward as saying, ‘I look forward to staying in touch’ or suggesting, ‘Let’s connect on LinkedIn.’ The latter is my go to, especially when meeting people at networking events like professional conferences.\nIn the following example, staff from the Washington State Department of Health contacted me regarding alternative data privacy methods aimed at avoiding the suppression or removal of segments of public health data. The forward momentum is opening the door for further questions.\n\n\n\n\n\n\nVirtual meeting with Washington State Department of Health\n\n\n\nAfter the staff thanked me for my time, I concluded the conversation by extending an invitation for the staff members at the Washington State Department of Health to reach out if they had any further questions.\n\n\nI met a colleague at a workshop, and we discussed a job posting in his organization and his difficulties finding qualified candidates. I offered to help spread the word if he forwarded me the posting, which is my forward momentum that the colleague seized with sending an email that evening.\n\n\n\n\n\n\nBureau of Justice Statistics job posting\n\n\n\nClaire,\nIt was nice to get a chance to talk to you today. We have extended the posting to Nov. 13 so if you have places you can circulate the ad, I would be most appreciative. If there are people you think I should reach out to recruit, I’m happy to do so.\nhttps://www.usajobs.gov/job/754828500\nThanks!\nKevin",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#hello.-my-name-is-inigo-montoya",
+    "href": "02_written-verbal-communication.html#hello.-my-name-is-inigo-montoya",
+    "title": "3  Written and Verbal Communication",
+    "section": "",
+    "text": "Figure 3.1\n\n\n\n\nBe polite\nProvide your name\nState your relationship\nManage expectations\n\n\n\nIntroduction\nPurpose of your call or email\nKey question\n\n\n\n3.1.1 Introduction\nThe general idea here is to avoid assuming that everyone knows who you are, your affiliation with a school or company, or how you were connected to them.\nI took a similar approach in our initial email exchange for this course. Given my role as an adjunct professor rather than full-time faculty at Stonehill College, I’ve provided a more detailed introduction to offer some background.\n\n\n\n\n\n\nEmail to 2024 DAN 607 Students\n\n\n\nDear Students,\nI am Claire Bowen, your instructor for DAN 607: Security, Privacy, and Ethics. I am a senior fellow and lead the Data Governance and Privacy Team at the Urban Institute; a non-profit, non-partisan, public policy research institute HQed in Washington DC. However, I am a remote worker in Santa Fe, NM. My research focuses on developing technical and policy solutions aimed at safely expanding access to confidential data for advancing evidence-based policy-making. If interested, you can learn more here.\n[removed rest of the email to focus on the introduction]\n\n\nThis next example is how a colleague introduced himself to me. Even though we had worked together previously, several months had passed. Steven didn’t presume that I remembered him and made sure to clearly state who he is and our prior connection.\n\n\n\n\n\n\nEmail to Claire about IRS-Census Data Sharing\n\n\n\nHi Claire,\nThis is Steven Brown – a former colleague from Urban. I’m currently on detail to the Treasury Department, where I sit on the racial equity team here supporting on efforts related to research and data. A big part of my role is engaging with the Office of Tax Policy on efforts related to equity and tax administration.\n[removed the middle part of the email to focus on the introduction]\nI can share more once we find a time to talk. Would you have time to chat this week? Sooner would be preferable if that works.\nThanks,\nSteven\n\n\nHere’s another example, this time introducing two individuals I know to each other. I’ve even embedded links to help them learn more about each and their work as well as relevant references.\n\n\n\n\n\n\nEmail to connect two colleagues about the new Do No Harm Guide on SOGI\n\n\n\nGood morning Jon,\nI hope you’re doing well.\nI would like to introduce you to Naomi Goldberg, the incoming Executive Director of the Movement Advancement Project. She recently saw the latest Do No Harm Guide on Collecting, Analyzing, and Report Gender and Sexual Orientation Data and wanted to connect with the people behind the report.\nNaomi, this is Jon Schwabish, senior fellow in the Income and Benefits Policy Center at the Urban Institute. He is the mastermind on the Do No Harm Guide project, a series of guides on how researchers and practitioners can better approach their work with a DEI lens.\nPlease let me know if you need anything else.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nPlease note that I didn’t spell out “DEI” because I assumed both individuals, given their line of work, were familiar with the term. However, it’s generally advisable not to make this assumption unless you’re almost certain!\n\n\n\n\n3.1.2 Purpose\nNext, it’s crucial to clearly state the purpose of the conversation. This should follow immediately after the introduction and should be concise, ideally in one or two sentences. The goal of any verbal and written communication is to ensure clarity within the first three sentences, as most people are busy and tend to skim emails or only listen for the first 15 seconds. This approach helps the recipient prioritize their responses, especially in cases where they receive a high volume of emails, such as myself, who typically receives around 50 emails a day.\nIn this next example, I’m reaching out to my colleagues at the Nebraska Statewide Workforce & Educational Reporting System (NSWERS) following a training session on data privacy techniques, specifically synthetic data generation. Given our recent communications, I skipped reintroducing myself and proceed directly to the purpose of this email after a brief greeting.\n\n\n\n\n\n\nEmail to NSWERS on next steps for a project at Urban\n\n\n\nGood morning everyone,\nI hope you are doing well and had a wonderful weekend.\nThe Urban team is reaching out to discuss scheduling office hours or support sessions to aid the NSWERS staff in implementing the required modifications to the tidysynthesis and syntheval code for generating synthetic data.\nPlease let us know of your preferred start time for these sessions, their frequency, and any additional support you may need.\nWe look forward to continuing to work with you.\nClaire McKay Bowen, PhD\n\n\n\n\n3.1.3 Key question\nMake sure to have the specific ask or key question in the verbal or written exchange, such as:\n\nDo you have a few minutes to talk about kicking off the project?\nIs this a good time to talk about the updates to performance management?\nCould you send the document that we discussed at in our check-in meeting last week?\nI am trying to reach Mike in Accounting. Do you have his contact information?\n\nIn the previous example, my key question is what is the preferred start time for the “office hours” or “support sessions” to aid the NSWERS staff.\nThis next example is an email from someone asking me to write a letter of recommendation.\n\n\n\n\n\n\nClass Activity 1\n\n\n\nWhat is missing from this email based on what is recommended for an introduction email?\n\n\n\n\n\n\n\n\nAward Nomination for Sally Morton\n\n\n\nDear Claire,\nI am working to submit a nomination for Sally Morton for the ASA mentoring award; see https://www.amstat.org/your-career/awards/asa-mentoring-award. Sally identified you as someone who could speak to her mentoring impact on your career, so I was hoping to get your help.\nIf you could either:\n\nProvide me with a few sentences on the impact of Sally’s mentoring on your career. If any of that interaction was in the early part of your career, please stress those points (per the ASA announcement). OR\nWrite a letter of support – which can be no more than 2 pages – to include in the submission.\n\nIf you are willing to write a letter I can pull from that to write the overall nomination.\nI know you are extremely busy, so I would be very appreciative of any information you can provide.\nThe nomination package is due March 1st, but I am hoping to have all information assembled by February 1.\nPlease hit reply all to this email as I am CCing my new email at the University at Buffalo (where I will start as Chair of Biostatistics in February).\nThank you for considering.\nBest,\nDoug",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#other-situations-for-verbal-and-written-communition",
+    "href": "02_written-verbal-communication.html#other-situations-for-verbal-and-written-communition",
+    "title": "3  Written and Verbal Communication",
+    "section": "3.3 Other situations for verbal and written communition",
+    "text": "3.3 Other situations for verbal and written communition",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#final-important-tips",
+    "href": "02_written-verbal-communication.html#final-important-tips",
+    "title": "3  Written and Verbal Communication",
+    "section": "3.5 Final important tips",
+    "text": "3.5 Final important tips\nHere are some additional tips!\n\nAssume the other person has limited knowledge:\n\nSpell out acronyms.\nCarefully explain the situation, providing concise context, and/or be explicit on your reference (e.g., include a link to the referenced article).\n\nProofread written emails:\n\nTake a moment to review your email before sending to avoid simple mistakes like confusing “your” and “you’re”.\nConsider asking someone else to proofread, especially for sensitive topics where tone is crucial (and is often hard to convey via written communication).\n\nOpt for verbal conversations for sensitive topics:\n\nNuance and tone are better conveyed through verbal communication and can avoid miscommunication.\n\nMaintain professionalism in verbal or in-person interactions:\n\nRefrain from using profanity in professional settings.\nPractice your “poker face”, as some feelings like annoyance may inadvertently show, and people can tell.\n\nAvoid rambling during meetings:\n\nPause to collect thoughts, but avoid long-winded explanations that may frustrate others.\n\nSpeak up when relevant:\n\nContribute to discussions in meetings, but be thoughtful and concise on what you say.\n\nPhone calls for quick questions and discussions are your friend:\n\nFor brief questions or discussions, opt for a phone call to minimize miscommunication.\nMany people are uncomfortable talking to people they don’t know. It may be awkward the first few dozen times cold calling a random person, but practice makes perfect and you will find yourself to it!\n\n\n\n\n\n\nGlickman, Jodi. 2011. Great on the Job: What to Say, How to Say It. The Secrets of Getting Ahead. St. Martin’s Griffin.",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#other-communition-situations",
+    "href": "02_written-verbal-communication.html#other-communition-situations",
+    "title": "3  Written and Verbal Communication",
+    "section": "3.3 Other communition situations",
+    "text": "3.3 Other communition situations",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_data-collection.html#week-1-assignment",
+    "href": "02_data-collection.html#week-1-assignment",
+    "title": "4  Data Collection and Acquitition",
+    "section": "4.3 Week 1 Assignment",
+    "text": "4.3 Week 1 Assignment\n\n\n\n\n\n\nDEADLINE\n\n\n\nDue May 30, at 11:59 PM EDT\n\n\n\n4.3.1 Read\n\nChapter 3: How Do Data Privacy Methods Expand Access to Data?\n\n\n\n4.3.2 Optional additional read\nDo No Harm Guide: Applying Equity Awareness in Data Privacy Methods.\n\n\n4.3.3 Write (600 to 1200 words)\nWe learned that one way to define data equity in the context of privacy is to think about equal privacy loss or equal access for different subgroups. Answer the following questions:\n\nDo you agree these are helpful ways to define equity in the context of privacy?\nAre there additional ways you would define equity in the context of privacy?\nAre there additional equity considerations?\nWhat are the ethical implications of defining equity in the context of privacy in these ways?",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Collection and Acquitition</span>"
+    ]
+  },
+  {
+    "objectID": "02_data-collection.html#week-3-assignment",
+    "href": "02_data-collection.html#week-3-assignment",
+    "title": "4  Data Collection and Acquitition",
+    "section": "4.4 Week 3 Assignment",
+    "text": "4.4 Week 3 Assignment\n\n\n\n\n\n\nDEADLINE\n\n\n\nDue June 6, at 11:59 PM EDT on Canvas\n\n\n\n4.4.1 Read\n\nChapter 3: How Do Data Privacy Methods Expand Access to Data?\n\n\n\n4.4.2 Optional additional read\nDo No Harm Guide: Applying Equity Awareness in Data Privacy Methods.\n\n\n4.4.3 Write (600 to 1200 words)\nWe learned that one way to define data equity in the context of privacy is to consider equal privacy loss or equal access for different subgroups. Answer the following questions:\n\nDo you agree that these are helpful ways to define equity in the context of privacy?\nAre there additional ways you would define equity in the context of privacy?\nAre there other equity considerations to take into account?\nWhat are the ethical implications of defining equity in the context of privacy in these ways?",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Collection and Acquitition</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#foolproof-download",
+    "href": "02_written-verbal-communication.html#foolproof-download",
+    "title": "3  Written and Verbal Communication",
+    "section": "3.3 Foolproof download",
+    "text": "3.3 Foolproof download\nIn Glickman (2011), she describes three broad areas for providing a foolproof download, which is the most common form of communication you’ll use to share information with your coworkers and colleagues.\n\nThe status update - sharing information that is new, different, and/or important\nThe persuasive argument - making the case for someone to take action\nMissing/outstanding information - sharing news in the face of imperfect information\n\nSimilar to the previous section, we will examine the components/recipe for these types of information and provide real examples. When thinking about these types of emails, think of the three C’s (Glickman 2011):\n\nBe concise. No one lies to read a one-page email or listen to four-minute voice mail if he/she/they doesn’t have to. Be short and sweet, and to the point.\nBe clear. Don’t jump around topics or make people guess at your meaning or intentions. Clearly state your position, give the info you need to share, get the buy-in of your audience (if necessary), and move on.\nBe consistent. Using a consistent pattern to relay information will enable you to anticipate follow-up questions and/or think about missing pieces of information before giving someone an update-keeping you one step ahead of the curve.\n\n\n3.3.1 The status update\nFor status updates, the basics are:\n\nThe punchline\nKey facts / supporting highlights\nForward momentum\n\nThe purpose of this type of communication is to provide new, different, and/or important information. When drafting your email or considering what to say, think about your objective or what you hope to achieve from the conversation.\nIn the following example, people at Urban wanted to invite an expert on propensity score methods for causal effects to give a mini training session/course on the topic. Since I have both a professional and personal relationship with this expert, no introduction sentence is necessary.\n\n\n\n\n\n\nInvitation to speak at Urban on propensity score methods\n\n\n\nHi Liz,\nI’m reaching out to you to see if would be willing to come to Urban in-person to give a talk. In 2022, lots of people really enjoyed your talk and conversations, so we’d love to have you back. [punchline]\nThe researchers in the Impact Methods group (Devlin Hanson is the contact person and is cced to this email) and the Statistical Methods Group are hoping that you would teach about use of propensity score methods for impact analysis. Perhaps a talk along the lines of your presentation on the “Why, When, and How of Propensity Score Methods for Causal Effects” (that Doug found online, also cced to the email). The goal would be to give folks a grounding in what PSM is, how it works, when it’s useful vs. a bad idea, things to check to make sure it’s used properly, and pitfalls and potential solutions. Do you have a take on a good length for this workshop/talk? If an hour seems too tight, we’re thinking that 90 minutes would be fine too. If it works for you, we’d also like you to talk with folks before and after your talk. [key facts]\nIs scheduling something between now and June still possible? We’ve got a budget to cover your time as we did before.\nPlease let me know your thoughts on this. [next steps]\nLooking forward to hearing from you soon and catching up!\nClaire McKay Bowen, PhD\n\n\nAfter several exchanges, the following is another example of the status update that follows the “punchline”, “facts / supporting highlights”, and “forward momentum” parts.\n\n\n\n\n\n\nInvitation to speak at Urban on propensity score methods (after several more email exchanges)\n\n\n\nHi Liz,\nThank you for your patience! After some internal discussion, we were wondering if you would be open to sending a few introduction slides on PSM. These slides would serve as a basis for a pre-session targeted at junior staff and those unfamiliar with propensity score methods (PSM), likely led by Doug at Urban. This pre-session would also help us promote your talk. [punchline]\nFor the main talk, we propose that you spend 10 to 15 minutes providing an introduction to ensure everyone is aligned on key terminology and concepts before delving into more intermediate topics for the rest of the 90 minutes, followed by advanced topics during the discussion portion. This structure would also allow attendees the option to come back or leave early after the lunch break, depending on their interest on more advance topics. [key facts]\nThe outline could be:\n\nPSM talk (90 minutes)\n\n10 to 15 minutes on intro to PSM\n75 minutes on more intermediate PSM concepts\n\nBreak (30 to 45 minutes - lunch break)\nDiscussion (45 minutes)\n\nAdvance PSM topics + Q&A\n\n\nPlease let us know your thoughts! [next steps]\nClaire McKay Bowen, PhD\n\n\nThe following is an email from my colleague to our client about updating the bi-weekly check-ins for the ACCESS project.\n\n\n\n\n\n\nScheduling check-ins starting in May\n\n\n\nHi Lisa,\nI hope you are well!\nClaire and I have been working on finding a time to schedule our biweekly check-ins later into the spring and summer. [punchline]\nCurrently, we still have meetings on the calendar until April 23rd. It looks like Thursdays from 1-2pm ET starting from May 9th would work best for the ACCESS team. Would you be available during that time frame? Though we hope additional NSF/NCSES1 folks would be able to make that time as well, we thought it most efficient to touch base with you first. [key facts]\nIf that time does not work for you, would you be able to provide some tentative days/times that typically work for you? Please also let us know if you would prefer to keep the current window (Tuesdays from 3-4pm ET). [next steps]\nThanks so much!\nErin Doyle\n\n\n\n\n3.3.2 The persuasive argument\nSimilar to the status update, the persuasive argument has making your case as part of the punchline.\n\nThe punchline: make your case\nKey facts / supporting highlights\nForward momentum\n\nIt’s more crucial than ever to clearly state your case or the point you want to make.\nThe following example is an exchange with the person who nominated me to be an American Statistical Association Fellow in 2023. Since the nomination failed, I reached out to my colleague about making a case to try again instead of waiting another year.\n\n\n\n\n\n\nAmerican Statistical Association Fellow round 2\n\n\n\nHi Wendy,\nI hope this message finds you well.\nI’ve been giving some thought to the possibility of making another attempt at the American Statistical Association Fellow nomination, and I wanted to discuss it with you. I think we should try again this year (2024). [punchline/case]\nTrying again wouldn’t be as arduous as last time, with only updates/edits needed for the new nomination. The downside is we need to reach out to letter writers again. [key facts]\nWhat are your thoughts? [next steps]\nClaire McKay Bowen, PhD\n\n\nThis next example involves me reaching out to several colleagues to nominate a mutual colleague for an award, which will require several letters of recommendation (good letters take a lot of time to write!).\n\n\n\n\n\n\nNominating Jeri Mulrow for Elizabeth L. Scott Award\n\n\n\nDear colleagues,\nI’m writing to discuss the possibility of nominating Jeri Mulrow for the Elizabeth L. Scott Award, recognizing individuals who have significantly contributed to advancing opportunities for women in statistics. [punchline/case]\nIn addition to her numerous accomplishments for our profession, I have been fortunate to benefit from Jeri’s mentorship throughout my career. We initially connected at my first Joint Statistical Meetings, where Jeri reached out to me afterward to maintain our connection and provide me an opportunity to present at NSF/NCSES. Since then, we have met at every Joint Statistical Meetings and other events, engaging in discussions on identifying research problems, navigating career transitions, addressing the challenges of the two-body problem, maintaining work-life balance, and more. [key facts]\nPrior to approaching Jeri regarding this nomination, I wished to reach out to you—her esteemed colleagues throughout her career—to gauge alignment on whether Jeri exemplifies the values and accomplishments akin to Elizabeth L. Scott. I fully acknowledge that I am biased in believing she should be nominated for this award, which is why I am reaching out to you. Should you agree and upon securing Jeri’s consent for the nomination, would you or someone within your network agree to drafting a letter of recommendation? The application deadline is Dec. 15, and I will ensure timely reminders to facilitate our submission process. [next steps]\nYour thoughts and comments are appreciated!\nClaire McKay Bowen, PhD\n\n\n\n\n3.3.3 Missing/outstanding information\nFor this type of communication, the second part is highlighting the outstanding items.\n\nThe punchline: status update\nOutstanding items\nForward momentum\n\nBelow is part of an email exchange, where there was confusion about payments for a contract between the American Statistical Association and Urban Institute (my project). In this email, I try to establish what is known, figure out what we are missing, and identify the next steps.\n\n\n\n\n\n\nUrban Institute and American Statistical Association contract confusion\n\n\n\nHi everyone,\nI wanted to touch base and ensure we’re on the same page about the contract between the American Statistical Association (ASA) and Urban. There seems to be some uncertainty about the duration and amounts. [punchline]\nAttached is the original Urban subgrant agreement, which states two project years: Year 1 spanning from February 2023 to January 2024, and Year 2 spanning from February 2024 to January 2025. According to the agreement, the first payment of $13,920 was due on February 1, 2023, with the second payment of $6,960 scheduled for March 1, 2024.\nASA has already issued the payment for Year 1, and the first email in this email thread contains the invoice Bobby (Urban) sent for Year 2. [outstanding items]\nJoyce, could you clarify whether your previous email confirms ASA’s intent to pay Year 2? If not, could you and/or Steve provide an explanation for this decision? [next steps]\nThank you for your attention to this matter. I hope this clarifies things.\nClaire McKay Bowen, PhD\n\n\nFor the next email, I reached out to the other principal investigators (or project leads) about spending down some project codes (i.e., codes for charging people’s time). The outstanding item is how to avoid the overspend, which I propose a potential solution.\n\n\n\n\n\n\nSafe Data Technologies budget\n\n\n\nHi Len and Rob,\nThe Infrastructure Team requires additional funds beyond what remains allocated in the NSF2 Infrastructure Team project code (NSF Year 2) to cover their time spent presenting the validation server demo to our project group and NSF/NCSES. This includes the time needed to create and prepare the presentation. [punchline]\nOne potential solution I propose is to request those currently charging to the NSF synthetic data code (a subset of the synthetic data team of Doug, Lek, Nikki, and Elyse) to transition to the Sloan code instead. The remaining balance for the NSF synthetic code stands at $7,472 and would be then used by the Infrastructure Team. To be honest, this would be a good option from an admin standpoint as it would narrow down the number of individuals charging the NSF code to just the Infrastructure Team (Defining Privacy has stopped charging already) as we wind down towards March 31 (the end of the code). [outstanding items]\nIf we make this change, the following would be the new code assignments for the Synthetic Data Team until the NSF Year 3 Codes are activated:\n\nSloan - Doug, Lek, Nikki, Elyse, and John C.\nIRS - Aaron, Gabe, Len, Livia, Maddie, and Rob\n\nPlease let me know your thoughts on this possible solution. [next steps]\nClaire McKay Bowen, PhD",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#other-email-ettiquette-tips",
+    "href": "02_written-verbal-communication.html#other-email-ettiquette-tips",
+    "title": "3  Written and Verbal Communication",
+    "section": "3.4 Other email ettiquette tips",
+    "text": "3.4 Other email ettiquette tips\nMy vice president recently shared this blog by Fred Wilson on general tips for a “less is more” strategy for emails. These tips cover many of the points we’ve already discussed, but it’s good to read or hear them more than once to solidify the ideas. The content is from the blog, but I added some examples from my work emails.\n\n3.4.1 Be Concise\nDo you like getting long emails? No? No one does. A good rule of thumb is to strive to keep emails to one line or less. If they can’t be that short, challenge yourself to keep them as concise as humanly possible. Your contact is likely to be checking the message on a smartphone as on a desktop computer, or receiving many emails and in-person requests a day. Shorter is easier to digest – which means you’re more likely to get a response.\n\n\n3.4.2 Communicate “action steps” first, not last.\nIt’s standard practice to begin an email by summarizing what happened at a meeting or during a phone conversation, then following on with any “action steps” that emerged. But this makes it easy for the most important information to get lost in the shuffle. By reversing this order – and listing actions steps first and foremost – you keep the attention on the items you want to draw attention to.\n\n\n\n\n\n\nNSF/NCSES Year 2 Report\n\n\n\nDear Claire,\nI am writing to you on behalf of the Future of Privacy Forum (FPF). Through a grant from the National Science Foundation (grant number 2413978), we are building a Research Coordination Network (RCN) dedicated to advancing the development, deployment, and practical application of Privacy Enhancing Technologies (PETs) to support socially beneficial data sharing and analytics.\nI wondered if you might have a few minutes to connect with me to discuss potential topics for the RCN and determine if you might be interested in participating yourself.\n[removed paragraphs about the proposed RCN]\nIf you do have a few moments, I would love to connect – I’d be happy to fit into your schedule and/or send you a link to book a time!\nThank you for considering this opportunity to shape the future of privacy and technology.\nAndrew\n\n\n\n\n3.4.3 Number your Questions\nThis is Email 101. If you’re not doing it already, it should be standard protocol to break out multiple points or questions as numbered items in all email correspondence. If you don’t, you risk having that customer or client only respond to the first question that happens to catch their eye. (And now you have to write another email to ask them about it again.)\n\n\n\n\n\n\nPrivacy and Public Policy Conference update\n\n\n\nHi all,\nThe planning committee is back with some updates/questions/comments to share.\nUpdates\n\nThe conference website is updated to include a schedule page, a registration page, and an updated support page. Please take a look and let us know if any updates are needed. (https://privacypublicpolicy-conference.github.io/website/)\nWe recommend poster size of 36x48 and we are happy with whatever format the program committee decides on.\n\nQuestions\n\nAre you open to drop Day 2 roundtables and do a boxed lunch on Day 2 in case some attendees would need to catch a flight and leave early?\nDo we want to add a “closing (by co-chairs)” somewhere on Day 2 and if so when? The idea is to mostly make attendees stay till after lunch.\n\nIt would be good to finalize the conference schedule soon so that registered attendees can make travel plans, among other things.\nThanks and we look forward to hearing your thoughts on the above updates and questions. Have a wonderful weekend!\nBest,\nMonika\n\n\n\n\n3.4.4 Make the way forward clear.\nEmails that offer nothing but a “What do you think about X…?” are generally ineffectual. Always be proactive and take the lead in your communications so that the way forward is completely clear. If you’re proposing a deal, do a bullet‐pointed outline of the parameters from the get‐go. If you want to “run something by” a superior, share your approach and ask them if they agree. They may not, but giving them a starting point, something to react to, is MUCH more likely to get a response than waiting for someone else to make the first move.\n\n\n\n\n\n\nHEADER\n\n\n\nHi KiDeuk,\nThank you for your patience. I intended to send you an update earlier this week, but when I returned from PTO, I found myself busier than anticipated.\nI reviewed the code book and data. To ensure we’re on the same page, I’ve drafted a document that outlines the synthesis project, detailing objectives for privacy and utility, along with expectations. Additionally, I’ve compiled a table of variables, their descriptions, and considerations for synthesis.\nIf possible, I would like for you to review this document to ensure that I have correctly captured the essential information regarding the project’s overarching goals and confirmed the correct subset of the data (which I believe pertains to the court cases).\nAlso, if you have any initial thoughts regarding synthesis considerations, please share them with me.\nClaire McKay Bowen, PhD\n\n\n\n\n3.4.5 Include Deadlines\nSome people think that handing out deadlines can seem dictatorial. On the contrary, I’ve noticed that successful busy people welcome a deadline. It helps them integrate the tasks into their schedule. If a response from them is imperative, politely include a deadline: “For the project to stay on track, I need a response from you by 1/18.” If a response is optional, communicate that as well: “If I don’t hear back from you by 1/18, I’ll proceed with the solution I’ve proposed.”\n\n\n\n\n\n\nFinalizing an IRB document\n\n\n\nHi Ian,\nI am ok pushing this out further. However, Monday is Memorial day, so let’s aim for full release Tuesday, May 28.\nUpdated timeline below:\n\nBob and Tim to review the remaining comments to ensure the changes didn’t change the meaning (EOD, today, May 23).\nIan to review the entire document (by noon, tomorrow, May 24).\nFiona to finalize copyedits and confirm edits (EOD, tomorrow, May 24).\nClaire and Ian to have the document on Urban Explorer and notify centers/divisions of the update (Tuesday, May 28).\n\nBox Link: LINK\nClaire McKay Bowen, PhD\n\n\n\n\n3.4.6 Use “FYI” for emails that have no actionable information.\n(And if you’re already working on time-sensitive items with this contact, re-think sending non-actionable, less urgent information until end of day or even end of week).\nSome emails need to be shared to keep everyone in the loop. But non‐actionable correspondence should be labeled as such – so that it can be prioritized accordingly. Using a simple “FYI” tag at the top of all emails that contain information that you are not required to act on. It allows for easy filtering of non‐actionable emails, whether by scanning visually or setting up a rule in your email client. - (Also, recognize that if you’ve been working on high-priority items with this contact un-related to this non-actionable email, it might be best to save sending the “FYI” info email to later in the day.)\n\n\n\n\n\n\nA forwarded email about a proposal opportunity from the National Science Foundation\n\n\n\nRequest for solutions on AI dropped! Due May 10.\n\n\n\n\n3.4.7 Tell them that you’ll get to it later.\nIf someone sends you an urgent email that you can’t get to today (or this week, or month), write them a quick note and let them know, specifically when you will get to it. You’ll quell their anxiety, and save yourself a future nagging email from them. It also preserves goodwill: explaining now why you cannot get to something now is more effective than apologizing later.\n\n\n\n\n\n\nHEADER\n\n\n\nHi Claire,\nCan this wait until Tuesday for an answer? I’d love to get Sallie’s take on which approach she’d prefer you to take but she’s on leave until Tuesday.\nMichael\n\n\n\n\n3.4.8 Use expressive and compelling subject lines.\nWe all skim our inboxes, deciding what to read now, and what to read later. The subject line is a key place to indicate importance and time sensitivity, using leaders like “FOR APPROVAL:” or “SCHEDULING REQUEST:” or “FYI:” to indicate what action is or is not needed. It’s useful to think of subject lines like newspaper (or blog) headlines – they should be expressive and compelling. It’s your prime chance to hook the reader in.\nExample headers in my inbox (outgoing and incoming):\n\nSummer 2024 DAN 607: Confirming Student Enrollment\nInvitation to Speak at Urban on Propensity Score Methods\nDoug’s Question on Practice Areas\nCONTRACT SIGNED 2/16/24, 0219393.000, 003\nHold: SED Syn Focus Group\n\n\n\n3.4.9 Never send an angry or contentious email.\nEmail is a severely limited medium when it comes to conveying tone, which is why angry emails are never a good idea. More often than not, they just create more anxiety – and more email.\nOccasionally, writing an angry email can be therapeutic. If this is the case, write it as a draft to get it off your chest, and then delete the email. When a confrontation is brewing, a conversation in person or on the phone is almost always best. Emails leave too much room for misunderstanding.\n\n\n\n\n\n\nImportant\n\n\n\nIf you are feeling annoyed or upset, delay sending the email. Type it, step away (or sleep on it if time allows), proofread, and then send.\n\n\n\n\n3.4.10 Never “reply all” (unless you absolutely must).\nIf you’ve received an email sent to a large group of people, do your best to avoid replying to all when you respond. If that person was qualified to send the email, typically they can be relied on to be the point person who collates the responses. Keep in mind: If using the “reply all” feature really seems necessary, you are probably having a conversation that would be better (and more efficiently) had face‐to‐face.\n\n\n\n\n\n\nImportant\n\n\n\nDon’t pull a Dr. Lamere! She accidentally hit reply all about ordering commencement regalia, and it was sent to all full time faculty, part time faculty, and bookstore email lists.\n\n\n\n\n\n\nFigure 3.2",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  },
+  {
+    "objectID": "02_data-collection.html#quick-recap",
+    "href": "02_data-collection.html#quick-recap",
+    "title": "4  Data Collection and Acquitition",
+    "section": "",
+    "text": "Figure 4.1: Key stakeholders in the security and privacy ecosystem",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Collection and Acquitition</span>"
+    ]
+  },
+  {
+    "objectID": "02_written-verbal-communication.html#footnotes",
+    "href": "02_written-verbal-communication.html#footnotes",
+    "title": "3  Written and Verbal Communication",
+    "section": "",
+    "text": "Stands for National Science Foundation National Center for Science and Engineering Statistics.↩︎\nStands for the National Science Foundation.↩︎",
+    "crumbs": [
+      "Introduction and Data Collection",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Written and Verbal Communication</span>"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "hash": "6d63d5b633e572277d955656fe986db4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Data Storage + Data Sharing and Transfer\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added at the start of week 3.",
+    "supporting": [
+      "03_data-storage-sharing_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "5b395592424f372bedda984017b1d60e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Better Presentations\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added at the start of week 4.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "0ba68804c9209425d38f87b3fbe29832",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Data Analysis and Dissemination Part 1\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added at the start of week 4.",
+    "supporting": [
+      "04_data-analysis-dissemination-part1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
