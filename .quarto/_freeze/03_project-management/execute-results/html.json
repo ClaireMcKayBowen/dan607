@@ -1,8 +1,8 @@
 {
-  "hash": "8ee2f12a70a5ca40036c9d6a227c9143",
+  "hash": "086ee8fb3e8257b006c2221d0ac92997",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Project Management\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added at the start of week 3.",
+    "markdown": "---\ntitle: \"Project Management\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added by June 7, 2024.",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

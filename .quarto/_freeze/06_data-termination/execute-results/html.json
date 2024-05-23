@@ -1,11 +1,9 @@
 {
-  "hash": "8645a8515740529f71453bd4f8c0d0ad",
+  "hash": "bfe40af74f2f237f44a2cb0a74e5baa9",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Data Destruction or Termination\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added at the start of week 6.",
-    "supporting": [
-      "06_data-termination_files"
-    ],
+    "markdown": "---\ntitle: \"Data Destruction or Termination\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added by June 28, 2024.",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

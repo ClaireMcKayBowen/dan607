@@ -1,11 +1,9 @@
 {
-  "hash": "19756259a2b3eaa4d0f9b00d88200702",
+  "hash": "220f422acbeff5f76558d0f9de47f390",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Data Analysis and Dissemination Part 2\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added at the start of week 5.",
-    "supporting": [
-      "05_data-analysis-dissemination-part2_files"
-    ],
+    "markdown": "---\ntitle: \"Data Analysis and Dissemination Part 2\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added by June 21, 2024.",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

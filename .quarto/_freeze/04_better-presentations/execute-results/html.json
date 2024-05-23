@@ -1,8 +1,8 @@
 {
-  "hash": "5b395592424f372bedda984017b1d60e",
+  "hash": "ff1563f395a59922b91e45f5a2ddb84e",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Better Presentations\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added at the start of week 4.",
+    "markdown": "---\ntitle: \"Better Presentations\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added by June 14, 2024.",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

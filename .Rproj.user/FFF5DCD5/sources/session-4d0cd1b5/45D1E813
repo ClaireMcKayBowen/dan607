@@ -1,27 +1,27 @@
 {
-    "id": "65EE57D8",
-    "path": "~/GitHub/dan607/02_data-collection.qmd",
-    "project_path": "02_data-collection.qmd",
+    "id": "45D1E813",
+    "path": "~/GitHub/dan607/02_security-privacy-ethics-equity.qmd",
+    "project_path": "02_security-privacy-ethics-equity.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1716429526747.0,
+    "created": 1716496269664.0,
     "source_on_save": false,
-    "relative_order": 5,
+    "relative_order": 2,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "26,0",
-        "scrollLine": "21"
+        "cursorPosition": "250,210",
+        "scrollLine": "243"
     },
     "folds": "",
-    "lastKnownWriteTime": 1716479968,
+    "lastKnownWriteTime": 1716496306,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1716479968603,
+    "last_content_update": 1716496306743,
     "read_only": false,
     "read_only_alternatives": []
 }
