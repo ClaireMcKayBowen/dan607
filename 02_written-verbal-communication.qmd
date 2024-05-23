@@ -29,7 +29,7 @@ All examples provided in these callout boxes are written and verbal examples fro
 
 This is a popular meme, and one I like a lot, that covers all the essential aspects when reaching out to someone for the first time or after a prolonged period.
 
-![](www/images/introduction-inigo.gif){#fig-hello fig-align="center"}
+![One of the most famous quotes from the movie, "The Princess Bride."](www/images/introduction-inigo.gif){#fig-hello fig-align="center"}
 
 - Be polite
 - Provide your name
@@ -600,7 +600,7 @@ If you are feeling annoyed or upset, delay sending the email. Type it, step away
 ## Don't pull a Dr. Lamere!
 She accidentally hit reply all about ordering commencement regalia, and it was sent to all full time faculty, part time faculty, and bookstore email lists.
 
-![](www/images/alicia-replyall.png){#fig-replyall fig-align="center"}
+![Dr. Lamere's reply all.](www/images/alicia-replyall.png){#fig-replyall fig-align="center"}
 
 :::
 

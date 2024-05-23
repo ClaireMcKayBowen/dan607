@@ -20,7 +20,7 @@ exercise_number <- 1
 
 We should think about the interactions of this ecosystem the data life cycle in the context of security, privacy, ethics, and equity.
 
-![Key stakeholders in the security and privacy ecosystem](www/images/stakeholders.png){#fig-stakeholders fig-align="center"}
+![Key stakeholders in the data ecosystem](www/images/stakeholders.png){#fig-stakeholders fig-align="center"}
 
 ## Data types
 There are generally three principal types of qualitative and quantitative data:
@@ -58,9 +58,13 @@ For each data type:
  
 :::
 
-## Discussion on DNHG: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data
+## Discussion on Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data
 
 > If [equity] isn’t considered in the design of the study for that small subgroup, then it’s not the main purpose of the study. Other parts will take priority. Afterall, what was the study designed for? - Saki Kinney, RTI (Research Triangle International)
+
+This quote from a colleague highlights the importance of how data is collected. If we blindly collect data without careful consideration of the process—such as how we define groups or the methods used for data collection—we could severely and negatively impact those groups when others in the data ecosystem use and analyze that data.
+
+We will use the required reading assignment to facilitate the discussion on the potential security, privacy, ethical, and equity challenges in data collection.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -70,7 +74,11 @@ For each data type:
 
 exercise_number <- exercise_number + 1
 ```
-TBD
+There is a glossary at the start of the Do No Harm Guide (DNHG) instead of at the end. Why do you think the authors had the glossary so early in the report?
+
+Do think the government, schools, or other organizations that collect data use the same definition when collecting data?
+
+What is the impact of not having a standard definition for each stakeholder in the data ecosystem.
  
 :::
 
