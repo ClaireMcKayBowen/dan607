@@ -86,7 +86,7 @@ I hope you're doing well.
 
 I would like to introduce you to Naomi Goldberg, the incoming Executive Director of the [Movement Advancement Project](https://www.lgbtmap.org/). She recently saw the latest [Do No Harm Guide on Collecting, Analyzing, and Report Gender and Sexual Orientation Data](https://www.urban.org/research/publication/do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual) and wanted to connect with the people behind the report.
 
-Naomi, this is [Jon Schwabish](https://www.urban.org/author/jonathan-schwabish), senior fellow in the Income and Benefits Policy Center at the Urban Institute. He is the mastermind on the Do [No Harm Guide project](https://www.urban.org/projects/do-no-harm-project), a series of guides on how researchers and practitioners can better approach their work with a DEI lens.
+Naomi, this is [Jon Schwabish](https://www.urban.org/author/jonathan-schwabish), senior fellow in the Income and Benefits Policy Center at the Urban Institute. He is the mastermind on the [Do No Harm Guide project](https://www.urban.org/projects/do-no-harm-project), a series of guides on how researchers and practitioners can better approach their work with a DEI lens.
 
 Please let me know if you need anything else.
 :::
@@ -122,7 +122,7 @@ Claire McKay Bowen, PhD
 Make sure to have the specific ask or key question in the verbal or written exchange, such as:
 
 - Do you have a few minutes to talk about kicking off the project?
-- Is this a good time to talk about the updates to performance management?
+- Is this a good time to talk about the updates to the performance management process?
 - Could you send the document that we discussed at in our check-in meeting last week?
 - I am trying to reach Mike in Accounting. Do you have his contact information?
 
@@ -182,7 +182,7 @@ The goodbye should include these two parts.
 
 Even if the conversation or interaction wasn't productive or had the desired outcome, it's always important to express gratitude for people's time and effort. Being polite can go a long way.
 
-The following is an email from a colleague who had asked me about how to explain another privacy concept, differential privacy, at a high level for a presentation. Below is his response after I took the time to provide him with a high-level conceptual example. Notice that Lance thanked me several times throughout the email, which I bold.
+The following is an email from a colleague who had asked me about how to explain a privacy concept, differential privacy, at a high level for a presentation. Below is his response after I took the time to provide him with a high-level conceptual example. Notice that her thanked me several times throughout the email, which I bold.
 
 ::: {.callout-note}
 ## Conceptual question on differential privacy
@@ -197,7 +197,7 @@ The following is an email from a colleague who had asked me about how to explain
 Lance
 :::
 
-The following is an email after I met with a recent graduate who was interested in what it is like to work at the Urban Institute.
+The following is an email after I met with someone who recently graduated college and was interested in what it is like to work at the Urban Institute.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -216,7 +216,7 @@ What is missing from this email based on what is recommended for a goodbye email
 ## Urban Institute opportunities
 Hi Claire,
 
-**Thank you again for taking the time to speak with me yesterday!** I loved getting to hear more about the Urban Institute and how it engages with current issues to seek to build a better society, and **I appreciate** your willingness to share some about your own journey and experiences. It's inspiring to learn about the different paths people take to find what they are passionate about and discover ways to put those passions into practice for the good of others. **Thank you** as well for your advice regarding communication skills as I apply for Urban Institute, and for your encouragement to explore my interests and passions. I look forward to discovering where my path leads!
+Thank you again for taking the time to speak with me yesterday! I loved getting to hear more about the Urban Institute and how it engages with current issues to seek to build a better society, and I appreciate** your willingness to share some about your own journey and experiences. It's inspiring to learn about the different paths people take to find what they are passionate about and discover ways to put those passions into practice for the good of others. Thank you as well for your advice regarding communication skills as I apply for Urban Institute, and for your encouragement to explore my interests and passions. I look forward to discovering where my path leads!
 
 Best,
 
@@ -226,7 +226,7 @@ Hannah
 ### Forward momentum / next steps
 As @glickman2011great states,
 
-> Every conversation presents an opportunity to build upon and expand your network. With each new itneraction, you have an opportunity to establish or build rapport and leverage professional relationships going forward. Building on the "thank you" is where the tru skill comes in.
+> Every conversation presents an opportunity to build upon and expand your network. With each new itneraction, you have an opportunity to establish or build rapport and leverage professional relationships going forward. Building on the "thank you" is where the true skill comes in.
 
 There are numerous methods to sustain that momentum or identifying potential next steps. This could be as straightforward as saying, 'I look forward to staying in touch' or suggesting, 'Let's connect on LinkedIn.' The latter is my go to, especially when meeting people at networking events like professional conferences.
 
@@ -234,7 +234,7 @@ In the following example, staff from the Washington State Department of Health c
 
 ::: {.callout-note}
 ## Virtual meeting with Washington State Department of Health
-After the staff thanked me for my time, I concluded the conversation by extending an invitation for the staff members at the Washington State Department of Health to reach out if they had any further questions.
+At the end of the 30 minute meeting, the staff thanked me for my time. I then concluded the conversation by extending an invitation for the staff members at the Washington State Department of Health to reach out me at a later time if they had any further questions.
 :::
 
 I met a colleague at a workshop, and we discussed a job posting in his organization and his difficulties finding qualified candidates. I offered to help spread the word if he forwarded me the posting, which is my forward momentum that the colleague seized with sending an email that evening.
@@ -254,7 +254,7 @@ Kevin
 
 ## Foolproof download
 
-In @glickman2011great, she describes three broad areas for providing a foolproof download, which is the most common form of communication you'll use to share information with your coworkers and colleagues.
+In Glickman describes three broad areas for providing a foolproof download, which is the most common form of communication you'll use to share information with your coworkers and colleagues.
 
 1. The status update - sharing information that is new, different, and/or important
 2. The persuasive argument - making the case for someone to take action
@@ -336,10 +336,10 @@ If that time does not work for you, would you be able to provide some tentative 
 
 Thanks so much!
 
-Erin Doyle
+Erin
 :::
 
-[^NCSES]: Stands for National Science Foundation National Center for Science and Engineering Statistics.
+[^NCSES]: National Science Foundation National Center for Science and Engineering Statistics.
 
 ### The persuasive argument
 Similar to the status update, the persuasive argument has making your case as part of the punchline.
@@ -436,19 +436,21 @@ Claire McKay Bowen, PhD
 
 :::
 
-[^NSF]: Stands for the National Science Foundation.
+[^NSF]: National Science Foundation.
 
 ## Other email ettiquette tips
 
-My vice president recently shared this [blog](https://www.behance.net/blog/email-etiquette-for-the-super-busy) by Fred Wilson on general tips for a "less is more" strategy for emails. These tips cover many of the points we've already discussed, but it's good to read or hear them more than once to solidify the ideas. The content is from the blog, but I added some examples from my work emails.
+My vice president recently shared this [blog](https://www.behance.net/blog/email-etiquette-for-the-super-busy) by Fred Wilson on general tips for a "less is more" strategy for emails. These tips cover many of the points we've already discussed, but it's good to read or hear them more than once to solidify the ideas.
+
+The header and the text right after are content from the blog, but I added some examples from my work emails.
 
 ### Be Concise 
 
-Do you like getting long emails? No? No one does. A good rule of thumb is to strive to keep emails to one line or less. If they can’t be that short, challenge yourself to keep them as concise as humanly possible. Your contact is likely to be checking the message on a smartphone as on a desktop computer, or receiving many emails and in-person requests a day. Shorter is easier to digest – which means you’re more likely to get a response.
+> Do you like getting long emails? No? No one does. A good rule of thumb is to strive to keep emails to one line or less. If they can’t be that short, challenge yourself to keep them as concise as humanly possible. Your contact is likely to be checking the message on a smartphone as on a desktop computer, or receiving many emails and in-person requests a day. Shorter is easier to digest – which means you’re more likely to get a response.
 
 ### Communicate “action steps” first, not last. 
 
-It’s standard practice to begin an email by summarizing what happened at a meeting or during a phone conversation, then following on with any “action steps” that emerged. But this makes it easy for the most important information to get lost in the shuffle. By reversing this order – and listing actions steps first and foremost – you keep the attention on the items you want to draw attention to. 
+> It’s standard practice to begin an email by summarizing what happened at a meeting or during a phone conversation, then following on with any “action steps” that emerged. But this makes it easy for the most important information to get lost in the shuffle. By reversing this order – and listing actions steps first and foremost – you keep the attention on the items you want to draw attention to. 
 
 ::: {.callout-note}
 ## NSF/NCSES Year 2 Report
@@ -470,7 +472,7 @@ Andrew
 
 ### Number your Questions
 
-This is Email 101. If you’re not doing it already, it should be standard protocol to break out multiple points or questions as numbered items in all email correspondence. If you don’t, you risk having that customer or client only respond to the first question that happens to catch their eye. (And now you have to write another email to ask them about it again.)
+> This is Email 101. If you’re not doing it already, it should be standard protocol to break out multiple points or questions as numbered items in all email correspondence. If you don’t, you risk having that customer or client only respond to the first question that happens to catch their eye. (And now you have to write another email to ask them about it again.)
 
 ::: {.callout-note}
 ## Privacy and Public Policy Conference update
@@ -500,7 +502,7 @@ Monika
 
 ### Make the way forward clear.
 
-Emails that offer nothing but a “What do you think about X…?” are generally ineffectual. Always be proactive and take the lead in your communications so that the way forward is completely clear. If you’re proposing a deal, do a bullet‐pointed outline of the parameters from the get‐go. If you want to “run something by” a superior, share your approach and ask them if they agree. They may not, but giving them a starting point, something to react to, is MUCH more likely to get a response than waiting for someone else to make the first move.
+> Emails that offer nothing but a “What do you think about X…?” are generally ineffectual. Always be proactive and take the lead in your communications so that the way forward is completely clear. If you’re proposing a deal, do a bullet‐pointed outline of the parameters from the get‐go. If you want to “run something by” a superior, share your approach and ask them if they agree. They may not, but giving them a starting point, something to react to, is MUCH more likely to get a response than waiting for someone else to make the first move.
 
 ::: {.callout-note}
 ## HEADER
@@ -520,18 +522,18 @@ Claire McKay Bowen, PhD
 
 ### Include Deadlines
 
-Some people think that handing out deadlines can seem dictatorial. On the contrary, I’ve noticed that successful busy people welcome a deadline. It helps them integrate the tasks into their schedule. If a response from them is imperative, politely include a deadline: “For the project to stay on track, I need a response from you by 1/18.” If a response is optional, communicate that as well: “If I don’t hear back from you by 1/18, I’ll proceed with the solution I’ve proposed.”
+> Some people think that handing out deadlines can seem dictatorial. On the contrary, I’ve noticed that successful busy people welcome a deadline. It helps them integrate the tasks into their schedule. If a response from them is imperative, politely include a deadline: “For the project to stay on track, I need a response from you by 1/18.” If a response is optional, communicate that as well: “If I don’t hear back from you by 1/18, I’ll proceed with the solution I’ve proposed.”
 
 ::: {.callout-note}
 ## Finalizing an IRB document
 
 Hi Ian,
 
-I am ok pushing this out further. However, Monday is Memorial day, so let's aim for full release Tuesday, May 28.
+I am ok pushing the release date for the document out further. However, Monday is Memorial day, so let's aim for full release Tuesday, May 28.
 
 Updated timeline below:
 
-- Bob and Tim to review the remaining comments to ensure the changes didn't change the meaning (EOD, today, May 23).
+- Bob and Tim to review the remaining comments to ensure the changes didn't change the meaning (EOD[^EOD], today, May 23).
 - Ian to review the entire document (by noon, tomorrow, May 24).
 - Fiona to finalize copyedits and confirm edits (EOD, tomorrow, May 24).
 - Claire and Ian to have the document on Urban Explorer and notify centers/divisions of the update (Tuesday, May 28).
@@ -541,11 +543,13 @@ Box Link: LINK
 Claire McKay Bowen, PhD
 :::
 
+[^EOD]: End of day.
+
 ### Use “FYI” for emails that have no actionable information.
 
-(And if you’re already working on time-sensitive items with this contact, re-think sending non-actionable, less urgent information until end of day or even end of week). 
+> (And if you’re already working on time-sensitive items with this contact, re-think sending non-actionable, less urgent information until end of day or even end of week). 
 
-Some emails need to be shared to keep everyone in the loop. But non‐actionable correspondence should be labeled as such – so that it can be prioritized accordingly. Using a simple “FYI” tag at the top of all emails that contain information that you are not required to act on. It allows for easy filtering of non‐actionable emails, whether by scanning visually or setting up a rule in your email client. 
+> Some emails need to be shared to keep everyone in the loop. But non‐actionable correspondence should be labeled as such – so that it can be prioritized accordingly. Using a simple “FYI” tag at the top of all emails that contain information that you are not required to act on. It allows for easy filtering of non‐actionable emails, whether by scanning visually or setting up a rule in your email client. 
 - (Also, recognize that if you’ve been working on high-priority items with this contact un-related to this non-actionable email, it might be best to save sending the “FYI” info email to later in the day.)
 
 ::: {.callout-note}
@@ -557,7 +561,7 @@ Request for solutions on AI dropped! Due May 10.
 
 ### Tell them that you’ll get to it later.
 
-If someone sends you an urgent email that you can’t get to today (or this week, or month), write them a quick note and let them know, specifically when you will get to it. You’ll quell their anxiety, and save yourself a future nagging email from them. It also preserves goodwill: explaining now why you cannot get to something now is more effective than apologizing later.
+> If someone sends you an urgent email that you can’t get to today (or this week, or month), write them a quick note and let them know, specifically when you will get to it. You’ll quell their anxiety, and save yourself a future nagging email from them. It also preserves goodwill: explaining now why you cannot get to something now is more effective than apologizing later.
 
 ::: {.callout-note}
 ## HEADER
@@ -569,21 +573,18 @@ Michael
 :::
 
 ### Use expressive and compelling subject lines.
-We all skim our inboxes, deciding what to read now, and what to read later. The subject line is a key place to indicate importance and time sensitivity, using leaders like “FOR APPROVAL:” or “SCHEDULING REQUEST:” or “FYI:” to indicate what action is or is not needed. It’s useful to think of subject lines like newspaper (or blog) headlines – they should be expressive and compelling. It’s your prime chance to hook the reader in.
+> We all skim our inboxes, deciding what to read now, and what to read later. The subject line is a key place to indicate importance and time sensitivity, using leaders like “FOR APPROVAL:” or “SCHEDULING REQUEST:” or “FYI:” to indicate what action is or is not needed. It’s useful to think of subject lines like newspaper (or blog) headlines – they should be expressive and compelling. It’s your prime chance to hook the reader in.
 
 Example headers in my inbox (outgoing and incoming):
 
 - Summer 2024 DAN 607: Confirming Student Enrollment
 - Invitation to Speak at Urban on Propensity Score Methods
-- Doug's Question on Practice Areas
-- CONTRACT SIGNED 2/16/24, 0219393.000, 003
+- CONTRACT SIGNED 2/16/24, REF: 0219393.000, 003
 - Hold: SED Syn Focus Group
 
 ### Never send an angry or contentious email.
 
-Email is a severely limited medium when it comes to conveying tone, which is why angry emails are never a good idea. More often than not, they just create more anxiety – and more email.
-
-Occasionally, writing an angry email can be therapeutic. If this is the case, write it as a draft to get it off your chest, and then delete the email. When a confrontation is brewing, a conversation in person or on the phone is almost always best. Emails leave too much room for misunderstanding.
+> Email is a severely limited medium when it comes to conveying tone, which is why angry emails are never a good idea. More often than not, they just create more anxiety – and more email. Occasionally, writing an angry email can be therapeutic. If this is the case, write it as a draft to get it off your chest, and then delete the email. When a confrontation is brewing, a conversation in person or on the phone is almost always best. Emails leave too much room for misunderstanding.
 
 ::: {.callout-important}
 If you are feeling annoyed or upset, delay sending the email. Type it, step away (or sleep on it if time allows), proofread, and then send.
@@ -591,7 +592,7 @@ If you are feeling annoyed or upset, delay sending the email. Type it, step away
 
 ### Never “reply all” (unless you absolutely must).
 
-If you’ve received an email sent to a large group of people, do your best to avoid replying to all when you respond. If that person was qualified to send the email, typically they can be relied on to be the point person who collates the responses. Keep in mind: If using the “reply all” feature really seems necessary, you are probably having a conversation that would be better (and more efficiently) had face‐to‐face.
+> If you’ve received an email sent to a large group of people, do your best to avoid replying to all when you respond. If that person was qualified to send the email, typically they can be relied on to be the point person who collates the responses. Keep in mind: If using the “reply all” feature really seems necessary, you are probably having a conversation that would be better (and more efficiently) had face‐to‐face.
 
 ::: {.callout-important}
 Don't pull a Dr. Lamere! She accidentally hit reply all about ordering commencement regalia, and it was sent to all full time faculty, part time faculty, and bookstore email lists.
