@@ -331,7 +331,7 @@ I hope you are well!
 
 Claire and I have been working on finding a time to schedule our biweekly check-ins later into the spring and summer. *[punchline]*
 
-Currently, we still have meetings on the calendar until April 23rd. It looks like Thursdays from 1-2pm ET starting from May 9th would work best for the ACCESS team. Would you be available during that time frame? Though we hope additional NSF/NCSES[^NCSES] folks would be able to make that time as well, we thought it most efficient to touch base with you first. *[key facts]*
+Currently, we still have meetings on the calendar until April 23rd. It looks like Thursdays from 1-2pm ET starting from May 9th would work best for the ACCESS team. Would you be available during that time frame? Though we hope additional Organization A folks would be able to make that time as well, we thought it most efficient to touch base with you first. *[key facts]*
 
 If that time does not work for you, would you be able to provide some tentative days/times that typically work for you? Please also let us know if you would prefer to keep the current window (Tuesdays from 3-4pm ET). *[next steps]*
 
@@ -339,8 +339,6 @@ Thanks so much!
 
 Paige
 :::
-
-[^NCSES]: National Science Foundation National Center for Science and Engineering Statistics.
 
 ### The persuasive argument
 Similar to the status update, the persuasive argument has making your case as part of the punchline.
@@ -378,7 +376,7 @@ Dear colleagues,
 
 I'm writing to discuss the possibility of nominating Amy for the Elizabeth L. Scott Award, recognizing individuals who have significantly contributed to advancing opportunities for women in statistics. *[punchline/case]*
 
-In addition to her numerous accomplishments for our profession, I have been fortunate to benefit from Amy's mentorship throughout my career. We initially connected at my first Joint Statistical Meetings, where Amy reached out to me afterward to maintain our connection and provide me an opportunity to present at NSF/NCSES. Since then, we have met at every Joint Statistical Meetings and other events, engaging in discussions on identifying research problems, navigating career transitions, addressing the challenges of the two-body problem, maintaining work-life balance, and more. *[key facts]*
+In addition to her numerous accomplishments for our profession, I have been fortunate to benefit from Amy's mentorship throughout my career. We initially connected at my first Joint Statistical Meetings, where Amy reached out to me afterward to maintain our connection and provide me an opportunity to present at NSF/NCSES[^NCSES]. Since then, we have met at every Joint Statistical Meetings and other events, engaging in discussions on identifying research problems, navigating career transitions, addressing the challenges of the two-body problem, maintaining work-life balance, and more. *[key facts]*
 
 Prior to approaching Amy regarding this nomination, I wished to reach out to you—her esteemed colleagues throughout her career—to gauge alignment on whether Amy exemplifies the values and accomplishments akin to Elizabeth L. Scott. I fully acknowledge that I am biased in believing she should be nominated for this award, which is why I am reaching out to you. Should you agree and upon securing Amy's consent for the nomination, would you or someone within your network agree to drafting a letter of recommendation? The application deadline is Dec. 15, and I will ensure timely reminders to facilitate our submission process. *[next steps]*
 
@@ -386,6 +384,8 @@ Your thoughts and comments are appreciated!
 
 Claire McKay Bowen, PhD
 :::
+
+[^NCSES]: National Science Foundation National Center for Science and Engineering Statistics.
 
 ### Missing/outstanding information
 
@@ -395,20 +395,20 @@ For this type of communication, the second part is highlighting the outstanding 
 2. Outstanding items
 3. Forward momentum
 
-Below is part of an email exchange, where there was confusion about payments for a contract between the American Statistical Association and Urban Institute (my project). In this email, I try to establish what is known to figure out what we are missing, and identify the next steps.
+Below is part of an email exchange, where there was confusion about payments for a contract between Organization A and Urban Institute (my project). In this email, I try to establish what is known to figure out what we are missing, and identify the next steps.
 
 ::: {.callout-note}
-## Urban Institute and American Statistical Association contract confusion
+## Contract confusion
 
 Hi everyone,
  
-I wanted to touch base and ensure we're on the same page about the contract between the American Statistical Association (ASA) and Urban. There seems to be some uncertainty about the duration and amounts. *[punchline]*
+I wanted to touch base and ensure we're on the same page about the contract between Organization A and Urban. There seems to be some uncertainty about the duration and amounts. *[punchline]*
 
 Attached is the original Urban subgrant agreement, which states two project years: Year 1 spanning from February 2023 to January 2024, and Year 2 spanning from February 2024 to January 2025. According to the agreement, the first payment of \$13,920 was due on February 1, 2023, with the second payment of \$6,960 scheduled for March 1, 2024.
 
-ASA has already issued the payment for Year 1, and the first email in this email thread contains the invoice Bobby (Urban) sent for Year 2.  *[outstanding items]*
+Organization A has already issued the payment for Year 1, and the first email in this email thread contains the invoice Kevin (Urban) sent for Year 2.  *[outstanding items]*
 
-Erin, could you clarify whether your previous email confirms ASA's intent to pay Year 2? If not, could you and/or Gabe provide an explanation for this decision? *[next steps]*
+Erin, could you clarify whether your previous email confirms Organization A's intent to pay Year 2? If not, could you and/or Gabe provide an explanation for this decision? *[next steps]*
 
 Thank you for your attention to this matter. I hope this clarifies things.
 
@@ -422,14 +422,14 @@ For the next email, I reached out to the other principal investigators (or proje
 
 Hi Charles and Adam,
 
-The Infrastructure Team requires additional funds beyond what remains allocated in the NSF[^NSF] Infrastructure Team project code (NSF Year 2) to cover their time spent presenting the validation server demo to our project group and NSF/NCSES. This includes the time needed to create and prepare the presentation. *[punchline]*
+The Infrastructure Team requires additional funds beyond what remains allocated in the Infrastructure Team project code (Funder A Year 2) to cover their time spent presenting the validation server demo to our project group and Funder A. This includes the time needed to create and prepare the presentation. *[punchline]*
 
-One potential solution I propose is to request those currently charging to the NSF synthetic data code (a subset of the synthetic data team) to transition to the Sloan code instead. The remaining balance for the NSF synthetic code stands at $7,472 and would be then used by the Infrastructure Team. To be honest, this would be a good option from an admin standpoint as it would narrow down the number of individuals charging the NSF code to just the Infrastructure Team (Defining Privacy has stopped charging already) as we wind down towards March 31 (the end of the code). *[outstanding items]*
+One potential solution I propose is to request those currently charging to the Funder A synthetic data code (a subset of the synthetic data team) to transition to the Sloan code instead. The remaining balance for the Funder A synthetic code stands at $7,472 and would be then used by the Infrastructure Team. To be honest, this would be a good option from an admin standpoint as it would narrow down the number of individuals charging the Funder A code to just the Infrastructure Team (Defining Privacy has stopped charging already) as we wind down towards March 31 (the end of the code). *[outstanding items]*
 
-If we make this change, the following would be the new code assignments for the Synthetic Data Team until the NSF Year 3 Codes are activated: 
+If we make this change, the following would be the new code assignments for the Synthetic Data Team until the Funder A Year 3 Codes are activated: 
 
-- Sloan - [List of five names]
-- IRS - [List of six names]
+- Funder B - [List of five names]
+- Funder C - [List of six names]
  
 Please let me know your thoughts on this possible solution. *[next steps]*
 
