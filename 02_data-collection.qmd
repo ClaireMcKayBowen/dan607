@@ -66,9 +66,11 @@ For each data type:
 
 This quote from a colleague highlights the importance of how data is collected. If we blindly collect data without careful consideration of the process—such as how we define groups or the methods used for data collection—we could severely and negatively impact those groups when others in the data ecosystem use and analyze that data.
 
-We will use the required reading assignment to facilitate the discussion on the potential security, privacy, ethical, and equity challenges in data collection.
+We will use the required reading assignment [@schwabish2023no] to facilitate the discussion on the potential security, privacy, ethical, and equity challenges in data collection.
 
-### How do we define ourselves and society?
+### Defining groups is important
+
+> Collecting data about sexual orientation and gender identity and expression allows for a better understanding of sexual and gender minority populations, enabling researchers, policymakers, and advocates to understand differences between these populations and other population groups or the general population across policy areas. Insight from these data highlight important areas for interventions that may improve the lives of members of sexual and gender minority groups.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -83,6 +85,62 @@ There is a glossary at the start of the Do No Harm Guide (DNHG) instead of at th
 Do think the government, schools, or other organizations that collect data use the same definition when collecting data? What is the impact of not having a standard definition for each stakeholder in the data ecosystem?
  
 :::
+
+### Trans-parency in the legal community
+
+The American Bar Association wants to release more demographic information about students who attend law school and complete the bar exam. One piece of information they want to share is the number of transgender students attending their law schools. Some students support this decision, believing it will allow other transgender students to reach out to them or see that the law school is welcoming toward transgender students. Others, however, want this information to be withheld for safety reasons, preferring that their law programs do not disclose that they have transgender students.
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+In this scenario, how would you answer the following:
+
+- User engagement is emphasized in the DNHG. Who would you try to engage in a conversation about collecting and releasing information about transgender students in law school?
+- What are your thoughts if the decision is to collect the data, but the outcome is not to release the information?
+- What are the security, privacy, ethics, and equity considerations when deciding to collect and/or release the information?
+
+:::
+
+Institutional Review Boards (IRBs) review an institution's (e.g., university, government agency) research, evaluation, and technical assistance projects involving information collected from or about human subjects. The IRB reviews projects’ data collection procedures and data security plans with the objective of protecting the rights and welfare of human subjects and minimizing risks to them, as mandated by federal regulations and consistent with longstanding institutional policies.
+
+::: {.callout-important}
+## The importance of IRB
+Any university or research institution-led survey or data collection involving human subjects must undergo an Institutional Review Board (IRB) process. If you see someone conducting a survey without information about the security, privacy, and confidentiality of the data, including its use, storage, and termination, you must report it to the university's or research institution's IRB.
+::: 
+
+### How do we define ourselves and society
+
+> There are two sides to survey data collection: the experience of the participant and the experience of the researcher. Thus, building trust between the participant and the researcher is key to generating high-quality data. Communicating to people why their personal information is necessary and gaining their formal consent can lead to greater collaboration and, ultimately, allow for more inclusive survey methods.
+
+Part 3 of the DNHG reviews various methods for conducting surveys to collect sexual orientation and gender identity (SOGI) information. This highlights the challenge of properly defining groups in a way that is both consistent and inclusive.
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+
+```
+
+Article I, Section 2 of the Constitution mandates that a census must take place every 10 years in the United States. The data collected by the decennial census determine the number of seats each state has in the U.S. House of Representatives and how to distribute the trillions in federal funds to local communities.
+
+As part of the decennial census, people must answer several questions, such as what is their race. How would define your race?
+
+The images below show the race question for the 1990 and 2020 Census questionnaire. Would your definition match what is offered in these questionnaires?
+:::
+
+![1990 Census Race Question](www/images/1990-census-race-question.png){#fig-1990-census-race fig-align="center"}
+
+![2020 Census Race Question](www/images/rsblog-race-hispanic-origin-figure-2.jpg){#fig-2020-census-race fig-align="center"}
+
+The nuances of different races is important in some contexts and not in others. For example, the state of Wyoming probably only needs to know the number of Asian Americans (i.e., coarsen all subgroups into the larger group), whereas New York City needs the count of various subgroups, because each subgroup has different poverty rates [@sonoda2023].
 
 ## No data, no problem, no action
 
@@ -167,7 +225,6 @@ Due to the poorly designed surveys, anyone using these data will find that most 
 
 Hence, at the end of the presentation, Dr. Lee's slide stated, "No data, no problem, no action".
 
-
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
 
@@ -175,19 +232,13 @@ Hence, at the end of the presentation, Dr. Lee's slide stated, "No data, no prob
 #| echo: false
 
 exercise_number <- exercise_number + 1
-
 ```
+After learning about this use case, answer the following:
 
-Article I, Section 2 of the Constitution mandates that a census must take place every 10 years in the United States. The data collected by the decennial census determine the number of seats each state has in the U.S. House of Representatives and how to distribute the trillions in federal funds to local communities.
+- What is your reaction to this situation?
+- Can you think of other situations where no data would lead to no action, because there no one knows there is a problem?
 
-As part of the decennial census, people must answer several questions, such as what is their race. How would define your race?
-
-The images below show the race question for the 1990 and 2020 Census questionnaire. Would your definition match what is offered in these questionnaires?
 :::
-
-![1990 Census Race Question](www/images/1990-census-race-question.png){#fig-1990-census-race fig-align="center"}
-
-![2020 Census Race Question](www/images/rsblog-race-hispanic-origin-figure-2.jpg){#fig-2020-census-race fig-align="center"}
 
 ## Week 3 Assignment
 

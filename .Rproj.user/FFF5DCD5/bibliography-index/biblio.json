@@ -162,6 +162,46 @@
             "type": "book"
         },
         {
+            "author": [
+                {
+                    "family": "Schwabish",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Harvey",
+                    "given": "Donovan"
+                },
+                {
+                    "family": "Langness",
+                    "given": "Mel"
+                },
+                {
+                    "family": "Pancini",
+                    "given": "Vincent"
+                },
+                {
+                    "family": "Rogin",
+                    "given": "Amy"
+                },
+                {
+                    "family": "Velasco",
+                    "given": "Gabi"
+                }
+            ],
+            "id": "schwabish2023no",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "publisher": "Urban Institute",
+            "title": "Do no harm guide: Collecting, analyzing, and reporting gender and sexual orientation data",
+            "title-short": "Do no harm guide",
+            "type": "article-journal"
+        },
+        {
             "URL": "https://magazine.amstat.org/blog/2023/11/01/jedi-corner-jsm-session-equity/",
             "author": [
                 {
@@ -179,6 +219,30 @@
                 ]
             },
             "title": "JSM session touches on equity",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://www.urban.org/urban-wire/disaggregating-data-critical-dismantling-model-minority-stereotype",
+            "author": [
+                {
+                    "family": "Sonoda",
+                    "given": "Paige"
+                },
+                {
+                    "family": "Hahn",
+                    "given": "Heather"
+                }
+            ],
+            "id": "sonoda2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "publisher": "Urban Institute",
+            "title": "Disaggregating data is critical to dismantling the model minority stereotype",
             "type": "article-journal"
         }
     ],

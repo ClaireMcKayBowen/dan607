@@ -454,7 +454,7 @@ The header and the text right after are content from the blog, but I added some 
 > It’s standard practice to begin an email by summarizing what happened at a meeting or during a phone conversation, then following on with any “action steps” that emerged. But this makes it easy for the most important information to get lost in the shuffle. By reversing this order – and listing actions steps first and foremost – you keep the attention on the items you want to draw attention to. 
 
 ::: {.callout-note}
-## NSF/NCSES Year 2 Report
+## Invitation to join a new Research Coordination Network
 
 Dear Claire,
 
@@ -468,7 +468,7 @@ If you do have a few moments, I would love to connect – I’d be happy to fit 
 
 Thank you for considering this opportunity to shape the future of privacy and technology. 
 
-Andrew
+Chris
 :::
 
 ### Number your Questions
@@ -476,7 +476,7 @@ Andrew
 > This is Email 101. If you’re not doing it already, it should be standard protocol to break out multiple points or questions as numbered items in all email correspondence. If you don’t, you risk having that customer or client only respond to the first question that happens to catch their eye. (And now you have to write another email to ask them about it again.)
 
 ::: {.callout-note}
-## Privacy and Public Policy Conference update
+## Conference update
 
 Hi all,
 
@@ -484,7 +484,7 @@ The planning committee is back with some updates/questions/comments to share.
 
 **Updates**
 
-1. The conference website is updated to include a schedule page, a registration page, and an updated support page. Please take a look and let us know if any updates are needed. (https://privacypublicpolicy-conference.github.io/website/)
+1. The conference website is updated to include a schedule page, a registration page, and an updated support page. Please take a look and let us know if any updates are needed.
 2. We recommend poster size of 36x48 and we are happy with whatever format the program committee decides on. 
 
 **Questions**
@@ -498,7 +498,7 @@ Thanks and we look forward to hearing your thoughts on the above updates and que
 
 Best,
 
-Monika
+Ava
 :::
 
 ### Make the way forward clear
