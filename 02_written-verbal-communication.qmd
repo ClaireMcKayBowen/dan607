@@ -76,7 +76,7 @@ Thanks,
 Steven
 :::
 
-Here's another example, this time introducing two individuals I know to each other. I've even embedded links to help them learn more about each and their work as well as relevant references.
+Here's another example, this time introducing two individuals I know to each other. I've embedded links to help them learn more about each and their work as well as relevant references.
 
 ::: {.callout-note}
 ## Email to connect two colleagues about the new Do No Harm Guide on SOGI
@@ -171,7 +171,7 @@ Doug
 :::
 
 ## How to say "goodbye"
-For most hello or introduction written and verbal communication, you want to have "next steps", "action items", or some sort of "forward momentum" (as @glickman2011great refers to it). After you achieve your goal of your initial communication (was it a follow-up conversation or completing a task) you should keep the door open in some way.
+For most hello or introduction written and verbal communication, you want to have "next steps", "action items", or some sort of "forward momentum" (as @glickman2011great refers to it). After you achieve your goal of your initial communication (was it a follow-up conversation or completing a task), you should keep the door open in some way.
 
 The goodbye should include these two parts.
 
@@ -182,7 +182,7 @@ The goodbye should include these two parts.
 
 Even if the conversation or interaction wasn't productive or had the desired outcome, it's always important to express gratitude for people's time and effort. Being polite can go a long way.
 
-The following is an email from a colleague who had asked me about how to explain a privacy concept, differential privacy, at a high level for a presentation. Below is his response after I took the time to provide him with a high-level conceptual example. Notice that her thanked me several times throughout the email, which I bold.
+The following is an email from a colleague who had asked me about how to explain a privacy concept, differential privacy, at a high level for a presentation. Below is his response after I took the time to provide him with a high-level conceptual example. Notice that he thanked me several times throughout the email, which I bold.
 
 ::: {.callout-note}
 ## Conceptual question on differential privacy
@@ -197,7 +197,7 @@ The following is an email from a colleague who had asked me about how to explain
 Lance
 :::
 
-The following is an email after I met with someone who recently graduated college and was interested in what it is like to work at the Urban Institute.
+The following next example is an email after I met with someone who recently graduated college and was interested in what it is like to work at the Urban Institute.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -237,7 +237,7 @@ In the following example, staff from the Washington State Department of Health c
 At the end of the 30 minute meeting, the staff thanked me for my time. I then concluded the conversation by extending an invitation for the staff members at the Washington State Department of Health to reach out me at a later time if they had any further questions.
 :::
 
-I met a colleague at a workshop, and we discussed a job posting in his organization and his difficulties finding qualified candidates. I offered to help spread the word if he forwarded me the posting, which is my forward momentum that the colleague seized with sending an email that evening.
+I met a colleague at a workshop, and we discussed a job posting in his organization and his difficulties finding qualified candidates. I offered to help spread the word if he forwarded me the posting, which was my forward momentum. My colleague then seized that momentum with sending an email that evening.
 
 ::: {.callout-note}
 ## Bureau of Justice Statistics job posting
@@ -254,7 +254,7 @@ Kevin
 
 ## Foolproof download
 
-In Glickman describes three broad areas for providing a foolproof download, which is the most common form of communication you'll use to share information with your coworkers and colleagues.
+Glickman describes three broad areas for providing a foolproof download, which is the most common form of professional communication you'll use to share information with your coworkers and colleagues.
 
 1. The status update - sharing information that is new, different, and/or important
 2. The persuasive argument - making the case for someone to take action
@@ -262,7 +262,7 @@ In Glickman describes three broad areas for providing a foolproof download, whic
 
 Similar to the previous section, we will examine the components/recipe for these types of information and provide real examples. When thinking about these types of emails, think of the three C's [@glickman2011great]:
 
-- **Be concise.** No one lies to read a one-page email or listen to four-minute voice mail if he/she/they doesn't have to. Be short and sweet, and to the point.
+- **Be concise.** No one likes to read a one-page email or listen to four-minute voice mail if he/she/they doesn't have to. Be short and sweet, and to the point.
 - **Be clear.** Don't jump around topics or make people guess at your meaning or intentions. Clearly state your position, give the info you need to share, get the buy-in of your audience (if necessary), and move on.
 - **Be consistent.** Using a consistent pattern to relay information will enable you to anticipate follow-up questions and/or think about missing pieces of information before giving someone an update-keeping you one step ahead of the curve.
 
@@ -318,8 +318,7 @@ Please let us know your thoughts! *[next steps]*
 Claire McKay Bowen, PhD
 :::
 
-
-The following is an email from my colleague to our client about updating the bi-weekly check-ins for the ACCESS project.
+The next example is an email from my colleague to our client about updating the bi-weekly check-ins for the ACCESS project.
 
 ::: {.callout-note}
 ## Scheduling check-ins starting in May
@@ -394,7 +393,7 @@ For this type of communication, the second part is highlighting the outstanding 
 2. Outstanding items
 3. Forward momentum
 
-Below is part of an email exchange, where there was confusion about payments for a contract between the American Statistical Association and Urban Institute (my project). In this email, I try to establish what is known, figure out what we are missing, and identify the next steps.
+Below is part of an email exchange, where there was confusion about payments for a contract between the American Statistical Association and Urban Institute (my project). In this email, I try to establish what is known to figure out what we are missing, and identify the next steps.
 
 ::: {.callout-note}
 ## Urban Institute and American Statistical Association contract confusion
@@ -580,7 +579,7 @@ Michael
 Example headers in my inbox (outgoing and incoming):
 
 - Summer 2024 DAN 607: Confirming Student Enrollment
-- Invitation to Speak at Urban on Propensity Score Methods
+- Please approve by 05/28 2pm: Newsletter Blurb 
 - CONTRACT SIGNED 2/16/24, REF: 0219393.000, 003
 - HOLD: SED Syn Focus Group
 

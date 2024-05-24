@@ -3,25 +3,25 @@
     "path": "~/GitHub/dan607/02_written-verbal-communication.qmd",
     "project_path": "02_written-verbal-communication.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "943064748",
     "contents": "",
     "dirty": false,
     "created": 1716498300622.0,
     "source_on_save": false,
-    "relative_order": 4,
+    "relative_order": 3,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "44,55",
-        "scrollLine": "32"
+        "cursorPosition": "618,47",
+        "scrollLine": "602"
     },
     "folds": "",
-    "lastKnownWriteTime": 1716498340,
+    "lastKnownWriteTime": 1716509941,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1716498340061,
+    "last_content_update": 1716509941561,
     "read_only": false,
     "read_only_alternatives": []
 }

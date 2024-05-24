@@ -137,6 +137,29 @@
             "title": "The data revolution: Big data, open data, data infrastructures and their consequences",
             "title-short": "The data revolution",
             "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "D’ignazio",
+                    "given": "Catherine"
+                },
+                {
+                    "family": "Klein",
+                    "given": "Lauren F"
+                }
+            ],
+            "id": "d2023data",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "publisher": "MIT press",
+            "title": "Data feminism",
+            "type": "book"
         }
     ],
     "project_biblios": [

@@ -3,7 +3,7 @@
     "path": "~/GitHub/dan607/references.bib",
     "project_path": "references.bib",
     "type": "text",
-    "hash": "3838492486",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1716430442944.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "1,6",
-        "scrollLine": "0"
+        "cursorPosition": "34,24",
+        "scrollLine": "28"
     },
     "folds": "",
-    "lastKnownWriteTime": 1716430454,
+    "lastKnownWriteTime": 1716510063,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1716430454669,
+    "last_content_update": 1716510063178,
     "read_only": false,
     "read_only_alternatives": []
 }
