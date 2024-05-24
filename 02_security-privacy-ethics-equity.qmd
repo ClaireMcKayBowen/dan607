@@ -16,7 +16,7 @@ exercise_number <- 1
 
 ```
 
-This week we learn what is data security, privacy, ethics, and equity to us and society.
+This week we learn what is data security, privacy, ethics, and equity to us and society within the data life cycle.
 
 ## How well do you know about basic corporate and governmental internet Practices and policies
 
