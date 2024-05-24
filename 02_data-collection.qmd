@@ -22,6 +22,36 @@ We should think about the interactions of this ecosystem the data life cycle in 
 
 ![Key stakeholders in the data ecosystem](www/images/stakeholders.png){#fig-stakeholders fig-align="center"}
 
+::: callout-tip
+### Data Security
+
+**Data Security** is the "...science of methods of protecting computer data and communication systems that apply various types of controls such as cryptography, access control, information flow paths and inference control, including backup and recover" [@denning1982cryptography].
+:::
+
+::: callout-tip
+### Data Privacy
+
+**Data Privacy** is the ability "to determine what information about ourselves we will share with others" [@fellegi1972question]. Data privacy is a broad topic, which includes data security, encryption, access to data, etc. We will not be covering privacy breaches from unauthorized access to a database (e.g., hackers).
+:::
+
+::: callout-tip
+## Confidentiality
+
+**Confidentiality** is "the agreement, explicit or implicit, between data subject and data collector regarding the extent to which access by others to personal information is allowed" [@fienberg2018statistical].
+:::
+
+::: callout-tip
+## Ethics
+
+**Data ethics** is the "...systemizing, defending, and recommending concepts of right and wrong conduct in relation to data, in particular personal data" [@kitchin2014data].
+:::
+
+::: callout-tip
+## Equity
+
+**Data Equity** is data representation, access, process, outcomes, and more
+:::
+
 ## Data types
 There are generally three principal types of qualitative and quantitative data:
 
@@ -55,7 +85,7 @@ exercise_number <- exercise_number + 1
 For each data type:
 
  - What are some other examples?
- - Using those examples, what are the possible security, privacy, ethical, and equity considerations and challenges?
+ - What are the possible security, privacy, ethical, and equity considerations and challenges?
  - If these challenges are not addressed, what are the potential downstream impact?
  
 :::
@@ -80,9 +110,11 @@ We will use the required reading assignment [@schwabish2023no] to facilitate the
 
 exercise_number <- exercise_number + 1
 ```
-There is a glossary at the start of the Do No Harm Guide (DNHG) instead of at the end. Why do you think the authors had the glossary so early in the report?
+There is a glossary at the start of the Do No Harm Guide (DNHG) instead of at the end.
 
-Do think the government, schools, or other organizations that collect data use the same definition when collecting data? What is the impact of not having a standard definition for each stakeholder in the data ecosystem?
+- Why do you think the authors had the glossary so early in the report?
+- Do you think the government, schools, or other organizations that collect data use the same definition when collecting data?
+- What is the impact of not having a standard definition for each stakeholder in the data ecosystem?
  
 :::
 
@@ -139,7 +171,6 @@ The images below show the race question for the 1990 and 2020 Census questionnai
 ![1990 Census Race Question](www/images/1990-census-race-question.png){#fig-1990-census-race fig-align="center"}
 
 ![2020 Census Race Question](www/images/rsblog-race-hispanic-origin-figure-2.jpg){#fig-2020-census-race fig-align="center"}
-
 The nuances of different races is important in some contexts and not in others. For example, the state of Wyoming probably only needs to know the number of Asian Americans (i.e., coarsen all subgroups into the larger group), whereas New York City needs the count of various subgroups, because each subgroup has different poverty rates [@sonoda2023].
 
 ## No data, no problem, no action
@@ -193,11 +224,19 @@ Mimi Ọnụọha says there are many reasons why some potentially important dat
 
 1. Those who have the resources to collect data lack the incentive to (corollary: often those who have access to a dataset are the same ones who have the ability to remove, hide, or obscure it).
 
+> Police brutality towards civilians provides a powerful example. Though policing and crime are among the most data-driven areas of public policy, traditionally there has been little history of standardized and rigorous data collected about police brutality. Nowadays we have a political and cultural climate where this issue has become one of public discussion. Public interest campaigns like Fatal Encounters and the Guardian’s The Counted have helped fill that void. But even for these individuals/organizations, the work is difficult and time-consuming. The group who would make the most sense to monitor this issue—the law enforcement agents who create the data set in the first place—have no incentive to actually gather such data, which could prove incriminating.
+
 2. The data to be collected resist simple quantification (corollary: we prioritize collecting things that fit our modes of collection).
+
+> The defining tension of data collection is the struggle of taking a messy, organic world and defining it in formats that are neat, clean, and structured. Some things are difficult to collect and quantify by nature of their structure. We don't know how much US currency is outside of our borders. There's no incentive for other countries to monitor US currency within their countries, and the very nature of cash and the anonymity it affords makes it difficult to track. But then there are other subjects that resist quantification entirely. Things like emotions are hard to quantify (at this time, at least). Institutional racism is subtle and deniable; it reveals itself more in effects than acts. Not all things are easily quantifiable, and at times the very desire to render the world more abstract, trackable, and machine-readable is an idea that itself deserves questioning.
 
 3. The act of collection involves more work than the benefit the presence of the data is perceived to give.
 
+> Sexual assault and harassment are woefully underreported. And while there are many reasons why this is, one major one is that in many cases the very act of reporting sexual assault is a very intensive, painful, and difficult process. For some, the benefit of reporting isn't perceived to be equal or greater than the cost of the process.
+
 4. There are advantages to nonexistence.
+
+> Every missing dataset is a testament to this fact. Just as the presence of data benefits someone, so too does the absence. This is important to keep in mind. However, there's an even more specific angle to this point. To collect, record, and archive aspects of the world is an intentional act, one that typically benefits those who have the power to decide what should be collected. Often, remaining outside of the bounds of collection can be a form of response for a situationally-disadvantaged group. In short, sometimes a missing dataset can function as a form of protection.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}

@@ -232,11 +232,11 @@ As @glickman2011great states,
 
 There are numerous methods to sustain that momentum or identifying potential next steps. This could be as straightforward as saying, 'I look forward to staying in touch' or suggesting, 'Let's connect on LinkedIn.' The latter is my go to, especially when meeting people at networking events like professional conferences.
 
-In the following example, staff from the Washington State Department of Health contacted me regarding alternative data privacy methods aimed at avoiding the suppression or removal of segments of public health data. The forward momentum is opening the door for further questions.
+In the following example, staff from the a state's Department of Health contacted me regarding alternative data privacy methods aimed at avoiding the suppression or removal of segments of public health data. The forward momentum is opening the door for further questions.
 
 ::: {.callout-note}
-## Virtual meeting with Washington State Department of Health
-At the end of the 30 minute meeting, the staff thanked me for my time. I then concluded the conversation by extending an invitation for the staff members at the Washington State Department of Health to reach out me at a later time if they had any further questions.
+## Virtual meeting with a state's Department of Health 
+At the end of the 30 minute meeting, the staff thanked me for my time. I then concluded the conversation by extending an invitation for the staff members at the state's Department of Health to reach out me at a later time if they had any further questions.
 :::
 
 I met a colleague at a workshop, and we discussed a job posting in his organization and his difficulties finding qualified candidates. I offered to help spread the word if he forwarded me the posting, which was my forward momentum. My colleague then seized that momentum with sending an email that evening.
@@ -285,7 +285,7 @@ Hi Sarah,
 
 I'm reaching out to you to see if would be willing to come to Urban in-person to give a talk. In 2022, lots of people really enjoyed your talk and conversations, so we’d love to have you back. *[punchline]* 
 
-The researchers in the Impact Methods group (Devlin Hanson is the contact person and is cced to this email) and the Statistical Methods Group are hoping that you would teach about use of propensity score methods for impact analysis. Perhaps a talk along the lines of your presentation on the “Why, When, and How of Propensity Score Methods for Causal Effects” (that Doug found online, also cced to the email). The goal would be to give folks a grounding in what PSM is, how it works, when it’s useful vs. a bad idea, things to check to make sure it’s used properly, and pitfalls and potential solutions. Do you have a take on a good length for this workshop/talk? If an hour seems too tight, we’re thinking that 90 minutes would be fine too. If it works for you, we’d also like you to talk with folks before and after your talk. *[key facts]*
+The researchers in the Impact Methods group (Devlin Hanson is the contact person and is cced to this email) and the Statistical Methods Group are hoping that you would teach about use of propensity score methods (PSM) for impact analysis. Perhaps a talk along the lines of your presentation on the “Why, When, and How of PSM for Causal Effects” (that Doug found online, also cced to the email). The goal would be to give folks a grounding in what PSM is, how it works, when it’s useful vs. a bad idea, things to check to make sure it’s used properly, and pitfalls and potential solutions. Do you have a take on a good length for this workshop/talk? If an hour seems too tight, we’re thinking that 90 minutes would be fine too. If it works for you, we’d also like you to talk with folks before and after your talk. *[key facts]*
 
 Is scheduling something between now and June still possible? We’ve got a budget to cover your time as we did before.
 
@@ -302,7 +302,7 @@ After several exchanges, the following is another example of the status update t
 ## Invitation to speak at Urban on propensity score methods (after several more email exchanges)
 Hi Sarah,
 
-Thank you for your patience! After some internal discussion, we were wondering if you would be open to sending a few introduction slides on PSM. These slides would serve as a basis for a pre-session targeted at junior staff and those unfamiliar with propensity score methods (PSM), likely led by Matt at Urban. This pre-session would also help us promote your talk. *[punchline]* 
+Thank you for your patience! After some internal discussion, we were wondering if you would be open to sending a few introduction slides on propensity score methods (PSM). These slides would serve as a basis for a pre-session targeted at junior staff and those unfamiliar with PSM, likely led by Matt at Urban. This pre-session would also help us promote your talk. *[punchline]* 
 
 For the main talk, we propose that you spend 10 to 15 minutes providing an introduction to ensure everyone is aligned on key terminology and concepts before delving into more intermediate topics for the rest of the 90 minutes, followed by advanced topics during the discussion portion. This structure would also allow attendees the option to come back or leave early after the lunch break, depending on their interest on more advance topics. *[key facts]*
 
@@ -320,7 +320,7 @@ Please let us know your thoughts! *[next steps]*
 Claire McKay Bowen, PhD
 :::
 
-The next example is an email from my colleague to our client about updating the bi-weekly check-ins for the ACCESS project.
+The next example is an email from my colleague to our client about updating the bi-weekly check-ins for a project.
 
 ::: {.callout-note}
 ## Scheduling check-ins starting in May
@@ -331,7 +331,7 @@ I hope you are well!
 
 Claire and I have been working on finding a time to schedule our biweekly check-ins later into the spring and summer. *[punchline]*
 
-Currently, we still have meetings on the calendar until April 23rd. It looks like Thursdays from 1-2pm ET starting from May 9th would work best for the ACCESS team. Would you be available during that time frame? Though we hope additional Organization A folks would be able to make that time as well, we thought it most efficient to touch base with you first. *[key facts]*
+Currently, we still have meetings on the calendar until April 23rd. It looks like Thursdays from 1-2pm ET starting from May 9th would work best for the project team. Would you be available during that time frame? Though we hope additional Organization A folks would be able to make that time as well, we thought it most efficient to touch base with you first. *[key facts]*
 
 If that time does not work for you, would you be able to provide some tentative days/times that typically work for you? Please also let us know if you would prefer to keep the current window (Tuesdays from 3-4pm ET). *[next steps]*
 
@@ -422,11 +422,11 @@ For the next email, I reached out to the other principal investigators (or proje
 
 Hi Charles and Adam,
 
-The Infrastructure Team requires additional funds beyond what remains allocated in the Infrastructure Team project code (Funder A Year 2) to cover their time spent presenting the validation server demo to our project group and Funder A. This includes the time needed to create and prepare the presentation. *[punchline]*
+Subteam A requires additional funds beyond what remains allocated in the Subteam A project code (Funder A Year 2) to cover their time spent presenting the tool demo to our project group and Funder A. This includes the time needed to create and prepare the presentation. *[punchline]*
 
-One potential solution I propose is to request those currently charging to the Funder A synthetic data code (a subset of the synthetic data team) to transition to the Sloan code instead. The remaining balance for the Funder A synthetic code stands at $7,472 and would be then used by the Infrastructure Team. To be honest, this would be a good option from an admin standpoint as it would narrow down the number of individuals charging the Funder A code to just the Infrastructure Team (Defining Privacy has stopped charging already) as we wind down towards March 31 (the end of the code). *[outstanding items]*
+One potential solution I propose is to request those currently charging to the Funder A code (a subset of the Subteam C) to transition to the Funder B code instead. The remaining balance for the Funder A code stands at $7,472 and would be then used by Subteam A. To be honest, this would be a good option from an admin standpoint as it would narrow down the number of individuals charging the Funder A code to just the Subteam A (Subteam B has stopped charging already) as we wind down towards March 31 (the end of the code). *[outstanding items]*
 
-If we make this change, the following would be the new code assignments for the Synthetic Data Team until the Funder A Year 3 Codes are activated: 
+If we make this change, the following would be the new code assignments for the Subteam C until the Funder A Year 3 Codes are activated: 
 
 - Funder B - [List of five names]
 - Funder C - [List of six names]
@@ -436,8 +436,6 @@ Please let me know your thoughts on this possible solution. *[next steps]*
 Claire McKay Bowen, PhD
 
 :::
-
-[^NSF]: National Science Foundation.
 
 ## Other email ettiquette tips
 

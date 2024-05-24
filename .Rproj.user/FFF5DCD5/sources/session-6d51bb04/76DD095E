@@ -1,27 +1,27 @@
 {
-    "id": "FEBA519B",
-    "path": "~/GitHub/dan607/02_written-verbal-communication.qmd",
-    "project_path": "02_written-verbal-communication.qmd",
+    "id": "76DD095E",
+    "path": "~/GitHub/dan607/02_security-privacy-ethics-equity.qmd",
+    "project_path": "02_security-privacy-ethics-equity.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1716554434646.0,
+    "created": 1716573532927.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "380,68",
-        "scrollLine": "375"
+        "cursorPosition": "268,0",
+        "scrollLine": "267"
     },
     "folds": "",
-    "lastKnownWriteTime": 1716561426,
+    "lastKnownWriteTime": 1716574615,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1716561426824,
+    "last_content_update": 1716574615054,
     "read_only": false,
     "read_only_alternatives": []
 }
