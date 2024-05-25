@@ -18,7 +18,7 @@ exercise_number <- 1
 
 This week we learn what is data security, privacy, ethics, and equity to us and society within the data life cycle.
 
-## How well do you know about basic corporate and governmental internet Practices and policies
+## How well do you know about basic corporate and governmental internet practices and policies
 
 ### Test your knowledge
 
@@ -35,6 +35,8 @@ Complete this [17 true-or-false question quiz](https://forms.gle/GMfexETbiQejU9E
 
 You will have 6 minutes to complete it (it should take you roughly 3 to 4 minutes).
 :::
+
+![The cover of the Annenberg School for Communication at the University of Pennsylvania report, "American's Can't Consent to Companies' Use of Their Data."](www/images/turow2023americans.png){#fig-bathroom fig-align="center" width=60%}
 
 ::: {.callout-important}
 ## ANSWERS BEYOND THIS POINT!

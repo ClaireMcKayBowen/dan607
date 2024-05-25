@@ -16,12 +16,18 @@ exercise_number <- 1
 
 ```
 
-Our first lesson on professional non-technical skills focuses on written and verbal communication. As a valuable resource, I strongly suggest reading 'Great on the Job' by Jodi Glickman [@glickman2011great]. This book offers excellent insights on improving workplace communication, which I've personally found beneficial in my professional interactions. Many of the tips provided come from my own experiences, insights gained from the book, and advice received from other professionals.
+Our first lesson on professional non-technical skills focuses on written and verbal communication. This is one of the hardest professional skills to learn and master. Even those who have been in their professions for many years that require extensive verbal and written communication often struggle with it.
+
+![Futurama Fry meme with the text, "Not sure if the lack of communication is intentional or if people are genuinely struggling with it."](www/images/not-sure-communication.jpg){#fig-lack-communication fig-align="center"}
+
+As a valuable resource, I strongly suggest reading "Great on the Job" by Jodi Glickman [@glickman2011great]. This book offers excellent insights on improving workplace communication, which I've personally found beneficial in my professional interactions.
+
+Many of the tips on this page come from insights gained from the book, my own experiences, and advice received from other professionals.
 
 :::{.callout-note}
 ### Real-world examples
 
-All examples provided in these callout boxes are written and verbal examples from within the past year (since 2023), with most from this year (2024). Although there is no sensitive information in the emails, I change the names and titles.
+All examples provided in these callout boxes are written and verbal examples from within the past year (since 2023), with most from this year (2024). Although there is no sensitive information in the emails, I change the names, titles, organizations, etc.
 
 :::
 
@@ -29,7 +35,7 @@ All examples provided in these callout boxes are written and verbal examples fro
 
 This is a popular meme, and one I like a lot, that covers all the essential aspects when reaching out to someone for the first time or after a prolonged period.
 
-![One of the most famous quotes from the movie, "The Princess Bride."](www/images/introduction-inigo.gif){#fig-hello fig-align="center"}
+![One of the most famous quotes from the movie, "The Princess Bride," where the Inigo Montoya faces the man who killed his father.](www/images/introduction-inigo.gif){#fig-hello fig-align="center"}
 
 - Be polite
 - Provide your name
@@ -59,7 +65,7 @@ I am Claire Bowen, your instructor for DAN 607: Security, Privacy, and Ethics. I
 [removed rest of the email to focus on the introduction]
 :::
 
-This next example is how a colleague introduced himself to me. Even though we had worked together previously, several months had passed. He didn't presume that I remembered him and made sure to clearly state who he is and our prior connection.
+This next example is how a colleague introduced himself to me. Even though he worked at Urban at the same time I did, several months had passed, and we never worked on a project together. He didn't presume that I remembered him and made sure to clearly state who he is and our prior connection.
 
 ::: {.callout-note}
 ## Email about data sharing
@@ -89,6 +95,8 @@ I would like to introduce you to Naomi Goldberg, the incoming Executive Director
 Naomi, this is [Jon Schwabish](https://www.urban.org/author/jonathan-schwabish), senior fellow in the Income and Benefits Policy Center at the Urban Institute. He is the mastermind on the [Do No Harm Guide project](https://www.urban.org/projects/do-no-harm-project), a series of guides on how researchers and practitioners can better approach their work with a DEI lens.
 
 Please let me know if you need anything else.
+
+Claire
 :::
 
 :::{.callout-important}
@@ -116,7 +124,7 @@ Please let us know of your preferred start time for these sessions, their freque
 
 We look forward to continuing to work with you.
 
-Claire McKay Bowen, PhD
+Claire
 :::
 
 ### Key question
@@ -128,7 +136,9 @@ Make sure to have the specific ask or key question in the verbal or written exch
 - Could you send the document that we discussed at in our check-in meeting last week?
 - I am trying to reach Mike in Accounting. Do you have his contact information?
 
-In the previous example, my key question is what is the preferred start time for the "office hours" or "support sessions" to aid the NSWERS staff.
+![David Rose from the TV Show, Schitt's Creek, asking, "Question."](www/images/question.gif){#fig-question fig-align="center"}
+
+In the previous example, my key question is what is the preferred start time for the "office hours" or "support sessions" to aid the state staff members.
 
 This next example is an email from someone asking me to write a letter of recommendation.
 
@@ -172,6 +182,42 @@ Best,
 Daniel
 :::
 
+### Make requests into questions
+
+In addition to @glickman2011great's structure, frame your requests into questions. Often our first emails to someone new are because we need to ask them something. This is already hard for verbal communication let alone written communication, where tone is hard to convey. If you have a request for someone, rephrase it like a question. It will sound more like the intent (a request) rather than a demand.
+
+::: {.callout-note}
+## Original email
+
+Hi Steve,
+
+I'm Karen, a program manager for the project. Per our meeting, I need you to work with Jeff and Brandon to give me yours' and your team's FTE[^FTE] to finalize the budget. Give me that information by COB[^COB] 5/12.
+
+Karen
+
+::: 
+
+[^FTE]: Full-time equivalent.
+
+[^COB]: Close of business.
+
+The email follows the recommended structure, but the tone is off because the request sounds like a demand. Additionally, Jeff and Brandon, who weren't at the meeting, were CCed in the original email. If the request is phrased as a question and a comment is made about the CCed individuals, the tone will come across much lighter.
+
+![Really, Karen?](www/images/karen.gif){#fig-karen fig-align="center"}
+
+::: {.callout-note}
+## Modified version of the previous email
+
+Hi Steve,
+
+I'm Karen, a program manager for the project. Per our meeting on Tuesday, I need to finalize the project's budget and have a deadline to get completed by 5/20. Would it be possible for you to get me your team's FTE by 5/12?
+
+I've cced Jeff and Brandon for their awareness since I need their rates too.
+
+Karen
+
+::: 
+
 ## How to say "goodbye"
 For most hello or introduction written and verbal communication, you want to have "next steps", "action items", or some sort of "forward momentum" (as @glickman2011great refers to it). After you achieve your goal of your initial communication (was it a follow-up conversation or completing a task), you should keep the door open in some way.
 
@@ -182,7 +228,9 @@ The goodbye should include these two parts.
 
 ### Always thank people for their time
 
-Even if the conversation or interaction wasn't productive or had the desired outcome, it's always important to express gratitude for people's time and effort. Being polite can go a long way.
+Even if the conversation or interaction wasn't productive or had the desired outcome, it's always important to express gratitude for people's time and effort. Being polite can go a long way. Also, people loved being thanked!
+
+![Thank you, thank you, thank you from Ke Huy Quan at the 2024 Oscars](www/images/thank-you-thank-you-thank-you.gif){#fig-thank-you fig-align="center"}
 
 The following is an email from a colleague who had asked me about how to explain a privacy concept, differential privacy, at a high level for a presentation. Below is his response after I took the time to provide him with a high-level conceptual example. Notice that he thanked me several times throughout the email, which I bold.
 
@@ -199,7 +247,36 @@ The following is an email from a colleague who had asked me about how to explain
 John
 :::
 
-The following next example is an email after I met with someone who recently graduated college and was interested in what it is like to work at the Urban Institute.
+### Forward momentum / next steps
+As @glickman2011great states,
+
+> Every conversation presents an opportunity to build upon and expand your network. With each new itneraction, you have an opportunity to establish or build rapport and leverage professional relationships going forward. Building on the "thank you" is where the true skill comes in.
+
+There are numerous methods to sustain that momentum or identifying potential next steps. This could be as straightforward as saying, "I look forward to staying in touch." or suggesting, "Let's connect on LinkedIn." The latter is my go to, especially when meeting people at networking events like professional conferences. It's a low effort way of staying connected in some way.
+
+In the following example, staff from the a state's Department of Health contacted me regarding alternative data privacy methods aimed at avoiding the suppression or removing public health data records. The forward momentum is opening the door for further questions.
+
+::: {.callout-note}
+## Virtual meeting with a state's Department of Health 
+At the end of the 30 minute meeting, the staff thanked me for my time. I then concluded the conversation by extending an invitation for the staff members at the state's Department of Health to reach out me at a later time if they had any further questions. The hope is that they may want to partner on a project on how to safely expand access to their health data for rural communities.
+:::
+
+I met a colleague at a workshop, and we discussed a job posting in his organization and his difficulties finding qualified candidates. I offered to help spread the word if he forwarded me the posting, which was my forward momentum in the in-person exchange. My colleague then seized that forward momentum by sending an email that evening.
+
+::: {.callout-note}
+## Sharing a job posting
+Claire,
+
+It was nice to get a chance to talk to you today. We have extended the posting to Nov. 13, 2023 so if you have places you can circulate the ad, I would be most appreciative. If there are people you think I should reach out to recruit, I’m happy to do so.
+
+LINK
+
+Thanks!
+
+Jules
+:::
+
+The following next example is an email after I conducted an informational interview about Urban Institute with someone who recently graduated college.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -225,34 +302,10 @@ Best,
 Jane
 :::
 
-### Forward momentum / next steps
-As @glickman2011great states,
+Don't fall into the abyss! Try to make sure the new connection remembers you!
 
-> Every conversation presents an opportunity to build upon and expand your network. With each new itneraction, you have an opportunity to establish or build rapport and leverage professional relationships going forward. Building on the "thank you" is where the true skill comes in.
+![Otter Goodbye from Samsung Mobile](www/images/remember-me.gif){#fig-thank-you fig-align="center"}
 
-There are numerous methods to sustain that momentum or identifying potential next steps. This could be as straightforward as saying, 'I look forward to staying in touch' or suggesting, 'Let's connect on LinkedIn.' The latter is my go to, especially when meeting people at networking events like professional conferences.
-
-In the following example, staff from the a state's Department of Health contacted me regarding alternative data privacy methods aimed at avoiding the suppression or removal of segments of public health data. The forward momentum is opening the door for further questions.
-
-::: {.callout-note}
-## Virtual meeting with a state's Department of Health 
-At the end of the 30 minute meeting, the staff thanked me for my time. I then concluded the conversation by extending an invitation for the staff members at the state's Department of Health to reach out me at a later time if they had any further questions.
-:::
-
-I met a colleague at a workshop, and we discussed a job posting in his organization and his difficulties finding qualified candidates. I offered to help spread the word if he forwarded me the posting, which was my forward momentum. My colleague then seized that momentum with sending an email that evening.
-
-::: {.callout-note}
-## Bureau of Justice Statistics job posting
-Claire,
-
-It was nice to get a chance to talk to you today. We have extended the posting to Nov. 13 so if you have places you can circulate the ad, I would be most appreciative. If there are people you think I should reach out to recruit, I’m happy to do so.
-
-https://www.usajobs.gov/job/754828500
-
-Thanks!
-
-Jules
-:::
 
 ## Foolproof download
 
@@ -277,6 +330,8 @@ For status updates, the basics are:
 
 The purpose of this type of communication is to provide new, different, and/or important information. When drafting your email or considering what to say, think about your objective or what you hope to achieve from the conversation.
 
+![Professor Farnsworth, a character on the TV show, "Futurama," saying "Good news, everyone."](www/images/good-news.gif){#fig-good-news fig-align="center"}
+
 In the following example, people at Urban wanted to invite an expert on propensity score methods for causal effects to give a mini training session/course on the topic. Since I have both a professional and personal relationship with this expert, no introduction sentence is necessary.
 
 ::: {.callout-note}
@@ -293,7 +348,7 @@ Please let me know your thoughts on this. *[next steps]*
 
 Looking forward to hearing from you soon and catching up!
 
-Claire McKay Bowen, PhD
+Claire
 :::
 
 After several exchanges, the following is another example of the status update that follows the "punchline", "facts / supporting highlights", and "forward momentum" parts.
@@ -317,7 +372,7 @@ The outline could be:
 
 Please let us know your thoughts! *[next steps]* 
 
-Claire McKay Bowen, PhD
+Claire
 :::
 
 The next example is an email from my colleague to our client about updating the bi-weekly check-ins for a project.
@@ -347,9 +402,13 @@ Similar to the status update, the persuasive argument has making your case as pa
 2. Key facts / supporting highlights
 3. Forward momentum
 
-It's more crucial than ever to clearly state your case or the point you want to make.
+It's more crucial than ever to clearly state your case or the point you want to make. It also doesn't hurt to be overly polite either!
 
-The following example is an exchange with the person who nominated me to be an American Statistical Association Fellow in 2023. Since the nomination failed, I reached out to my colleague about making a case to try again instead of waiting another year.
+Might increase your chances...
+
+![From the Dungeons & Dragons TV show, "Encounter Party!", where someone is saying, "Can I roll persuasion?"](www/images/roll-persuasion.gif){#fig-roll fig-align="center"}
+
+The following example is an exchange with the person who nominated me to be an award in 2023. Since the nomination failed, I reached out to my colleague about making a case to try again instead of waiting another year.
 
 ::: {.callout-note}
 ## Nomination round 2
@@ -358,32 +417,47 @@ Hi Ali,
 
 I hope this message finds you well.
 
-I've been giving some thought to the possibility of making another attempt at the American Statistical Association Fellow nomination, and I wanted to discuss it with you. I think we should try again this year (2024). *[punchline/case]*
+I've been giving some thought to the possibility of making another attempt at the award nomination, and I wanted to discuss it with you. I think we should try again this year (2024). *[punchline/case]*
 
 Trying again wouldn't be as arduous as last time, with only updates/edits needed for the new nomination. The downside is we need to reach out to letter writers again. *[key facts]*
  
 What are your thoughts? *[next steps]*
 
-Claire McKay Bowen, PhD
+Claire
 :::
 
 This next example involves me reaching out to several colleagues to nominate a mutual colleague for an award, which will require several letters of recommendation (good letters take a lot of time to write!).
 
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false 
+
+exercise_number <- exercise_number + 1
+```
+
+What could be done to this email to make it better?
+
+:::
+
 ::: {.callout-note}
-## Nominating Amy for Elizabeth L. Scott Award
+## Nominating Amy for an award
 
 Dear colleagues,
 
-I'm writing to discuss the possibility of nominating Amy for the Elizabeth L. Scott Award, recognizing individuals who have significantly contributed to advancing opportunities for women in statistics. *[punchline/case]*
+I'm writing to discuss the possibility of nominating Amy for THE AWARD, recognizing individuals who have significantly contributed to advancing opportunities for women in statistics. *[punchline/case]*
 
-In addition to her numerous accomplishments for our profession, I have been fortunate to benefit from Amy's mentorship throughout my career. We initially connected at my first Joint Statistical Meetings, where Amy reached out to me afterward to maintain our connection and provide me an opportunity to present at NSF/NCSES[^NCSES]. Since then, we have met at every Joint Statistical Meetings and other events, engaging in discussions on identifying research problems, navigating career transitions, addressing the challenges of the two-body problem, maintaining work-life balance, and more. *[key facts]*
+In addition to her numerous accomplishments for our profession, I have been fortunate to benefit from Amy's mentorship throughout my career. We initially connected at my first Joint Statistical Meetings[^JSM], where Amy reached out to me afterward to maintain our connection and provide me an opportunity to present at NSF/NCSES[^NCSES]. Since then, we have met at every Joint Statistical Meetings and other events, engaging in discussions on identifying research problems, navigating career transitions, addressing the challenges of the two-body problem, maintaining work-life balance, and more. *[key facts]*
 
-Prior to approaching Amy regarding this nomination, I wished to reach out to you—her esteemed colleagues throughout her career—to gauge alignment on whether Amy exemplifies the values and accomplishments akin to Elizabeth L. Scott. I fully acknowledge that I am biased in believing she should be nominated for this award, which is why I am reaching out to you. Should you agree and upon securing Amy's consent for the nomination, would you or someone within your network agree to drafting a letter of recommendation? The application deadline is Dec. 15, and I will ensure timely reminders to facilitate our submission process. *[next steps]*
+Prior to approaching Amy regarding this nomination, I wished to reach out to you—her esteemed colleagues throughout her career—to gauge alignment on whether Amy exemplifies the values and accomplishments akin to THE AWARD. I fully acknowledge that I am biased in believing she should be nominated for this award, which is why I am reaching out to you. Should you agree and upon securing Amy's consent for the nomination, would you or someone within your network agree to drafting a letter of recommendation? The application deadline is Dec. 15, and I will ensure timely reminders to facilitate our submission process. *[next steps]*
 
 Your thoughts and comments are appreciated!
 
-Claire McKay Bowen, PhD
+Claire
 :::
+
+[^JSM]: The [Joint Statistical Meetings](https://www.amstat.org/meetings/joint-statistical-meetings) is the largest gathering of statisticians in the world and hosted in North America.
 
 [^NCSES]: National Science Foundation National Center for Science and Engineering Statistics.
 
@@ -395,7 +469,9 @@ For this type of communication, the second part is highlighting the outstanding 
 2. Outstanding items
 3. Forward momentum
 
-Below is part of an email exchange, where there was confusion about payments for a contract between Organization A and Urban Institute (my project). In this email, I try to establish what is known to figure out what we are missing, and identify the next steps.
+We often need to discuss missing information or identifying next steps for a situation or project. Sometimes, we find ourselves in conversations that have become so convoluted that we have no idea what is going on. If you find yourself in this situation, start from scratch and try to level set for all parties involved.
+
+Below is part of an email exchange, where there was confusion about payments for a contract between Organization A and Urban Institute (my project). In this email, I try to establish what is known to figure out what we are missing and identify the next steps.
 
 ::: {.callout-note}
 ## Contract confusion
@@ -406,40 +482,52 @@ I wanted to touch base and ensure we're on the same page about the contract betw
 
 Attached is the original Urban subgrant agreement, which states two project years: Year 1 spanning from February 2023 to January 2024, and Year 2 spanning from February 2024 to January 2025. According to the agreement, the first payment of \$13,920 was due on February 1, 2023, with the second payment of \$6,960 scheduled for March 1, 2024.
 
-Organization A has already issued the payment for Year 1, and the first email in this email thread contains the invoice Kevin (Urban) sent for Year 2.  *[outstanding items]*
+Organization A has already issued the payment for Year 1, and the first email in this email thread contains the invoice Kevin (Urban) sent for Year 2. *[outstanding items]*
 
 Erin, could you clarify whether your previous email confirms Organization A's intent to pay Year 2? If not, could you and/or Gabe provide an explanation for this decision? *[next steps]*
 
 Thank you for your attention to this matter. I hope this clarifies things.
 
-Claire McKay Bowen, PhD
+Claire
 :::
 
-For the next email, I reached out to the other principal investigators (or project leads) about spending down some project codes (i.e., codes for charging people's time). The outstanding item is how to avoid the overspend, which I propose a potential solution.
+For the next email, I reached out to the staff in charge of travel approvals. I received several notifications about how my travel was approved and then rejected multiple times. I became unsure if my travel was approved or not and if I needed to do anything to help with the process.
+
+![From the movie, "Anchorman," where Ron Burgundy is saying, "That doesn't make any sense."](www/images/that-doesnt-make-any-sense.gif){#fig-sense fig-align="center"}
 
 ::: {.callout-note}
-## Project budget
+## Multiple approval and rejection travel emails
 
-Hi Charles and Adam,
+Hi everyone,
 
-Subteam A requires additional funds beyond what remains allocated in the Subteam A project code (Funder A Year 2) to cover their time spent presenting the tool demo to our project group and Funder A. This includes the time needed to create and prepare the presentation. *[punchline]*
+This is the fifth email I've received today concerning my upcoming trip for the workshop. I'm reaching out because I am confused about the approval status of my trip. *[punchline]*
 
-One potential solution I propose is to request those currently charging to the Funder A code (a subset of the Subteam C) to transition to the Funder B code instead. The remaining balance for the Funder A code stands at $7,472 and would be then used by Subteam A. To be honest, this would be a good option from an admin standpoint as it would narrow down the number of individuals charging the Funder A code to just the Subteam A (Subteam B has stopped charging already) as we wind down towards March 31 (the end of the code). *[outstanding items]*
+It appears that my trip is being approved and then rejected (at least twice?), leaving me unsure about the necessary steps to address this situation. *[outstanding items]*
 
-If we make this change, the following would be the new code assignments for the Subteam C until the Funder A Year 3 Codes are activated: 
+Could someone please provide clarification on what actions I should take to facilitate this process? *[next steps]*
 
-- Funder B - [List of five names]
-- Funder C - [List of six names]
- 
-Please let me know your thoughts on this possible solution. *[next steps]*
+Claire
 
-Claire McKay Bowen, PhD
+:::
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false 
+
+exercise_number <- exercise_number + 1
+```
+
+What is missing from this email based on suggested structure we covered for an introduction email?
 
 :::
 
 ## Other email ettiquette tips
 
 My vice president recently shared this [blog](https://www.behance.net/blog/email-etiquette-for-the-super-busy) by Fred Wilson on general tips for a "less is more" strategy for emails. These tips cover many of the points we've already discussed, but it's good to read or hear them more than once to solidify the ideas.
+
+![Cat typing on a laptop keyboard.](www/images/cat-typing.gif){#fig-cat-typing fig-align="center"}
 
 The header and the text right after are content from the blog, but I added some examples from my work emails.
 
@@ -467,6 +555,7 @@ If you do have a few moments, I would love to connect – I’d be happy to fit 
 Thank you for considering this opportunity to shape the future of privacy and technology. 
 
 Chris
+
 :::
 
 ### Number your Questions
@@ -504,7 +593,7 @@ Ava
 > Emails that offer nothing but a “What do you think about X…?” are generally ineffectual. Always be proactive and take the lead in your communications so that the way forward is completely clear. If you’re proposing a deal, do a bullet‐pointed outline of the parameters from the get‐go. If you want to “run something by” a superior, share your approach and ask them if they agree. They may not, but giving them a starting point, something to react to, is MUCH more likely to get a response than waiting for someone else to make the first move.
 
 ::: {.callout-note}
-## HEADER
+## Project update and questions for next steps
 
 Hi Kim,
 
@@ -516,7 +605,7 @@ If possible, I would like for you to review this document to ensure that I have 
 
 Also, if you have any initial thoughts regarding synthesis considerations, please share them with me.
 
-Claire McKay Bowen, PhD
+Claire
 :::
 
 ### Include Deadlines
@@ -539,10 +628,15 @@ Updated timeline below:
 
 Box Link: LINK
 
-Claire McKay Bowen, PhD
+Claire
 :::
 
 [^EOD]: End of day.
+
+::: {.callout-important}
+I often say, "Everyone loves a deadline," because without a deadline, the next steps or action items after a meeting or discussion tend not to get completed.
+
+:::
 
 ### Use “FYI” for emails that have no actionable information
 
@@ -554,9 +648,11 @@ Claire McKay Bowen, PhD
 ::: {.callout-note}
 ## A forwarded email about a proposal opportunity from the National Science Foundation
 
-Request for solutions on AI dropped! Due May 10.
+RFS[^RFS] on AI[^AI] dropped! Due May 10.
 
 :::
+[^RFS]: Request for solutions.
+[^AI]: Artificial intelligence.
 
 And that's all she (me) wrote!
 
@@ -586,6 +682,9 @@ Example headers in my inbox (outgoing and incoming):
 ### Never send an angry or contentious email
 
 > Email is a severely limited medium when it comes to conveying tone, which is why angry emails are never a good idea. More often than not, they just create more anxiety – and more email. Occasionally, writing an angry email can be therapeutic. If this is the case, write it as a draft to get it off your chest, and then delete the email. When a confrontation is brewing, a conversation in person or on the phone is almost always best. Emails leave too much room for misunderstanding.
+
+
+![Rick, from "Rick and Morty," typing angerly.](www/images/rick-typing.gif){#fig-rick-typing fig-align="center"}
 
 ::: {.callout-important}
 If you are feeling annoyed or upset, delay sending the email. Type it, step away (or sleep on it if time allows), proofread, and then send.

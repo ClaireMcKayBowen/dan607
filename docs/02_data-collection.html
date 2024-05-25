@@ -281,7 +281,10 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#quick-recap" id="toc-quick-recap" class="nav-link active" data-scroll-target="#quick-recap"><span class="header-section-number">4.1</span> Quick recap</a></li>
+  <li><a href="#quick-recap" id="toc-quick-recap" class="nav-link active" data-scroll-target="#quick-recap"><span class="header-section-number">4.1</span> Quick recap</a>
+  <ul class="collapse">
+  <li><a href="#data-stakeholders" id="toc-data-stakeholders" class="nav-link" data-scroll-target="#data-stakeholders"><span class="header-section-number">4.1.1</span> Data stakeholders</a></li>
+  </ul></li>
   <li><a href="#data-types" id="toc-data-types" class="nav-link" data-scroll-target="#data-types"><span class="header-section-number">4.2</span> Data types</a>
   <ul class="collapse">
   <li><a href="#primary-data" id="toc-primary-data" class="nav-link" data-scroll-target="#primary-data"><span class="header-section-number">4.2.1</span> Primary data</a></li>
@@ -330,19 +333,13 @@ div.csl-indent {
 </header>
 
 
+<p>We start with data collection and learn about the different types of data, the importance of how we collect that data, and the issues for society caused by the absence of or poorly designed data collection.</p>
 <section id="quick-recap" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="quick-recap"><span class="header-section-number">4.1</span> Quick recap</h2>
 <p>We should think about the interactions of this ecosystem the data life cycle in the context of security, privacy, ethics, and equity.</p>
-<div id="fig-stakeholders" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-stakeholders-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="www/images/stakeholders.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stakeholders-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.1: Key stakeholders in the data ecosystem
-</figcaption>
-</figure>
-</div>
+<section id="data-stakeholders" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="data-stakeholders"><span class="header-section-number">4.1.1</span> Data stakeholders</h3>
+<p><img src="www/images/stakeholders.png" id="fig-stakeholders" class="img-fluid quarto-figure quarto-figure-center anchored" alt="Key stakeholders in the data ecosystem"> ### Definitions</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -409,6 +406,7 @@ Equity
 </div>
 </div>
 </section>
+</section>
 <section id="data-types" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="data-types"><span class="header-section-number">4.2</span> Data types</h2>
 <p>There are generally three principal types of qualitative and quantitative data:</p>
@@ -451,8 +449,9 @@ Equity
 <section id="discussion-on-do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual-orientation-data" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="discussion-on-do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual-orientation-data"><span class="header-section-number">4.3</span> Discussion on Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data</h2>
 <blockquote class="blockquote">
-<p>If <a href="#equity">equity</a> isn’t considered in the design of the study for that small subgroup, then it’s not the main purpose of the study. Other parts will take priority. Afterall, what was the study designed for? - Saki Kinney, RTI (Research Triangle International)</p>
+<p>If equity isn’t considered in the design of the study for that small subgroup, then it’s not the main purpose of the study. Other parts will take priority. Afterall, what was the study designed for?</p>
 </blockquote>
+<p>~ Saki Kinney, RTI (Research Triangle International)</p>
 <p>This quote from a colleague highlights the importance of how data is collected. If we blindly collect data without careful consideration of the process—such as how we define groups or the methods used for data collection—we could severely and negatively impact those groups when others in the data ecosystem use and analyze that data.</p>
 <p>We will use the required reading assignment <span class="citation" data-cites="schwabish2023no">(<a href="references.html#ref-schwabish2023no" role="doc-biblioref">Schwabish et al. 2023</a>)</span> to facilitate the discussion on the potential security, privacy, ethical, and equity challenges in data collection.</p>
 <section id="defining-groups-is-important" class="level3" data-number="4.3.1">
@@ -542,7 +541,7 @@ The importance of IRB
 <img src="www/images/1990-census-race-question.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1990-census-race-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.2: 1990 Census Race Question
+Figure&nbsp;4.1: 1990 Census Race Question
 </figcaption>
 </figure>
 </div>
@@ -551,6 +550,7 @@ Figure&nbsp;4.2: 1990 Census Race Question
 </section>
 <section id="no-data-no-problem-no-action" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="no-data-no-problem-no-action"><span class="header-section-number">4.4</span> No data, no problem, no action</h2>
+<p>We will cover two sets of use cases where the lack of data or improper data collection negatively impacts downstream data analysis.</p>
 <section id="library-of-missing-datasets" class="level3" data-number="4.4.1">
 <h3 data-number="4.4.1" class="anchored" data-anchor-id="library-of-missing-datasets"><span class="header-section-number">4.4.1</span> Library of Missing Datasets</h3>
 <p>Do you agree or disagree that we should answer the following questions with data?</p>
@@ -635,6 +635,7 @@ Figure&nbsp;4.2: 1990 Census Race Question
 </section>
 <section id="asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english" class="level3" data-number="4.4.2">
 <h3 data-number="4.4.2" class="anchored" data-anchor-id="asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english"><span class="header-section-number">4.4.2</span> Asian Americans are highly educated, born in the U.S., and speak English</h3>
+<p>Not collecting data is one issue. Another, which could be just as or even more detrimental to society, is collecting the wrong kind of data. If we are not careful with how we design data collection, we could create harmful narratives about certain areas of society, especially underrepresented groups.</p>
 <p>An example of this is work done by my colleague, <a href="https://surveydatascience.isr.umich.edu/slee">Dr.&nbsp;Sunghee Lee</a> of the University of Michigan. She presented her in the same conference session as me, where she discussed how incomplete data on Asian-American populations risks fueling a vicious circle of inaction and growing inequality. One of her projects compared the socio-demographics of Asian-American respondents reported in four large-scale sample surveys against the same characteristics collected by the US Census Bureau’s American Community Survey, which is often referred to as the gold standard survey on the United States populations and housing information <span class="citation" data-cites="tarran2023">(<a href="references.html#ref-tarran2023" role="doc-biblioref">Tarran 2023</a>)</span>.</p>
 <p>When comparing these surveys, Dr.&nbsp;Lee found that the four surveys often differed in important respects. For example, Asian Americans accounted for seven percent of adults aged 18 and over in the American Community Survey. In contrast, the General Social Survey and Behavioral Risk Factor Surveillance Survey accounted for only four percent and two percent, respectively. The American Community Survey shows 27 percent of Asian-American respondents are educated to high-school level or below, the equivalent grouping in the Behavioral Risk Factor Surveillance Survey accounted for 18 percent.</p>
 <p>However, none of these surveys, except the American Community Survey, collected data on Asian Americans’ proficiency with spoken English.</p>

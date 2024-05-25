@@ -16,11 +16,16 @@ exercise_number <- 1
 
 ```
 
+We start with data collection and learn about the different types of data, the importance of how we collect that data, and the issues for society caused by the absence of or poorly designed data collection.
+
 ## Quick recap
 
 We should think about the interactions of this ecosystem the data life cycle in the context of security, privacy, ethics, and equity.
 
+### Data stakeholders
+
 ![Key stakeholders in the data ecosystem](www/images/stakeholders.png){#fig-stakeholders fig-align="center"}
+### Definitions
 
 ::: callout-tip
 ### Data Security
@@ -92,7 +97,9 @@ For each data type:
 
 ## Discussion on Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data
 
-> If [equity] isn’t considered in the design of the study for that small subgroup, then it’s not the main purpose of the study. Other parts will take priority. Afterall, what was the study designed for? - Saki Kinney, RTI (Research Triangle International)
+> If equity isn’t considered in the design of the study for that small subgroup, then it’s not the main purpose of the study. Other parts will take priority. Afterall, what was the study designed for?
+
+~ Saki Kinney, RTI (Research Triangle International)
 
 This quote from a colleague highlights the importance of how data is collected. If we blindly collect data without careful consideration of the process—such as how we define groups or the methods used for data collection—we could severely and negatively impact those groups when others in the data ecosystem use and analyze that data.
 
@@ -175,6 +182,8 @@ The nuances of different races is important in some contexts and not in others. 
 
 ## No data, no problem, no action
 
+We will cover two sets of use cases where the lack of data or improper data collection negatively impacts downstream data analysis.
+
 ### Library of Missing Datasets
 
 Do you agree or disagree that we should answer the following questions with data?
@@ -251,6 +260,8 @@ If you could not find a dataset, why do you think that dataset doesn't exist bas
 :::
 
 ### Asian Americans are highly educated, born in the U.S., and speak English
+
+Not collecting data is one issue. Another, which could be just as or even more detrimental to society, is collecting the wrong kind of data. If we are not careful with how we design data collection, we could create harmful narratives about certain areas of society, especially underrepresented groups.
 
 An example of this is work done by my colleague, [Dr. Sunghee Lee](https://surveydatascience.isr.umich.edu/slee) of the University of Michigan. She presented her in the same conference session as me, where she discussed how incomplete data on Asian-American populations risks fueling a vicious circle of inaction and growing inequality. One of her projects compared the socio-demographics of Asian-American respondents reported in four large-scale sample surveys against the same characteristics collected by the US Census Bureau’s American Community Survey, which is often referred to as the gold standard survey on the United States populations and housing information [@tarran2023].
 
