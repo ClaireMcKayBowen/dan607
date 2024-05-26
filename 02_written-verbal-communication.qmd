@@ -437,7 +437,7 @@ This next example involves me reaching out to several colleagues to nominate a m
 exercise_number <- exercise_number + 1
 ```
 
-What could be done to this email to make it better?
+What could be done to make the following email better?
 
 :::
 
@@ -510,26 +510,13 @@ Claire
 
 :::
 
-::: callout
-#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
-
-```{r}
-#| echo: false 
-
-exercise_number <- exercise_number + 1
-```
-
-What is missing from this email based on suggested structure we covered for an introduction email?
-
-:::
-
 ## Other email ettiquette tips
 
 My vice president recently shared this [blog](https://www.behance.net/blog/email-etiquette-for-the-super-busy) by Fred Wilson on general tips for a "less is more" strategy for emails. These tips cover many of the points we've already discussed, but it's good to read or hear them more than once to solidify the ideas.
 
 ![Cat typing on a laptop keyboard.](www/images/cat-typing.gif){#fig-cat-typing fig-align="center"}
 
-The header and the text right after are content from the blog, but I added some examples from my work emails.
+The header and the quoted text right after are content from the blog. I added some examples from my work emails.
 
 ### Be Concise 
 
@@ -702,8 +689,9 @@ She accidentally hit reply all about ordering commencement regalia, and it was s
 
 :::
 
-## Final important tips
-Here are some additional tips!
+## Final important tips and activity
+
+### Additional tips!
 
 - Assume the other person has limited knowledge:
   - Spell out acronyms.
@@ -723,3 +711,18 @@ Here are some additional tips!
 - Phone calls for quick questions and discussions are your friend:
   - For brief questions or discussions, opt for a phone call to minimize miscommunication.
   - Many people are uncomfortable talking to people they don't know. It may be awkward the first few dozen times cold calling a random person, but practice makes perfect and you will find yourself to it!
+  
+### Practice and feedback
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false 
+
+exercise_number <- exercise_number + 1
+```
+
+Write an introduction email to me with information on what other non-technical professional skills you would like to learn during week 5 (June 21) class.
+
+:::

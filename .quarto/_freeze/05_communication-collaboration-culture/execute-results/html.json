@@ -1,8 +1,8 @@
 {
-  "hash": "54a957085bb3748108d131c0ab06ee5b",
+  "hash": "61c8bba15a30eeca6c822506a6e2e0d4",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Communication, Collaboration, and Culture\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added by June 21, 2024.",
+    "markdown": "---\ntitle: \"Communication, Collaboration, and Culture (Or Class Choice)\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added by June 21, 2024.",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

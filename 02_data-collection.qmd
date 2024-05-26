@@ -25,7 +25,8 @@ We should think about the interactions of this ecosystem the data life cycle in 
 ### Data stakeholders
 
 ![Key stakeholders in the data ecosystem](www/images/stakeholders.png){#fig-stakeholders fig-align="center"}
-### Definitions
+
+### Security, privacy, ethics, and equity
 
 ::: callout-tip
 ### Data Security
@@ -103,7 +104,7 @@ For each data type:
 
 This quote from a colleague highlights the importance of how data is collected. If we blindly collect data without careful consideration of the process—such as how we define groups or the methods used for data collection—we could severely and negatively impact those groups when others in the data ecosystem use and analyze that data.
 
-We will use the required reading assignment [@schwabish2023no] to facilitate the discussion on the potential security, privacy, ethical, and equity challenges in data collection.
+The required reading assignment, Do No Harm Guide (DNHG) by @schwabish2023no], covers many data collection challenges and will facilitate our discussion on the potential security, privacy, ethical, and equity issues in data collection.
 
 ### Defining groups is important
 
@@ -117,7 +118,7 @@ We will use the required reading assignment [@schwabish2023no] to facilitate the
 
 exercise_number <- exercise_number + 1
 ```
-There is a glossary at the start of the Do No Harm Guide (DNHG) instead of at the end.
+There is a glossary at the start of the DNHG instead of at the end.
 
 - Why do you think the authors had the glossary so early in the report?
 - Do you think the government, schools, or other organizations that collect data use the same definition when collecting data?
@@ -156,7 +157,7 @@ Any university or research institution-led survey or data collection involving h
 
 > There are two sides to survey data collection: the experience of the participant and the experience of the researcher. Thus, building trust between the participant and the researcher is key to generating high-quality data. Communicating to people why their personal information is necessary and gaining their formal consent can lead to greater collaboration and, ultimately, allow for more inclusive survey methods.
 
-Part 3 of the DNHG reviews various methods for conducting surveys to collect sexual orientation and gender identity (SOGI) information. This highlights the challenge of properly defining groups in a way that is both consistent and inclusive.
+Part 3 of the DNHG reviews various methods for conducting surveys to collect sexual orientation and gender identity information. This highlights the challenge of properly defining groups in a way that is both consistent and inclusive.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -204,6 +205,8 @@ Do you agree or disagree that we should answer the following questions with data
 - How much Spotify pays each of its artists per play of song
 
 What if you were then told that there are no such datasets created or available to answer these questions?
+
+![The image from Mimi Ọnụọha's The Library of Missing Datasets 3.0](www/images/mo_the-library-of-missing-datasetss-v-3.0_01_rt.jpg){#fig-1990-census-race fig-align="center" width=50%}
 
 These questions are part of a mixed-media installation by [Mimi Ọnụọha](https://mimionuoha.com/) called, The Library of Missing Datasets, which is on [version 3.0](https://mimionuoha.com/the-library-of-missing-datasets-v3). This piece is a physical repository of those things that have been excluded in a society where so much is collected.
 
@@ -263,17 +266,29 @@ If you could not find a dataset, why do you think that dataset doesn't exist bas
 
 Not collecting data is one issue. Another, which could be just as or even more detrimental to society, is collecting the wrong kind of data. If we are not careful with how we design data collection, we could create harmful narratives about certain areas of society, especially underrepresented groups.
 
-An example of this is work done by my colleague, [Dr. Sunghee Lee](https://surveydatascience.isr.umich.edu/slee) of the University of Michigan. She presented her in the same conference session as me, where she discussed how incomplete data on Asian-American populations risks fueling a vicious circle of inaction and growing inequality. One of her projects compared the socio-demographics of Asian-American respondents reported in four large-scale sample surveys against the same characteristics collected by the US Census Bureau’s American Community Survey, which is often referred to as the gold standard survey on the United States populations and housing information [@tarran2023].
+An example of this is work done by my colleague, [Dr. Sunghee Lee](https://surveydatascience.isr.umich.edu/slee) of the University of Michigan. She presented her in the same conference session as me, where she discussed how incomplete data on Asian-American populations risks fueling a vicious circle of inaction and growing inequality. One of her projects compared the socio-demographics of Asian-American respondents reported in four large-scale sample surveys against the same characteristics collected by the US Census Bureau’s American Community Survey,[^ACS] which is often referred to as the gold standard survey on the United States populations and housing information [@tarran2023].
 
-When comparing these surveys, Dr. Lee found that the four surveys often differed in important respects. For example, Asian Americans accounted for seven percent of adults aged 18 and over in the American Community Survey. In contrast, the General Social Survey and Behavioral Risk Factor Surveillance Survey accounted for only four percent and two percent, respectively. The American Community Survey shows 27 percent of Asian-American respondents are educated to high-school level or below, the equivalent grouping in the Behavioral Risk Factor Surveillance Survey accounted for 18 percent.
+[^ACS]: "The American Community Survey helps local officials, community leaders, and businesses understand the changes taking place in their communities. It is the premier source for detailed population and housing information about our nation." [U.S. Census Bureau's page on the American Community Survey](https://www.census.gov/programs-surveys/acs).
+
+When comparing these surveys, Dr. Lee found that the four surveys often differed in important respects. For example, Asian Americans accounted for seven percent of adults aged 18 and over in the American Community Survey. In contrast, the General Social Survey[^GSS] and Behavioral Risk Factor Surveillance Survey[^BRFSS] accounted for only four percent and two percent, respectively. The American Community Survey shows 27 percent of Asian-American respondents are educated to high-school level or below, the equivalent grouping in the Behavioral Risk Factor Surveillance Survey accounted for 18 percent.
+
+[^GSS]: "[C]onducted every two years, NORC interviews a representative sample of Americans about a range of topics. The questions address belief in God, confidence in government institutions, race relations, abortion, spending patterns, gun rights, social isolation—even pet ownership." [NORC at the University of Chicago's page on the General Social Survey](https://www.norc.org/research/projects/gss.html).
+
+[^BRFSS]: "The Behavioral Risk Factor Surveillance System (BRFSS) is the nation’s premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services." [U.S. Centers for Disease Control and Prevention's page on the Behavioral Risk Factor Surveillance System](https://www.cdc.gov/brfss/index.html). 
 
 However, none of these surveys, except the American Community Survey, collected data on Asian Americans’ proficiency with spoken English.
 
-According to the American Community Survey, 31 percent of Asian-American adults have "limited English proficiency." Dr. Lee's research found that none of the four selected surveys (General Social Survey and Behavioral Risk Factor Surveillance Survey, plus the Current Population Survey and National Health Interview Survey) offered questionnaires in Asian languages; only English and Spanish.
+According to the American Community Survey, 31 percent of Asian-American adults have "limited English proficiency." Dr. Lee's research found that none of the four selected surveys (General Social Survey and Behavioral Risk Factor Surveillance Survey, plus the Current Population Survey[^CPS] and National Health Interview Survey[^NHIS]) offered questionnaires in Asian languages; only English and Spanish.
+
+[^CPS]: "The Current Population Survey, sponsored jointly by the U.S. Census Bureau and the U.S. Bureau of Labor Statistics, is the primary source of labor force statistics for the population of the United States." [U.S. Census Bureau's page on the Current Population Survey](https://www.census.gov/programs-surveys/cps.html).
+
+[^NHIS]: "The National Health Interview Survey on a broad range of health topics are collected through personal household interviews. Survey results have been instrumental in providing data to track health status, health care access, and progress toward achieving national health objectives." [U.S. Centers for Disease Control and Prevention's page on the National Health Interview Survey](https://www.cdc.gov/nchs/nhis/index.htm). 
 
 Due to the poorly designed surveys, anyone using these data will find that most Asian Americans are born in the US and/or who have high levels of English proficiency, missing the true geographic and ethnic heterogeneity of the Asian American population. This underrepresentation of certain Asian-American subgroups encourages a potential vicious cycle of having no "data-driven" proof to collect such information. This means that issues affecting certain population groups are not identified, meaning no action needs to be taken.
 
 Hence, at the end of the presentation, Dr. Lee's slide stated, "No data, no problem, no action".
+
+![Roll Safe Think About It meme that says, "Can't have any issues, if there is no data."](www/images/no-data.jpg){#fig-no-data fig-align="center"}
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -286,7 +301,7 @@ exercise_number <- exercise_number + 1
 After learning about this use case, answer the following:
 
 - What is your reaction to this situation?
-- Can you think of other situations where no data would lead to no action, because there no one knows there is a problem?
+- Can you think of other situations where a lack of data would lead to no action because no one knows there is a problem?
 
 :::
 
