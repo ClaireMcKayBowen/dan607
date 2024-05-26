@@ -104,7 +104,9 @@ For each data type:
 
 This quote from a colleague highlights the importance of how data is collected. If we blindly collect data without careful consideration of the process—such as how we define groups or the methods used for data collection—we could severely and negatively impact those groups when others in the data ecosystem use and analyze that data.
 
-The required reading assignment, Do No Harm Guide (DNHG) by @schwabish2023no], covers many data collection challenges and will facilitate our discussion on the potential security, privacy, ethical, and equity issues in data collection.
+The required reading assignment, Do No Harm Guide (DNHG) by @schwabish2023no, covers many data collection challenges and will facilitate our discussion on the potential security, privacy, ethical, and equity issues in data collection.
+
+![The cover of the Urban Institute report, "Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data ."](www/images/dnhg-sogi.png){#fig-dnhg-sogi fig-align="center" width=60%}
 
 ### Defining groups is important
 
@@ -178,12 +180,13 @@ The images below show the race question for the 1990 and 2020 Census questionnai
 
 ![1990 Census Race Question](www/images/1990-census-race-question.png){#fig-1990-census-race fig-align="center"}
 
-![2020 Census Race Question](www/images/rsblog-race-hispanic-origin-figure-2.jpg){#fig-2020-census-race fig-align="center"}
+![2020 Census Race Question](www/images/rsblog-race-hispanic-origin-figure-2.jpg){#fig-2020-census-race fig-align="center" width=80%}
+
 The nuances of different races is important in some contexts and not in others. For example, the state of Wyoming probably only needs to know the number of Asian Americans (i.e., coarsen all subgroups into the larger group), whereas New York City needs the count of various subgroups, because each subgroup has different poverty rates [@sonoda2023].
 
 ## No data, no problem, no action
 
-We will cover two sets of use cases where the lack of data or improper data collection negatively impacts downstream data analysis.
+We will cover two real-world example sets where the lack of data or improper data collection negatively impacts downstream data analysis.
 
 ### Library of Missing Datasets
 
@@ -288,7 +291,7 @@ Due to the poorly designed surveys, anyone using these data will find that most 
 
 Hence, at the end of the presentation, Dr. Lee's slide stated, "No data, no problem, no action".
 
-![Roll Safe Think About It meme that says, "Can't have any issues, if there is no data."](www/images/no-data.jpg){#fig-no-data fig-align="center"}
+![Roll Safe Think About It meme that says, "Can't have any issues, if there is no data."](www/images/no-data.jpg){#fig-no-data fig-align="center" width=80%}
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
