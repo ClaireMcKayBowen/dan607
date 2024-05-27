@@ -1,27 +1,27 @@
 {
-    "id": "3289CA77",
-    "path": "~/GitHub/dan607/02_data-collection.qmd",
-    "project_path": "02_data-collection.qmd",
+    "id": "46924CA5",
+    "path": "~/GitHub/dan607/02_written-verbal-communication.qmd",
+    "project_path": "02_written-verbal-communication.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "873675358",
     "contents": "",
     "dirty": false,
-    "created": 1716573538311.0,
+    "created": 1716852017736.0,
     "source_on_save": false,
-    "relative_order": 5,
+    "relative_order": 1,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "184,0",
-        "scrollLine": "183"
+        "cursorPosition": "20,0",
+        "scrollLine": "19"
     },
     "folds": "",
-    "lastKnownWriteTime": 1716688374,
+    "lastKnownWriteTime": 1716853426,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1716688374380,
+    "last_content_update": 1716853426238,
     "read_only": false,
     "read_only_alternatives": []
 }

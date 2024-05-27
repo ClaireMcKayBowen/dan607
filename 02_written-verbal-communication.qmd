@@ -16,9 +16,9 @@ exercise_number <- 1
 
 ```
 
-Our first lesson on professional non-technical skills focuses on written and verbal communication. This is one of the hardest professional skills to learn and master. Even those who have been in their professions for many years that require extensive verbal and written communication often struggle with it.
-
 ![Futurama Fry meme with the text, "Not sure if the lack of communication is intentional or if people are genuinely struggling with it."](www/images/not-sure-communication.jpg){#fig-lack-communication fig-align="center"}
+
+Our first lesson on professional non-technical skills focuses on written and verbal communication. This is one of the hardest professional skills to learn and master. Even those who have been in their professions for many years that require extensive verbal and written communication often struggle with it.
 
 As a valuable resource, I strongly suggest reading "Great on the Job" by Jodi Glickman [@glickman2011great]. This book offers excellent insights on improving workplace communication, which I've personally found beneficial in my professional interactions.
 
@@ -135,8 +135,6 @@ Make sure to have the specific ask or key question in the verbal or written exch
 - Is this a good time to talk about the updates to the performance management process?
 - Could you send the document that we discussed at in our check-in meeting last week?
 - I am trying to reach Mike in Accounting. Do you have his contact information?
-
-![David Rose from the TV Show, Schitt's Creek, asking, "Question."](www/images/question.gif){#fig-question fig-align="center"}
 
 In the previous example, my key question is what is the preferred start time for the "office hours" or "support sessions" to aid the state staff members.
 
@@ -304,7 +302,7 @@ Jane
 
 Don't fall into the abyss! Try to make sure the new connection remembers you!
 
-![Otter Goodbye from Samsung Mobile](www/images/remember-me.gif){#fig-thank-you fig-align="center"}
+![A giant statue of Bender from the TV show, Futurama, with text saying, "Remember me."](www/images/remember-me.jpg){#fig-remember-me fig-align="center"}
 
 
 ## Foolproof download
@@ -330,7 +328,7 @@ For status updates, the basics are:
 
 The purpose of this type of communication is to provide new, different, and/or important information. When drafting your email or considering what to say, think about your objective or what you hope to achieve from the conversation.
 
-![Professor Farnsworth, a character on the TV show, "Futurama," saying "Good news, everyone."](www/images/good-news.gif){#fig-good-news fig-align="center"}
+<!-- ![Professor Farnsworth, a character on the TV show, "Futurama," saying "Good news, everyone."](www/images/good-news.gif){#fig-good-news fig-align="center"} -->
 
 In the following example, people at Urban wanted to invite an expert on propensity score methods for causal effects to give a mini training session/course on the topic. Since I have both a professional and personal relationship with this expert, no introduction sentence is necessary.
 
@@ -493,7 +491,7 @@ Claire
 
 For the next email, I reached out to the staff in charge of travel approvals. I received several notifications about how my travel was approved and then rejected multiple times. I became unsure if my travel was approved or not and if I needed to do anything to help with the process.
 
-![From the movie, "Anchorman," where Ron Burgundy is saying, "That doesn't make any sense."](www/images/that-doesnt-make-any-sense.gif){#fig-sense fig-align="center"}
+<!--![From the movie, "Anchorman," where Ron Burgundy is saying, "That doesn't make any sense."](www/images/that-doesnt-make-any-sense.gif){#fig-sense fig-align="center"}-->
 
 ::: {.callout-note}
 ## Multiple approval and rejection travel emails
