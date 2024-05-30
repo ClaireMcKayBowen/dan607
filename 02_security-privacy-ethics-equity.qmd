@@ -349,3 +349,9 @@ We've just started exploring the world of security, privacy, ethics, and equity.
 - data analysis and dissemination (weeks 4 and 5)
 
 - data destruction or termination (week 6)
+
+::: {.callout-important}
+## No set taxonomony in the field!
+All definitions used (including the data life cycle) are my opinionated definitions. Since many different fields work in data security, privacy, ethics, and equity, there is no standard taxonomy, which causes a lot of confusion. I set a standard definition in all my work, including this course, to ensure we are using the same common language. However, note that when reading other materials or literature, you might encounter conflicting terminology.
+
+::: 

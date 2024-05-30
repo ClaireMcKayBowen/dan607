@@ -18,46 +18,6 @@ exercise_number <- 1
 
 We start with data collection and learn about the different types of data, the importance of how we collect that data, and the issues for society caused by the absence of or poorly designed data collection.
 
-## Quick recap
-
-We should think about the interactions of this ecosystem the data life cycle in the context of security, privacy, ethics, and equity.
-
-### Data stakeholders
-
-![Key stakeholders in the data ecosystem](www/images/stakeholders.png){#fig-stakeholders fig-align="center"}
-
-### Security, privacy, ethics, and equity
-
-::: callout-tip
-### Data Security
-
-**Data Security** is the "...science of methods of protecting computer data and communication systems that apply various types of controls such as cryptography, access control, information flow paths and inference control, including backup and recover" [@denning1982cryptography].
-:::
-
-::: callout-tip
-### Data Privacy
-
-**Data Privacy** is the ability "to determine what information about ourselves we will share with others" [@fellegi1972question]. Data privacy is a broad topic, which includes data security, encryption, access to data, etc. We will not be covering privacy breaches from unauthorized access to a database (e.g., hackers).
-:::
-
-::: callout-tip
-## Confidentiality
-
-**Confidentiality** is "the agreement, explicit or implicit, between data subject and data collector regarding the extent to which access by others to personal information is allowed" [@fienberg2018statistical].
-:::
-
-::: callout-tip
-## Ethics
-
-**Data ethics** is the "...systemizing, defending, and recommending concepts of right and wrong conduct in relation to data, in particular personal data" [@kitchin2014data].
-:::
-
-::: callout-tip
-## Equity
-
-**Data Equity** is data representation, access, process, outcomes, and more
-:::
-
 ## Data types
 There are generally three principal types of qualitative and quantitative data:
 

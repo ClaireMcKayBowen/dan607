@@ -1,0 +1,107 @@
+---
+title: "Data Sharing and Transfer"
+format: 
+  html:
+    toc: true
+    code-line-numbers: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| echo: false
+
+exercise_number <- 1
+
+```
+
+## This part of the course is still under construction! Proceed with caution!
+
+![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align="center" width=80%}
+
+## Importance of sharing data
+
+<!-- - Mandated by law or funding sources -->
+<!--   - data of the people, by the people, for the people -->
+<!-- - Reproducibility -->
+<!-- -  -->
+
+<!-- There are many benefits to data sharing that go beyond replication. Fienberg (1994) argues -->
+<!-- that data sharing: -->
+<!-- - Reinforces open scientific inquiry. When data are widely available, the self-correcting -->
+<!-- features of science work most effectively. -->
+<!-- - Encourages diversity of analysis and opinions. Researchers having access to the same -->
+<!-- data can challenge each other’s analyses and conclusions. -->
+<!-- - Promotes new research and allows for the testing of new or alternative methods. -->
+<!-- Examples of data being used in ways that the original investigators had not envisioned -->
+<!-- are numerous. -->
+<!-- - Improves methods of data collection and measurement through the scrutiny of others. -->
+<!-- Making data publicly available allows the scientific community to reach consensus on -->
+<!-- methods. -->
+
+<!-- - Reduces costs by avoiding duplicate data collection efforts. Some standard datasets, -->
+<!-- such as the General Social Survey and the National Election Studies, have produced -->
+<!-- literally thousands of papers that could not have been possible if the authors had -->
+<!-- to collect their own data. Archiving makes known to the field what data have been -->
+<!-- collected so that additional resources are not spent to gather essentially the same -->
+<!-- information. -->
+<!-- - Provides an important resource for training in research. Secondary data are extremely -->
+<!-- valuable to students, who then have access to high-quality data as a model for their -->
+<!-- own work. -->
+<!-- - Early archiving may enable a researcher to enhance the impact (and certainly the visibility) of -->
+<!-- a project. -->
+
+
+<!-- You can restrict access by limiting the use of confidential variables. For example, if a file is considered confidential because it contains identifying names and addresses, those variables may be removed from the file and replaced with pseudo identifiers. The sanitized file can then be used and shared without risk of violating confidentiality. You can also regulate access restrictions by limiting project team members’ access to specific computer accounts or files. -->
+
+## Secure data access
+
+### Secure enclaves
+
+### Restricted access
+
+Sometimes confidential data will need to be transferred to an external systems for further analysis. The following are two safe options that are standard ensure a secure file transfer: 
+
+- File transfer using secure electronic connections. Most workplaces have Secure File Transfer Protocol (SFTP) servers to allow external parties to exchange data with them through encrypted connections. This also includes encrypted emails, file transfers to file hosting services (e.g., Dropbox), survey tools (e.g., Qualtrics), and other services using browser-based transfers with Transfer Layer Security (TLS).
+- File transfers using compressed (i.e. zipped), encrypted, password protected files to emails where the password is shared by another means by phone or text message and the encryption is FIPS 140-2 complaint, usually AES 128 or AES 256.
+
+::: {.callout-important}
+## DO NOT EMAIL DATA
+
+Do not share data through unencrypted file transfers over the Internet or in the body of, or as an unencrypted attachment to, an unencrypted email. Always consider encrypting the data or using SFTP!
+
+::: 
+
+
+## Public data files and statistics
+
+
+
+
+## Week 4 Assignment
+
+::: {.callout-important}
+## DEADLINE
+Due June 13, at 11:59 PM EDT on Canvas
+::: 
+
+### Read
+
+- Chapter 4: How Do Data Privacy Methods Avoid Invalidating Results?
+- Chapter 5: What Makes Datasets Difficult for Data Privacy?
+
+### Write (600 to 1200 words)
+
+Find a news analysis story[^story] published within the last year (2023 – present) and answer the following questions:
+
+- What does the article claim?
+- Does the content of the article apply to you, your family, and/or your community?
+- What makes you believe the conclusions?
+- Who wrote the article?
+- Where did the article get their facts?
+- What "red flags" (if any) do you notice?
+- Would the story change if there was more or less access to data? What would be that story?
+
+[^story]: "An article written to inform readers about recent events. The author reports and attempts to deepen understanding of recent events—for example, by providing background information and other kinds of additional context." – [CSUSM Library](https://libguides.csusm.edu/news/different_news_types)
+

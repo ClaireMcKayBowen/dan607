@@ -1,9 +1,11 @@
 {
-  "hash": "ff1563f395a59922b91e45f5a2ddb84e",
+  "hash": "5d84225ff4e0d524b64d8816996ac446",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Better Presentations\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added by June 14, 2024.",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Better Presentations\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\n## This part of the course is still under construction! To be added by June 14, 2024. Proceed with caution!\n\n![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align=\"center\" width=80%}",
+    "supporting": [
+      "04_better-presentations_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

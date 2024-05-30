@@ -20,8 +20,9 @@ book:
 
     - part: Data Storage and Sharing
       chapters: 
-        - 03_data-storage-sharing.qmd
+        - 03_data-storage.qmd
         - 03_project-management.qmd
+        - 03_data-sharing-transfer.qmd
 
     - part: Data Analysis and Dissemination Part 1
       chapters: 

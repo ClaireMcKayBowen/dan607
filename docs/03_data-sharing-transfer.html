@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Security, Privacy, and Ethics (+ Equity) - 6&nbsp; Project Management</title>
+<title>Security, Privacy, and Ethics (+ Equity) - 7&nbsp; Data Sharing and Transfer</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./03_data-sharing-transfer.html" rel="next">
-<link href="./03_data-storage.html" rel="prev">
+<link href="./04_data-analysis-dissemination-part1.html" rel="next">
+<link href="./03_project-management.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_data-storage.html">Data Storage and Sharing</a></li><li class="breadcrumb-item"><a href="./03_project-management.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Project Management</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_data-storage.html">Data Storage and Sharing</a></li><li class="breadcrumb-item"><a href="./03_data-sharing-transfer.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -176,13 +176,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_project-management.html" class="sidebar-item-text sidebar-link active">
+  <a href="./03_project-management.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Project Management</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_data-sharing-transfer.html" class="sidebar-item-text sidebar-link">
+  <a href="./03_data-sharing-transfer.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></span></a>
   </div>
 </li>
@@ -267,16 +267,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#this-part-of-the-course-is-still-under-construction-proceed-with-caution" id="toc-this-part-of-the-course-is-still-under-construction-proceed-with-caution" class="nav-link active" data-scroll-target="#this-part-of-the-course-is-still-under-construction-proceed-with-caution"><span class="header-section-number">6.1</span> This part of the course is still under construction! Proceed with caution!</a></li>
+  <li><a href="#this-part-of-the-course-is-still-under-construction-proceed-with-caution" id="toc-this-part-of-the-course-is-still-under-construction-proceed-with-caution" class="nav-link active" data-scroll-target="#this-part-of-the-course-is-still-under-construction-proceed-with-caution"><span class="header-section-number">7.1</span> This part of the course is still under construction! Proceed with caution!</a></li>
+  <li><a href="#importance-of-sharing-data" id="toc-importance-of-sharing-data" class="nav-link" data-scroll-target="#importance-of-sharing-data"><span class="header-section-number">7.2</span> Importance of sharing data</a></li>
+  <li><a href="#secure-data-access" id="toc-secure-data-access" class="nav-link" data-scroll-target="#secure-data-access"><span class="header-section-number">7.3</span> Secure data access</a>
+  <ul class="collapse">
+  <li><a href="#secure-enclaves" id="toc-secure-enclaves" class="nav-link" data-scroll-target="#secure-enclaves"><span class="header-section-number">7.3.1</span> Secure enclaves</a></li>
+  <li><a href="#restricted-access" id="toc-restricted-access" class="nav-link" data-scroll-target="#restricted-access"><span class="header-section-number">7.3.2</span> Restricted access</a></li>
+  </ul></li>
+  <li><a href="#public-data-files-and-statistics" id="toc-public-data-files-and-statistics" class="nav-link" data-scroll-target="#public-data-files-and-statistics"><span class="header-section-number">7.4</span> Public data files and statistics</a></li>
+  <li><a href="#week-4-assignment" id="toc-week-4-assignment" class="nav-link" data-scroll-target="#week-4-assignment"><span class="header-section-number">7.5</span> Week 4 Assignment</a>
+  <ul class="collapse">
+  <li><a href="#read" id="toc-read" class="nav-link" data-scroll-target="#read"><span class="header-section-number">7.5.1</span> Read</a></li>
+  <li><a href="#write-600-to-1200-words" id="toc-write-600-to-1200-words" class="nav-link" data-scroll-target="#write-600-to-1200-words"><span class="header-section-number">7.5.2</span> Write (600 to 1200 words)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_data-storage.html">Data Storage and Sharing</a></li><li class="breadcrumb-item"><a href="./03_project-management.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Project Management</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_data-storage.html">Data Storage and Sharing</a></li><li class="breadcrumb-item"><a href="./03_data-sharing-transfer.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Project Management</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></h1>
 </div>
 
 
@@ -293,20 +305,123 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="this-part-of-the-course-is-still-under-construction-proceed-with-caution" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="this-part-of-the-course-is-still-under-construction-proceed-with-caution"><span class="header-section-number">6.1</span> This part of the course is still under construction! Proceed with caution!</h2>
+<section id="this-part-of-the-course-is-still-under-construction-proceed-with-caution" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="this-part-of-the-course-is-still-under-construction-proceed-with-caution"><span class="header-section-number">7.1</span> This part of the course is still under construction! Proceed with caution!</h2>
 <div id="fig-under-construction" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-under-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/under-construction.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-under-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.1: Webpage under construction!
+Figure&nbsp;7.1: Webpage under construction!
 </figcaption>
 </figure>
 </div>
+</section>
+<section id="importance-of-sharing-data" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="importance-of-sharing-data"><span class="header-section-number">7.2</span> Importance of sharing data</h2>
+<!-- - Mandated by law or funding sources -->
+<!--   - data of the people, by the people, for the people -->
+<!-- - Reproducibility -->
+<!-- -  -->
+<!-- There are many benefits to data sharing that go beyond replication. Fienberg (1994) argues -->
+<!-- that data sharing: -->
+<!-- - Reinforces open scientific inquiry. When data are widely available, the self-correcting -->
+<!-- features of science work most effectively. -->
+<!-- - Encourages diversity of analysis and opinions. Researchers having access to the same -->
+<!-- data can challenge each other’s analyses and conclusions. -->
+<!-- - Promotes new research and allows for the testing of new or alternative methods. -->
+<!-- Examples of data being used in ways that the original investigators had not envisioned -->
+<!-- are numerous. -->
+<!-- - Improves methods of data collection and measurement through the scrutiny of others. -->
+<!-- Making data publicly available allows the scientific community to reach consensus on -->
+<!-- methods. -->
+<!-- - Reduces costs by avoiding duplicate data collection efforts. Some standard datasets, -->
+<!-- such as the General Social Survey and the National Election Studies, have produced -->
+<!-- literally thousands of papers that could not have been possible if the authors had -->
+<!-- to collect their own data. Archiving makes known to the field what data have been -->
+<!-- collected so that additional resources are not spent to gather essentially the same -->
+<!-- information. -->
+<!-- - Provides an important resource for training in research. Secondary data are extremely -->
+<!-- valuable to students, who then have access to high-quality data as a model for their -->
+<!-- own work. -->
+<!-- - Early archiving may enable a researcher to enhance the impact (and certainly the visibility) of -->
+<!-- a project. -->
+<!-- You can restrict access by limiting the use of confidential variables. For example, if a file is considered confidential because it contains identifying names and addresses, those variables may be removed from the file and replaced with pseudo identifiers. The sanitized file can then be used and shared without risk of violating confidentiality. You can also regulate access restrictions by limiting project team members’ access to specific computer accounts or files. -->
+</section>
+<section id="secure-data-access" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="secure-data-access"><span class="header-section-number">7.3</span> Secure data access</h2>
+<section id="secure-enclaves" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="secure-enclaves"><span class="header-section-number">7.3.1</span> Secure enclaves</h3>
+</section>
+<section id="restricted-access" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="restricted-access"><span class="header-section-number">7.3.2</span> Restricted access</h3>
+<p>Sometimes confidential data will need to be transferred to an external systems for further analysis. The following are two safe options that are standard ensure a secure file transfer:</p>
+<ul>
+<li>File transfer using secure electronic connections. Most workplaces have Secure File Transfer Protocol (SFTP) servers to allow external parties to exchange data with them through encrypted connections. This also includes encrypted emails, file transfers to file hosting services (e.g., Dropbox), survey tools (e.g., Qualtrics), and other services using browser-based transfers with Transfer Layer Security (TLS).</li>
+<li>File transfers using compressed (i.e.&nbsp;zipped), encrypted, password protected files to emails where the password is shared by another means by phone or text message and the encryption is FIPS 140-2 complaint, usually AES 128 or AES 256.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+DO NOT EMAIL DATA
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not share data through unencrypted file transfers over the Internet or in the body of, or as an unencrypted attachment to, an unencrypted email. Always consider encrypting the data or using SFTP!</p>
+</div>
+</div>
+</section>
+</section>
+<section id="public-data-files-and-statistics" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="public-data-files-and-statistics"><span class="header-section-number">7.4</span> Public data files and statistics</h2>
+</section>
+<section id="week-4-assignment" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="week-4-assignment"><span class="header-section-number">7.5</span> Week 4 Assignment</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+DEADLINE
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Due June 13, at 11:59 PM EDT on Canvas</p>
+</div>
+</div>
+<section id="read" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="read"><span class="header-section-number">7.5.1</span> Read</h3>
+<ul>
+<li>Chapter 4: How Do Data Privacy Methods Avoid Invalidating Results?</li>
+<li>Chapter 5: What Makes Datasets Difficult for Data Privacy?</li>
+</ul>
+</section>
+<section id="write-600-to-1200-words" class="level3" data-number="7.5.2">
+<h3 data-number="7.5.2" class="anchored" data-anchor-id="write-600-to-1200-words"><span class="header-section-number">7.5.2</span> Write (600 to 1200 words)</h3>
+<p>Find a news analysis story<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> published within the last year (2023 – present) and answer the following questions:</p>
+<ul>
+<li>What does the article claim?</li>
+<li>Does the content of the article apply to you, your family, and/or your community?</li>
+<li>What makes you believe the conclusions?</li>
+<li>Who wrote the article?</li>
+<li>Where did the article get their facts?</li>
+<li>What “red flags” (if any) do you notice?</li>
+<li>Would the story change if there was more or less access to data? What would be that story?</li>
+</ul>
 
 
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>“An article written to inform readers about recent events. The author reports and attempts to deepen understanding of recent events—for example, by providing background information and other kinds of additional context.” – <a href="https://libguides.csusm.edu/news/different_news_types">CSUSM Library</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -721,13 +836,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./03_data-storage.html" class="pagination-link" aria-label="Data Storage">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Storage</span></span>
+      <a href="./03_project-management.html" class="pagination-link" aria-label="Project Management">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Project Management</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./03_data-sharing-transfer.html" class="pagination-link" aria-label="Data Sharing and Transfer">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./04_data-analysis-dissemination-part1.html" class="pagination-link" aria-label="Data Analysis and Dissemination Part 1">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Analysis and Dissemination Part 1</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -1,9 +1,11 @@
 {
-  "hash": "5b726f3534078721667bb359f99277fc",
+  "hash": "c2b30e8c5ba24012a3592f460abc7209",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Data Analysis and Dissemination Part 1\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nTo be added by June 14, 2024.",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Data Analysis and Dissemination Part 1\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\n## This part of the course is still under construction! To be added by June 14, 2024. Proceed with caution!\n\n![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align=\"center\" width=80%}",
+    "supporting": [
+      "04_data-analysis-dissemination-part1_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
