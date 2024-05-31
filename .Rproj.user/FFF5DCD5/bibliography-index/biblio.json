@@ -244,6 +244,166 @@
             "publisher": "Urban Institute",
             "title": "Disaggregating data is critical to dismantling the model minority stereotype",
             "type": "article-journal"
+        },
+        {
+            "URL": "https://www.icpsr.umich.edu/web/pages/deposit/guide/",
+            "author": [
+                {
+                    "family": "ICPSR"
+                }
+            ],
+            "id": "icpsr",
+            "publisher": "Inter-university Consortium for Political; Social Research",
+            "title": "Guide to social science data preparation and archiving: Best practice throughout the data life cycle: 6th edition",
+            "title-short": "Guide to social science data preparation and archiving",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Wilkinson",
+                    "given": "Mark D"
+                },
+                {
+                    "family": "Dumontier",
+                    "given": "Michel"
+                },
+                {
+                    "family": "Aalbersberg",
+                    "given": "IJsbrand Jan"
+                },
+                {
+                    "family": "Appleton",
+                    "given": "Gabrielle"
+                },
+                {
+                    "family": "Axton",
+                    "given": "Myles"
+                },
+                {
+                    "family": "Baak",
+                    "given": "Arie"
+                },
+                {
+                    "family": "Blomberg",
+                    "given": "Niklas"
+                },
+                {
+                    "family": "Boiten",
+                    "given": "Jan-Willem"
+                },
+                {
+                    "dropping-particle": "da",
+                    "family": "Silva Santos",
+                    "given": "Luiz Bonino"
+                },
+                {
+                    "family": "Bourne",
+                    "given": "Philip E"
+                },
+                {
+                    "literal": "others"
+                }
+            ],
+            "container-title": "Scientific data",
+            "id": "wilkinson2016fair",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "1-9",
+            "publisher": "Nature Publishing Group",
+            "title": "The FAIR guiding principles for scientific data management and stewardship",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "URL": "https://www.urban.org/research/publication/explaining-black-white-homeownership-gap-closer-look-disparities-across-local-markets",
+            "author": [
+                {
+                    "family": "Choi",
+                    "given": "Jung Hyun"
+                },
+                {
+                    "family": "McCargo",
+                    "given": "Alanna"
+                },
+                {
+                    "family": "Neal",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Goodman",
+                    "given": "Laurie"
+                },
+                {
+                    "family": "Young",
+                    "given": "Caitlin"
+                }
+            ],
+            "container-title": "Urban Institute",
+            "id": "choi2019explaining",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "title": "Explaining the black-white homeownership gap",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Traub",
+                    "given": "Amy"
+                },
+                {
+                    "family": "McElwee",
+                    "given": "Sean"
+                }
+            ],
+            "container-title": "Washington, DC: Demos",
+            "id": "traub2016bad",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "title": "Bad credit shouldn’t block employment: How to make state bans on employment credit checks more effective",
+            "title-short": "Bad credit shouldn’t block employment",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://www.urban.org/research/publication/ethics-and-empathy-using-imputation-disaggregate-data-racial-equity-case-study-imputing-credit-bureau-data",
+            "author": [
+                {
+                    "family": "Stern",
+                    "given": "Alena"
+                },
+                {
+                    "family": "Narayanan",
+                    "given": "Ajjit"
+                }
+            ],
+            "id": "stern2021ethics",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "publisher": "Urban Institute",
+            "title": "Ethics and empathy in using imputation to disaggregate data for racial equity",
+            "type": "article-journal"
         }
     ],
     "project_biblios": [
