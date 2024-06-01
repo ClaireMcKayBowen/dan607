@@ -369,7 +369,7 @@ More details the better! Imagine what information you would like to know. Some p
 
 4. (Meta)data are registered or indexed in a searchable resource.
 
-Even if the data have identifies and rich metadata, that doesn't guarantee that the data is findable. This is why data curators will often use well-known data repositories to house their data, such as [ICPSR](https://www.icpsr.umich.edu/web/pages/ICPSR/index.html) and [Harvard Dataverse](https://dataverse.harvard.edu/) (Urban has one too called the [Urban Data Catalog](https://datacatalog.urban.org/)!)
+Even if the data have identifies and rich metadata, that doesn't guarantee that the data is findable. This is why data curators will often use well-known data repositories to house their data, such as [ICPSR](https://www.icpsr.umich.edu/web/pages/ICPSR/index.html) and [Harvard Dataverse](https://dataverse.harvard.edu/) (Urban has one too called the [Urban Data Catalog](https://datacatalog.urban.org/)!).
 
 ### Accessible
 
