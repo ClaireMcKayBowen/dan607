@@ -432,12 +432,16 @@ Data reuse is easier when datasets are similar: same type, standardized organiza
 exercise_number <- exercise_number + 1
 ```
 
-Each of you will be assigned a topic based on your last homework assignment (Week 1). Based on that topic, find a dataset that matches that topic from one of these data respositories.
+Each of you will be assigned a topic based on your last homework assignment (Week 1). Based on that topic, find a dataset that matches that topic from a data repository (here are a few you could start your search with).
 
 - [Data.Gov](https://data.gov/)
+- [FiveThirtyEight](https://data.fivethirtyeight.com/)
+- [Financial Times](https://markets.ft.com/data/)
 - [Harvard Dataverse](https://dataverse.harvard.edu/)
 - [ICPSR](https://www.icpsr.umich.edu/web/pages/ICPSR/index.html)
-- [Urban Data Catalog](https://datacatalog.urban.org/)
+- [IMDb Non-Commercial Datasets](https://developer.imdb.com/non-commercial-datasets/)
+- [Mendeley Data](https://data.mendeley.com/)
+- [Natural History Museum Data Portal](https://data.nhm.ac.uk/)
 
 Once you find the dataset, answer the following questions:
 

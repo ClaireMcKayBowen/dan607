@@ -3,7 +3,7 @@
     "path": "~/GitHub/dan607/03_data-storage.qmd",
     "project_path": "03_data-storage.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "101377024",
     "contents": "",
     "dirty": false,
     "created": 1717204246630.0,
@@ -13,15 +13,15 @@
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "17,0",
-        "scrollLine": "8"
+        "cursorPosition": "438,48",
+        "scrollLine": "435"
     },
     "folds": "",
-    "lastKnownWriteTime": 1717211765,
+    "lastKnownWriteTime": 1717212573,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1717211765673,
+    "last_content_update": 1717212573302,
     "read_only": false,
     "read_only_alternatives": []
 }
