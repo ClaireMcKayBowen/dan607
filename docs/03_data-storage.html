@@ -311,6 +311,7 @@ div.csl-indent {
   <li><a href="#accessible" id="toc-accessible" class="nav-link" data-scroll-target="#accessible"><span class="header-section-number">5.4.2</span> Accessible</a></li>
   <li><a href="#interoperable" id="toc-interoperable" class="nav-link" data-scroll-target="#interoperable"><span class="header-section-number">5.4.3</span> Interoperable</a></li>
   <li><a href="#reusable" id="toc-reusable" class="nav-link" data-scroll-target="#reusable"><span class="header-section-number">5.4.4</span> Reusable</a></li>
+  <li><a href="#searching-for-metadata" id="toc-searching-for-metadata" class="nav-link" data-scroll-target="#searching-for-metadata"><span class="header-section-number">5.4.5</span> Searching for metadata</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -337,10 +338,10 @@ div.csl-indent {
 </header>
 
 
-<p>For this week, we learn about how we should properly store confidential or sensitive data and how to share or transfer that data safely.</p>
+<p>For this week, we will learn how to properly store confidential or sensitive data and how to share or transfer that data safely.</p>
 <section id="quick-recap-on-week-2" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="quick-recap-on-week-2"><span class="header-section-number">5.1</span> Quick recap on week 2</h2>
-<p>We should think about the interactions of this ecosystem the data life cycle in the context of security, privacy, ethics, and equity.</p>
+<p>We should consider the interactions within this ecosystem and the data life cycle in the context of security, privacy, ethics, and equity.</p>
 <section id="definitions" class="level3" data-number="5.1.1">
 <h3 data-number="5.1.1" class="anchored" data-anchor-id="definitions"><span class="header-section-number">5.1.1</span> Definitions</h3>
 <div id="fig-stakeholders" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
@@ -451,7 +452,7 @@ Equity
 <p>From Inter-university Consortium for Political and Social Research <span class="citation" data-cites="icpsr">(<a href="references.html#ref-icpsr" role="doc-biblioref">ICPSR, n.d.</a>)</span>, one of the world’s largest data archives of social science data for research and education.</p>
 <section id="more-definitions" class="level3" data-number="5.2.1">
 <h3 data-number="5.2.1" class="anchored" data-anchor-id="more-definitions"><span class="header-section-number">5.2.1</span> More definitions</h3>
-<p>In addition, there are many versions of the data we should define.</p>
+<p>There are many versions of the data we should define.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -495,11 +496,23 @@ Public dataset or statistics
 </div>
 </div>
 <p>Different levels of security and privacy are needed for different versions of the data. We will mostly focus on the confidential and public versions of the data. However, note that the original or raw data must also be securely stored and properly documented for future reference.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+No set taxonomony in the field!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All definitions used (including the data life cycle) are my opinionated definitions. Since many different fields work in data security, privacy, ethics, and equity, there is no standard taxonomy, which causes a lot of confusion. I set a standard definition in all my work, including this course, to ensure we are using the same common language. However, note that when reading other materials or literature, you might encounter conflicting terminology.</p>
+</div>
+</div>
 </section>
 <section id="data-cleaning" class="level3" data-number="5.2.2">
 <h3 data-number="5.2.2" class="anchored" data-anchor-id="data-cleaning"><span class="header-section-number">5.2.2</span> Data cleaning</h3>
-<p>After data collection, the data curator will often need to clean the raw data.</p>
-<p>the data are often messy, inconsistent, and contain missing values, among other issues. Cleaning the data takes up the majority of the time in any data project, from start (data collection) to finish (data dissemination and/or destruction). This important task converts the data into a usable form for others.</p>
+<p>After data collection, the data curator will usually need to clean the raw data, which are often messy, inconsistent, and contain missing values, among other issues. For most projects, cleaning the data takes up the majority of the time in any data project from start (data collection) to finish (data dissemination and/or destruction). This important task converts the data into a usable form for others.</p>
 <p>“Tidy data” tends to have the following features:</p>
 <ol type="1">
 <li>Each variable forms a column.</li>
@@ -516,8 +529,8 @@ Figure&nbsp;5.2: Artwork by Allison Horst.
 </figcaption>
 </figure>
 </div>
-<p>Given the conceptual focus of the course, we will not be doing any exercises involving data cleaning. Instead, we will cover some of the things you should consider if you are ever tasked with data cleaning.</p>
-<p>Everyone has their own way of cleaning data and you will find several sources with different steps to clean data. All these different sources have roughly the same set of steps or aspects to check for when data cleaning, which we will discuss.</p>
+<p>Given the conceptual focus of the course, we will not be doing any exercises involving data cleaning using code. Instead, we will cover the important considerations for data cleaning if you are ever tasked with it.</p>
+<p>Everyone has their own method for cleaning data, and you will find several sources with different steps to follow. However, these various sources generally share a similar set of steps or aspects to check for when cleaning data, which we will discuss.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -567,7 +580,7 @@ Careful about outliers
 <div class="cell">
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
-<caption>Fictious data set of educational attainment.</caption>
+<caption>Fictious dataset of educational attainment.</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Name</th>
@@ -635,7 +648,7 @@ Careful about outliers
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -644,7 +657,7 @@ Possible issues
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li><strong>Inconsistent Name Formats:</strong> Variations in capitalization and punctuation.</li>
@@ -656,7 +669,7 @@ Possible issues
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -665,7 +678,7 @@ Possible cleaning steps
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Standardizing Name Formats:
@@ -758,6 +771,19 @@ Possible cleaning steps
 <p>There is still one <em>potential</em> issue with the data. What is it and can anything be done?</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Survey tests and cognitive interviews
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Prior to launching a survey, most entities should conduct survey tests and/or cognitive interviews to ensure the surveys are easy to understand (avoiding misinterpretations of the questions), can be completed within the suggested time frame, and capture the correct information, among other things.</p>
+</div>
+</div>
 <!-- ::: callout -->
 <!-- #### [Class Activity 3]{style="color:#1696d2;"} -->
 <!-- ```{r} -->
@@ -785,7 +811,7 @@ Possible cleaning steps
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -794,7 +820,7 @@ Open only after discussion
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <blockquote class="blockquote">
 <p>The most widely used method for imputing race and ethnicity on administrative data is Bayesian Improved Surname Geocoding, which the RAND Corporation developed for the US Department of Health and Human Services and which is also used by the Equal Opportunity Employment Commission and the Consumer Financial Protection Bureau (CFPB). The latest method involving this tool, Medicare Bayesian Improved Surname Geocoding 2.0, combines name, administrative data, and census data based on address in a calibrated Bayesian framework (a multinomial logistic regression model) to estimate probabilities by race and ethnicity for each record in a dataset.</p>
@@ -938,6 +964,114 @@ Document, Discover, and Interoperate
 <li><strong>(Meta)data meet domain-relevant community standards.</strong></li>
 </ul>
 <p>Data reuse is easier when datasets are similar: same type, standardized organization, sustainable formats, and common documentation templates. FAIR data should meet these standards to enhance usability. If deviations from standard practices are necessary, reasons should be specified in the metadata. Note that FAIR principles do not address data quality, which depends on the intended application.</p>
+</section>
+<section id="searching-for-metadata" class="level3" data-number="5.4.5">
+<h3 data-number="5.4.5" class="anchored" data-anchor-id="searching-for-metadata"><span class="header-section-number">5.4.5</span> Searching for metadata</h3>
+<p>You will be given 25 to 30 minutes to complete this in-class activity.</p>
+<p>Each of you have been assigned a topic based on your last homework assignment (Week 2) or randomize (see table below).</p>
+<p><strong>Topic assignments:</strong></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Student Last Name</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Black</td>
+<td>International politics</td>
+</tr>
+<tr class="even">
+<td>Boes</td>
+<td>Financial trade</td>
+</tr>
+<tr class="odd">
+<td>Cohen</td>
+<td>High fantasy</td>
+</tr>
+<tr class="even">
+<td>Coleman</td>
+<td>Domestic justice system</td>
+</tr>
+<tr class="odd">
+<td>DeAngelo</td>
+<td>Medical images</td>
+</tr>
+<tr class="even">
+<td>Duff</td>
+<td>Social media images</td>
+</tr>
+<tr class="odd">
+<td>Flynn</td>
+<td>Classical music</td>
+</tr>
+<tr class="even">
+<td>Gomez</td>
+<td>Historical events</td>
+</tr>
+<tr class="odd">
+<td>Keohane</td>
+<td>Digital advertising</td>
+</tr>
+<tr class="even">
+<td>Kiely</td>
+<td>Gambling</td>
+</tr>
+<tr class="odd">
+<td>Larsson</td>
+<td>Forgeries</td>
+</tr>
+<tr class="even">
+<td>Lombardi</td>
+<td>Tracking devices</td>
+</tr>
+<tr class="odd">
+<td>Macro</td>
+<td>Automobiles</td>
+</tr>
+<tr class="even">
+<td>Mathew</td>
+<td>Healthcare facilities</td>
+</tr>
+<tr class="odd">
+<td>Meslin</td>
+<td>Internet searches</td>
+</tr>
+<tr class="even">
+<td>Norton</td>
+<td>Journalism</td>
+</tr>
+<tr class="odd">
+<td>Novakoski</td>
+<td>Phone calls</td>
+</tr>
+<tr class="even">
+<td>Russell</td>
+<td>Domestic politics</td>
+</tr>
+<tr class="odd">
+<td>Schreifels</td>
+<td>Genetics</td>
+</tr>
+<tr class="even">
+<td>Scully</td>
+<td>Mental health</td>
+</tr>
+<tr class="odd">
+<td>Sokolova</td>
+<td>Clothing retail</td>
+</tr>
+<tr class="even">
+<td>Weir</td>
+<td>International education</td>
+</tr>
+<tr class="odd">
+<td>Williams</td>
+<td>Domestic education</td>
+</tr>
+</tbody>
+</table>
 <div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -948,31 +1082,37 @@ Document, Discover, and Interoperate
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Each of you will be assigned a topic based on your last homework assignment (Week 1). Based on that topic, find a dataset that matches that topic from a data repository (here are a few you could start your search with).</p>
+<ol type="1">
+<li><strong>Find a digital object to answer questions:</strong> Based on that topic, find an article, dataset, image, or any digital object that matches or is highly related to that topic from a digital repository that has enough metadata to answer the following <em>at least half</em> the questions.</li>
+</ol>
+<ul>
+<li>What is the title of the digital object?</li>
+<li>Who is the author/creator?</li>
+<li>When was the digital object published?</li>
+<li>What keywords are associated with the digital object?</li>
+<li>What is the abstract or description of the digital object?</li>
+<li>What file formats are available?</li>
+</ul>
+<p>Below are a few repositories you could start your search with, but feel free to use whatever search tools at your disposal (e.g., use your Google-Fu) to find a digital object with reasonable amount of metadata information.</p>
 <ul>
 <li><a href="https://data.gov/">Data.Gov</a></li>
 <li><a href="https://data.fivethirtyeight.com/">FiveThirtyEight</a></li>
+<li><a href="https://figshare.com/">figshare</a></li>
 <li><a href="https://markets.ft.com/data/">Financial Times</a></li>
 <li><a href="https://dataverse.harvard.edu/">Harvard Dataverse</a></li>
 <li><a href="https://www.icpsr.umich.edu/web/pages/ICPSR/index.html">ICPSR</a></li>
 <li><a href="https://developer.imdb.com/non-commercial-datasets/">IMDb Non-Commercial Datasets</a></li>
 <li><a href="https://data.mendeley.com/">Mendeley Data</a></li>
 <li><a href="https://data.nhm.ac.uk/">Natural History Museum Data Portal</a></li>
+<li><a href="https://zenodo.org/">Zenodo</a></li>
 </ul>
-<p>Once you find the dataset, answer the following questions:</p>
+<ol start="2" type="1">
+<li><strong>Assess the metadata quality:</strong> Based on the answers to these questions, how would you assess the data quality? In other words,</li>
+</ol>
 <ul>
-<li>What is the title of the dataset?</li>
-<li>Who is the author/creator?</li>
-<li>When was the dataset published?</li>
-<li>What keywords are associated with the dataset?</li>
-<li>What is the abstract or description of the dataset?</li>
-<li>What file formats are available?</li>
-</ul>
-<p>Based on the answers to these questions, how would you assess the data quality? In other words,</p>
-<ul>
-<li>Is the metadata sufficient to understand the dataset’s content and purpose?</li>
-<li>Are there any missing or unclear metadata elements?</li>
-<li>How could the metadata be improved to enhance the dataset’s usability?</li>
+<li>Is the metadata sufficient to understand the digital object’s content and purpose?</li>
+<li>Are there any missing or unclear metadata elements based on the FAIR principles?</li>
+<li>How could the metadata be improved to enhance the digital object’s usability?</li>
 </ul>
 </div>
 </div>

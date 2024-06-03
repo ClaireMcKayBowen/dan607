@@ -16,11 +16,11 @@ exercise_number <- 1
 
 ```
 
-For this week, we learn about how we should properly store confidential or sensitive data and how to share or transfer that data safely.
+For this week, we will learn how to properly store confidential or sensitive data and how to share or transfer that data safely.
 
 ## Quick recap on week 2
 
-We should think about the interactions of this ecosystem the data life cycle in the context of security, privacy, ethics, and equity.
+We should consider the interactions within this ecosystem and the data life cycle in the context of security, privacy, ethics, and equity.
 
 ### Definitions
 
@@ -86,7 +86,7 @@ From Inter-university Consortium for Political and Social Research [@icpsr], one
 
 ### More definitions
 
-In addition, there are many versions of the data we should define.
+There are many versions of the data we should define.
 
 ::: {.callout-tip}
 ## Original dataset:
@@ -114,11 +114,15 @@ For example, the US Census Bureau's public tables and datasets or the Bureau of 
 
 Different levels of security and privacy are needed for different versions of the data. We will mostly focus on the confidential and public versions of the data. However, note that the original or raw data must also be securely stored and properly documented for future reference.
 
+::: {.callout-important}
+## No set taxonomony in the field!
+All definitions used (including the data life cycle) are my opinionated definitions. Since many different fields work in data security, privacy, ethics, and equity, there is no standard taxonomy, which causes a lot of confusion. I set a standard definition in all my work, including this course, to ensure we are using the same common language. However, note that when reading other materials or literature, you might encounter conflicting terminology.
+
+::: 
+
 ### Data cleaning
 
-After data collection, the data curator will often need to clean the raw data.
-
-the data are often messy, inconsistent, and contain missing values, among other issues. Cleaning the data takes up the majority of the time in any data project, from start (data collection) to finish (data dissemination and/or destruction). This important task converts the data into a usable form for others.
+After data collection, the data curator will usually need to clean the raw data, which are often messy, inconsistent, and contain missing values, among other issues. For most projects, cleaning the data takes up the majority of the time in any data project from start (data collection) to finish (data dissemination and/or destruction). This important task converts the data into a usable form for others.
 
 "Tidy data" tends to have the following features:
 
@@ -128,9 +132,9 @@ the data are often messy, inconsistent, and contain missing values, among other 
 
 ![Artwork by Allison Horst.](www/images/what_is_tidydata.jpeg){#fig-tidydata fig-align="center"}
 
-Given the conceptual focus of the course, we will not be doing any exercises involving data cleaning. Instead, we will cover some of the things you should consider if you are ever tasked with data cleaning.
+Given the conceptual focus of the course, we will not be doing any exercises involving data cleaning using code. Instead, we will cover the important considerations for data cleaning if you are ever tasked with it.
 
-Everyone has their own way of cleaning data and you will find several sources with different steps to clean data. All these different sources have roughly the same set of steps or aspects to check for when data cleaning, which we will discuss.
+Everyone has their own method for cleaning data, and you will find several sources with different steps to follow. However, these various sources generally share a similar set of steps or aspects to check for when cleaning data, which we will discuss.
 
 ::: {.callout-important}
 ## Create backups!
@@ -169,7 +173,7 @@ initial_data <- data.frame(
   Education = c("bachelors", "Master's", "PHD", "bachelors", "high school diploma", "Bachelor's")
 )
 
-knitr::kable(initial_data, caption = "Fictious data set of educational attainment.")
+knitr::kable(initial_data, caption = "Fictious dataset of educational attainment.")
 
 ```
 
@@ -220,8 +224,6 @@ Based on the initial data collection of this raw data:
 
 :::
 
-
-
 ```{r}
 #| echo: false
 
@@ -249,6 +251,13 @@ exercise_number <- exercise_number + 1
 There is still one *potential* issue with the data. What is it and can anything be done?
 
 :::
+
+::: {.callout-important}
+## Survey tests and cognitive interviews
+
+Prior to launching a survey, most entities should conduct survey tests and/or cognitive interviews to ensure the surveys are easy to understand (avoiding misinterpretations of the questions), can be completed within the suggested time frame, and capture the correct information, among other things.
+
+::: 
 
 <!-- ::: callout -->
 <!-- #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"} -->
@@ -422,7 +431,44 @@ Here is a [page](https://choosealicense.com/licenses/) to help choose a license.
   - **(Meta)data meet domain-relevant community standards.**
   
 Data reuse is easier when datasets are similar: same type, standardized organization, sustainable formats, and common documentation templates. FAIR data should meet these standards to enhance usability. If deviations from standard practices are necessary, reasons should be specified in the metadata. Note that FAIR principles do not address data quality, which depends on the intended application.
-  
+
+
+### Searching for metadata
+
+You will be given 25 to 30 minutes to complete this in-class activity.
+
+Each of you have been assigned a topic based on your last homework assignment (Week 2) or randomize (see table below).
+
+**Topic assignments:**
+
+Student Last Name | Topic
+-----|-----
+Black | International politics
+Boes | Financial trade
+Cohen | High fantasy
+Coleman | Domestic justice system
+DeAngelo | Medical images
+Duff | Social media images
+Flynn | Classical music
+Gomez | Historical events
+Keohane | Digital advertising
+Kiely | Gambling
+Larsson | Forgeries
+Lombardi | Tracking devices
+Macro | Automobiles
+Mathew | Healthcare facilities
+Meslin | Internet searches
+Norton | Journalism
+Novakoski | Phone calls
+Russell | Domestic politics
+Schreifels | Genetics
+Scully | Mental health
+Sokolova | Clothing retail
+Weir | International education
+Williams | Domestic education
+
+
+
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
 
@@ -432,33 +478,36 @@ Data reuse is easier when datasets are similar: same type, standardized organiza
 exercise_number <- exercise_number + 1
 ```
 
-Each of you will be assigned a topic based on your last homework assignment (Week 1). Based on that topic, find a dataset that matches that topic from a data repository (here are a few you could start your search with).
+1. **Find a digital object to answer questions:** Based on that topic, find an article, dataset, image, or any digital object that matches or is highly related to that topic from a digital repository that has enough metadata to answer the following *at least half* the questions.
 
-- [Data.Gov](https://data.gov/)
-- [FiveThirtyEight](https://data.fivethirtyeight.com/)
-- [Financial Times](https://markets.ft.com/data/)
-- [Harvard Dataverse](https://dataverse.harvard.edu/)
-- [ICPSR](https://www.icpsr.umich.edu/web/pages/ICPSR/index.html)
-- [IMDb Non-Commercial Datasets](https://developer.imdb.com/non-commercial-datasets/)
-- [Mendeley Data](https://data.mendeley.com/)
-- [Natural History Museum Data Portal](https://data.nhm.ac.uk/)
+  - What is the title of the digital object?
+  - Who is the author/creator?
+  - When was the digital object published?
+  - What keywords are associated with the digital object?
+  - What is the abstract or description of the digital object?
+  - What file formats are available?
 
-Once you find the dataset, answer the following questions:
+Below are a few repositories you could start your search with, but feel free to use whatever search tools at your disposal (e.g., use your Google-Fu) to find a digital object with reasonable amount of metadata information.
 
-- What is the title of the dataset?
-- Who is the author/creator?
-- When was the dataset published?
-- What keywords are associated with the dataset?
-- What is the abstract or description of the dataset?
-- What file formats are available?
+  - [Data.Gov](https://data.gov/)
+  - [FiveThirtyEight](https://data.fivethirtyeight.com/)
+  - [figshare](https://figshare.com/)
+  - [Financial Times](https://markets.ft.com/data/)
+  - [Harvard Dataverse](https://dataverse.harvard.edu/)
+  - [ICPSR](https://www.icpsr.umich.edu/web/pages/ICPSR/index.html)
+  - [IMDb Non-Commercial Datasets](https://developer.imdb.com/non-commercial-datasets/)
+  - [Mendeley Data](https://data.mendeley.com/)
+  - [Natural History Museum Data Portal](https://data.nhm.ac.uk/)
+  - [Zenodo](https://zenodo.org/)
 
-Based on the answers to these questions, how would you assess the data quality? In other words, 
+2. **Assess the metadata quality:** Based on the answers to these questions, how would you assess the data quality? In other words, 
 
-- Is the metadata sufficient to understand the dataset's content and purpose?
-- Are there any missing or unclear metadata elements?
-- How could the metadata be improved to enhance the dataset's usability?
+  - Is the metadata sufficient to understand the digital object's content and purpose?
+  - Are there any missing or unclear metadata elements based on the FAIR principles?
+  - How could the metadata be improved to enhance the digital object's usability?
 
 :::
+
 
 
 
