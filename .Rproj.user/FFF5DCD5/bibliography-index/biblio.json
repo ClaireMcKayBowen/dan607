@@ -3,6 +3,25 @@
         {
             "author": [
                 {
+                    "family": "Bowen",
+                    "given": "Claire McKay"
+                }
+            ],
+            "id": "bowen2021protecting",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "publisher": "Chapman; Hall/CRC",
+            "title": "Protecting your privacy in a data-driven world",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
                     "family": "Glickman",
                     "given": "Jodi"
                 }
@@ -404,6 +423,226 @@
             "publisher": "Urban Institute",
             "title": "Ethics and empathy in using imputation to disaggregate data for racial equity",
             "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Fienberg",
+                    "given": "Stephen E"
+                }
+            ],
+            "container-title": "Annual Review of Public Health",
+            "id": "fienberg1994sharing",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        1994
+                    ]
+                ]
+            },
+            "page": "1-18",
+            "publisher": "Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA",
+            "title": "Sharing statistical data in the biomedical and health sciences: Ethical, institutional, legal, and professional dimensions",
+            "title-short": "Sharing statistical data in the biomedical and health sciences",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bowen",
+                    "given": "Claire McKay"
+                }
+            ],
+            "container-title": "Journal of Economic Perspectives",
+            "id": "bowen2024government",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "181-200",
+            "publisher": "American Economic Association 2014 Broadway, Suite 305, Nashville, TN 37203-2418",
+            "title": "Government data of the people, by the people, for the people: Navigating citizen privacy concerns",
+            "title-short": "Government data of the people, by the people, for the people",
+            "type": "article-journal",
+            "volume": "38"
+        },
+        {
+            "author": [
+                {
+                    "family": "DeBacker",
+                    "given": "Jason"
+                },
+                {
+                    "family": "Evans",
+                    "given": "Richard W"
+                },
+                {
+                    "family": "Phillips",
+                    "given": "Kerk L"
+                }
+            ],
+            "container-title": "Public Finance Review",
+            "id": "debacker2019integrating",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "207-275",
+            "publisher": "SAGE Publications Sage CA: Los Angeles, CA",
+            "title": "Integrating microsimulation models of tax policy into a dge macroeconomic model",
+            "type": "article-journal",
+            "volume": "47"
+        },
+        {
+            "author": [
+                {
+                    "family": "McClelland",
+                    "given": "Robert"
+                },
+                {
+                    "family": "Berger",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "Harris",
+                    "given": "Alyssa"
+                },
+                {
+                    "family": "Lu",
+                    "given": "Chenxi"
+                },
+                {
+                    "family": "Ueyama",
+                    "given": "Kyle"
+                }
+            ],
+            "container-title": "Urban-Brookings Tax Policy Center",
+            "id": "mcclelland2019tcja",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "title": "The tcja: What might have been",
+            "title-short": "The tcja",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bierbrauer",
+                    "given": "Felix J"
+                },
+                {
+                    "family": "Boyer",
+                    "given": "Pierre C"
+                },
+                {
+                    "family": "Peichl",
+                    "given": "Andreas"
+                }
+            ],
+            "container-title": "American Economic Review",
+            "id": "bierbrauer2021politically",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "153-191",
+            "publisher": "American Economic Association 2014 Broadway, Suite 305, Nashville, TN 37203",
+            "title": "Politically feasible reforms of nonlinear tax systems",
+            "type": "article-journal",
+            "volume": "111"
+        },
+        {
+            "author": [
+                {
+                    "family": "Matthews",
+                    "given": "Gregory J"
+                },
+                {
+                    "family": "Harel",
+                    "given": "Ofer"
+                }
+            ],
+            "id": "matthews2011data",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "title": "Data confidentiality: A review of methods for statistical disclosure limitation and methods for assessing privacy",
+            "title-short": "Data confidentiality",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "McKenna",
+                    "given": "L"
+                },
+                {
+                    "family": "Haubach",
+                    "given": "M"
+                }
+            ],
+            "container-title": "Research and Methodology Directorate, US Census Bureau, Washington, DC",
+            "id": "mckenna2019legacy",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "title": "Legacy techniques and current research in disclosure avoidance at the us census bureau",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Hu",
+                    "given": "Jingchen"
+                },
+                {
+                    "family": "Bowen",
+                    "given": "Claire McKay"
+                }
+            ],
+            "container-title": "Wiley Interdisciplinary Reviews: Computational Statistics",
+            "id": "hu2024advancing",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "e1636",
+            "publisher": "Wiley Online Library",
+            "title": "Advancing microdata privacy protection: A review of synthetic data methods",
+            "title-short": "Advancing microdata privacy protection",
+            "type": "article-journal",
+            "volume": "16"
         }
     ],
     "project_biblios": [

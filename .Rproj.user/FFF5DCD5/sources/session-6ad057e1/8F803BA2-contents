@@ -1,0 +1,56 @@
+---
+title: "Miscellaneous Professional Development Tips"
+format: 
+  html:
+    toc: true
+    code-line-numbers: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| echo: false
+
+exercise_number <- 1
+
+```
+
+## This part of the course is still under construction! Proceed with caution!
+
+![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align="center" width=80%}
+
+For this week's discussions on non-technical professional skills, we will review and answer several of the questions and suggestions you provided last week. I noticed there were several quick questions, so I organized this section by broader topics and created content on each specific question or overall concept/skill.
+
+## On the job market
+
+1. How to explore new job opportunities? ("Proper manner of exploring new job opportunities compared to your current job while being respectful of the current employer and not suffer from “the grass is greener in the other yard” syndrome.)
+
+2. How to write a good cover letter?
+
+3. How to interview well?
+
+4. How to negotiate salaries?
+
+## Time management
+
+1. How to stay organized?
+
+2. How to not forget deadlines?
+
+## Difficult conversations
+
+1. How to raise a concern on a certain subject?
+
+2. How to properly disagree appropriately?
+
+3. How to send followup emails on time sensitive items without sounding annoyed or being aggressive?
+
+## Other communication
+
+1. How to leave an appropriate voice mail (e.g., setting up your answering machine)
+
+2. Proper over-the-phone etiquette 
+
+3. Greetings and titles (e.g., Dr.)
+

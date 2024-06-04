@@ -19,3 +19,20 @@ exercise_number <- 1
 ## This part of the course is still under construction! To be added by June 21, 2024. Proceed with caution!
 
 ![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align="center" width=80%}
+
+## Collaboration
+
+1. Slack, Teams, Discord, oh my!
+
+2. Collaboration skills generally
+
+3. Interpersonal skills
+
+4. How to network
+
+5. How to take initiative in decision-making and leadership
+
+6. How to get feedback
+
+
+

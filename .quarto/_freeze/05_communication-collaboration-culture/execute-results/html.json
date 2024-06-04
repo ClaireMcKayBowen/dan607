@@ -1,8 +1,8 @@
 {
-  "hash": "97851dee1168e541bd1d1cd3ea16c625",
+  "hash": "e714b2a747fb8a917b9f6dc087bd155d",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Communication, Collaboration, and Culture (Or Class Choice)\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\n## This part of the course is still under construction! To be added by June 21, 2024. Proceed with caution!\n\n![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align=\"center\" width=80%}",
+    "markdown": "---\ntitle: \"Communication, Collaboration, and Culture (Or Class Choice)\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\n## This part of the course is still under construction! To be added by June 21, 2024. Proceed with caution!\n\n![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align=\"center\" width=80%}\n\n## Collaboration\n\n1. Slack, Teams, Discord, oh my!\n\n2. Collaboration skills generally\n\n3. Interpersonal skills\n\n4. How to network\n\n5. How to take initiative in decision-making and leadership\n\n6. How to get feedback\n\n\n\n",
     "supporting": [
       "05_communication-collaboration-culture_files"
     ],
