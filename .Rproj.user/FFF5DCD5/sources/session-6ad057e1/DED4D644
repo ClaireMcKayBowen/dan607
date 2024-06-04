@@ -1,27 +1,27 @@
 {
-    "id": "1D6D9725",
-    "path": "~/GitHub/dan607/03_data-sharing-transfer.qmd",
-    "project_path": "03_data-sharing-transfer.qmd",
+    "id": "DED4D644",
+    "path": "~/GitHub/dan607/02_security-privacy-ethics-equity.qmd",
+    "project_path": "02_security-privacy-ethics-equity.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1717463678575.0,
+    "created": 1717475179003.0,
     "source_on_save": false,
-    "relative_order": 3,
+    "relative_order": 6,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "139,17",
-        "scrollLine": "129"
+        "cursorPosition": "200,0",
+        "scrollLine": "191"
     },
     "folds": "",
-    "lastKnownWriteTime": 1717475415,
+    "lastKnownWriteTime": 1717194425,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1717475415848,
+    "last_content_update": 1717194425,
     "read_only": false,
     "read_only_alternatives": []
 }

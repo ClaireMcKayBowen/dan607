@@ -74,15 +74,13 @@ The reasons for sharing data applies to sharing code.
 
 ## Secure data access
 
-Over the years, government agencies have been moving slowly toward allowing more data users direct access to the underlying cleaned data,3 under strict controls. 
+Over the years, government agencies have been moving slowly toward allowing more data users direct access to the underlying cleaned data, under strict controls. 
 
 ### Secure enclaves
 
 An example of direct data access is through a secure enclave, such as the Federal Statistical Research Data Centers.[^FSRDC] This secure enclave became available in 1982 (then called the Center for Economic Studies), after data users demanded access to better quality data when the US Census Bureau became more aggressive with its applications of statistical data privacy methods on its data products.
 
 Although more secure facilities are becoming available (for example, the National Science Foundation Secure Data Access Facility[^SDAF]), researchers face several challenges to obtain this direct access. Full access to these data is only available to select government agencies, a limited number of data users working in collaboration with analysts from those agencies, or through highly selective research programs administered by these agencies. Further, data users are often required to be US citizens, undergo lengthy clearance processes to gain direct access (which can take months or years), and submit extensive research proposals.
-
-Another challenge is accessibility to these secure facilities. The 33 Federal Statistical Research Data Centers across the United States may seem like enough to be geographically accessible to most data users. But that is not the case. These data centers are primarily located in places with large academic institutions. For me, living in Santa Fe, New Mexico (the state capital), the closest is a 7.5-hour drive to Boulder, Colorado. Moreover, remote access to these data centers grants access to only a limited selection of confidential data and requires a setup that simulates a secure enclave working station, which may prove challenging for many individuals.
 
 [^FSRDC]: “Federal Statistical Research Data Centers (FSRDCs) are partnerships between federal statistical agencies and leading research institutions. FSRDCs provide secure environments supporting qualified researchers using restricted-access data while protecting respondent confidentiality.” From the U.S. Census Bureau's webpage on [Federal Statistical Research Data Centers](https://www.census.gov/about/adrm/fsrdc.html).
 
@@ -94,7 +92,6 @@ Another challenge is accessibility to these secure facilities. The 33 Federal St
 At the time of publication, the textbook mentions there are 30 Federal Statistical Research Data Centers [@bowen2021protecting]. At the time of this course, there are 33. See the U.S. Census Bureau's webpage on [Federal Statistical Research Data Centers](https://www.census.gov/about/adrm/fsrdc.html) for the number and locations.
 
 ::: 
-
 
 ### Restricted access
 
@@ -112,9 +109,35 @@ Do not share data through unencrypted file transfers over the Internet or in the
 
 You can also restrict access by limiting the use of confidential variables. For example, if a file is considered confidential because it contains identifying names and addresses, those variables may be removed from the file and replaced with pseudo identifiers. The sanitized file can then be used and shared without risk of violating confidentiality. You can also regulate access restrictions by limiting people within your workplace from accessing specific computer accounts or files.
 
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+In an idealized world, trusted researchers and policymakers could have direct or restricted access to the data. However, there are several hurdles. What are some of them?
+
+:::
+
+
+::: {.callout-caution collapse="true"}
+## The challenges with secure or restricted data access
+
+- Eligibility requirements, such as being a U.S. Citizen.
+- Length clearance process to gain access (e.g., months or years)
+- Limited physical access to secure facilities.
+
+The 33 Federal Statistical Research Data Centers across the United States may seem like enough to be geographically accessible to most data users. But that is not the case. These data centers are primarily located in places with large academic institutions. For me, living in Santa Fe, New Mexico (the state capital), the closest is a 7.5-hour drive to Boulder, Colorado. Moreover, remote access to these data centers grants access to only a limited selection of confidential data and requires a setup that simulates a secure enclave working station, which may prove challenging for many individuals.
+
+:::
+
+
 ## Public data files and statistics
 
-The following is largely discussed in @bowen2021protecting and @bowen2024government.
+The following is discussed in @bowen2021protecting and @bowen2024government.
 
 For decades, government agencies produced public use data and statistics. During the pre-computer era in the early to mid-1900s, public use data were available to those who braved the “government documents” section of research libraries or those who physically went to government offices to inspect available files. But government agencies typically reported summary statistics, such as total spending on unemployment insurance and total number of people receiving it. Knowing such information on a county-by-county or metro-area basis did not pose much threat to privacy.
 
