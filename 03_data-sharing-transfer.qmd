@@ -118,7 +118,9 @@ You can also restrict access by limiting the use of confidential variables. For 
 exercise_number <- exercise_number + 1
 ```
 
-In an ideal world, trusted researchers and policymakers could have direct or restricted access to the data. However, several hurdles exist. What are some of them?
+In an ideal world, trusted researchers and policymakers could have direct or restricted access to the data. However, several hurdles exist.
+
+What are some possible hurdles that would prevent someone to gain access?
 
 :::
 
@@ -236,7 +238,12 @@ For more technical details on synthetic data, check out @hu2024advancing.
 exercise_number <- exercise_number + 1
 ```
 
-We learned about several SDC methods. What are the possible ethical and equity considerations when implementing these methods?
+Suppose you are tasked with releasing a public version of a K-12 education dataset. This dataset contains information about all students in a state, specifically their names, ages, genders, home addresses, and standardized test scores.
+
+- What SDC methods would you apply to protect this data?
+- What checks would you make to ensure the dataset is sufficiently protected?
+- How would you ensure the dataset is sufficiently useful?
+- What are the possible ethical and equity considerations when implementing the selected SDC methods?
 
 :::
 
