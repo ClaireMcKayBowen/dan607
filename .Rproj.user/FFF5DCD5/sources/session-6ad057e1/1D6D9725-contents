@@ -118,7 +118,7 @@ You can also restrict access by limiting the use of confidential variables. For 
 exercise_number <- exercise_number + 1
 ```
 
-In an idealized world, trusted researchers and policymakers could have direct or restricted access to the data. However, there are several hurdles. What are some of them?
+In an ideal world, trusted researchers and policymakers could have direct or restricted access to the data. However, several hurdles exist. What are some of them?
 
 :::
 
@@ -133,7 +133,6 @@ In an idealized world, trusted researchers and policymakers could have direct or
 The 33 Federal Statistical Research Data Centers across the United States may seem like enough to be geographically accessible to most data users. But that is not the case. These data centers are primarily located in places with large academic institutions. For me, living in Santa Fe, New Mexico (the state capital), the closest is a 7.5-hour drive to Boulder, Colorado. Moreover, remote access to these data centers grants access to only a limited selection of confidential data and requires a setup that simulates a secure enclave working station, which may prove challenging for many individuals.
 
 :::
-
 
 ## Public data files and statistics
 
@@ -227,6 +226,19 @@ Model-based methods rely on estimating or learning an appropriate model based on
 The use of synthetic data relies heavily on selecting an appropriate model to preserve the data’s statistical features, and this reliance has a few potential drawbacks. One is that the privacy expert must be careful when selecting and using a model that perfectly replicates the confidential data. Some privacy researchers advise splitting the data into multiple parts so that one part can help inform and develop the model while other parts help verify the model’s quality. Another concern is that if privacy expert selects a poor model, the synthetic data will provide improper results for data users. This also means that developing a model to capture every interesting feature in more complex data without recreating the confidential data is extremely difficult.
 
 For more technical details on synthetic data, check out @hu2024advancing.
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+We learned about several SDC methods. What are the possible ethical and equity considerations when implementing these methods?
+
+:::
 
 ## Week 4 Assignment
 
