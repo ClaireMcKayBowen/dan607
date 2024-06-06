@@ -1,27 +1,27 @@
 {
-    "id": "DED4D644",
-    "path": "~/GitHub/dan607/02_security-privacy-ethics-equity.qmd",
-    "project_path": "02_security-privacy-ethics-equity.qmd",
+    "id": "B818A134",
+    "path": "~/GitHub/dan607/05_communication-collaboration-culture.qmd",
+    "project_path": "05_communication-collaboration-culture.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1717475179003.0,
+    "created": 1717648255468.0,
     "source_on_save": false,
     "relative_order": 6,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "200,0",
-        "scrollLine": "191"
+        "cursorPosition": "18,107",
+        "scrollLine": "5"
     },
     "folds": "",
-    "lastKnownWriteTime": 1717194425,
+    "lastKnownWriteTime": 1717649219,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1717194425,
+    "last_content_update": 1717649219801,
     "read_only": false,
     "read_only_alternatives": []
 }
