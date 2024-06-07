@@ -1,27 +1,27 @@
 {
-    "id": "3B3B942F",
-    "path": "~/GitHub/dan607/02_written-verbal-communication.qmd",
-    "project_path": "02_written-verbal-communication.qmd",
+    "id": "01DA0F90",
+    "path": "~/GitHub/dan607/02_security-privacy-ethics-equity.qmd",
+    "project_path": "02_security-privacy-ethics-equity.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1717718759582.0,
+    "created": 1717722238932.0,
     "source_on_save": false,
-    "relative_order": 4,
+    "relative_order": 3,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "37,0",
-        "scrollLine": "29"
+        "cursorPosition": "200,0",
+        "scrollLine": "188"
     },
     "folds": "",
-    "lastKnownWriteTime": 1717039393,
+    "lastKnownWriteTime": 1717194425,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1717039393,
+    "last_content_update": 1717194425,
     "read_only": false,
     "read_only_alternatives": []
 }
