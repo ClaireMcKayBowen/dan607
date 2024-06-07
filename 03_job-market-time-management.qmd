@@ -27,7 +27,9 @@ Please note that what I am suggesting will not work for everyone and is based on
 
 ## On the job market
 
-### How can you explore new job opportunities...
+![Futurama Fry meme with the text, "Not sure if I'm highlighting my strengths and character traits for I'm bragging profusely."](www/images/cover-letter-futurama.jpg){#fig-cover-letter-futurama fig-align="center"}
+
+### How do you explore new job opportunities...
 
 **while being respectful of your current employer and avoiding the "grass is greener" syndrome?**
 
@@ -53,7 +55,9 @@ I once received advice to apply for a job occasionally (e.g., once a year) even 
 
 ### What are the key elements of a good cover letter?
 
-It goes without saying that a good cover letter is customized to the job and highlights how your experiences address the job description. A cover letter typically has the following structure:
+![First World Problems meme that says, "They want a cover letter. Now I can't apply for the job."](www/images/first-world-problems.jpg){#fig-first-world-problems fig-align="center"}
+
+It goes without saying that most people (myself included) do not like writing cover letters. However, a good cover letter is important and should be customized to the job, highlighting how your experiences align with the job description. A cover letter typically has the following structure:
 
   - **Formal greeting:** The greeting is usually to the hiring manager to the hiring committee (if known). If unknown, you can use something generic like "Dear Hiring Manager."
 
@@ -63,7 +67,7 @@ It goes without saying that a good cover letter is customized to the job and hig
   
   > I am excited to apply for the position of [Position Name] at [Company Name] that was posted on [Where You Found the Job Posting]. With my background in [Your Field or Industry] and experience in [Relevant Experience], I am excited about the opportunity to contribute to your team.
   
-  Or you could have the following for the last sentence.
+  - Or you could have the following for the last sentence.
   
   > Please accept this letter and my resume as my application for the position.
   
@@ -95,6 +99,8 @@ This isn't to say you shouldn't use AI. HR and other companies are obviously usi
 
 ### What are some tips for interviewing well?
 
+![Dwight Schrute meme that says, "Am I ready for this interview? False. Is this interview ready for me?"](www/images/interview-office.jpg){#fig-interview fig-align="center"}
+
 Here are some general tips:
 
   - **Research your interviewers (if you know who they are).** They will likely look you up, so it's only fair you do the same. One candidate impressed me by reading a couple of my papers and sharing his thoughts during the interview.
@@ -104,7 +110,9 @@ Here are some general tips:
   - **Research the company** and be ready to explain why you're applying for the role and why you want to work for the company.
 
   - **Dress appropriately and arrive on time** if the interview is in person. For virtual interviews, ensure good sound quality, a suitable background, proper lighting, and a functioning camera. First impressions matter, even on video calls.
-  
+
+![Two people shaking hands from the TV Show, "The Office."](www/images/handshake-office.gif){#fig-handshake fig-align="center"}
+
 ::: {.callout-note}
 ## Practice your handshake
 
@@ -135,7 +143,9 @@ Many employers are obligated to disclose salary ranges, although some ranges may
 
 When presented with a salary offer, whether verbally or written, it's advisable not to immediately accept or reject it. If the offer is verbal, take a moment before responding, expressing gratitude for the offer without revealing your opinion on its adequacy. You should mull over the offer for at least a day, carefully considering the other benefits such as vacation time and healthcare provisions in addition to the compensation.
 
-## Time management
+## Workplace organization
+
+![Gru Plan meme. First panel says, "Make a list of things to do tomorrow." Second panel says, "Set an alarm to hold myself accountable." Third panel says, "Ignore the alarm and spend all day tagging friends in memes." Fourth panel says, "Ignore the alarm and spend all day tagging friends in memes."](www/images/time-management-gru.jpeg){#fig-time-management fig-align="center"}
 
 ### What are effective ways to stay organized?
 

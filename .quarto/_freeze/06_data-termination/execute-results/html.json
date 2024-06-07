@@ -1,11 +1,9 @@
 {
-  "hash": "edf7293fc5f03cd4554092824d7e5b84",
+  "hash": "ad918a656b4e2bdec4545463a6958594",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Data Destruction or Termination\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\n## This part of the course is still under construction! To be added by June 28, 2024. Proceed with caution!\n\n![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align=\"center\" width=80%}",
-    "supporting": [
-      "06_data-termination_files"
-    ],
+    "markdown": "---\ntitle: \"Data Destruction or Termination\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\n## This part of the course is still under construction! To be added by June 28, 2024. Proceed with caution!\n\n![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align=\"center\" width=80%}\n\n![Ron Swanson from the TV Show, \"Parks and Recreation,\" smashing a phone with a hammer on his work desk.](www/images/smash-hammer.gif){#fig-smash-hammer fig-align=\"center\"}\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

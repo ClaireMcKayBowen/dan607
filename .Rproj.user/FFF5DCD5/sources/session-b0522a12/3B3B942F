@@ -1,27 +1,27 @@
 {
-    "id": "B818A134",
-    "path": "~/GitHub/dan607/05_communication-collaboration-culture.qmd",
-    "project_path": "05_communication-collaboration-culture.qmd",
+    "id": "3B3B942F",
+    "path": "~/GitHub/dan607/02_written-verbal-communication.qmd",
+    "project_path": "02_written-verbal-communication.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1717648255468.0,
+    "created": 1717718759582.0,
     "source_on_save": false,
-    "relative_order": 6,
+    "relative_order": 4,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "18,107",
-        "scrollLine": "5"
+        "cursorPosition": "37,0",
+        "scrollLine": "29"
     },
     "folds": "",
-    "lastKnownWriteTime": 1717649219,
+    "lastKnownWriteTime": 1717039393,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1717649219801,
+    "last_content_update": 1717039393,
     "read_only": false,
     "read_only_alternatives": []
 }

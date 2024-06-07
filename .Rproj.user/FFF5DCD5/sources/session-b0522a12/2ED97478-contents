@@ -253,11 +253,12 @@ There is still one *potential* issue with the data. What is it and can anything 
 :::
 
 ::: {.callout-important}
-## Survey tests and cognitive interviews
+## Cognitive testing and questionnaire evaluation
 
-Prior to launching a survey, most entities should conduct survey tests and/or cognitive interviews to ensure the surveys are easy to understand (avoiding misinterpretations of the questions), can be completed within the suggested time frame, and capture the correct information, among other things.
-
+Prior to launching a survey, most entities should conduct cognitive interviews[^COG] and other survey evaulations to ensure the surveys are easy to understand (avoiding misinterpretations of the questions), can be completed within the suggested time frame, and capture the correct information, among other things.
 ::: 
+
+[^COG]: "Cognitive tests, pilot tests, focus groups, and other tools can be used to understand how respondents interpret your questions and instructions, understand the meaning of survey questions, and to write better questions. This type of testing can also evaluate different survey techniques used in the field to increase response or cooperation, and can help you sort out the meaning of survey responses." [Overview of Cognitive Testing and Questionnaire Evaluation ](https://psr.iq.harvard.edu/book/overview-cognitive-testing-and-questionnaire-evaluation).
 
 <!-- ::: callout -->
 <!-- #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"} -->
@@ -315,7 +316,9 @@ Once figuring out how to synchronize them, one best practice for protecting data
 
 ### Virtual data storage
 
-Most universities, privacy companies, government agencies, and other places will maintain confidential disks separate from nonconfidential disks for their system servers. Any confidential data stored on disks should have some sort of encryption system, such as Pretty Good Privacy[^PGP], at the folder level. The confidential disks are backed up via a disk-to-disk on-premises system that securely deletes all backups after six months.
+![One Does Not Simply meme from the movie,"Lord of the Rings," that says, "One Does not Simply Walk Awary and Leave your Computer Unlocked." ](www/images/one-simply-unlocked-computer.jpg){#fig-one-simply-unlocked fig-align="center" width=80%}
+
+Most universities, privacy companies, government agencies, and other places will maintain confidential disks separate from nonconfidential disks for their system servers. Any confidential data stored on disks should have some sort of encryption system, such as Pretty Good Privacy[^PGP], at the folder level.
 
 [^PGP]: "Pretty Good Privacy is an encryption program that provides cryptographic privacy and authentication for data communication." from https://en.wikipedia.org/wiki/Pretty_Good_Privacy
 
@@ -329,6 +332,8 @@ Other good data security practices include:
 - virus and intruder protections
 
 ### Physical data storage
+
+![A scene from the TV Show, "Futurama," with the character Leela is trying to hide papers. The text says, "Too much papers! Not enough hiding plants!](www/images/hiding-plants.jpg){#fig-hiding-plants fig-align="center" width=80%}
 
 If confidential data are stored on a PC, the data should be encrypted or stored on removable storage media that is secured in a locked cabinet when not in use.
 
@@ -367,7 +372,9 @@ Also, check out [GO FAIR](https://www.go-fair.org/fair-principles/), "a bottom-u
 ## Document, Discover, and Interoperate
 [Document, Discover, and Interoperate](https://ddialliance.org/) (DDI) is a standard that follows the FAIR principles and many major data repositories like ICPSR uses DDI!
 
-::: 
+:::
+
+![Charlie Conspiracy meme from the TV Show, "Always Sunny in Philidelphia," that says, "Searching for the right data without a catalog." ](www/images/charlie-metadata.jpg){#fig-charlie-metadata fig-align="center"}
 
 ### Findable
 
@@ -426,7 +433,7 @@ Here is a [page](https://choosealicense.com/licenses/) to help choose a license.
 
   - **(Meta)data are associated with detailed provenance.**
   
-> For others to reuse your data, they should know where the data came from (i.e., clear story of origin/history, see Readability 1), who to cite and/or how you wish to be acknowledged. Include a description of the workflow that led to your data: Who generated or collected it? How has it been processed? Has it been published before? Does it contain data from someone else that you may have transformed or completed? Ideally, this workflow is described in a machine-readable format
+> For others to reuse your data, they should know where the data came from (i.e., clear story of origin/history, see Readability 1), who to cite and/or how you wish to be acknowledged. Include a description of the workflow that led to your data: Who generated or collected it? How has it been processed? Has it been published before? Does it contain data from someone else that you may have transformed or completed? Ideally, this workflow is described in a machine-readable format.
 
   - **(Meta)data meet domain-relevant community standards.**
   
@@ -466,8 +473,6 @@ Scully | Mental health
 Sokolova | Clothing retail
 Weir | International education
 Williams | Domestic education
-
-
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}

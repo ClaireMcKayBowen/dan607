@@ -21,7 +21,7 @@ book:
     - part: Data Storage and Sharing
       chapters: 
         - 03_data-storage.qmd
-        - 03_misc-professional-development.qmd
+        - 03_job-market-time-management.qmd
         - 03_data-sharing-transfer.qmd
 
     - part: Data Analysis and Dissemination Part 1
