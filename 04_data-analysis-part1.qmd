@@ -1,0 +1,85 @@
+---
+title: "Data Analysis: Part 1"
+format: 
+  html:
+    toc: true
+    code-line-numbers: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| echo: false
+
+exercise_number <- 1
+
+```
+
+## This part of the course is still under construction! To be added by June 14, 2024. Proceed with caution!
+
+![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align="center" width=80%}
+
+For this week, we will learn about the privacy, security, ethics, and equity considerations when analyzing data.
+
+## Quick recap on week 3 (with some week 2)
+
+We've discussed several challenges surrounding security, privacy, ethics, and equity in data collection, storage, and sharing.
+
+### Data collection
+
+For data collection, we learned the importance of:
+
+- Deciding whether to collect the data or not.
+- Defining groups and other variables that impacts our communities.
+- Recognizing that a lack of data results in a lack of action.
+
+### Data storage 
+
+We covered the following topics:
+
+  - The overall process and considerations for cleaning data, especially how to handle missing data.
+  - Best practices for virtual and physical storage of data, including the FAIR principles for creating proper metadata.
+  
+Even more defitions...
+
+::: {.callout-tip}
+## Original dataset:
+
+**Original dataset** is the uncleaned, unprotected version of the data.
+
+For example, raw 2020 Decennial Census microdata, which are never publicly released.
+::: 
+
+::: {.callout-tip}
+## Confidential or gold standard dataset
+
+**Confidential or gold standard dataset** is the cleaned version (meaning edited for inaccuracies or inconsistencies) of the data; often referred to as the gold standard or actual data for analysis. 
+
+For example, the Census Edited File that is the final confidential data for the 2020 Census. This dataset is never publicly released but may be made available to others who are sworn to protect confidentiality (i.e., Special Sworn Status) and who are provided access in a secure environment, such as a Federal Statistical Research Data Center.
+::: 
+
+::: {.callout-tip}
+## Public dataset or statistics
+
+**Public dataset** is the publicly released version of the confidential data.
+
+For example, the US Census Bureau's public tables and datasets or the Bureau of Labor Statistics reporting the unemployment rate statistics.
+::: 
+
+### Data sharing and transfer
+
+We also learned about the two general ways people access data:
+
+1. Secure Data Access
+    - Pros: Very secure, provides access to confidential data.
+    - Cons: Inaccessible to most people.
+2. Public Data Files and Statistics
+    - Pros: Accessible to anyone.
+    - Cons: Altered for privacy, which may reduce accuracy for specific applications and may not always be properly protected.
+
+## Privacy-Utility Tradeoff
+
+### What is privacy?
+
+### What is utility?

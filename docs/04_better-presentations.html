@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./05_data-analysis-dissemination-part2.html" rel="next">
-<link href="./04_data-analysis-dissemination-part1.html" rel="prev">
+<link href="./04_data-analysis-part2.html" rel="next">
+<link href="./04_data-analysis-part1.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -82,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04_data-analysis-dissemination-part1.html">Data Analysis and Dissemination Part 1</a></li><li class="breadcrumb-item"><a href="./04_better-presentations.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Better Presentations</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04_data-analysis-part1.html">Data Analysis</a></li><li class="breadcrumb-item"><a href="./04_better-presentations.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Better Presentations</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -191,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
- <span class="menu-text">Data Analysis and Dissemination Part 1</span></a>
+ <span class="menu-text">Data Analysis</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -199,8 +233,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_data-analysis-dissemination-part1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Analysis and Dissemination Part 1</span></span></a>
+  <a href="./04_data-analysis-part1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Analysis: Part 1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -209,12 +243,18 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Better Presentations</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_data-analysis-part2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Data Analysis: Part 2</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
- <span class="menu-text">Data Analysis and Dissemination Part 2</span></a>
+ <span class="menu-text">Data Dissemination</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -222,14 +262,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_data-analysis-dissemination-part2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Data Analysis and Dissemination Part 2</span></span></a>
+  <a href="./05_data-dissemination-part1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05_communication-collaboration-culture.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Communication, Collaboration, and Culture (Or Class Choice)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Communication, Collaboration, and Culture (Or Class Choice)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_data-dissemination-part2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 2</span></span></a>
   </div>
 </li>
       </ul>
@@ -246,7 +292,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06_data-termination.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Data Destruction or Termination</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Data Destruction or Termination</span></span></a>
   </div>
 </li>
       </ul>
@@ -268,13 +314,27 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#this-part-of-the-course-is-still-under-construction-to-be-added-by-june-14-2024.-proceed-with-caution" id="toc-this-part-of-the-course-is-still-under-construction-to-be-added-by-june-14-2024.-proceed-with-caution" class="nav-link active" data-scroll-target="#this-part-of-the-course-is-still-under-construction-to-be-added-by-june-14-2024.-proceed-with-caution"><span class="header-section-number">9.1</span> This part of the course is still under construction! To be added by June 14, 2024. Proceed with caution!</a></li>
+  <li><a href="#your-final" id="toc-your-final" class="nav-link" data-scroll-target="#your-final"><span class="header-section-number">9.2</span> Your final</a>
+  <ul class="collapse">
+  <li><a href="#your-choice-of-topic-but-first-come-first-serve" id="toc-your-choice-of-topic-but-first-come-first-serve" class="nav-link" data-scroll-target="#your-choice-of-topic-but-first-come-first-serve"><span class="header-section-number">9.2.1</span> Your choice of topic, but first come first serve</a></li>
+  <li><a href="#randomize-target-audience" id="toc-randomize-target-audience" class="nav-link" data-scroll-target="#randomize-target-audience"><span class="header-section-number">9.2.2</span> Randomize target audience</a></li>
+  </ul></li>
+  <li><a href="#better-presentations" id="toc-better-presentations" class="nav-link" data-scroll-target="#better-presentations"><span class="header-section-number">9.3</span> Better presentations</a></li>
+  <li><a href="#a-real-5-minute-pitch" id="toc-a-real-5-minute-pitch" class="nav-link" data-scroll-target="#a-real-5-minute-pitch"><span class="header-section-number">9.4</span> A real 5-minute pitch</a>
+  <ul class="collapse">
+  <li><a href="#slide-1" id="toc-slide-1" class="nav-link" data-scroll-target="#slide-1"><span class="header-section-number">9.4.1</span> Slide 1</a></li>
+  <li><a href="#slide-2" id="toc-slide-2" class="nav-link" data-scroll-target="#slide-2"><span class="header-section-number">9.4.2</span> Slide 2</a></li>
+  <li><a href="#slide-3" id="toc-slide-3" class="nav-link" data-scroll-target="#slide-3"><span class="header-section-number">9.4.3</span> Slide 3</a></li>
+  <li><a href="#slide-4" id="toc-slide-4" class="nav-link" data-scroll-target="#slide-4"><span class="header-section-number">9.4.4</span> Slide 4</a></li>
+  <li><a href="#slide-5" id="toc-slide-5" class="nav-link" data-scroll-target="#slide-5"><span class="header-section-number">9.4.5</span> Slide 5</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04_data-analysis-dissemination-part1.html">Data Analysis and Dissemination Part 1</a></li><li class="breadcrumb-item"><a href="./04_better-presentations.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Better Presentations</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04_data-analysis-part1.html">Data Analysis</a></li><li class="breadcrumb-item"><a href="./04_better-presentations.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Better Presentations</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Better Presentations</span></h1>
 </div>
@@ -305,8 +365,176 @@ Figure&nbsp;9.1: Webpage under construction!
 </figcaption>
 </figure>
 </div>
+</section>
+<section id="your-final" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="your-final"><span class="header-section-number">9.2</span> Your final</h2>
+<p>Verbal communication is crucial in most professions and is often not taught in courses. From this final, my hope is you will learn more how to create better presentations and how to present more technical content to a broader audience. The goal of this final is to develop and deliver a clear, concise, and engaging presentation on a topic of your choice within a strict 5-minute time limit, but your target audience will be randomized. This exercise will help you improve your research, organization, and public speaking skills.</p>
+<section id="your-choice-of-topic-but-first-come-first-serve" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="your-choice-of-topic-but-first-come-first-serve"><span class="header-section-number">9.2.1</span> Your choice of topic, but first come first serve</h3>
+<p>The topic can be anything you learned in class today. It can be on something you wrote, in class discussion, contents in the book or other materials you read/watched, as long as it relates back to security, privacy, ethics, and equity. To avoid repeated talks, you must email me your topic by June 21. I will let you know if you’re the first to propose the topic, so you should come up with a few different topics just in case your top pick has already been taken.</p>
+</section>
+<section id="randomize-target-audience" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="randomize-target-audience"><span class="header-section-number">9.2.2</span> Randomize target audience</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>students <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Black"</span>, <span class="st">"Boes"</span>, <span class="st">"Cohen"</span>, <span class="st">"Coleman"</span>, <span class="st">"DeAngelo"</span>, <span class="st">"Duff"</span>, </span>
+<span id="cb1-6"><a href="#cb1-6"></a>              <span class="st">"Flynn"</span>, <span class="st">"Gomez"</span>, <span class="st">"Keohane"</span>, <span class="st">"Kiely"</span>, <span class="st">"Larsson"</span>, <span class="st">"Lombardi"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7"></a>              <span class="st">"Macro"</span>, <span class="st">"Mathews"</span>, <span class="st">"Meslin"</span>, <span class="st">"Norton"</span>, <span class="st">"Novakoski"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8"></a>              <span class="st">"Russell"</span>, <span class="st">"Schreifels"</span>, <span class="st">"Scully"</span>, <span class="st">"Sokolova"</span>, <span class="st">"Weir"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9"></a>              <span class="st">"Williams"</span>)</span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(students)</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>audience <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"family-friends"</span>, <span class="st">"undergraduates-coworkers"</span>,</span>
+<span id="cb1-14"><a href="#cb1-14"></a>              <span class="st">"funders-media"</span>, <span class="st">"government-policymaker"</span>)</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a>audience <span class="sc">%&gt;%</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a>  <span class="fu">sample</span>(., n, <span class="at">replace =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a>  <span class="fu">bind_cols</span>(students, .) <span class="sc">%&gt;%</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a>  <span class="fu">print</span>(<span class="at">n =</span> n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 23 × 2
+   ...1       ...2                    
+   &lt;chr&gt;      &lt;chr&gt;                   
+ 1 Black      family-friends          
+ 2 Boes       family-friends          
+ 3 Cohen      family-friends          
+ 4 Coleman    family-friends          
+ 5 DeAngelo   undergraduates-coworkers
+ 6 Duff       government-policymaker  
+ 7 Flynn      undergraduates-coworkers
+ 8 Gomez      undergraduates-coworkers
+ 9 Keohane    family-friends          
+10 Kiely      government-policymaker  
+11 Larsson    funders-media           
+12 Lombardi   government-policymaker  
+13 Macro      funders-media           
+14 Mathews    government-policymaker  
+15 Meslin     family-friends          
+16 Norton     family-friends          
+17 Novakoski  undergraduates-coworkers
+18 Russell    government-policymaker  
+19 Schreifels undergraduates-coworkers
+20 Scully     undergraduates-coworkers
+21 Sokolova   funders-media           
+22 Weir       funders-media           
+23 Williams   family-friends          </code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="better-presentations" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="better-presentations"><span class="header-section-number">9.3</span> Better presentations</h2>
+<p>Many much of the information provided here is created by my colleague, <a href="https://policyviz.com/about/">Jon Schwabish</a>, a senior fellow at the Urban Institute and an author on several books on data viz and communication. I’ve added a few personal tips as well.</p>
+</section>
+<section id="a-real-5-minute-pitch" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="a-real-5-minute-pitch"><span class="header-section-number">9.4</span> A real 5-minute pitch</h2>
+<blockquote class="blockquote">
+<p>Our focus will be on engaging trustees in our strategic planning process. As a precursor to strategic planning, we want to illustrate the various kinds of work that Urban does today that trustees can understand our theory of change before diving into big strategy thinking. Therefore, we are planning a content segment titled “Understanding Urban’s Work”, where five experts would present on concrete examples of different types of Urban’s work and how we bring insight from evidence to point of decision, to help changemakers accelerate solutions.</p>
+<p>Each presentation would be about five minutes long, followed by seven minutes of questions and/or discussion by trustees. Donald Marron has agreed to moderate the segment and facilitate the presentations and respective Q&amp;A. Would you be willing to present on the IRS Data and Validation Server project and how it makes an impact?</p>
+</blockquote>
+<p><strong>What type of presentation are you giving?:</strong> A 5-minute presentation.</p>
+<p><strong>Who is your audience?:</strong> Urban Institute’s <a href="https://www.urban.org/about/our-people/board-of-trustees">Board of Trustees</a>, diverse technical backgrounds, but all interested in evidence-based public policymaking.</p>
+<p><strong>What is the headline message of your presentation?:</strong> Advance the promise of more evidence-based public policymaking using administrative data.</p>
+<p><strong>What do you want your audience to do with your conclusion?:</strong> To continue to support data science and data privacy methods to safely expand access to confidential administrative data.</p>
+<div id="fig-presentation-example-intro" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-presentation-example-intro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/slide1.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-presentation-example-intro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.2: Title page
+</figcaption>
+</figure>
+</div>
+<p>I’m excited to be presenting on the Urban Institute’s collaboration with the IRS to advance the promise of more evidence-based public policymaking.</p>
+<section id="slide-1" class="level3" data-number="9.4.1">
+<h3 data-number="9.4.1" class="anchored" data-anchor-id="slide-1"><span class="header-section-number">9.4.1</span> Slide 1</h3>
+<div id="fig-presentation-example-why" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-presentation-example-why-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/slide2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-presentation-example-why-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.3: Slide 1
+</figcaption>
+</figure>
+</div>
+<p>Federal tax data, derived from individuals’ and businesses’ tax and information returns, are invaluable resources for understanding the economic effects of policies, social and economic forces, and more on individuals, families, and firms.</p>
+</section>
+<section id="slide-2" class="level3" data-number="9.4.2">
+<h3 data-number="9.4.2" class="anchored" data-anchor-id="slide-2"><span class="header-section-number">9.4.2</span> Slide 2</h3>
+<div id="fig-presentation-example-why2" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-presentation-example-why2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/slide3.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-presentation-example-why2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.4: Slide 2
+</figcaption>
+</figure>
+</div>
+<p>For example, Raj Chetty and colleagues have used tax data to study economic mobility across generations and how elementary school teacher quality affects economic outcomes later in life. However, full access to these data are only available to select government agencies, a very limited number of researchers working in collaboration with analysts in those agencies, or through highly selective research programs run by these agencies.</p>
+<p>So, how can we expand access to administrative tax data to other researchers, government officials, and public policymakers instead of the select few like Raj Chetty? This is where our team comes in. We are developing new data science tools to allow researchers access to sensitive data while providing more robust privacy protection. This new technology can also be applied to other administrative data!</p>
+<p>Now is the ideal time to develop such new technology and methodology as the Evidence Act commits the federal government to expand access to data along with Biden’s executive order, directing federal agencies and White House offices to examine barriers to racial equity and initiate several efforts to address equity for people of color and underserved communities. Furthermore, Len Burman, an institute fellow and co-PI on this body of work, is a member of the Advisory Committee on Data for Evidence Building, which Urban is supporting with internal funds.</p>
+</section>
+<section id="slide-3" class="level3" data-number="9.4.3">
+<h3 data-number="9.4.3" class="anchored" data-anchor-id="slide-3"><span class="header-section-number">9.4.3</span> Slide 3</h3>
+<div id="fig-presentation-example-how" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-presentation-example-how-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/slide4.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-presentation-example-how-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.5: Slide 3
+</figcaption>
+</figure>
+</div>
+<p>So, how does our data science tools work to allow access to data? Typically, researchers access data in two ways, direct access to the confidential data or public statistics and data. However, direct access is difficult due to clearance or eligibility issues, such as being a US citizen. Public statistics and data aren’t much better either. Awareness of the growing threats to public use microdata and a general concern for protecting participants’ data privacy have led the IRS to progressively restrict and distort more information being released in their public statistics and data, making the information less useful for academic research and policy analysis.</p>
+<p>With our data science tools, we are improving the quality of the public data and creating a new tier in-between these two extremes.</p>
+<ul>
+<li><em>Insert explainer on how these privacy protecting tools works with the art example.</em></li>
+<li>Note that we are also looking into including demographic information in datasets so we can analyze disparate impacts of policies by race and ethnicity.</li>
+<li>When comparing the original Seurat painting, we can still see figures in the park.</li>
+</ul>
+</section>
+<section id="slide-4" class="level3" data-number="9.4.4">
+<h3 data-number="9.4.4" class="anchored" data-anchor-id="slide-4"><span class="header-section-number">9.4.4</span> Slide 4</h3>
+<div id="fig-presentation-example-how2" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-presentation-example-how2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/slide5.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-presentation-example-how2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.6: Slide 4
+</figcaption>
+</figure>
+</div>
+<p>However, sometimes our alterations to the data can be too much. For example, many people would say the resulting painting would not be a Seurat painting! Or you smoothed out the high income individuals that I wanted to analyze!</p>
+<ul>
+<li><em>Insert explainer on how these privacy protecting tools works with the art example again for the validation server.</em></li>
+</ul>
+<p>We expect our tools to become critical components of the federal, state, and local data infrastructure. For example, our tools are the basis for creating synthetic data tools and educational materials for the city of Pittsburgh. We are also engaging with Congressional Budget Office, Environmental Protection Agency, Joint Committee on Taxation, Duke University, and American Enterprise Institute to name a few.</p>
+</section>
+<section id="slide-5" class="level3" data-number="9.4.5">
+<h3 data-number="9.4.5" class="anchored" data-anchor-id="slide-5"><span class="header-section-number">9.4.5</span> Slide 5</h3>
+<div id="fig-presentation-example-funding" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-presentation-example-funding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/slide6.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-presentation-example-funding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.7: Slide 5
+</figcaption>
+</figure>
+</div>
+<p>How we are supporting this impactful work? Thanks to these entities, we have fundraised over $5 million. This demonstrates how our body of work has become a big growth area for the Urban Institute. We are breaking ground in the intersection of data privacy and public policy that is providing more evidence-based research, which has been Urban’s business since its founding. I cannot emphasize enough that we are advancing this mission more than ever, where we are becoming the leaders in this area by creating unprecedent access to administrative data to make these better public policy decision-making.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -721,13 +949,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./04_data-analysis-dissemination-part1.html" class="pagination-link" aria-label="Data Analysis and Dissemination Part 1">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Analysis and Dissemination Part 1</span></span>
+      <a href="./04_data-analysis-part1.html" class="pagination-link" aria-label="Data Analysis: Part 1">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Analysis: Part 1</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./05_data-analysis-dissemination-part2.html" class="pagination-link" aria-label="Data Analysis and Dissemination Part 2">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Data Analysis and Dissemination Part 2</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./04_data-analysis-part2.html" class="pagination-link" aria-label="Data Analysis: Part 2">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Data Analysis: Part 2</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

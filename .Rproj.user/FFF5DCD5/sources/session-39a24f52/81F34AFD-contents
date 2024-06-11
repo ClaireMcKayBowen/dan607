@@ -1,0 +1,514 @@
+---
+title: "Data Storage"
+format: 
+  html:
+    toc: true
+    code-line-numbers: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| echo: false
+
+exercise_number <- 1
+
+```
+
+For this week, we will learn how to properly store confidential or sensitive data and how to share or transfer that data safely.
+
+## Quick recap on week 2
+
+We should consider the interactions within this ecosystem and the data life cycle in the context of security, privacy, ethics, and equity.
+
+### Definitions
+
+![Key stakeholders in the data ecosystem](www/images/stakeholders.png){#fig-stakeholders fig-align="center"}
+
+::: callout-tip
+### Data Security
+
+**Data Security** is the "...science of methods of protecting computer data and communication systems that apply various types of controls such as cryptography, access control, information flow paths and inference control, including backup and recover" [@denning1982cryptography].
+:::
+
+::: callout-tip
+### Data Privacy
+
+**Data Privacy** is the ability "to determine what information about ourselves we will share with others" [@fellegi1972question]. Data privacy is a broad topic, which includes data security, encryption, access to data, etc. We will not be covering privacy breaches from unauthorized access to a database (e.g., hackers).
+:::
+
+::: callout-tip
+## Confidentiality
+
+**Confidentiality** is "the agreement, explicit or implicit, between data subject and data collector regarding the extent to which access by others to personal information is allowed" [@fienberg2018statistical].
+:::
+
+1.  **Hackers:** adversaries who steal confidential information through unauthorized access.
+2.  **Snoopers:** adversaries who reconstruct confidential information from data releases.
+3.  **Hoarders:** stewards who collect data but don't release the data even if respondents want the information releasesd.
+
+::: callout-tip
+## Ethics
+
+**Data ethics** is the "...systemizing, defending, and recommending concepts of right and wrong conduct in relation to data, in particular personal data" [@kitchin2014data].
+:::
+
+::: callout-tip
+## Equity
+
+**Data Equity** is data representation, access, process, outcomes, and more.
+:::
+
+### Data types
+
+We learned about the three principal types of qualitative and quantitative data:
+
+1.	*Primary:* Any data directly collected by an entity. 
+
+2.	*Secondary:* Any data collected by another organization that a stakeholder uses for analysis.
+
+3.	*Administrative:* Any data collected by governments or other organizations, as part of their management and operation of a program or service, that provide information on registrations, transactions, and other regular tasks.
+
+### Data collections challenges
+
+We've discussed several challenges surrounding security, privacy, ethics, and equity in data collection. Specifically, we've highlighted the importance of:
+
+- Deciding whether to collect the data or not.
+- Defining groups and other variables that impacts our communities.
+- Recognizing that a lack of data results in a lack of action.
+
+## Why is data storage so important?
+
+> Archives and domain repositories that preserve and disseminate social and behavioral data perform a critical service to the scholarly community and to society at large by ensuring that these culturally significant materials are accessible in perpetuity. The success of the archiving endeavor, however, ultimately depends on researchers’ willingness to deposit their data and documentation for others to use.
+
+From Inter-university Consortium for Political and Social Research [@icpsr], one of the world's largest data archives of social science data for research and education.
+
+### More definitions
+
+There are many versions of the data we should define.
+
+::: {.callout-tip}
+## Original dataset:
+
+**Original dataset** is the uncleaned, unprotected version of the data.
+
+For example, raw 2020 Decennial Census microdata, which are never publicly released.
+::: 
+
+::: {.callout-tip}
+## Confidential or gold standard dataset
+
+**Confidential or gold standard dataset** is the cleaned version (meaning edited for inaccuracies or inconsistencies) of the data; often referred to as the gold standard or actual data for analysis. 
+
+For example, the Census Edited File that is the final confidential data for the 2020 Census. This dataset is never publicly released but may be made available to others who are sworn to protect confidentiality (i.e., Special Sworn Status) and who are provided access in a secure environment, such as a Federal Statistical Research Data Center.
+::: 
+
+::: {.callout-tip}
+## Public dataset or statistics
+
+**Public dataset** is the publicly released version of the confidential data.
+
+For example, the US Census Bureau's public tables and datasets or the Bureau of Labor Statistics reporting the unemployment rate statistics.
+::: 
+
+Different levels of security and privacy are needed for different versions of the data. We will mostly focus on the confidential and public versions of the data. However, note that the original or raw data must also be securely stored and properly documented for future reference.
+
+::: {.callout-important}
+## No set taxonomony in the field!
+All definitions used (including the data life cycle) are my opinionated definitions. Since many different fields work in data security, privacy, ethics, and equity, there is no standard taxonomy, which causes a lot of confusion. I set a standard definition in all my work, including this course, to ensure we are using the same common language. However, note that when reading other materials or literature, you might encounter conflicting terminology.
+
+::: 
+
+### Data cleaning
+
+After data collection, the data curator will usually need to clean the raw data, which are often messy, inconsistent, and contain missing values, among other issues. For most projects, cleaning the data takes up the majority of the time in any data project from start (data collection) to finish (data dissemination and/or destruction). This important task converts the data into a usable form for others.
+
+"Tidy data" tends to have the following features:
+
+1. Each variable forms a column.
+2. Each observation forms a row.
+3. Each type of observational unit forms a dataframe.
+
+![Artwork by Allison Horst.](www/images/what_is_tidydata.jpeg){#fig-tidydata fig-align="center"}
+
+Given the conceptual focus of the course, we will not be doing any exercises involving data cleaning using code. Instead, we will cover the important considerations for data cleaning if you are ever tasked with it.
+
+Everyone has their own method for cleaning data, and you will find several sources with different steps to follow. However, these various sources generally share a similar set of steps or aspects to check for when cleaning data, which we will discuss.
+
+::: {.callout-important}
+## Create backups!
+Always make a backup copy of the original data prior to cleaning it just in case something happens!
+::: 
+
+#### Check for data quality issues
+Common issues include duplicate observations or records, spelling errors, incorrect numbers and number signs, and inconsistencies where the sum doesn't equal the total (e.g., the number of people in each county of Massachusetts should equal the state total).
+
+::: {.callout-caution}
+## Careful about outliers
+Some people suggest removing outliers, but you should be very careful about this practice. The outlier may be a true signal of something happening in your data. Proceed with caution when deciding to remove observations or values in the data if they are outliers.
+::: 
+
+#### Standardize the data
+This involves changing text case, removing spaces and non-printing characters from text, fixing dates and times (a HUGE issue!), and ensuring consistent units across variables.
+
+#### Define how to handle missing data
+Missing data can significantly impact downstream uses of the data. Clearly document how you handled missing data. Options include removing the records or imputing the missing values using a statistical technique.
+
+#### Validate the data cleaning (Quality assurance)
+Always validate or conduct a quality assurance procedure to ensure you have taken the proper steps to clean the data.
+
+### Educational attainment example
+
+Suppose a researcher gathers data from various participants who have filled out a form about educational attainment. The raw data might look something like this:
+
+```{r}
+#| echo: false
+
+# Initial Data Collection
+initial_data <- data.frame(
+  Name = c("peter hunter", "Beth SMITH", "ryan chadwick", "Silvia Li", "Larry Thomas", "Anne-Marie"),
+  Race = c("caucasian", "african-american", "Caucasian", "asian", "asian", "caucasian"),
+  Age = c(25, 32, 40, 28, "twenty-three", 35),
+  Education = c("bachelors", "Master's", "PHD", "bachelors", "high school diploma", "Bachelor's")
+)
+
+knitr::kable(initial_data, caption = "Fictious dataset of educational attainment.")
+
+```
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+Based on the initial data collection of this raw data, answer the following (2 minutes):
+
+- What are some issues with the data?
+- What steps you would take to clean the data?
+
+:::
+
+::: {.callout-caution collapse="true"}
+## Possible issues
+
+- **Inconsistent Name Formats:** Variations in capitalization and punctuation.
+- **Inconsistent Race Descriptions:** Different spellings and capitalizations.
+- **Inconsistent Age Formats:** Numeric and word formats.
+- **Inconsistent Education Levels:** Variations in capitalization and abbreviations.
+
+:::
+
+::: {.callout-caution collapse="true"}
+## Possible cleaning steps
+
+- Standardizing Name Formats:
+    - Capitalize all names properly.
+    - Correct: "John Doe" instead of "john doe".
+
+- Standardizing Race Descriptions:
+    - Ensure race descriptions are consistent.
+    - Correct: "African-American" instead of "african-american".
+
+- Standardizing Age Formats:
+    - Convert all ages to numeric format.
+    - Correct: "23" instead of "twenty-three".
+
+- Standardizing Education Levels:
+    - Use consistent terms and capitalizations.
+    - Correct: "Bachelor's" instead of "bachelors" and "Ph.D." instead of "PHD".
+
+:::
+
+```{r}
+#| echo: false
+
+# Cleaned Data
+cleaned_data <- data.frame(
+  Name = c("Peter Hunter", "Beth Smith", "Ryan Chadwick", "Silvia Li", "Larry Thomas", "Anne-Marie"),
+  Race = c("Caucasian", "African-American", "Caucasian", "Asian", "Asian", "Caucasian"),
+  Age = c(25, 32, 40, 28, 23, 35),
+  Education = c("Bachelor's", "Master's", "Ph.D.", "Bachelor's", "High School Diploma", "Bachelor's")
+)
+
+knitr::kable(cleaned_data, caption = "Cleaned version of the fictious data.")
+```
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+
+```
+
+There is still one *potential* issue with the data. What is it and can anything be done?
+
+:::
+
+::: {.callout-important}
+## Cognitive testing and questionnaire evaluation
+
+Prior to launching a survey, most entities should conduct cognitive interviews[^COG] and other survey evaulations to ensure the surveys are easy to understand (avoiding misinterpretations of the questions), can be completed within the suggested time frame, and capture the correct information, among other things.
+::: 
+
+[^COG]: "Cognitive tests, pilot tests, focus groups, and other tools can be used to understand how respondents interpret your questions and instructions, understand the meaning of survey questions, and to write better questions. This type of testing can also evaluate different survey techniques used in the field to increase response or cooperation, and can help you sort out the meaning of survey responses." [Overview of Cognitive Testing and Questionnaire Evaluation ](https://psr.iq.harvard.edu/book/overview-cognitive-testing-and-questionnaire-evaluation).
+
+<!-- ::: callout -->
+<!-- #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"} -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+
+<!-- exercise_number <- exercise_number + 1 -->
+
+<!-- ``` -->
+
+<!-- Suppose you are tasked with merging another dataset with this one to include income. However, some other entity collected the data on a separate population and only has race and education as common variables. What are the potential issues for merging the datasets? -->
+
+<!-- **Hint:** Reflect on our discussion on data collection. -->
+
+<!-- ::: -->
+
+### Credit data
+
+Suppose you have credit bureau data, which is rich in information but lacking details on race and ethnicity. Including this information would be beneficial, as there are documented cases of how credit scores affect racial homeownership gaps [@choi2019explaining] and how credit screens impact hiring [@traub2016bad]. A team member suggests using imputation, a method for generating missing values, to infer race and ethnicity based on name, age, and location (ZIP code).
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+
+```
+
+What are your thoughts on this scenario and approach to create race and ethnicity (2 minutes)?
+
+:::
+
+::: {.callout-caution collapse="true"}
+## Open only after discussion
+
+> The most widely used method for imputing race and ethnicity on administrative data is Bayesian Improved Surname Geocoding, which the RAND Corporation developed for the US Department of Health and Human Services and which is also used by the Equal Opportunity Employment Commission and the Consumer Financial Protection Bureau (CFPB). The latest method involving this tool, Medicare Bayesian Improved Surname Geocoding 2.0, combines name, administrative data, and census data based on address in a calibrated Bayesian framework (a multinomial logistic regression model) to estimate probabilities by race and ethnicity for each record in a dataset.
+
+From @stern2021ethics, where they tested Bayesian Improved Surname Geocoding to learn from a case study in an attempt to incorporate equity in imputing race and ethnicity onto a nationally representative sample of credit bureau data. 
+
+:::
+
+
+## Data security basics
+
+> The only system which is truly secure is one which is switched off and unplugged locked in a titanium lined safe, buried in a concrete bunker, and is surrounded by nerve gas and very highly paid armed guards. Even then, I wouldn't stake my life on it.
+
+~ Gene Spafford, Director, Computer Operations, Audit, and Security Technology (COAST) Project, Purdue University
+
+For all data, you should indicate how and where you will store copies of your research files to ensure their safety, as well as how many copies you will keep and how you will synchronize them (You do NOT want multiple versions of one data floating around!).
+
+Once figuring out how to synchronize them, one best practice for protecting data is to store multiple copies in multiple locations. How and where you store the data depends on the contents of the data, privacy laws in place, your workplace practices, any contractual agreements, and other factors. We will touch on a few of these issues today and in future classes, but know there are many others, and you should always consult with the data security officer of your institution or workplace.
+
+### Virtual data storage
+
+![One Does Not Simply meme from the movie,"Lord of the Rings," that says, "One Does not Simply Walk Awary and Leave your Computer Unlocked." ](www/images/one-simply-unlocked-computer.jpg){#fig-one-simply-unlocked fig-align="center" width=80%}
+
+Most universities, privacy companies, government agencies, and other places will maintain confidential disks separate from nonconfidential disks for their system servers. Any confidential data stored on disks should have some sort of encryption system, such as Pretty Good Privacy[^PGP], at the folder level.
+
+[^PGP]: "Pretty Good Privacy is an encryption program that provides cryptographic privacy and authentication for data communication." from https://en.wikipedia.org/wiki/Pretty_Good_Privacy
+
+If someone uses an account or a computer with access to confidential data, they must not leave the session unattended, must log out at the end of the session, and must lock up any storage media that hold confidential data.
+
+Other good data security practices include:
+
+- limiting access to confidential data to authorized users, such as through a secure login
+- multiple levels of encryption
+- prevention of individuals making copies of the confidential data to nonconfidential disks (or copying the data at all)
+- virus and intruder protections
+
+### Physical data storage
+
+![A scene from the TV Show, "Futurama," with the character Leela is trying to hide papers. The text says, "Too much papers! Not enough hiding plants!](www/images/hiding-plants.jpg){#fig-hiding-plants fig-align="center" width=80%}
+
+If confidential data are stored on a PC, the data should be encrypted or stored on removable storage media that is secured in a locked cabinet when not in use.
+
+All storage media (e.g., CDs, internal and external hard drives, flash drives) that hold confidential data must be explicitly labeled “confidential.” The project security officer or project manager (depends on your workplace) should maintain a log for each piece of confidential storage media and record dates for the following: 
+
+- receipt of the item from external source 
+- creation of the item at the institution 
+- destruction of the item 
+- transfer of the item to someone else's responsibility (even within the institution) 
+
+::: {.callout-important}
+## Security and privacy trainings and audits
+Frequently, the workplace and/or entities allowing data use must participate in annual training sessions on the appropriate handling of confidential data. Additionally, they conduct semiannual reviews of confidential logs to ensure that all confidential media is properly accounted for.
+::: 
+
+## Importance of meta data
+
+> Metadata are essential for maximizing the usefulness of data. Because it is often impossible for secondary researchers to ask questions of the original data producers, metadata are the de facto form of communication between them. Comprehensive metadata standardizes how the data are described, enables a deeper comprehension of a dataset, facilitates data searches by variables, and offers a variety of display options on the Web.
+
+::: callout-tip
+## Meta data
+
+**Metadata** is "information about the data collections that help others discover, understand, and use them."
+
+From ICPSR's webpage on [Metadata](https://www.icpsr.umich.edu/web/pages/datamanagement/lifecycle/metadata.html).
+:::
+
+The lack of metadata across public datasets from local, state, territory, tribal, and federal government agencies is one reason why the The Open, Public, Electronic and Necessary (OPEN) Government Data Act was included as a section in the [2018 Foundations for Evidence-Based Policymaking Act](https://www.datacoalition.org/resources/Documents/BILLS-115HR4174ih-FEBP.pdf), a bipartisan U.S. law pushing the federal government to modernize the data infrastructure, such as data management, statistical efficiency, and more.
+
+To help conceptually understand what kind of information should be a part of meta data, we will follow the FAIR guiding principles. FAIR aims to make data findable, accessible, interoperable, and reusable [@wilkinson2016fair].
+
+Also, check out [GO FAIR](https://www.go-fair.org/fair-principles/), "a bottom-up, stakeholder-driven and self-governed initiative that aims to implement the FAIR data principles." I borrow examples from this site.
+<!-- I will use the [Urban Data Catalog](https://datacatalog.urban.org/) and [ICPSR](https://www.icpsr.umich.edu/web/pages/ICPSR/index.html) for examples. -->
+
+::: {.callout-tip}
+## Document, Discover, and Interoperate
+[Document, Discover, and Interoperate](https://ddialliance.org/) (DDI) is a standard that follows the FAIR principles and many major data repositories like ICPSR uses DDI!
+
+:::
+
+![Charlie Conspiracy meme from the TV Show, "Always Sunny in Philidelphia," that says, "Searching for the right data without a catalog." ](www/images/charlie-metadata.jpg){#fig-charlie-metadata fig-align="center"}
+
+### Findable
+
+**1. Data and metadata are assigned a globally unique, eternally persistent identifier.**
+
+Two common examples are [ORCID](https://orcid.org/) (Open Researcher and Contributor ID) and [DOI](https://www.doi.org/) (Digital Object Identifier). Both are used in a paper I recently published [here](https://www.tandfonline.com/doi/full/10.1080/01621459.2023.2270795).
+
+**2. Data are described with rich metadata.**
+
+More details the better! Imagine what information you would like to know. Some potential information could be descriptive about the context, quality and condition, how the data were collected and cleaned, or characteristics of the data.
+
+**3. Metadata clearly and explicitly include the identifier of the data they describe.**
+
+> The metadata and the dataset they describe are usually separate files. The association between a metadata file and the dataset should be made explicit by mentioning a dataset’s globally unique and persistent identifier in the metadata
+
+**4. (Meta)data are registered or indexed in a searchable resource.**
+
+Even if the data have identifies and rich metadata, that doesn't guarantee that the data is findable. This is why data curators will often use well-known data repositories to house their data, such as [ICPSR](https://www.icpsr.umich.edu/web/pages/ICPSR/index.html) and [Harvard Dataverse](https://dataverse.harvard.edu/) (Urban has one too called the [Urban Data Catalog](https://datacatalog.urban.org/)!).
+
+### Accessible
+
+**1. (Meta)data are retrievable by their identifier using a standardized communication protocol.**
+
+  - **The protocol is open, free, and universally implementable.**
+  - **The protocol allows for an authentication and authorization procedure, where necessary.**
+
+Hypertext Transfer Protocol Secure (HTTPS), File Transfer Protocol Secure (FTPS), and Phone numbers (arguably not universally-implementable, but close enough) are all examples of such identifiers.
+
+**2. Metadata are accessible, even when data are no longer available.**
+
+> Datasets tend to degrade or disappear over time because there is a cost to maintaining an online presence for data resources. When this happens, links become invalid and users waste time hunting for data that might no longer be there. Storing the metadata generally is much easier and cheaper. Hence, principle Accessible 2 states that metadata should persist even when the data are no longer sustained. Accessible 2 is related to the registration and indexing issues described in F4.
+
+### Interoperable
+
+**1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.**
+
+Data should be readable and interpretable by both humans and computers without needing specialized tools. The goal is a common understanding of digital objects using a standard knowledge representation language. This language should have a precise formal specification, be accessible for learning, and support interoperability across multiple scenarios.
+
+**2. (Meta)data use vocabularies that follow the FAIR principles.**
+
+When describing data or metadata, we use vocabularies that must be FAIR so they can be found, accessed, interoperated, and reused by humans and machines. These vocabularies should have globally unique and persistent identifiers, be well-documented, and easily accessible. Communities should set FAIRness standards, ensuring vocabularies meet criteria such as unique identifiers (Findable 1), resolvable via standard protocols (Accessible 1), and described in a formal, accessible language (Identifiable 1).
+
+**3. (Meta)data include qualified references to other (meta)data.**
+
+A qualified reference is a cross-reference that specifies its intent, such as "X is regulator of Y" rather than just "X is associated with Y." The goal is to create meaningful links between (meta)data resources to enrich contextual knowledge, while balancing the effort required to develop a good data model. Specify relationships such as one dataset building on another or needing complementary data, and describe scientific links between datasets. Additionally, all datasets should be properly cited with globally unique and persistent identifiers.
+
+### Reusable
+
+**1. (Meta)data are richly described with a plurality of accurate and relevant attributes**
+
+Others can more easily reuse the data if there are many labels/information attached to the data. Some examples are what was the purpose of the data collection, what are the limitations, what were the conditions for the data collection, has the data been cleaned, are the variables explained or self-explanatory, etc.
+
+  - **(Meta)data are released with a clear and accessible data usage license.**
+
+Here is a [page](https://choosealicense.com/licenses/) to help choose a license.
+
+  - **(Meta)data are associated with detailed provenance.**
+  
+> For others to reuse your data, they should know where the data came from (i.e., clear story of origin/history, see Readability 1), who to cite and/or how you wish to be acknowledged. Include a description of the workflow that led to your data: Who generated or collected it? How has it been processed? Has it been published before? Does it contain data from someone else that you may have transformed or completed? Ideally, this workflow is described in a machine-readable format.
+
+  - **(Meta)data meet domain-relevant community standards.**
+  
+Data reuse is easier when datasets are similar: same type, standardized organization, sustainable formats, and common documentation templates. FAIR data should meet these standards to enhance usability. If deviations from standard practices are necessary, reasons should be specified in the metadata. Note that FAIR principles do not address data quality, which depends on the intended application.
+
+
+### Searching for metadata
+
+You will be given 20 minutes to complete this in-class activity.
+
+Each of you have been assigned a topic based on your last homework assignment (Week 2) or randomize (see table below).
+
+**Topic assignments:**
+
+Student Last Name | Topic
+-----|-----
+Black | International politics
+Boes | Financial trade
+Cohen | High fantasy
+Coleman | Domestic justice system
+DeAngelo | Medical images
+Duff | Social media images
+Flynn | Classical music
+Gomez | Historical events
+Keohane | Digital advertising
+Kiely | Gambling
+Larsson | Forgeries
+Lombardi | Tracking devices
+Macro | Automobiles
+Mathews | Healthcare facilities
+Meslin | Internet searches
+Norton | Journalism
+Novakoski | Phone calls
+Russell | Domestic politics
+Schreifels | Genetics
+Scully | Mental health
+Sokolova | Clothing retail
+Weir | International education
+Williams | Domestic education
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+1. **Find a digital object to answer questions:** Based on that topic, find an article, dataset, image, or any digital object that matches or is highly related to that topic from a digital repository that has enough metadata to answer the *at least half* of the following questions:
+
+  - What is the title of the digital object?
+  - Who is the author/creator?
+  - When was the digital object published?
+  - What keywords are associated with the digital object?
+  - What is the abstract or description of the digital object?
+  - What file formats are available?
+
+Below are a few repositories you could start your search with, but feel free to use whatever search tools at your disposal (e.g., use your Google-Fu) to find a digital object with reasonable amount of metadata information.
+
+  - [Data.Gov](https://data.gov/)
+  - [FiveThirtyEight](https://data.fivethirtyeight.com/)
+  - [figshare](https://figshare.com/)
+  - [Financial Times](https://markets.ft.com/data/)
+  - [Harvard Dataverse](https://dataverse.harvard.edu/)
+  - [ICPSR](https://www.icpsr.umich.edu/web/pages/ICPSR/index.html)
+  - [IMDb Non-Commercial Datasets](https://developer.imdb.com/non-commercial-datasets/)
+  - [Mendeley Data](https://data.mendeley.com/)
+  - [Natural History Museum Data Portal](https://data.nhm.ac.uk/)
+  - [Zenodo](https://zenodo.org/)
+
+2. **Assess the metadata quality:** Based on the answers to these questions, how would you assess the data quality? In other words, 
+
+  - Is the metadata sufficient to understand the digital object's content and purpose?
+  - Are there any missing or unclear metadata elements based on the FAIR principles?
+  - How could the metadata be improved to enhance the digital object's usability?
+
+:::
