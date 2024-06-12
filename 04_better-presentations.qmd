@@ -24,12 +24,13 @@ exercise_number <- 1
 
 Verbal communication is crucial in most professions and is often not taught in courses. From this final, my hope is you will learn more how to create better presentations and how to present more technical content to a broader audience. The goal of this final is to develop and deliver a clear, concise, and engaging presentation on a topic of your choice within a strict 5-minute time limit, but your target audience will be randomized. This exercise will help you improve your research, organization, and public speaking skills.
 
+### Evaluation of the presentation
+
 ### Your choice of topic, but first come first serve
 
 The topic can be anything you learned in class today. It can be on something you wrote, in class discussion, contents in the book or other materials you read/watched, as long as it relates back to security, privacy, ethics, and equity. To avoid repeated talks, you must email me your topic by June 21. I will let you know if you're the first to propose the topic, so you should come up with a few different topics just in case your top pick has already been taken.
 
 ### Randomize target audience
-
 
 
 ```{r}

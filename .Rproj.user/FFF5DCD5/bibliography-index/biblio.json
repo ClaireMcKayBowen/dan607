@@ -643,6 +643,173 @@
             "title-short": "Advancing microdata privacy protection",
             "type": "article-journal",
             "volume": "16"
+        },
+        {
+            "author": [
+                {
+                    "family": "Drechsler",
+                    "given": "Jörg"
+                },
+                {
+                    "family": "Bender",
+                    "given": "Stefan"
+                },
+                {
+                    "family": "Rässler",
+                    "given": "Susanne"
+                }
+            ],
+            "container-title": "Transactions on Data Privacy",
+            "id": "drecshlerjorgcomparingsynthetic",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008,
+                        12
+                    ]
+                ]
+            },
+            "page": "105-130",
+            "title": "Comparing fully and partially synthetic datasets for statistical disclosure control in the german IAB establishment panel",
+            "type": "article-journal",
+            "volume": "1"
+        },
+        {
+            "author": [
+                {
+                    "family": "Reiter",
+                    "given": "Jerome P"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Quanli"
+                },
+                {
+                    "family": "Zhang",
+                    "given": "Biyuan"
+                }
+            ],
+            "container-title": "Journal of Privacy and Confidentiality",
+            "id": "reiter2014bayesian",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "title": "Bayesian estimation of disclosure risks for multiply imputed, synthetic data",
+            "type": "article-journal",
+            "volume": "6"
+        },
+        {
+            "author": [
+                {
+                    "family": "Mitra",
+                    "given": "Robin"
+                },
+                {
+                    "family": "Reiter",
+                    "given": "Jerome P"
+                }
+            ],
+            "container-title": "Privacy in statistical databases: CENEX-SDC project international conference, PSD 2006, rome, italy, december 13-15, 2006. proceedings",
+            "id": "mitra2006adjusting",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006
+                    ]
+                ]
+            },
+            "page": "177-188",
+            "publisher": "Springer",
+            "title": "Adjusting survey weights when altering identifying design variables via synthetic data",
+            "type": "paper-conference"
+        },
+        {
+            "author": [
+                {
+                    "family": "Barrientos",
+                    "given": "Andrés F"
+                },
+                {
+                    "family": "Williams",
+                    "given": "Aaron R"
+                },
+                {
+                    "family": "Snoke",
+                    "given": "Joshua"
+                },
+                {
+                    "family": "Bowen",
+                    "given": "Claire McKay"
+                }
+            ],
+            "container-title": "Journal of the American Statistical Association",
+            "id": "barrientos2024feasibility",
+            "issue": "545",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "52-65",
+            "publisher": "Taylor & Francis",
+            "title": "A feasibility study of differentially private summary statistics and regression analyses with evaluations on administrative and survey data",
+            "type": "article-journal",
+            "volume": "119"
+        },
+        {
+            "author": [
+                {
+                    "family": "Drechsler",
+                    "given": "Jörg"
+                }
+            ],
+            "container-title": "International conference on privacy in statistical databases",
+            "id": "drechsler2022challenges",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "page": "220-233",
+            "publisher": "Springer",
+            "title": "Challenges in measuring utility for fully synthetic data",
+            "type": "paper-conference"
+        },
+        {
+            "URL": "https://arxiv.org/abs/1304.7605",
+            "author": [
+                {
+                    "family": "Sweeney",
+                    "given": "Latanya"
+                },
+                {
+                    "family": "Abu",
+                    "given": "Akua"
+                },
+                {
+                    "family": "Winn",
+                    "given": "Julia"
+                }
+            ],
+            "id": "sweeney2013identifying",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "title": "Identifying participants in the personal genome project by name (a re-identification experiment)",
+            "type": ""
         }
     ],
     "project_biblios": [

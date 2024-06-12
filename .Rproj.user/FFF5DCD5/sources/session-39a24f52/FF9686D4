@@ -1,27 +1,27 @@
 {
-    "id": "CB52E03C",
-    "path": "~/GitHub/dan607/04_better-presentations.qmd",
-    "project_path": "04_better-presentations.qmd",
+    "id": "FF9686D4",
+    "path": "~/GitHub/2023_jsm-data-privacy-training/03_disclosure_utility_metrics.qmd",
+    "project_path": null,
     "type": "quarto_markdown",
-    "hash": "252904890",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1718067128588.0,
+    "created": 1718156919015.0,
     "source_on_save": false,
-    "relative_order": 6,
+    "relative_order": 5,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "50,14",
-        "scrollLine": "30"
+        "cursorPosition": "1123,3",
+        "scrollLine": "1111"
     },
     "folds": "",
-    "lastKnownWriteTime": 1718076348,
+    "lastKnownWriteTime": 1691188796,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1718076348138,
+    "last_content_update": 1691188796,
     "read_only": false,
     "read_only_alternatives": []
 }
