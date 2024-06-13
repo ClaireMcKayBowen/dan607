@@ -16,13 +16,9 @@ exercise_number <- 1
 
 ```
 
-## This part of the course is still under construction! To be added by June 14, 2024. Proceed with caution!
-
-![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align="center" width=80%}
-
-## Hiding the real data story
-
 From the required reading, we learned that we must carefully take into account how the data are collected, analyzed, disseminated. If we don't, we risk missing a vital piece of the data story, especially when data sets are aggregated, and cause more unintended harm to those we are trying to protect.
+
+## Hidden stories in news reports
 
 For your assignment this week, you had to find a news analysis story[^story] published within the last year (2023 – present).
 
@@ -47,8 +43,9 @@ Describe the news analysis story you wrote about for your writing assignment and
 :::
 
 
-## Give me the real stats!
+## There are liars, damn liars, and statisticans...
 
+There are often two sides to every story, especially when it comes to how people collect, store, transfer, and analyze data. In this in-class activity, we will apply the ideas and concepts we've learned so far to answer a question in multiple ways that are technically correct, even if the different answers contradict one another.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -58,16 +55,16 @@ Describe the news analysis story you wrote about for your writing assignment and
 
 exercise_number <- exercise_number + 1
 ```
-You will be given 30 minutes (check in on progress at 15 minutes) to complete this in-class activity.
+You will be given 30 minutes to complete this in-class activity (with a check-in at 15 minutes to assess progress).
 
-Each of you have been assigned a random "fact" (see table below).
+Each of you has been assigned a random "fact" (see table below).
 
-For your assigned question, come up with at least two different statistics that are technically correct but seem to contradict each other based on the United States. For each statistic, answer the following:
+For your assigned question, come up with at least two different statistics that are technically correct but seem to contradict each other (or at least are drastically different) based on data from the United States. For each statistic, answer the following:
 
   - What information did you use to answer your question?
   - Did the digital object that contained the information follow the FAIR principles?
   - How did you access that information?
-    - Was the storage and transfer of that information consider security and privacy?
+    - Did the storage and transfer of that information take into account security and privacy?
   - How did you use that information to answer your question?
   - Do you have any ethical and/or equity concerns about this information?
 
