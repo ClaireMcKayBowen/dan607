@@ -346,7 +346,9 @@ We've just started exploring the world of security, privacy, ethics, and equity.
 
 - data sharing and transfer (week 3)
 
-- data analysis and dissemination (weeks 4 and 5)
+- data analysis (week 4)
+
+- data dissemination (week 5)
 
 - data destruction or termination (week 6)
 

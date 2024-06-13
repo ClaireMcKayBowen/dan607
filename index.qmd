@@ -1,6 +1,6 @@
 # Welcome to DAN 607 {.unnumbered}
 
-This book is the notes for DAN 607: Security, Privacy, and Ethics (+Equity) in the 
+This Quarto book is the notes for DAN 607: Security, Privacy, and Ethics (+Equity) in the 
 Business Analytics Program at Meehan School of Business within Stonehill 
 College.
 
