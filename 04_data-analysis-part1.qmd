@@ -208,6 +208,15 @@ Synthetic data provides enhanced disclosure protection with a lower cost to util
 
 It also allows for release of data that is more disaggregated than might otherwise be possible with "traditional" SDC (aggregation is a very common SDC technique).
 
+::: {.callout-important}
+## Why synthetic data and not the other SDC methods?
+
+I wanted to review at least one Statistical Disclosure Control (SDC) method in depth to provide further context on how to evaluate public data files. Additionally, with the increasing prominence of AI, many researchers and public policymakers are proposing the use of synthetic data generation in combination with AI. It is important to be aware of such a technique, as it is likely to become more popular in the future.
+
+::: 
+
+![First pane: A crack in the wall labeled "statistics." Second pane: A man hangs a frame around the crack. Third pane: The framed crack is labeled "machine learning." Fourth pane: The man presents the framed crack to an audience labeled "artificial intelligence."](www/images/ai-statistics.jpg){#fig-ai-statistics width=80%}
+
 ## Data Synthesis Process Overview
 
 Note that this overview is opinionated and simplified in order to provide a reasonable summary.
@@ -218,14 +227,12 @@ Note that this overview is opinionated and simplified in order to provide a reas
 
 ![All of the privacy stakeholders discussed previously have a role in aspects of the synthesis process.](www/images/synthesis-process-actors.png){#fig-process-actors}
 
-::: {.callout-important}
-## Why synthetic data and not the other SDC methods?
+### Iteration is key
 
-I wanted to review at least one Statistical Disclosure Control (SDC) method in depth to provide further context on how to evaluate public data files. Additionally, with the increasing prominence of AI, many researchers and public policymakers are proposing the use of synthetic data generation in combination with AI. It is important to be aware of such a technique, as it is likely to become more popular in the future.
+As mentioned in the textbook, data curators and privacy experts must fine-tune their SDC methods by repeatedly evaluating if the altered data are at acceptable levels of disclosure risk and quality. Often, the process of adjusting the SDC methods and earlier steps in the process becomes analogous to “holding sand.” Shifting or changing one part of the workflow, such as trying to improve the data quality for one variable, can result in the privacy “spilling out” in
+unexpected ways. Or a model you thought would create high quality data could result in the opposite.
 
-::: 
-
-![First pane: A crack in the wall labeled "statistics." Second pane: A man hangs a frame around the crack. Third pane: The framed crack is labeled "machine learning." Fourth pane: The man presents the framed crack to an audience labeled "artificial intelligence."](www/images/ai-statistics.jpg){#fig-ai-statistics width=80%}
+![First panel: "f(x)" and the "It's Fine meme." Second panel: "f^(-1)" and the "It's Fine Meme", but a flame is sitting in the chair saying "It's fine." surrounded by dogs.](www/images/its-fine-inverse.jpg){#fig-process-actors}
 
 ## Assessing utility
 
