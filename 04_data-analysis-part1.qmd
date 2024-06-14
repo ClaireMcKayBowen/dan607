@@ -232,7 +232,7 @@ Note that this overview is opinionated and simplified in order to provide a reas
 As mentioned in the textbook, data curators and privacy experts must fine-tune their SDC methods by repeatedly evaluating if the altered data are at acceptable levels of disclosure risk and quality. Often, the process of adjusting the SDC methods and earlier steps in the process becomes analogous to “holding sand.” Shifting or changing one part of the workflow, such as trying to improve the data quality for one variable, can result in the privacy “spilling out” in
 unexpected ways. Or a model you thought would create high quality data could result in the opposite.
 
-![First panel: "f(x)" and the "It's Fine meme." Second panel: "f^(-1)" and the "It's Fine Meme", but a flame is sitting in the chair saying "It's fine." surrounded by dogs.](www/images/its-fine-inverse.jpg){#fig-process-actors}
+![First panel: "f(x)" and the "It's Fine meme." Second panel: "f^(-1)" and the "It's Fine Meme", but a flame is sitting in the chair saying "It's fine." surrounded by dogs.](www/images/its-fine-inverse.jpg){#fig-process-actors width=75%}
 
 ## Assessing utility
 
