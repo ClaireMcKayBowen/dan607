@@ -20,6 +20,8 @@ From the required reading, we learned that we must carefully take into account h
 
 ## Hidden stories in news reports
 
+![Piled HIgher and Deeper comic, "The Science News Cycle."](www/images/phd-comics-news.gif){#fig-science-news-cycle fig-align="center"}
+
 For your assignment this week, you had to find a news analysis story[^story] published within the last year (2023 – present).
 
 [^story]: "An article written to inform readers about recent events. The author reports and attempts to deepen understanding of recent events—for example, by providing background information and other kinds of additional context." – [CSUSM Library](https://libguides.csusm.edu/news/different_news_types)
