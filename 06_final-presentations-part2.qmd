@@ -1,5 +1,5 @@
 ---
-title: "Data Dissemination: Part 1"
+title: "Final Presentations: Part 2"
 format: 
   html:
     toc: true
@@ -16,9 +16,9 @@ exercise_number <- 1
 
 ```
 
-## This part of the course is still under construction! To be added by June 21, 2024. Proceed with caution!
+## This part of the course is still under construction! To be added by June 28, 2024. Proceed with caution!
 
 ![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align="center" width=80%}
 
 
-<!-- https://www.digit.fyi/gdpr-memes/ -->
+

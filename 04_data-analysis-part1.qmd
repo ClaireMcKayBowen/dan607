@@ -211,7 +211,7 @@ It also allows for release of data that is more disaggregated than might otherwi
 ::: {.callout-important}
 ## Why synthetic data and not the other SDC methods?
 
-I wanted to review at least one Statistical Disclosure Control (SDC) method in depth to provide further context on how to evaluate public data files. Additionally, with the increasing prominence of AI, many researchers and public policymakers are proposing the use of synthetic data generation in combination with AI. It is important to be aware of such a technique, as it is likely to become more popular in the future.
+I wanted to review at least one statistical disclosure control (SDC) method in depth to provide further context on how to evaluate public data files. Additionally, with the increasing prominence of AI, many researchers and public policymakers are proposing the use of synthetic data generation in combination with AI. It is important to be aware of such a technique, as it is likely to become more popular in the future.
 
 ::: 
 
@@ -474,7 +474,7 @@ Inferential disclosure is a specialized type of attribute disclosure, so the met
 exercise_number <- exercise_number + 1
 ```
 
-Last week, one of the class activities asked about how to protect a K-12 education dataset that dataset contains information about all students in a state, specifically their names, ages, genders, home addresses, and standardized test scores. Suppose wyou use fully synthetic data generation.
+Last week, one of the class activities asked about how to protect a K-12 education dataset that dataset contains information about all students in a state, specifically their names, ages, genders, home addresses, and standardized test scores.
 
 - What would be the potential identity disclosure risks?
 - What would be the potential attribute disclosure risks?

@@ -61,7 +61,7 @@ exercise_number <- exercise_number + 1
 ```
 You will be given 30 minutes to complete this in-class activity (with a check-in at 15 minutes to assess progress).
 
-Each of you has been assigned a random "fact" (see table below).
+Each of you has been assigned a random "topic" (see table below).
 
 For your assigned question, come up with at least two different statistics that are technically correct but seem to contradict each other (or at least are drastically different) based on data from the United States. For each statistic, answer the following:
 
@@ -75,6 +75,8 @@ For your assigned question, come up with at least two different statistics that 
 :::
 
 **Topic assignments:**
+
+<!-- GIVE TWO TOPICS -->
 
 Student Last Name | Topic
 -----|-----
@@ -116,6 +118,10 @@ Due June 20, at 11:59 PM EDT on Canvas
 ### Optional additional read
 
 - [Do No Harm Guide: Applying Equity Awareness in Data Visualization](https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-visualization).
+
+### Optional watch
+
+[Data Brokers: Last Week Tonight with John Oliver (HBO)](https://www.youtube.com/watch?v=wqn3gR1WTcA)
 
 ### Collect data
 For one day, record how often private companies collect *your data* from the moment you wake up to the moment you go to bed. For example, opening a social media app or browsing the web.

@@ -38,7 +38,9 @@ book:
 
     - part: Data Destruction and Termination
       chapters: 
+        - 06_final-presentations-part1.qmd
         - 06_data-termination.qmd
+        - 06_final-presentations-part2.qmd
         
     - references.qmd
 
