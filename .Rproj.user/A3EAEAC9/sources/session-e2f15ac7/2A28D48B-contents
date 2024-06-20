@@ -1,0 +1,483 @@
+---
+title: "Data Analysis: Part 1"
+format: 
+  html:
+    toc: true
+    code-line-numbers: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+library(palmerpenguins)
+library(kableExtra)
+library(gt)
+library(urbnthemes)
+
+exercise_number <- 1
+
+```
+
+For this week, we will learn about how to evaluate and analyze data while considering security, privacy, ethics, and equity.
+
+## Quick recap on week 3 (with some week 2)
+
+We've discussed several challenges surrounding security, privacy, ethics, and equity in data collection, storage, and sharing.
+
+### Data collection
+
+For data collection, we learned the importance of:
+
+- Deciding whether to collect the data or not.
+- Defining groups and other variables that impacts our communities.
+- Recognizing that a lack of data results in a lack of action.
+
+### Data storage 
+
+We covered the following topics:
+
+  - The overall process and considerations for cleaning data, especially how to handle missing data.
+  - Best practices for virtual and physical storage of data, including the FAIR principles for creating proper metadata.
+  
+Even more definitions...
+
+::: {.callout-tip}
+## Original dataset:
+
+**Original dataset** is the uncleaned, unprotected version of the data.
+
+For example, raw 2020 Decennial Census microdata, which are never publicly released.
+::: 
+
+::: {.callout-tip}
+## Confidential or gold standard dataset
+
+**Confidential or gold standard dataset** is the cleaned version (meaning edited for inaccuracies or inconsistencies) of the data; often referred to as the gold standard or actual data for analysis. 
+
+For example, the Census Edited File that is the final confidential data for the 2020 Census. This dataset is never publicly released but may be made available to others who are sworn to protect confidentiality (i.e., Special Sworn Status) and who are provided access in a secure environment, such as a Federal Statistical Research Data Center.
+::: 
+
+::: {.callout-tip}
+## Public dataset or statistics
+
+**Public dataset** is the publicly released version of the confidential data.
+
+For example, the US Census Bureau's public tables and datasets or the Bureau of Labor Statistics reporting the unemployment rate statistics.
+::: 
+
+### Data sharing and transfer
+
+We also learned about the two general ways people access data:
+
+1. Secure Data Access
+    - Pros: Very secure, provides access to confidential data.
+    - Cons: Inaccessible to most people.
+2. Public Data Files and Statistics
+    - Pros: Accessible to anyone.
+    - Cons: Altered for privacy, which may reduce accuracy for specific applications and may not always be properly protected.
+
+## What is the privacy-utility tradeoff?
+
+![Weighing Seth Meyers GIF by Late Night with Seth Meyers](www/images/seth-meyers-balance.gif){#fig-seth-meyers-balance fig-align="center"}
+
+::: callout-tip
+### Data Utility
+
+**Data utility,** quality, accuracy, or usefulness is how practically useful or accurate to the data are for research and analysis purposes.
+:::
+
+There is often a tension between privacy and data utility. This tension is referred to in the privacy literature as the **privacy-utility tradeoff**.
+
+![*Generally*, as privacy increases, the image quality (utility) decreases, and vice versa.](www/images/privacy-utility-tradeoff.png){#fig-tradeoff fig-align="center"}
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+For any data or digital information:
+
+  - What would be the best privacy protection?
+  - What would be the best way to ensure utility?
+
+:::
+
+## What is synthetic data? Why use it?
+
+::: callout-tip
+### Synthetic Data
+
+**Synthetic data** consist of pseudo or "fake" records that are statistically representative of the confidential data.
+:::
+
+-   The goal of most syntheses is to closely mimic the underlying distribution and statistical properties of the real data to preserve data utility while minimizing disclosure risks.
+-   Synthesized values also limit an intruder's confidence, because they cannot confirm a synthetic value exists in the confidential dataset.
+-   Synthetic data may be used as a "training dataset" to develop programs to run on confidential data.
+
+::: callout-tip
+### Partially synthetic
+
+**Partially synthetic** data only synthesizes some of the variables in the released data (generally those most sensitive to disclosure). In partially synthetic data, there remains a one-to-one mapping between confidential records and synthetic records.
+:::
+
+Below, we see an example of what a partially synthesized version of confidential data could look like.
+
+![Partially synthetic data](www/images/partially-synthetic-data.png){#fig-partial width=75%}
+
+::: callout-tip
+### Fully synthetic
+
+**Fully synthetic** data synthesizes all values in the dataset with imputed amounts. Fully synthetic data no longer directly map onto the confidential records, but remain statistically representative. Since fully synthetic data does not contain any actual observations, it protects against both attribute and identity disclosure.
+:::
+
+Below, we see an example of what a fully synthesized version of confidential data might look like.
+
+![Fully synthetic data](www/images/fully-synthetic-data.png){#fig-fully width=75%}
+
+::: {.callout-important}
+## There are many flavors of synthetic data
+
+For this course, we will focus only on fully and partially synthetic data. However, it is important to note that there are many other variations of synthetic data generation, such as Bayesian versus non-Bayesian synthesis models and parametric versus non-parametric models.
+
+::: 
+
+![Homer Simpson from the TV shows, "The Simpsons," saying, "Oh, so many flavors!"](www/images/many-flavors.gif){#fig-many-flavors fig-align="center"}
+
+### Partial vs. fully synthetic advantages and disadvantages
+
+-   Changing only some variables (partial synthesis) in general leads to higher utility in analysis since the relationships between variables are by definition unchanged [@drecshlerjorgcomparingsynthetic].
+
+-   Disclosure in fully synthetic data is nearly impossible because all values are imputed, while partial synthesis has higher disclosure risk since confidential values remain in the dataset [@drecshlerjorgcomparingsynthetic].
+
+::: {.callout-important}
+## You cannot have your cake and eat it too.
+
+While the risk of disclosure for fully synthetic data is very low, it is not zero.
+
+::: 
+
+-   Accurate and exhaustive specification of variable relationships and constraints in fully synthetic data is difficult and if done incorrectly can lead to bias @drecshlerjorgcomparingsynthetic.
+
+-   Partially synthetic data may be publicly perceived as more reliable than fully synthetic data.
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+Consider this penguins data:
+
+```{r}
+#| echo: false
+
+set.seed(125)
+
+ex_data <- penguins |> 
+  select(species, bill_length_mm, sex) |> 
+  slice_sample(n = 5) 
+
+ex_data |> 
+  gt()
+```
+
+Let's say that researchers decide that the `sex` of the penguins in the data are not confidential, but the `species` and `bill length` are. So, they develop regression models that predict `species` conditional on `sex` and predict `bill_length` conditional on `species` and `sex`. They then use those models to predict species and bill lengths for each row in the data and then release it publicly.
+
+**What specific SDC method are these researchers using?**
+
+::: 
+
+### Why synthetic data?
+
+Synthetic data provides enhanced disclosure protection with a lower cost to utility than other "traditional" statistical disclosure control (SDC) methods. For example:
+
+-   @mitra2006adjusting found that a 5 percent swapping of 2 identifying variables in the 1987 Survey of Youth in Custody invalidated statistical hypothesis tests in regression.
+
+-   Top/bottom coding eliminates information at the tails of the distributions, degrading analyses that depend on the entire distribution [@reiter2014bayesian].
+
+It also allows for release of data that is more disaggregated than might otherwise be possible with "traditional" SDC (aggregation is a very common SDC technique).
+
+::: {.callout-important}
+## Why synthetic data and not the other SDC methods?
+
+I wanted to review at least one statistical disclosure control (SDC) method in depth to provide further context on how to evaluate public data files. Additionally, with the increasing prominence of AI, many researchers and public policymakers are proposing the use of synthetic data generation in combination with AI. It is important to be aware of such a technique, as it is likely to become more popular in the future.
+
+::: 
+
+![First pane: A crack in the wall labeled "statistics." Second pane: A man hangs a frame around the crack. Third pane: The framed crack is labeled "machine learning." Fourth pane: The man presents the framed crack to an audience labeled "artificial intelligence."](www/images/ai-statistics.jpg){#fig-ai-statistics width=80%}
+
+## Data Synthesis Process Overview
+
+Note that this overview is opinionated and simplified in order to provide a reasonable summary.
+
+![The synthesis process is very iterative, particularly in the privacy step](www/images/synthesis-process-iterative.png){#fig-process-iterative}
+
+### Privacy stakeholders and the synthesis process
+
+![All of the privacy stakeholders discussed previously have a role in aspects of the synthesis process.](www/images/synthesis-process-actors.png){#fig-process-actors}
+
+### Iteration is key
+
+As mentioned in the textbook, data curators and privacy experts must fine-tune their SDC methods by repeatedly evaluating if the altered data are at acceptable levels of disclosure risk and quality. Often, the process of adjusting the SDC methods and earlier steps in the process becomes analogous to “holding sand.” Shifting or changing one part of the workflow, such as trying to improve the data quality for one variable, can result in the privacy “spilling out” in
+unexpected ways. Or a model you thought would create high quality data could result in the opposite.
+
+![First panel: "f(x)" and the "It's Fine meme." Second panel: "f^(-1)" and the "It's Fine Meme", but a flame is sitting in the chair saying "It's fine." surrounded by dogs.](www/images/its-fine-inverse.jpg){#fig-process-actors width=75%}
+
+## Assessing utility
+
+Generally there are three ways to measure utility of the data:
+
+-   General (or global) utility metrics;
+-   Specific utility metrics; and
+-   Fit-for-purpose
+
+### General utility metrics
+
+::: callout-tip
+### General utility
+
+**General utility**, sometimes called global utility, measures the univariate and multivariate distributional similarity between the confidential data and the public data (e.g., sample means, sample variances, and the variance-covariance matrix).
+:::
+
+General utility metrics are useful because they provide a sense of how "fit for use" synthetic data is for analysis without making assumptions about the uses of the synthetic data.
+
+#### Univariate general utility
+
+Some univariate general utility measures could include comparisons of:
+
+-   **Categorical variables:** frequencies, relative frequencies.
+
+-   **Numeric variables** means, standard deviations, skewness, kurtosis (i.e., first four moments), percentiles, and number of zero/non-zero values.
+
+#### Bivariate general utility
+
+::: callout-tip
+##### Correlation fit
+
+**Correlation fit** measures how well the synthesizer recreates the linear relationships between variables in the confidential dataset.
+:::
+
+To calculate correlation fit:
+
+-   Create correlation matrices for the synthetic data and confidential data. Then measure differences across synthetic and actual data. 
+
+![Correlation Difference](www/images/puf-correlation-fit.png){#fig-corrdiff width=90%}
+
+@fig-corrdiff shows the creation of a difference matrix. Let's summarize the difference matrix using mean absolute error.
+
+#### Multivariate general utility (discriminant-based metrics)
+
+::: callout-tip
+##### Discriminant based methods
+
+**Discriminant based methods** measure how well a predictive model can distinguish (i.e., discriminate) between records from the confidential and synthetic data.
+:::
+
+-   The confidential data and synthetic data should theoretically be drawn from the same super population.
+
+-   The basic idea is to combine (stack) the confidential data and synthetic data and see how well a predictive model distinguish (i.e., discriminate) between synthetic observations and confidential observations.
+
+-   An inability to distinguish between the records suggests a good synthesis.
+
+-   It is possible to use logistic regression for the predictive modeling, but decision trees, random forests, and boosted trees are more common. (We recommend, to the degree possible, using more using more sophisticated models as well as machine learning best-practices like feature engineering and hyperparameter tuning because these practices will more effectively discriminate between classes.)
+
+-   @fig-discriminant shows three discriminant based metrics calculated on a good synthesis and a poor synthesis.
+
+::: {#fig-discriminant layout-nrow="2"}
+![Good Synthesis](www/images/same-population-disc-metrics.png){width=75%}
+
+![Poor Synthesis](www/images/different-population-disc-metrics.png){width=75%}
+
+A comparison of discriminant metrics on a good synthesis and a poor synthesis
+:::
+
+There are several different discriminant-based metrics, but it is beyond this course to cover them in depth. @hu2024advancing covers these metrics in further detail.
+
+### Specific utility metrics
+
+::: callout-tip
+### Specific utility
+
+**Specific utility**, sometimes called outcome specific utility, measures the similarity of results for a specific analysis (or analyses) of the confidential and public data (e.g., comparing the coefficients in regression models).
+:::
+
+Specific utility metrics measure how suitable a synthetic dataset is for specific analyses.
+
+-   These specific utility metrics will change from application to application, depending on common uses of the data.
+-   A helpful rule of thumb: general utility metrics are useful for the data synthesizers to be convinced that they're doing a good job. Specific utility metrics are useful to convince downstream data users that the data synthesizers are doing a good job.
+
+#### Recreating inferences
+
+-   It can be useful to compare statistical analyses on the confidential data and synthetic data:
+    -   Do the estimates have the same sign?
+    -   Do the estimates have the same statistical inference at a common significance level?
+    -   Do the confidence intervals for the estimates overlap?
+-   Each of these questions is useful. @barrientos2024feasibility combine all three questions into sign, significance, and overlap (SSO) match. SSO is the proportion of times that intervals overlap and have the same sign and significance.
+
+#### Regression confidence interval overlap
+
+::: callout-tip
+##### Regression confidence interval overlap
+
+**Regression confidence interval overlap** quantifies how well confidence intervals from estimates on the synthetic data recreate confidence intervals from the confidential data.
+
+1 indicates perfect overlap (it is typically impossible to achieve a 1 on real-world data). 0 indicates intervals that are adjacent but not overlapping. Negative values indicate gaps between the intervals.
+
+It is common to compare intervals from linear regression models and logistic regression models.
+:::
+
+![Confidence interval overlap as a measure of specific utility](www/images/confidence-interval-overlap.png){width=75%}
+
+### Fit-for-purpose
+
+The final group of utility metrics are called fit-for-purpose and are not discussed as often in the literature. @drechsler2022challenges states how fit-for-purpose measures could be considered something in between the previous two utility metric types. In other words, fit-for-purpose metrics are not global measures, because they focus on certain features of the data, but may not be specific to an analysis that data users and stakeholders are interested in like analysis-specific utility metrics.
+
+@drechsler2022challenges highlights how global utility metrics can be too broad and miss aspects of the synthetic dataset that do not align with the confidential dataset. On the other hand, analysis-specific metrics may perform well for the selected analyses on the synthetic data but not for others. This is why it is critical to determine the proper analysis, but it is difficult to anticipate all downstream data uses. For example, decennial census data products in the United States are utilized in thousands of different ways, making it impossible to predict all potential use cases. Therefore, fit-for-purpose metrics help privacy experts and researchers assess if their synthesis makes sense before implementing other utility metrics. Some examples include ensuring population totals or ages are positive.
+
+## Assessing disclosure risk
+
+![Rory from the TV show, "Gilmore Girls," saying, "I'd say that was a fair assessment."](www/images/assessment-gilmore.gif){#fig-assessment-gilmore fig-align="center"}
+
+We now pivot to evaluating the disclosure risks of synthetic data. Note that most thresholds for acceptable disclosure risk are often determined by law.
+
+There are generally three kinds of disclosure risk:
+
+-   Identity disclosure risk
+-   Attribute disclosure risk
+-   Inferential disclosure risk
+
+### Identity disclosure metrics
+
+::: callout-tip
+#### Identity disclosure
+
+**Identity disclosure** occurs if the data intruder associates a known individual with a public data record (e.g., a record linkage attack or when a data adversary combines one or more external data sources to identify individuals in the public data).
+:::
+
+@sweeney2013identifying used voter data to re-identify individuals in the Personal Genome Project.
+
+![Record linkage attack](www/images/identity-disclosure-risk.png){#fig-identity-disclosure-risk width=60%}
+
+For fully synthetic datasets, there is no one to one relationship between individuals and records so identity disclosure risk is ill-defined. Generally identity disclosure risk applies to partially synthetic datasets (or datasets protected with traditional SDC methods).
+
+::: callout-tip
+#### Identity disclosure metrics
+
+**Identity disclosure metrics** evaluate how often we correctly re-identify confidential records in the synthetic data.
+
+**Note:** These metrics require major assumptions about attacker information.
+:::
+
+#### Basic matching approaches
+
+-   We start by making assumptions about the knowledge an attacker has (i.e., external publicly accessible data they have access to).
+
+-   For each confidential record, the data attacker identifies a set of partially synthetic records which they believe contain the target record (i.e., potential matches) using the external variables as matching criteria.
+
+-   There are distance-based and probability-based algorithms that can perform this matching. This matching process could be based on exact matches between variables or some relaxations (i.e., matching continuous variables within a certain radius of the target record, or matching adjacent categorical variables).
+
+-   We then evaluate how accurate our re-identification process was using a variety of metrics.
+
+::: panel-tabset
+##### Expected Match Rate
+
+-   **Expected Match Rate**: On average, how likely is it to find a "correct" match among all potential matches? Essentially, the expected number of observations in the confidential data expected to be correctly matched by an intruder.
+
+    -   Higher expected match rate = higher identification disclosure risk.
+
+    -   The two other risk metrics below focus on the subset of confidential records for which the intruder identifies a single match.
+
+##### True Match Rate
+
+-   **True Match Rate**: The proportion of true unique matches among all confidential records. Higher true match rate = higher identification disclosure risk.
+
+##### False Match Rate
+
+-   **False Match Rate**: The proportion of false matches among the set of unique matches. Lower false match rate = higher identification disclosure risk.
+:::
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+::: panel-tabset
+### <font color="#55b748">Question</font>
+
+*A researcher has confidential data on a population. To protect the privacy of respondents, the researcher releases a synthetic version of the data. A data attacker then runs a record linkage attack against the synthetic data and is able to accurately identify 5 individuals in the data. Based on this information, can you tell whether the researcher released fully or partially synthetic data? Why or why not?*
+
+### <font color="#55b748">Answer</font>
+
+*A researcher has confidential data on a population. To protect the privacy of respondents, the researcher releases a synthetic version of the data. A data attacker then runs a record linkage attack against the synthetic data and is able to accurately identify 5 individuals in the data. Based on this information, can you tell whether the researcher released fully or partially synthetic data? Why or why not?*
+
+Record linkage attacks are only possible for partially synthetic data, though other types of disclosure risk still apply to fully synthetic data.
+:::
+
+:::
+
+### Attribute disclosure metrics
+
+It is possible to learn confidential attributes without perfectly re-identifying observations in the data.
+
+::: callout-tip
+### Attribute disclosure
+
+**Attribute disclosure** occurs if the data intruder determines new characteristics (or attributes) of an individual based on the information available through public data or statistics (e.g., if a dataset shows that all people age 50 or older in a city are on Medicaid, then the data adversary knows that any person in that city above age 50 is on Medicaid). This information is learned without idenfying a specific individual in the data!
+:::
+
+::: callout-tip
+#### Predictive Accuracy
+
+**Predictive accuracy** measures how well an attacker can learn about attributes in the confidential data using the synthetic data (and possibly external data).
+:::
+
+-   Similar to above, you start by matching synthetic records to confidential records. Alternatively, you can build a predictive model using the synthetic data to make predictions on the confidential data.
+
+-   **key variables**: Variables that an attacker already knows about a record and can use to match.
+
+-   **target variables**: Variables that an attacker wishes to know more or infer about using the synthetic data.
+
+-   Pick a sensitive variable in the confidential data and use the synthetic data to make predictions. Evaluate the accuracy of the predictions.
+
+### Inferential disclosure
+
+::: callout-tip
+### Inferential disclosure
+
+**Inferential disclosure** occurs if the data intruder predicts the value of some characteristic from an individual more accurately with the public data or statistic than would otherwise have been possible (e.g., if a public homeownership dataset reports a high correlation between the purchase price of a home and family income, a data adversary could infer another person's income based on purchase price listed on Redfin or Zillow).
+:::
+
+Inferential disclosure is a specialized type of attribute disclosure, so the metrics discussed above apply here as well. Inference disclosure risk is very hard to predict, so many federal agencies tend to disregard this type of risk.
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+Last week, one of the class activities asked about how to protect a K-12 education dataset that dataset contains information about all students in a state, specifically their names, ages, genders, home addresses, and standardized test scores.
+
+- What would be the potential identity disclosure risks?
+- What would be the potential attribute disclosure risks?
+- What would be the potential inferential disclosure risks?
+
+:::
