@@ -810,6 +810,248 @@
             },
             "title": "Identifying participants in the personal genome project by name (a re-identification experiment)",
             "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Reiter",
+                    "given": "Jerry"
+                },
+                {
+                    "family": "Bowen",
+                    "given": "Claire McKay"
+                },
+                {
+                    "family": "Cohen",
+                    "given": "Aloni"
+                },
+                {
+                    "family": "Farrell",
+                    "given": "Diana"
+                },
+                {
+                    "family": "Goerge M.",
+                    "given": "Robert"
+                },
+                {
+                    "family": "Hart",
+                    "given": "Nicholas"
+                },
+                {
+                    "family": "Hosagrahar V.",
+                    "given": "Jagadish"
+                },
+                {
+                    "family": "Kifer",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "Levy",
+                    "given": "Karen"
+                },
+                {
+                    "family": "Viljoen",
+                    "given": "Salome"
+                },
+                {
+                    "family": "Watson",
+                    "given": "Mark"
+                }
+            ],
+            "container-title": "National Academies of Sciences, Engineering, and Medicine",
+            "id": "national2024toward",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Toward a 21st century national data infrastructure: Managing privacy and confidentiality risks with blended data",
+            "title-short": "Toward a 21st century national data infrastructure",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-privacy-methods",
+            "author": [
+                {
+                    "family": "Bowen",
+                    "given": "Claire McKay"
+                },
+                {
+                    "family": "Snoke",
+                    "given": "Joshua"
+                }
+            ],
+            "container-title": "Urban Institute",
+            "id": "bowen2023no",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "title": "Do No Harm Guide: Applying Equity Awareness In Data Privacy Methods",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://www.urban.org/research/publication/data-walks-innovative-way-share-data-communities",
+            "author": [
+                {
+                    "family": "Murray",
+                    "given": "Brittany"
+                },
+                {
+                    "family": "Falkenburger",
+                    "given": "Elsa"
+                },
+                {
+                    "family": "Saxena",
+                    "given": "Priya"
+                }
+            ],
+            "id": "murray2016data",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "publisher": "Urban Institute",
+            "title": "Data walks: An innovative way to share data with communities",
+            "title-short": "Data walks",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://www.urban.org/research/publication/guide-data-chats-convening-community-conversations-about-data",
+            "author": [
+                {
+                    "family": "Cohen",
+                    "given": "Mychal"
+                },
+                {
+                    "family": "Rohan",
+                    "given": "Amy"
+                },
+                {
+                    "family": "Pritchard",
+                    "given": "Kathleen"
+                },
+                {
+                    "family": "Pettit",
+                    "given": "Kathryn LS"
+                }
+            ],
+            "container-title": "Urban Institute",
+            "id": "cohen2022guide",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Guide to data chats: Convening community conversations about data",
+            "title-short": "Guide to data chats",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bowen",
+                    "given": "Claire McKay"
+                },
+                {
+                    "family": "Garfinkel",
+                    "given": "Simson"
+                }
+            ],
+            "container-title": "Notices of the American Mathematical Society",
+            "id": "bowen2021philosophy",
+            "issue": "10",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "1727-39",
+            "title": "Philosophy of differential privacy",
+            "type": "article-journal",
+            "volume": "68"
+        },
+        {
+            "author": [
+                {
+                    "family": "Foote",
+                    "given": "Andrew David"
+                },
+                {
+                    "family": "Machanavajjhala",
+                    "given": "Ashwin"
+                },
+                {
+                    "family": "McKinney",
+                    "given": "Kevin"
+                }
+            ],
+            "container-title": "Journal of Privacy and Confidentiality",
+            "id": "foote2019releasing",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "title": "Releasing earnings distributions using differential privacy: Disclosure avoidance system for post-secondary employment outcomes (pseo)",
+            "title-short": "Releasing earnings distributions using differential privacy",
+            "type": "article-journal",
+            "volume": "9"
+        },
+        {
+            "author": [
+                {
+                    "family": "Schwabish",
+                    "given": "Jonathan A"
+                }
+            ],
+            "id": "schwabish2020elevate",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "publisher": "John Wiley & Sons",
+            "title": "Elevate the debate: A multilayered approach to communicating your research",
+            "title-short": "Elevate the debate",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Schwabish",
+                    "given": "Jonathan"
+                }
+            ],
+            "id": "schwabish2021better",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "publisher": "Columbia University Press",
+            "title": "Better data visualizations: A guide for scholars, researchers, and wonks",
+            "title-short": "Better data visualizations",
+            "type": "book"
         }
     ],
     "project_biblios": [

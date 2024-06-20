@@ -1,27 +1,27 @@
 {
-    "id": "5D3C4764",
-    "path": "~/GitHub/dan607/04_data-analysis-part1.qmd",
-    "project_path": "04_data-analysis-part1.qmd",
+    "id": "A165A416",
+    "path": "~/GitHub/dan607/04_better-presentations.qmd",
+    "project_path": "04_better-presentations.qmd",
     "type": "quarto_markdown",
-    "hash": "3243042554",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1718410544201.0,
+    "created": 1718853946049.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 7,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "476,242",
-        "scrollLine": "463"
+        "cursorPosition": "107,12",
+        "scrollLine": "102"
     },
     "folds": "",
-    "lastKnownWriteTime": 1718410609,
+    "lastKnownWriteTime": 1718338559,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1718410609979,
+    "last_content_update": 1718338559,
     "read_only": false,
     "read_only_alternatives": []
 }
