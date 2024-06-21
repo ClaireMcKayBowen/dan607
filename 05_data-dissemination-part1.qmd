@@ -104,9 +104,9 @@ There are often two sides to every story, especially when it comes to how people
 
 ![Creepy condescending Wonka meme that says, "Please tell me more about your privacy policy."](www/images/wonka-privacy-policy.jpg){#fig-wonka-privacy-policy width=50%}
 
-Prior to releasing any information (e.g., data and statistics), you must review the legal requirements. As you learned from the book and the questionnaire in the first week of class, the United States has no federal law that regulates how personal data can be collected, stored, and used. Privacy policy doesn't mean data privacy protections.
+Prior to releasing any information (e.g., data and statistics), you must review the legal requirements. As you learned from the book and the questionnaire in the first week of class, the United States has no federal law regulating how personal data can be collected, stored, and used. A privacy policy does not equate to data privacy protections.
 
-What laws exist on data collection and dissemination are restricted specific to federal agencies (e.g., U.S. Census Bureau), or data types (e.g., education).
+The laws governing data collection and dissemination are limited to specific federal agencies (e.g., U.S. Census Bureau) or specific data types (e.g., education).
 
 ### Federal privacy laws
 
