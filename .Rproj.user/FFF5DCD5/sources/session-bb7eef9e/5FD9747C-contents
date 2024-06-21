@@ -102,7 +102,7 @@ There are often two sides to every story, especially when it comes to how people
 
 ## Data privacy laws in the United States of America
 
-![Creepy condescending Wonka meme that says, "Please tell me more about your privacy policy."](www/images/wonka-privacy-policy.jpg){#fig-ai-statistics width=50%}
+![Creepy condescending Wonka meme that says, "Please tell me more about your privacy policy."](www/images/wonka-privacy-policy.jpg){#fig-wonka-privacy-policy width=50%}
 
 Prior to releasing any information (e.g., data and statistics), you must review the legal requirements. As you learned from the book and the questionnaire in the first week of class, the United States has no federal law that regulates how personal data can be collected, stored, and used. Privacy policy doesn't mean data privacy protections.
 
@@ -140,6 +140,8 @@ From the [Federal Trade Commission](https://www.ftc.gov/legal-library/browse/sta
 
 From the [U.S. Department of Education](https://studentprivacy.ed.gov/faq/what-ferpa)
 ::: 
+
+![Kat Coyle, the designer of the pussy hat, wearing a pink knitted hat referred to as the pussy hat.](www/images/pussy-hat.jpeg){#fig-pussy-hat}
 
 ::: callout-note
 ### The Health Insurance Portability and Accountability Act (HIPAA) of 1996 
@@ -190,6 +192,9 @@ The International Association of Privacy Professionals (IAPP)[^IAPP] has a great
 >This tracker only includes bills intended to be comprehensive approaches to governing the use of personal information. If a bill does not appear on the tracker, it does not qualify due to its scope, coverage, or rights. Industry-specific, information-specific and narrowly scoped bills, e.g., data security bills, are not included. The IAPP additionally published an article providing further details on the scope of bills included in this tracker.
 
 [^IAPP]: The International Association of Privacy Professionals is a nonprofit, non-advocacy membership association founded in 2000.
+
+
+![Candalf You Shall Not Pass Meme that says, "This too shall pass."](www/images/this-too-shall-pass.jpg){#fig-shall-pass}
 
 ### California Privacy Act of 2018
 
@@ -311,6 +316,8 @@ exercise_number <- exercise_number + 1
 Based on what we've learned so far from in the class, what are the issues with this workflow?
 
 :::
+
+![The Rock saying, "This doesn't work."](www/images/doesnt-work.gif){#fig-doesnt-work}
 
 ### Aspirational equitable statistical data privacy workflow
 
@@ -452,3 +459,5 @@ After reviewing the two proposed workflows and the accompanying example, answer 
 - What are some possible challenges in executing these new workflows?
 - Are there any additional improvements or adjustments you would suggest for these new workflows?
 :::
+
+![Gene Wilder saying, "It. Could. Work."](www/images/could-work.gif){#fig-could-work}

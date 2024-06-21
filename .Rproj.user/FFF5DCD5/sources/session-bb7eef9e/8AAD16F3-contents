@@ -24,27 +24,27 @@ exercise_number <- 1
 
 Student Last Name | Target Audience | Presentation Topic
 -----|----- | ----- |  
-Black | family-friends |
-Boes | family-friends |
-Cohen | family-friends |
+Black | family-friends | Security breaches.
+Boes | family-friends | Is it ethical or not to terminate data.
+Cohen | family-friends | Data security and privacy considerations when storing and/or sharing sports data.
 Coleman | government-policymaker* | Texas secret ballot
-DeAngelo | undergraduates-coworkers |
+DeAngelo | undergraduates-coworkers | 
 Duff | family-friends* | AI algorithms being used in hiring/recruiting process.
-Flynn | undergraduates-coworkers |
-Gomez | undergraduates-coworkers |
-Keohane | family-friends |
+Flynn | undergraduates-coworkers | 
+Gomez | undergraduates-coworkers | (EA) Electronic Arts and its efforts towards improving data security, protecting user privacy, and promoting ethical gaming practices.
+Keohane | family-friends | 
 Kiely | government-policymaker | AI (in)equity in mental health data.
 Larsson | funders-media | What funding is needed to meet General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA).
 Lombardi | government-policymaker | The inequity of facial recognition
-Macro | funders-media |
+Macro | funders-media | 
 Mathews | government-policymaker | How the supreme court justices should be viewing surveys in AMICUS ("friend of the court") briefs through the lens of equity.
-Meslin | family-friends |
+Meslin | family-friends | 
 Norton | family-friends | How does GDPR differs from US policies?
 Novakoski | undergraduates-coworkers | Why privacy is a factor in no public Spotify data.
 Russell | government-policymaker | AI in healthcare (e.g., patient data)
 Schreifels | undergraduates-coworkers | Urban vs Rural internet connectivity could impact social inequalities either in a positive or negative way.
-Scully | undergraduates-coworkers |
-Sokolova | funders-media |
+Scully | undergraduates-coworkers | Algorithmic data collection needing filters to spur negative content.
+Sokolova | funders-media | Email phishing
 Weir | funders-media | The ethical implications of cross border data transfers within emerging technologies.
 Williams | family-friends | How much data apps collect and what steps one can take better protect personal information.
 

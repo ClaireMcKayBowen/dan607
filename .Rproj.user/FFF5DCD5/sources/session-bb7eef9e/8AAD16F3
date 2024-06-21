@@ -1,27 +1,27 @@
 {
-    "id": "A436CC89",
-    "path": "~/GitHub/dan607/04_better-presentations.qmd",
-    "project_path": "04_better-presentations.qmd",
+    "id": "8AAD16F3",
+    "path": "~/GitHub/dan607/06_final-presentations-part1.qmd",
+    "project_path": "06_final-presentations-part1.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1718997021759.0,
+    "created": 1718999889721.0,
     "source_on_save": false,
-    "relative_order": 7,
+    "relative_order": 4,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "69,53",
-        "scrollLine": "59"
+        "cursorPosition": "42,70",
+        "scrollLine": "25"
     },
     "folds": "",
-    "lastKnownWriteTime": 1718997058,
+    "lastKnownWriteTime": 1719002779,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1718997058306,
+    "last_content_update": 1719002779338,
     "read_only": false,
     "read_only_alternatives": []
 }
