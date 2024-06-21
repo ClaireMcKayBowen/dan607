@@ -102,7 +102,9 @@ There are often two sides to every story, especially when it comes to how people
 
 ## Data privacy laws in the United States of America
 
-Prior to releasing any information, you must review what are the legal requirements! As you learned from the book, the United States has no federal law that regulates how personal data can be collected, stored, and used. Still doesn't!
+![Creepy condescending Wonka meme that says, "Please tell me more about your privacy policy."](www/images/wonka-privacy-policy.jpg){#fig-ai-statistics width=50%}
+
+Prior to releasing any information (e.g., data and statistics), you must review the legal requirements. As you learned from the book and the questionnaire in the first week of class, the United States has no federal law that regulates how personal data can be collected, stored, and used. Privacy policy doesn't mean data privacy protections.
 
 What laws exist on data collection and dissemination are restricted specific to federal agencies (e.g., U.S. Census Bureau), or data types (e.g., education).
 

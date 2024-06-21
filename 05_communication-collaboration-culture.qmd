@@ -114,7 +114,7 @@ If the feedback or topic you want to raise is sensitive or difficult, follow the
 - **Recommendation:** Discuss what the receiver can do to best apply the feedback in the future to achieve the desired results. Remember to factor in their own input from the previous step when making your recommendations.
     - Effective Feedback is collaborative and forward-focused. 
     
-Other tips are choose an appropriate time and place for the conversation.
+In addition to this framwork, make sure to choose an appropriate time and place for the conversation.
 
 ::: {.callout-important}
 ## Always ask the other person for their perspective
