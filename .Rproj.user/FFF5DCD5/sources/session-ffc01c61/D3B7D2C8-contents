@@ -23,7 +23,7 @@ exercise_number <- 1
 <!-- Note to add time to finish course evaluations AT THE START OF CLASS -->
 
 Student Last Name | Target Audience | Presentation Topic
------|----- | ----- |  
+-----|-----
 Black | family-friends |
 Boes | family-friends |
 Cohen | family-friends |
@@ -42,7 +42,7 @@ Meslin | family-friends |
 Norton | family-friends | How does GDPR differs from US policies?
 Novakoski | undergraduates-coworkers | Why privacy is a factor in no public Spotify data.
 Russell | government-policymaker | AI in healthcare (e.g., patient data)
-Schreifels | undergraduates-coworkers | Urban vs Rural internet connectivity could impact social inequalities either in a positive or negative way.
+Schreifels | undergraduates-coworkers | How technology can increase or reduce social inequalities.
 Scully | undergraduates-coworkers |
 Sokolova | funders-media |
 Weir | funders-media | The ethical implications of cross border data transfers within emerging technologies.

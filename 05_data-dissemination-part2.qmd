@@ -18,9 +18,15 @@ exercise_number <- 1
 
 For part 2, we focus on the importance of your target audience, different types of dissemination, and data visualization.
 
-## Types of dissemination
+::: {.callout-important}
+## Check out these books!
 
 Many of the following materials come from @schwabish2020elevate and @schwabish2021better.
+
+:::
+
+## Types of dissemination
+
 
 ![The "Complexity Pyramid" from @schwabish2020elevate.](www/images/elevate-pyramid.png){#fig-aspirational fig-align="center" width=100%}
 
@@ -33,8 +39,8 @@ To help create an audience list, check out this "[Audience \& List Brainstorming
 
 - **Identify your audience.** The most effective outreach campaigns are deliberate about who they are trying to reach and how they will reach them.
 - **Narrow your focus.** Trying to reach everyone often results in reaching no one. It's better to find a smaller group of people who are keenly interested in your work than a wider group that may gloss over it.
-- **Play the long game.** Building a relationship with your audience happens over time. Take hte time to undertand where your audience members are in their engagement and influence, and build from there.
-- **Meet your audience where they are.** Build your trust and credibility by finding what is relevant to them and givng them the level of detail (or lack of detail) they need.
+- **Play the long game.** Building a relationship with your audience happens over time. Take the time to understand where your audience members are in their engagement and influence, and build from there.
+- **Meet your audience where they are.** Build your trust and credibility by finding what is relevant to them and giving them the level of detail (or lack of detail) they need.
 
 :::
 
@@ -101,7 +107,7 @@ This [training series](https://urbaninstitute.github.io/allegheny-county-synthet
 
 ### User guide and infographic
 
-!["Why synthetic data works for Allegheny County" infographic.](www/images/synthetic-infographic.png){#fig-aspirational fig-align="center" width=100%}
+!["Why synthetic data works for Allegheny County" infographic.](www/images/synthetic-infographic.png){#fig-synthetic-infographic fig-align="center" width=100%}
 
 This [user guide and infographic](https://www.urban.org/research/publication/synthetic-data-user-guide-and-infographic) accompanies a fully synthetic version of the 2021 Integrated Services dataset, which replaces the underlying records tracking the use of these services with statistically representative pseudo-records. Each record in the synthetic dataset represents a simulated individual, or record, who received at least one service from the Allegheny County DHS in 2021. The synthetic data were designed such that records aggregated by service represent the original data.
 
@@ -127,35 +133,19 @@ This [technical brief](https://www.urban.org/research/publication/generating-ful
 - postprocessing the synthetic output to match the desired use case, and
 - evaluating candidate synthetic datasets for quality and privacy.
 
-## Recommendations when publishing information based on confidential data
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+```{r}
+#| echo: false
 
-### Report only necessary information
+exercise_number <- exercise_number + 1
+```
 
-In other words, do not share additional information, such as dates and locations, if it doesn’t contribute to the dissemination product.
+In addition to preparing your final presentation, you are tasked with creating a written communication piece to share with your audience. Based on your target audience, what type of written communication would you create and why?
 
-### Avoid reporting inclusion and exclusion criteria for subpopulation analyses
+Consider the needs, preferences, and characteristics of your audience when making your decision.
 
-Don’t discuss these criteria in a way that inadvertently identifies small cells or extreme cases (e.g., suppressed values with less than three that occurred in a census block).
-
-### If possible, have participants review the products
-
-If the dissemination product contains potentially identifiable information, such as direct quotes, the involved participant should be consulted before the product is released. Even if prior consent was given for the use of direct quotes, project team members should reach out to the individual to confirm permission for publication and attribution of the quote.
-
-### Follow Transparency Initiative requirements
-
-The [American Association for Public Opinion Research Transparency Initiative](https://aapor.org/standards-and-ethics/transparency-initiative/) provides a list of elements that must be disclosed with all publicly and/or proprietary research products. Most dissemination products should cover these basic requirements.
-
-<!-- ::: callout -->
-<!-- #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"} -->
-<!-- ```{r} -->
-<!-- #| echo: false -->
-
-<!-- exercise_number <- exercise_number + 1 -->
-<!-- ``` -->
-
-
-
-<!-- ::: -->
+:::
 
 ## Data visualizations
 
@@ -173,13 +163,45 @@ Similar to outlining a presentation, don't race to the computer. Start with pape
 
 ### Show the data
 
+> Your reader can only grasp your point, argument, or story if they see the data. This doesn't mean that *all* the data must be shown, but it does mean that you should highlight the values that are important to your argument [@schwabish2021better].
+
+!["Population Density Map Conterminous United States of America" found on [Kontur](https://www.kontur.io/solutions/united-states-population-density/).](www/images/us-pop-density.jpg){#fig-us-pop-density fig-align="center" width=80%}
+
+This density map of the United States demonstrates how all the data are shown without extra information (e.g., state lines, streets, rivers, etc.) because the point being made is that most people live along the boarder and coast.
+
 ### Reduce the clutter
+
+Although it may seem obvious, sometimes it needs to be said: avoid any unnecessary visual elements that may distract the audience. Some examples include:
+
+- Tick marks and grid lines are usually not necessary.
+- Using different shapes (e.g., circles, triangles, and squares) helps distinguish points, but if they overlap too much, you can't tell the difference. Consider another type of data visualization.
+- Solid shades of color work just as well (and usually better) than textured or filled gradients.
+- Avoid 3D unless it actually adds something meaningful.
+- Remove extra text or labels as much as possible.
 
 ### Integrate the graphics and text
 
+The text included in a graphic is just as important, if not more so, than the data within the visualization. Text or annotations in data visualizations help direct your audience to the key parts of your visual. @schwabish2021better recommends the following three tips to effectively integrate text into data visualizations:
+
+1. **Removing legends:** Having your audience try to connect information in the legend to the data visualization places the burden on them. It is better to directly add text to the data itself, such as labeling a line.
+
+!["Daily global surface air temperatures for ever year since 1979" found on [NYTimes](https://www.nytimes.com/2024/01/31/learning/lesson-plans/teach-about-climate-change-with-30-graphs-from-the-new-york-times.html).](www/images/heat-wave-line.png){#fig-heat-wave-line fig-align="center" width=80%}
+
+2. **Creating active titles:** Crafting your titles like newspaper headlines will help your audience grasp the takeaway immediately, rather than trying to figure it out on their own.
+
+!["More than four-in-ten women familiar with Title IX say it has not gone far enough when it comes to increasing opportunities for women in sports" found on [Pew Research Center](https://www.pewresearch.org/short-reads/2022/04/21/most-americans-who-are-familiar-with-title-ix-say-its-had-a-positive-impact-on-gender-equality/ft_22-04-14_titleix-png/).](www/images/title-ix.png){#fig-title-ix fig-align="center" width=60%}
+
+3. **Adding detail:** Once you create the data visualization and decide on a title, ask yourself, "Would this visual benefit from more text?" Only add more text if it *adds* to the audience's understanding of the graphic. A classic example is including important events on a line graph to help explain changes.
+
+!["Share of Dual Enrollees by Medicare Type between 2009 and 2021" found on [Urban Institute](https://www.urban.org/data-tools/medicare-medicaid-dual-enrollment-available-plans).](www/images/urban-medicare-line.png){#fig-urban-medicare fig-align="center" width=60%}
+
 ### Avoid speghetti chart
 
+Some data visualizations have too much information. Avoid this by breaking up the information into multiple charts. However, be careful not to create too many. They should share the same layout, size, font, and color so the audience doesn't have to "rethink" what they're seeing.
+
 ### Start with gray
+
+Finally, start with gray, no matter what visualization you are creating. This will force you to be purposeful and strategic in your use of color, labels, and other elements.
 
 ### Examples
 
@@ -198,17 +220,41 @@ Similar to outlining a presentation, don't race to the computer. Start with pape
 
 - [Data is Beautiful](https://www.reddit.com/r/dataisbeautiful/) - a subreddit on Reddit that tends to have cool and fun data visualizations.
 
-<!-- ::: callout -->
-<!-- #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"} -->
-<!-- ```{r} -->
-<!-- #| echo: false -->
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+```{r}
+#| echo: false
 
-<!-- exercise_number <- exercise_number + 1 -->
-<!-- ``` -->
+exercise_number <- exercise_number + 1
+```
 
-<!-- TEXT -->
+In the next 10 minutes, search the web for what you consider a good and a bad data visualization (these can be interactive dashboards or data features) created since 2023. For each data visualization, answer the following:
 
-<!-- ::: -->
+ - What elements of the data visualization helped or hindered your understanding of the information?
+ - Did the data visualization follow or not follow the recommendations we covered?
+ - What could be done to make the visual better?
+ - Are there any ethical and/or equity concerns about how the visual presents this information?
+
+:::
+
+## Recommendations when publishing information based on confidential data
+
+### Report only necessary information
+
+In other words, do not share additional information, such as dates and locations, if it doesn’t contribute to the dissemination product.
+
+### Avoid reporting inclusion and exclusion criteria for subpopulation analyses
+
+Don’t discuss these criteria in a way that inadvertently identifies small cells or extreme cases (e.g., suppressed values with less than three that occurred in a census block).
+
+### If possible, have participants review the products
+
+If the dissemination product contains potentially identifiable information, such as direct quotes, the involved participant should be consulted before the product is released. Even if prior consent was given for the use of direct quotes, project team members should reach out to the individual to confirm permission for publication and attribution of the quote.
+
+### Follow Transparency Initiative requirements
+
+The [American Association for Public Opinion Research Transparency Initiative](https://aapor.org/standards-and-ethics/transparency-initiative/) provides a list of elements that must be disclosed with all publicly and/or proprietary research products. Most dissemination products should cover these basic requirements.
+
 
 ## Week 6 Assignment (LAST WEEK!)
 
