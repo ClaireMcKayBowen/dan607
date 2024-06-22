@@ -1,27 +1,27 @@
 {
-    "id": "5FD9747C",
-    "path": "~/GitHub/dan607/05_data-dissemination-part1.qmd",
-    "project_path": "05_data-dissemination-part1.qmd",
+    "id": "834D2044",
+    "path": "~/GitHub/dan607/00_non-technical.qmd",
+    "project_path": "00_non-technical.qmd",
     "type": "quarto_markdown",
-    "hash": "3979704986",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1718999119044.0,
+    "created": 1719090176847.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "chunk_output_type": "console",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "108,162",
-        "scrollLine": "105"
+        "cursorPosition": "20,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1719003433,
+    "lastKnownWriteTime": 1719090643,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1719003433386,
+    "last_content_update": 1719090643201,
     "read_only": false,
     "read_only_alternatives": []
 }

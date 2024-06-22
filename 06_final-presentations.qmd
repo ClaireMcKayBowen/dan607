@@ -1,0 +1,146 @@
+---
+title: "Final Presentations"
+format: 
+  html:
+    toc: true
+    code-line-numbers: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| echo: false
+
+exercise_number <- 1
+
+```
+
+## Complete course evaluations
+
+The graduate programs asked that professors reserve time at the start of class for students to fill out their course evaluations. I will give everyone 10 minutes (5 minute check-in) to fill out the course evaluation.
+
+## Final presentations
+
+The goal of this final is to develop and deliver a clear, concise, and engaging presentation on a topic of your choice within a strict 5-minute time limit, but your target audience will be randomized. This exercise will help you improve your research, organization, and public speaking skills.
+
+The presentation topic can be anything you learned in this course. It can be on something you wrote, in class discussion, contents in the book or other materials you read/watched, as long as it relates back to security, privacy, ethics, and equity.
+
+### Target audience and presentation topic
+
+Student Last Name | Target Audience | Presentation Topic
+----- | ----- | -----   
+Black | family-friends | Security breaches.
+Boes | family-friends | Is it ethical or not to terminate data.
+Cohen | family-friends | Data security and privacy considerations when storing and/or sharing sports data.
+Coleman | government-policymaker* | Texas secret ballot.
+DeAngelo | undergraduates-coworkers | Noise infusion/injection and the tradeoff between privacy and data usability.
+Duff | family-friends* | AI algorithms being used in hiring/recruiting process.
+Flynn | undergraduates-coworkers | Data security in sports betting.
+Gomez | undergraduates-coworkers | (EA) Electronic Arts and its efforts towards improving data security, protecting user privacy, and promoting ethical gaming practices.
+Keohane | family-friends | Data warehouses and silos.
+Kiely | government-policymaker | AI (in)equity in mental health data.
+Larsson | funders-media | What funding is needed to meet General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA).
+Lombardi | government-policymaker | The inequity of facial recognition.
+Macro | funders-media | ???
+Mathews | government-policymaker | How the supreme court justices should be viewing surveys in AMICUS ("friend of the court") briefs through the lens of equity.
+Meslin | family-friends | ???
+Norton | family-friends | How does GDPR differs from US policies?
+Novakoski | undergraduates-coworkers | Why privacy is a factor in no public Spotify data.
+Russell | government-policymaker | AI in healthcare (e.g., patient data).
+Schreifels | undergraduates-coworkers | Urban vs Rural internet connectivity could impact social inequalities either in a positive or negative way.
+Scully | undergraduates-coworkers | Algorithmic data collection needing filters to spur negative content.
+Sokolova | funders-media | Email phishing.
+Weir | funders-media | The ethical implications of cross border data transfers within emerging technologies.
+Williams | family-friends | How much data apps collect and what steps one can take better protect personal information.
+
+\* == indicates students swapped target audience.
+
+### Evaluation of the presentation
+
+The following is how I will evaluate your presentations. Each part will be scored from 1 to 10, as detailed below.
+
+1. Content and audience (10 points)
+
+   - 10: Clear purpose and content that addresses the target audience.
+   - 5: Moderate clarity and relevance to the target audience.
+   - 1: Unclear purpose and irrelevant to the target audience.
+
+2. Organization and structure (10 points)
+
+   - 10: Well-organized with a clear and strong flow (introduction, middle, and conclusion).
+   - 5: Moderately organized with adequate flow.
+   - 1: Poorly organized, missing key structural elements.
+
+3. Delivery and timing (10 points)
+
+   - 10: Enthusiastic and engaging, with good pacing, within 30 seconds of the time limit.
+   - 5: Some enthusiasm and minor pacing issues, within 30 seconds to 1 minute of the time limit.
+   - 1: Lacks enthusiasm, poor pacing, over 1 minute off the time limit.
+
+4. Quality of slides or other visual aids (10 points)
+
+   - 10: Enhances the presentation.
+   - 5: Somewhat contributes to the presentation.
+   - 1: Does not contribute to the presentation.
+
+5. Overall quality (10 points)
+
+   - 10: Highly effective in achieving the goal.
+   - 5: Somewhat effective in achieving the goal.
+   - 1: Ineffective in achieving the goal.
+
+### Presentation order
+
+```{r}
+#| warning: false
+
+set.seed(42)
+
+library(tidyverse)
+
+c("Black", "Boes", "Cohen", "Coleman", "DeAngelo", "Duff", "Flynn", "Gomez",
+  "Keohane", "Kiely", "Larsson", "Lombardi", "Macro", "Mathews", "Meslin", 
+  "Norton", "Novakoski", "Russell", "Schreifels", "Scully", "Sokolova", "Weir",
+  "Williams") %>%
+  sample(., replace = FALSE)
+
+```
+
+### Schedule
+
+Time (EDT) | Student Order
+----- | ----- 
+5:15 pm - 6:00 pm | Novakoski
+-- | DeAngelo
+-- | Sokolova*
+-- | Kiely
+-- | Coleman
+-- | Russell
+-- | Williams
+**6:00 pm - 6:15 pm** | **Break**
+6:15 pm - 7:15 pm | Norton
+-- | Meslin
+-- | Gomez
+-- | Flynn
+-- | Schreifels
+-- | Keohane
+-- | Weir
+-- | Lombardi
+-- | Boes
+**7:15 pm - 7:30 pm** | **Break**
+7:30 pm - 8:15 pm | Mathews
+-- | Cohen
+-- | Black*
+-- | Scully
+-- | Duff
+-- | Macro
+-- | Larsson
+
+
+
+
+
+
+
+

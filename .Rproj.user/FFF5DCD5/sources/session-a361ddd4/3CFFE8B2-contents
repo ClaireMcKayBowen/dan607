@@ -1,0 +1,42 @@
+# Welcome to DAN 607 {.unnumbered}
+
+This Quarto book is the notes for DAN 607: Security, Privacy, and Ethics (+Equity) in the 
+Business Analytics Program at Meehan School of Business within Stonehill 
+College.
+
+## Course Meeting Time (EDT)
+
+- May 31st, Friday, 5:00 pm – 9:00 pm
+- June 7th, Friday, 5:00 pm – 9:00 pm
+- June 14th, Friday, 5:00 pm – 9:00 pm
+- June 21st, Friday, 5:00 pm – 9:00 pm
+- June 28th, Friday, 5:00 pm – 9:00 pm
+
+## Course Description
+
+At what point does the sacrifice to our personal information outweigh the public good? In a data-driven era, data users and researchers frequently leverage personal or confidential data to help policymakers make evidence-based, data-informed decisions, such as improving economic recovery or creating a more efficient COVID-19 vaccine distribution. However, access to confidential data comes with several privacy concerns, especially for underrepresented groups. Striking the right balance is crucial to avoid real disclosure risks that may not be obvious, like stalkers utilizing excessive location data or malicious parties learning sensitive medical information through linkable health or genetic data.
+
+This course will cover the security, privacy, ethics, and equity considerations the U.S. government and private sector must navigate throughout the data life cycle: data acquisition or collection, data storage, data sharing and transfer, data analysis and dissemination, and data destruction or termination. Specifically, students will understand the legal, social, and ethical ramifications of data security and privacy as well as the concepts behind data guardianship, and custodianship, and data permissions.
+
+At a high level, the main learning objectives/topic areas of this course are learning the:
+
+- importance of data security, privacy, ethics, and equity
+- ways experts develop privacy preserving methods throughout the data life cycle
+- privacy laws governing and protecting people’s information
+- issues that society must consider advancing and improving security, privacy, ethics, and equity
+
+## Textbook [@bowen2021protecting]
+
+**Title:** Protecting Your Privacy in a Data-Driven World 
+
+**Author:** Claire McKay Bowen
+
+**Publisher:** Routledge 
+
+**ISBN:** 978-0367640743
+
+## Acknowledgements
+
+Thank you [Aaron R. Williams](https://www.urban.org/author/aaron-r-williams) for teaching me how to create a Quarto document/book for this course, which is what we use for all our teaching and training materials at the Urban Institute. Check out his Quarto book for his [Data Science for Public Policy](https://awunderground.github.io/data-science-for-public-policy2/) course in the McCourt School of Public Policy at Georgetown University.
+
+Thank you also to my spouse and friends for reviewing some of the professional non-technical skills content and providing additional tips.

@@ -1,8 +1,8 @@
 {
-  "hash": "9de270d80475e88641d8c0e6b1ac3802",
+  "hash": "92b783bf05e7d47dc253e503eb7523ac",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Data Destruction or Termination\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\n## This part of the course is still under construction! To be added by June 28, 2024. Proceed with caution!\n\n![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align=\"center\" width=80%}\n\n![Ron Swanson from the TV Show, \"Parks and Recreation,\" smashing a phone with a hammer on his work desk.](www/images/smash-hammer.gif){#fig-smash-hammer fig-align=\"center\"}\n\n<!-- Note to add time to finish course evaluations AT THE START OF CLASS -->\n\n",
+    "markdown": "---\ntitle: \"Data Destruction or Termination + Future Challenges\"\nformat: \n  html:\n    toc: true\n    code-line-numbers: true\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n:::\n\n\nUpon completion of a project, members of the team should consider the physical destruction of all copies of identifiable materials as required by contract (e.g., data use agreement), or, after three years, removal of all identifiers from data and separate maintenance of a name-code index in a secure location.\n\nAcceptable methods for the disposal fall into two categories: logical and physical.\n\nLogical destruction is generally done by erasing the data with multiple passes of read/write commands, such as by PGP File Shredder or deleting the content of a file system’s recycle bin.\n\nPhysical disposal generally means destroying the data media: shredding paper and CD/DVDs, degaussing magnetic media, or drilling holes through hard drives.\n\n![Ron Swanson from the TV Show, \"Parks and Recreation,\" smashing a phone with a hammer on his work desk.](www/images/smash-hammer.gif){#fig-smash-hammer fig-align=\"center\"}",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
