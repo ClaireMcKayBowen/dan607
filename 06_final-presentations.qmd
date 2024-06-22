@@ -137,10 +137,5 @@ Time (EDT) | Student Order
 -- | Macro
 -- | Larsson
 
-
-
-
-
-
-
+\* == indicates students swapped time.
 
