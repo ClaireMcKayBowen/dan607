@@ -111,15 +111,17 @@ c("Black", "Boes", "Cohen", "Coleman", "DeAngelo", "Duff", "Flynn", "Gomez",
 
 Time (EDT) | Student Order
 ----- | ----- 
-5:15 pm - 6:00 pm | Novakoski
+5:15 pm - 6:00 pm | Scully**
+-- | Novakoski
 -- | DeAngelo
 -- | Sokolova*
 -- | Kiely
 -- | Coleman
 -- | Russell
--- | Williams
+
 **6:00 pm - 6:15 pm** | **Break**
-6:15 pm - 7:15 pm | Norton
+6:15 pm - 7:15 pm | Williams
+-- | Norton
 -- | Meslin
 -- | Gomez
 -- | Flynn
@@ -127,15 +129,15 @@ Time (EDT) | Student Order
 -- | Keohane
 -- | Weir
 -- | Lombardi
--- | Boes
 **7:15 pm - 7:30 pm** | **Break**
-7:30 pm - 8:15 pm | Mathews
+7:30 pm - 8:15 pm | Boes
+-- | Mathews
 -- | Cohen
 -- | Black*
--- | Scully
 -- | Duff
 -- | Macro
 -- | Larsson
 
 \* == indicates students swapped time.
+\*\* == indicates moved student sooner to avoid conflict (all other students have been shifted).
 
