@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,16 +17,14 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -40,7 +38,8 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -67,13 +66,7 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -82,10 +75,8 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 
@@ -97,16 +88,11 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_security-privacy-ethics-equity.html">Introduction and Data Collection</a></li><li class="breadcrumb-item"><a href="./02_data-collection.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
       </button>
     </div>
   </nav>
@@ -114,230 +100,205 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Security, Privacy, and Ethics (+ Equity)</a> 
     </div>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
+      <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-        </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome to DAN 607</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome to DAN 607</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Prelude</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Prelude</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DAN 607 Basics</span></span></a>
+  <a href="./01_introduction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DAN 607 Basics</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Introduction and Data Collection</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Introduction and Data Collection</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_security-privacy-ethics-equity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Security, Privacy, Ethics, and Equity</span></span></a>
+  <a href="./02_security-privacy-ethics-equity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Security, Privacy, Ethics, and Equity</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_data-collection.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></span></a>
+  <a href="./02_data-collection.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Data Storage and Sharing</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Data Storage and Sharing</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_data-storage.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></span></a>
+  <a href="./03_data-storage.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_data-sharing-transfer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></span></a>
+  <a href="./03_data-sharing-transfer.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
- <span class="menu-text">Data Analysis</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Data Analysis</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_data-analysis-part1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Analysis: Part 1</span></span></a>
+  <a href="./04_data-analysis-part1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Analysis: Part 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_data-analysis-part2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Analysis: Part 2</span></span></a>
+  <a href="./04_data-analysis-part2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Analysis: Part 2</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
- <span class="menu-text">Data Dissemination</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Data Dissemination</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_data-dissemination-part1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></span></a>
+  <a href="./05_data-dissemination-part1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_data-dissemination-part2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 2</span></span></a>
+  <a href="./05_data-dissemination-part2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 2</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
- <span class="menu-text">Data Destruction and Termination</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">Data Destruction and Termination</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06_final-presentations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Final Presentations</span></span></a>
+  <a href="./06_final-presentations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Final Presentations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06_data-termination.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></span></a>
+  <a href="./06_data-termination.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
- <span class="menu-text">Non-Technical Professional Skills</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Non-Technical Professional Skills</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_written-verbal-communication.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></span></a>
+  <a href="./02_written-verbal-communication.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_job-market-time-management.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Job Market and Time Management</span></span></a>
+  <a href="./03_job-market-time-management.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Job Market and Time Management</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_better-presentations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Better Presentations</span></span></a>
+  <a href="./04_better-presentations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Better Presentations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_communication-collaboration-culture.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Communication, Collaboration, and Culture</span></span></a>
+  <a href="./05_communication-collaboration-culture.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Communication, Collaboration, and Culture</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#data-types" id="toc-data-types" class="nav-link active" data-scroll-target="#data-types"><span class="header-section-number">3.1</span> Data types</a>
+  <li><a href="#data-types" id="toc-data-types" class="nav-link active" data-scroll-target="#data-types"><span class="toc-section-number">3.1</span>  Data types</a>
   <ul class="collapse">
-  <li><a href="#primary-data" id="toc-primary-data" class="nav-link" data-scroll-target="#primary-data"><span class="header-section-number">3.1.1</span> Primary data</a></li>
-  <li><a href="#secondary-data" id="toc-secondary-data" class="nav-link" data-scroll-target="#secondary-data"><span class="header-section-number">3.1.2</span> Secondary data</a></li>
-  <li><a href="#administrative-data" id="toc-administrative-data" class="nav-link" data-scroll-target="#administrative-data"><span class="header-section-number">3.1.3</span> Administrative data</a></li>
+  <li><a href="#primary-data" id="toc-primary-data" class="nav-link" data-scroll-target="#primary-data"><span class="toc-section-number">3.1.1</span>  Primary data</a></li>
+  <li><a href="#secondary-data" id="toc-secondary-data" class="nav-link" data-scroll-target="#secondary-data"><span class="toc-section-number">3.1.2</span>  Secondary data</a></li>
+  <li><a href="#administrative-data" id="toc-administrative-data" class="nav-link" data-scroll-target="#administrative-data"><span class="toc-section-number">3.1.3</span>  Administrative data</a></li>
   </ul></li>
-  <li><a href="#discussion-on-do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual-orientation-data" id="toc-discussion-on-do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual-orientation-data" class="nav-link" data-scroll-target="#discussion-on-do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual-orientation-data"><span class="header-section-number">3.2</span> Discussion on Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data</a>
+  <li><a href="#discussion-on-do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual-orientation-data" id="toc-discussion-on-do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual-orientation-data" class="nav-link" data-scroll-target="#discussion-on-do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual-orientation-data"><span class="toc-section-number">3.2</span>  Discussion on Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data</a>
   <ul class="collapse">
-  <li><a href="#defining-groups-is-important" id="toc-defining-groups-is-important" class="nav-link" data-scroll-target="#defining-groups-is-important"><span class="header-section-number">3.2.1</span> Defining groups is important</a></li>
-  <li><a href="#trans-parency-in-the-legal-community" id="toc-trans-parency-in-the-legal-community" class="nav-link" data-scroll-target="#trans-parency-in-the-legal-community"><span class="header-section-number">3.2.2</span> Trans-parency in the legal community</a></li>
-  <li><a href="#how-do-we-define-ourselves-and-society" id="toc-how-do-we-define-ourselves-and-society" class="nav-link" data-scroll-target="#how-do-we-define-ourselves-and-society"><span class="header-section-number">3.2.3</span> How do we define ourselves and society</a></li>
+  <li><a href="#defining-groups-is-important" id="toc-defining-groups-is-important" class="nav-link" data-scroll-target="#defining-groups-is-important"><span class="toc-section-number">3.2.1</span>  Defining groups is important</a></li>
+  <li><a href="#trans-parency-in-the-legal-community" id="toc-trans-parency-in-the-legal-community" class="nav-link" data-scroll-target="#trans-parency-in-the-legal-community"><span class="toc-section-number">3.2.2</span>  Trans-parency in the legal community</a></li>
+  <li><a href="#how-do-we-define-ourselves-and-society" id="toc-how-do-we-define-ourselves-and-society" class="nav-link" data-scroll-target="#how-do-we-define-ourselves-and-society"><span class="toc-section-number">3.2.3</span>  How do we define ourselves and society</a></li>
   </ul></li>
-  <li><a href="#no-data-no-problem-no-action" id="toc-no-data-no-problem-no-action" class="nav-link" data-scroll-target="#no-data-no-problem-no-action"><span class="header-section-number">3.3</span> No data, no problem, no action</a>
+  <li><a href="#no-data-no-problem-no-action" id="toc-no-data-no-problem-no-action" class="nav-link" data-scroll-target="#no-data-no-problem-no-action"><span class="toc-section-number">3.3</span>  No data, no problem, no action</a>
   <ul class="collapse">
-  <li><a href="#library-of-missing-datasets" id="toc-library-of-missing-datasets" class="nav-link" data-scroll-target="#library-of-missing-datasets"><span class="header-section-number">3.3.1</span> Library of Missing Datasets</a></li>
-  <li><a href="#asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english" id="toc-asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english" class="nav-link" data-scroll-target="#asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english"><span class="header-section-number">3.3.2</span> Asian Americans are highly educated, born in the U.S., and speak English</a></li>
+  <li><a href="#library-of-missing-datasets" id="toc-library-of-missing-datasets" class="nav-link" data-scroll-target="#library-of-missing-datasets"><span class="toc-section-number">3.3.1</span>  Library of Missing Datasets</a></li>
+  <li><a href="#asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english" id="toc-asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english" class="nav-link" data-scroll-target="#asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english"><span class="toc-section-number">3.3.2</span>  Asian Americans are highly educated, born in the U.S., and speak English</a></li>
   </ul></li>
-  <li><a href="#week-3-assignment" id="toc-week-3-assignment" class="nav-link" data-scroll-target="#week-3-assignment"><span class="header-section-number">3.4</span> Week 3 Assignment</a>
+  <li><a href="#week-3-assignment" id="toc-week-3-assignment" class="nav-link" data-scroll-target="#week-3-assignment"><span class="toc-section-number">3.4</span>  Week 3 Assignment</a>
   <ul class="collapse">
-  <li><a href="#read" id="toc-read" class="nav-link" data-scroll-target="#read"><span class="header-section-number">3.4.1</span> Read</a></li>
-  <li><a href="#optional-additional-read" id="toc-optional-additional-read" class="nav-link" data-scroll-target="#optional-additional-read"><span class="header-section-number">3.4.2</span> Optional additional read</a></li>
-  <li><a href="#write-600-to-1200-words" id="toc-write-600-to-1200-words" class="nav-link" data-scroll-target="#write-600-to-1200-words"><span class="header-section-number">3.4.3</span> Write (600 to 1200 words)</a></li>
+  <li><a href="#read" id="toc-read" class="nav-link" data-scroll-target="#read"><span class="toc-section-number">3.4.1</span>  Read</a></li>
+  <li><a href="#optional-additional-read" id="toc-optional-additional-read" class="nav-link" data-scroll-target="#optional-additional-read"><span class="toc-section-number">3.4.2</span>  Optional additional read</a></li>
+  <li><a href="#write-600-to-1200-words" id="toc-write-600-to-1200-words" class="nav-link" data-scroll-target="#write-600-to-1200-words"><span class="toc-section-number">3.4.3</span>  Write (600 to 1200 words)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -345,9 +306,9 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_security-privacy-ethics-equity.html">Introduction and Data Collection</a></li><li class="breadcrumb-item"><a href="./02_data-collection.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></h1>
 </div>
 
 
@@ -360,10 +321,11 @@ div.csl-indent {
   </div>
   
 
-
 </header>
 
+<div class="cell">
 
+</div>
 <p>We start with data collection and learn about the different types of data, the importance of how we collect that data, and the issues for society caused by the absence of or poorly designed data collection.</p>
 <section id="data-types" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="data-types"><span class="header-section-number">3.1</span> Data types</h2>
@@ -384,16 +346,19 @@ div.csl-indent {
 <section id="administrative-data" class="level3" data-number="3.1.3">
 <h3 data-number="3.1.3" class="anchored" data-anchor-id="administrative-data"><span class="header-section-number">3.1.3</span> Administrative data</h3>
 <p>Administrative data are collected for the administration of an organization or program by entities, such as government agencies as they provide services, companies to track orders, and universities to record registered students. These data records are usually not public-use data files and tend to only be accessed through strict confidentiality agreements, such as non-disclosure agreements or memorandum of understanding (e.g., IRS tax payer data).</p>
-<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 <span style="color:#1696d2;">Class Activity 1</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
 <p>For each data type:</p>
 <ul>
 <li>What are some other examples?</li>
@@ -411,15 +376,11 @@ div.csl-indent {
 </blockquote>
 <p>~ Saki Kinney, RTI (Research Triangle International)</p>
 <p>This quote from a colleague highlights the importance of how data is collected. If we blindly collect data without careful consideration of the process—such as how we define groups or the methods used for data collection—we could severely and negatively impact those groups when others in the data ecosystem use and analyze that data.</p>
-<p>The required reading assignment, Do No Harm Guide (DNHG) by <span class="citation" data-cites="schwabish2023no">Schwabish et al. (<a href="references.html#ref-schwabish2023no" role="doc-biblioref">2023</a>)</span>, covers many data collection challenges and will facilitate our discussion on the potential security, privacy, ethical, and equity issues in data collection.</p>
-<div id="fig-dnhg-sogi" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-dnhg-sogi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="www/images/dnhg-sogi.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dnhg-sogi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.1: The cover of the Urban Institute report, “Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data .”
-</figcaption>
+<p>The required reading assignment, Do No Harm Guide (DNHG) by <span class="citation" data-cites="schwabish2023no">Schwabish et al. (<a href="#ref-schwabish2023no" role="doc-biblioref">2023</a>)</span>, covers many data collection challenges and will facilitate our discussion on the potential security, privacy, ethical, and equity issues in data collection.</p>
+<div id="fig-dnhg-sogi" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/dnhg-sogi.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.1: The cover of the Urban Institute report, “Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data .”</figcaption><p></p>
 </figure>
 </div>
 <section id="defining-groups-is-important" class="level3" data-number="3.2.1">
@@ -427,16 +388,19 @@ Figure&nbsp;3.1: The cover of the Urban Institute report, “Do No Harm Guide: C
 <blockquote class="blockquote">
 <p>Collecting data about sexual orientation and gender identity and expression allows for a better understanding of sexual and gender minority populations, enabling researchers, policymakers, and advocates to understand differences between these populations and other population groups or the general population across policy areas. Insight from these data highlight important areas for interventions that may improve the lives of members of sexual and gender minority groups.</p>
 </blockquote>
-<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 <span style="color:#1696d2;">Class Activity 2</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
 <p>There is a glossary at the start of the DNHG instead of at the end.</p>
 <ul>
 <li>Why do you think the authors had the glossary so early in the report?</li>
@@ -449,16 +413,19 @@ Figure&nbsp;3.1: The cover of the Urban Institute report, “Do No Harm Guide: C
 <section id="trans-parency-in-the-legal-community" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="trans-parency-in-the-legal-community"><span class="header-section-number">3.2.2</span> Trans-parency in the legal community</h3>
 <p>The American Bar Association wants to release more demographic information about students who attend law school and complete the bar exam. One piece of information they want to share is the number of transgender students attending their law schools. Some students support this decision, believing it will allow other transgender students to reach out to them or see that the law school is welcoming toward transgender students. Others, however, want this information to be withheld for safety reasons, preferring that their law programs do not disclose that they have transgender students.</p>
-<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 <span style="color:#1696d2;">Class Activity 3</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
 <p>In this scenario, how would you answer the following:</p>
 <ul>
 <li>User engagement is emphasized in the DNHG. Who would you try to engage in a conversation about collecting and releasing information about transgender students in law school?</li>
@@ -468,12 +435,12 @@ Figure&nbsp;3.1: The cover of the Urban Institute report, “Do No Harm Guide: C
 </div>
 </div>
 <p>Institutional Review Boards (IRBs) review an institution’s (e.g., university, government agency) research, evaluation, and technical assistance projects involving information collected from or about human subjects. The IRB reviews projects’ data collection procedures and data security plans with the objective of protecting the rights and welfare of human subjects and minimizing risks to them, as mandated by federal regulations and consistent with longstanding institutional policies.</p>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 The importance of IRB
 </div>
 </div>
@@ -488,42 +455,37 @@ The importance of IRB
 <p>There are two sides to survey data collection: the experience of the participant and the experience of the researcher. Thus, building trust between the participant and the researcher is key to generating high-quality data. Communicating to people why their personal information is necessary and gaining their formal consent can lead to greater collaboration and, ultimately, allow for more inclusive survey methods.</p>
 </blockquote>
 <p>Part 3 of the DNHG reviews various methods for conducting surveys to collect sexual orientation and gender identity information. This highlights the challenge of properly defining groups in a way that is both consistent and inclusive.</p>
-<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 <span style="color:#1696d2;">Class Activity 4</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
 <p>Article I, Section 2 of the Constitution mandates that a census must take place every 10 years in the United States. The data collected by the decennial census determine the number of seats each state has in the U.S. House of Representatives and how to distribute the trillions in federal funds to local communities.</p>
 <p>As part of the decennial census, people must answer several questions, such as what is their race. How would define your race?</p>
 <p>The images below show the race question for the 1990 and 2020 Census questionnaire. Would your definition match what is offered in these questionnaires?</p>
 </div>
 </div>
-<div id="fig-1990-census-race" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-1990-census-race-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="www/images/1990-census-race-question.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1990-census-race-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.2: 1990 Census Race Question
-</figcaption>
+<div id="fig-1990-census-race" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/1990-census-race-question.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.2: 1990 Census Race Question</figcaption><p></p>
 </figure>
 </div>
-<div id="fig-2020-census-race" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-2020-census-race-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="www/images/rsblog-race-hispanic-origin-figure-2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2020-census-race-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.3: 2020 Census Race Question
-</figcaption>
+<div id="fig-2020-census-race" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/rsblog-race-hispanic-origin-figure-2.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.3: 2020 Census Race Question</figcaption><p></p>
 </figure>
 </div>
-<p>The nuances of different races is important in some contexts and not in others. For example, the state of Wyoming probably only needs to know the number of Asian Americans (i.e., coarsen all subgroups into the larger group), whereas New York City needs the count of various subgroups, because each subgroup has different poverty rates <span class="citation" data-cites="sonoda2023">(<a href="references.html#ref-sonoda2023" role="doc-biblioref">Sonoda and Hahn 2023</a>)</span>.</p>
+<p>The nuances of different races is important in some contexts and not in others. For example, the state of Wyoming probably only needs to know the number of Asian Americans (i.e., coarsen all subgroups into the larger group), whereas New York City needs the count of various subgroups, because each subgroup has different poverty rates <span class="citation" data-cites="sonoda2023">(<a href="#ref-sonoda2023" role="doc-biblioref">Sonoda and Hahn 2023</a>)</span>.</p>
 </section>
 </section>
 <section id="no-data-no-problem-no-action" class="level2" data-number="3.3">
@@ -549,14 +511,10 @@ Figure&nbsp;3.3: 2020 Census Race Question
 <li>How much Spotify pays each of its artists per play of song</li>
 </ul>
 <p>What if you were then told that there are no such datasets created or available to answer these questions?</p>
-<div id="fig-1990-census-race" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-1990-census-race-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="www/images/mo_the-library-of-missing-datasetss-v-3.0_01_rt.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1990-census-race-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.4: The image from Mimi Ọnụọha’s The Library of Missing Datasets 3.0
-</figcaption>
+<div id="fig-1990-census-race" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/mo_the-library-of-missing-datasetss-v-3.0_01_rt.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.4: The image from Mimi Ọnụọha’s The Library of Missing Datasets 3.0</figcaption><p></p>
 </figure>
 </div>
 <p>These questions are part of a mixed-media installation by <a href="https://mimionuoha.com/">Mimi Ọnụọha</a> called, The Library of Missing Datasets, which is on <a href="https://mimionuoha.com/the-library-of-missing-datasets-v3">version 3.0</a>. This piece is a physical repository of those things that have been excluded in a society where so much is collected.</p>
@@ -564,16 +522,19 @@ Figure&nbsp;3.4: The image from Mimi Ọnụọha’s The Library of Missing Dat
 <blockquote class="blockquote">
 <p>“Missing datasets” are the blank spots that exist in spaces that are otherwise data-saturated. Wherever large amounts of data are collected, there are often empty spaces where no data live. The word “missing” is inherently normative. It implies both a lack and an ought: something does not exist, but it should. That which should be somewhere is not in its expected place; an established system is disrupted by distinct absence. That which we ignore reveals more than what we give our attention to. It’s in these things that we find cultural and colloquial hints of what is deemed important. Spots that we’ve left blank reveal our hidden social biases and indifferences.</p>
 </blockquote>
-<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 <span style="color:#1696d2;">Class Activity 5</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
 <p>Mimi Ọnụọha created the list of questions for “The Library of Missing Datasets 3.0” in 2022. Her GitHub repo indicates that one of the illustrative examples from her version 2 installation in 2018 is no longer missing.</p>
 <blockquote class="blockquote">
 <p>Civilians killed in encounters with police or law enforcement agencies [update: this is no longer a missing dataset]</p>
@@ -607,16 +568,19 @@ Figure&nbsp;3.4: The image from Mimi Ọnụọha’s The Library of Missing Dat
 <blockquote class="blockquote">
 <p>Every missing dataset is a testament to this fact. Just as the presence of data benefits someone, so too does the absence. This is important to keep in mind. However, there’s an even more specific angle to this point. To collect, record, and archive aspects of the world is an intentional act, one that typically benefits those who have the power to decide what should be collected. Often, remaining outside of the bounds of collection can be a form of response for a situationally-disadvantaged group. In short, sometimes a missing dataset can function as a form of protection.</p>
 </blockquote>
-<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 <span style="color:#1696d2;">Class Activity 6</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
 <p>If you could not find a dataset, why do you think that dataset doesn’t exist based on the four reasons Mimi Ọnụọha highlighted?</p>
 </div>
 </div>
@@ -624,32 +588,31 @@ Figure&nbsp;3.4: The image from Mimi Ọnụọha’s The Library of Missing Dat
 <section id="asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english" class="level3" data-number="3.3.2">
 <h3 data-number="3.3.2" class="anchored" data-anchor-id="asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english"><span class="header-section-number">3.3.2</span> Asian Americans are highly educated, born in the U.S., and speak English</h3>
 <p>Not collecting data is one issue. Another, which could be just as or even more detrimental to society, is collecting the wrong kind of data. If we are not careful with how we design data collection, we could create harmful narratives about certain areas of society, especially underrepresented groups.</p>
-<p>An example of this is work done by my colleague, <a href="https://surveydatascience.isr.umich.edu/slee">Dr.&nbsp;Sunghee Lee</a> of the University of Michigan. She presented her in the same conference session as me, where she discussed how incomplete data on Asian-American populations risks fueling a vicious circle of inaction and growing inequality. One of her projects compared the socio-demographics of Asian-American respondents reported in four large-scale sample surveys against the same characteristics collected by the US Census Bureau’s American Community Survey,<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> which is often referred to as the gold standard survey on the United States populations and housing information <span class="citation" data-cites="tarran2023">(<a href="references.html#ref-tarran2023" role="doc-biblioref">Tarran 2023</a>)</span>.</p>
+<p>An example of this is work done by my colleague, <a href="https://surveydatascience.isr.umich.edu/slee">Dr.&nbsp;Sunghee Lee</a> of the University of Michigan. She presented her in the same conference session as me, where she discussed how incomplete data on Asian-American populations risks fueling a vicious circle of inaction and growing inequality. One of her projects compared the socio-demographics of Asian-American respondents reported in four large-scale sample surveys against the same characteristics collected by the US Census Bureau’s American Community Survey,<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> which is often referred to as the gold standard survey on the United States populations and housing information <span class="citation" data-cites="tarran2023">(<a href="#ref-tarran2023" role="doc-biblioref">Tarran 2023</a>)</span>.</p>
 <p>When comparing these surveys, Dr.&nbsp;Lee found that the four surveys often differed in important respects. For example, Asian Americans accounted for seven percent of adults aged 18 and over in the American Community Survey. In contrast, the General Social Survey<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and Behavioral Risk Factor Surveillance Survey<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> accounted for only four percent and two percent, respectively. The American Community Survey shows 27 percent of Asian-American respondents are educated to high-school level or below, the equivalent grouping in the Behavioral Risk Factor Surveillance Survey accounted for 18 percent.</p>
 <p>However, none of these surveys, except the American Community Survey, collected data on Asian Americans’ proficiency with spoken English.</p>
 <p>According to the American Community Survey, 31 percent of Asian-American adults have “limited English proficiency.” Dr.&nbsp;Lee’s research found that none of the four selected surveys (General Social Survey and Behavioral Risk Factor Surveillance Survey, plus the Current Population Survey<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> and National Health Interview Survey<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>) offered questionnaires in Asian languages; only English and Spanish.</p>
 <p>Due to the poorly designed surveys, anyone using these data will find that most Asian Americans are born in the US and/or who have high levels of English proficiency, missing the true geographic and ethnic heterogeneity of the Asian American population. This underrepresentation of certain Asian-American subgroups encourages a potential vicious cycle of having no “data-driven” proof to collect such information. This means that issues affecting certain population groups are not identified, meaning no action needs to be taken.</p>
 <p>Hence, at the end of the presentation, Dr.&nbsp;Lee’s slide stated, “No data, no problem, no action”.</p>
-<div id="fig-no-data" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-no-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="www/images/no-data.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-no-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.5: Roll Safe Think About It meme that says, “Can’t have any issues, if there is no data.”
-</figcaption>
+<div id="fig-no-data" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/no-data.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.5: Roll Safe Think About It meme that says, “Can’t have any issues, if there is no data.”</figcaption><p></p>
 </figure>
 </div>
-<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 <span style="color:#1696d2;">Class Activity 7</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
 <p>After learning about this use case, answer the following:</p>
 <ul>
 <li>What is your reaction to this situation?</li>
@@ -661,12 +624,12 @@ Figure&nbsp;3.5: Roll Safe Think About It meme that says, “Can’t have any is
 </section>
 <section id="week-3-assignment" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="week-3-assignment"><span class="header-section-number">3.4</span> Week 3 Assignment</h2>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 DEADLINE
 </div>
 </div>
@@ -697,14 +660,14 @@ DEADLINE
 </ul>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-schwabish2023no" class="csl-entry" role="listitem">
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-schwabish2023no" class="csl-entry" role="doc-biblioentry">
 Schwabish, Jonathan, Donovan Harvey, Mel Langness, Vincent Pancini, Amy Rogin, and Gabi Velasco. 2023. <span>“Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data.”</span>
 </div>
-<div id="ref-sonoda2023" class="csl-entry" role="listitem">
+<div id="ref-sonoda2023" class="csl-entry" role="doc-biblioentry">
 Sonoda, Paige, and Heather Hahn. 2023. <span>“Disaggregating Data Is Critical to Dismantling the Model Minority Stereotype.”</span> <a href="https://www.urban.org/urban-wire/disaggregating-data-critical-dismantling-model-minority-stereotype">https://www.urban.org/urban-wire/disaggregating-data-critical-dismantling-model-minority-stereotype</a>.
 </div>
-<div id="ref-tarran2023" class="csl-entry" role="listitem">
+<div id="ref-tarran2023" class="csl-entry" role="doc-biblioentry">
 Tarran, Brian. 2023. <span>“JSM Session Touches on Equity.”</span> <em>Amstat News</em>. <a href="https://magazine.amstat.org/blog/2023/11/01/jedi-corner-jsm-session-equity/">https://magazine.amstat.org/blog/2023/11/01/jedi-corner-jsm-session-equity/</a>.
 </div>
 </div>
@@ -751,23 +714,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -803,27 +752,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -833,17 +765,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -855,245 +778,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1135,18 +822,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./02_security-privacy-ethics-equity.html" class="pagination-link" aria-label="Security, Privacy, Ethics, and Equity">
+      <a href="./02_security-privacy-ethics-equity.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Security, Privacy, Ethics, and Equity</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./03_data-storage.html" class="pagination-link" aria-label="Data Storage">
+      <a href="./03_data-storage.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-
 
 
 
