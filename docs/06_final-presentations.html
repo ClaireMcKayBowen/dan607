@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Security, Privacy, and Ethics (+ Equity) - 10&nbsp; Final Presentations</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./06_data-termination.html" rel="next">
+<link href="./05_data-dissemination-part2.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="www/styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Final Presentations</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Security, Privacy, and Ethics (+ Equity)</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome to DAN 607</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Prelude</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_introduction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DAN 607 Basics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Introduction and Data Collection</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_security-privacy-ethics-equity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Security, Privacy, Ethics, and Equity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_data-collection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Data Storage and Sharing</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_data-storage.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_data-sharing-transfer.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Data Analysis</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_data-analysis-part1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Analysis: Part 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_data-analysis-part2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Analysis: Part 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Data Dissemination</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_data-dissemination-part1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_data-dissemination-part2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">Data Destruction and Termination</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_final-presentations.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Final Presentations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_data-termination.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Non-Technical Professional Skills</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_written-verbal-communication.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_job-market-time-management.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Job Market and Time Management</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_better-presentations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Better Presentations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_communication-collaboration-culture.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Communication, Collaboration, and Culture</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#complete-course-evaluations" id="toc-complete-course-evaluations" class="nav-link active" data-scroll-target="#complete-course-evaluations"><span class="toc-section-number">10.1</span>  Complete course evaluations</a></li>
+  <li><a href="#final-presentations" id="toc-final-presentations" class="nav-link" data-scroll-target="#final-presentations"><span class="toc-section-number">10.2</span>  Final presentations</a>
+  <ul class="collapse">
+  <li><a href="#target-audience-and-presentation-topic" id="toc-target-audience-and-presentation-topic" class="nav-link" data-scroll-target="#target-audience-and-presentation-topic"><span class="toc-section-number">10.2.1</span>  Target audience and presentation topic</a></li>
+  <li><a href="#evaluation-of-the-presentation" id="toc-evaluation-of-the-presentation" class="nav-link" data-scroll-target="#evaluation-of-the-presentation"><span class="toc-section-number">10.2.2</span>  Evaluation of the presentation</a></li>
+  <li><a href="#presentation-order" id="toc-presentation-order" class="nav-link" data-scroll-target="#presentation-order"><span class="toc-section-number">10.2.3</span>  Presentation order</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule"><span class="toc-section-number">10.2.4</span>  Schedule</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Final Presentations</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+
+</div>
+<section id="complete-course-evaluations" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="complete-course-evaluations"><span class="header-section-number">10.1</span> Complete course evaluations</h2>
+<p>The graduate programs asked that professors reserve time at the start of class for students to fill out their course evaluations. I will give everyone 10 minutes (5 minute check-in) to fill out the course evaluation.</p>
+</section>
+<section id="final-presentations" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="final-presentations"><span class="header-section-number">10.2</span> Final presentations</h2>
+<p>The goal of this final is to develop and deliver a clear, concise, and engaging presentation on a topic of your choice within a strict 5-minute time limit, but your target audience will be randomized. This exercise will help you improve your research, organization, and public speaking skills.</p>
+<p>The presentation topic can be anything you learned in this course. It can be on something you wrote, in class discussion, contents in the book or other materials you read/watched, as long as it relates back to security, privacy, ethics, and equity.</p>
+<section id="target-audience-and-presentation-topic" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="target-audience-and-presentation-topic"><span class="header-section-number">10.2.1</span> Target audience and presentation topic</h3>
+<table class="table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Student Last Name</th>
+<th>Target Audience</th>
+<th>Presentation Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Black</td>
+<td>family-friends</td>
+<td>Security breaches.</td>
+</tr>
+<tr class="even">
+<td>Boes</td>
+<td>family-friends</td>
+<td>Is it ethical or not to terminate data.</td>
+</tr>
+<tr class="odd">
+<td>Cohen</td>
+<td>family-friends</td>
+<td>Data security and privacy considerations when storing and/or sharing sports data.</td>
+</tr>
+<tr class="even">
+<td>Coleman</td>
+<td>government-policymaker*</td>
+<td>Texas secret ballot.</td>
+</tr>
+<tr class="odd">
+<td>DeAngelo</td>
+<td>undergraduates-coworkers</td>
+<td>Noise infusion/injection and the tradeoff between privacy and data usability.</td>
+</tr>
+<tr class="even">
+<td>Duff</td>
+<td>family-friends*</td>
+<td>AI algorithms being used in hiring/recruiting process.</td>
+</tr>
+<tr class="odd">
+<td>Flynn</td>
+<td>undergraduates-coworkers</td>
+<td>Data security in sports betting.</td>
+</tr>
+<tr class="even">
+<td>Gomez</td>
+<td>undergraduates-coworkers</td>
+<td>(EA) Electronic Arts and its efforts towards improving data security, protecting user privacy, and promoting ethical gaming practices.</td>
+</tr>
+<tr class="odd">
+<td>Keohane</td>
+<td>family-friends</td>
+<td>Data warehouses and silos.</td>
+</tr>
+<tr class="even">
+<td>Kiely</td>
+<td>government-policymaker</td>
+<td>AI (in)equity in mental health data.</td>
+</tr>
+<tr class="odd">
+<td>Larsson</td>
+<td>funders-media</td>
+<td>What funding is needed to meet General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA).</td>
+</tr>
+<tr class="even">
+<td>Lombardi</td>
+<td>government-policymaker</td>
+<td>The inequity of facial recognition.</td>
+</tr>
+<tr class="odd">
+<td>Macro</td>
+<td>funders-media</td>
+<td>Advantages and disadvantages of using partially and fully synthetic data.</td>
+</tr>
+<tr class="even">
+<td>Mathews</td>
+<td>government-policymaker</td>
+<td>How the supreme court justices should be viewing surveys in AMICUS (“friend of the court”) briefs through the lens of equity.</td>
+</tr>
+<tr class="odd">
+<td>Meslin</td>
+<td>family-friends</td>
+<td>Google Incognito lawsuit.</td>
+</tr>
+<tr class="even">
+<td>Norton</td>
+<td>family-friends</td>
+<td>How does GDPR differs from US policies?</td>
+</tr>
+<tr class="odd">
+<td>Novakoski</td>
+<td>undergraduates-coworkers</td>
+<td>Why privacy is a factor in no public Spotify data.</td>
+</tr>
+<tr class="even">
+<td>Russell</td>
+<td>government-policymaker</td>
+<td>AI in healthcare (e.g., patient data).</td>
+</tr>
+<tr class="odd">
+<td>Schreifels</td>
+<td>undergraduates-coworkers</td>
+<td>Urban vs Rural internet connectivity could impact social inequalities either in a positive or negative way.</td>
+</tr>
+<tr class="even">
+<td>Scully</td>
+<td>undergraduates-coworkers</td>
+<td>Algorithmic data collection needing filters to spur negative content.</td>
+</tr>
+<tr class="odd">
+<td>Sokolova</td>
+<td>funders-media</td>
+<td>Email phishing.</td>
+</tr>
+<tr class="even">
+<td>Weir</td>
+<td>funders-media</td>
+<td>The ethical implications of cross border data transfers within emerging technologies.</td>
+</tr>
+<tr class="odd">
+<td>Williams</td>
+<td>family-friends</td>
+<td>How much data apps collect and what steps one can take better protect personal information.</td>
+</tr>
+</tbody>
+</table>
+<p>* == indicates students swapped target audience.</p>
+</section>
+<section id="evaluation-of-the-presentation" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="evaluation-of-the-presentation"><span class="header-section-number">10.2.2</span> Evaluation of the presentation</h3>
+<p>The following is how I will evaluate your presentations. Each part will be scored from 1 to 10, as detailed below.</p>
+<ol type="1">
+<li><p>Content and audience (10 points)</p>
+<ul>
+<li>10: Clear purpose and content that addresses the target audience.</li>
+<li>5: Moderate clarity and relevance to the target audience.</li>
+<li>1: Unclear purpose and irrelevant to the target audience.</li>
+</ul></li>
+<li><p>Organization and structure (10 points)</p>
+<ul>
+<li>10: Well-organized with a clear and strong flow (introduction, middle, and conclusion).</li>
+<li>5: Moderately organized with adequate flow.</li>
+<li>1: Poorly organized, missing key structural elements.</li>
+</ul></li>
+<li><p>Delivery and timing (10 points)</p>
+<ul>
+<li>10: Enthusiastic and engaging, with good pacing, within 30 seconds of the time limit.</li>
+<li>5: Some enthusiasm and minor pacing issues, within 30 seconds to 1 minute of the time limit.</li>
+<li>1: Lacks enthusiasm, poor pacing, over 1 minute off the time limit.</li>
+</ul></li>
+<li><p>Quality of slides or other visual aids (10 points)</p>
+<ul>
+<li>10: Enhances the presentation.</li>
+<li>5: Somewhat contributes to the presentation.</li>
+<li>1: Does not contribute to the presentation.</li>
+</ul></li>
+<li><p>Overall quality (10 points)</p>
+<ul>
+<li>10: Highly effective in achieving the goal.</li>
+<li>5: Somewhat effective in achieving the goal.</li>
+<li>1: Ineffective in achieving the goal.</li>
+</ul></li>
+</ol>
+</section>
+<section id="presentation-order" class="level3" data-number="10.2.3">
+<h3 data-number="10.2.3" class="anchored" data-anchor-id="presentation-order"><span class="header-section-number">10.2.3</span> Presentation order</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="fu">c</span>(<span class="st">"Black"</span>, <span class="st">"Boes"</span>, <span class="st">"Cohen"</span>, <span class="st">"Coleman"</span>, <span class="st">"DeAngelo"</span>, <span class="st">"Duff"</span>, <span class="st">"Flynn"</span>, <span class="st">"Gomez"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="st">"Keohane"</span>, <span class="st">"Kiely"</span>, <span class="st">"Larsson"</span>, <span class="st">"Lombardi"</span>, <span class="st">"Macro"</span>, <span class="st">"Mathews"</span>, <span class="st">"Meslin"</span>, </span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="st">"Norton"</span>, <span class="st">"Novakoski"</span>, <span class="st">"Russell"</span>, <span class="st">"Schreifels"</span>, <span class="st">"Scully"</span>, <span class="st">"Sokolova"</span>, <span class="st">"Weir"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8"></a>  <span class="st">"Williams"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">sample</span>(., <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Novakoski"  "DeAngelo"   "Black"      "Kiely"      "Coleman"   
+ [6] "Russell"    "Williams"   "Norton"     "Meslin"     "Gomez"     
+[11] "Flynn"      "Schreifels" "Keohane"    "Weir"       "Lombardi"  
+[16] "Boes"       "Mathews"    "Cohen"      "Sokolova"   "Scully"    
+[21] "Duff"       "Macro"      "Larsson"   </code></pre>
+</div>
+</div>
+</section>
+<section id="schedule" class="level3" data-number="10.2.4">
+<h3 data-number="10.2.4" class="anchored" data-anchor-id="schedule"><span class="header-section-number">10.2.4</span> Schedule</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Time (EDT)</th>
+<th>Student Order</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5:15 pm - 6:00 pm</td>
+<td>Scully**</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Novakoski</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>DeAngelo</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Sokolova*</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Kiely</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Coleman</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Russell</td>
+</tr>
+<tr class="even">
+<td><strong>6:00 pm - 6:15 pm</strong></td>
+<td><strong>Break</strong></td>
+</tr>
+<tr class="odd">
+<td>6:15 pm - 7:15 pm</td>
+<td>Williams</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Norton</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Meslin</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Gomez</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Flynn</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Schreifels</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Keohane</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Weir</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Lombardi</td>
+</tr>
+<tr class="even">
+<td><strong>7:15 pm - 7:30 pm</strong></td>
+<td><strong>Break</strong></td>
+</tr>
+<tr class="odd">
+<td>7:30 pm - 8:15 pm</td>
+<td>Boes</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Mathews</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Cohen</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Black*</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Duff</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Macro</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Larsson</td>
+</tr>
+</tbody>
+</table>
+<p>* == indicates students swapped time. ** == indicates moved student sooner to avoid conflict (all other students have been shifted).</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./05_data-dissemination-part2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 2</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./06_data-termination.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

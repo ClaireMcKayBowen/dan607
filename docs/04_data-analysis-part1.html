@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Security, Privacy, and Ethics (+ Equity) - 6&nbsp; Data Analysis: Part 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./04_data-analysis-part2.html" rel="next">
+<link href="./03_data-sharing-transfer.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="www/styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Analysis: Part 1</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Security, Privacy, and Ethics (+ Equity)</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome to DAN 607</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Prelude</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_introduction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DAN 607 Basics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Introduction and Data Collection</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_security-privacy-ethics-equity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Security, Privacy, Ethics, and Equity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_data-collection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Data Storage and Sharing</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_data-storage.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_data-sharing-transfer.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Data Analysis</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_data-analysis-part1.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Analysis: Part 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_data-analysis-part2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Analysis: Part 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Data Dissemination</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_data-dissemination-part1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_data-dissemination-part2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">Data Destruction and Termination</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_final-presentations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Final Presentations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_data-termination.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Non-Technical Professional Skills</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_written-verbal-communication.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_job-market-time-management.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Job Market and Time Management</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_better-presentations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Better Presentations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_communication-collaboration-culture.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Communication, Collaboration, and Culture</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#quick-recap-on-week-3-with-some-week-2" id="toc-quick-recap-on-week-3-with-some-week-2" class="nav-link active" data-scroll-target="#quick-recap-on-week-3-with-some-week-2"><span class="toc-section-number">6.1</span>  Quick recap on week 3 (with some week 2)</a>
+  <ul class="collapse">
+  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection"><span class="toc-section-number">6.1.1</span>  Data collection</a></li>
+  <li><a href="#data-storage" id="toc-data-storage" class="nav-link" data-scroll-target="#data-storage"><span class="toc-section-number">6.1.2</span>  Data storage</a></li>
+  <li><a href="#data-sharing-and-transfer" id="toc-data-sharing-and-transfer" class="nav-link" data-scroll-target="#data-sharing-and-transfer"><span class="toc-section-number">6.1.3</span>  Data sharing and transfer</a></li>
+  </ul></li>
+  <li><a href="#what-is-the-privacy-utility-tradeoff" id="toc-what-is-the-privacy-utility-tradeoff" class="nav-link" data-scroll-target="#what-is-the-privacy-utility-tradeoff"><span class="toc-section-number">6.2</span>  What is the privacy-utility tradeoff?</a></li>
+  <li><a href="#what-is-synthetic-data-why-use-it" id="toc-what-is-synthetic-data-why-use-it" class="nav-link" data-scroll-target="#what-is-synthetic-data-why-use-it"><span class="toc-section-number">6.3</span>  What is synthetic data? Why use it?</a>
+  <ul class="collapse">
+  <li><a href="#partial-vs.-fully-synthetic-advantages-and-disadvantages" id="toc-partial-vs.-fully-synthetic-advantages-and-disadvantages" class="nav-link" data-scroll-target="#partial-vs.-fully-synthetic-advantages-and-disadvantages"><span class="toc-section-number">6.3.1</span>  Partial vs.&nbsp;fully synthetic advantages and disadvantages</a></li>
+  <li><a href="#why-synthetic-data" id="toc-why-synthetic-data" class="nav-link" data-scroll-target="#why-synthetic-data"><span class="toc-section-number">6.3.2</span>  Why synthetic data?</a></li>
+  </ul></li>
+  <li><a href="#data-synthesis-process-overview" id="toc-data-synthesis-process-overview" class="nav-link" data-scroll-target="#data-synthesis-process-overview"><span class="toc-section-number">6.4</span>  Data Synthesis Process Overview</a>
+  <ul class="collapse">
+  <li><a href="#privacy-stakeholders-and-the-synthesis-process" id="toc-privacy-stakeholders-and-the-synthesis-process" class="nav-link" data-scroll-target="#privacy-stakeholders-and-the-synthesis-process"><span class="toc-section-number">6.4.1</span>  Privacy stakeholders and the synthesis process</a></li>
+  <li><a href="#iteration-is-key" id="toc-iteration-is-key" class="nav-link" data-scroll-target="#iteration-is-key"><span class="toc-section-number">6.4.2</span>  Iteration is key</a></li>
+  </ul></li>
+  <li><a href="#assessing-utility" id="toc-assessing-utility" class="nav-link" data-scroll-target="#assessing-utility"><span class="toc-section-number">6.5</span>  Assessing utility</a>
+  <ul class="collapse">
+  <li><a href="#general-utility-metrics" id="toc-general-utility-metrics" class="nav-link" data-scroll-target="#general-utility-metrics"><span class="toc-section-number">6.5.1</span>  General utility metrics</a></li>
+  <li><a href="#specific-utility-metrics" id="toc-specific-utility-metrics" class="nav-link" data-scroll-target="#specific-utility-metrics"><span class="toc-section-number">6.5.2</span>  Specific utility metrics</a></li>
+  <li><a href="#fit-for-purpose" id="toc-fit-for-purpose" class="nav-link" data-scroll-target="#fit-for-purpose"><span class="toc-section-number">6.5.3</span>  Fit-for-purpose</a></li>
+  </ul></li>
+  <li><a href="#assessing-disclosure-risk" id="toc-assessing-disclosure-risk" class="nav-link" data-scroll-target="#assessing-disclosure-risk"><span class="toc-section-number">6.6</span>  Assessing disclosure risk</a>
+  <ul class="collapse">
+  <li><a href="#identity-disclosure-metrics" id="toc-identity-disclosure-metrics" class="nav-link" data-scroll-target="#identity-disclosure-metrics"><span class="toc-section-number">6.6.1</span>  Identity disclosure metrics</a></li>
+  <li><a href="#attribute-disclosure-metrics" id="toc-attribute-disclosure-metrics" class="nav-link" data-scroll-target="#attribute-disclosure-metrics"><span class="toc-section-number">6.6.2</span>  Attribute disclosure metrics</a></li>
+  <li><a href="#inferential-disclosure" id="toc-inferential-disclosure" class="nav-link" data-scroll-target="#inferential-disclosure"><span class="toc-section-number">6.6.3</span>  Inferential disclosure</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Analysis: Part 1</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+
+</div>
+<p>For this week, we will learn about how to evaluate and analyze data while considering security, privacy, ethics, and equity.</p>
+<section id="quick-recap-on-week-3-with-some-week-2" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="quick-recap-on-week-3-with-some-week-2"><span class="header-section-number">6.1</span> Quick recap on week 3 (with some week 2)</h2>
+<p>We’ve discussed several challenges surrounding security, privacy, ethics, and equity in data collection, storage, and sharing.</p>
+<section id="data-collection" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="data-collection"><span class="header-section-number">6.1.1</span> Data collection</h3>
+<p>For data collection, we learned the importance of:</p>
+<ul>
+<li>Deciding whether to collect the data or not.</li>
+<li>Defining groups and other variables that impacts our communities.</li>
+<li>Recognizing that a lack of data results in a lack of action.</li>
+</ul>
+</section>
+<section id="data-storage" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="data-storage"><span class="header-section-number">6.1.2</span> Data storage</h3>
+<p>We covered the following topics:</p>
+<ul>
+<li>The overall process and considerations for cleaning data, especially how to handle missing data.</li>
+<li>Best practices for virtual and physical storage of data, including the FAIR principles for creating proper metadata.</li>
+</ul>
+<p>Even more definitions…</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Original dataset:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Original dataset</strong> is the uncleaned, unprotected version of the data.</p>
+<p>For example, raw 2020 Decennial Census microdata, which are never publicly released.</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Confidential or gold standard dataset
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Confidential or gold standard dataset</strong> is the cleaned version (meaning edited for inaccuracies or inconsistencies) of the data; often referred to as the gold standard or actual data for analysis.</p>
+<p>For example, the Census Edited File that is the final confidential data for the 2020 Census. This dataset is never publicly released but may be made available to others who are sworn to protect confidentiality (i.e., Special Sworn Status) and who are provided access in a secure environment, such as a Federal Statistical Research Data Center.</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Public dataset or statistics
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Public dataset</strong> is the publicly released version of the confidential data.</p>
+<p>For example, the US Census Bureau’s public tables and datasets or the Bureau of Labor Statistics reporting the unemployment rate statistics.</p>
+</div>
+</div>
+</section>
+<section id="data-sharing-and-transfer" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="data-sharing-and-transfer"><span class="header-section-number">6.1.3</span> Data sharing and transfer</h3>
+<p>We also learned about the two general ways people access data:</p>
+<ol type="1">
+<li>Secure Data Access
+<ul>
+<li>Pros: Very secure, provides access to confidential data.</li>
+<li>Cons: Inaccessible to most people.</li>
+</ul></li>
+<li>Public Data Files and Statistics
+<ul>
+<li>Pros: Accessible to anyone.</li>
+<li>Cons: Altered for privacy, which may reduce accuracy for specific applications and may not always be properly protected.</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="what-is-the-privacy-utility-tradeoff" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="what-is-the-privacy-utility-tradeoff"><span class="header-section-number">6.2</span> What is the privacy-utility tradeoff?</h2>
+<div id="fig-seth-meyers-balance" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/seth-meyers-balance.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.1: Weighing Seth Meyers GIF by Late Night with Seth Meyers</figcaption><p></p>
+</figure>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Data Utility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Data utility,</strong> quality, accuracy, or usefulness is how practically useful or accurate to the data are for research and analysis purposes.</p>
+</div>
+</div>
+<p>There is often a tension between privacy and data utility. This tension is referred to in the privacy literature as the <strong>privacy-utility tradeoff</strong>.</p>
+<div id="fig-tradeoff" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/privacy-utility-tradeoff.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.2: <em>Generally</em>, as privacy increases, the image quality (utility) decreases, and vice versa.</figcaption><p></p>
+</figure>
+</div>
+<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+<span style="color:#1696d2;">Class Activity 1</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
+<p>For any data or digital information:</p>
+<ul>
+<li>What would be the best privacy protection?</li>
+<li>What would be the best way to ensure utility?</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="what-is-synthetic-data-why-use-it" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="what-is-synthetic-data-why-use-it"><span class="header-section-number">6.3</span> What is synthetic data? Why use it?</h2>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Synthetic Data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Synthetic data</strong> consist of pseudo or “fake” records that are statistically representative of the confidential data.</p>
+</div>
+</div>
+<ul>
+<li>The goal of most syntheses is to closely mimic the underlying distribution and statistical properties of the real data to preserve data utility while minimizing disclosure risks.</li>
+<li>Synthesized values also limit an intruder’s confidence, because they cannot confirm a synthetic value exists in the confidential dataset.</li>
+<li>Synthetic data may be used as a “training dataset” to develop programs to run on confidential data.</li>
+</ul>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Partially synthetic
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Partially synthetic</strong> data only synthesizes some of the variables in the released data (generally those most sensitive to disclosure). In partially synthetic data, there remains a one-to-one mapping between confidential records and synthetic records.</p>
+</div>
+</div>
+<p>Below, we see an example of what a partially synthesized version of confidential data could look like.</p>
+<div id="fig-partial" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/partially-synthetic-data.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.3: Partially synthetic data</figcaption><p></p>
+</figure>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Fully synthetic
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Fully synthetic</strong> data synthesizes all values in the dataset with imputed amounts. Fully synthetic data no longer directly map onto the confidential records, but remain statistically representative. Since fully synthetic data does not contain any actual observations, it protects against both attribute and identity disclosure.</p>
+</div>
+</div>
+<p>Below, we see an example of what a fully synthesized version of confidential data might look like.</p>
+<div id="fig-fully" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/fully-synthetic-data.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.4: Fully synthetic data</figcaption><p></p>
+</figure>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+There are many flavors of synthetic data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For this course, we will focus only on fully and partially synthetic data. However, it is important to note that there are many other variations of synthetic data generation, such as Bayesian versus non-Bayesian synthesis models and parametric versus non-parametric models.</p>
+</div>
+</div>
+<div id="fig-many-flavors" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/many-flavors.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.5: Homer Simpson from the TV shows, “The Simpsons,” saying, “Oh, so many flavors!”</figcaption><p></p>
+</figure>
+</div>
+<section id="partial-vs.-fully-synthetic-advantages-and-disadvantages" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="partial-vs.-fully-synthetic-advantages-and-disadvantages"><span class="header-section-number">6.3.1</span> Partial vs.&nbsp;fully synthetic advantages and disadvantages</h3>
+<ul>
+<li><p>Changing only some variables (partial synthesis) in general leads to higher utility in analysis since the relationships between variables are by definition unchanged <span class="citation" data-cites="drecshlerjorgcomparingsynthetic">(<a href="references.html#ref-drecshlerjorgcomparingsynthetic" role="doc-biblioref">Drechsler, Bender, and Rässler 2008</a>)</span>.</p></li>
+<li><p>Disclosure in fully synthetic data is nearly impossible because all values are imputed, while partial synthesis has higher disclosure risk since confidential values remain in the dataset <span class="citation" data-cites="drecshlerjorgcomparingsynthetic">(<a href="references.html#ref-drecshlerjorgcomparingsynthetic" role="doc-biblioref">Drechsler, Bender, and Rässler 2008</a>)</span>.</p></li>
+</ul>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+You cannot have your cake and eat it too.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>While the risk of disclosure for fully synthetic data is very low, it is not zero.</p>
+</div>
+</div>
+<ul>
+<li><p>Accurate and exhaustive specification of variable relationships and constraints in fully synthetic data is difficult and if done incorrectly can lead to bias <span class="citation" data-cites="drecshlerjorgcomparingsynthetic">Drechsler, Bender, and Rässler (<a href="references.html#ref-drecshlerjorgcomparingsynthetic" role="doc-biblioref">2008</a>)</span>.</p></li>
+<li><p>Partially synthetic data may be publicly perceived as more reliable than fully synthetic data.</p></li>
+</ul>
+<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+<span style="color:#1696d2;">Class Activity 2</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
+<p>Consider this penguins data:</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="ictmskzwum" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ictmskzwum table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#ictmskzwum thead, #ictmskzwum tbody, #ictmskzwum tfoot, #ictmskzwum tr, #ictmskzwum td, #ictmskzwum th {
+  border-style: none;
+}
+
+#ictmskzwum p {
+  margin: 0;
+  padding: 0;
+}
+
+#ictmskzwum .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#ictmskzwum .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ictmskzwum .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ictmskzwum .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ictmskzwum .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ictmskzwum .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ictmskzwum .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ictmskzwum .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ictmskzwum .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#ictmskzwum .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#ictmskzwum .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ictmskzwum .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ictmskzwum .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ictmskzwum .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ictmskzwum .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ictmskzwum .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ictmskzwum .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#ictmskzwum .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#ictmskzwum .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ictmskzwum .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ictmskzwum .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ictmskzwum .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ictmskzwum .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ictmskzwum .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ictmskzwum .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ictmskzwum .gt_left {
+  text-align: left;
+}
+
+#ictmskzwum .gt_center {
+  text-align: center;
+}
+
+#ictmskzwum .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ictmskzwum .gt_font_normal {
+  font-weight: normal;
+}
+
+#ictmskzwum .gt_font_bold {
+  font-weight: bold;
+}
+
+#ictmskzwum .gt_font_italic {
+  font-style: italic;
+}
+
+#ictmskzwum .gt_super {
+  font-size: 65%;
+}
+
+#ictmskzwum .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#ictmskzwum .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ictmskzwum .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#ictmskzwum .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#ictmskzwum .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#ictmskzwum .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#ictmskzwum .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="species">species</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_length_mm">bill_length_mm</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="sex">sex</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="species" class="gt_row gt_center">Chinstrap</td>
+<td headers="bill_length_mm" class="gt_row gt_right">51.3</td>
+<td headers="sex" class="gt_row gt_center">male</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Gentoo</td>
+<td headers="bill_length_mm" class="gt_row gt_right">44.0</td>
+<td headers="sex" class="gt_row gt_center">female</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Chinstrap</td>
+<td headers="bill_length_mm" class="gt_row gt_right">51.4</td>
+<td headers="sex" class="gt_row gt_center">male</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Chinstrap</td>
+<td headers="bill_length_mm" class="gt_row gt_right">45.4</td>
+<td headers="sex" class="gt_row gt_center">female</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="bill_length_mm" class="gt_row gt_right">36.2</td>
+<td headers="sex" class="gt_row gt_center">female</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+<p>Let’s say that researchers decide that the <code>sex</code> of the penguins in the data are not confidential, but the <code>species</code> and <code>bill length</code> are. So, they develop regression models that predict <code>species</code> conditional on <code>sex</code> and predict <code>bill_length</code> conditional on <code>species</code> and <code>sex</code>. They then use those models to predict species and bill lengths for each row in the data and then release it publicly.</p>
+<p><strong>What specific SDC method are these researchers using?</strong></p>
+</div>
+</div>
+</section>
+<section id="why-synthetic-data" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="why-synthetic-data"><span class="header-section-number">6.3.2</span> Why synthetic data?</h3>
+<p>Synthetic data provides enhanced disclosure protection with a lower cost to utility than other “traditional” statistical disclosure control (SDC) methods. For example:</p>
+<ul>
+<li><p><span class="citation" data-cites="mitra2006adjusting">Mitra and Reiter (<a href="references.html#ref-mitra2006adjusting" role="doc-biblioref">2006</a>)</span> found that a 5 percent swapping of 2 identifying variables in the 1987 Survey of Youth in Custody invalidated statistical hypothesis tests in regression.</p></li>
+<li><p>Top/bottom coding eliminates information at the tails of the distributions, degrading analyses that depend on the entire distribution <span class="citation" data-cites="reiter2014bayesian">(<a href="references.html#ref-reiter2014bayesian" role="doc-biblioref">Reiter, Wang, and Zhang 2014</a>)</span>.</p></li>
+</ul>
+<p>It also allows for release of data that is more disaggregated than might otherwise be possible with “traditional” SDC (aggregation is a very common SDC technique).</p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Why synthetic data and not the other SDC methods?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I wanted to review at least one statistical disclosure control (SDC) method in depth to provide further context on how to evaluate public data files. Additionally, with the increasing prominence of AI, many researchers and public policymakers are proposing the use of synthetic data generation in combination with AI. It is important to be aware of such a technique, as it is likely to become more popular in the future.</p>
+</div>
+</div>
+<div id="fig-ai-statistics" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/ai-statistics.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.6: First pane: A crack in the wall labeled “statistics.” Second pane: A man hangs a frame around the crack. Third pane: The framed crack is labeled “machine learning.” Fourth pane: The man presents the framed crack to an audience labeled “artificial intelligence.”</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="data-synthesis-process-overview" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="data-synthesis-process-overview"><span class="header-section-number">6.4</span> Data Synthesis Process Overview</h2>
+<p>Note that this overview is opinionated and simplified in order to provide a reasonable summary.</p>
+<div id="fig-process-iterative" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/synthesis-process-iterative.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.7: The synthesis process is very iterative, particularly in the privacy step</figcaption><p></p>
+</figure>
+</div>
+<section id="privacy-stakeholders-and-the-synthesis-process" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="privacy-stakeholders-and-the-synthesis-process"><span class="header-section-number">6.4.1</span> Privacy stakeholders and the synthesis process</h3>
+<div id="fig-process-actors" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/synthesis-process-actors.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.8: All of the privacy stakeholders discussed previously have a role in aspects of the synthesis process.</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="iteration-is-key" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="iteration-is-key"><span class="header-section-number">6.4.2</span> Iteration is key</h3>
+<p>As mentioned in the textbook, data curators and privacy experts must fine-tune their SDC methods by repeatedly evaluating if the altered data are at acceptable levels of disclosure risk and quality. Often, the process of adjusting the SDC methods and earlier steps in the process becomes analogous to “holding sand.” Shifting or changing one part of the workflow, such as trying to improve the data quality for one variable, can result in the privacy “spilling out” in unexpected ways. Or a model you thought would create high quality data could result in the opposite.</p>
+<div id="fig-process-actors" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/its-fine-inverse.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.9: First panel: “f(x)” and the “It’s Fine meme.” Second panel: “f^(-1)” and the “It’s Fine Meme”, but a flame is sitting in the chair saying “It’s fine.” surrounded by dogs.</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="assessing-utility" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="assessing-utility"><span class="header-section-number">6.5</span> Assessing utility</h2>
+<p>Generally there are three ways to measure utility of the data:</p>
+<ul>
+<li>General (or global) utility metrics;</li>
+<li>Specific utility metrics; and</li>
+<li>Fit-for-purpose</li>
+</ul>
+<section id="general-utility-metrics" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="general-utility-metrics"><span class="header-section-number">6.5.1</span> General utility metrics</h3>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+General utility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>General utility</strong>, sometimes called global utility, measures the univariate and multivariate distributional similarity between the confidential data and the public data (e.g., sample means, sample variances, and the variance-covariance matrix).</p>
+</div>
+</div>
+<p>General utility metrics are useful because they provide a sense of how “fit for use” synthetic data is for analysis without making assumptions about the uses of the synthetic data.</p>
+<section id="univariate-general-utility" class="level4">
+<h4 class="anchored" data-anchor-id="univariate-general-utility">Univariate general utility</h4>
+<p>Some univariate general utility measures could include comparisons of:</p>
+<ul>
+<li><p><strong>Categorical variables:</strong> frequencies, relative frequencies.</p></li>
+<li><p><strong>Numeric variables</strong> means, standard deviations, skewness, kurtosis (i.e., first four moments), percentiles, and number of zero/non-zero values.</p></li>
+</ul>
+</section>
+<section id="bivariate-general-utility" class="level4">
+<h4 class="anchored" data-anchor-id="bivariate-general-utility">Bivariate general utility</h4>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Correlation fit
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Correlation fit</strong> measures how well the synthesizer recreates the linear relationships between variables in the confidential dataset.</p>
+</div>
+</div>
+<p>To calculate correlation fit:</p>
+<ul>
+<li>Create correlation matrices for the synthetic data and confidential data. Then measure differences across synthetic and actual data.</li>
+</ul>
+<div id="fig-corrdiff" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/puf-correlation-fit.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.10: Correlation Difference</figcaption><p></p>
+</figure>
+</div>
+<p><a href="#fig-corrdiff">Figure&nbsp;<span>6.10</span></a> shows the creation of a difference matrix. Let’s summarize the difference matrix using mean absolute error.</p>
+</section>
+<section id="multivariate-general-utility-discriminant-based-metrics" class="level4">
+<h4 class="anchored" data-anchor-id="multivariate-general-utility-discriminant-based-metrics">Multivariate general utility (discriminant-based metrics)</h4>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Discriminant based methods
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Discriminant based methods</strong> measure how well a predictive model can distinguish (i.e., discriminate) between records from the confidential and synthetic data.</p>
+</div>
+</div>
+<ul>
+<li><p>The confidential data and synthetic data should theoretically be drawn from the same super population.</p></li>
+<li><p>The basic idea is to combine (stack) the confidential data and synthetic data and see how well a predictive model distinguish (i.e., discriminate) between synthetic observations and confidential observations.</p></li>
+<li><p>An inability to distinguish between the records suggests a good synthesis.</p></li>
+<li><p>It is possible to use logistic regression for the predictive modeling, but decision trees, random forests, and boosted trees are more common. (We recommend, to the degree possible, using more using more sophisticated models as well as machine learning best-practices like feature engineering and hyperparameter tuning because these practices will more effectively discriminate between classes.)</p></li>
+<li><p><a href="#fig-discriminant">Figure&nbsp;<span>6.11</span></a> shows three discriminant based metrics calculated on a good synthesis and a poor synthesis.</p></li>
+</ul>
+<div id="fig-discriminant" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/images/same-population-disc-metrics.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Good Synthesis</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/images/different-population-disc-metrics.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Poor Synthesis</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.11: A comparison of discriminant metrics on a good synthesis and a poor synthesis</figcaption><p></p>
+</figure>
+</div>
+<p>There are several different discriminant-based metrics, but it is beyond this course to cover them in depth. <span class="citation" data-cites="hu2024advancing">Hu and Bowen (<a href="references.html#ref-hu2024advancing" role="doc-biblioref">2024</a>)</span> covers these metrics in further detail.</p>
+</section>
+</section>
+<section id="specific-utility-metrics" class="level3" data-number="6.5.2">
+<h3 data-number="6.5.2" class="anchored" data-anchor-id="specific-utility-metrics"><span class="header-section-number">6.5.2</span> Specific utility metrics</h3>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Specific utility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Specific utility</strong>, sometimes called outcome specific utility, measures the similarity of results for a specific analysis (or analyses) of the confidential and public data (e.g., comparing the coefficients in regression models).</p>
+</div>
+</div>
+<p>Specific utility metrics measure how suitable a synthetic dataset is for specific analyses.</p>
+<ul>
+<li>These specific utility metrics will change from application to application, depending on common uses of the data.</li>
+<li>A helpful rule of thumb: general utility metrics are useful for the data synthesizers to be convinced that they’re doing a good job. Specific utility metrics are useful to convince downstream data users that the data synthesizers are doing a good job.</li>
+</ul>
+<section id="recreating-inferences" class="level4">
+<h4 class="anchored" data-anchor-id="recreating-inferences">Recreating inferences</h4>
+<ul>
+<li>It can be useful to compare statistical analyses on the confidential data and synthetic data:
+<ul>
+<li>Do the estimates have the same sign?</li>
+<li>Do the estimates have the same statistical inference at a common significance level?</li>
+<li>Do the confidence intervals for the estimates overlap?</li>
+</ul></li>
+<li>Each of these questions is useful. <span class="citation" data-cites="barrientos2024feasibility">Barrientos et al. (<a href="references.html#ref-barrientos2024feasibility" role="doc-biblioref">2024</a>)</span> combine all three questions into sign, significance, and overlap (SSO) match. SSO is the proportion of times that intervals overlap and have the same sign and significance.</li>
+</ul>
+</section>
+<section id="regression-confidence-interval-overlap" class="level4">
+<h4 class="anchored" data-anchor-id="regression-confidence-interval-overlap">Regression confidence interval overlap</h4>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Regression confidence interval overlap
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Regression confidence interval overlap</strong> quantifies how well confidence intervals from estimates on the synthetic data recreate confidence intervals from the confidential data.</p>
+<p>1 indicates perfect overlap (it is typically impossible to achieve a 1 on real-world data). 0 indicates intervals that are adjacent but not overlapping. Negative values indicate gaps between the intervals.</p>
+<p>It is common to compare intervals from linear regression models and logistic regression models.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/images/confidence-interval-overlap.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Confidence interval overlap as a measure of specific utility</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="fit-for-purpose" class="level3" data-number="6.5.3">
+<h3 data-number="6.5.3" class="anchored" data-anchor-id="fit-for-purpose"><span class="header-section-number">6.5.3</span> Fit-for-purpose</h3>
+<p>The final group of utility metrics are called fit-for-purpose and are not discussed as often in the literature. <span class="citation" data-cites="drechsler2022challenges">Drechsler (<a href="references.html#ref-drechsler2022challenges" role="doc-biblioref">2022</a>)</span> states how fit-for-purpose measures could be considered something in between the previous two utility metric types. In other words, fit-for-purpose metrics are not global measures, because they focus on certain features of the data, but may not be specific to an analysis that data users and stakeholders are interested in like analysis-specific utility metrics.</p>
+<p><span class="citation" data-cites="drechsler2022challenges">Drechsler (<a href="references.html#ref-drechsler2022challenges" role="doc-biblioref">2022</a>)</span> highlights how global utility metrics can be too broad and miss aspects of the synthetic dataset that do not align with the confidential dataset. On the other hand, analysis-specific metrics may perform well for the selected analyses on the synthetic data but not for others. This is why it is critical to determine the proper analysis, but it is difficult to anticipate all downstream data uses. For example, decennial census data products in the United States are utilized in thousands of different ways, making it impossible to predict all potential use cases. Therefore, fit-for-purpose metrics help privacy experts and researchers assess if their synthesis makes sense before implementing other utility metrics. Some examples include ensuring population totals or ages are positive.</p>
+</section>
+</section>
+<section id="assessing-disclosure-risk" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="assessing-disclosure-risk"><span class="header-section-number">6.6</span> Assessing disclosure risk</h2>
+<!-- ![Rory from the TV show, "Gilmore Girls," saying, "I'd say that was a fair assessment."](www/images/assessment-gilmore.gif){#fig-assessment-gilmore fig-align="center"} -->
+<p>We now pivot to evaluating the disclosure risks of synthetic data. Note that most thresholds for acceptable disclosure risk are often determined by law.</p>
+<p>There are generally three kinds of disclosure risk:</p>
+<ul>
+<li>Identity disclosure risk</li>
+<li>Attribute disclosure risk</li>
+<li>Inferential disclosure risk</li>
+</ul>
+<section id="identity-disclosure-metrics" class="level3" data-number="6.6.1">
+<h3 data-number="6.6.1" class="anchored" data-anchor-id="identity-disclosure-metrics"><span class="header-section-number">6.6.1</span> Identity disclosure metrics</h3>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Identity disclosure
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Identity disclosure</strong> occurs if the data intruder associates a known individual with a public data record (e.g., a record linkage attack or when a data adversary combines one or more external data sources to identify individuals in the public data).</p>
+</div>
+</div>
+<p><span class="citation" data-cites="sweeney2013identifying">Sweeney, Abu, and Winn (<a href="references.html#ref-sweeney2013identifying" role="doc-biblioref">2013</a>)</span> used voter data to re-identify individuals in the Personal Genome Project.</p>
+<div id="fig-identity-disclosure-risk" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="www/images/identity-disclosure-risk.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.12: Record linkage attack</figcaption><p></p>
+</figure>
+</div>
+<p>For fully synthetic datasets, there is no one to one relationship between individuals and records so identity disclosure risk is ill-defined. Generally identity disclosure risk applies to partially synthetic datasets (or datasets protected with traditional SDC methods).</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Identity disclosure metrics
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Identity disclosure metrics</strong> evaluate how often we correctly re-identify confidential records in the synthetic data.</p>
+<p><strong>Note:</strong> These metrics require major assumptions about attacker information.</p>
+</div>
+</div>
+<section id="basic-matching-approaches" class="level4">
+<h4 class="anchored" data-anchor-id="basic-matching-approaches">Basic matching approaches</h4>
+<ul>
+<li><p>We start by making assumptions about the knowledge an attacker has (i.e., external publicly accessible data they have access to).</p></li>
+<li><p>For each confidential record, the data attacker identifies a set of partially synthetic records which they believe contain the target record (i.e., potential matches) using the external variables as matching criteria.</p></li>
+<li><p>There are distance-based and probability-based algorithms that can perform this matching. This matching process could be based on exact matches between variables or some relaxations (i.e., matching continuous variables within a certain radius of the target record, or matching adjacent categorical variables).</p></li>
+<li><p>We then evaluate how accurate our re-identification process was using a variety of metrics.</p></li>
+</ul>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Expected Match Rate</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">True Match Rate</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">False Match Rate</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li><p><strong>Expected Match Rate</strong>: On average, how likely is it to find a “correct” match among all potential matches? Essentially, the expected number of observations in the confidential data expected to be correctly matched by an intruder.</p>
+<ul>
+<li><p>Higher expected match rate = higher identification disclosure risk.</p></li>
+<li><p>The two other risk metrics below focus on the subset of confidential records for which the intruder identifies a single match.</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li><strong>True Match Rate</strong>: The proportion of true unique matches among all confidential records. Higher true match rate = higher identification disclosure risk.</li>
+</ul>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<ul>
+<li><strong>False Match Rate</strong>: The proportion of false matches among the set of unique matches. Lower false match rate = higher identification disclosure risk.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+<span style="color:#1696d2;">Class Activity 3</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><font color="#55b748">Question</font></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><font color="#55b748">Answer</font></a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p><em>A researcher has confidential data on a population. To protect the privacy of respondents, the researcher releases a synthetic version of the data. A data attacker then runs a record linkage attack against the synthetic data and is able to accurately identify 5 individuals in the data. Based on this information, can you tell whether the researcher released fully or partially synthetic data? Why or why not?</em></p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p><em>A researcher has confidential data on a population. To protect the privacy of respondents, the researcher releases a synthetic version of the data. A data attacker then runs a record linkage attack against the synthetic data and is able to accurately identify 5 individuals in the data. Based on this information, can you tell whether the researcher released fully or partially synthetic data? Why or why not?</em></p>
+<p>Record linkage attacks are only possible for partially synthetic data, though other types of disclosure risk still apply to fully synthetic data.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="attribute-disclosure-metrics" class="level3" data-number="6.6.2">
+<h3 data-number="6.6.2" class="anchored" data-anchor-id="attribute-disclosure-metrics"><span class="header-section-number">6.6.2</span> Attribute disclosure metrics</h3>
+<p>It is possible to learn confidential attributes without perfectly re-identifying observations in the data.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Attribute disclosure
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Attribute disclosure</strong> occurs if the data intruder determines new characteristics (or attributes) of an individual based on the information available through public data or statistics (e.g., if a dataset shows that all people age 50 or older in a city are on Medicaid, then the data adversary knows that any person in that city above age 50 is on Medicaid). This information is learned without idenfying a specific individual in the data!</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Predictive Accuracy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Predictive accuracy</strong> measures how well an attacker can learn about attributes in the confidential data using the synthetic data (and possibly external data).</p>
+</div>
+</div>
+<ul>
+<li><p>Similar to above, you start by matching synthetic records to confidential records. Alternatively, you can build a predictive model using the synthetic data to make predictions on the confidential data.</p></li>
+<li><p><strong>key variables</strong>: Variables that an attacker already knows about a record and can use to match.</p></li>
+<li><p><strong>target variables</strong>: Variables that an attacker wishes to know more or infer about using the synthetic data.</p></li>
+<li><p>Pick a sensitive variable in the confidential data and use the synthetic data to make predictions. Evaluate the accuracy of the predictions.</p></li>
+</ul>
+</section>
+<section id="inferential-disclosure" class="level3" data-number="6.6.3">
+<h3 data-number="6.6.3" class="anchored" data-anchor-id="inferential-disclosure"><span class="header-section-number">6.6.3</span> Inferential disclosure</h3>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Inferential disclosure
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Inferential disclosure</strong> occurs if the data intruder predicts the value of some characteristic from an individual more accurately with the public data or statistic than would otherwise have been possible (e.g., if a public homeownership dataset reports a high correlation between the purchase price of a home and family income, a data adversary could infer another person’s income based on purchase price listed on Redfin or Zillow).</p>
+</div>
+</div>
+<p>Inferential disclosure is a specialized type of attribute disclosure, so the metrics discussed above apply here as well. Inference disclosure risk is very hard to predict, so many federal agencies tend to disregard this type of risk.</p>
+<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+<span style="color:#1696d2;">Class Activity 4</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
+<p>Last week, one of the class activities asked about how to protect a K-12 education dataset that dataset contains information about all students in a state, specifically their names, ages, genders, home addresses, and standardized test scores.</p>
+<ul>
+<li>What would be the potential identity disclosure risks?</li>
+<li>What would be the potential attribute disclosure risks?</li>
+<li>What would be the potential inferential disclosure risks?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-barrientos2024feasibility" class="csl-entry" role="doc-biblioentry">
+Barrientos, Andrés F, Aaron R Williams, Joshua Snoke, and Claire McKay Bowen. 2024. <span>“A Feasibility Study of Differentially Private Summary Statistics and Regression Analyses with Evaluations on Administrative and Survey Data.”</span> <em>Journal of the American Statistical Association</em> 119 (545): 52–65.
+</div>
+<div id="ref-drechsler2022challenges" class="csl-entry" role="doc-biblioentry">
+Drechsler, Jörg. 2022. <span>“Challenges in Measuring Utility for Fully Synthetic Data.”</span> In <em>International Conference on Privacy in Statistical Databases</em>, 220–33. Springer.
+</div>
+<div id="ref-drecshlerjorgcomparingsynthetic" class="csl-entry" role="doc-biblioentry">
+Drechsler, Jörg, Stefan Bender, and Susanne Rässler. 2008. <span>“Comparing Fully and Partially Synthetic Datasets for Statistical Disclosure Control in the German IAB Establishment Panel.”</span> <em>Transactions on Data Privacy</em> 1 (December): 105–30.
+</div>
+<div id="ref-hu2024advancing" class="csl-entry" role="doc-biblioentry">
+Hu, Jingchen, and Claire McKay Bowen. 2024. <span>“Advancing Microdata Privacy Protection: A Review of Synthetic Data Methods.”</span> <em>Wiley Interdisciplinary Reviews: Computational Statistics</em> 16 (1): e1636.
+</div>
+<div id="ref-mitra2006adjusting" class="csl-entry" role="doc-biblioentry">
+Mitra, Robin, and Jerome P Reiter. 2006. <span>“Adjusting Survey Weights When Altering Identifying Design Variables via Synthetic Data.”</span> In <em>Privacy in Statistical Databases: CENEX-SDC Project International Conference, PSD 2006, Rome, Italy, December 13-15, 2006. Proceedings</em>, 177–88. Springer.
+</div>
+<div id="ref-reiter2014bayesian" class="csl-entry" role="doc-biblioentry">
+Reiter, Jerome P, Quanli Wang, and Biyuan Zhang. 2014. <span>“Bayesian Estimation of Disclosure Risks for Multiply Imputed, Synthetic Data.”</span> <em>Journal of Privacy and Confidentiality</em> 6 (1).
+</div>
+<div id="ref-sweeney2013identifying" class="csl-entry" role="doc-biblioentry">
+Sweeney, Latanya, Akua Abu, and Julia Winn. 2013. <span>“Identifying Participants in the Personal Genome Project by Name (a Re-Identification Experiment).”</span> <a href="https://arxiv.org/abs/1304.7605">https://arxiv.org/abs/1304.7605</a>.
+</div>
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./03_data-sharing-transfer.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./04_data-analysis-part2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Analysis: Part 2</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
