@@ -1052,6 +1052,66 @@
             "title": "Better data visualizations: A guide for scholars, researchers, and wonks",
             "title-short": "Better data visualizations",
             "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Williams",
+                    "given": "Aaron R"
+                },
+                {
+                    "family": "Bowen",
+                    "given": "Claire McKay"
+                }
+            ],
+            "container-title": "Wiley Interdisciplinary Reviews: Computational Statistics",
+            "id": "williams2023promise",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "page": "e1615",
+            "publisher": "Wiley Online Library",
+            "title": "The promise and limitations of formal privacy",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "author": [
+                {
+                    "family": "Williams",
+                    "given": "Aaron R"
+                },
+                {
+                    "family": "Snoke",
+                    "given": "Joshua"
+                },
+                {
+                    "family": "Bowen",
+                    "given": "Claire McKay"
+                },
+                {
+                    "family": "Barrientos",
+                    "given": "Andrés F"
+                }
+            ],
+            "container-title": "Data privacy protection and the conduct of applied research: Methods approaches and their consequences NBER conference, cambridge, MA, may",
+            "id": "williams2023disclosing",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "title": "Disclosing economists’ privacy perspectives: A survey of american economic association members on differential privacy and data fitness for use standards",
+            "title-short": "Disclosing economists’ privacy perspectives",
+            "type": "paper-conference",
+            "volume": "4"
         }
     ],
     "project_biblios": [

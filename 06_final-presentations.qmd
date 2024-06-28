@@ -138,5 +138,11 @@ Time (EDT) | Student Order
 -- | Larsson
 
 \* == indicates students swapped time.
+
 \*\* == indicates moved student sooner to avoid conflict (all other students have been shifted).
 
+### Vote for your favorite presentation
+
+Each year, I ask students to vote for their favorite presentation. The person with the most votes will receive a gift card to a local café or restaurant of their choice (or whatever business as long as is locally owned), paid for by me. You cannot vote for yourself.
+
+After all the presentations are complete, please submit your vote [here](https://docs.google.com/forms/d/e/1FAIpQLScsR0lviTF8b1UCjUctHiAQJWCMYZ8drW-33kpoRI89Yj7T-w/viewform?usp=sf_link).

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,16 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -66,7 +67,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -75,8 +82,10 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -88,11 +97,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_written-verbal-communication.html">Non-Technical Professional Skills</a></li><li class="breadcrumb-item"><a href="./02_written-verbal-communication.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -100,218 +114,243 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Security, Privacy, and Ethics (+ Equity)</a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome to DAN 607</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to DAN 607</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Prelude</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Prelude</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_introduction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DAN 607 Basics</span></a>
+  <a href="./01_introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DAN 607 Basics</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Introduction and Data Collection</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Introduction and Data Collection</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_security-privacy-ethics-equity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Security, Privacy, Ethics, and Equity</span></a>
+  <a href="./02_security-privacy-ethics-equity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Security, Privacy, Ethics, and Equity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_data-collection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></a>
+  <a href="./02_data-collection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquitition</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Data Storage and Sharing</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Data Storage and Sharing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_data-storage.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></a>
+  <a href="./03_data-storage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_data-sharing-transfer.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></a>
+  <a href="./03_data-sharing-transfer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Data Analysis</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Data Analysis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_data-analysis-part1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Analysis: Part 1</span></a>
+  <a href="./04_data-analysis-part1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Analysis: Part 1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_data-analysis-part2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Analysis: Part 2</span></a>
+  <a href="./04_data-analysis-part2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Analysis: Part 2</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Data Dissemination</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Data Dissemination</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_data-dissemination-part1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></a>
+  <a href="./05_data-dissemination-part1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_data-dissemination-part2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 2</span></a>
+  <a href="./05_data-dissemination-part2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 2</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">Data Destruction and Termination</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">Data Destruction and Termination</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06_final-presentations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Final Presentations</span></a>
+  <a href="./06_final-presentations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Final Presentations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06_data-termination.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></a>
+  <a href="./06_data-termination.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Non-Technical Professional Skills</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+ <span class="menu-text">Non-Technical Professional Skills</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_written-verbal-communication.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></a>
+  <a href="./02_written-verbal-communication.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_job-market-time-management.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Job Market and Time Management</span></a>
+  <a href="./03_job-market-time-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Job Market and Time Management</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_better-presentations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Better Presentations</span></a>
+  <a href="./04_better-presentations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Better Presentations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_communication-collaboration-culture.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Communication, Collaboration, and Culture</span></a>
+  <a href="./05_communication-collaboration-culture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Communication, Collaboration, and Culture</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#hello.-my-name-is-inigo-montoya" id="toc-hello.-my-name-is-inigo-montoya" class="nav-link active" data-scroll-target="#hello.-my-name-is-inigo-montoya"><span class="toc-section-number">12.1</span>  Hello. My name is Inigo Montoya…</a>
+  <li><a href="#hello.-my-name-is-inigo-montoya" id="toc-hello.-my-name-is-inigo-montoya" class="nav-link active" data-scroll-target="#hello.-my-name-is-inigo-montoya"><span class="header-section-number">12.1</span> Hello. My name is Inigo Montoya…</a>
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="toc-section-number">12.1.1</span>  Introduction</a></li>
-  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose"><span class="toc-section-number">12.1.2</span>  Purpose</a></li>
-  <li><a href="#key-question" id="toc-key-question" class="nav-link" data-scroll-target="#key-question"><span class="toc-section-number">12.1.3</span>  Key question</a></li>
-  <li><a href="#make-requests-into-questions" id="toc-make-requests-into-questions" class="nav-link" data-scroll-target="#make-requests-into-questions"><span class="toc-section-number">12.1.4</span>  Make requests into questions</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">12.1.1</span> Introduction</a></li>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose"><span class="header-section-number">12.1.2</span> Purpose</a></li>
+  <li><a href="#key-question" id="toc-key-question" class="nav-link" data-scroll-target="#key-question"><span class="header-section-number">12.1.3</span> Key question</a></li>
+  <li><a href="#make-requests-into-questions" id="toc-make-requests-into-questions" class="nav-link" data-scroll-target="#make-requests-into-questions"><span class="header-section-number">12.1.4</span> Make requests into questions</a></li>
   </ul></li>
-  <li><a href="#how-to-say-goodbye" id="toc-how-to-say-goodbye" class="nav-link" data-scroll-target="#how-to-say-goodbye"><span class="toc-section-number">12.2</span>  How to say “goodbye”</a>
+  <li><a href="#how-to-say-goodbye" id="toc-how-to-say-goodbye" class="nav-link" data-scroll-target="#how-to-say-goodbye"><span class="header-section-number">12.2</span> How to say “goodbye”</a>
   <ul class="collapse">
-  <li><a href="#always-thank-people-for-their-time" id="toc-always-thank-people-for-their-time" class="nav-link" data-scroll-target="#always-thank-people-for-their-time"><span class="toc-section-number">12.2.1</span>  Always thank people for their time</a></li>
-  <li><a href="#forward-momentum-next-steps" id="toc-forward-momentum-next-steps" class="nav-link" data-scroll-target="#forward-momentum-next-steps"><span class="toc-section-number">12.2.2</span>  Forward momentum / next steps</a></li>
+  <li><a href="#always-thank-people-for-their-time" id="toc-always-thank-people-for-their-time" class="nav-link" data-scroll-target="#always-thank-people-for-their-time"><span class="header-section-number">12.2.1</span> Always thank people for their time</a></li>
+  <li><a href="#forward-momentum-next-steps" id="toc-forward-momentum-next-steps" class="nav-link" data-scroll-target="#forward-momentum-next-steps"><span class="header-section-number">12.2.2</span> Forward momentum / next steps</a></li>
   </ul></li>
-  <li><a href="#foolproof-download" id="toc-foolproof-download" class="nav-link" data-scroll-target="#foolproof-download"><span class="toc-section-number">12.3</span>  Foolproof download</a>
+  <li><a href="#foolproof-download" id="toc-foolproof-download" class="nav-link" data-scroll-target="#foolproof-download"><span class="header-section-number">12.3</span> Foolproof download</a>
   <ul class="collapse">
-  <li><a href="#the-status-update" id="toc-the-status-update" class="nav-link" data-scroll-target="#the-status-update"><span class="toc-section-number">12.3.1</span>  The status update</a></li>
-  <li><a href="#the-persuasive-argument" id="toc-the-persuasive-argument" class="nav-link" data-scroll-target="#the-persuasive-argument"><span class="toc-section-number">12.3.2</span>  The persuasive argument</a></li>
-  <li><a href="#missingoutstanding-information" id="toc-missingoutstanding-information" class="nav-link" data-scroll-target="#missingoutstanding-information"><span class="toc-section-number">12.3.3</span>  Missing/outstanding information</a></li>
+  <li><a href="#the-status-update" id="toc-the-status-update" class="nav-link" data-scroll-target="#the-status-update"><span class="header-section-number">12.3.1</span> The status update</a></li>
+  <li><a href="#the-persuasive-argument" id="toc-the-persuasive-argument" class="nav-link" data-scroll-target="#the-persuasive-argument"><span class="header-section-number">12.3.2</span> The persuasive argument</a></li>
+  <li><a href="#missingoutstanding-information" id="toc-missingoutstanding-information" class="nav-link" data-scroll-target="#missingoutstanding-information"><span class="header-section-number">12.3.3</span> Missing/outstanding information</a></li>
   </ul></li>
-  <li><a href="#other-email-ettiquette-tips" id="toc-other-email-ettiquette-tips" class="nav-link" data-scroll-target="#other-email-ettiquette-tips"><span class="toc-section-number">12.4</span>  Other email ettiquette tips</a>
+  <li><a href="#other-email-ettiquette-tips" id="toc-other-email-ettiquette-tips" class="nav-link" data-scroll-target="#other-email-ettiquette-tips"><span class="header-section-number">12.4</span> Other email ettiquette tips</a>
   <ul class="collapse">
-  <li><a href="#be-concise" id="toc-be-concise" class="nav-link" data-scroll-target="#be-concise"><span class="toc-section-number">12.4.1</span>  Be Concise</a></li>
-  <li><a href="#communicate-action-steps-first-not-last" id="toc-communicate-action-steps-first-not-last" class="nav-link" data-scroll-target="#communicate-action-steps-first-not-last"><span class="toc-section-number">12.4.2</span>  Communicate “action steps” first, not last</a></li>
-  <li><a href="#number-your-questions" id="toc-number-your-questions" class="nav-link" data-scroll-target="#number-your-questions"><span class="toc-section-number">12.4.3</span>  Number your Questions</a></li>
-  <li><a href="#make-the-way-forward-clear" id="toc-make-the-way-forward-clear" class="nav-link" data-scroll-target="#make-the-way-forward-clear"><span class="toc-section-number">12.4.4</span>  Make the way forward clear</a></li>
-  <li><a href="#include-deadlines" id="toc-include-deadlines" class="nav-link" data-scroll-target="#include-deadlines"><span class="toc-section-number">12.4.5</span>  Include Deadlines</a></li>
-  <li><a href="#use-fyi-for-emails-that-have-no-actionable-information" id="toc-use-fyi-for-emails-that-have-no-actionable-information" class="nav-link" data-scroll-target="#use-fyi-for-emails-that-have-no-actionable-information"><span class="toc-section-number">12.4.6</span>  Use “FYI” for emails that have no actionable information</a></li>
-  <li><a href="#tell-them-that-youll-get-to-it-later" id="toc-tell-them-that-youll-get-to-it-later" class="nav-link" data-scroll-target="#tell-them-that-youll-get-to-it-later"><span class="toc-section-number">12.4.7</span>  Tell them that you’ll get to it later</a></li>
-  <li><a href="#use-expressive-and-compelling-subject-lines." id="toc-use-expressive-and-compelling-subject-lines." class="nav-link" data-scroll-target="#use-expressive-and-compelling-subject-lines."><span class="toc-section-number">12.4.8</span>  Use expressive and compelling subject lines.</a></li>
-  <li><a href="#never-send-an-angry-or-contentious-email" id="toc-never-send-an-angry-or-contentious-email" class="nav-link" data-scroll-target="#never-send-an-angry-or-contentious-email"><span class="toc-section-number">12.4.9</span>  Never send an angry or contentious email</a></li>
-  <li><a href="#never-reply-all-unless-you-absolutely-must" id="toc-never-reply-all-unless-you-absolutely-must" class="nav-link" data-scroll-target="#never-reply-all-unless-you-absolutely-must"><span class="toc-section-number">12.4.10</span>  Never “reply all” (unless you absolutely must)</a></li>
+  <li><a href="#be-concise" id="toc-be-concise" class="nav-link" data-scroll-target="#be-concise"><span class="header-section-number">12.4.1</span> Be Concise</a></li>
+  <li><a href="#communicate-action-steps-first-not-last" id="toc-communicate-action-steps-first-not-last" class="nav-link" data-scroll-target="#communicate-action-steps-first-not-last"><span class="header-section-number">12.4.2</span> Communicate “action steps” first, not last</a></li>
+  <li><a href="#number-your-questions" id="toc-number-your-questions" class="nav-link" data-scroll-target="#number-your-questions"><span class="header-section-number">12.4.3</span> Number your Questions</a></li>
+  <li><a href="#make-the-way-forward-clear" id="toc-make-the-way-forward-clear" class="nav-link" data-scroll-target="#make-the-way-forward-clear"><span class="header-section-number">12.4.4</span> Make the way forward clear</a></li>
+  <li><a href="#include-deadlines" id="toc-include-deadlines" class="nav-link" data-scroll-target="#include-deadlines"><span class="header-section-number">12.4.5</span> Include Deadlines</a></li>
+  <li><a href="#use-fyi-for-emails-that-have-no-actionable-information" id="toc-use-fyi-for-emails-that-have-no-actionable-information" class="nav-link" data-scroll-target="#use-fyi-for-emails-that-have-no-actionable-information"><span class="header-section-number">12.4.6</span> Use “FYI” for emails that have no actionable information</a></li>
+  <li><a href="#tell-them-that-youll-get-to-it-later" id="toc-tell-them-that-youll-get-to-it-later" class="nav-link" data-scroll-target="#tell-them-that-youll-get-to-it-later"><span class="header-section-number">12.4.7</span> Tell them that you’ll get to it later</a></li>
+  <li><a href="#use-expressive-and-compelling-subject-lines." id="toc-use-expressive-and-compelling-subject-lines." class="nav-link" data-scroll-target="#use-expressive-and-compelling-subject-lines."><span class="header-section-number">12.4.8</span> Use expressive and compelling subject lines.</a></li>
+  <li><a href="#never-send-an-angry-or-contentious-email" id="toc-never-send-an-angry-or-contentious-email" class="nav-link" data-scroll-target="#never-send-an-angry-or-contentious-email"><span class="header-section-number">12.4.9</span> Never send an angry or contentious email</a></li>
+  <li><a href="#never-reply-all-unless-you-absolutely-must" id="toc-never-reply-all-unless-you-absolutely-must" class="nav-link" data-scroll-target="#never-reply-all-unless-you-absolutely-must"><span class="header-section-number">12.4.10</span> Never “reply all” (unless you absolutely must)</a></li>
   </ul></li>
-  <li><a href="#final-important-tips-and-activity" id="toc-final-important-tips-and-activity" class="nav-link" data-scroll-target="#final-important-tips-and-activity"><span class="toc-section-number">12.5</span>  Final important tips and activity</a>
+  <li><a href="#final-important-tips-and-activity" id="toc-final-important-tips-and-activity" class="nav-link" data-scroll-target="#final-important-tips-and-activity"><span class="header-section-number">12.5</span> Final important tips and activity</a>
   <ul class="collapse">
-  <li><a href="#additional-tips" id="toc-additional-tips" class="nav-link" data-scroll-target="#additional-tips"><span class="toc-section-number">12.5.1</span>  Additional tips!</a></li>
-  <li><a href="#practice-and-feedback" id="toc-practice-and-feedback" class="nav-link" data-scroll-target="#practice-and-feedback"><span class="toc-section-number">12.5.2</span>  Practice and feedback</a></li>
+  <li><a href="#additional-tips" id="toc-additional-tips" class="nav-link" data-scroll-target="#additional-tips"><span class="header-section-number">12.5.1</span> Additional tips!</a></li>
+  <li><a href="#practice-and-feedback" id="toc-practice-and-feedback" class="nav-link" data-scroll-target="#practice-and-feedback"><span class="header-section-number">12.5.2</span> Practice and feedback</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -319,9 +358,9 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_written-verbal-communication.html">Non-Technical Professional Skills</a></li><li class="breadcrumb-item"><a href="./02_written-verbal-communication.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Written and Verbal Communication</span></h1>
 </div>
 
 
@@ -334,26 +373,29 @@ div.csl-indent {
   </div>
   
 
+
 </header>
 
-<div class="cell">
 
+<div id="fig-lack-communication" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lack-communication-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/not-sure-communication.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
-<div id="fig-lack-communication" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="www/images/not-sure-communication.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;12.1: Futurama Fry meme with the text, “Not sure if the lack of communication is intentional or if people are genuinely struggling with it.”</figcaption><p></p>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lack-communication-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.1: Futurama Fry meme with the text, “Not sure if the lack of communication is intentional or if people are genuinely struggling with it.”
+</figcaption>
 </figure>
 </div>
 <p>Our first lesson on professional non-technical skills focuses on written and verbal communication. This is one of the hardest professional skills to learn and master. Even those who have been in their professions for many years that require extensive verbal and written communication often struggle with it.</p>
 <p>As a valuable resource, I strongly suggest reading “Great on the Job” by Jodi Glickman <span class="citation" data-cites="glickman2011great">(<a href="references.html#ref-glickman2011great" role="doc-biblioref">Glickman 2011</a>)</span>. This book offers excellent insights on improving workplace communication, which I’ve personally found beneficial in my professional interactions.</p>
 <p>Many of the tips on this page come from insights gained from the book, my own experiences, and advice received from other professionals.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Real-world examples
 </div>
 </div>
@@ -364,10 +406,14 @@ Real-world examples
 <section id="hello.-my-name-is-inigo-montoya" class="level2" data-number="12.1">
 <h2 data-number="12.1" class="anchored" data-anchor-id="hello.-my-name-is-inigo-montoya"><span class="header-section-number">12.1</span> Hello. My name is Inigo Montoya…</h2>
 <p>This is a popular meme, and one I like a lot, that covers all the essential aspects when reaching out to someone for the first time or after a prolonged period.</p>
-<div id="fig-hello" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="www/images/introduction-inigo.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;12.2: One of the most famous quotes from the movie, “The Princess Bride,” where the Inigo Montoya faces the man who killed his father.</figcaption><p></p>
+<div id="fig-hello" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hello-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/introduction-inigo.gif" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hello-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.2: One of the most famous quotes from the movie, “The Princess Bride,” where the Inigo Montoya faces the man who killed his father.
+</figcaption>
 </figure>
 </div>
 <ul>
@@ -387,12 +433,12 @@ Real-world examples
 <h3 data-number="12.1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">12.1.1</span> Introduction</h3>
 <p>The general idea here is to avoid assuming that everyone knows who you are, your affiliation with a school or company, or how you were connected to them.</p>
 <p>I took a similar approach in our initial email exchange for this course. Given my role as an adjunct professor rather than full-time faculty at Stonehill College, I’ve provided a more detailed introduction to offer some background.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Email to 2024 DAN 607 Students
 </div>
 </div>
@@ -403,12 +449,12 @@ Email to 2024 DAN 607 Students
 </div>
 </div>
 <p>This next example is how a colleague introduced himself to me. Even though he worked at Urban at the same time I did, several months had passed, and we never worked on a project together. He didn’t presume that I remembered him and made sure to clearly state who he is and our prior connection.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Email about data sharing
 </div>
 </div>
@@ -422,12 +468,12 @@ Email about data sharing
 </div>
 </div>
 <p>Here’s another example, this time introducing two individuals I know to each other. I’ve embedded links to help them learn more about each and their work as well as relevant references.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Email to connect two colleagues about the new Do No Harm Guide on SOGI
 </div>
 </div>
@@ -440,12 +486,12 @@ Email to connect two colleagues about the new Do No Harm Guide on SOGI
 <p>Claire</p>
 </div>
 </div>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
@@ -459,12 +505,12 @@ Important
 <h3 data-number="12.1.2" class="anchored" data-anchor-id="purpose"><span class="header-section-number">12.1.2</span> Purpose</h3>
 <p>Next, it’s crucial to clearly state the purpose of the conversation. This should follow immediately after the introduction and should be concise, ideally in one or two sentences. The goal of any verbal and written communication is to ensure clarity within the first three sentences, as most people are busy and tend to skim emails or only listen for the first 15 seconds. This approach helps the recipient prioritize their responses, especially in cases where they receive a high volume of emails, such as myself, who typically receives around 50 emails a day.</p>
 <p>In this next example, I’m reaching out to colleagues at a state office following a training session on data privacy techniques, specifically synthetic data generation. Given our recent communications, I skipped reintroducing myself and proceed directly to the purpose of this email after a brief greeting.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Email to state colleagues on next steps for a project at Urban
 </div>
 </div>
@@ -489,28 +535,25 @@ Email to state colleagues on next steps for a project at Urban
 </ul>
 <p>In the previous example, my key question is what is the preferred start time for the “office hours” or “support sessions” to aid the state staff members.</p>
 <p>This next example is an email from someone asking me to write a letter of recommendation.</p>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 <span style="color:#1696d2;">Class Activity 1</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="cell">
-
-</div>
 <p>What is missing from this email based on suggested structure we covered for an introduction email?</p>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Award nomination
 </div>
 </div>
@@ -535,12 +578,12 @@ Award nomination
 <section id="make-requests-into-questions" class="level3" data-number="12.1.4">
 <h3 data-number="12.1.4" class="anchored" data-anchor-id="make-requests-into-questions"><span class="header-section-number">12.1.4</span> Make requests into questions</h3>
 <p>In addition to <span class="citation" data-cites="glickman2011great">Glickman (<a href="references.html#ref-glickman2011great" role="doc-biblioref">2011</a>)</span>’s structure, frame your requests into questions. Often our first emails to someone new are because we need to ask them something. This is already hard for verbal communication let alone written communication, where tone is hard to convey. If you have a request for someone, rephrase it like a question. It will sound more like the intent (a request) rather than a demand.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Original email
 </div>
 </div>
@@ -551,18 +594,22 @@ Original email
 </div>
 </div>
 <p>The email follows the recommended structure, but the tone is off because the request sounds like a demand. Additionally, Jeff and Brandon, who weren’t at the meeting, were CCed in the original email. If the request is phrased as a question and a comment is made about the CCed individuals, the tone will come across much lighter.</p>
-<div id="fig-karen" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="www/images/karen.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;12.3: Really, Karen?</figcaption><p></p>
+<div id="fig-karen" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-karen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/karen.gif" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-karen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.3: Really, Karen?
+</figcaption>
 </figure>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Modified version of the previous email
 </div>
 </div>
@@ -586,19 +633,23 @@ Modified version of the previous email
 <section id="always-thank-people-for-their-time" class="level3" data-number="12.2.1">
 <h3 data-number="12.2.1" class="anchored" data-anchor-id="always-thank-people-for-their-time"><span class="header-section-number">12.2.1</span> Always thank people for their time</h3>
 <p>Even if the conversation or interaction wasn’t productive or had the desired outcome, it’s always important to express gratitude for people’s time and effort. Being polite can go a long way. Also, people loved being thanked!</p>
-<div id="fig-thank-you" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="www/images/thank-you-thank-you-thank-you.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;12.4: Thank you, thank you, thank you from Ke Huy Quan at the 2024 Oscars</figcaption><p></p>
+<div id="fig-thank-you" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-thank-you-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/thank-you-thank-you-thank-you.gif" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-thank-you-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.4: Thank you, thank you, thank you from Ke Huy Quan at the 2024 Oscars
+</figcaption>
 </figure>
 </div>
 <p>The following is an email from a colleague who had asked me about how to explain a privacy concept, differential privacy, at a high level for a presentation. Below is his response after I took the time to provide him with a high-level conceptual example. Notice that he thanked me several times throughout the email, which I bold.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Conceptual question on differential privacy
 </div>
 </div>
@@ -619,12 +670,12 @@ Conceptual question on differential privacy
 </blockquote>
 <p>There are numerous methods to sustain that momentum or identifying potential next steps. This could be as straightforward as saying, “I look forward to staying in touch.” or suggesting, “Let’s connect on LinkedIn.” The latter is my go to, especially when meeting people at networking events like professional conferences. It’s a low effort way of staying connected in some way.</p>
 <p>In the following example, staff from the a state’s Department of Health contacted me regarding alternative data privacy methods aimed at avoiding the suppression or removing public health data records. The forward momentum is opening the door for further questions.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Virtual meeting with a state’s Department of Health
 </div>
 </div>
@@ -633,12 +684,12 @@ Virtual meeting with a state’s Department of Health
 </div>
 </div>
 <p>I met a colleague at a workshop, and we discussed a job posting in his organization and his difficulties finding qualified candidates. I offered to help spread the word if he forwarded me the posting, which was my forward momentum in the in-person exchange. My colleague then seized that forward momentum by sending an email that evening.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Sharing a job posting
 </div>
 </div>
@@ -651,28 +702,25 @@ Sharing a job posting
 </div>
 </div>
 <p>The following next example is an email after I conducted an informational interview about Urban Institute with someone who recently graduated college.</p>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 <span style="color:#1696d2;">Class Activity 2</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="cell">
-
-</div>
 <p>What is missing from this email based on what is recommended for a goodbye email?</p>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Urban Institute opportunities
 </div>
 </div>
@@ -684,10 +732,14 @@ Urban Institute opportunities
 </div>
 </div>
 <p>Don’t fall into the abyss! Try to make sure the new connection remembers you!</p>
-<div id="fig-remember-me" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="www/images/remember-me.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;12.5: A giant statue of Bender from the TV show, Futurama, with text saying, “Remember me.”</figcaption><p></p>
+<div id="fig-remember-me" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-remember-me-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/remember-me.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-remember-me-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.5: A giant statue of Bender from the TV show, Futurama, with text saying, “Remember me.”
+</figcaption>
 </figure>
 </div>
 </section>
@@ -712,12 +764,12 @@ Urban Institute opportunities
 <p>The purpose of this type of communication is to provide new, different, and/or important information. When drafting your email or considering what to say, think about your objective or what you hope to achieve from the conversation.</p>
 <!-- ![Professor Farnsworth, a character on the TV show, "Futurama," saying "Good news, everyone."](www/images/good-news.gif){#fig-good-news fig-align="center"} -->
 <p>In the following example, people at Urban wanted to invite an expert on propensity score methods for causal effects to give a mini training session/course on the topic. Since I have both a professional and personal relationship with this expert, no introduction sentence is necessary.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Invitation to speak at Urban on propensity score methods
 </div>
 </div>
@@ -732,12 +784,12 @@ Invitation to speak at Urban on propensity score methods
 </div>
 </div>
 <p>After several exchanges, the following is another example of the status update that follows the “punchline”, “facts / supporting highlights”, and “forward momentum” parts.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Invitation to speak at Urban on propensity score methods (after several more email exchanges)
 </div>
 </div>
@@ -763,12 +815,12 @@ Invitation to speak at Urban on propensity score methods (after several more ema
 </div>
 </div>
 <p>The next example is an email from my colleague to our client about updating the bi-weekly check-ins for a project.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Scheduling check-ins starting in May
 </div>
 </div>
@@ -793,19 +845,23 @@ Scheduling check-ins starting in May
 </ol>
 <p>It’s more crucial than ever to clearly state your case or the point you want to make. It also doesn’t hurt to be overly polite either!</p>
 <p>Might increase your chances…</p>
-<div id="fig-roll" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="www/images/roll-persuasion.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;12.6: From the Dungeons &amp; Dragons TV show, “Encounter Party!”, where someone is saying, “Can I roll persuasion?”</figcaption><p></p>
+<div id="fig-roll" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-roll-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/roll-persuasion.gif" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-roll-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.6: From the Dungeons &amp; Dragons TV show, “Encounter Party!”, where someone is saying, “Can I roll persuasion?”
+</figcaption>
 </figure>
 </div>
 <p>The following example is an exchange with the person who nominated me to be an award in 2023. Since the nomination failed, I reached out to my colleague about making a case to try again instead of waiting another year.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Nomination round 2
 </div>
 </div>
@@ -819,28 +875,25 @@ Nomination round 2
 </div>
 </div>
 <p>This next example involves me reaching out to several colleagues to nominate a mutual colleague for an award, which will require several letters of recommendation (good letters take a lot of time to write!).</p>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 <span style="color:#1696d2;">Class Activity 3</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="cell">
-
-</div>
 <p>What could be done to make the following email better?</p>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Nominating Amy for an award
 </div>
 </div>
@@ -864,12 +917,12 @@ Nominating Amy for an award
 </ol>
 <p>We often need to discuss missing information or identifying next steps for a situation or project. Sometimes, we find ourselves in conversations that have become so convoluted that we have no idea what is going on. If you find yourself in this situation, start from scratch and try to level set for all parties involved.</p>
 <p>Below is part of an email exchange, where there was confusion about payments for a contract between Organization A and Urban Institute (my project). In this email, I try to establish what is known to figure out what we are missing and identify the next steps.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Contract confusion
 </div>
 </div>
@@ -885,12 +938,12 @@ Contract confusion
 </div>
 <p>For the next email, I reached out to the staff in charge of travel approvals. I received several notifications about how my travel was approved and then rejected multiple times. I became unsure if my travel was approved or not and if I needed to do anything to help with the process.</p>
 <!--![From the movie, "Anchorman," where Ron Burgundy is saying, "That doesn't make any sense."](www/images/that-doesnt-make-any-sense.gif){#fig-sense fig-align="center"}-->
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Multiple approval and rejection travel emails
 </div>
 </div>
@@ -907,10 +960,14 @@ Multiple approval and rejection travel emails
 <section id="other-email-ettiquette-tips" class="level2" data-number="12.4">
 <h2 data-number="12.4" class="anchored" data-anchor-id="other-email-ettiquette-tips"><span class="header-section-number">12.4</span> Other email ettiquette tips</h2>
 <p>My vice president recently shared this <a href="https://www.behance.net/blog/email-etiquette-for-the-super-busy">blog</a> by Fred Wilson on general tips for a “less is more” strategy for emails. These tips cover many of the points we’ve already discussed, but it’s good to read or hear them more than once to solidify the ideas.</p>
-<div id="fig-cat-typing" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="www/images/cat-typing.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;12.7: Cat typing on a laptop keyboard.</figcaption><p></p>
+<div id="fig-cat-typing" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cat-typing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/cat-typing.gif" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cat-typing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.7: Cat typing on a laptop keyboard.
+</figcaption>
 </figure>
 </div>
 <p>The header and the quoted text right after are content from the blog. I added some examples from my work emails.</p>
@@ -931,12 +988,12 @@ Multiple approval and rejection travel emails
 <blockquote class="blockquote">
 <p>It’s standard practice to begin an email by summarizing what happened at a meeting or during a phone conversation, then following on with any “action steps” that emerged. But this makes it easy for the most important information to get lost in the shuffle. By reversing this order – and listing actions steps first and foremost – you keep the attention on the items you want to draw attention to.</p>
 </blockquote>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Invitation to join a new Research Coordination Network
 </div>
 </div>
@@ -956,12 +1013,12 @@ Invitation to join a new Research Coordination Network
 <blockquote class="blockquote">
 <p>This is Email 101. If you’re not doing it already, it should be standard protocol to break out multiple points or questions as numbered items in all email correspondence. If you don’t, you risk having that customer or client only respond to the first question that happens to catch their eye. (And now you have to write another email to ask them about it again.)</p>
 </blockquote>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Conference update
 </div>
 </div>
@@ -990,12 +1047,12 @@ Conference update
 <blockquote class="blockquote">
 <p>Emails that offer nothing but a “What do you think about X…?” are generally ineffectual. Always be proactive and take the lead in your communications so that the way forward is completely clear. If you’re proposing a deal, do a bullet‐pointed outline of the parameters from the get‐go. If you want to “run something by” a superior, share your approach and ask them if they agree. They may not, but giving them a starting point, something to react to, is MUCH more likely to get a response than waiting for someone else to make the first move.</p>
 </blockquote>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Project update and questions for next steps
 </div>
 </div>
@@ -1014,12 +1071,12 @@ Project update and questions for next steps
 <blockquote class="blockquote">
 <p>Some people think that handing out deadlines can seem dictatorial. On the contrary, I’ve noticed that successful busy people welcome a deadline. It helps them integrate the tasks into their schedule. If a response from them is imperative, politely include a deadline: “For the project to stay on track, I need a response from you by 1/18.” If a response is optional, communicate that as well: “If I don’t hear back from you by 1/18, I’ll proceed with the solution I’ve proposed.”</p>
 </blockquote>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Finalizing a document
 </div>
 </div>
@@ -1037,12 +1094,12 @@ Finalizing a document
 <p>Claire</p>
 </div>
 </div>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
@@ -1059,12 +1116,12 @@ Important
 <blockquote class="blockquote">
 <p>Some emails need to be shared to keep everyone in the loop. But non‐actionable correspondence should be labeled as such – so that it can be prioritized accordingly. Using a simple “FYI” tag at the top of all emails that contain information that you are not required to act on. It allows for easy filtering of non‐actionable emails, whether by scanning visually or setting up a rule in your email client. - (Also, recognize that if you’ve been working on high-priority items with this contact un-related to this non-actionable email, it might be best to save sending the “FYI” info email to later in the day.)</p>
 </blockquote>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 A forwarded email about a proposal opportunity from the National Science Foundation
 </div>
 </div>
@@ -1079,12 +1136,12 @@ A forwarded email about a proposal opportunity from the National Science Foundat
 <blockquote class="blockquote">
 <p>If someone sends you an urgent email that you can’t get to today (or this week, or month), write them a quick note and let them know, specifically when you will get to it. You’ll quell their anxiety, and save yourself a future nagging email from them. It also preserves goodwill: explaining now why you cannot get to something now is more effective than apologizing later.</p>
 </blockquote>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Confirming the presentation content
 </div>
 </div>
@@ -1113,18 +1170,22 @@ Confirming the presentation content
 <blockquote class="blockquote">
 <p>Email is a severely limited medium when it comes to conveying tone, which is why angry emails are never a good idea. More often than not, they just create more anxiety – and more email. Occasionally, writing an angry email can be therapeutic. If this is the case, write it as a draft to get it off your chest, and then delete the email. When a confrontation is brewing, a conversation in person or on the phone is almost always best. Emails leave too much room for misunderstanding.</p>
 </blockquote>
-<div id="fig-rick-typing" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="www/images/rick-typing.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;12.8: Rick, from “Rick and Morty,” typing angerly.</figcaption><p></p>
+<div id="fig-rick-typing" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rick-typing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/rick-typing.gif" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rick-typing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.8: Rick, from “Rick and Morty,” typing angerly.
+</figcaption>
 </figure>
 </div>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
@@ -1138,21 +1199,25 @@ Important
 <blockquote class="blockquote">
 <p>If you’ve received an email sent to a large group of people, do your best to avoid replying to all when you respond. If that person was qualified to send the email, typically they can be relied on to be the point person who collates the responses. Keep in mind: If using the “reply all” feature really seems necessary, you are probably having a conversation that would be better (and more efficiently) had face‐to‐face.</p>
 </blockquote>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Don’t pull a Dr.&nbsp;Lamere!
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>She accidentally hit reply all about ordering commencement regalia, and it was sent to all full time faculty, part time faculty, and bookstore email lists.</p>
-<div id="fig-replyall" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="www/images/alicia-replyall.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;12.9: Dr.&nbsp;Lamere’s reply all.</figcaption><p></p>
+<div id="fig-replyall" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-replyall-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/alicia-replyall.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-replyall-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.9: Dr.&nbsp;Lamere’s reply all.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1201,26 +1266,23 @@ Don’t pull a Dr.&nbsp;Lamere!
 </section>
 <section id="practice-and-feedback" class="level3" data-number="12.5.2">
 <h3 data-number="12.5.2" class="anchored" data-anchor-id="practice-and-feedback"><span class="header-section-number">12.5.2</span> Practice and feedback</h3>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 <span style="color:#1696d2;">Class Activity 4</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="cell">
-
-</div>
 <p>Write an introduction email to me with information on what other non-technical professional skills you would like to learn during week 5 (June 21) class.</p>
 </div>
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-glickman2011great" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-glickman2011great" class="csl-entry" role="listitem">
 Glickman, Jodi. 2011. <em>Great on the Job: What to Say, How to Say It. The Secrets of Getting Ahead.</em> St. Martin’s Griffin.
 </div>
 </div>
@@ -1267,9 +1329,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1305,10 +1381,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1318,8 +1411,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1331,9 +1433,245 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1375,17 +1713,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./06_data-termination.html" class="pagination-link">
+      <a href="./06_data-termination.html" class="pagination-link" aria-label="Data Destruction or Termination + Future Challenges">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./03_job-market-time-management.html" class="pagination-link">
+      <a href="./03_job-market-time-management.html" class="pagination-link" aria-label="Job Market and Time Management">
         <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Job Market and Time Management</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 
