@@ -31,9 +31,7 @@ Please note that what I am suggesting will not work for everyone and is based on
 
 ### Update your profile
 
-There are a lot of advice pages on what to do to update your profile page. I try to summarize these tips below:
-
-Here are some top tips for improving your LinkedIn profile:
+There are a lot of advice pages on what to do to update your profile page. I try to summarize these tips in this section.
 
 1. **Include Professional Photo and Banner Image:** The saying "you only get one chance to make a first impression" holds true for your online presence as well. Your professional photo should be high resolution and look polished. Avoid selfies or low-resolution images. If you don’t have a professional headshot, many universities offer free headshot services or host events with professional photographers. Alternatively, you can use AI to generate a photo.
 
@@ -151,15 +149,7 @@ Another way to engage with your connections is to regularly share resources, pro
 ### Practice
 
 ::: callout
-#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
-
-```{r}
-#| echo: false
-
-exercise_number <- exercise_number + 1
-```
-
-## Build Your Network
+#### [`r paste("Improving Your Profile and Building Your Network")`]{style="color:#1696d2;"}
 
 **Objective:**
 To update LinkedIn profiles and send connections to grown professional network.
