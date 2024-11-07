@@ -66,12 +66,12 @@ A statistician specializing in statistical data privacy methods, including synth
 
 :::
 
-::: {.callout-note}
-## Executive summary for my nephew applying to engineering internships
+<!-- ::: {.callout-note} -->
+<!-- ## Executive summary for my nephew applying to engineering internships -->
 
-Junior Electrical Engineering student with a minor in Computer Science, aspiring to pursue a master’s degree in Electrical Engineering. Seeking a challenging internship that fosters collaboration and learning within a team of engineers and fellow students. Experienced in leadership roles during high school and actively engaged in various extracurricular activities individually and in teams.
+<!-- Junior Electrical Engineering student with a minor in Computer Science, aspiring to pursue a master’s degree in Electrical Engineering. Seeking a challenging internship that fosters collaboration and learning within a team of engineers and fellow students. Experienced in leadership roles during high school and actively engaged in various extracurricular activities individually and in teams. -->
 
-::: 
+<!-- :::  -->
 
 ![Screenshot of Josh De La Rosa's LinkedIn Profile"](www/images/linkedin-de-la-rosa.png){#fig-linkedin-de-la-rosa fig-align="center"}
 
