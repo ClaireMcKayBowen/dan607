@@ -73,46 +73,46 @@ Junior Electrical Engineering student with a minor in Computer Science, aspiring
 
 6. **Profile Content**: 
 
-List relevant skills and encourage colleagues to endorse you for them. Endorsements provide social proof and help boost your credibility.
+<!-- List relevant skills and encourage colleagues to endorse you for them. Endorsements provide social proof and help boost your credibility. -->
 
-The experience section should have each box filled with a bulleted list of your achievements like on your resume, along with added media of your achievements. You should have a featured section, with more samples of your work, news mentions, awards etc.
+<!-- The experience section should have each box filled with a bulleted list of your achievements like on your resume, along with added media of your achievements. You should have a featured section, with more samples of your work, news mentions, awards etc. -->
 
-Include your academic background, any certifications, and relevant courses to demonstrate your qualifications.
-
-
-Make sure your skills section is filled with skills the jobs you’re applying for expect from you.
-
-### How to identify connections
-
-Before you start building your network, you first need to set a goal as to why you are doing this.
-
-Follow various companies that you are interested and/or people who work at those companies.
+<!-- Include your academic background, any certifications, and relevant courses to demonstrate your qualifications. -->
 
 
-**Join and Participate in LinkedIn Groups**: Joining relevant groups helps you stay informed about industry trends, network with like-minded professionals, and establish yourself as a thought leader.
+<!-- Make sure your skills section is filled with skills the jobs you’re applying for expect from you. -->
 
-### How to engage with those connections
+<!-- ### How to identify connections -->
 
-**Request Recommendations**: Ask colleagues, supervisors, or clients for recommendations that speak to your strengths and work ethic. These testimonials provide credibility and social proof.
+<!-- Before you start building your network, you first need to set a goal as to why you are doing this. -->
 
-**Engage & Share Content**: Regularly share industry-related articles, updates, and insights. This shows you are active and engaged in your field and can help build your professional brand.
+<!-- Follow various companies that you are interested and/or people who work at those companies. -->
 
-Sending personalized LinkedIn requests – Rather than just clicking on connect, add a custom note while sending connection requests.
 
-### Practice
+<!-- **Join and Participate in LinkedIn Groups**: Joining relevant groups helps you stay informed about industry trends, network with like-minded professionals, and establish yourself as a thought leader. -->
 
-::: callout
-#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+<!-- ### How to engage with those connections -->
 
-```{r}
-#| echo: false 
+<!-- **Request Recommendations**: Ask colleagues, supervisors, or clients for recommendations that speak to your strengths and work ethic. These testimonials provide credibility and social proof. -->
 
-exercise_number <- exercise_number + 1
-```
+<!-- **Engage & Share Content**: Regularly share industry-related articles, updates, and insights. This shows you are active and engaged in your field and can help build your professional brand. -->
 
-TBD
+<!-- Sending personalized LinkedIn requests – Rather than just clicking on connect, add a custom note while sending connection requests. -->
 
-:::
+<!-- ### Practice -->
+
+<!-- ::: callout -->
+<!-- #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"} -->
+
+<!-- ```{r} -->
+<!-- #| echo: false  -->
+
+<!-- exercise_number <- exercise_number + 1 -->
+<!-- ``` -->
+
+<!-- TBD -->
+
+<!-- ::: -->
 
 ## On the job market
 
