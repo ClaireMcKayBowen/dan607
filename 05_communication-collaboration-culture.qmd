@@ -219,3 +219,20 @@ Also, women are often referred to as Ms. or Mrs. instead of their formal titles 
 
 For example, while I prefer to be called Claire, I dislike being called Miss Bowen, as I have never been Miss Bowen (married name). In an academic setting, if you're unsure whether the instructor has a PhD, use Professor.
 
+## Time management
+
+![Gru Plan meme. First panel says, "Make a list of things to do tomorrow." Second panel says, "Set an alarm to hold myself accountable." Third panel says, "Ignore the alarm and spend all day tagging friends in memes." Fourth panel says, "Ignore the alarm and spend all day tagging friends in memes."](www/images/time-management-gru.jpeg){#fig-time-management fig-align="center"}
+
+### What are effective ways to stay organized?
+
+Understanding what drives you or what triggers your need for organization is key. For instance, I thrive on maintaining an "inbox zero" approach. To align with this, I create subfolders within my inbox to categorize emails related to projects, administrative tasks, and more. Each email must be addressed and filed in the appropriate folder before I can clear it from my main inbox.
+
+![The first level of my inbox organization](www/images/claires-inbox.png){#fig-claires-inbox fig-align="center"}
+
+Another strategy I employ is keeping essential information visible. I use my whiteboard to track my professional travel schedule, paper reviews, and the progress of paper publications. This whiteboard also helps me see if I've been overcommitting on these areas.
+
+For day-to-day tasks, I rely on a notebook. At the start of each day, I list the top 2 to 4 priorities I aim to accomplish. Alongside, I maintain a to-do list, tackling tasks based on their importance and urgency. Breaking down larger projects into smaller, manageable steps also helps maintain clarity and progress.
+
+### How can you avoid forgetting deadlines?
+
+To ensure I never miss deadlines, I maintain a secondary calendar dedicated solely to reminders. This calendar prompts me to complete tasks and also reminds others of their responsibilities. I strongly recommend implementing a similar system. Examples of reminders I set include "set agenda for W meeting," "create announcement for X," "send email reminder for Y," and "send follow-up if Z doesn't respond."

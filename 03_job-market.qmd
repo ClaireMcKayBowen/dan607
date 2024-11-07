@@ -16,7 +16,7 @@ exercise_number <- 1
 
 ```
 
-For this week's discussions on non-technical professional skills, we will review and answer questions focused about being on the job market and time management.
+In this section, the focus is on securing a job. The first half will cover using LinkedIn to build your network, while the second half will explore the general steps in the job search process: researching the job market, writing an effective cover letter, acing interviews, and negotiating your salary.
 
 ::: {.callout-important}
 ## These are my very opinionated answers/advice.
@@ -25,9 +25,99 @@ Please note that what I am suggesting will not work for everyone and is based on
 
 ::: 
 
+## LinkedIn Network
+
+### Update your profile
+
+There are a lot of advice pages on what to do to update your profile page. I try to summarize these tips below:
+
+Here are some top tips for improving your LinkedIn profile:
+
+1. **Include Professional Photo and Banner Image**: The saying "you only get one chance to make a first impression" holds true for your online presence as well. Your professional photo should be high resolution and look polished. Avoid selfies or low-resolution images. If you don’t have a professional headshot, many universities offer free headshot services or host events with professional photographers. Alternatively, you can use AI to generate a photo.
+
+::: {.callout-note}
+## Update your photo every few years
+
+Photos can quickly become outdated, so consider refreshing your professional photo every couple of years. I update mine regularly. Don’t be like my friend who’s still using the photo from my wedding—10 years ago!
+
+::: 
+
+  Also, upload a banner image. An empty banner can make your LinkedIn profile look incomplete. If you’re unsure what image to use, think of the banner as a way to reinforce your professional brand. For example, my current banner features the image from the cover of my book, which focuses on data privacy. In the past, I used a photo of myself speaking at a conference.
+
+2. **Create a Detailed Headline**: LinkedIn automatically populates your headline with your current job title and company. I typically edit it to reflect the title I use in short bios or when introducing myself. However, more and more professionals recommend adding more details, such as relevant keywords, to improve your LinkedIn search ranking. To update your headline, consider highlighting your skills, expertise, or what you want to be known for. Just be sure not to overload your headline with keywords—only include them if it makes sense.
+
+https://www.linkedin.com/in/joshdelarosa/
+https://www.linkedin.com/in/temilola-afolabi/
+https://www.linkedin.com/in/richard-c-zink/
+https://www.linkedin.com/in/jose-plehn/
+
+3. **Write an Executive Summary**: Think of your summary as your elevator pitch. It should be a few concise sentences that highlight your professional experience, skills, goals, and background.
+
+:::{.callout-note}
+## My LinkedIn summary
+
+A statistician specializing in statistical data privacy methods, including synthetic data and differential privacy, and their impact on the statistical analysis of economic data. Over 10 years of experience developing both technical and policy solutions with a strong passion for improving science communication and integrating data equity into the data privacy process. Proven track record of leadership, managing teams, and guiding projects that influence policy and data practices.
+
+:::
+
+::: {.callout-note}
+## Executive summary for my nephew applying to engineering internships
+
+Junior Electrical Engineering student with a minor in Computer Science, aspiring to pursue a master’s degree in Electrical Engineering. Seeking a challenging internship that fosters collaboration and learning within a team of engineers and fellow students. Experienced in leadership roles during high school and actively engaged in various extracurricular activities individually and in teams.
+
+::: 
+
+4. **Customize Your LinkedIn URL**: If you haven’t already, personalize your LinkedIn URL as soon as possible! Customizing your URL can improve your search engine ranking. Make sure it reflects your name or your professional brand. For example, is my last name followed by my first name (e.g., https://www.linkedin.com/in/bowenclaire/). I use this URL on my "Contact Me" slide in presentations and on my personal website.
+
+5. **Update Your Location**: Another update you need to make soon! Your location is one of the top five fields that LinkedIn prioritizes when doing a keyword search. You can update this information in the introduction section.
+
+6. **Profile Content**: 
+
+List relevant skills and encourage colleagues to endorse you for them. Endorsements provide social proof and help boost your credibility.
+
+The experience section should have each box filled with a bulleted list of your achievements like on your resume, along with added media of your achievements. You should have a featured section, with more samples of your work, news mentions, awards etc.
+
+Include your academic background, any certifications, and relevant courses to demonstrate your qualifications.
+
+
+Make sure your skills section is filled with skills the jobs you’re applying for expect from you.
+
+### How to identify connections
+
+Before you start building your network, you first need to set a goal as to why you are doing this.
+
+Follow various companies that you are interested and/or people who work at those companies.
+
+
+**Join and Participate in LinkedIn Groups**: Joining relevant groups helps you stay informed about industry trends, network with like-minded professionals, and establish yourself as a thought leader.
+
+### How to engage with those connections
+
+**Request Recommendations**: Ask colleagues, supervisors, or clients for recommendations that speak to your strengths and work ethic. These testimonials provide credibility and social proof.
+
+**Engage & Share Content**: Regularly share industry-related articles, updates, and insights. This shows you are active and engaged in your field and can help build your professional brand.
+
+Sending personalized LinkedIn requests – Rather than just clicking on connect, add a custom note while sending connection requests.
+
+### Practice
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false 
+
+exercise_number <- exercise_number + 1
+```
+
+TBD
+
+:::
+
 ## On the job market
 
 ![Futurama Fry meme with the text, "Not sure if I'm highlighting my strengths and character traits for I'm bragging profusely."](www/images/cover-letter-futurama.jpg){#fig-cover-letter-futurama fig-align="center"}
+The following are questions my students asked me that pertain to being on the job market.
 
 ### How do you explore new job opportunities...
 
@@ -143,20 +233,3 @@ Many employers are obligated to disclose salary ranges, although some ranges may
 
 When presented with a salary offer, whether verbally or written, it's advisable not to immediately accept or reject it. If the offer is verbal, take a moment before responding, expressing gratitude for the offer without revealing your opinion on its adequacy. You should mull over the offer for at least a day, carefully considering the other benefits such as vacation time and healthcare provisions in addition to the compensation.
 
-## Time management
-
-![Gru Plan meme. First panel says, "Make a list of things to do tomorrow." Second panel says, "Set an alarm to hold myself accountable." Third panel says, "Ignore the alarm and spend all day tagging friends in memes." Fourth panel says, "Ignore the alarm and spend all day tagging friends in memes."](www/images/time-management-gru.jpeg){#fig-time-management fig-align="center"}
-
-### What are effective ways to stay organized?
-
-Understanding what drives you or what triggers your need for organization is key. For instance, I thrive on maintaining an "inbox zero" approach. To align with this, I create subfolders within my inbox to categorize emails related to projects, administrative tasks, and more. Each email must be addressed and filed in the appropriate folder before I can clear it from my main inbox.
-
-![The first level of my inbox organization](www/images/claires-inbox.png){#fig-claires-inbox fig-align="center"}
-
-Another strategy I employ is keeping essential information visible. I use my whiteboard to track my professional travel schedule, paper reviews, and the progress of paper publications. This whiteboard also helps me see if I've been overcommitting on these areas.
-
-For day-to-day tasks, I rely on a notebook. At the start of each day, I list the top 2 to 4 priorities I aim to accomplish. Alongside, I maintain a to-do list, tackling tasks based on their importance and urgency. Breaking down larger projects into smaller, manageable steps also helps maintain clarity and progress.
-
-### How can you avoid forgetting deadlines?
-
-To ensure I never miss deadlines, I maintain a secondary calendar dedicated solely to reminders. This calendar prompts me to complete tasks and also reminds others of their responsibilities. I strongly recommend implementing a similar system. Examples of reminders I set include "set agenda for W meeting," "create announcement for X," "send email reminder for Y," and "send follow-up if Z doesn't respond."

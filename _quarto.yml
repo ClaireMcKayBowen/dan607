@@ -40,7 +40,7 @@ book:
     - part: Non-Technical Professional Skills
       chapters: 
         - 02_written-verbal-communication.qmd
-        - 03_job-market-time-management.qmd
+        - 03_job-market.qmd
         - 04_better-presentations.qmd
         - 05_communication-collaboration-culture.qmd
         
