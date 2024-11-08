@@ -53,6 +53,7 @@ Also, upload a banner image. An empty banner can make your LinkedIn profile look
 2. **Create a Detailed Headline:** LinkedIn automatically populates your headline with your current job title and company. I typically edit it to reflect the title I use in short bios or when introducing myself. However, more and more professionals recommend adding more details, such as relevant keywords, to improve your LinkedIn search ranking. To update your headline, consider highlighting your skills, expertise, or what you want to be known for. Just be sure not to overload your headline with keywords—only include them if it makes sense.
 
 ![Screenshot of Claire McKay Bowen's LinkedIn Profile"](www/images/linkedin-bowen.png){#fig-linkedin-bowen fig-align="center"}
+
 ![A LinkedIn meme that compares the real life vs. alter ego LinkedIn headline.](www/images/linkedin-headlines.jpg){#fig-find-you-taken2 fig-align="center" width=70%}
 
 Meme from [this LinkedIn post](https://www.linkedin.com/posts/paras-doda_memes-linkedin-activity-7135485025751289857-eZoi/).
@@ -125,6 +126,8 @@ Once your goal is clear, it will be easier to identify the right connections. He
 
 ![Futurama Fry meme with the text, "Not sure if this is a real person or a bot trying to scam me later."](www/images/linkedin-futurama.jpg){#fig-linkedin-futurama fig-align="center"}
 
+### How to introduce yourself
+
 ::: {.callout-important}
 ## Send a personalized message on your LinkedIn requests
 
@@ -135,6 +138,8 @@ I often receive connection requests from bots, so I typically don’t connect wi
 These messages should be brief, friendly, and personal (e.g., mention something specific from the person’s profile to make it more engaging).
 
 :::
+
+More information and examples on how to introduce yourself can be found [here](https://clairemckaybowen.github.io/dan607/02_written-verbal-communication.html).
 
 ### How to engage with those connections
 
