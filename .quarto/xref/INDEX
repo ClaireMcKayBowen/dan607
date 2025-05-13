@@ -79,5 +79,29 @@
   },
   "06_future.qmd": {
     "06_future.html": "d0fbe7aa"
+  },
+  "2025/index.qmd": {
+    "index.html": "055cbada"
+  },
+  "2024/index.qmd": {
+    "index.html": "77df571d"
+  },
+  "03_job-market.qmd": {
+    "03_job-market.html": "eb6c2419"
+  },
+  "00_introduction.qmd": {
+    "00_introduction.html": "e0946eb3"
+  },
+  "01_security-privacy-ethics-equity.qmd": {
+    "01_security-privacy-ethics-equity.html": "dc504aee"
+  },
+  "07_final-presentations.qmd": {
+    "07_final-presentations.html": "87643f5a"
+  },
+  "00_basics.qmd": {
+    "00_basics.html": "6122e58e"
+  },
+  "01_security-privacy-ethics.qmd": {
+    "01_security-privacy-ethics.html": "11bbf8fb"
   }
 }

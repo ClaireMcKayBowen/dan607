@@ -1,0 +1,59 @@
+---
+title: "DAN 607 Basics"
+format: 
+  html:
+    toc: true
+    code-line-numbers: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| echo: false
+
+exercise_number <- 1
+
+```
+
+This section covers the goals and expectations for the DAN 607 course.
+
+## Goals, grades, and expectations
+
+The primary aim is to foster an understanding of privacy, security, and ethics when using data throughout its life cycle (i.e., from collection to termination). Throughout the course, we will explore the significance, historical context, current methodologies, privacy legislation, and forthcoming developments in this field.
+
+The course is predominantly conceptual, recognizing that students will possess varying levels of analytical skills.
+
+### Grade Determination
+
+| Category | Weight | Points |
+|---------|:------:|:------:|
+| Reading Assignments & Community Contribution | 25% | 30 points (5 points each week) |
+| Weekly Writing Prompts | 50% | 60 points (12 points each week) |
+| Class Presentation | 25% | 30 points |
+
+### Assigned Readings & Community Contribution
+
+This course is somewhat reading intensive. You should not put off reading until the last minute. Class preparedness is essential to good class discussion. It is disappointing to everyone (and it makes the class boring) if you are not prepared. Readings will be from the required texts. Additional materials, such as videos or short articles, will be posted on the course website and on Canvas.
+
+I expect students to be actively engaged in discussions, which is why "Community Contributions" accounts for 25% of your grade. You will receive 2.5 points for showing up and an additional 2.5 points for participating in class (for a total of 5 points or full credit for the day). Because this is a virtual course, students are required to keep their cameras on for the entire class session. This ensures the instructor can verify attendance throughout the course. Failure to comply will result in zero points for "Community Contribution" for that day.
+
+### Weekly Writing Prompts
+
+The first writing assignment is due July 6th at 11:59 PM EDT. Since all the assignments are listed ahead of time, you may choose to get a head start on them, but I advise pacing yourself with the class, as you will want the content you read and/or watch to be top of mind for in-class discussions.
+
+Half your grade is your writing assignments. Please take your writing assignments seriously. While I will not grade based on writing quality (this is not an English course), I do expect minimal typos, grammar, and mechanics errors. The purpose of the writing assignments is for you to reflect on the content you have learned and see how it applies to the real world, your potential professional work, community, and personal life.
+
+By completing the assignment, you will automatically receive 6 points. The remaining 6 points will be awarded based on how well you address the prompt (i.e., answering all questions within the specified parameters), adhere to the word limit (yes, I do check), and produce a coherent essay.
+
+### Class Presentation
+
+The final will be a presentation. We will discuss further details about the presentation during our week 4 class on July 21st. The main reason I have chosen a presentation for your final is that verbal communication is crucial in most professions and is often not taught in courses. Part of our week 4 class will involve learning how to create better presentations and how to present more technical content to a broader audience.
+
+## Missing class and assignment policy
+
+I will provide one unexcused absence for either a class or an assignment (not both). The grade for that class or assignment will be waived in your final grade. If you miss additional classes and/or assignments, you will receive 0 points unless you have a medical emergency or a similar situation. In such cases, please speak with me or email me separately so we can discuss alternatives.
+
+Additionally, I will allow one late assignment worth half of the points. If you were to receive top marks (12 points), you would receive half that instead (6 points).
+
+For those requesting the class be recorded, I will ask those present if they are okay with recording the session and, if permitted, will upload the video on Canvas. I request that students do not download the video, as this might tempt some to share the recording externally. This act would violate the course's purpose. If I become aware of such sharing, I will not record future class sessions. This class focuses on security, privacy, ethics, and equity. A student who shares the recording beyond the course violates these principles.

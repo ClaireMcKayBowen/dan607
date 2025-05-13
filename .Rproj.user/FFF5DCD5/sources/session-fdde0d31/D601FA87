@@ -1,0 +1,33 @@
+{
+    "id": "D601FA87",
+    "path": "~/GitHub/dan607/index.qmd",
+    "project_path": "index.qmd",
+    "type": "quarto_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1747084678734.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "50,440",
+        "scrollLine": "43",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "0:0",
+        "docOutlineSize": "133"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1747087264,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1747087264248,
+    "read_only": false,
+    "read_only_alternatives": []
+}
