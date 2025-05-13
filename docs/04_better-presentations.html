@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -427,55 +393,7 @@ Grading will be generous
 </section>
 <section id="randomize-target-audience" class="level3" data-number="7.1.3">
 <h3 data-number="7.1.3" class="anchored" data-anchor-id="randomize-target-audience"><span class="header-section-number">7.1.3</span> Randomize target audience</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a>students <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Black"</span>, <span class="st">"Boes"</span>, <span class="st">"Cohen"</span>, <span class="st">"Coleman"</span>, <span class="st">"DeAngelo"</span>, <span class="st">"Duff"</span>, </span>
-<span id="cb1-6"><a href="#cb1-6"></a>              <span class="st">"Flynn"</span>, <span class="st">"Gomez"</span>, <span class="st">"Keohane"</span>, <span class="st">"Kiely"</span>, <span class="st">"Larsson"</span>, <span class="st">"Lombardi"</span>,</span>
-<span id="cb1-7"><a href="#cb1-7"></a>              <span class="st">"Macro"</span>, <span class="st">"Mathews"</span>, <span class="st">"Meslin"</span>, <span class="st">"Norton"</span>, <span class="st">"Novakoski"</span>,</span>
-<span id="cb1-8"><a href="#cb1-8"></a>              <span class="st">"Russell"</span>, <span class="st">"Schreifels"</span>, <span class="st">"Scully"</span>, <span class="st">"Sokolova"</span>, <span class="st">"Weir"</span>,</span>
-<span id="cb1-9"><a href="#cb1-9"></a>              <span class="st">"Williams"</span>)</span>
-<span id="cb1-10"><a href="#cb1-10"></a></span>
-<span id="cb1-11"><a href="#cb1-11"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(students)</span>
-<span id="cb1-12"><a href="#cb1-12"></a></span>
-<span id="cb1-13"><a href="#cb1-13"></a>audience <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"family-friends"</span>, <span class="st">"undergraduates-coworkers"</span>,</span>
-<span id="cb1-14"><a href="#cb1-14"></a>              <span class="st">"funders-media"</span>, <span class="st">"government-policymaker"</span>)</span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a>audience <span class="sc">%&gt;%</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>  <span class="fu">sample</span>(., n, <span class="at">replace =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a>  <span class="fu">bind_cols</span>(students, .) <span class="sc">%&gt;%</span></span>
-<span id="cb1-19"><a href="#cb1-19"></a>  <span class="fu">print</span>(<span class="at">n =</span> n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 23 × 2
-   ...1       ...2                    
-   &lt;chr&gt;      &lt;chr&gt;                   
- 1 Black      family-friends          
- 2 Boes       family-friends          
- 3 Cohen      family-friends          
- 4 Coleman    family-friends          
- 5 DeAngelo   undergraduates-coworkers
- 6 Duff       government-policymaker  
- 7 Flynn      undergraduates-coworkers
- 8 Gomez      undergraduates-coworkers
- 9 Keohane    family-friends          
-10 Kiely      government-policymaker  
-11 Larsson    funders-media           
-12 Lombardi   government-policymaker  
-13 Macro      funders-media           
-14 Mathews    government-policymaker  
-15 Meslin     family-friends          
-16 Norton     family-friends          
-17 Novakoski  undergraduates-coworkers
-18 Russell    government-policymaker  
-19 Schreifels undergraduates-coworkers
-20 Scully     undergraduates-coworkers
-21 Sokolova   funders-media           
-22 Weir       funders-media           
-23 Williams   family-friends          </code></pre>
-</div>
-</div>
+<p>TBD</p>
 </section>
 </section>
 <section id="how-to-make-better-presentations" class="level2" data-number="7.2">

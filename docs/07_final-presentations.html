@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -357,11 +323,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="target-audience-and-presentation-topic" class="level3" data-number="12.2.1">
 <h3 data-number="12.2.1" class="anchored" data-anchor-id="target-audience-and-presentation-topic"><span class="header-section-number">12.2.1</span> Target audience and presentation topic</h3>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Student Last Name</th>
@@ -371,119 +332,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>Black</td>
-<td>family-friends</td>
-<td>Security breaches.</td>
-</tr>
-<tr class="even">
-<td>Boes</td>
-<td>family-friends</td>
-<td>Is it ethical or not to terminate data.</td>
-</tr>
-<tr class="odd">
-<td>Cohen</td>
-<td>family-friends</td>
-<td>Data security and privacy considerations when storing and/or sharing sports data.</td>
-</tr>
-<tr class="even">
-<td>Coleman</td>
-<td>government-policymaker*</td>
-<td>Texas secret ballot.</td>
-</tr>
-<tr class="odd">
-<td>DeAngelo</td>
-<td>undergraduates-coworkers</td>
-<td>Noise infusion/injection and the tradeoff between privacy and data usability.</td>
-</tr>
-<tr class="even">
-<td>Duff</td>
-<td>family-friends*</td>
-<td>AI algorithms being used in hiring/recruiting process.</td>
-</tr>
-<tr class="odd">
-<td>Flynn</td>
-<td>undergraduates-coworkers</td>
-<td>Data security in sports betting.</td>
-</tr>
-<tr class="even">
-<td>Gomez</td>
-<td>undergraduates-coworkers</td>
-<td>(EA) Electronic Arts and its efforts towards improving data security, protecting user privacy, and promoting ethical gaming practices.</td>
-</tr>
-<tr class="odd">
-<td>Keohane</td>
-<td>family-friends</td>
-<td>Data warehouses and silos.</td>
-</tr>
-<tr class="even">
-<td>Kiely</td>
-<td>government-policymaker</td>
-<td>AI (in)equity in mental health data.</td>
-</tr>
-<tr class="odd">
-<td>Larsson</td>
-<td>funders-media</td>
-<td>What funding is needed to meet General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA).</td>
-</tr>
-<tr class="even">
-<td>Lombardi</td>
-<td>government-policymaker</td>
-<td>The inequity of facial recognition.</td>
-</tr>
-<tr class="odd">
-<td>Macro</td>
-<td>funders-media</td>
-<td>Advantages and disadvantages of using partially and fully synthetic data.</td>
-</tr>
-<tr class="even">
-<td>Mathews</td>
-<td>government-policymaker</td>
-<td>How the supreme court justices should be viewing surveys in AMICUS (“friend of the court”) briefs through the lens of equity.</td>
-</tr>
-<tr class="odd">
-<td>Meslin</td>
-<td>family-friends</td>
-<td>Google Incognito lawsuit.</td>
-</tr>
-<tr class="even">
-<td>Norton</td>
-<td>family-friends</td>
-<td>How does GDPR differs from US policies?</td>
-</tr>
-<tr class="odd">
-<td>Novakoski</td>
-<td>undergraduates-coworkers</td>
-<td>Why privacy is a factor in no public Spotify data.</td>
-</tr>
-<tr class="even">
-<td>Russell</td>
-<td>government-policymaker</td>
-<td>AI in healthcare (e.g., patient data).</td>
-</tr>
-<tr class="odd">
-<td>Schreifels</td>
-<td>undergraduates-coworkers</td>
-<td>Urban vs Rural internet connectivity could impact social inequalities either in a positive or negative way.</td>
-</tr>
-<tr class="even">
-<td>Scully</td>
-<td>undergraduates-coworkers</td>
-<td>Algorithmic data collection needing filters to spur negative content.</td>
-</tr>
-<tr class="odd">
-<td>Sokolova</td>
-<td>funders-media</td>
-<td>Email phishing.</td>
-</tr>
-<tr class="even">
-<td>Weir</td>
-<td>funders-media</td>
-<td>The ethical implications of cross border data transfers within emerging technologies.</td>
-</tr>
-<tr class="odd">
-<td>Williams</td>
-<td>family-friends</td>
-<td>How much data apps collect and what steps one can take better protect personal information.</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>TBD</td>
 </tr>
 </tbody>
 </table>
@@ -491,64 +342,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="evaluation-of-the-presentation" class="level3" data-number="12.2.2">
 <h3 data-number="12.2.2" class="anchored" data-anchor-id="evaluation-of-the-presentation"><span class="header-section-number">12.2.2</span> Evaluation of the presentation</h3>
-<p>The following is how I will evaluate your presentations. Each part will be scored from 1 to 10, as detailed below.</p>
+<p>TThe following is how I will evaluate your presentations. Each part will be scored from 1 to 6, as detailed below.</p>
 <ol type="1">
-<li><p>Content and audience (10 points)</p>
+<li><p>Content and audience (6 points)</p>
 <ul>
-<li>10: Clear purpose and content that addresses the target audience.</li>
-<li>5: Moderate clarity and relevance to the target audience.</li>
+<li>6: Clear purpose and content that addresses the target audience.</li>
+<li>3: Moderate clarity and relevance to the target audience.</li>
 <li>1: Unclear purpose and irrelevant to the target audience.</li>
 </ul></li>
-<li><p>Organization and structure (10 points)</p>
+<li><p>Organization and structure (6 points)</p>
 <ul>
-<li>10: Well-organized with a clear and strong flow (introduction, middle, and conclusion).</li>
-<li>5: Moderately organized with adequate flow.</li>
+<li>6: Well-organized with a clear and strong flow (introduction, middle, and conclusion).</li>
+<li>3: Moderately organized with adequate flow.</li>
 <li>1: Poorly organized, missing key structural elements.</li>
 </ul></li>
-<li><p>Delivery and timing (10 points)</p>
+<li><p>Delivery and timing (6 points)</p>
 <ul>
-<li>10: Enthusiastic and engaging, with good pacing, within 30 seconds of the time limit.</li>
-<li>5: Some enthusiasm and minor pacing issues, within 30 seconds to 1 minute of the time limit.</li>
+<li>6: Enthusiastic and engaging, with good pacing, within 30 seconds of the time limit.</li>
+<li>3: Some enthusiasm and minor pacing issues, within 30 seconds to 1 minute of the time limit.</li>
 <li>1: Lacks enthusiasm, poor pacing, over 1 minute off the time limit.</li>
 </ul></li>
-<li><p>Quality of slides or other visual aids (10 points)</p>
+<li><p>Quality of slides or other visual aids (6 points)</p>
 <ul>
-<li>10: Enhances the presentation.</li>
-<li>5: Somewhat contributes to the presentation.</li>
+<li>6: Enhances the presentation.</li>
+<li>3: Somewhat contributes to the presentation.</li>
 <li>1: Does not contribute to the presentation.</li>
 </ul></li>
-<li><p>Overall quality (10 points)</p>
+<li><p>Overall quality (6 points)</p>
 <ul>
-<li>10: Highly effective in achieving the goal.</li>
-<li>5: Somewhat effective in achieving the goal.</li>
+<li>6: Highly effective in achieving the goal.</li>
+<li>3: Somewhat effective in achieving the goal.</li>
 <li>1: Ineffective in achieving the goal.</li>
 </ul></li>
 </ol>
 </section>
 <section id="presentation-order" class="level3" data-number="12.2.3">
 <h3 data-number="12.2.3" class="anchored" data-anchor-id="presentation-order"><span class="header-section-number">12.2.3</span> Presentation order</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="fu">c</span>(<span class="st">"Black"</span>, <span class="st">"Boes"</span>, <span class="st">"Cohen"</span>, <span class="st">"Coleman"</span>, <span class="st">"DeAngelo"</span>, <span class="st">"Duff"</span>, <span class="st">"Flynn"</span>, <span class="st">"Gomez"</span>,</span>
-<span id="cb1-6"><a href="#cb1-6"></a>  <span class="st">"Keohane"</span>, <span class="st">"Kiely"</span>, <span class="st">"Larsson"</span>, <span class="st">"Lombardi"</span>, <span class="st">"Macro"</span>, <span class="st">"Mathews"</span>, <span class="st">"Meslin"</span>, </span>
-<span id="cb1-7"><a href="#cb1-7"></a>  <span class="st">"Norton"</span>, <span class="st">"Novakoski"</span>, <span class="st">"Russell"</span>, <span class="st">"Schreifels"</span>, <span class="st">"Scully"</span>, <span class="st">"Sokolova"</span>, <span class="st">"Weir"</span>,</span>
-<span id="cb1-8"><a href="#cb1-8"></a>  <span class="st">"Williams"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">sample</span>(., <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] "Novakoski"  "DeAngelo"   "Black"      "Kiely"      "Coleman"   
- [6] "Russell"    "Williams"   "Norton"     "Meslin"     "Gomez"     
-[11] "Flynn"      "Schreifels" "Keohane"    "Weir"       "Lombardi"  
-[16] "Boes"       "Mathews"    "Cohen"      "Sokolova"   "Scully"    
-[21] "Duff"       "Macro"      "Larsson"   </code></pre>
-</div>
-</div>
+<p>TBD</p>
 </section>
 <section id="schedule" class="level3" data-number="12.2.4">
 <h3 data-number="12.2.4" class="anchored" data-anchor-id="schedule"><span class="header-section-number">12.2.4</span> Schedule</h3>
-<table class="caption-top table">
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th>Time (EDT)</th>
@@ -556,108 +390,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>5:15 pm - 6:00 pm</td>
-<td>Scully**</td>
-</tr>
-<tr class="even">
-<td>–</td>
-<td>Novakoski</td>
-</tr>
-<tr class="odd">
-<td>–</td>
-<td>DeAngelo</td>
-</tr>
-<tr class="even">
-<td>–</td>
-<td>Sokolova*</td>
-</tr>
-<tr class="odd">
-<td>–</td>
-<td>Kiely</td>
-</tr>
-<tr class="even">
-<td>–</td>
-<td>Coleman</td>
-</tr>
-<tr class="odd">
-<td>–</td>
-<td>Russell</td>
-</tr>
-<tr class="even">
-<td><strong>6:00 pm - 6:15 pm</strong></td>
-<td><strong>Break</strong></td>
-</tr>
-<tr class="odd">
-<td>6:15 pm - 7:15 pm</td>
-<td>Williams</td>
-</tr>
-<tr class="even">
-<td>–</td>
-<td>Norton</td>
-</tr>
-<tr class="odd">
-<td>–</td>
-<td>Meslin</td>
-</tr>
-<tr class="even">
-<td>–</td>
-<td>Gomez</td>
-</tr>
-<tr class="odd">
-<td>–</td>
-<td>Flynn</td>
-</tr>
-<tr class="even">
-<td>–</td>
-<td>Schreifels</td>
-</tr>
-<tr class="odd">
-<td>–</td>
-<td>Keohane</td>
-</tr>
-<tr class="even">
-<td>–</td>
-<td>Weir</td>
-</tr>
-<tr class="odd">
-<td>–</td>
-<td>Lombardi</td>
-</tr>
-<tr class="even">
-<td><strong>7:15 pm - 7:30 pm</strong></td>
-<td><strong>Break</strong></td>
-</tr>
-<tr class="odd">
-<td>7:30 pm - 8:15 pm</td>
-<td>Boes</td>
-</tr>
-<tr class="even">
-<td>–</td>
-<td>Mathews</td>
-</tr>
-<tr class="odd">
-<td>–</td>
-<td>Cohen</td>
-</tr>
-<tr class="even">
-<td>–</td>
-<td>Black*</td>
-</tr>
-<tr class="odd">
-<td>–</td>
-<td>Duff</td>
-</tr>
-<tr class="even">
-<td>–</td>
-<td>Macro</td>
-</tr>
-<tr class="odd">
-<td>–</td>
-<td>Larsson</td>
-</tr>
 </tbody>
 </table>
+<p>TBD</p>
 <p>* == indicates students swapped time.</p>
 <p>** == indicates moved student sooner to avoid conflict (all other students have been shifted).</p>
 </section>
