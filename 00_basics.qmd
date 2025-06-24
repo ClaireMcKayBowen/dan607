@@ -57,3 +57,15 @@ I will provide one unexcused absence for either a class or an assignment (not bo
 Additionally, I will allow one late assignment worth half of the points. If you were to receive top marks (12 points), you would receive half that instead (6 points).
 
 For those requesting the class be recorded, I will ask those present if they are okay with recording the session and, if permitted, will upload the video on Canvas. I request that students do not download the video, as this might tempt some to share the recording externally. This act would violate the course's purpose. If I become aware of such sharing, I will not record future class sessions. This class focuses on security, privacy, ethics, and equity. A student who shares the recording beyond the course violates these principles.
+
+## Week 1 Assignment
+
+::: {.callout-important}
+## DEADLINE
+Due June 30, at 4:00 PM EDT (start of class)
+::: 
+
+### Read
+
+- Chapter 1: Why Is Data Privacy Important?
+- Chapter 2: How Did Data Privacy Change Over Time?

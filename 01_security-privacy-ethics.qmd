@@ -228,27 +228,44 @@ There has never been a documented case of a social media platform activating use
 
 :::
 
-## What is data security, privacy, ethics, and equity?
-
-For this week, you were assigned to read the first two chapters of the textbook.
+## A Social Dilemma and Coded Bias
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
 
 ```{r}
-#| echo: false
+#| echo: false 
 
 exercise_number <- exercise_number + 1
 ```
 
-Drawing from what you learned so far, let's delve into the following:
-
-- What data did AI, algorithms, or the example you found use to determine what you see?
-- Does the scenario you mentioned apply to everyone or only to a specific subgroup of individuals? Why or why not?
-- Could the scenario you brought up be used for a public good? If so, what changes would be necessary to create a public good?
-- Does those changes involve security, privacy, ethics, and equity?
+We will watch the intro of Social Dilemma ([Netflix link](https://www.netflix.com/watch/81254224)), trailer of Coded Bias ([YouTube Link](https://www.youtube.com/watch?v=xy8iVg7shjI)), and bonus interviews ([Social Dilemma Website Link](https://thesocialdilemma.com/the-dilemma/)), and have in-class discussion.
 
 :::
+
+### Before we start...
+
+- Do you think you could stay off your phone for 24 hours? What notification would compel you to get back on your phone?
+- How much information does your phone collect? Do you believe your information is protected, secure, and/or ethically used?
+
+### Social Dillemma + /the democracy dilemma
+
+- Why do you think everyone is so nervous about doing these interviews?
+- They mentioned that these tools were created for positive purposes, what are
+some of those purposes? What are some bad sides?
+- What news does the algorithm show you? Do you follow people and sources you disagree with? Why or why not?
+- What do you think are the foreseeable threats that misinformation poses to our society?
+
+### Coded Bias Trailer + /the discrimination dilemma
+
+- What are other instances (current or possible) of improper use of data to train AI and other algorithms that impact our lives?
+- Should we trust algorithms that rely on constantly surveilling our activities online, especially those that use our activities to make major decisions around employment, finances, housing, and what information we see and click?
+- Rapidly developed facial recognition technology powered by potentially-biased AI can have serious consequences for those it misidentifies. Where and how do you think human biases can show up in algorithms?
+
+
+## What is data security, privacy, ethics, and equity?
+
+For this week, you were assigned to read the first two chapters of the textbook, took a quiz, and watched a few video clips.
 
 :::{.callout-important}
 Have you noticed that AI and most other voice assistance software use a female voice.
@@ -357,3 +374,23 @@ We've just started exploring the world of security, privacy, ethics, and equity.
 All definitions used (including the data life cycle) are my opinionated definitions. Since many different fields work in data security, privacy, ethics, and equity, there is no standard taxonomy, which causes a lot of confusion. I set a standard definition in all my work, including this course, to ensure we are using the same common language. However, note that when reading other materials or literature, you might encounter conflicting terminology.
 
 ::: 
+
+## Week 2 Assignment
+
+::: {.callout-important}
+## DEADLINE
+Due July 6, at 11:59 PM EDT on Canvas
+::: 
+
+### Read
+
+- Chapter 3: How Do Data Privacy Methods Expand Access to Data?
+- [Do No Harm Guide: Applying Equity Awareness in Data Privacy Methods](https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-privacy-methods) -- Parts 1, 2, and 3.
+
+### Write (600 to 1200 words)
+
+Find and summarize a real-world example of data being used unethically and/or had violated people's privacy. The example must be recent (i.e., since 2022). Try to keep the following in mind:
+
+- What is the example? Introduce the situation and explain why it is important, providing any relevant background for the reader.
+- How did the example demonstrate a violation of privacy, security, and/or ethics? Does it apply to everyone or only a subgroup of people? Why is that?
+- What are the takeaways from this situation? Has this situation been resolved? Why or why not?
