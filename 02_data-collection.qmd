@@ -384,7 +384,7 @@ Due July 13th, Sunday, at 11:59 pm EDT on Canvas
 
 ### Write (600 to 1200 words)
 
-Write (600 to 1200 words): Choose a community you belong to (e.g., your hometown, childhood community, or Stonehill College) and identify how it uses public federal datasets (e.g., from the U.S. Census Bureau, Department of Transportation, etc.) to inform a policy decision.
+Choose a community you belong to (e.g., your hometown, childhood community, or Stonehill College) and identify how it uses public federal datasets (e.g., from the U.S. Census Bureau, Department of Transportation, etc.) to inform a policy decision.
 
 Describe the specific use case you’ve identified and analyze how limiting or expanding access to that data (or multiple data sources) could impact your community.
 
