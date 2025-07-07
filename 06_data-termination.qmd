@@ -8,6 +8,7 @@ editor_options:
   chunk_output_type: console
 ---
 
+![A data lifecycle diagram highlighting the 'Data destruction and archival' phase in red, with all other phases faded out. This stage refers to disposing or archiving data that is no longer needed.](www/images/data-lifecycle-termination.png){#fig-data-termination fig-align="center" width=60%}
 
 ```{r}
 #| echo: false

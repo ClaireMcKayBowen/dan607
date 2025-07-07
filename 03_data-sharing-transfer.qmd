@@ -16,6 +16,8 @@ exercise_number <- 1
 
 ```
 
+![A data lifecycle diagram emphasizing the 'Data sharing and transfer' stage in dark yellow, with the remaining stages shown in lighter colors. This stage involves distributing data between entities, individuals, or systems.](www/images/data-lifecycle-sharing.png){#fig-americans-consent fig-align="center" width=60%}
+
 ## This part of the course is still under construction! Proceed with caution!
 
 ![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align="center" width=80%}

@@ -13,12 +13,6 @@ editor_options:
 #| echo: false
 #| message: false
 
-library(tidyverse)
-library(palmerpenguins)
-library(kableExtra)
-library(gt)
-library(urbnthemes)
-
 exercise_number <- 1
 
 ```

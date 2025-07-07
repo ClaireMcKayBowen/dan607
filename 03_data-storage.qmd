@@ -8,6 +8,7 @@ editor_options:
   chunk_output_type: console
 ---
 
+![A data lifecycle diagram emphasizing the 'Data storage' stage in gray, with the remaining stages shown in lighter colors. This stage involves housing the collected data in physical or degital repositories.](www/images/data-lifecycle-storage.png){#fig-data-storage fig-align="center" width=60%}
 
 ```{r}
 #| echo: false

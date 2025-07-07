@@ -16,6 +16,8 @@ exercise_number <- 1
 
 ```
 
+![A colorful circular diagram of the data lifecycle, showing six stages: data collection and acquisition, data storage, data sharing and transfer, data analysis, data dissemination, and data destruction and archival.](www/images/data-lifecycle.png){#fig-data-lifecycle fig-align="center" width=100%}
+
 This week we learn what is data security, privacy, and ethics to us and society within the data life cycle.
 
 ## How well do you know about basic corporate and governmental internet practices and policies
@@ -36,7 +38,7 @@ Complete this [17 true-or-false question quiz](https://forms.gle/GMfexETbiQejU9E
 You will have 6 minutes to complete it (it should take you roughly 3 to 4 minutes).
 :::
 
-![The cover of the Annenberg School for Communication at the University of Pennsylvania report, "American's Can't Consent to Companies' Use of Their Data."](www/images/turow2023americans.png){#fig-americans-consent fig-align="center" width=60%}
+![The cover of the Annenberg School for Communication at the University of Pennsylvania report, "American's Can't Consent to Companies' Use of Their Data."](www/images/01_turow2023americans.png){#fig-americans-consent fig-align="center" width=60%}
 
 ::: {.callout-important}
 ## ANSWERS BEYOND THIS POINT!
@@ -105,7 +107,7 @@ See the answers to the previous questions. Cookies, IP address tracking, email t
 A privacy policy does not mean a site won’t share a person’s information with other sites without the person’s permission.
 
 Chrome's New Privacy Policy
-![An image of a public bathroom with glass walls.](www/images/clear-bathroom.jpg){#fig-bathroom fig-align="center"}
+![An image of a public bathroom with glass walls.](www/images/01_clear-bathroom.jpg){#fig-bathroom fig-align="center"}
 
 :::
 
@@ -116,7 +118,7 @@ Chrome's New Privacy Policy
 
 Check all the apps you use to adjust your privacy settings!
 
-![A screenshot of updating one's ad preferences for their Facebook account.](www/images/facebook-settings.jpg){#fig-facebook fig-align="center"}
+![A screenshot of updating one's ad preferences for their Facebook account.](www/images/01_facebook-settings.jpg){#fig-facebook fig-align="center"}
 :::
 
 ::: {.callout-caution collapse="true"}
@@ -128,7 +130,7 @@ There was a recent Federal Register Notice (FRN)[^frn] on "[Data Breach Reportin
 
 [^frn]: FRN is for proposed rule-makings and updates, proposed settlements, public meetings and workshops, and other important agency activities.
 
-![A screenshot of the "Data Breach Reporting Requirements" Federal Register Notice.](www/images/data-breach.jpg){#fig-breach fig-align="center"}
+![A screenshot of the "Data Breach Reporting Requirements" Federal Register Notice.](www/images/01_data-breach.jpg){#fig-breach fig-align="center"}
 :::
 
 ::: {.callout-caution collapse="true"}
@@ -155,7 +157,7 @@ Think about your local area and whether grocery stores change the prices of thei
 
 Check out this [Associate Press](https://apnews.com/article/ring-amazon-camera-police-request-56a128dcd77a4cb0b27d71be9384fe1a) article about the new policy!
 
-![Screenshot from the Associate Press article.](www/images/ring.png){#fig-ring fig-align="center"}
+![Screenshot from the Associate Press article.](www/images/01_ring.png){#fig-ring fig-align="center"}
 :::
 
 ::: {.callout-caution collapse="true"}
@@ -275,13 +277,13 @@ What biases might this perpetuate within society?
 
 [Scarlett Johansson says she is 'shocked, angered' over new ChatGPT voice](https://www.npr.org/2024/05/20/1252495087/openai-pulls-ai-voice-that-was-compared-to-scarlett-johansson-in-the-movie-her) - NPR Article
 
-![Screenshot of the NPR article.](www/images/johansson-ai-voice.png){#fig-ai-voice fig-align="center"}
+![Screenshot of the NPR article.](www/images/01_johansson-ai-voice.png){#fig-ai-voice fig-align="center"}
 
 ### Defining key stakeholders in the data ecosystem
 
 For this course, this is how we define the various stakeholders in the data ecosystem.
 
-![Key stakeholders in the data ecosystem](www/images/stakeholders.png){#fig-stakeholders fig-align="center"}
+![Key stakeholders in the data ecosystem](www/images/01_stakeholders.png){#fig-stakeholders fig-align="center"}
 
 ### Security, Privacy, and Confidentiality
 
@@ -353,7 +355,7 @@ exercise_number <- exercise_number + 1
 
 :::
 
-## Data life cycle
+## Data lifecycle
 
 We've just started exploring the world of security, privacy, ethics, and equity. Throughout this course, we'll integrate these definitions, concepts, and ideas into our discussions, applying them to the data life cycle, which we define as:
 

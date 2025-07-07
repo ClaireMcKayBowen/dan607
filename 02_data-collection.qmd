@@ -8,6 +8,7 @@ editor_options:
   chunk_output_type: console
 ---
 
+![A data lifecycle diagram highlighting the 'Data collection and acquisition' phase in blue, with all other phases faded out. This stage refers to designing and obtaining data from various sources.](www/images/data-lifecycle-collection.png){#fig-data-collection fig-align="center" width=100%}
 
 ```{r}
 #| echo: false
@@ -17,6 +18,101 @@ exercise_number <- 1
 ```
 
 We start with data collection and learn about the different types of data, the importance of how we collect that data, and the issues for society caused by the absence of or poorly designed data collection.
+
+But first...
+
+## Quick recap on week 1
+
+We should consider the interactions within this ecosystem and the data life cycle in the context of security, privacy, ethics, and equity.
+
+### Definitions
+
+![Key stakeholders in the data ecosystem](www/images/01_stakeholders.png){#fig-stakeholders fig-align="center"}
+
+::: callout-tip
+### Data Security
+
+**Data Security** is the "...science of methods of protecting computer data and communication systems that apply various types of controls such as cryptography, access control, information flow paths and inference control, including backup and recover" [@denning1982cryptography].
+:::
+
+::: callout-tip
+### Data Privacy
+
+**Data Privacy** is the ability "to determine what information about ourselves we will share with others" [@fellegi1972question]. Data privacy is a broad topic, which includes data security, encryption, access to data, etc. We will not be covering privacy breaches from unauthorized access to a database (e.g., hackers).
+:::
+
+::: callout-tip
+## Confidentiality
+
+**Confidentiality** is "the agreement, explicit or implicit, between data subject and data collector regarding the extent to which access by others to personal information is allowed" [@fienberg2018statistical].
+:::
+
+1.  **Hackers:** adversaries who steal confidential information through unauthorized access.
+2.  **Snoopers:** adversaries who reconstruct confidential information from data releases.
+3.  **Hoarders:** stewards who collect data but don't release the data even if respondents want the information releasesd.
+
+::: callout-tip
+## Ethics
+
+**Data ethics** is the "...systemizing, defending, and recommending concepts of right and wrong conduct in relation to data, in particular personal data" [@kitchin2014data].
+:::
+
+::: callout-tip
+## Equity
+
+**Data Equity** is data representation, access, process, outcomes, and more.
+:::
+
+
+![A colorful circular diagram of the data lifecycle, showing six stages: data collection and acquisition, data storage, data sharing and transfer, data analysis, data dissemination, and data destruction and archival.](www/images/data-lifecycle.png){#fig-data-lifecycle fig-align="center" width=80%}
+
+We've just started exploring the world of security, privacy, ethics, and equity. Throughout this course, we'll integrate these definitions, concepts, and ideas into our discussions, applying them to the data life cycle, which we define as:
+
+- data collection or acquisition (week 2)
+
+- data storage (week 3)
+
+- data sharing and transfer (week 3)
+
+- data analysis (week 4)
+
+- data dissemination (week 5)
+
+- data destruction or termination (week 6)
+
+### Week 2 Assignment
+
+### Read
+
+- Chapter 3: How Do Data Privacy Methods Expand Access to Data?
+- [Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data](https://www.urban.org/research/publication/do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual) -- Parts 1, 2, and 3.
+
+### Write (600 to 1200 words)
+
+Find and summarize a real-world example of data being used unethically and/or had violated people's privacy. The example must be recent (i.e., since 2022). Try to keep the following in mind:
+
+- What is the example? Introduce the situation and explain why it is important, providing any relevant background for the reader.
+- How did the example demonstrate a violation of privacy, security, and/or ethics? Does it apply to everyone or only a subgroup of people? Why is that?
+- What are the takeaways from this situation? Has this situation been resolved? Why or why not?
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+1. What was your example of unethical or harmful data use, and who was most affected?
+
+2. How might applying principles from the readings thus far (e.g., Do No Harm or privacy-enhancing methods) have changed the outcome?
+
+3. What lessons should data practitioners or analysts take away from this case to prevent similar issues in the future?
+ 
+:::
+
+![This is Fine meme that says, "When your dataset includes sensitive personal info...and you didn’t ask if people were okay with that..."](www/images/02_this-is-fine.jpg){#fig-this-is-fine fig-align="center" width=80%}
 
 ## Data types
 There are generally three principal types of qualitative and quantitative data:
@@ -66,7 +162,7 @@ This quote from a colleague highlights the importance of how data are collected.
 
 The required reading assignment, Do No Harm Guide (DNHG) by @schwabish2023no, covers many data collection challenges and will facilitate our discussion on the potential security, privacy, ethical, and equity issues in data collection.
 
-![The cover of the Urban Institute report, "Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data ."](www/images/dnhg-sogi.png){#fig-dnhg-sogi fig-align="center" width=60%}
+![The cover of the Urban Institute report, "Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data ."](www/images/02_dnhg-sogi.png){#fig-dnhg-sogi fig-align="center" width=60%}
 
 ### Defining groups is important
 
@@ -87,6 +183,8 @@ There is a glossary at the start of the DNHG instead of at the end.
 - What is the impact of not having a standard definition for each stakeholder in the data ecosystem?
  
 :::
+
+![Office Space Boss meme that says, "Yeah...if you could just define your variables before collecting the data, that’d be great."](www/images/02_boss-office-space.jpg){#fig-boss fig-align="center" width=80%}
 
 ### Trans-parency in the legal community
 
@@ -138,9 +236,9 @@ As part of the decennial census, people must answer several questions, such as w
 The images below show the race question for the 1990 and 2020 Census questionnaire. Would your definition match what is offered in these questionnaires?
 :::
 
-![1990 Census Race Question](www/images/1990-census-race-question.png){#fig-1990-census-race fig-align="center"}
+![1980 Census Race Question](www/images/02_1980-census-race-question.jpg){#fig-1980-census-race fig-align="center" width=100%}
 
-![2020 Census Race Question](www/images/rsblog-race-hispanic-origin-figure-2.jpg){#fig-2020-census-race fig-align="center" width=80%}
+![2020 Census Race Question](www/images/02_2020-census-race-question.jpg){#fig-2020-census-race fig-align="center" width=75%}
 
 The nuances of different races is important in some contexts and not in others. For example, the state of Wyoming probably only needs to know the number of Asian Americans (i.e., coarsen all subgroups into the larger group), whereas New York City needs the count of various subgroups, because each subgroup has different poverty rates [@sonoda2023].
 
@@ -169,7 +267,7 @@ Do you agree or disagree that we should answer the following questions with data
 
 What if you were then told that there are no such datasets created or available to answer these questions?
 
-![The image from Mimi Ọnụọha's The Library of Missing Datasets 3.0](www/images/mo_the-library-of-missing-datasetss-v-3.0_01_rt.jpg){#fig-1990-census-race fig-align="center" width=50%}
+![The image from Mimi Ọnụọha's The Library of Missing Datasets 3.0](www/images/02_mo_the-library-of-missing-datasetss-v-3.0_01_rt.jpg){#fig-1990-census-race fig-align="center" width=50%}
 
 These questions are part of a mixed-media installation by [Mimi Ọnụọha](https://mimionuoha.com/) called, The Library of Missing Datasets, which is on [version 3.0](https://mimionuoha.com/the-library-of-missing-datasets-v3). This piece is a physical repository of those things that have been excluded in a society where so much is collected.
 
@@ -221,6 +319,7 @@ Mimi Ọnụọha says there are many reasons why some potentially important dat
 
 exercise_number <- exercise_number + 1
 ```
+
 If you could not find a dataset, why do you think that dataset doesn't exist based on the four reasons Mimi Ọnụọha highlighted?
  
 :::
@@ -251,7 +350,7 @@ Due to the poorly designed surveys, anyone using these data will find that most 
 
 Hence, at the end of the presentation, Dr. Lee's slide stated, "No data, no problem, no action".
 
-![Roll Safe Think About It meme that says, "Can't have any issues, if there is no data."](www/images/no-data.jpg){#fig-no-data fig-align="center" width=80%}
+![Roll Safe Think About It meme that says, "Can't have any issues, if there is no data."](www/images/02_no-data.jpg){#fig-no-data fig-align="center" width=80%}
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -267,3 +366,26 @@ After learning about this use case, answer the following:
 - Can you think of other situations where a lack of data would lead to no action because no one knows there is a problem?
 
 :::
+
+## Week 3 Assignment
+
+::: {.callout-important}
+## DEADLINE
+Due July 13th, Sunday, at 11:59 pm EDT on Canvas
+::: 
+
+### Read
+
+- Chapter 4: How Do Data Privacy Methods Avoid Invalidating Results?
+
+### Optional additional read
+
+- [Do No Harm Guide: Applying Equity Awareness in Data Privacy Methods](https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-privacy-methods).
+
+### Write (600 to 1200 words)
+
+Write (600 to 1200 words): Choose a community you belong to (e.g., your hometown, childhood community, or Stonehill College) and identify how it uses public federal datasets (e.g., from the U.S. Census Bureau, Department of Transportation, etc.) to inform a policy decision.
+
+Describe the specific use case you’ve identified and analyze how limiting or expanding access to that data (or multiple data sources) could impact your community.
+
+Example (that you can’t use): [School district lines](https://apps.urban.org/features/dividing-lines-school-segregation/).
