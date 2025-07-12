@@ -307,7 +307,7 @@ For more technical details on synthetic data, check out @hu2024advancing.
 
 ## Taking what we've learned so far...
 
-![Infusing noise](www/images/03_trump-eo-data-silos.png){#fig-trump-eo-data-silos fig-align="center"}
+![Trump's Executive Order on "Stoping Waste, Fraud, and Abuse by Eliminating Information Silos".](www/images/03_trump-eo-data-silos.png){#fig-trump-eo-data-silos fig-align="center"}
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
