@@ -82,12 +82,12 @@ We've just started exploring the world of security, privacy, ethics, and equity.
 
 ### Week 2 Assignment
 
-### Read
+#### Read
 
 - Chapter 3: How Do Data Privacy Methods Expand Access to Data?
 - [Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data](https://www.urban.org/research/publication/do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual) -- Parts 1, 2, and 3.
 
-### Write (600 to 1200 words)
+#### Write (600 to 1200 words)
 
 Find and summarize a real-world example of data being used unethically and/or had violated people's privacy. The example must be recent (i.e., since 2022). Try to keep the following in mind:
 

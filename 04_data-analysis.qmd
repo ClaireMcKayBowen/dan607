@@ -20,3 +20,38 @@ exercise_number <- 1
 ## This part of the course is still under construction! Proceed with caution!
 
 ![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align="center" width=80%}
+
+## Privacy-Utility Tradeoff
+
+One of the most important challenges in statistical disclosure protection is managing the fundamental tradeoff between privacy loss and statistical utility. As we will see throughout this class, this tradeoff plays a central role in determining the technical approaches to data protection and in shaping ethical and equitable decisionmaking.
+
+![Infusing noise](www/images/04_privacy-utility-tradeoff.png){#fig-privacy-utility-trade-off fig-align="center"}
+
+### Defining the Tradeoff
+
+The privacy-utility tradeoff describes the relationship between the amount of privacy protection applied to a dataset and the utility (or usefulness) of that data for analysis.
+
+- Privacy loss is often referred to as the risk that confidential or sensitive information about individuals, records, or entities being directly observed or inferred from the release of public data and statistics.
+
+- Utility can be defined as the quality, qunatity, ease of access, permitted use and dissemination, and more (e.g., research, policy analysis, public reporting).
+
+**Example from @bowen2023no:** Suppose someone decided to release unaltered confidential data, say an individual’s official tax records. This scenario would result in the maximum privacy loss to the individual but simultaneously the maximum value to society that could be obtained from the data. Details about the person’s income, investments, donations, and Social Security number would be available to the public, but researchers could use that information to better understand issues such as income inequality and financial investment decisions. Conversely, if no data were released, the resulting analysis (or lack thereof) would simultaneously constitute the minimal privacy loss and the minimal value to society that could be derived from this dataset.
+
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+Suppose you've been asked to prepare a public-use version of a comprehensive K–12 education dataset. The original dataset includes sensitive information about all students in a state, such as names, ages, genders, home addresses, and standardized test scores.
+
+- What SDC methods would you apply to protect student privacy?
+- What checks or evaluations would you perform to assess whether the dataset has been sufficiently protected against re-identification or misuse? Hint: Think back to the recent reading assignment - Chapter 4.
+- How would you balance privacy protection with the need to preserve the usefulness of the data for researchers and policymakers? Hint: Think back to the recent reading assignment - Chapter 4.
+- What are the potential ethical and equity issues in how you choose and apply SDC methods (e.g., different impacts across student groups or school districts)
+
+:::
