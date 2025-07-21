@@ -71,7 +71,30 @@ The topic can be anything you learned in this course. It can be on something you
 
 ### Randomize target audience
 
-TBD
+```{r}
+#| warning: false
+
+set.seed(42)
+
+library(tidyverse)
+library(dplyr)
+
+students <- c("Androlewicz", "Boyar", "Choate", "Clayman", "Cousins", "Daversa", 
+              "Dowdy", "Duhil de Benaze", "Espinal-Guzman", "Gallishaw", "Garratt", "Kim",
+              "Morris", "Mueller", "O’Brien", "OKeefe", "Pacheoco",
+              "Pushard", "Scott", "Thadeio", "Thorbahn", "Washington")
+
+n <- length(students)
+
+audience <- c("family-friends", "classmates-coworkers",
+              "funders-media", "local-government-policymaker")
+
+audience |>
+  sample(n, replace = TRUE) |>
+  bind_cols(students) |>
+  print(n = n)
+
+```
 
 ## How to make better presentations
 

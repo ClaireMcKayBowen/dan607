@@ -17,17 +17,140 @@ exercise_number <- 1
 
 ```
 
-## This part of the course is still under construction! Proceed with caution!
+![A data lifecycle diagram emphasizing the 'Data analysis' stage in pink, with the remaining stages shown in lighter colors. This stage involves exploring, processing, and interpreting data to insights and trends for decision-making.](www/images/data-lifecycle-analysis.png){#fig-data-analysise fig-align="center" width=100%}
 
-![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align="center" width=80%}
+For this week, we will learn about how to evaluate and analyze data while considering security, privacy, ethics, and equity.
+
+## Quick recap on week 3 (with some week 2)
+
+We've discussed several challenges surrounding security, privacy, ethics, and equity in data collection, storage, and sharing.
+
+### Data collection
+
+For data collection, we learned the importance of:
+
+- Deciding whether to collect the data or not.
+- Defining groups and other variables that impacts our communities.
+- Recognizing that a lack of data results in a lack of action.
+
+### Data storage 
+
+We covered the following topics:
+
+  - The overall process and considerations for cleaning data, especially how to handle missing data.
+  - Best practices for virtual and physical storage of data, including the FAIR principles for creating proper metadata.
+  
+Even more definitions...
+
+![Key stakeholders in the data ecosystem](www/images/01_stakeholders.png){#fig-stakeholders fig-align="center"}
+
+::: {.callout-tip}
+## Original dataset:
+
+**Original dataset** is the uncleaned, unprotected version of the data.
+
+For example, raw 2020 Decennial Census microdata, which are never publicly released.
+::: 
+
+::: {.callout-tip}
+## Confidential or gold standard dataset
+
+**Confidential or gold standard dataset** is the cleaned version (meaning edited for inaccuracies or inconsistencies) of the data; often referred to as the gold standard or actual data for analysis. 
+
+For example, the Census Edited File that is the final confidential data for the 2020 Census. This dataset is never publicly released but may be made available to others who are sworn to protect confidentiality (i.e., Special Sworn Status) and who are provided access in a secure environment, such as a Federal Statistical Research Data Center.
+::: 
+
+::: {.callout-tip}
+## Public dataset or statistics
+
+**Public dataset** is the publicly released version of the confidential data.
+
+For example, the US Census Bureau's public tables and datasets or the Bureau of Labor Statistics reporting the unemployment rate statistics.
+::: 
+
+### Data sharing and transfer
+
+We also learned about the two general ways people access data:
+
+1. Secure Data Access
+    - Pros: Very secure, provides access to confidential data.
+    - Cons: Inaccessible to most people.
+2. Public Data Files and Statistics
+    - Pros: Accessible to anyone.
+    - Cons: Altered for privacy, which may reduce accuracy for specific applications and may not always be properly protected.
+    
+### Week 4 Assignment
+
+#### Read
+
+- Chapter 5: What Makes Datasets Difficult for Data Privacy?
+
+#### Watch (Optional)
+
+- [Scientific Studies: Last Week Tonight with John Oliver (HBO)](https://www.youtube.com/watch?v=0Rnq1NpHdmw)
+
+#### Write (600 to 1200 words)
+
+Find a news analysis story[^story] published within the last year (2024 – 2025) and answer the following questions:
+
+- What does the article claim?
+- Does the content of the article apply to you, your family, and/or your community?
+- What makes you believe the conclusions?
+- Who wrote the article?
+- Where did the article get their facts?
+- What "red flags" (if any) do you notice?
+- Would the story change if there was more or less access to data? What would be that story?
+
+[^story]: "An article written to inform readers about recent events. The author reports and attempts to deepen understanding of recent events—for example, by providing background information and other kinds of additional context." – [CSUSM Library](https://libguides.csusm.edu/news/different_news_types)
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+From the required reading, we learned that we must carefully take into account how the data are collected, analyzed, disseminated. If we don't, we risk missing a vital piece of the data story, especially when data sets are aggregated, and cause more unintended harm to those we are trying to protect.
+
+With this in mind...
+
+1. What did you learn about your own biases or assumptions while analyzing the article for your homework assignment?
+Did anything surprise you about what you believed at first versus what you concluded after digging into the facts and authorship?
+
+2. If you were to rewrite the article, what would you change or expand upon and why?
+Would you choose a different source? Would you evaluate the credibility or red flags differently?
+
+3. How might the conclusions or message of the article change if you read it from the perspective of someone with different lived experience—such as a policymaker, someone from another country, or someone directly impacted by the issue?
+What ethical or privacy implications become more or less salient when shifting that lens?
+ 
+:::
+
+## PETs Process Overview
+
+Note that this overview is opinionated and simplified in order to provide a reasonable summary.
+
+![All of the privacy stakeholders discussed previously have a role in aspects of the synthesis process.](www/images/04_synthesis-process-actors.png){#fig-process-actors}
+
+![The synthesis process is very iterative, particularly in the privacy step](www/images/04_synthesis-process-iterative.png){#fig-process-iterative}
+
+### Iteration is key
+
+As mentioned in the textbook, data curators and privacy experts must fine-tune their PETs methods by repeatedly evaluating if the altered data are at acceptable levels of disclosure risk and quality. Often, the process of adjusting the PETs methods and earlier steps in the process becomes analogous to “holding sand.” Shifting or changing one part of the workflow, such as trying to improve the data quality for one variable, can result in the privacy “spilling out” in
+unexpected ways. Or a model you thought would create high quality data could result in the opposite.
+
+![First panel: "f(x)" and the "It's Fine meme." Second panel: "f^(-1)" and the "It's Fine Meme", but a flame is sitting in the chair saying "It's fine." surrounded by dogs.](www/images/04_its-fine-inverse.jpg){#fig-process-actors width=75%}
+
+## What is the privacy-utility tradeoff?
+
+![Weighing Seth Meyers GIF by Late Night with Seth Meyers](www/images/04_seth-meyers-balance.gif){#fig-seth-meyers-balance fig-align="center"}
 
 ## Privacy-Utility Tradeoff
 
 One of the most important challenges in statistical disclosure protection is managing the fundamental tradeoff between privacy loss and statistical utility. As we will see throughout this class, this tradeoff plays a central role in determining the technical approaches to data protection and in shaping ethical and equitable decisionmaking.
 
 ![Infusing noise](www/images/04_privacy-utility-tradeoff.png){#fig-privacy-utility-trade-off fig-align="center"}
-
-### Defining the Tradeoff
 
 The privacy-utility tradeoff describes the relationship between the amount of privacy protection applied to a dataset and the utility (or usefulness) of that data for analysis.
 
@@ -37,6 +160,211 @@ The privacy-utility tradeoff describes the relationship between the amount of pr
 
 **Example from @bowen2023no:** Suppose someone decided to release unaltered confidential data, say an individual’s official tax records. This scenario would result in the maximum privacy loss to the individual but simultaneously the maximum value to society that could be obtained from the data. Details about the person’s income, investments, donations, and Social Security number would be available to the public, but researchers could use that information to better understand issues such as income inequality and financial investment decisions. Conversely, if no data were released, the resulting analysis (or lack thereof) would simultaneously constitute the minimal privacy loss and the minimal value to society that could be derived from this dataset.
 
+## Assessing utility
+
+Generally there are three ways to measure utility of the data:
+
+-   General (or global) utility metrics;
+-   Specific utility metrics; and
+-   Fit-for-purpose
+
+### General utility metrics
+
+::: callout-tip
+### General utility
+
+**General utility**, sometimes called global utility, measures the univariate and multivariate distributional similarity between the confidential data and the public data (e.g., sample means, sample variances, and the variance-covariance matrix).
+:::
+
+General utility metrics are useful because they provide a sense of how "fit for use" public data is for analysis without making assumptions about the uses of the public data.
+
+#### Univariate general utility
+
+Some univariate general utility measures could include comparisons of:
+
+-   **Categorical variables:** frequencies, relative frequencies.
+
+-   **Numeric variables** means, standard deviations, skewness, kurtosis (i.e., first four moments), percentiles, and number of zero/non-zero values.
+
+#### Bivariate general utility
+
+::: callout-tip
+##### Correlation fit
+
+**Correlation fit** measures how well the synthesizer recreates the linear relationships between variables in the confidential dataset.
+:::
+
+To calculate correlation fit:
+
+-   Create correlation matrices for the public data and confidential data. Then measure differences across public and confidential data. 
+
+![Correlation Difference](www/images/04_puf-correlation-fit.png){#fig-corrdiff width=90%}
+
+@fig-corrdiff shows the creation of a difference matrix. Let's summarize the difference matrix using mean absolute error.
+
+#### Multivariate general utility (discriminant-based metrics)
+
+::: callout-tip
+##### Discriminant based methods
+
+**Discriminant based methods** measure how well a predictive model can distinguish (i.e., discriminate) between records from the confidential and public data (most commonly applied to synthetic data).
+:::
+
+-   The confidential data and public data should theoretically be drawn from the same super population.
+
+-   The basic idea is to combine (stack) the confidential data and public data and see how well a predictive model distinguish (i.e., discriminate) between public observations and confidential observations.
+
+-   An inability to distinguish between the records suggests a good synthesis.
+
+-   It is possible to use logistic regression for the predictive modeling, but decision trees, random forests, and boosted trees are more common. (We recommend, to the degree possible, using more using more sophisticated models as well as machine learning best-practices like feature engineering and hyperparameter tuning because these practices will more effectively discriminate between classes.)
+
+-   @fig-discriminant shows three discriminant based metrics calculated on a good synthesis and a poor synthesis.
+
+::: {#fig-discriminant layout-nrow="2"}
+![Good Synthesis](www/images/04_same-population-disc-metrics.png){width=75%}
+
+![Poor Synthesis](www/images/04_different-population-disc-metrics.png){width=75%}
+
+A comparison of discriminant metrics on a good synthesis and a poor synthesis
+:::
+
+There are several different discriminant-based metrics, but it is beyond this course to cover them in depth. @hu2024advancing covers these metrics in further detail.
+
+### Specific utility metrics
+
+::: callout-tip
+### Specific utility
+
+**Specific utility**, sometimes called outcome specific utility, measures the similarity of results for a specific analysis (or analyses) of the confidential and public data (e.g., comparing the coefficients in regression models).
+:::
+
+Specific utility metrics measure how suitable a public dataset is for specific analyses.
+
+-   These specific utility metrics will change from application to application, depending on common uses of the data.
+-   A helpful rule of thumb: general utility metrics are useful for the data synthesizers to be convinced that they're doing a good job. Specific utility metrics are useful to convince downstream data users that the data synthesizers are doing a good job.
+
+#### Recreating inferences
+
+-   It can be useful to compare statistical analyses on the confidential data and public data:
+    -   Do the estimates have the same sign?
+    -   Do the estimates have the same statistical inference at a common significance level?
+    -   Do the confidence intervals for the estimates overlap?
+-   Each of these questions is useful. @barrientos2024feasibility combine all three questions into sign, significance, and overlap (SSO) match. SSO is the proportion of times that intervals overlap and have the same sign and significance.
+
+#### Regression confidence interval overlap
+
+::: callout-tip
+##### Regression confidence interval overlap
+
+**Regression confidence interval overlap** quantifies how well confidence intervals from estimates on the public data recreate confidence intervals from the confidential data.
+
+1 indicates perfect overlap (it is typically impossible to achieve a 1 on real-world data). 0 indicates intervals that are adjacent but not overlapping. Negative values indicate gaps between the intervals.
+
+It is common to compare intervals from linear regression models and logistic regression models.
+:::
+
+![Confidence interval overlap as a measure of specific utility](www/images/04_confidence-interval-overlap.png){width=75%}
+
+### Fit-for-purpose
+
+The final group of utility metrics are called fit-for-purpose and are not discussed as often in the literature. @drechsler2022challenges states how fit-for-purpose measures could be considered something in between the previous two utility metric types. In other words, fit-for-purpose metrics are not global measures, because they focus on certain features of the data, but may not be specific to an analysis that data users and stakeholders are interested in like analysis-specific utility metrics.
+
+@drechsler2022challenges highlights how global utility metrics can be too broad and miss aspects of the synthetic dataset that do not align with the confidential dataset. On the other hand, analysis-specific metrics may perform well for the selected analyses on the synthetic data but not for others. This is why it is critical to determine the proper analysis, but it is difficult to anticipate all downstream data uses. For example, decennial census data products in the United States are utilized in thousands of different ways, making it impossible to predict all potential use cases. Therefore, fit-for-purpose metrics help privacy experts and researchers assess if their synthesis makes sense before implementing other utility metrics. Some examples include ensuring population totals or ages are positive.
+
+## Assessing disclosure risk
+
+<!-- ![Rory from the TV show, "Gilmore Girls," saying, "I'd say that was a fair assessment."](www/images/assessment-gilmore.gif){#fig-assessment-gilmore fig-align="center"} -->
+
+We now pivot to evaluating the disclosure risks of public data. Note that most thresholds for acceptable disclosure risk are often determined by law.
+
+There are generally three kinds of disclosure risk:
+
+-   Identity disclosure risk
+-   Attribute disclosure risk
+-   Inferential disclosure risk
+
+### Identity disclosure metrics
+
+::: callout-tip
+#### Identity disclosure
+
+**Identity disclosure** occurs if the data intruder associates a known individual with a public data record (e.g., a record linkage attack or when a data adversary combines one or more external data sources to identify individuals in the public data).
+:::
+
+@sweeney2013identifying used voter data to re-identify individuals in the Personal Genome Project.
+
+![Record linkage attack](www/images/04_identity-disclosure-risk.png){#fig-identity-disclosure-risk width=60%}
+
+::: callout-tip
+#### Identity disclosure metrics
+
+**Identity disclosure metrics** evaluate how often we correctly re-identify confidential records in the public data.
+
+**Note:** These metrics require major assumptions about attacker information.
+:::
+
+#### Basic matching approaches
+
+-   We start by making assumptions about the knowledge an attacker has (i.e., external publicly accessible data they have access to).
+
+-   For each confidential record, the data attacker identifies a set of public records which they believe contain the target record (i.e., potential matches) using the external variables as matching criteria.
+
+-   There are distance-based and probability-based algorithms that can perform this matching. This matching process could be based on exact matches between variables or some relaxations (i.e., matching continuous variables within a certain radius of the target record, or matching adjacent categorical variables).
+
+-   We then evaluate how accurate our re-identification process was using a variety of metrics.
+
+::: panel-tabset
+##### Expected Match Rate
+
+-   **Expected Match Rate**: On average, how likely is it to find a "correct" match among all potential matches? Essentially, the expected number of observations in the confidential data expected to be correctly matched by an intruder.
+
+    -   Higher expected match rate = higher identification disclosure risk.
+
+    -   The two other risk metrics below focus on the subset of confidential records for which the intruder identifies a single match.
+
+##### True Match Rate
+
+-   **True Match Rate**: The proportion of true unique matches among all confidential records. Higher true match rate = higher identification disclosure risk.
+
+##### False Match Rate
+
+-   **False Match Rate**: The proportion of false matches among the set of unique matches. Lower false match rate = higher identification disclosure risk.
+:::
+
+
+### Attribute disclosure metrics
+
+It is possible to learn confidential attributes without perfectly re-identifying observations in the data.
+
+::: callout-tip
+### Attribute disclosure
+
+**Attribute disclosure** occurs if the data intruder determines new characteristics (or attributes) of an individual based on the information available through public data or statistics (e.g., if a dataset shows that all people age 50 or older in a city are on Medicaid, then the data adversary knows that any person in that city above age 50 is on Medicaid). This information is learned without idenfying a specific individual in the data!
+:::
+
+::: callout-tip
+#### Predictive Accuracy
+
+**Predictive accuracy** measures how well an attacker can learn about attributes in the confidential data using the public data (and possibly external data).
+:::
+
+-   Similar to above, you start by matching public records to confidential records. Alternatively, you can build a predictive model using the public data to make predictions on the confidential data.
+
+-   **key variables**: Variables that an attacker already knows about a record and can use to match.
+
+-   **target variables**: Variables that an attacker wishes to know more or infer about using the public data.
+
+-   Pick a sensitive variable in the confidential data and use the public data to make predictions. Evaluate the accuracy of the predictions.
+
+### Inferential disclosure
+
+::: callout-tip
+### Inferential disclosure
+
+**Inferential disclosure** occurs if the data intruder predicts the value of some characteristic from an individual more accurately with the public data or statistic than would otherwise have been possible (e.g., if a public homeownership dataset reports a high correlation between the purchase price of a home and family income, a data adversary could infer another person's income based on purchase price listed on Redfin or Zillow).
+:::
+
+Inferential disclosure is a specialized type of attribute disclosure, so the metrics discussed above apply here as well. Inference disclosure risk is very hard to predict, so many federal agencies tend to disregard this type of risk.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -49,9 +377,100 @@ exercise_number <- exercise_number + 1
 
 Suppose you've been asked to prepare a public-use version of a comprehensive K–12 education dataset. The original dataset includes sensitive information about all students in a state, such as names, ages, genders, home addresses, and standardized test scores.
 
-- What SDC methods would you apply to protect student privacy?
-- What checks or evaluations would you perform to assess whether the dataset has been sufficiently protected against re-identification or misuse? Hint: Think back to the recent reading assignment - Chapter 4.
-- How would you balance privacy protection with the need to preserve the usefulness of the data for researchers and policymakers? Hint: Think back to the recent reading assignment - Chapter 4.
-- What are the potential ethical and equity issues in how you choose and apply SDC methods (e.g., different impacts across student groups or school districts)
+1. What PETs methods would you apply to protect student privacy?
+2. What checks or evaluations would you perform to assess whether the dataset has been sufficiently protected against re-identification or misuse? Hint: Think back to the recent reading assignment - Chapter 4.
+3. How would you balance privacy protection with the need to preserve the usefulness of the data for researchers and policymakers? Hint: Think back to the recent reading assignment - Chapter 4.
+4. What are the potential ethical and equity issues in how you choose and apply PETs methods (e.g., different impacts across student groups or school districts)
 
 :::
+
+## There are lies, damned lies, and statistics...
+
+![Valerie, from the movie, "Princess Bride," saying, "Liar!"](www/images/04_liar.gif){#fig-liar fig-align="center"}
+
+There are often two sides to every story, especially when it comes to how people collect, store, transfer, and analyze data. In this in-class activity, we will apply the ideas and concepts we've learned so far to answer a question in multiple ways that are technically correct, even if the different answers contradict one another.
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+You will be given 30 minutes to complete this in-class activity (with a check-in at 15 minutes to assess progress).
+
+Each of you has been assigned a random "topic" (see table below).
+
+For your assigned question, come up with at least two different statistics that are technically correct but seem to contradict each other (or at least are drastically different) based on data from the United States. For each statistic, answer the following:
+
+  - What information did you use to answer your question?
+  - Did the digital object that contained the information follow the FAIR principles?
+  - How did you access that information?
+    - Did the storage and transfer of that information take into account security and privacy?
+  - How did you use that information to answer your question?
+  - Do you have any ethical and/or equity concerns about this information?
+
+:::
+
+**Topic assignments:**
+
+<!-- GIVE TWO TOPICS -->
+
+Student Last Name | Topic
+-----|-----
+Androlewicz | What percent of marriages end in divorce?
+Boyar | What is the percentage of African American men incarcerated compared to those in college?
+Choate | What is the carbon footprint of raising a child?
+Clayman | What is the gender pay gap?
+Cousins | At what age are women less likely to get pregnant?
+Daversa | What is the average student loan debt?
+Dowdy | What is the rate of illegal immigration?
+Duhil de Benaze | What is the primary factor that causes homelessness?
+Espinal-Guzman | What is the rate of sexual assault?
+Gallishaw | At what age do mental health disorders develop in people?
+Garratt | What is the teenage pregnancy rate?
+Kim | At what year after being founded do most startup companies fail?
+Morris | What percentage of immigrants are taking jobs from Americans?
+Mueller | What is the average cost of raising a child?
+O'Brien | What percentage of crimes are committed by someone known to the victim?
+OKeefe | What percentage of welfare recipients are able-bodied adults who don't work?
+Pacheoco | What is the fraud rate of using food stamps?
+Pushard | Does the unemployment rate accurately reflect joblessness?
+Scott | What percentage of immigrants are undocumented?
+Thadeio | What is the percentage of abortions performed on teenagers?
+Thorbahn | What is the percentage of gun violence?
+Washington | What percentage of energy consumption comes from renewable sources?
+ <!-- | What is the percentage of voter fraud? -->
+
+## Week 5 Assignment
+
+::: {.callout-important}
+## DEADLINE
+Due July 27, at 11:59 PM EDT on Canvas
+::: 
+
+### Read
+
+- Chapter 6: What Data Privacy Laws Exist?
+
+### Optional additional read
+
+- [Do No Harm Guide: Applying Equity Awareness in Data Visualization](https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-visualization).
+
+### Optional watch
+
+- [Data Brokers: Last Week Tonight with John Oliver (HBO)](https://www.youtube.com/watch?v=wqn3gR1WTcA)
+
+### Collect data
+For one day, record how often private companies collect *your data* from the moment you wake up to the moment you go to bed. For example, opening a social media app or browsing the web.
+
+### Write (600 to 1200 words)
+
+Based on your data log, answer the following questions:
+
+- Is any of the information collected by private companies protected by a state or federal law?
+- What could a private company do with that information for the public good?
+- What could a private company do with that information that may harm or violate your personal privacy?
+- What are the data equity and ethical impacts of collecting this information?

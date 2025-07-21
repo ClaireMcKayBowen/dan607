@@ -468,7 +468,7 @@ exercise_number <- exercise_number + 1
 
 You will be given 20 minutes to complete this in-class activity.
 
-Each of you have been assigned a topic based on your last homework assignment (Week 2) or randomize (see table below).
+Each of you have been assigned a topic that has been randomized (see table below).
 
 1. **Find a digital object to answer questions:** Based on your assigned topic, find an article, dataset, image, or any digital object that matches or is highly related to that topic from a digital repository that has enough metadata to answer the *at least half* of the following questions:
 
