@@ -82,7 +82,7 @@ There are generally three kinds of disclosure risk:
 
 ### Hidden stories in news reports
 
-![Piled HIgher and Deeper comic, "The Science News Cycle."](www/images/04_phd-comics-news.gif){#fig-science-news-cycle fig-align="center"}
+![Piled HIgher and Deeper comic, "The Science News Cycle."](www/images/05_phd-comics-news.gif){#fig-science-news-cycle fig-align="center"}
 
 There are often two sides to every story, especially when it comes to how people collect, store, transfer, and analyze data. In this in-class activity, we will apply the ideas and concepts we've learned so far to answer a question in multiple ways that are technically correct, even if the different answers contradict one another.
 
