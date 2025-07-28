@@ -484,4 +484,4 @@ After reviewing the two proposed workflows and the accompanying example, answer 
 - Are there any additional improvements or adjustments you would suggest for these new workflows?
 :::
 
-![Gene Wilder saying, "It. Could. Work."](www/images/could-work.gif){#fig-could-work}
+![Gene Wilder saying, "It. Could. Work."](www/images/05_could-work.gif){#fig-could-work}
