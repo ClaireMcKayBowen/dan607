@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -278,7 +298,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#this-part-of-the-course-is-still-under-construction-proceed-with-caution" id="toc-this-part-of-the-course-is-still-under-construction-proceed-with-caution" class="nav-link active" data-scroll-target="#this-part-of-the-course-is-still-under-construction-proceed-with-caution"><span class="header-section-number">8.1</span> This part of the course is still under construction! Proceed with caution!</a></li>
+  <li><a href="#quick-recap-on-week-4" id="toc-quick-recap-on-week-4" class="nav-link active" data-scroll-target="#quick-recap-on-week-4"><span class="header-section-number">8.1</span> Quick recap on week 4</a>
+  <ul class="collapse">
+  <li><a href="#privacy-utility-tradeoff" id="toc-privacy-utility-tradeoff" class="nav-link" data-scroll-target="#privacy-utility-tradeoff"><span class="header-section-number">8.1.1</span> Privacy-utility tradeoff</a></li>
+  <li><a href="#assessing-utility" id="toc-assessing-utility" class="nav-link" data-scroll-target="#assessing-utility"><span class="header-section-number">8.1.2</span> Assessing utility</a></li>
+  <li><a href="#assessing-disclosure-risk" id="toc-assessing-disclosure-risk" class="nav-link" data-scroll-target="#assessing-disclosure-risk"><span class="header-section-number">8.1.3</span> Assessing disclosure risk</a></li>
+  <li><a href="#hidden-stories-in-news-reports" id="toc-hidden-stories-in-news-reports" class="nav-link" data-scroll-target="#hidden-stories-in-news-reports"><span class="header-section-number">8.1.4</span> Hidden stories in news reports</a></li>
+  <li><a href="#week-5-assignment" id="toc-week-5-assignment" class="nav-link" data-scroll-target="#week-5-assignment"><span class="header-section-number">8.1.5</span> Week 5 Assignment</a></li>
+  </ul></li>
+  <li><a href="#data-privacy-laws-in-the-united-states-of-america" id="toc-data-privacy-laws-in-the-united-states-of-america" class="nav-link" data-scroll-target="#data-privacy-laws-in-the-united-states-of-america"><span class="header-section-number">8.2</span> Data privacy laws in the United States of America</a>
+  <ul class="collapse">
+  <li><a href="#federal-privacy-laws" id="toc-federal-privacy-laws" class="nav-link" data-scroll-target="#federal-privacy-laws"><span class="header-section-number">8.2.1</span> Federal privacy laws</a></li>
+  <li><a href="#state-privacy-laws" id="toc-state-privacy-laws" class="nav-link" data-scroll-target="#state-privacy-laws"><span class="header-section-number">8.2.2</span> State privacy laws</a></li>
+  <li><a href="#california-privacy-act-of-2018" id="toc-california-privacy-act-of-2018" class="nav-link" data-scroll-target="#california-privacy-act-of-2018"><span class="header-section-number">8.2.3</span> California Privacy Act of 2018</a></li>
+  </ul></li>
+  <li><a href="#identifying-the-technical-and-policy-solutions" id="toc-identifying-the-technical-and-policy-solutions" class="nav-link" data-scroll-target="#identifying-the-technical-and-policy-solutions"><span class="header-section-number">8.3</span> Identifying the technical and policy solutions</a>
+  <ul class="collapse">
+  <li><a href="#current-statistical-data-privacy-workflow" id="toc-current-statistical-data-privacy-workflow" class="nav-link" data-scroll-target="#current-statistical-data-privacy-workflow"><span class="header-section-number">8.3.1</span> Current statistical data privacy workflow</a></li>
+  <li><a href="#aspirational-equitable-statistical-data-privacy-workflow" id="toc-aspirational-equitable-statistical-data-privacy-workflow" class="nav-link" data-scroll-target="#aspirational-equitable-statistical-data-privacy-workflow"><span class="header-section-number">8.3.2</span> Aspirational equitable statistical data privacy workflow</a></li>
+  <li><a href="#a-framework-for-managing-disclosure-risks-in-blended-data" id="toc-a-framework-for-managing-disclosure-risks-in-blended-data" class="nav-link" data-scroll-target="#a-framework-for-managing-disclosure-risks-in-blended-data"><span class="header-section-number">8.3.3</span> A Framework for Managing Disclosure Risks in Blended Data</a></li>
+  </ul></li>
+  <li><a href="#college-scorecard-example" id="toc-college-scorecard-example" class="nav-link" data-scroll-target="#college-scorecard-example"><span class="header-section-number">8.4</span> College Scorecard Example</a>
+  <ul class="collapse">
+  <li><a href="#determine-auspice-and-purpose" id="toc-determine-auspice-and-purpose" class="nav-link" data-scroll-target="#determine-auspice-and-purpose"><span class="header-section-number">8.4.1</span> Determine auspice and purpose</a></li>
+  <li><a href="#identify-ingredient-data-files" id="toc-identify-ingredient-data-files" class="nav-link" data-scroll-target="#identify-ingredient-data-files"><span class="header-section-number">8.4.2</span> Identify ingredient data files</a></li>
+  <li><a href="#obtain-ingredient-data-files" id="toc-obtain-ingredient-data-files" class="nav-link" data-scroll-target="#obtain-ingredient-data-files"><span class="header-section-number">8.4.3</span> Obtain ingredient data files</a></li>
+  <li><a href="#blend-ingredient-data-files" id="toc-blend-ingredient-data-files" class="nav-link" data-scroll-target="#blend-ingredient-data-files"><span class="header-section-number">8.4.4</span> Blend ingredient data files</a></li>
+  <li><a href="#select-disclosure-protection-approaches" id="toc-select-disclosure-protection-approaches" class="nav-link" data-scroll-target="#select-disclosure-protection-approaches"><span class="header-section-number">8.4.5</span> Select disclosure-protection approaches</a></li>
+  <li><a href="#develop-and-execute-a-maintenance-plan" id="toc-develop-and-execute-a-maintenance-plan" class="nav-link" data-scroll-target="#develop-and-execute-a-maintenance-plan"><span class="header-section-number">8.4.6</span> Develop and execute a maintenance plan</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -304,20 +352,674 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="this-part-of-the-course-is-still-under-construction-proceed-with-caution" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="this-part-of-the-course-is-still-under-construction-proceed-with-caution"><span class="header-section-number">8.1</span> This part of the course is still under construction! Proceed with caution!</h2>
-<div id="fig-under-construction" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<div id="fig-data-analysise" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-under-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="www/images/under-construction.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+<div aria-describedby="fig-data-analysise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/data-lifecycle-dissemination.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-under-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.1: Webpage under construction!
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-analysise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: A data lifecycle diagram emphasizing the ‘Data dissemination’ stage in green, with the remaining stages shown in lighter colors. This stage involves creating written, digital, and verbal products to relevant stakeholders.
+</figcaption>
+</figure>
+</div>
+<p>For this week, we will learn the different aspects of disseminating data while considering security, privacy, ethics, and equity. In part 1, we focus on the legal and policy side before disseminating your work.</p>
+<section id="quick-recap-on-week-4" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="quick-recap-on-week-4"><span class="header-section-number">8.1</span> Quick recap on week 4</h2>
+<section id="privacy-utility-tradeoff" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="privacy-utility-tradeoff"><span class="header-section-number">8.1.1</span> Privacy-utility tradeoff</h3>
+<p>There is often a tension between privacy and data utility. This tension is referred to in the privacy literature as the <strong>privacy-utility tradeoff</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Data Utility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Data utility,</strong> quality, accuracy, or usefulness is how practically useful or accurate to the data are for research and analysis purposes.</p>
+</div>
+</div>
+<div id="fig-tradeoff" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tradeoff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/04_privacy-utility-tradeoff.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tradeoff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: <em>Generally</em>, as privacy increases, the image quality (utility) decreases, and vice versa.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="assessing-utility" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="assessing-utility"><span class="header-section-number">8.1.2</span> Assessing utility</h3>
+<p>Generally there are three ways to measure utility of the data:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+General utility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>General utility</strong>, sometimes called global utility, measures the univariate and multivariate distributional similarity between the confidential data and the public data (e.g., sample means, sample variances, and the variance-covariance matrix).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Specific utility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Specific utility</strong>, sometimes called outcome specific utility, measures the similarity of results for a specific analysis (or analyses) of the confidential and public data (e.g., comparing the coefficients in regression models).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Fit-for-purpose
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Fit-for-purpose</strong>, are something in between the previous two utility metric types to quickly assess the quality of the public data compared to the confidential data. They are not global measures, because they focus on certain features of the data, but may not be specific to an analysis that data users and stakeholders are interested in like analysis-specific utility metrics.</p>
+</div>
+</div>
+</section>
+<section id="assessing-disclosure-risk" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="assessing-disclosure-risk"><span class="header-section-number">8.1.3</span> Assessing disclosure risk</h3>
+<p>Note that most thresholds for acceptable disclosure risk are often determined by law.</p>
+<p>There are generally three kinds of disclosure risk:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Identity disclosure
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Identity disclosure</strong> occurs if the data intruder associates a known individual with a public data record (e.g., a record linkage attack or when a data adversary combines one or more external data sources to identify individuals in the public data).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Attribute disclosure
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Attribute disclosure</strong> occurs if the data intruder determines new characteristics (or attributes) of an individual based on the information available through public data or statistics (e.g., if a dataset shows that all people age 50 or older in a city are on Medicaid, then the data adversary knows that any person in that city above age 50 is on Medicaid). This information is learned without idenfying a specific individual in the data!</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Inferential disclosure
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Inferential disclosure</strong> occurs if the data intruder predicts the value of some characteristic from an individual more accurately with the public data or statistic than would otherwise have been possible (e.g., if a public homeownership dataset reports a high correlation between the purchase price of a home and family income, a data adversary could infer another person’s income based on purchase price listed on Redfin or Zillow).</p>
+</div>
+</div>
+</section>
+<section id="hidden-stories-in-news-reports" class="level3" data-number="8.1.4">
+<h3 data-number="8.1.4" class="anchored" data-anchor-id="hidden-stories-in-news-reports"><span class="header-section-number">8.1.4</span> Hidden stories in news reports</h3>
+<div id="fig-science-news-cycle" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-science-news-cycle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/04_phd-comics-news.gif" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-science-news-cycle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: Piled HIgher and Deeper comic, “The Science News Cycle.”
+</figcaption>
+</figure>
+</div>
+<p>There are often two sides to every story, especially when it comes to how people collect, store, transfer, and analyze data. In this in-class activity, we will apply the ideas and concepts we’ve learned so far to answer a question in multiple ways that are technically correct, even if the different answers contradict one another.</p>
+</section>
+<section id="week-5-assignment" class="level3" data-number="8.1.5">
+<h3 data-number="8.1.5" class="anchored" data-anchor-id="week-5-assignment"><span class="header-section-number">8.1.5</span> Week 5 Assignment</h3>
+<section id="read" class="level4">
+<h4 class="anchored" data-anchor-id="read">Read</h4>
+<ul>
+<li>Chapter 6: What Data Privacy Laws Exist?</li>
+</ul>
+</section>
+<section id="optional-additional-read" class="level4">
+<h4 class="anchored" data-anchor-id="optional-additional-read">Optional additional read</h4>
+<ul>
+<li><a href="https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-visualization">Do No Harm Guide: Applying Equity Awareness in Data Visualization</a>.</li>
+</ul>
+</section>
+<section id="optional-watch" class="level4">
+<h4 class="anchored" data-anchor-id="optional-watch">Optional watch</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=wqn3gR1WTcA">Data Brokers: Last Week Tonight with John Oliver (HBO)</a></li>
+</ul>
+</section>
+<section id="collect-data" class="level4">
+<h4 class="anchored" data-anchor-id="collect-data">Collect data</h4>
+<p>For one day, record how often private companies collect <em>your data</em> from the moment you wake up to the moment you go to bed. For example, opening a social media app or browsing the web.</p>
+</section>
+<section id="write-600-to-1200-words" class="level4">
+<h4 class="anchored" data-anchor-id="write-600-to-1200-words">Write (600 to 1200 words)</h4>
+<p>Based on your data log, answer the following questions:</p>
+<ul>
+<li>Is any of the information collected by private companies protected by a state or federal law?</li>
+<li>What could a private company do with that information for the public good?</li>
+<li>What could a private company do with that information that may harm or violate your personal privacy?</li>
+<li>What are the data equity and ethical impacts of collecting this information?</li>
+</ul>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span style="color:#1696d2;">Class Activity 1</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Throughout this course, we’ve been exploring security, privacy, and ethics across the data lifecycle. In this assignment, you examined how various entities (most often private companies) collected your information over the course of a single day. Based on your experience…</p>
+<ol type="1">
+<li><p>Looking back at your data log, was there anything that surprised you about the frequency or types of data collected? How might this awareness influence your future digital behavior?</p></li>
+<li><p>In writing your essay, did you encounter any tension between your personal views on security and privacy and what current laws allow? How did you navigate or reconcile that tension?</p></li>
+<li><p>Do you have any ethical concerns about how your information is being collected and potentially used?</p></li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="data-privacy-laws-in-the-united-states-of-america" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="data-privacy-laws-in-the-united-states-of-america"><span class="header-section-number">8.2</span> Data privacy laws in the United States of America</h2>
+<div id="fig-wonka-privacy-policy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-wonka-privacy-policy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_wonka-privacy-policy.jpg" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wonka-privacy-policy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.4: Creepy condescending Wonka meme that says, “Please tell me more about your privacy policy.”
+</figcaption>
+</figure>
+</div>
+<p>Prior to releasing any information (e.g., data and statistics), you must review the legal requirements. As you learned from the book and the questionnaire in the first week of class, the United States has no federal law regulating how personal data can be collected, stored, and used. A privacy policy does not equate to data privacy protections.</p>
+<p>The laws governing data collection and dissemination are limited to specific federal agencies (e.g., U.S. Census Bureau) or specific data types (e.g., education).</p>
+<section id="federal-privacy-laws" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="federal-privacy-laws"><span class="header-section-number">8.2.1</span> Federal privacy laws</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Confidential Information Protection and Statistical Efficiency Act of 2002
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>CIPSEA establishes uniform confidentiality protections for information collected for statistical purposes by U.S. statistical agencies, and it allows some data sharing between the Bureau of Labor Statistics, Bureau of Economic Analysis, and Census Bureau. The agencies report to Office of Management and Budget on particular actions related to confidentiality and data sharing.</p>
+<p>The law gives the agencies standardized approaches to protecting information from respondents so that it will not be exposed in ways that lead to inappropriate or surprising identification of the respondent. By default the respondent’s data is used for statistical purposes only. If the respondent gives informed consent, the data can be put to some other use.</p>
+</blockquote>
+<p>From <a href="https://en.wikipedia.org/wiki/Confidential_Information_Protection_and_Statistical_Efficiency_Act">Wiki</a>.</p>
+<blockquote class="blockquote">
+<p>A reauthorization of CIPSEA in 2018-19 gave the statistical agencies more opportunities to use administrative data for statistical purposes, and required them to more deeply analyze risks to privacy and confidentiality of respondents.</p>
+</blockquote>
+<p>Foundations for Evidence-Based Policymaking Act of 2018 is often referred to as the Evidence Act and updated CIPSEA.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Children’s Online Privacy Act of 1998
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>This Act protects children’s privacy by giving parents tools to control what information is collected from their children online. The Act requires the Commission to promulgate regulations requiring operators of commercial websites and online services directed to children under 13 or knowingly collecting personal information from children under 13 to: (a) notify parents of their information practices; (b) obtain verifiable parental consent for the collection, use, or disclosure of children’s personal information; (c) let parents prevent further maintenance or use or future collection of their child’s personal information; (d) provide parents access to their child’s personal information; (e) not require a child to provide more personal information than is reasonably necessary to participate in an activity; and (f) maintain reasonable procedures to protect the confidentiality, security, and integrity of the personal information. In order to encourage active industry self-regulation, the Act also includes a “safe harbor” provision allowing industry groups and others to request Commission approval of self-regulatory guidelines to govern participating websites’ compliance with the Rule.</p>
+</blockquote>
+<p>From the <a href="https://www.ftc.gov/legal-library/browse/statutes/childrens-online-privacy-protection-act">Federal Trade Commission</a>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The Family Educational Rights and Privacy Act (FERPA) of 1974
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The FERPA is a federal law that affords parents the right to have access to their children’s education records, the right to seek to have the records amended, and the right to have some control over the disclosure of personally identifiable information from the education records. When a student turns 18 years old, or enters a postsecondary institution at any age, the rights under FERPA transfer from the parents to the student (“eligible student”). The FERPA statute is found at 20 U.S.C. § 1232g and the FERPA regulations are found at 34 CFR Part 99.</p>
+</blockquote>
+<p>From the <a href="https://studentprivacy.ed.gov/faq/what-ferpa">U.S. Department of Education</a></p>
+</div>
+</div>
+<div id="fig-pussy-hat" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pussy-hat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/pussy-hat.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pussy-hat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.5: Kat Coyle, the designer of the pussy hat, wearing a pink knitted hat referred to as the pussy hat.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The Health Insurance Portability and Accountability Act (HIPAA) of 1996
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The HIPAA Privacy Rule establishes national standards to protect individuals’ medical records and other individually identifiable health information (collectively defined as “protected health information”) and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically. The Rule requires appropriate safeguards to protect the privacy of protected health information and sets limits and conditions on the uses and disclosures that may be made of such information without an individual’s authorization. The Rule also gives individuals rights over their protected health information, including rights to examine and obtain a copy of their health records, to direct a covered entity to transmit to a third party an electronic copy of their protected health information in an electronic health record, and to request corrections.</p>
+</blockquote>
+<p>From the <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html">The HIPAA Privacy Rule from U.S. Department of Human and Health Services</a>.</p>
+<p>Effective as of June 25, 2024: <a href="https://www.federalregister.gov/documents/2024/04/26/2024-08503/hipaa-privacy-rule-to-support-reproductive-health-care-privacy">HIPAA Privacy Rule To Support Reproductive Health Care Privacy</a> will “…strengthen privacy protections for medical records and health information for women.”</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Title 13, U.S. Code of 1953
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The Census Bureau is bound by Title 13 of the United States Code. These laws not only provide authority for the work we do, but also provide strong protection for the information we collect from individuals and businesses.</p>
+<p>Title 13 provides the following protections to individuals and businesses:</p>
+<ul>
+<li>Private information is never published. It is against the law to disclose or publish any private information that identifies an individual or business such, including names, addresses (including GPS coordinates), Social Security Numbers, and telephone numbers.</li>
+<li>The Census Bureau collects information to produce statistics. Personal information cannot be used against respondents by any government agency or court.</li>
+<li>Census Bureau employees are sworn to protect confidentiality. People sworn to uphold Title 13 are legally required to maintain the confidentiality of your data. Every person with access to your data is sworn for life to protect your information and understands that the penalties for violating this law are applicable for a lifetime.</li>
+<li>Violating the law is a serious federal crime. Anyone who violates this law will face severe penalties, including a federal prison sentence of up to five years, a fine of up to $250,000, or both.</li>
+</ul>
+</blockquote>
+<p>From the <a href="https://www.census.gov/history/www/reference/privacy_confidentiality/title_13_us_code.html">U.S. Census Bureau</a></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Title 26, U.S. Code of 1939
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The Internal Revenue Code (IRC) is the body of law that codifies all federal tax laws, including income, estate, gift, excise, alcohol, tobacco, and employment taxes. U.S. tax laws began to be codified in 1874, but there was no central, comprehensive source for them at that time. The IRC was originally compiled in 1939 and overhauled in 1954 and 1986. This code is the definitive source of all tax laws in the United States and has the force of law in and of itself.</p>
+<p>These laws constitute Title 26 of the U.S. Code (26 U.S.C.A. § 1 et seq. [1986]) and are implemented by the Internal Revenue Service (IRS) through its Treasury Regulations and Revenue Rulings.</p>
+<p>Congress made major statutory changes to Title 26 in 1939, 1954, and 1986. Because of the extensive revisions made in the Tax Reform Act of 1986, Title 26 is now known as the Internal Revenue Code of 1986 (Pub. L. No.&nbsp;99-514, § 2, 100 Stat. 2095 [Oct.&nbsp;22, 1986]).</p>
+</blockquote>
+<p>From the <a href="https://www.census.gov/history/www/reference/privacy_confidentiality/title_26_us_code_1.html">U.S. Census Bureau</a></p>
+</div>
+</div>
+</section>
+<section id="state-privacy-laws" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="state-privacy-laws"><span class="header-section-number">8.2.2</span> State privacy laws</h3>
+<div id="fig-iapp-state" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-iapp-state-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_2025-state-law.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-iapp-state-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.6: IAPP’s U.S. State Privacy Legislation Tracker Image, last updated July 7, 2025 .
+</figcaption>
+</figure>
+</div>
+<p>The International Association of Privacy Professionals (IAPP)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> has a great <a href="https://iapp.org/resources/article/us-state-privacy-legislation-tracker/">U.S. State Privacy Legislation Tracker</a>.</p>
+<blockquote class="blockquote">
+<p>State-level momentum for comprehensive privacy bills is at an all-time high. The IAPP Westin Research Center actively tracks the proposed and enacted comprehensive privacy bills from across the U.S. to help our members stay informed of the changing state privacy landscape. This information is compiled into a chart, map and a directory with information specific to states with enacted laws. The IAPP additionally hosts a US State Privacy topic page, which regularly updates with the latest state privacy news and resources, and a US State AI Governance Legislation Tracker, which tracks US state cross-sectoral laws with direct application to the use of AI systems in the private sector.</p>
+</blockquote>
+<div id="fig-shall-pass" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-shall-pass-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_this-too-shall-pass.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shall-pass-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.7: Candalf You Shall Not Pass Meme that says, “This too shall pass.”
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="california-privacy-act-of-2018" class="level3" data-number="8.2.3">
+<h3 data-number="8.2.3" class="anchored" data-anchor-id="california-privacy-act-of-2018"><span class="header-section-number">8.2.3</span> California Privacy Act of 2018</h3>
+<p>From the <a href="https://oag.ca.gov/privacy/ccpa">State of California Department of Justice</a>:</p>
+<p>The California Consumer Privacy Act (CCPA) gives consumers more control over the personal information that businesses collect about them, with accompanying regulations that provide guidance on how to implement the law, which includes:</p>
+<ul>
+<li>The right to know about the personal information a business collects about them and how it is used and shared;</li>
+<li>The right to delete personal information collected from them (with some exceptions);</li>
+<li>The right to opt-out of the sale or sharing of their personal information; and</li>
+<li>The right to non-discrimination for exercising their CCPA rights.</li>
+</ul>
+<p>In November 2020, California voters approved Proposition 24, the California Privacy Rights Act, which amended the CCPA and added additional privacy protections that took effect on January 1, 2023. As of this date, consumers have new rights in addition to those above, such as:</p>
+<ul>
+<li>The right to correct inaccurate personal information that a business has about them; and</li>
+<li>The right to limit the use and disclosure of sensitive personal information collected about them.</li>
+</ul>
+<p>Businesses subject to the CCPA have several responsibilities, including responding to consumer requests to exercise these rights and providing consumers with certain notices explaining their privacy practices. The CCPA applies to many businesses, including data brokers.</p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span style="color:#1696d2;">Class Activity 2</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>If you could change or update one data privacy law (state or federal), what would it be and why?</p></li>
+<li><p>What types of personal data do you think are most in need of stronger legal protections today?</p></li>
+</ol>
+</div>
+</div>
+<!-- ### General Data Protection Regulation -->
+<!-- The General Data Protection Regulation or GDPR, is a set of European Union data privacy laws and protections. The 99 articles of GDPR covers a range of topics from what rights does a person have for their personal data to how companies are penalized for violating the law. -->
+<!-- #### Key aspects of GDPR -->
+<!-- - The data containing identifiers are key for GDPR to consider the information as personal data. -->
+<!-- - GDPR separates personal data into two categories: general personal data and sensitive personal -->
+<!-- data.  -->
+<!-- - Sensitive data is racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, the processing of genetic data and biometric data for the purpose of uniquely identifying a natural person, and sex life or sexual orientation. -->
+<!-- Revealing this type of personal data is prohibited. GDPR precludes the processing of sensitive personal information and only for special circumstances can a company process such data. -->
+<!-- GDPR defines those responsible for protecting personal data, as: -->
+<!-- - the *controller* one responsible for deciding the purpose and processing of the personal data. -->
+<!-- - the *processor* acts on behalf of the controller while processing personal data. -->
+<!-- #### Seven principles for proceessing personal data -->
+<!-- GDPR states the seven principles for processing personal data. These seven principles are called: -->
+<!-- 1. Lawfulness, Fairness, and Transparency; -->
+<!-- 2. Purpose Limitation; -->
+<!-- 3. Data Minimization; -->
+<!-- 4. Accuracy; -->
+<!-- 5. Storage Limitation; -->
+<!-- 6. Integrity and Confidentiality; and -->
+<!-- 7. Accountability. -->
+<!-- #### The right to privacy and the right to be forgotten -->
+<!-- GDPR monitors what organizations do with people’s personal data, empowers people to control how their personal data are being collected and used by others, and forces organizations to justify anything they do with people’s personal data. -->
+<!-- organizations to use personal data if at least one of the six lawful bases apply. These bases are referred as: -->
+<!-- 1. consent, which must be “...freely given, specific, informed and unambiguous indication of the data subject’s wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her.” -->
+<!-- 2. performance of a contract, where a processor requires someone’s personal data to complete specific steps outlined in a contract or prior to entering into a contract. -->
+<!-- 3. legal obligation, when a company must use personal data to comply with other laws. -->
+<!-- 4. vital interest, where a business can access personal data to protect the person’s life and others. -->
+<!-- 5. public interest, such that an organization might perform certain tasks for people’s public interest or to complete official functions. -->
+<!-- 6. legitimate interest, where these interests may include situations where someone would expect an organization to collect personal data, use the data in ways that are low-risk, or make a compelling argument on the benefits outweighing the risks. -->
+</section>
+</section>
+<section id="identifying-the-technical-and-policy-solutions" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="identifying-the-technical-and-policy-solutions"><span class="header-section-number">8.3</span> Identifying the technical and policy solutions</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Technical and policy approaches in combination are necessary for effective management of disclosure risks.</p>
+</div>
+</div>
+<p>Agencies and private companies can use a variety of technical and policy approaches, possibly in combination, to achieve disclosure risk/usefulness trade-offs that are acceptable to various stakeholders. Confronted with myriad options, how can an entity arrive at an ideal approach?</p>
+<p>Answers to this question are necessarily context specific. However, some decision points are common to many data dissemination scenarios.</p>
+<div id="fig-tech-policy" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tech-policy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_tech-policy-chart.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tech-policy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.8: Model decision matrix of disclosure-protection strategies given potential disclosure harms and data usefulness from <span class="citation" data-cites="national2024toward">Reiter et al. (<a href="references.html#ref-national2024toward" role="doc-biblioref">2024</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>In the interior cells, “Access” refers to approaches that could be particularly effective for managing disclosure risk/usefulness trade-offs. “RD” refers to restricted data, which includes policy approaches like secure data enclaves, licensing and other data-use agreements, penalties and incentives for responsible use, and query auditing. “DL” refers to disclosure limitation, which includes techniques like formal privacy, secure multiparty computation, and synthetic data approaches. “Tiers” refers to tiered access, which may include validation/verification of results from redacted data and access to confidential data under policy restrictions. “Privacy” refers to a general characterization of the desired privacy protections/guarantees on blended data products.</p>
+</blockquote>
+<section id="current-statistical-data-privacy-workflow" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="current-statistical-data-privacy-workflow"><span class="header-section-number">8.3.1</span> Current statistical data privacy workflow</h3>
+<p>The current standard workflow for statistical data privacy applications includes three main components: (1) data, (2) privacy practitioner(s), and (3) decisionmaker(s). At the start, privacy practitioners review the data (at the least the data schema<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>) and talk with the decisionmakers. From there, the privacy practitioners determine the privacy loss and utility framework of definitions, with possible input from the data and the decisionmakers. Decisionmakers then choose the threshold levels of privacy loss and utility, which depend on the legal or societal context and any practical constraints.</p>
+<p>From here, the privacy practitioner selects the statistical data privacy method that meets the desired privacy loss and utility definitions and thresholds. This decision may also use information from the data. Finally, after all the prior decisions are made, the privacy practitioner implements the statistical data privacy method on the data. In some instances, feedback loops exist.</p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span style="color:#1696d2;">Class Activity 3</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Based on what we’ve learned so far from in the class, what are the issues with this workflow?</p>
+</div>
+</div>
+<div id="fig-doesnt-work" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-doesnt-work-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_doesnt-work.gif" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-doesnt-work-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.9: The Rock saying, “This doesn’t work.”
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="aspirational-equitable-statistical-data-privacy-workflow" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="aspirational-equitable-statistical-data-privacy-workflow"><span class="header-section-number">8.3.2</span> Aspirational equitable statistical data privacy workflow</h3>
+<p>As discussed in the class activity, there are obvious issues with the previous workflow. This is why <span class="citation" data-cites="bowen2023no">Bowen and Snoke (<a href="references.html#ref-bowen2023no" role="doc-biblioref">2023</a>)</span> proposed an aspirational workflow. It is called aspirational because we do not expect every step to always be possible in a real-world implementation. That being said, considering these steps can help make equity part of the process from beginning to end. Below, we describe the six steps of the process in greater detail.</p>
+<div id="fig-aspirational" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-aspirational-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_aspirational-workflow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aspirational-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.10: A visual representation of the aspirational equitable statistical data privacy workflow from <span class="citation" data-cites="bowen2023no">Bowen and Snoke (<a href="references.html#ref-bowen2023no" role="doc-biblioref">2023</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li><p>Identify groups in the data</p></li>
+<li><p>Identify appropriate representatives for the groups</p></li>
+<li><p>Determine privacy and utility definitions and preferences with representatives and decisionmakers</p>
+<ol type="a">
+<li>Define statistical utility and privacy loss</li>
+<li>Choose group-level preferences for statistical utility and privacy loss thresholds</li>
+</ol></li>
+<li><p>Communicate constraints to representatives and decisionmakers</p>
+<ol type="a">
+<li>Use metrics and visuals for group-level tradeoff curves</li>
+<li>Explain technical shortcomings related to group size</li>
+</ol></li>
+<li><p>Choose a statistical data privacy implementation that best satisfies definitions, preferences, and constraints</p></li>
+<li><p>Publish each step of the process</p></li>
+</ol>
+<p>Every step in the process has limitations, so the entire process must be transparent. Because each of the prior steps is aspirational and may require significant growth in the field, transparency is one of the most immediate actions that practitioners can take. The process could be reported in public presentations, documentations, or regular meetings <span class="citation" data-cites="murray2016data cohen2022guide">(<a href="references.html#ref-murray2016data" role="doc-biblioref">Murray, Falkenburger, and Saxena 2015</a>; <a href="references.html#ref-cohen2022guide" role="doc-biblioref">Cohen et al. 2022</a>)</span>. This transparency allows outside groups and entities to critique the decisions, offer input during the process, and understand what decisions were made. With feedback, each step of the process can be refined, such as selecting group representatives, choosing preferences, or navigating technical shortcomings.</p>
+</section>
+<section id="a-framework-for-managing-disclosure-risks-in-blended-data" class="level3" data-number="8.3.3">
+<h3 data-number="8.3.3" class="anchored" data-anchor-id="a-framework-for-managing-disclosure-risks-in-blended-data"><span class="header-section-number">8.3.3</span> A Framework for Managing Disclosure Risks in Blended Data</h3>
+<blockquote class="blockquote">
+<p>The framework begins with a simple but critical question for agencies considering a data-blending project: What do we want to accomplish with blended data, and why? <span class="citation" data-cites="national2024toward">(<a href="references.html#ref-national2024toward" role="doc-biblioref">Reiter et al. 2024</a>)</span></p>
+</blockquote>
+<ol type="1">
+<li><p>Determine auspice and purpose of the blended data project.</p>
+<ol type="a">
+<li>What are the anticipated final products of data blending?</li>
+<li>What are potential downstream uses of blended data?</li>
+<li>What are potential considerations for disclosure risks and harms, and data usefulness?</li>
+</ol></li>
+<li><p>Determine ingredient data files.</p>
+<ol type="a">
+<li>What data sources are available to accomplish blending, and what are the interests of data holders?</li>
+<li>What steps can be taken to reduce disclosure risks and enhance usefulness when compiling ingredient files?</li>
+</ol></li>
+<li><p>Obtain access to ingredient data files.</p>
+<ol type="a">
+<li>What are the disclosure risks associated with procuring ingredient data?</li>
+<li>What are the disclosure risk/usefulness trade-offs in the plan for accessing ingredient files?</li>
+</ol></li>
+<li><p>Blend ingredient data files.</p>
+<ol type="a">
+<li>When blending requires linking records from ingredient files, what linkage strategies can be used?</li>
+<li>Are resultant blended data sufficiently useful to meet the blending objective?</li>
+</ol></li>
+<li><p>Select approaches that meet the end objective of data blending.</p>
+<ol type="a">
+<li>What are the best-available scientific methods for disclosure limitation to accomplish the blended data objective, and are sufficient resources available to implement those methods?</li>
+<li>How can stakeholders be engaged in the decision-making process?</li>
+<li>What is the mitigation plan for confidentiality breaches?</li>
+</ol></li>
+<li><p>Develop and execute a maintenance plan.</p>
+<ol type="a">
+<li>How will agencies track data provenance and update files when beneficial?</li>
+<li>What is the decision-making process for continuing access to or sunsetting the blended data product, and how do participating agencies contribute to those decisions?</li>
+<li>How will agencies communicate decisions about disclosure management policies with stakeholders?</li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="college-scorecard-example" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="college-scorecard-example"><span class="header-section-number">8.4</span> College Scorecard Example</h2>
+<p>The following description is from <span class="citation" data-cites="national2024toward">Reiter et al. (<a href="references.html#ref-national2024toward" role="doc-biblioref">2024</a>)</span>, which I helped write and lead this part of the report. The College Score card is a great example of how to consider the technical and policy solutions to release confidential data for the public good.</p>
+<p>The <a href="https://collegescorecard.ed.gov/">College Scorecard</a> involves an approach to blending aggregated data from the Statistics of Income (SOI) Program of IRS with College Scorecard data (U.S. Department of Education) from the Department of Education (ED).</p>
+<section id="determine-auspice-and-purpose" class="level3" data-number="8.4.1">
+<h3 data-number="8.4.1" class="anchored" data-anchor-id="determine-auspice-and-purpose"><span class="header-section-number">8.4.1</span> Determine auspice and purpose</h3>
+<p>The College Scorecard is intended to help future college students and their families search for and compare colleges by field of study, costs, admissions, economic outcomes, and other statistics. Since 2016, ED has provided the College Scorecard as a web-based search tool (i.e., data product) that users can query repeatedly; public-use microdata files are not required. The unit of analysis is the college, and the data are summaries of the features of the college and its students. ED desired to add earning metrics to the College Scorecard. Such blended data could offer the public additional insights into student outcomes at various educational institutions; however, tax records contain very sensitive information and are protected by Title 26, requiring rigorous privacy guarantees.</p>
+<p>From <a href="#fig-tech-policy" class="quarto-xref">Figure&nbsp;<span>8.8</span></a>, we might characterize the College Scorecard containing earnings information as being at the intersection of “Modest Impact” usefulness and “Significant and Lasting” disclosure risks.</p>
+</section>
+<section id="identify-ingredient-data-files" class="level3" data-number="8.4.2">
+<h3 data-number="8.4.2" class="anchored" data-anchor-id="identify-ingredient-data-files"><span class="header-section-number">8.4.2</span> Identify ingredient data files</h3>
+<p>To create the blended data, ED requires earnings data on college graduates. ED therefore turned to SOI for such data. Education data are subject to FERPA, whereas SOI data are subject to Title 26 rules. This means certain fields may be released as is (e.g., institution), but others require confidentiality protection (e.g., earnings data at the field-of-study or institution level). There is no federal source of average earnings per college, requiring the agencies to blend data at the individual student level. Therefore, the ingredient data file from ED includes recipients of federal student aid,<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> and the ingredient data file from IRS includes individuals’ earnings. These files need to be linked to accomplish the blending.</p>
+</section>
+<section id="obtain-ingredient-data-files" class="level3" data-number="8.4.3">
+<h3 data-number="8.4.3" class="anchored" data-anchor-id="obtain-ingredient-data-files"><span class="header-section-number">8.4.3</span> Obtain ingredient data files</h3>
+<p>Because SOI data derive from tax records, individual students’ earnings cannot be shared outside the agency without special agreements. Thus, SOI needs to blend its data with the data supplied by ED. However, Internal Revenue Code (IRC) § 6108(b) permits SOI to release aggregated-level statistics to ED. The IRC authorizes the Secretary of the Treasury to make special statistical studies and compilations involving tax return information as defined in IRC § 6103(b)(2).</p>
+</section>
+<section id="blend-ingredient-data-files" class="level3" data-number="8.4.4">
+<h3 data-number="8.4.4" class="anchored" data-anchor-id="blend-ingredient-data-files"><span class="header-section-number">8.4.4</span> Blend ingredient data files</h3>
+<p>ED provides student-level records—that is, recipients of federal student aid—to SOI to conduct the matching at IRS. The data-sharing arrangement allows SOI to match student information to IRS administrative tax records, which are W-2 (i.e., wage and tax statement) and 1040-SE (i.e., net earnings from self-employment) data. Matching is done on social security numbers.</p>
+</section>
+<section id="select-disclosure-protection-approaches" class="level3" data-number="8.4.5">
+<h3 data-number="8.4.5" class="anchored" data-anchor-id="select-disclosure-protection-approaches"><span class="header-section-number">8.4.5</span> Select disclosure-protection approaches</h3>
+<p>For the first 3 years of the product, the College Scorecard used classical disclosure approaches (e.g., data suppression, rounding, aggregation, and top-coding) to protect blended data. During this time, ED and SOI continued to reassess the disclosure risk/ usefulness trade-offs of their dissemination strategy. In 2020, ED and SOI wanted to produce a second data file with greater granularity than available at the institution level—one that contained information at the credential and field-of-study level. But SOI became concerned about potential complementary disclosures in creating two datasets from the same ingredient data, as their disclosure approaches did not account for multiple data releases.</p>
+<p>SOI also determined that using the classical disclosure approaches to release the second, more granular data file would suppress and alter substantial amounts of blended data, thereby degrading the potential usefulness of the data product.</p>
+<p>In an update of disclosure-protection processes, SOI decided to use SafeTables, a software package developed by <a href="ttps://www.tmlt.io/">Tumult Labs</a> that produces statistics from a formally private, noise-addition algorithm. SOI saw three benefits of using a formally private framework. First was the potential ability to quantify privacy risks when releasing datasets. Second was establishing a privacy-loss budget and a mechanism to examine specific points on the disclosure risk/usefulness trade-off. SOI’s final reason was composition: SOI could potentially track total privacy loss across multiple releases of outputs.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>Although formal privacy methods are used, the approach of ED and SOI to releasing College Scorecard data is a hybrid between formal privacy and classical disclosure approaches. ED and SOI suppress outputs from SafeTables that differ excessively (per their definition) from the confidential data values to enhance usefulness of published data. Therefore, the end product is not technically formally private; the decision to suppress is based on confidential data values, which violates the formal privacy guarantee. SOI accepted the implied higher disclosure risks, suppressing the noisiest results, because the program deemed it important that students have accurate statistics upon which to make potentially life-changing decisions.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition of Formal Privacy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Although the privacy community has not fully agreed on a common definition, the U.S. Census Bureau<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> defines <strong>formal privacy</strong> as a subset of SDC methods that give “formal and quantifiable guarantees on inference disclosure risk and known algorithmic mechanisms for releasing data that satisfy these guarantees.”</p>
+<p>In general, formally private methods have the following features <span class="citation" data-cites="bowen2021philosophy">(<a href="references.html#ref-bowen2021philosophy" role="doc-biblioref">Bowen and Garfinkel 2021</a>)</span>:</p>
+<ul>
+<li>Ability to quantify and adjust the privacy-utility trade-off, typically through parameters.</li>
+<li>Ability to rigorously and mathematically prove the maximum privacy loss that can result from the release of information.</li>
+<li>Formal privacy definitions also allow one to <em>compose</em> multiple statistics. In other words, a data curator can compute the total privacy loss from multiple individual information releases.</li>
+</ul>
+</div>
+</div>
+<p>To help determine the privacy-loss budget prior to suppressing values, SOI and ED used an evaluation tool called CSExplorer. Also developed by Tumult Labs, this tool allows the client (i.e., SOI and ED) to review and evaluate the disclosure risk/usefulness trade-offs of the output statistics for various privacy-loss budgets. SOI first used the tool to examine the effects of several privacy-loss budgets on various usefulness metrics. Once SOI identified a set of appropriate privacy-loss budgets, ED had access to a limited version of CSExplorer that was in the range of SOI’s selected privacy-loss budgets. ED then could explore the statistical outputs based on those privacy-loss budgets to examine and decide upon which suppression thresholds to use and other specifications for the final data product release.</p>
+<p>This tool allowed ED and SOI to have thoughtful, in-depth discussions about trade-offs between privacy and usefulness.</p>
+</section>
+<section id="develop-and-execute-a-maintenance-plan" class="level3" data-number="8.4.6">
+<h3 data-number="8.4.6" class="anchored" data-anchor-id="develop-and-execute-a-maintenance-plan"><span class="header-section-number">8.4.6</span> Develop and execute a maintenance plan</h3>
+<p>The College Scorecard does not publicize its disclosure-protection processes on its website, and it keeps values of privacy parameters internal. Providing such information along with source code for the disclosure-protection algorithms would improve transparency. <span class="citation" data-cites="national2024toward">Reiter et al. (<a href="references.html#ref-national2024toward" role="doc-biblioref">2024</a>)</span> is also unaware of mitigation strategies for potential breaches.</p>
+<p>We conclude this case study by mentioning an application with similar goals as the College Scorecard, namely the Census Bureau’s Post-Secondary Employment Outcomes (PSEO) dataset. This data product provides tables of earnings and employment outcomes of graduates from postsecondary institutions <span class="citation" data-cites="foote2019releasing">(<a href="references.html#ref-foote2019releasing" role="doc-biblioref">Foote, Machanavajjhala, and McKinney 2019</a>)</span>, although it does not involve IRS data. The PSEO also applies a formal privacy method to publish the tables.</p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span style="color:#1696d2;">Class Activity 4</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After reviewing the two proposed workflows and the accompanying example, answer the following questions:</p>
+<ul>
+<li>Do these workflows effectively address the concerns and issues you had with the current/original workflow?</li>
+<li>What are some possible challenges in executing these new workflows?</li>
+<li>Are there any additional improvements or adjustments you would suggest for these new workflows?</li>
+</ul>
+</div>
+</div>
+<div id="fig-could-work" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-could-work-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/could-work.gif" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-could-work-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.11: Gene Wilder saying, “It. Could. Work.”
 </figcaption>
 </figure>
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-bowen2021philosophy" class="csl-entry" role="listitem">
+Bowen, Claire McKay, and Simson Garfinkel. 2021. <span>“Philosophy of Differential Privacy.”</span> <em>Notices of the American Mathematical Society</em> 68 (10): 1727–39.
+</div>
+<div id="ref-bowen2023no" class="csl-entry" role="listitem">
+Bowen, Claire McKay, and Joshua Snoke. 2023. <span>“<span>Do No Harm Guide: Applying Equity Awareness In Data Privacy Methods</span>.”</span> <em>Urban Institute</em>. <a href="https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-privacy-methods">https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-privacy-methods</a>.
+</div>
+<div id="ref-cohen2022guide" class="csl-entry" role="listitem">
+Cohen, Mychal, Amy Rohan, Kathleen Pritchard, and Kathryn LS Pettit. 2022. <span>“Guide to Data Chats: Convening Community Conversations about Data.”</span> <em>Urban Institute</em>. <a href="https://www.urban.org/research/publication/guide-data-chats-convening-community-conversations-about-data">https://www.urban.org/research/publication/guide-data-chats-convening-community-conversations-about-data</a>.
+</div>
+<div id="ref-foote2019releasing" class="csl-entry" role="listitem">
+Foote, Andrew David, Ashwin Machanavajjhala, and Kevin McKinney. 2019. <span>“Releasing Earnings Distributions Using Differential Privacy: Disclosure Avoidance System for Post-Secondary Employment Outcomes (Pseo).”</span> <em>Journal of Privacy and Confidentiality</em> 9 (2).
+</div>
+<div id="ref-murray2016data" class="csl-entry" role="listitem">
+Murray, Brittany, Elsa Falkenburger, and Priya Saxena. 2015. <span>“Data Walks: An Innovative Way to Share Data with Communities.”</span> <a href="https://www.urban.org/research/publication/data-walks-innovative-way-share-data-communities">https://www.urban.org/research/publication/data-walks-innovative-way-share-data-communities</a>.
+</div>
+<div id="ref-national2024toward" class="csl-entry" role="listitem">
+Reiter, Jerry, Claire McKay Bowen, Aloni Cohen, Diana Farrell, Robert Goerge M., Nicholas Hart, Jagadish Hosagrahar V., et al. 2024. <span>“Toward a 21st Century National Data Infrastructure: Managing Privacy and Confidentiality Risks with Blended Data.”</span> <em>National Academies of Sciences, Engineering, and Medicine</em>.
+</div>
+</div>
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The International Association of Privacy Professionals is a nonprofit, non-advocacy membership association founded in 2000.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>For example, the variables contained in the data, the number of observations, or the range of values for each variable.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>It is important to note that not all students who are in need receive federal student aid, so there may be some bias in generating the College Scorecard.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Additionally, the use of SafeTables allowed suppression of fewer table cells than would have been required had simple cell suppression been used.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>“Consistency of data products and formally private methods for the 2020 census,” U.S. Census Bureau, p.&nbsp;43, https://irp.fas.org/agency/dod/jason/census-privacy.pdf<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
