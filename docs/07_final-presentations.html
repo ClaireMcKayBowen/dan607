@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -317,6 +351,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="target-audience-and-presentation-topic" class="level3" data-number="11.2.1">
 <h3 data-number="11.2.1" class="anchored" data-anchor-id="target-audience-and-presentation-topic"><span class="header-section-number">11.2.1</span> Target audience and presentation topic</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Student Last Name</th>
@@ -326,9 +365,114 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>TBD</td>
-<td>TBD</td>
-<td>TBD</td>
+<td>Androlewicz</td>
+<td>family-friends</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Boyar</td>
+<td>family-friends</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Choate</td>
+<td>family-friends</td>
+<td>Geopolitical impacts and privacy risks of transmitting individual US data across borders</td>
+</tr>
+<tr class="even">
+<td>Clayman</td>
+<td>family-friends</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cousins</td>
+<td>classmates-coworkers</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Daversa</td>
+<td>local-government-policymaker</td>
+<td>Importance of GIS data for decision-making and the security aspects of collecting better GIS data</td>
+</tr>
+<tr class="odd">
+<td>Dowdy</td>
+<td>classmates-coworkers</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Duhil de Benaze</td>
+<td>classmates-coworkers</td>
+<td>How human behaviors, such as phishing, weak passwords, and social engineering create vulnerabilities in cybersecurity systems</td>
+</tr>
+<tr class="odd">
+<td>Espinal-Guzman</td>
+<td>family-friends</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Gallishaw</td>
+<td>local-government-policymaker</td>
+<td>Recent work on creating a national privacy law, such as the American Data Privacy and Protection Act proposal and/or the American Privacy Rights Act proposal</td>
+</tr>
+<tr class="odd">
+<td>Garratt</td>
+<td>funders-media</td>
+<td>Protecting relationship data</td>
+</tr>
+<tr class="even">
+<td>Kim</td>
+<td>local-government-policymaker</td>
+<td>Privacy and ethical concerns for children on social media</td>
+</tr>
+<tr class="odd">
+<td>Morris</td>
+<td>funders-media</td>
+<td>Ethics of AI in sports</td>
+</tr>
+<tr class="even">
+<td>Mueller</td>
+<td>local-government-policymaker</td>
+<td>Environmental issues, water quality data</td>
+</tr>
+<tr class="odd">
+<td>O’Brien</td>
+<td>family-friends</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>OKeefe</td>
+<td>family-friends</td>
+<td>Football and concussion injuries and ramifications</td>
+</tr>
+<tr class="odd">
+<td>Pacheco</td>
+<td>classmates-coworkers</td>
+<td>Normalization of surveillance in digital and physical spaces and the ethical concerns</td>
+</tr>
+<tr class="even">
+<td>Pushard</td>
+<td>local-government-policymaker</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Scott</td>
+<td>classmates-coworkers</td>
+<td>Period tracking apps like Flo and how they use health data</td>
+</tr>
+<tr class="even">
+<td>Thadeio</td>
+<td>classmates-coworkers</td>
+<td>Security challenges in journalism through the lens of public media data</td>
+</tr>
+<tr class="odd">
+<td>Thorbahn</td>
+<td>funders-media</td>
+<td>Are phones actually listening to you?</td>
+</tr>
+<tr class="even">
+<td>Washington</td>
+<td>funders-media</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -372,11 +516,29 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="presentation-order" class="level3" data-number="11.2.3">
 <h3 data-number="11.2.3" class="anchored" data-anchor-id="presentation-order"><span class="header-section-number">11.2.3</span> Presentation order</h3>
-<p>TBD</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"Androlewicz"</span>, <span class="st">"Boyar"</span>, <span class="st">"Choate"</span>, <span class="st">"Clayman"</span>, <span class="st">"Cousins"</span>, <span class="st">"Daversa"</span>, </span>
+<span id="cb1-7"><a href="#cb1-7"></a>              <span class="st">"Dowdy"</span>, <span class="st">"Duhil de Benaze"</span>, <span class="st">"Espinal-Guzman"</span>, <span class="st">"Gallishaw"</span>, <span class="st">"Garratt"</span>, <span class="st">"Kim"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8"></a>              <span class="st">"Morris"</span>, <span class="st">"Mueller"</span>, <span class="st">"O’Brien"</span>, <span class="st">"OKeefe"</span>, <span class="st">"Pacheoco"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9"></a>              <span class="st">"Pushard"</span>, <span class="st">"Scott"</span>, <span class="st">"Thadeio"</span>, <span class="st">"Thorbahn"</span>, <span class="st">"Washington"</span>), <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Pacheoco"        "Cousins"         "Androlewicz"     "Gallishaw"      
+ [5] "Clayman"         "Washington"      "OKeefe"          "O’Brien"        
+ [9] "Duhil de Benaze" "Dowdy"           "Pushard"         "Espinal-Guzman" 
+[13] "Thorbahn"        "Kim"             "Boyar"           "Mueller"        
+[17] "Choate"          "Thadeio"         "Scott"           "Daversa"        
+[21] "Morris"          "Garratt"        </code></pre>
+</div>
+</div>
 </section>
 <section id="schedule" class="level3" data-number="11.2.4">
 <h3 data-number="11.2.4" class="anchored" data-anchor-id="schedule"><span class="header-section-number">11.2.4</span> Schedule</h3>
-<table class="caption-top">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Time (EDT)</th>
@@ -384,16 +546,105 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td>4:05 pm - 5:15 pm</td>
+<td>Pacheoco</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Cousins</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Androlewicz</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Gallishaw</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Clayman</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Washington</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>OKeefe</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>O’Brien</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Duhil de Benaze</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Dowdy</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Pushard</td>
+</tr>
+<tr class="even">
+<td><strong>5:15 pm - 5:20 pm</strong></td>
+<td><strong>Break</strong></td>
+</tr>
+<tr class="odd">
+<td>5:20 pm - 6:30 pm</td>
+<td>Espinal-Guzman</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Thorbahn</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Kim</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Boyar</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Mueller</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Choate</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Thadeio</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Scott</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Daversa</td>
+</tr>
+<tr class="even">
+<td>–</td>
+<td>Morris</td>
+</tr>
+<tr class="odd">
+<td>–</td>
+<td>Garratt</td>
+</tr>
 </tbody>
 </table>
-<p>TBD</p>
-<p>* == indicates students swapped time.</p>
-<p>** == indicates moved student sooner to avoid conflict (all other students have been shifted).</p>
 </section>
 <section id="vote-for-your-favorite-presentation" class="level3" data-number="11.2.5">
 <h3 data-number="11.2.5" class="anchored" data-anchor-id="vote-for-your-favorite-presentation"><span class="header-section-number">11.2.5</span> Vote for your favorite presentation</h3>
 <p>Each year, I ask students to vote for their favorite presentation. The person with the most votes will receive a gift card to a local café or restaurant of their choice (or whatever business as long as is locally owned), paid for by me. You cannot vote for yourself.</p>
-<p>After all the presentations are complete, please submit your vote <a href="https://docs.google.com/forms/d/e/1FAIpQLScsR0lviTF8b1UCjUctHiAQJWCMYZ8drW-33kpoRI89Yj7T-w/viewform?usp=sf_link">here</a>.</p>
+<p>After all the presentations are complete, please submit your vote <a href="https://forms.gle/7mdkCVFxG9eDTaEL8">here</a>.</p>
 
 
 </section>

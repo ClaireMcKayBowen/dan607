@@ -30,7 +30,29 @@ The presentation topic can be anything you learned in this course. It can be on 
 
 Student Last Name | Target Audience | Presentation Topic
 ----- | ----- | -----   
-TBD | TBD | TBD
+Androlewicz | family-friends | 
+Boyar | family-friends | 
+Choate | family-friends | Geopolitical impacts and privacy risks of transmitting individual US data across borders
+Clayman | family-friends | 	
+Cousins | classmates-coworkers | 
+Daversa | local-government-policymaker | Importance of GIS data for decision-making and the security aspects of collecting better GIS data 
+Dowdy | classmates-coworkers | 
+Duhil de Benaze | classmates-coworkers| How human behaviors, such as phishing, weak passwords, and social engineering create vulnerabilities in cybersecurity systems
+Espinal-Guzman | family-friends | 	
+Gallishaw | local-government-policymaker | Recent work on creating a national privacy law, such as the American Data Privacy and Protection Act proposal and/or the American Privacy Rights Act proposal
+Garratt | funders-media | Protecting relationship data 
+Kim | local-government-policymaker | Privacy and ethical concerns for children on social media
+Morris | funders-media  | Ethics of AI in sports
+Mueller | local-government-policymaker | Environmental issues, water quality data
+O’Brien | family-friends |
+OKeefe | family-friends| Football and concussion injuries and ramifications
+Pacheco | classmates-coworkers | Normalization of surveillance in digital and physical spaces and the ethical concerns
+Pushard | local-government-policymaker | 	
+Scott | classmates-coworkers | Period tracking apps like Flo and how they use health data
+Thadeio | classmates-coworkers | Security challenges in journalism through the lens of public media data 
+Thorbahn | funders-media | Are phones actually listening to you?
+Washington | funders-media | 
+
 
 \* == indicates students swapped target audience.
 
@@ -70,20 +92,51 @@ TThe following is how I will evaluate your presentations. Each part will be scor
 
 ### Presentation order
 
-TBD
+```{r}
+#| warning: false
+
+set.seed(42)
+
+library(tidyverse)
+library(dplyr)
+
+sample(c("Androlewicz", "Boyar", "Choate", "Clayman", "Cousins", "Daversa", 
+              "Dowdy", "Duhil de Benaze", "Espinal-Guzman", "Gallishaw", "Garratt", "Kim",
+              "Morris", "Mueller", "O’Brien", "OKeefe", "Pacheoco",
+              "Pushard", "Scott", "Thadeio", "Thorbahn", "Washington"), replace = FALSE)
+
+```
 
 ### Schedule
 
 Time (EDT) | Student Order
 ----- | ----- 
-TBD
-
-\* == indicates students swapped time.
-
-\*\* == indicates moved student sooner to avoid conflict (all other students have been shifted).
+4:05 pm - 5:15 pm | Pacheoco
+-- | Cousins
+-- | Androlewicz
+-- | Gallishaw
+-- | Clayman
+-- | Washington
+-- | OKeefe
+-- | O’Brien
+-- | Duhil de Benaze
+-- | Dowdy
+-- | Pushard
+**5:15 pm - 5:20 pm** | **Break**
+5:20 pm - 6:30 pm | Espinal-Guzman
+-- | Thorbahn
+-- | Kim
+-- | Boyar
+-- | Mueller
+-- | Choate
+-- | Thadeio
+-- | Scott
+-- | Daversa
+-- | Morris
+-- | Garratt
 
 ### Vote for your favorite presentation
 
 Each year, I ask students to vote for their favorite presentation. The person with the most votes will receive a gift card to a local café or restaurant of their choice (or whatever business as long as is locally owned), paid for by me. You cannot vote for yourself.
 
-After all the presentations are complete, please submit your vote [here](https://docs.google.com/forms/d/e/1FAIpQLScsR0lviTF8b1UCjUctHiAQJWCMYZ8drW-33kpoRI89Yj7T-w/viewform?usp=sf_link).
+After all the presentations are complete, please submit your vote [here](https://forms.gle/7mdkCVFxG9eDTaEL8).
