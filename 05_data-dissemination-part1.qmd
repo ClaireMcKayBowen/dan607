@@ -327,7 +327,7 @@ The current standard workflow for statistical data privacy applications includes
 
 [^schema]: For example, the variables contained in the data, the number of observations, or the range of values for each variable.
 
-From here, the privacy practitioner selects the statistical data privacy method that meets the desired privacy loss and utility definitions and thresholds. This decision may also use information from the data. Finally, after all the prior decisions are made, the privacy practitioner implements the statistical data privacy method on the data. In some instances, feedback loops exist.
+From here, the privacy practitioner selects the PETs that meets the desired privacy loss and utility definitions and thresholds. This decision may also use information from the data. Finally, after all the prior decisions are made, the privacy practitioner implements the PETs on the data. In some instances, feedback loops exist.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}

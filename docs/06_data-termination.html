@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./06_future.html" rel="next">
+<link href="./07_final-presentations.html" rel="next">
 <link href="./05_data-dissemination-part2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -237,12 +257,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./06_future.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Future Challenges</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -257,7 +271,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./07_final-presentations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Final Presentations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Final Presentations</span></span></a>
   </div>
 </li>
       </ul>
@@ -278,7 +292,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#this-part-of-the-course-is-still-under-construction-proceed-with-caution" id="toc-this-part-of-the-course-is-still-under-construction-proceed-with-caution" class="nav-link active" data-scroll-target="#this-part-of-the-course-is-still-under-construction-proceed-with-caution"><span class="header-section-number">10.1</span> This part of the course is still under construction! Proceed with caution!</a></li>
+  <li><a href="#quick-recap-on-week-5" id="toc-quick-recap-on-week-5" class="nav-link active" data-scroll-target="#quick-recap-on-week-5"><span class="header-section-number">10.1</span> Quick recap on week 5</a>
+  <ul class="collapse">
+  <li><a href="#data-privacy-laws-in-the-united-states-of-america" id="toc-data-privacy-laws-in-the-united-states-of-america" class="nav-link" data-scroll-target="#data-privacy-laws-in-the-united-states-of-america"><span class="header-section-number">10.1.1</span> Data privacy laws in the United States of America</a></li>
+  <li><a href="#identifying-the-technical-and-policy-solutions" id="toc-identifying-the-technical-and-policy-solutions" class="nav-link" data-scroll-target="#identifying-the-technical-and-policy-solutions"><span class="header-section-number">10.1.2</span> Identifying the technical and policy solutions</a></li>
+  <li><a href="#types-of-dissemination" id="toc-types-of-dissemination" class="nav-link" data-scroll-target="#types-of-dissemination"><span class="header-section-number">10.1.3</span> Types of dissemination</a></li>
+  <li><a href="#data-visualizations" id="toc-data-visualizations" class="nav-link" data-scroll-target="#data-visualizations"><span class="header-section-number">10.1.4</span> Data visualizations</a></li>
+  <li><a href="#week-6-assignment" id="toc-week-6-assignment" class="nav-link" data-scroll-target="#week-6-assignment"><span class="header-section-number">10.1.5</span> Week 6 Assignment</a></li>
+  </ul></li>
+  <li><a href="#data-destruction-or-termination-or-archival" id="toc-data-destruction-or-termination-or-archival" class="nav-link" data-scroll-target="#data-destruction-or-termination-or-archival"><span class="header-section-number">10.2</span> Data destruction or termination (or archival)</a>
+  <ul class="collapse">
+  <li><a href="#logical" id="toc-logical" class="nav-link" data-scroll-target="#logical"><span class="header-section-number">10.2.1</span> Logical</a></li>
+  <li><a href="#physical" id="toc-physical" class="nav-link" data-scroll-target="#physical"><span class="header-section-number">10.2.2</span> Physical</a></li>
+  <li><a href="#data-destruction-types" id="toc-data-destruction-types" class="nav-link" data-scroll-target="#data-destruction-types"><span class="header-section-number">10.2.3</span> Data destruction types</a></li>
+  <li><a href="#ethics-and-equity-considerations" id="toc-ethics-and-equity-considerations" class="nav-link" data-scroll-target="#ethics-and-equity-considerations"><span class="header-section-number">10.2.4</span> Ethics and equity considerations</a></li>
+  </ul></li>
+  <li><a href="#future-challenges" id="toc-future-challenges" class="nav-link" data-scroll-target="#future-challenges"><span class="header-section-number">10.3</span> Future Challenges</a>
+  <ul class="collapse">
+  <li><a href="#educating-the-data-ecosystem" id="toc-educating-the-data-ecosystem" class="nav-link" data-scroll-target="#educating-the-data-ecosystem"><span class="header-section-number">10.3.1</span> Educating the data ecosystem</a></li>
+  <li><a href="#tiered-access" id="toc-tiered-access" class="nav-link" data-scroll-target="#tiered-access"><span class="header-section-number">10.3.2</span> Tiered Access</a></li>
+  </ul></li>
+  <li><a href="#final-presentation" id="toc-final-presentation" class="nav-link" data-scroll-target="#final-presentation"><span class="header-section-number">10.4</span> Final Presentation</a>
+  <ul class="collapse">
+  <li><a href="#prepare-to-present" id="toc-prepare-to-present" class="nav-link" data-scroll-target="#prepare-to-present"><span class="header-section-number">10.4.1</span> Prepare to present!</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -307,27 +344,349 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-data-termination" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-data-termination-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="www/images/data-lifecycle-termination.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%">
+<img src="www/images/data-lifecycle-termination.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-termination-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.1: A data lifecycle diagram highlighting the ‘Data destruction and archival’ phase in red, with all other phases faded out. This stage refers to disposing or archiving data that is no longer needed.
 </figcaption>
 </figure>
 </div>
-<section id="this-part-of-the-course-is-still-under-construction-proceed-with-caution" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="this-part-of-the-course-is-still-under-construction-proceed-with-caution"><span class="header-section-number">10.1</span> This part of the course is still under construction! Proceed with caution!</h2>
-<div id="fig-under-construction" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<p>For this week, we will learn the importance of destroying or terminating data along with future challenges.</p>
+<section id="quick-recap-on-week-5" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="quick-recap-on-week-5"><span class="header-section-number">10.1</span> Quick recap on week 5</h2>
+<section id="data-privacy-laws-in-the-united-states-of-america" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="data-privacy-laws-in-the-united-states-of-america"><span class="header-section-number">10.1.1</span> Data privacy laws in the United States of America</h3>
+<p>The laws governing data collection and dissemination are limited to specific federal agencies (e.g., U.S. Census Bureau) or specific data types (e.g., education).</p>
+<p>The California Consumer Privacy Act (CCPA) gives consumers more control over the personal information that businesses collect about them, with accompanying regulations that provide guidance on how to implement the law. In November 2020, California voters approved Proposition 24, the California Privacy Rights Act, which amended the CCPA and added additional privacy protections that took effect on January 1, 2023.</p>
+</section>
+<section id="identifying-the-technical-and-policy-solutions" class="level3" data-number="10.1.2">
+<h3 data-number="10.1.2" class="anchored" data-anchor-id="identifying-the-technical-and-policy-solutions"><span class="header-section-number">10.1.2</span> Identifying the technical and policy solutions</h3>
+<section id="decision-matrix" class="level4">
+<h4 class="anchored" data-anchor-id="decision-matrix">Decision matrix</h4>
+<div id="fig-tech-policy" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-under-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="www/images/under-construction.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+<div aria-describedby="fig-tech-policy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_tech-policy-chart.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-under-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10.2: Webpage under construction!
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tech-policy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.2: Model decision matrix of disclosure-protection strategies given potential disclosure harms and data usefulness from <span class="citation" data-cites="national2024toward">Reiter et al. (<a href="references.html#ref-national2024toward" role="doc-biblioref">2024</a>)</span>.
 </figcaption>
 </figure>
 </div>
+</section>
+<section id="aspirational-equitable-statistical-data-privacy-workflow" class="level4">
+<h4 class="anchored" data-anchor-id="aspirational-equitable-statistical-data-privacy-workflow">Aspirational equitable statistical data privacy workflow</h4>
+<div id="fig-aspirational" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-aspirational-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_aspirational-workflow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aspirational-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.3: A visual representation of the aspirational equitable statistical data privacy workflow from <span class="citation" data-cites="bowen2023no">Bowen and Snoke (<a href="references.html#ref-bowen2023no" role="doc-biblioref">2023</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="a-framework-for-managing-disclosure-risks-in-blended-data" class="level4">
+<h4 class="anchored" data-anchor-id="a-framework-for-managing-disclosure-risks-in-blended-data">A Framework for Managing Disclosure Risks in Blended Data</h4>
+<ol type="1">
+<li><p>Determine auspice and purpose of the blended data project.</p>
+<ol type="a">
+<li>What are the anticipated final products of data blending?</li>
+<li>What are potential downstream uses of blended data?</li>
+<li>What are potential considerations for disclosure risks and harms, and data usefulness?</li>
+</ol></li>
+<li><p>Determine ingredient data files.</p>
+<ol type="a">
+<li>What data sources are available to accomplish blending, and what are the interests of data holders?</li>
+<li>What steps can be taken to reduce disclosure risks and enhance usefulness when compiling ingredient files?</li>
+</ol></li>
+<li><p>Obtain access to ingredient data files.</p>
+<ol type="a">
+<li>What are the disclosure risks associated with procuring ingredient data?</li>
+<li>What are the disclosure risk/usefulness trade-offs in the plan for accessing ingredient files?</li>
+</ol></li>
+<li><p>Blend ingredient data files.</p>
+<ol type="a">
+<li>When blending requires linking records from ingredient files, what linkage strategies can be used?</li>
+<li>Are resultant blended data sufficiently useful to meet the blending objective?</li>
+</ol></li>
+<li><p>Select approaches that meet the end objective of data blending.</p>
+<ol type="a">
+<li>What are the best-available scientific methods for disclosure limitation to accomplish the blended data objective, and are sufficient resources available to implement those methods?</li>
+<li>How can stakeholders be engaged in the decision-making process?</li>
+<li>What is the mitigation plan for confidentiality breaches?</li>
+</ol></li>
+<li><p>Develop and execute a maintenance plan.</p>
+<ol type="a">
+<li>How will agencies track data provenance and update files when beneficial?</li>
+<li>What is the decision-making process for continuing access to or sunsetting the blended data product, and how do participating agencies contribute to those decisions?</li>
+<li>How will agencies communicate decisions about disclosure management policies with stakeholders?</li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="types-of-dissemination" class="level3" data-number="10.1.3">
+<h3 data-number="10.1.3" class="anchored" data-anchor-id="types-of-dissemination"><span class="header-section-number">10.1.3</span> Types of dissemination</h3>
+<div id="fig-aspirational" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-aspirational-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_elevate-pyramid.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aspirational-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.4: The “Complexity Pyramid” from <span class="citation" data-cites="schwabish2020elevate">Schwabish (<a href="references.html#ref-schwabish2020elevate" role="doc-biblioref">2020</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-visualizations" class="level3" data-number="10.1.4">
+<h3 data-number="10.1.4" class="anchored" data-anchor-id="data-visualizations"><span class="header-section-number">10.1.4</span> Data visualizations</h3>
+<p>Similar to outlining a presentation, don’t race to the computer. Start with paper and pen (or color pencils/markers!), chalkboard and chalk, etc. to sketch out your data visualization.</p>
+<ul>
+<li>Show the data</li>
+<li>Reduce the clutter</li>
+<li>Integrate the graphics and text</li>
+<li>Avoid Speghetti chart</li>
+<li>Start with gray</li>
+</ul>
+</section>
+<section id="week-6-assignment" class="level3" data-number="10.1.5">
+<h3 data-number="10.1.5" class="anchored" data-anchor-id="week-6-assignment"><span class="header-section-number">10.1.5</span> Week 6 Assignment</h3>
+<section id="read" class="level4">
+<h4 class="anchored" data-anchor-id="read">Read</h4>
+<ul>
+<li>Chapter 7: What Is the Future of Data Privacy?</li>
+</ul>
+</section>
+<section id="optional-additional-read" class="level4">
+<h4 class="anchored" data-anchor-id="optional-additional-read">Optional additional read</h4>
+<ul>
+<li><a href="https://www.aeaweb.org/articles?id=10.1257/jep.38.2.181">Government Data of the People, by the People, for the People: Navigating Citizen Privacy Concerns</a>.</li>
+</ul>
+</section>
+<section id="write-600-to-1200-words" class="level4">
+<h4 class="anchored" data-anchor-id="write-600-to-1200-words">Write (600 to 1200 words)</h4>
+<ol type="1">
+<li><p>Throughout this course, we’ve explored the intersections of data privacy, security, and ethics. Drawing on the topic you picked for your presentation (or can be an example from course readings and discussions so far), respond to the following prompts:</p>
+<ul>
+<li>What data did the AI system, algorithm, or example you selected use to shape what was shown to you (e.g., content, recommendations, decisions)?</li>
+<li>Does this scenario apply broadly to the general population, or primarily to a specific subgroup? Explain your reasoning.</li>
+<li>Could the example you discussed be repurposed or modified to serve a public good? If so, what changes would be necessary?</li>
+<li>Would those changes raise new considerations around security, privacy, or ethics? If yes, describe them.</li>
+</ul></li>
+</ol>
+<p>OR</p>
+<ol start="2" type="1">
+<li><p>An academic reached out to me to share that he’s been experimenting with an AI-generated podcast based on technical articles from the Journal of Economic Perspectives, the assigned article reading, so he can learn about economics while walking. Based on your readings and listening to the AI generated podcast:</p>
+<ul>
+<li><p>How did your understanding of the article differ between reading it and listening to the AI‑generated podcast? Did one format make the ideas clearer or raise new questions for you?</p></li>
+<li><p>What do you see as the potential benefits and drawbacks of using AI‑generated podcasts (or similar tools) to engage with complex topics like privacy and administrative data?</p></li>
+<li><p>If more academic content were delivered through AI‑generated audio, what ethical or quality concerns should educators and researchers keep in mind?</p></li>
+</ul></li>
+</ol>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span style="color:#1696d2;">Class Activity 1</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>From your assignment and personal experience, choose and respond to one of the following questions:</p>
+<ol type="1">
+<li><p>Reflect on the system or example you analyzed (e.g., a recommendation engine, chatbot, or the AI-generated podcast). What aspects of its behavior or output surprised you? What assumptions about your identity, preferences, or behavior might have influenced those outcomes? Were those assumptions accurate, or did they raise concerns?</p></li>
+<li><p>As data analysts, we often rely on tools that enhance efficiency—such as AI-generated summaries or automated data cleaning. Think of a time when such a tool made your work easier. What trade-offs did you observe in terms of transparency, control, or ethical responsibility? What potential privacy or security concerns might arise from using these tools?</p></li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="data-destruction-or-termination-or-archival" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="data-destruction-or-termination-or-archival"><span class="header-section-number">10.2</span> Data destruction or termination (or archival)</h2>
+<p>Upon project or dissemination completion, it is important to consider the appropriate handling of all copies of confidential data. This may involve physical destruction or, where permitted, archival, in accordance with legal requirements (e.g., data use agreements) or agreements with data subjects (e.g., informed consent).</p>
+<p>In cases where data archiving is warranted, all direct identifiers should be removed. A name-code index, if necessary, must be stored separately in a secure location to maintain confidentiality.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Contract for data destruction
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For data analysis projects involving confidential information—such as Personally Identifiable Information (PII), Personal Health Information (PHI), or financial data, there is often a requirement to destroy the data within a specified period after the project concludes. These requirements are typically outlined in data use agreements, contracts, or institutional policies.</p>
+<p>Data destruction must follow approved methods, especially for data stored in readily accessible formats (e.g., hard drives, cloud storage). Some agreements may require formal documentation of the destruction process. In such cases, organizations may issue a Certificate of Destruction or a similar verification document.</p>
+<p>Additionally, certain contracts may stipulate that the destruction process be witnessed or notarized, requiring a third party to confirm that the data has been securely and irreversibly destroyed.</p>
+</div>
+</div>
+<p>Most private companies and other entities have their own policies for data disposal. Generally, acceptable methods fall into two categories: logical and physical.</p>
+<section id="logical" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="logical"><span class="header-section-number">10.2.1</span> Logical</h3>
+<p>Logical destruction involves erasing data with multiple read/write commands, such as those performed by Pretty Good Privacy<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> File Shredder or by emptying the file system’s recycle bin.</p>
+</section>
+<section id="physical" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="physical"><span class="header-section-number">10.2.2</span> Physical</h3>
+<p>Physical disposal involves destroying the data media itself, such as shredding paper documents and CDs/DVDs, degaussing magnetic media, or drilling holes through hard drives.</p>
+<div id="fig-smash-hammer" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-smash-hammer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/06_smash-hammer.gif" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-smash-hammer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.5: Ron Swanson from the TV Show, “Parks and Recreation,” smashing a phone with a hammer on his work desk.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-destruction-types" class="level3" data-number="10.2.3">
+<h3 data-number="10.2.3" class="anchored" data-anchor-id="data-destruction-types"><span class="header-section-number">10.2.3</span> Data destruction types</h3>
+<p>The <a href="https://csrc.nist.gov/pubs/sp/800/88/r1/final">National Institute of Standards and Technology 800-88 standard Guidelines for Media Sanitization</a> defines three primary methods for data destruction:</p>
+<ol type="1">
+<li><p><strong>Clear</strong>– Uses logical techniques to sanitize data in all user-addressable storage locations, protecting against simple, non-invasive data recovery methods. This is typically done using standard read/write commands, such as overwriting data with new values or using a factory reset option (when overwriting is not supported).</p></li>
+<li><p><strong>Purge</strong> – Applies physical or logical techniques that make data recovery infeasible, even with advanced laboratory methods.</p></li>
+<li><p><strong>Destroy</strong> – Physically renders media unusable and ensures that data recovery is infeasible using state-of-the-art techniques.</p></li>
+</ol>
+<p>The <a href="https://www.dami.army.pentagon.mil/site/IndustSec/docs/DoD%20522022-m.pdf">Department of Defense 5520.22 M standard</a> specifies a minimum of three overwrite passes to securely erase electronic data:</p>
+<ul>
+<li>Pass 1: Overwrite with all zeroes</li>
+<li>Pass 2: Overwrite with all ones</li>
+<li>Pass 3: Overwrite with random data</li>
+</ul>
+<p>This multi-pass method ensures that data cannot be recovered, even with physical access to the storage medium.</p>
+</section>
+<section id="ethics-and-equity-considerations" class="level3" data-number="10.2.4">
+<h3 data-number="10.2.4" class="anchored" data-anchor-id="ethics-and-equity-considerations"><span class="header-section-number">10.2.4</span> Ethics and equity considerations</h3>
+<p>In addition to security and privacy considerations, we should think about the ethical and equity reasons for destroying data. Some points to consider are:</p>
+<ul>
+<li>How should researchers who collect data inform participants about data destruction policies without impacting the data collection process?
+<ul>
+<li>Consider the transparency aspect.</li>
+</ul></li>
+<li>Are there situations where destroying data could be unethical?
+<ul>
+<li>Consider scenarios where data could be valuable for future research versus scenarios where its existence might cause harm.</li>
+</ul></li>
+<li>How might data destruction disproportionately impact marginalized or vulnerable populations?
+<ul>
+<li>Consider how to engage stakeholders.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="future-challenges" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="future-challenges"><span class="header-section-number">10.3</span> Future Challenges</h2>
+<p>Data curators, stakeholders, privacy experts, and data users all face ongoing challenges in expanding the use of government data—particularly when linking administrative and survey data. Unless data privacy can be robustly protected, access to such data is likely to remain limited or restricted entirely.</p>
+<section id="educating-the-data-ecosystem" class="level3" data-number="10.3.1">
+<h3 data-number="10.3.1" class="anchored" data-anchor-id="educating-the-data-ecosystem"><span class="header-section-number">10.3.1</span> Educating the data ecosystem</h3>
+<p>Little is known about the expectations and needs of various entities within the data ecosystem who do not specialize in privacy, security, and ethics. As an example, <span class="citation" data-cites="williams2023disclosing">Williams et al. (<a href="references.html#ref-williams2023disclosing" role="doc-biblioref">2023</a>)</span> conducted a convenience sample survey of economists from the American Economic Association on their baseline knowledge about differential/formal privacy (the concept used on the 2020 Census), attitudes toward differentially/formally private frameworks, types of statistical methods that are most useful to economists, and how the injection of noise under formal privacy would affect the value of the queries to the user. At a high level, the survey found that most economists are unfamiliar with formal privacy and differential privacy (and if they know about it, they are skeptical). Instead, economists rely on simple methods for analyzing cross-sectional administrative data but have a growing need to conduct more sophisticated research designs, and economists have low tolerance for errors, which is incompatible with existing formal privacy definitions and methods.</p>
+<p>The results from the <span class="citation" data-cites="williams2023disclosing">Williams et al. (<a href="references.html#ref-williams2023disclosing" role="doc-biblioref">2023</a>)</span> survey are not surprising. In general, traditional PETs are more intuitive and easier to explain, such as why data curators should remove unique records. In contrast, formally private methods are more complex and lack an intuitive definition. Although there has been an explosion of new communication materials to explain formal privacy and other data privacy concepts,<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> such efforts are trying to fill a chasm and we are not even close.</p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span style="color:#1696d2;">Class Activity 2</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>What educational or communication materials would you recommend for learning about machine learning or AI? Could you recommend multiple resources tailored to different audiences—considering factors like area of focus, technical background, or preferred learning format (e.g., videos, articles, interactive tools)?</p></li>
+<li><p>Beyond this course and the assigned materials, what additional resources would you recommend for understanding security, privacy, and ethics—especially in the context of safe access to administrative and survey data? Could you recommend multiple resources tailored to different audiences—considering factors like area of focus, technical background, or preferred learning format (e.g., videos, articles, interactive tools)?</p></li>
+<li><p>After considering your answers to the questions above, what similarities or differences do you notice in the types of resources you recommended?</p></li>
+</ol>
+</div>
+</div>
+<p>One way to address the shortage of educational and communication materials on security, privacy, and ethics throughout the data lifecycle is to teach the next generation and grow the field. However, most higher education institutions lack dedicated courses on the topic. When the topic is taught, it’s typically at the graduate level within computer science departments. Some undergraduate professors may introduce these concepts in seminars, but standalone courses are rare. As a result, individuals from other technical disciplines, such as economics,are often underrepresented.</p>
+<p>To bridge this gap, departments beyond computer science should consider offering their own courses on PETs or integrating these topics into existing curricula. In doing so, instructors can encourage students to explore the legal, social, and ethical dimensions of data privacy, including principles of data guardianship, custodianship, and permissions <span class="citation" data-cites="williams2023promise">(<a href="references.html#ref-williams2023promise" role="doc-biblioref">Williams and Bowen 2023</a>)</span>.</p>
+</section>
+<section id="tiered-access" class="level3" data-number="10.3.2">
+<h3 data-number="10.3.2" class="anchored" data-anchor-id="tiered-access"><span class="header-section-number">10.3.2</span> Tiered Access</h3>
+<p>In a <a href="https://www.slowboring.com/p/the-economic-research-policymakers">blog post</a>, former U.S. Under Secretary for Economic Affairs, Jed Kolko, identified three types of research most useful to public policymakers:</p>
+<ul>
+<li>Development of new economic measures</li>
+<li>Broad literature reviews</li>
+<li>Quantitative or simulated policy analyses</li>
+</ul>
+<p>The third category often relies on access to high-quality data—either through public-use files or secure/restricted environments. The value of the latter is underscored by <span class="citation" data-cites="nagaraj2024does">(<a href="references.html#ref-nagaraj2024does" role="doc-biblioref">Nagaraj and Tranchero 2024</a>)</span>, who found that research using confidential microdata from the Federal Statistical Research Data Centers (FSRDCs) is more likely to be cited in policy documents and results in 24% more publications in top-tier journals annually.</p>
+<p>As we learned earlier in the course, people interested in obtaining direct access to confidential data face several barriers:</p>
+<ul>
+<li>Eligibility restrictions (e.g., U.S. citizenship)</li>
+<li>Limited geographic access to FSRDCs</li>
+<li>Lengthy approval processes for certain datasets</li>
+</ul>
+<p>These challenges can prevent researchers, analysts, and policymakers from using data that could inform critical decisions.</p>
+<div id="fig-nsds" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-nsds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/06_nsds.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nsds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.6: Timeline of major U.S. initiatives advancing evidence-based policymaking and data governance, beginning with the 2017 Commission on Evidence-Based Policymaking, followed by the 2018 Foundations for Evidence-Based Policymaking Act, the 2020–2022 Advisory Committee on Data for Evidence Building, the 2021 launch of America’s DataHub Consortium, and the 2022–2026 National Secure Data Service Demonstration Projects authorized by the CHIPS and Science Act.
+</figcaption>
+</figure>
+</div>
+<p>To address this, experts have proposed tiered access models — offering options between fully public-use files and highly restricted secure data. Created under the Foundations for <a href="https://www.congress.gov/bill/115th-congress/house-bill/4174">Evidence-Based Policymaking Act of 2018</a>, the <a href="https://ncses.nsf.gov/initiatives/national-secure-data-service-demo">National Secure Data Service (NSDS)</a> is designed to improve access to administrative data across all levels of government. Its goals include:</p>
+<ul>
+<li>Providing secure, privacy-preserving data access</li>
+<li>Supporting data linkage across agencies</li>
+<li>Offering shared services like a data concierge and secure tools</li>
+</ul>
+<p>To test this vision, the National Center for Science and Engineering Statistics has launched <a href="https://www.americasdatahub.org/awards/">NSDS Demonstration Projects</a>, which explore practical solutions to technical and policy challenges in building a future NSDS.</p>
+</section>
+</section>
+<section id="final-presentation" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="final-presentation"><span class="header-section-number">10.4</span> Final Presentation</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+DEADLINE
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Due August 11, 4 pm EDT (at the time of class)</p>
+</div>
+</div>
+<section id="prepare-to-present" class="level3" data-number="10.4.1">
+<h3 data-number="10.4.1" class="anchored" data-anchor-id="prepare-to-present"><span class="header-section-number">10.4.1</span> Prepare to present!</h3>
+<p>5-minute presentation/pitch. <a href="https://clairemckaybowen.github.io/dan607/04_better-presentations.html">Details discussed in week 4 (July 14) class</a>.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-bowen2023no" class="csl-entry" role="listitem">
+Bowen, Claire McKay, and Joshua Snoke. 2023. <span>“<span>Do No Harm Guide: Applying Equity Awareness In Data Privacy Methods</span>.”</span> <em>Urban Institute</em>. <a href="https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-privacy-methods">https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-privacy-methods</a>.
+</div>
+<div id="ref-nagaraj2024does" class="csl-entry" role="listitem">
+Nagaraj, Abhishek, and Matteo Tranchero. 2024. <em>How Does Data Access Shape Science?: The Impact of Federal Statistical Research Data Centers on Economics Research</em>. National Bureau of Economic Research.
+</div>
+<div id="ref-national2024toward" class="csl-entry" role="listitem">
+Reiter, Jerry, Claire McKay Bowen, Aloni Cohen, Diana Farrell, Robert Goerge M., Nicholas Hart, Jagadish Hosagrahar V., et al. 2024. <span>“Toward a 21st Century National Data Infrastructure: Managing Privacy and Confidentiality Risks with Blended Data.”</span> <em>National Academies of Sciences, Engineering, and Medicine</em>.
+</div>
+<div id="ref-schwabish2020elevate" class="csl-entry" role="listitem">
+Schwabish, Jonathan A. 2020. <em>Elevate the Debate: A Multilayered Approach to Communicating Your Research</em>. John Wiley &amp; Sons.
+</div>
+<div id="ref-williams2023promise" class="csl-entry" role="listitem">
+Williams, Aaron R, and Claire McKay Bowen. 2023. <span>“The Promise and Limitations of Formal Privacy.”</span> <em>Wiley Interdisciplinary Reviews: Computational Statistics</em> 15 (6): e1615.
+</div>
+<div id="ref-williams2023disclosing" class="csl-entry" role="listitem">
+Williams, Aaron R, Joshua Snoke, Claire McKay Bowen, and Andrés F Barrientos. 2023. <span>“Disclosing Economists’ Privacy Perspectives: A Survey of American Economic Association Members on Differential Privacy and Data Fitness for Use Standards.”</span> In <em>Data Privacy Protection and the Conduct of Applied Research: Methods Approaches and Their Consequences NBER Conference, Cambridge, MA, May</em>. Vol. 4.
+</div>
+</div>
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>“Pretty Good Privacy is an encryption program that provides cryptographic privacy and authentication for data communication.” from https://en.wikipedia.org/wiki/Pretty_Good_Privacy<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>One of my favorites is a video created by minutephysics for the US Census Bureau, available at “<a href="https://www.youtube.com/watch?v=pT19VwBAqKA">Protecting Privacy with MATH (Collab with the Census)</a>,” (accessed on June 27, 2024).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -755,8 +1114,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./06_future.html" class="pagination-link" aria-label="Future Challenges">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Future Challenges</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./07_final-presentations.html" class="pagination-link" aria-label="Final Presentations">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Final Presentations</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

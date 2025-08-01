@@ -8,7 +8,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-![A data lifecycle diagram highlighting the 'Data destruction and archival' phase in red, with all other phases faded out. This stage refers to disposing or archiving data that is no longer needed.](www/images/data-lifecycle-termination.png){#fig-data-termination fig-align="center" width=60%}
+![A data lifecycle diagram highlighting the 'Data destruction and archival' phase in red, with all other phases faded out. This stage refers to disposing or archiving data that is no longer needed.](www/images/data-lifecycle-termination.png){#fig-data-termination fig-align="center" width=100%}
 
 ```{r}
 #| echo: false
@@ -17,6 +17,252 @@ exercise_number <- 1
 
 ```
 
-## This part of the course is still under construction! Proceed with caution!
+For this week, we will learn the importance of destroying or terminating data along with future challenges.
 
-![Webpage under construction!](www/images/under-construction.jpg){#fig-under-construction fig-align="center" width=80%}
+## Quick recap on week 5
+
+### Data privacy laws in the United States of America
+
+The laws governing data collection and dissemination are limited to specific federal agencies (e.g., U.S. Census Bureau) or specific data types (e.g., education).
+
+The California Consumer Privacy Act (CCPA) gives consumers more control over the personal information that businesses collect about them, with accompanying regulations that provide guidance on how to implement the law. In November 2020, California voters approved Proposition 24, the California Privacy Rights Act, which amended the CCPA and added additional privacy protections that took effect on January 1, 2023.
+
+### Identifying the technical and policy solutions
+
+#### Decision matrix
+
+![Model decision matrix of disclosure-protection strategies given potential disclosure harms and data usefulness from @national2024toward.](www/images/05_tech-policy-chart.png){#fig-tech-policy fig-align="center" width=100%}
+
+#### Aspirational equitable statistical data privacy workflow
+
+![A visual representation of the aspirational equitable statistical data privacy workflow from @bowen2023no.](www/images/05_aspirational-workflow.png){#fig-aspirational fig-align="center" width=100%}
+
+#### A Framework for Managing Disclosure Risks in Blended Data
+
+  1. Determine auspice and purpose of the blended data project.
+  
+      a. What are the anticipated final products of data blending?
+      b. What are potential downstream uses of blended data?
+      c. What are potential considerations for disclosure risks and harms, and data usefulness?
+    
+  2. Determine ingredient data files.
+  
+      a. What data sources are available to accomplish blending, and what are the interests of data holders?
+      b. What steps can be taken to reduce disclosure risks and enhance usefulness when compiling ingredient files?
+    
+  3. Obtain access to ingredient data files.
+  
+      a. What are the disclosure risks associated with procuring ingredient data?
+      b. What are the disclosure risk/usefulness trade-offs in the plan for accessing ingredient files?
+    
+  4. Blend ingredient data files.
+  
+      a. When blending requires linking records from ingredient files, what linkage strategies can be used?
+      b. Are resultant blended data sufficiently useful to meet the blending objective?
+    
+  5. Select approaches that meet the end objective of data blending.
+  
+      a. What are the best-available scientific methods for disclosure limitation to accomplish the blended data objective, and are sufficient resources available to implement those methods?
+      b. How can stakeholders be engaged in the decision-making process?
+      c. What is the mitigation plan for confidentiality breaches?
+    
+  6. Develop and execute a maintenance plan.
+  
+      a. How will agencies track data provenance and update files when beneficial?
+      b. What is the decision-making process for continuing access to or sunsetting the blended data product, and how do participating agencies contribute to those decisions?
+      c. How will agencies communicate decisions about disclosure management policies with stakeholders?
+
+### Types of dissemination
+
+![The "Complexity Pyramid" from @schwabish2020elevate.](www/images/05_elevate-pyramid.png){#fig-aspirational fig-align="center" width=100%}
+
+### Data visualizations
+
+Similar to outlining a presentation, don't race to the computer. Start with paper and pen (or color pencils/markers!), chalkboard and chalk, etc. to sketch out your data visualization.
+
+- Show the data
+- Reduce the clutter
+- Integrate the graphics and text
+- Avoid Speghetti chart
+- Start with gray
+
+### Week 6 Assignment
+
+#### Read
+
+- Chapter 7: What Is the Future of Data Privacy?
+
+#### Optional additional read
+
+- [Government Data of the People, by the People, for the People: Navigating Citizen Privacy Concerns](https://www.aeaweb.org/articles?id=10.1257/jep.38.2.181).
+
+#### Write (600 to 1200 words)
+
+1. Throughout this course, we’ve explored the intersections of data privacy, security, and ethics. Drawing on the topic you picked for your presentation (or can be an example from course readings and discussions so far), respond to the following prompts:
+
+    - What data did the AI system, algorithm, or example you selected use to shape what was shown to you (e.g., content, recommendations, decisions)?
+    - Does this scenario apply broadly to the general population, or primarily to a specific subgroup? Explain your reasoning.
+    - Could the example you discussed be repurposed or modified to serve a public good? If so, what changes would be necessary?
+    - Would those changes raise new considerations around security, privacy, or ethics? If yes, describe them.
+  
+OR
+
+2. An academic reached out to me to share that he's been experimenting with an AI-generated podcast based on technical articles from the Journal of Economic Perspectives, the assigned article reading, so he can learn about economics while walking. Based on your readings and listening to the AI generated podcast:
+
+    - How did your understanding of the article differ between reading it and listening to the AI‑generated podcast? Did one format make the ideas clearer or raise new questions for you?
+    
+    - What do you see as the potential benefits and drawbacks of using AI‑generated podcasts (or similar tools) to engage with complex topics like privacy and administrative data?
+    
+    - If more academic content were delivered through AI‑generated audio, what ethical or quality concerns should educators and researchers keep in mind?
+
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+From your assignment and personal experience, choose and respond to one of the following questions:
+
+1. Reflect on the system or example you analyzed (e.g., a recommendation engine, chatbot, or the AI-generated podcast). What aspects of its behavior or output surprised you? What assumptions about your identity, preferences, or behavior might have influenced those outcomes? Were those assumptions accurate, or did they raise concerns?
+
+2. As data analysts, we often rely on tools that enhance efficiency—such as AI-generated summaries or automated data cleaning. Think of a time when such a tool made your work easier. What trade-offs did you observe in terms of transparency, control, or ethical responsibility? What potential privacy or security concerns might arise from using these tools?
+
+:::
+
+
+## Data destruction or termination (or archival)
+
+Upon project or dissemination completion, it is important to consider the appropriate handling of all copies of confidential data. This may involve physical destruction or, where permitted, archival, in accordance with legal requirements (e.g., data use agreements) or agreements with data subjects (e.g., informed consent).
+
+In cases where data archiving is warranted, all direct identifiers should be removed. A name-code index, if necessary, must be stored separately in a secure location to maintain confidentiality.
+
+::: {.callout-important}
+## Contract for data destruction
+
+For data analysis projects involving confidential information—such as Personally Identifiable Information (PII), Personal Health Information (PHI), or financial data, there is often a requirement to destroy the data within a specified period after the project concludes. These requirements are typically outlined in data use agreements, contracts, or institutional policies.
+
+Data destruction must follow approved methods, especially for data stored in readily accessible formats (e.g., hard drives, cloud storage). Some agreements may require formal documentation of the destruction process. In such cases, organizations may issue a Certificate of Destruction or a similar verification document.
+
+Additionally, certain contracts may stipulate that the destruction process be witnessed or notarized, requiring a third party to confirm that the data has been securely and irreversibly destroyed.
+
+:::
+
+Most private companies and other entities have their own policies for data disposal. Generally, acceptable methods fall into two categories: logical and physical.
+
+### Logical
+
+Logical destruction involves erasing data with multiple read/write commands, such as those performed by Pretty Good Privacy[^PGP] File Shredder or by emptying the file system’s recycle bin.
+
+[^PGP]: “Pretty Good Privacy is an encryption program that provides cryptographic privacy and authentication for data communication.” from https://en.wikipedia.org/wiki/Pretty_Good_Privacy
+
+### Physical
+
+Physical disposal involves destroying the data media itself, such as shredding paper documents and CDs/DVDs, degaussing magnetic media, or drilling holes through hard drives.
+
+![Ron Swanson from the TV Show, "Parks and Recreation," smashing a phone with a hammer on his work desk.](www/images/06_smash-hammer.gif){#fig-smash-hammer fig-align="center"}
+
+### Data destruction types
+
+The [National Institute of Standards and Technology 800-88 standard Guidelines for Media Sanitization](https://csrc.nist.gov/pubs/sp/800/88/r1/final) defines three primary methods for data destruction:
+
+1.	**Clear**– Uses logical techniques to sanitize data in all user-addressable storage locations, protecting against simple, non-invasive data recovery methods. This is typically done using standard read/write commands, such as overwriting data with new values or using a factory reset option (when overwriting is not supported).
+
+2.	**Purge** – Applies physical or logical techniques that make data recovery infeasible, even with advanced laboratory methods.
+
+3.	**Destroy** – Physically renders media unusable and ensures that data recovery is infeasible using state-of-the-art techniques.
+
+The [Department of Defense 5520.22 M standard](https://www.dami.army.pentagon.mil/site/IndustSec/docs/DoD%20522022-m.pdf) specifies a minimum of three overwrite passes to securely erase electronic data:
+
+- Pass 1: Overwrite with all zeroes
+- Pass 2: Overwrite with all ones
+- Pass 3: Overwrite with random data
+
+This multi-pass method ensures that data cannot be recovered, even with physical access to the storage medium.
+
+### Ethics and equity considerations
+
+In addition to security and privacy considerations, we should think about the ethical and equity reasons for destroying data. Some points to consider are:
+
+- How should researchers who collect data inform participants about data destruction policies without impacting the data collection process?
+  - Consider the transparency aspect.
+- Are there situations where destroying data could be unethical?
+  - Consider scenarios where data could be valuable for future research versus scenarios where its existence might cause harm.
+- How might data destruction disproportionately impact marginalized or vulnerable populations?
+  - Consider how to engage stakeholders.
+
+## Future Challenges
+
+Data curators, stakeholders, privacy experts, and data users all face ongoing challenges in expanding the use of government data—particularly when linking administrative and survey data. Unless data privacy can be robustly protected, access to such data is likely to remain limited or restricted entirely.
+
+### Educating the data ecosystem 
+
+Little is known about the expectations and needs of various entities within the data ecosystem who do not specialize in privacy, security, and ethics. As an example, @williams2023disclosing conducted a convenience sample survey of economists from the American Economic Association on their baseline knowledge about differential/formal privacy (the concept used on the 2020 Census), attitudes toward differentially/formally private frameworks, types of statistical methods that are most useful to economists, and how the injection of noise under formal privacy would affect the value of the queries to the user. At a high level, the survey found that most economists are unfamiliar with formal privacy and differential privacy (and if they know about it, they are skeptical). Instead, economists rely on simple methods for analyzing cross-sectional administrative data but have a growing need to conduct more sophisticated research designs, and economists have low tolerance for errors, which is incompatible with existing formal privacy definitions and methods.
+
+The results from the @williams2023disclosing survey are not surprising. In general, traditional PETs are more intuitive and easier to explain, such as why data curators should remove unique records. In contrast, formally private methods are more complex and lack an intuitive definition. Although there has been an explosion of new communication materials to explain formal privacy and other data privacy concepts,[^16] such efforts are trying to fill a chasm and we are not even close.
+
+::: callout
+#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
+
+```{r}
+#| echo: false
+
+exercise_number <- exercise_number + 1
+```
+
+1. What educational or communication materials would you recommend for learning about machine learning or AI? Could you recommend multiple resources tailored to different audiences—considering factors like area of focus, technical background, or preferred learning format (e.g., videos, articles, interactive tools)?
+
+2. Beyond this course and the assigned materials, what additional resources would you recommend for understanding security, privacy, and ethics—especially in the context of safe access to administrative and survey data? Could you recommend multiple resources tailored to different audiences—considering factors like area of focus, technical background, or preferred learning format (e.g., videos, articles, interactive tools)?
+
+3. After considering your answers to the questions above, what similarities or differences do you notice in the types of resources you recommended?
+
+:::
+
+[^16]: One of my favorites is a video created by minutephysics for the US Census Bureau, available at “[Protecting Privacy with MATH (Collab with the Census)](https://www.youtube.com/watch?v=pT19VwBAqKA),” (accessed on June 27, 2024).
+
+One way to address the shortage of educational and communication materials on security, privacy, and ethics throughout the data lifecycle is to teach the next generation and grow the field. However, most higher education institutions lack dedicated courses on the topic. When the topic is taught, it’s typically at the graduate level within computer science departments. Some undergraduate professors may introduce these concepts in seminars, but standalone courses are rare. As a result, individuals from other technical disciplines, such as economics,are often underrepresented.
+
+To bridge this gap, departments beyond computer science should consider offering their own courses on PETs or integrating these topics into existing curricula. In doing so, instructors can encourage students to explore the legal, social, and ethical dimensions of data privacy, including principles of data guardianship, custodianship, and permissions [@williams2023promise].
+
+### Tiered Access
+
+In a [blog post](https://www.slowboring.com/p/the-economic-research-policymakers), former U.S. Under Secretary for Economic Affairs, Jed Kolko, identified three types of research most useful to public policymakers:
+
+- Development of new economic measures
+- Broad literature reviews
+- Quantitative or simulated policy analyses
+
+The third category often relies on access to high-quality data—either through public-use files or secure/restricted environments. The value of the latter is underscored by [@nagaraj2024does], who found that research using confidential microdata from the Federal Statistical Research Data Centers (FSRDCs) is more likely to be cited in policy documents and results in 24% more publications in top-tier journals annually.
+
+As we learned earlier in the course, people interested in obtaining direct access to confidential data face several barriers:
+
+- Eligibility restrictions (e.g., U.S. citizenship)
+- Limited geographic access to FSRDCs
+- Lengthy approval processes for certain datasets
+
+These challenges can prevent researchers, analysts, and policymakers from using data that could inform critical decisions.
+
+![Timeline of major U.S. initiatives advancing evidence-based policymaking and data governance, beginning with the 2017 Commission on Evidence-Based Policymaking, followed by the 2018 Foundations for Evidence-Based Policymaking Act, the 2020–2022 Advisory Committee on Data for Evidence Building, the 2021 launch of America’s DataHub Consortium, and the 2022–2026 National Secure Data Service Demonstration Projects authorized by the CHIPS and Science Act.](www/images/06_nsds.png){#fig-nsds fig-align="center"}
+
+To address this, experts have proposed tiered access models — offering options between fully public-use files and highly restricted secure data. Created under the Foundations for [Evidence-Based Policymaking Act of 2018](https://www.congress.gov/bill/115th-congress/house-bill/4174), the [National Secure Data Service (NSDS)](https://ncses.nsf.gov/initiatives/national-secure-data-service-demo) is designed to improve access to administrative data across all levels of government. Its goals include:
+
+- Providing secure, privacy-preserving data access
+- Supporting data linkage across agencies
+- Offering shared services like a data concierge and secure tools
+
+To test this vision, the National Center for Science and Engineering Statistics has launched [NSDS Demonstration Projects](https://www.americasdatahub.org/awards/), which explore practical solutions to technical and policy challenges in building a future NSDS.
+
+## Final Presentation
+
+::: {.callout-important}
+## DEADLINE
+Due August 11, 4 pm EDT (at the time of class)
+::: 
+
+
+### Prepare to present!
+
+5-minute presentation/pitch. [Details discussed in week 4 (July 14) class](https://clairemckaybowen.github.io/dan607/04_better-presentations.html).
