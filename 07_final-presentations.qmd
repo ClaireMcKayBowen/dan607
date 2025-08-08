@@ -30,28 +30,27 @@ The presentation topic can be anything you learned in this course. It can be on 
 
 Student Last Name | Target Audience | Presentation Topic
 ----- | ----- | -----   
-Androlewicz | family-friends | 
-Boyar | family-friends | 
+Androlewicz | family-friends | Difference between cookies in the United States and European Union
+Boyar | family-friends | Delta Airlines claiming it doesn't use AI to price airline tickets individually
 Choate | family-friends | Geopolitical impacts and privacy risks of transmitting individual US data across borders
-Clayman | family-friends | 	
-Cousins | classmates-coworkers | 
+Clayman | family-friends | Data privacy with smart devices
+Cousins | classmates-coworkers | Incognito Isn’t Invisible: What Private Browsing Actually Hides
 Daversa | local-government-policymaker | Importance of GIS data for decision-making and the security aspects of collecting better GIS data 
-Dowdy | classmates-coworkers | 
+Dowdy | classmates-coworkers | TikTok: the good bad and ugly (algorithm, data privacy, and soread information)
 Duhil de Benaze | classmates-coworkers| How human behaviors, such as phishing, weak passwords, and social engineering create vulnerabilities in cybersecurity systems
-Espinal-Guzman | family-friends | 	
+Espinal-Guzman | family-friends | Your data is everywhere, what you didn't know you are sharing
 Gallishaw | local-government-policymaker | Recent work on creating a national privacy law, such as the American Data Privacy and Protection Act proposal and/or the American Privacy Rights Act proposal
 Garratt | funders-media | Protecting relationship data 
 Kim | local-government-policymaker | Privacy and ethical concerns for children on social media
 Morris | funders-media  | Ethics of AI in sports
 Mueller | local-government-policymaker | Environmental issues, water quality data
-O’Brien | family-friends |
-OKeefe | family-friends| Football and concussion injuries and ramifications
+O’Brien | family-friends | National Football League consumer data violation
 Pacheco | classmates-coworkers | Normalization of surveillance in digital and physical spaces and the ethical concerns
-Pushard | local-government-policymaker | 	
+Pushard | local-government-policymaker | How local policymakers in Maine can respond to existing federal data privacy laws—particularly in the context of AI—by developing and implementing targeted education and awareness programs for the state's population.
 Scott | classmates-coworkers | Period tracking apps like Flo and how they use health data
 Thadeio | classmates-coworkers | Security challenges in journalism through the lens of public media data 
 Thorbahn | funders-media | Are phones actually listening to you?
-Washington | funders-media | 
+Washington | funders-media | Is it safe for AI chat bots to handle people's personal information?
 
 
 \* == indicates students swapped target audience.
@@ -117,7 +116,6 @@ Time (EDT) | Student Order
 -- | Gallishaw
 -- | Clayman
 -- | Washington
--- | OKeefe
 -- | O’Brien
 -- | Duhil de Benaze
 -- | Dowdy
