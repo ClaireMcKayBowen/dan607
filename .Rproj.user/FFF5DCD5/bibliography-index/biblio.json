@@ -1112,6 +1112,30 @@
             "title-short": "Disclosing economists’ privacy perspectives",
             "type": "paper-conference",
             "volume": "4"
+        },
+        {
+            "author": [
+                {
+                    "family": "Nagaraj",
+                    "given": "Abhishek"
+                },
+                {
+                    "family": "Tranchero",
+                    "given": "Matteo"
+                }
+            ],
+            "id": "nagaraj2024does",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "publisher": "National Bureau of Economic Research",
+            "title": "How does data access shape science?: The impact of federal statistical research data centers on economics research",
+            "title-short": "How does data access shape science?",
+            "type": "book"
         }
     ],
     "project_biblios": [
