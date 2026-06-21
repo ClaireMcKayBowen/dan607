@@ -8,10 +8,10 @@ book:
   date: today
   chapters:
     - index.qmd
-    # - part: Week 1 - Introduction
-    #   chapters:
-    #     - 00_basics.qmd
-    #     - 01_security-privacy-ethics.qmd
+    - part: Week 1 - Introduction
+      chapters:
+        - 00_basics.qmd
+        - 01_security-privacy-ethics.qmd
     #     
     # - part: Week 2 - Data Collection and Acquisition
     #   chapters: 

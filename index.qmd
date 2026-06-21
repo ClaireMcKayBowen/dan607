@@ -3,7 +3,7 @@
 This Quarto book is the notes for DAN 607: Security, Privacy, and Ethics (+Equity) in the Business Analytics Program at Meehan School of Business within Stonehill College.
 
 ::: callout-important
-## UPDATE FOR 2026 COMING SOON!
+## UPDATE FOR 2026 IN PROGRESS!
 
 I am currently updating my course materials for 2026. As in previous years, I revise the materials to reflect current events and the most up‑to‑date information. However, this year requires significantly more changes than usual. As a result, I have taken down the 2025 materials and placed them on a separate archival website, consistent with how I handled the 2024 materials.
 
@@ -67,3 +67,9 @@ I began teaching this course in the summer of 2022, but I did not start publishi
 ## Acknowledgements
 
 Thank you [Aaron R. Williams](https://www.urban.org/author/aaron-r-williams) for teaching me how to create a Quarto document/book for this course, which is what we use for all our teaching and training materials at the Urban Institute. Check out his Quarto book for his [Data Science for Public Policy](https://awunderground.github.io/data-science-for-public-policy2/) course in the McCourt School of Public Policy at Georgetown University.
+
+Some of the material in this course is adapted from--and has also informed--the [Data Governance and Privacy Training Materials for Data Practitioners](https://ui-research.github.io/dgp-trainings/) developed by my team at the Urban Institute.
+
+Bowen, Claire McKay, Rachel Lamb, Maddie Pickens, Jeremy Seeman, and Aaron R. Williams. 2026. *Data Governance and Privacy Training Materials for Data Practitioners.* Urban Institute. https://ui-research.github.io/dgp-trainings/
+
+## References
