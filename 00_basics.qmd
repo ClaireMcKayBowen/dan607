@@ -1,5 +1,5 @@
 ---
-title: "DAN 607 Basics"
+title: "DAT 607 Basics"
 format: 
   html:
     toc: true
@@ -16,7 +16,7 @@ exercise_number <- 1
 
 ```
 
-This section covers the goals and expectations for the DAN 607 course.
+This section covers the goals and expectations for the DAT 607 course.
 
 ## Goals, grades, and expectations
 

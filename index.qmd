@@ -1,4 +1,4 @@
-# Welcome to DAN 607 - Summer 2026 {.unnumbered}
+# Welcome to DAT 607 - Summer 2026 {.unnumbered}
 
 This Quarto book is the notes for DAN 607: Security, Privacy, and Ethics (+Equity) in the Business Analytics Program at Meehan School of Business within Stonehill College.
 
