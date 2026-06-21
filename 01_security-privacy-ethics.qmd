@@ -676,9 +676,10 @@ Due July 6, at 11:59 PM EDT on Canvas
 
 - Chapter 2: How Did Data Privacy Change Over Time?
 
-### Optional additional read
+### Optional read
 
-- [APDU Guiding Principles for Public Data](https://apdu.org/apdu-guiding-principles-for-public-data/)
+- Part 1 Blog: [Where Do Official Statistics Come From?](https://apdu.org/2025/12/where-do-official-statistics-come-from/)
+- Part 2 Blog: [New Data Sources to Improve Federal Statistics](https://apdu.org/2026/01/new-data-sources-to-improve-federal-statistics/)
 
 ### Write (600 to 1200 words)
 

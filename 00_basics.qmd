@@ -68,3 +68,7 @@ Due June 30, at 4:00 PM EDT (start of class)
 ### Read
 
 - Chapter 1: Why Is Data Privacy Important?
+
+### Optional read
+
+- [APDU Guiding Principles for Public Data](https://apdu.org/apdu-guiding-principles-for-public-data/)
