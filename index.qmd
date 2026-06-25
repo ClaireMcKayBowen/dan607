@@ -1,6 +1,6 @@
 # Welcome to DAT 607 - Summer 2026 {.unnumbered}
 
-This Quarto book is the notes for DAN 607: Security, Privacy, and Ethics (+Equity) in the Business Analytics Program at Meehan School of Business within Stonehill College.
+This Quarto book is the notes for DAT 607: Security, Privacy, and Ethics in the Business Analytics Program at Meehan School of Business within Stonehill College.
 
 ::: callout-important
 ## UPDATE FOR 2026 IN PROGRESS!
@@ -29,17 +29,17 @@ Tuesdays, Second Summer Semester: June 27, 2026 to August 12, 2026
 
 At what point does the sacrifice to our personal information outweigh the public good?
 
-In a world driven by data, data users and researchers frequently leverage personal or confidential data to help policymakers make evidence-based, data-informed decisions, such as improving economic recovery or creating a more efficient COVID-19 vaccine distribution. However, access to confidential data comes with several privacy concerns, especially for underrepresented groups such as those living in rural communities. Striking the right balance is crucial to avoid real disclosure risks that may not be obvious, like stalkers utilizing excessive location data or malicious parties learning sensitive medical information through linkable health or genetic data.
+In a data-driven world, researchers, analysts, and policymakers increasingly rely on personal and confidential data to inform evidence-based decisions. These data can help improve economic recovery efforts, allocate resources during natural disasters, advance public health initiatives, and address complex societal challenges. However, the use of confidential data raises important privacy concerns, particularly for vulnerable and underrepresented populations, including residents of rural communities. The rapid growth of artificial intelligence and increasingly sophisticated data-linkage techniques has further complicated the balance between innovation and privacy. Striking the appropriate balance between data use and privacy protection is essential to prevent harms that may not be immediately apparent, such as stalking enabled by location data, re-identification through linked datasets, or the disclosure of sensitive medical and genetic information.
 
-This course will cover the security, privacy, ethics, and equity considerations the U.S. government and private sector must navigate throughout the data life cycle: data acquisition or collection, data storage, data sharing and transfer, data analysis and dissemination, and data destruction or termination. Specifically, students will understand the legal, social, and ethical ramifications of data security and privacy as well as the concepts behind data guardianship, and custodianship, and data permissions.
+This course examines the security, privacy, and ethical considerations that governments and private organizations must navigate throughout the data life cycle, including data collection, storage, sharing, analysis, dissemination, and destruction. Students will explore the legal, social, and ethical implications of data use and develop an understanding of data stewardship, governance, access controls, responsible data management practices, and emerging issues related to artificial intelligence and automated decision-making.
 
+By the end of the course, students will be able to:
 
-At a high level, the main learning objectives/topic areas of this course are learning the:
+- Explain the importance of data security, privacy, and ethics in research, policymaking, and organizational decision-making.
+- Evaluate privacy-preserving methods and technologies used throughout the data life cycle.
+- Analyze the laws, regulations, and policies that govern the collection, use, and protection of personal information.
+- Assess emerging challenges and societal tradeoffs related to data security, privacy, ethics, and artificial intelligence.
 
-- importance of data security, privacy, and ethics
-- ways experts develop data security, privacy, and ethics frameworks throughout the data life cycle
-- privacy laws governing and protecting people’s information
-- issues that society must consider advancing and improving security, privacy, and ethics
 
 ## Textbook [@bowen2021protecting]
 
@@ -55,7 +55,7 @@ At a high level, the main learning objectives/topic areas of this course are lea
 
 If you use my course materials, please use the following citation:
 
-Bowen, Claire McKay. 2026. *DAN 607 Course Materials.* https://clairemckaybowen.github.io/dan607/
+Bowen, Claire McKay. 2026. *DAT 607 Course Materials.* https://clairemckaybowen.github.io/dan607/
 
 ## Past versions of the course
 

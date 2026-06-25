@@ -2,71 +2,71 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Security, Privacy, and Ethics",
+    "title": "DAT 607: Security, Privacy, and Ethics",
     "section": "",
-    "text": "Welcome to DAN 607 - Summer 2026\nThis Quarto book is the notes for DAN 607: Security, Privacy, and Ethics (+Equity) in the Business Analytics Program at Meehan School of Business within Stonehill College.",
+    "text": "Welcome to DAT 607 - Summer 2026\nThis Quarto book is the notes for DAT 607: Security, Privacy, and Ethics in the Business Analytics Program at Meehan School of Business within Stonehill College.",
     "crumbs": [
-      "Welcome to DAN 607 - Summer 2026"
+      "Welcome to DAT 607 - Summer 2026"
     ]
   },
   {
     "objectID": "index.html#course-meeting-time-edt",
     "href": "index.html#course-meeting-time-edt",
-    "title": "Security, Privacy, and Ethics",
+    "title": "DAT 607: Security, Privacy, and Ethics",
     "section": "Course Meeting Time (EDT)",
     "text": "Course Meeting Time (EDT)\nTuesdays, Second Summer Semester: June 27, 2026 to August 12, 2026\n\nJune 30th, Tuesday, 7:00 PM – to 9:30 PM\nJuly 7th, Tuesday, 7:00 PM – to 9:30 PM\nJuly 14th, Tuesday, 7:00 PM – to 9:30 PM\nJuly 21st, Tuesday, 7:00 PM – to 9:30 PM\nJuly 28th, Tuesday, 7:00 PM – to 9:30 PM\nAugust 4th, Tuesday, 7:00 PM – to 9:30 PM\nAugust 11th, Tuesday, 7:00 PM – to 9:30 PM",
     "crumbs": [
-      "Welcome to DAN 607 - Summer 2026"
+      "Welcome to DAT 607 - Summer 2026"
     ]
   },
   {
     "objectID": "index.html#course-description",
     "href": "index.html#course-description",
-    "title": "Security, Privacy, and Ethics",
+    "title": "DAT 607: Security, Privacy, and Ethics",
     "section": "Course Description",
-    "text": "Course Description\nAt what point does the sacrifice to our personal information outweigh the public good?\nIn a world driven by data, data users and researchers frequently leverage personal or confidential data to help policymakers make evidence-based, data-informed decisions, such as improving economic recovery or creating a more efficient COVID-19 vaccine distribution. However, access to confidential data comes with several privacy concerns, especially for underrepresented groups such as those living in rural communities. Striking the right balance is crucial to avoid real disclosure risks that may not be obvious, like stalkers utilizing excessive location data or malicious parties learning sensitive medical information through linkable health or genetic data.\nThis course will cover the security, privacy, ethics, and equity considerations the U.S. government and private sector must navigate throughout the data life cycle: data acquisition or collection, data storage, data sharing and transfer, data analysis and dissemination, and data destruction or termination. Specifically, students will understand the legal, social, and ethical ramifications of data security and privacy as well as the concepts behind data guardianship, and custodianship, and data permissions.\nAt a high level, the main learning objectives/topic areas of this course are learning the:\n\nimportance of data security, privacy, and ethics\nways experts develop data security, privacy, and ethics frameworks throughout the data life cycle\nprivacy laws governing and protecting people’s information\nissues that society must consider advancing and improving security, privacy, and ethics",
+    "text": "Course Description\nAt what point does the sacrifice to our personal information outweigh the public good?\nIn a data-driven world, researchers, analysts, and policymakers increasingly rely on personal and confidential data to inform evidence-based decisions. These data can help improve economic recovery efforts, allocate resources during natural disasters, advance public health initiatives, and address complex societal challenges. However, the use of confidential data raises important privacy concerns, particularly for vulnerable and underrepresented populations, including residents of rural communities. The rapid growth of artificial intelligence and increasingly sophisticated data-linkage techniques has further complicated the balance between innovation and privacy. Striking the appropriate balance between data use and privacy protection is essential to prevent harms that may not be immediately apparent, such as stalking enabled by location data, re-identification through linked datasets, or the disclosure of sensitive medical and genetic information.\nThis course examines the security, privacy, and ethical considerations that governments and private organizations must navigate throughout the data life cycle, including data collection, storage, sharing, analysis, dissemination, and destruction. Students will explore the legal, social, and ethical implications of data use and develop an understanding of data stewardship, governance, access controls, responsible data management practices, and emerging issues related to artificial intelligence and automated decision-making.\nBy the end of the course, students will be able to:\n\nExplain the importance of data security, privacy, and ethics in research, policymaking, and organizational decision-making.\nEvaluate privacy-preserving methods and technologies used throughout the data life cycle.\nAnalyze the laws, regulations, and policies that govern the collection, use, and protection of personal information.\nAssess emerging challenges and societal tradeoffs related to data security, privacy, ethics, and artificial intelligence.",
     "crumbs": [
-      "Welcome to DAN 607 - Summer 2026"
+      "Welcome to DAT 607 - Summer 2026"
     ]
   },
   {
     "objectID": "index.html#textbook-bowen2021protecting",
     "href": "index.html#textbook-bowen2021protecting",
-    "title": "Security, Privacy, and Ethics",
+    "title": "DAT 607: Security, Privacy, and Ethics",
     "section": "Textbook (Bowen 2021)",
     "text": "Textbook (Bowen 2021)\nTitle: Protecting Your Privacy in a Data-Driven World\nAuthor: Claire McKay Bowen\nPublisher: Routledge\nISBN: 978-0367640743",
     "crumbs": [
-      "Welcome to DAN 607 - Summer 2026"
+      "Welcome to DAT 607 - Summer 2026"
     ]
   },
   {
     "objectID": "index.html#citation",
     "href": "index.html#citation",
-    "title": "Security, Privacy, and Ethics",
+    "title": "DAT 607: Security, Privacy, and Ethics",
     "section": "Citation",
-    "text": "Citation\nIf you use my course materials, please use the following citation:\nBowen, Claire McKay. 2026. DAN 607 Course Materials. https://clairemckaybowen.github.io/dan607/",
+    "text": "Citation\nIf you use my course materials, please use the following citation:\nBowen, Claire McKay. 2026. DAT 607 Course Materials. https://clairemckaybowen.github.io/dan607/",
     "crumbs": [
-      "Welcome to DAN 607 - Summer 2026"
+      "Welcome to DAT 607 - Summer 2026"
     ]
   },
   {
     "objectID": "index.html#past-versions-of-the-course",
     "href": "index.html#past-versions-of-the-course",
-    "title": "Security, Privacy, and Ethics",
+    "title": "DAT 607: Security, Privacy, and Ethics",
     "section": "Past versions of the course",
     "text": "Past versions of the course\nI began teaching this course in the summer of 2022, but I did not start publishing the course materials until the summer of 2024. Below are links to past materials, which serve as an archive reflecting how privacy, security, and ethics continue to evolve in our ever-changing digital world.\n\nSummer of 2025\nSummer of 2024",
     "crumbs": [
-      "Welcome to DAN 607 - Summer 2026"
+      "Welcome to DAT 607 - Summer 2026"
     ]
   },
   {
     "objectID": "index.html#acknowledgements",
     "href": "index.html#acknowledgements",
-    "title": "Security, Privacy, and Ethics",
+    "title": "DAT 607: Security, Privacy, and Ethics",
     "section": "Acknowledgements",
     "text": "Acknowledgements\nThank you Aaron R. Williams for teaching me how to create a Quarto document/book for this course, which is what we use for all our teaching and training materials at the Urban Institute. Check out his Quarto book for his Data Science for Public Policy course in the McCourt School of Public Policy at Georgetown University.\nSome of the material in this course is adapted from–and has also informed–the Data Governance and Privacy Training Materials for Data Practitioners developed by my team at the Urban Institute.\nBowen, Claire McKay, Rachel Lamb, Maddie Pickens, Jeremy Seeman, and Aaron R. Williams. 2026. Data Governance and Privacy Training Materials for Data Practitioners. Urban Institute. https://ui-research.github.io/dgp-trainings/",
     "crumbs": [
-      "Welcome to DAN 607 - Summer 2026"
+      "Welcome to DAT 607 - Summer 2026"
     ]
   },
   {
@@ -138,45 +138,45 @@
   {
     "objectID": "00_basics.html",
     "href": "00_basics.html",
-    "title": "1  DAN 607 Basics",
+    "title": "1  DAT 607 Basics",
     "section": "",
-    "text": "1.1 Goals, grades, and expectations\nThis section covers the goals and expectations for the DAN 607 course.\nThe primary aim is to foster an understanding of privacy, security, and ethics when using data throughout its life cycle (i.e., from collection to termination). Throughout the course, we will explore the significance, historical context, current methodologies, privacy legislation, and forthcoming developments in this field.\nThe course is predominantly conceptual, recognizing that students will possess varying levels of analytical skills.",
+    "text": "1.1 Goals, grades, and expectations\nThis section covers the goals and expectations for the DAT 607 course.\nThe primary aim is to foster an understanding of privacy, security, and ethics when using data throughout its life cycle (i.e., from collection to termination). Throughout the course, we will explore the significance, historical context, current methodologies, privacy legislation, and forthcoming developments in this field.\nThe course is predominantly conceptual, recognizing that students will possess varying levels of analytical skills.",
     "crumbs": [
       "Week 1 - Introduction",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAN 607 Basics</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAT 607 Basics</span>"
     ]
   },
   {
     "objectID": "00_basics.html#goals-grades-and-expectations",
     "href": "00_basics.html#goals-grades-and-expectations",
-    "title": "1  DAN 607 Basics",
+    "title": "1  DAT 607 Basics",
     "section": "",
     "text": "1.1.1 Grade Determination\n\n\n\n\n\n\n\n\nCategory\nWeight\nPoints\n\n\n\n\nReading Assignments & Community Contribution\n25%\n30 points (5 points each week)\n\n\nWeekly Writing Prompts\n50%\n60 points (12 points each week)\n\n\nClass Presentation\n25%\n30 points\n\n\n\n\n\n1.1.2 Assigned Readings & Community Contribution\nThis course is somewhat reading intensive. You should not put off reading until the last minute. Class preparedness is essential to good class discussion. It is disappointing to everyone (and it makes the class boring) if you are not prepared. Readings will be from the required texts. Additional materials, such as videos or short articles, will be posted on the course website and on Canvas.\nI expect students to be actively engaged in discussions, which is why “Community Contributions” accounts for 25% of your grade. You will receive 2.5 points for showing up and an additional 2.5 points for participating in class (for a total of 5 points or full credit for the day). Because this is a virtual course, students are required to keep their cameras on for the entire class session. This ensures the instructor can verify attendance throughout the course. Failure to comply will result in zero points for “Community Contribution” for that day.\n\n\n1.1.3 Weekly Writing Prompts\nThe first writing assignment is due July 6th at 11:59 PM EDT. Since all the assignments are listed ahead of time, you may choose to get a head start on them, but I advise pacing yourself with the class, as you will want the content you read and/or watch to be top of mind for in-class discussions.\nHalf your grade is your writing assignments. Please take your writing assignments seriously. While I will not grade based on writing quality (this is not an English course), I do expect minimal typos, grammar, and mechanics errors. The purpose of the writing assignments is for you to reflect on the content you have learned and see how it applies to the real world, your potential professional work, community, and personal life.\nBy completing the assignment, you will automatically receive 6 points. The remaining 6 points will be awarded based on how well you address the prompt (i.e., answering all questions within the specified parameters), adhere to the word limit (yes, I do check), and produce a coherent essay.\n\n\n1.1.4 Class Presentation\nThe final will be a presentation. We will discuss further details about the presentation during our week 4 class on July 21st. The main reason I have chosen a presentation for your final is that verbal communication is crucial in most professions and is often not taught in courses. Part of our week 4 class will involve learning how to create better presentations and how to present more technical content to a broader audience.",
     "crumbs": [
       "Week 1 - Introduction",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAN 607 Basics</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAT 607 Basics</span>"
     ]
   },
   {
     "objectID": "00_basics.html#missing-class-and-assignment-policy",
     "href": "00_basics.html#missing-class-and-assignment-policy",
-    "title": "1  DAN 607 Basics",
+    "title": "1  DAT 607 Basics",
     "section": "1.2 Missing class and assignment policy",
     "text": "1.2 Missing class and assignment policy\nI will waive either a class or an assignment (not both). If you miss additional classes and/or assignments, you will receive 0 points unless you have a medical emergency or a similar situation. In such cases, please speak with me or email me separately so we can discuss alternatives.\nAdditionally, I will allow late assignments, but they will be worth half of the points. If you were to receive top marks (12 points), you would receive half that instead (6 points). In the professional world, being late can negatively impact your career.\nFor those requesting the class be recorded, I will ask those present if they are okay with recording the session and, if permitted, will upload the video on Canvas. I request that students do not download the video, as this might tempt some to share the recording externally. This act would violate the course’s purpose. If I become aware of such sharing, I will not record future class sessions. This class focuses on security, privacy, ethics, and equity. A student who shares the recording beyond the course violates these principles.",
     "crumbs": [
       "Week 1 - Introduction",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAN 607 Basics</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAT 607 Basics</span>"
     ]
   },
   {
     "objectID": "00_basics.html#week-1-assignment",
     "href": "00_basics.html#week-1-assignment",
-    "title": "1  DAN 607 Basics",
+    "title": "1  DAT 607 Basics",
     "section": "1.3 Week 1 Assignment",
-    "text": "1.3 Week 1 Assignment\n\n\n\n\n\n\nImportantDEADLINE\n\n\n\nDue June 30, at 4:00 PM EDT (start of class)\n\n\n\n1.3.1 Read\n\nChapter 1: Why Is Data Privacy Important?",
+    "text": "1.3 Week 1 Assignment\n\n\n\n\n\n\nImportantDEADLINE\n\n\n\nDue June 30, at 7:00 PM EDT (start of class)\n\n\n\n1.3.1 Read\n\nChapter 1: Why Is Data Privacy Important?\n\n\n\n1.3.2 Optional read\n\nAPDU Guiding Principles for Public Data",
     "crumbs": [
       "Week 1 - Introduction",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAN 607 Basics</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>DAT 607 Basics</span>"
     ]
   },
   {
@@ -259,11 +259,11 @@
   {
     "objectID": "index.html#references",
     "href": "index.html#references",
-    "title": "Security, Privacy, and Ethics",
+    "title": "DAT 607: Security, Privacy, and Ethics",
     "section": "References",
     "text": "References\n\n\n\n\nBowen, Claire McKay. 2021. Protecting Your Privacy in a Data-Driven World. Chapman; Hall/CRC.",
     "crumbs": [
-      "Welcome to DAN 607 - Summer 2026"
+      "Welcome to DAT 607 - Summer 2026"
     ]
   }
 ]
