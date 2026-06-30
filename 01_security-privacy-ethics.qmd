@@ -396,7 +396,7 @@ There are two major categories of data privacy threats:
 
 -   Data privacy is a broad topic, which includes data security, encryption, access to data, etc. We will not be covering privacy breaches from unauthorized access to a database (e.g., hackers).
 
-### Security, Privacy, and Confidentiality
+### Security, Privacy, Confidentiality, and Ethics
 
 ::: callout-tip
 ### Data Security
@@ -431,8 +431,6 @@ When reviewing these definitions, it’s important to note that the terms data p
 
 - Both privacy and confidentiality aim to protect sensitive information and foster trust among the various entities involved in data sharing and access.
 
-### Ethics and Equity
-
 ::: callout-tip
 ## Ethics
 
@@ -451,7 +449,7 @@ Most research institutions and government entities have an Institutional Review 
 exercise_number <- exercise_number + 1
 ```
 
-- Prior to starting this course, how would you have defined data security, privacy, ethics, and equity?
+- Prior to starting this course, how would you have defined data security, privacy, and ethics?
 - How has your definition of these different terms changed since the assignments and these discussions? Why or why not?
 
 :::
