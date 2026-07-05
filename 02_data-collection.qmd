@@ -8,7 +8,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-![A data lifecycle diagram highlighting the 'Data collection and acquisition' phase in blue, with all other phases faded out. This stage refers to designing and obtaining data from various sources.](www/images/data-lifecycle-collection.png){#fig-data-collection fig-align="center" width=100%}
+![A data lifecycle diagram highlighting the 'Data collection and acquisition' phase in blue, with all other phases faded out. This stage refers to designing and obtaining data from various sources.](www/images/02_data-lifecycle-collection.png){#fig-data-collection fig-align="center" width=100%}
 
 ```{r}
 #| echo: false
@@ -30,41 +30,67 @@ We should consider the interactions within this ecosystem and the data life cycl
 ![Key stakeholders in the data ecosystem](www/images/01_stakeholders.png){#fig-stakeholders fig-align="center"}
 
 ::: callout-tip
+
+### Definition: Data adversaries
+
+**Data privacy adversaries** ("adversaries" for short) are individuals who try to collect, extract, or otherwise procure data from a computing system in an inappropriate manner. 
+
+Data privacy adversaries are known by many names, including  *intruders, attackers, hackers, snoopers,* and others. 
+
+1. **Hackers:** adversaries who steal confidential information through unauthorized access.
+2. **Snoopers:** adversaries who reconstruct confidential information from data releases.
+3. **Hoarders:** stewards who collect data but don't release the data even if respondents want the information releasesd.
+
+:::
+
+::: callout-tip
 ### Data Security
 
-**Data Security** is the "...science of methods of protecting computer data and communication systems that apply various types of controls such as cryptography, access control, information flow paths and inference control, including backup and recover" [@denning1982cryptography].
+**Data Security** is a condition that results from the establishment and maintenance of protective measures that enable an organization to perform its mission or critical functions despite risks posed by threats to its use of systems. Protective measures may involve a combination of deterrence, avoidance, prevention, detection, recovery, and correction that should form part of the organization’s risk management approach.. [^1] 
+
+[^1]: National Institute of Standards and Technology (NIST). *Security*. NIST Computer Security Resource Center Glossary. https://csrc.nist.gov/glossary/term/security
 :::
+
+Data security often refers to the hardware, software, storage devices, and user devices; access and administrative controls; and organizations’ policies and procedures. For example, many organizations have switched to two factor authentication and VPN to access their systems.
 
 ::: callout-tip
 ### Data Privacy
 
-**Data Privacy** is the ability "to determine what information about ourselves we will share with others" [@fellegi1972question]. Data privacy is a broad topic, which includes data security, encryption, access to data, etc. We will not be covering privacy breaches from unauthorized access to a database (e.g., hackers).
+**Data Privacy** is assurance that the confidentiality of, and access to, certain information about an entity is protected.[^1] 
+
+[^1]: National Institute of Standards and Technology (NIST). *Privacy*. NIST Computer Security Resource Center Glossary. https://csrc.nist.gov/glossary/term/privacy
+
 :::
 
 ::: callout-tip
-## Confidentiality
+### Confidentiality
 
-**Confidentiality** is "the agreement, explicit or implicit, between data subject and data collector regarding the extent to which access by others to personal information is allowed" [@fienberg2018statistical].
+**Confidentiality** is preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information. [^1] 
+
+[^1]: National Institute of Standards and Technology (NIST). *Confidentiality*. NIST Computer Security Resource Center Glossary. https://csrc.nist.gov/glossary/term/confidentiality
 :::
 
-1.  **Hackers:** adversaries who steal confidential information through unauthorized access.
-2.  **Snoopers:** adversaries who reconstruct confidential information from data releases.
-3.  **Hoarders:** stewards who collect data but don't release the data even if respondents want the information releasesd.
+When reviewing these definitions, it’s important to note that the terms data privacy and confidentiality are often used interchangeably, but they refer to distinct concepts.
+
+- Privacy centers on the various flows of personal information in the different processes. In contrast, confidentiality pertains to the responsibility of data curators to protect that information.
+
+- Both privacy and confidentiality aim to protect sensitive information and foster trust among the various entities involved in data sharing and access.
 
 ::: callout-tip
 ## Ethics
 
 **Data ethics** is the "...systemizing, defending, and recommending concepts of right and wrong conduct in relation to data, in particular personal data" [@kitchin2014data].
+
 :::
 
-::: callout-tip
-## Equity
+Two major categories of data privacy threats:
 
-**Data Equity** is data representation, access, process, outcomes, and more.
-:::
+- **Input privacy** threats occur when adversaries gain unauthorized data access *as it is being communicated through data processing to its final audiences.*
+
+- **Output privacy** threats occur when adversaries interpret or modify data *as it is being published to its final audiences* in order to extract sensitive information.
 
 
-![A colorful circular diagram of the data lifecycle, showing six stages: data collection and acquisition, data storage, data sharing and transfer, data analysis, data dissemination, and data destruction and archival.](www/images/data-lifecycle.png){#fig-data-lifecycle fig-align="center" width=80%}
+![A colorful circular diagram of the data lifecycle, showing six stages: data collection and acquisition, data storage, data sharing and transfer, data analysis, data dissemination, and data destruction and archival.](www/images/01_data-lifecycle.png){#fig-data-lifecycle fig-align="center" width=80%}
 
 We've just started exploring the world of security, privacy, ethics, and equity. Throughout this course, we'll integrate these definitions, concepts, and ideas into our discussions, applying them to the data life cycle, which we define as:
 
@@ -84,16 +110,35 @@ We've just started exploring the world of security, privacy, ethics, and equity.
 
 #### Read
 
-- Chapter 3: How Do Data Privacy Methods Expand Access to Data?
-- [Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data](https://www.urban.org/research/publication/do-no-harm-guide-collecting-analyzing-and-reporting-gender-and-sexual) -- Parts 1, 2, and 3.
+- Chapter 2: How Did Data Privacy Change Over Time?
+
+#### Optional read
+
+- Part 1 Blog: [Where Do Official Statistics Come From?](https://apdu.org/2025/12/where-do-official-statistics-come-from/)
+- Part 2 Blog: [New Data Sources to Improve Federal Statistics](https://apdu.org/2026/01/new-data-sources-to-improve-federal-statistics/)
 
 #### Write (600 to 1200 words)
 
-Find and summarize a real-world example of data being used unethically and/or had violated people's privacy. The example must be recent (i.e., since 2022). Try to keep the following in mind:
+Find and summarize a real-world example of data being used unethically, a violation of privacy, a security breach, or a failure of responsible AI. The example must have occurred since January 2025.
 
-- What is the example? Introduce the situation and explain why it is important, providing any relevant background for the reader.
-- How did the example demonstrate a violation of privacy, security, and/or ethics? Does it apply to everyone or only a subgroup of people? Why is that?
-- What are the takeaways from this situation? Has this situation been resolved? Why or why not?
+In your summary, address the following questions:
+
+1.	Background and Context
+    - What happened? 
+    - Who were the parties involved?
+2.	Privacy, Security, Ethics, and AI Considerations
+    - Which principles of privacy, security, and/or ethics were violated?
+    - If AI played a role, how did it contribute to the issue?
+    - Were any particular populations (e.g., children) disproportionately affected? Why?
+3.	Lessons Learned
+    - What organizational, technical, legal, or societal factors contributed to the problem?
+    - Could the issue have been prevented? If so, how?
+    - How was the situation addressed, if at all?
+    - What policies, safeguards, governance practices, or technical controls would you recommend preventing similar issues?
+  
+Cite all references using APA format, including the real-world example you picked.
+
+**AI Reflection (Prepare to discuss in class):** Use any generative AI tool to summarize the real-world example you picked. Compare the AI-generated summary to your own review.  What did the AI miss, oversimplify, or misunderstand about the privacy, security, or ethical issues involved?
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -104,36 +149,54 @@ Find and summarize a real-world example of data being used unethically and/or ha
 exercise_number <- exercise_number + 1
 ```
 
-1. What was your example of unethical or harmful data use, and who was most affected?
+1. What real-world example did you choose, and what made it significant? Who was most affected, and why?
 
-2. How might applying principles from the readings thus far (e.g., Do No Harm or privacy-enhancing methods) have changed the outcome?
+2. What do you think was the root cause of the issue? Was it primarily a technical failure, a governance failure, poor organizational decisions, inadequate laws or regulations, misuse of AI, or some combination of these?
 
-3. What lessons should data practitioners or analysts take away from this case to prevent similar issues in the future?
+3. How did the AI generated summary compare to your own analysis? What important details, context, privacy, security, or ethical considerations did the AI miss, oversimplify, or misrepresent? How might those omissions affect someone's understanding of the event?
  
 :::
 
 ![This is Fine meme that says, "When your dataset includes sensitive personal info...and you didn’t ask if people were okay with that..."](www/images/02_this-is-fine.jpg){#fig-this-is-fine fig-align="center" width=80%}
 
 ## Data types
-There are generally three principal types of qualitative and quantitative data:
-
-1.	*Primary:* Any data directly collected by an entity. 
-
-2.	*Secondary:* Any data collected by another organization that a stakeholder uses for analysis.
-
-3.	*Administrative:* Any data collected by governments or other organizations, as part of their management and operation of a program or service, that provide information on registrations, transactions, and other regular tasks.
+There are generally three principal types of qualitative and quantitative data.
 
 ### Primary data
+
+::: callout-tip
+
+### Primary data
+**Primary** is any data directly collected by an entity. 
+
+:::
+
 Direct data collection includes both quantitative data (e.g., from a survey) and qualitative data (e.g., from focus groups, site visits, qualitative interviews, or trained observations) collected from individuals or organizations. Also, with primary you will usually have access to paradata.[^paradata]
 
 [^paradata]: Paradata are a by-product of data collection. Types of paradata vary from contact attempt history records for interviewer-assisted operations, to form tracing using tracking numbers in mail surveys, to keystroke or mouse-click history for internet self-response surveys. Because paradata are a by-product of a given data collection operation, their format, layout, and content are a function of the system that generated the data.
 
 ### Secondary data
+
+::: callout-tip
+
+### Secondary data
+**Secondary** is any data collected by another organization that a stakeholder uses for analysis.
+
+:::
+
 Secondary data also include both quantitative and qualitative data; depending on the source, they may also include some paradata. Often, secondary data are in public-use files that have been sanitized for general release and use (e.g., public file of the American Community Survey[^ACS]).
 
 [^ACS]: "The American Community Survey (ACS) helps local officials, community leaders, and businesses understand the changes taking place in their communities. It is the premier source for detailed population and housing information about our nation." Quoted from the U.S. Census Bureau website found [here](https://www.census.gov/programs-surveys/acs).
 
 ### Administrative data
+
+::: callout-tip
+
+### Administrative data
+**Administrative** is any data collected by governments or other organizations, as part of their management and operation of a program or service, that provide information on registrations, transactions, and other regular tasks.
+
+:::
+
 Administrative data are collected for the administration of an organization or program by entities, such as government agencies as they provide services, companies to track orders, and universities to record registered students. These data records are usually not public-use data files and tend to only be accessed through strict confidentiality agreements, such as non-disclosure agreements or memorandum of understanding (e.g., IRS tax payer data).
 
 ::: callout
@@ -144,67 +207,16 @@ Administrative data are collected for the administration of an organization or p
 
 exercise_number <- exercise_number + 1
 ```
-For each data type:
+Working in small groups (4 to 5), choose one of the three data types.
 
- - What are some other examples?
- - What are the possible security, privacy, ethical, and equity considerations and challenges?
- - If these challenges are not addressed, what are the potential downstream impact?
+ - Identify one real-world example of your assigned data type. Who collects the data, and for what purpose?
+ - What are the main strengths and limitiations of using this type of data?
+ - What privacy, security, and/or ethical concerns should be considered when collecting these data?
+ - If an AI system were trained using these data, what challenges or risks might arise? Consider issues such as data quality, representation, bias, or misuse.
  
 :::
 
-## Discussion on Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data
-
-> If equity isn’t considered in the design of the study for that small subgroup, then it’s not the main purpose of the study. Other parts will take priority. Afterall, what was the study designed for?
-
-~ Saki Kinney, RTI (Research Triangle International)
-
-This quote from a colleague highlights the importance of how data are collected. If we blindly collect data without careful consideration of the process—such as how we define groups or the methods used for data collection—we could severely and negatively impact those groups when others in the data ecosystem use and analyze that data.
-
-The required reading assignment, Do No Harm Guide (DNHG) by @schwabish2023no, covers many data collection challenges and will facilitate our discussion on the potential security, privacy, ethical, and equity issues in data collection.
-
-![The cover of the Urban Institute report, "Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data ."](www/images/02_dnhg-sogi.png){#fig-dnhg-sogi fig-align="center" width=60%}
-
-### Defining groups is important
-
-> Collecting data about sexual orientation and gender identity and expression allows for a better understanding of sexual and gender minority populations, enabling researchers, policymakers, and advocates to understand differences between these populations and other population groups or the general population across policy areas. Insight from these data highlight important areas for interventions that may improve the lives of members of sexual and gender minority groups.
-
-::: callout
-#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
-
-```{r}
-#| echo: false
-
-exercise_number <- exercise_number + 1
-```
-There is a glossary at the start of the DNHG instead of at the end.
-
-- Why do you think the authors had the glossary so early in the report?
-- Do you think the government, schools, or other organizations that collect data use the same definition when collecting data?
-- What is the impact of not having a standard definition for each stakeholder in the data ecosystem?
- 
-:::
-
-![Office Space Boss meme that says, "Yeah...if you could just define your variables before collecting the data, that’d be great."](www/images/02_boss-office-space.jpg){#fig-boss fig-align="center" width=80%}
-
-### Trans-parency in the legal community
-
-The American Bar Association wants to release more demographic information about students who attend law school and complete the bar exam. One piece of information they want to share is the number of transgender students attending their law schools. Some students support this decision, believing it will allow other transgender students to reach out to them or see that the law school is welcoming toward transgender students. Others, however, want this information to be withheld for safety reasons, preferring that their law programs do not disclose that they have transgender students.
-
-::: callout
-#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
-
-```{r}
-#| echo: false
-
-exercise_number <- exercise_number + 1
-```
-In this scenario, how would you answer the following:
-
-- User engagement is emphasized in the DNHG. Who would you try to engage in a conversation about collecting and releasing information about transgender students in law school?
-- What are your thoughts if the decision is to collect the data, but the outcome is not to release the information?
-- What are the security, privacy, ethics, and equity considerations when deciding to collect and/or release the information?
-
-:::
+### Institutional Review Boards' role in data collection
 
 Institutional Review Boards (IRBs) review an institution's (e.g., university, government agency) research, evaluation, and technical assistance projects involving information collected from or about human subjects. The IRB reviews projects’ data collection procedures and data security plans with the objective of protecting the rights and welfare of human subjects and minimizing risks to them, as mandated by federal regulations and consistent with longstanding institutional policies.
 
@@ -213,11 +225,25 @@ Institutional Review Boards (IRBs) review an institution's (e.g., university, go
 Any university or research institution-led survey or data collection involving human subjects must undergo an Institutional Review Board (IRB) process. If you see someone conducting a survey without information about the security, privacy, and confidentiality of the data, including its use, storage, and termination, you must report it to the university's or research institution's IRB.
 ::: 
 
+## Data Are Made, Not Found
+
+![The cover of a book, "Data Are Made, Not Found" by danah boyd.](www/images/02_data-are-created.jpg){#fig-data-are-created fig-align="center" width=60%}
+
 ### How do we define ourselves and society
 
 > There are two sides to survey data collection: the experience of the participant and the experience of the researcher. Thus, building trust between the participant and the researcher is key to generating high-quality data. Communicating to people why their personal information is necessary and gaining their formal consent can lead to greater collaboration and, ultimately, allow for more inclusive survey methods.
 
-Part 3 of the DNHG reviews various methods for conducting surveys to collect sexual orientation and gender identity information. This highlights the challenge of properly defining groups in a way that is both consistent and inclusive.
+Quote from "Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Sexual Orientation Data" [@schwabish2023no], which discusses best practices for collecting sensitive information. Although the guide focuses on gender identity and sexual orientation, its recommendations apply broadly to many forms of data collection.
+
+One of the most important (and often overlooked) aspects of data collection is how we define people, places, and events (and more!). Categories such as race, ethnicity, disability, household, veteran status, employment, and rural/urban are not naturally occurring facts. Researchers, policymakers, and organizations made decisions about what to measure and how to measure it.
+
+These decisions have real-world consequences. They determine who is counted (or not!), how resources are allocated (or not!), what disparities can be identified, and how AI systems and statistical models learn about the topic. As our society changes, these definitions must also evolve to remain accurate, inclusive, and fit-for-purpose.
+
+![1980 Census Race Question](www/images/02_1980-census-race-question.jpg){#fig-1980-census-race fig-align="center" width=100%}
+
+![2020 Census Race Question](www/images/02_2020-census-race-question.jpg){#fig-2020-census-race fig-align="center" width=75%}
+
+The nuances of different races is important in some contexts and not in others. For example, the state of Wyoming probably only needs to know the number of Asian Americans (i.e., coarsen all subgroups into the larger group), whereas New York City needs the count of various subgroups, because each subgroup has different poverty rates [@sonoda2023, boddupalli2026].
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -229,24 +255,76 @@ exercise_number <- exercise_number + 1
 
 ```
 
-Article I, Section 2 of the Constitution mandates that a census must take place every 10 years in the United States. The data collected by the decennial census determine the number of seats each state has in the U.S. House of Representatives and how to distribute the trillions in federal funds to local communities.
+Article I, Section 2 of the U.S. Constitution requires that a census be conducted every 10 years. Census data are used to apportion seats in the U.S. House of Representatives and help distribute hundreds of billions of dollars in federal funding each year.
 
-As part of the decennial census, people must answer several questions, such as what is their race. How would define your race?
+Review the race question from the 1980 and 2020 Census questionnaires.
 
-The images below show the race question for the 1990 and 2020 Census questionnaire. Would your definition match what is offered in these questionnaires?
+Consider the following:
+
+- How would you describe your own race or ethnicity? Would either questionnaire allow you to accurately identify yourself?
+
+- Why do you think the race question changed over time?
+
+- What are the advantages and disadvantages of collecting more detailed demographic categories?
+
+- How might changing these definitions affect research, policymaking, funding decisions, or AI systems that rely on Census Bureau data?
+
 :::
 
-![1980 Census Race Question](www/images/02_1980-census-race-question.jpg){#fig-1980-census-race fig-align="center" width=100%}
+![Office Space Boss meme that says, "Yeah...if you could just define your variables before collecting the data, that’d be great."](www/images/02_boss-office-space.jpg){#fig-boss fig-align="center" width=80%}
 
-![2020 Census Race Question](www/images/02_2020-census-race-question.jpg){#fig-2020-census-race fig-align="center" width=75%}
+### Representation in data comes at a price
 
-The nuances of different races is important in some contexts and not in others. For example, the state of Wyoming probably only needs to know the number of Asian Americans (i.e., coarsen all subgroups into the larger group), whereas New York City needs the count of various subgroups, because each subgroup has different poverty rates [@sonoda2023].
+Large-scale surveys and data collections, such as the decennial census, are expensive. The 2020 Census is estimated to have cost over \$6 billion, including the development and testing of data collection methods, hiring and deploying field workers for nonresponse follow-up, and post-collection data processing and quality assurance. Because resources are always limited, cost is often a major driver of how data are collected. 
 
-## No data, no problem, no action
+@sears1986college highlighted that psychology research has historically relied heavily on convenience samples; particularly undergraduate college students. These participants are relatively inexpensive to recruit and are often compensated with course credit. Many of us have likely completed similar surveys in undergraduate psychology courses (I remember participating in undergrad!). As a result, several foundational research in behavioral science has been conducted on Western, educated, industrialized, and relatively young populations in controlled laboratory settings rather than on the broader populations those studies aim to represent. Although researchers have long recognized this limitation and data collection methods have evolved (e.g., online survey platforms), convenience sampling remains common because it is easy and cost-effective. 
 
-We will cover two real-world example sets where the lack of data or improper data collection negatively impacts downstream data analysis.
+However, we should keep in mind that the easiest populations to reach are not always the populations we most need to study.
 
-### Library of Missing Datasets
+::: callout-tip
+
+### Convenience sampling
+
+**Convenience sampling** (also known as grab sampling, accidental sampling, or opportunity sampling) is a type of non-probability sampling that involves the sample being drawn from that part of the population that is close at hand.[^con-samp]
+
+[con-samp]: [Convenience sampling](https://en.wikipedia.org/wiki/Convenience_sampling)
+
+:::
+
+There are other trade-offs to consider when balancing accuracy of data collection against other practical challenges:
+
+- **Incentives and participation costs.** Researchers often use incentives such as gift cards or cash payments to improve response rates. However, administering incentives can be expensive and logistically complex. For example, providing \$10 gift card to 1,000 participants requires \$10,000 in direct costs, not including administrative overhead. Researchers must weigh whether increased participation and representativeness justify these costs. Also, such costs may not improve the response rates!
+
+- **Accessibility and participation formats.** Remote tools such as Zoom or Teams have made it easier to conduct interviews and focus groups, especially across geographic regions where travel can be difficult (e.g., rural region) or costly (e.g., rising gas prices, childcare). However, remote participation introduces new constraints, including lack of private space, household distractions, and unequal access to stable internet or devices.
+
+  > We ask that you participate in a private setting away from earshot or viewing by unauthorized persons to include family members and given technical limitations with zoom and similar internet platforms, we cannot guarantee the confidentiality of what might be said.
+
+- **Informed consent and participation burden.** Researchers must balance providing sufficient information about risks and rights without overwhelming or discouraging participation. Consent processes must be understandable (e.g., high school reading level), but also accurate about how data will be used and protected.
+
+  > You are being invited to participate in a research study. Your participation is voluntary, and you should only participate if you fully understand what the study requires and what the risks of participation are. You should ask the study team any questions you have related to participating before agreeing to join the study. 
+  >  
+  > The research study is being conducted to create a “Do No Harm Guide” on the best practices to equitably apply common data privacy approaches to help data privacy practitioners do no harm to people and communities when protecting data. 
+  >  
+  > As part of this study, we are interviewing data privacy and confidentiality researchers and practitioners from various work sectors and technical backgrounds. Given your expertise in the field, we would like to interview you for 45 minutes about your experience implementing data privacy and confidentiality methods and your thoughts about applying them equitably.
+  >  
+  > If you agree to join the study, you will be asked to participate in a video interview. You may refuse to answer any questions that you do not want to answer and still remain in the study. Before we begin the interview, we will request that the interview be recorded. We will not record if you do not wish us to do so. If you request that we do not record, we will take notes.
+  >  
+  > We ask that you participate in a private setting away from earshot or viewing by unauthorized persons to include family members and given technical limitations with zoom and similar internet platforms, we cannot guarantee the confidentiality of what might be said.
+  >  
+  > Your participation will last for 45 minutes.
+  >  
+  > The potential benefits of this study are minimal, but you may receive reputational benefits from being quoted or referenced in our report. 
+  We do not anticipate any risks from participation. You are free to decline or stop participation at any time during or after the initial consenting process. If during or at the end of the interview you would like to terminate the interview, we will do so. If during or at the end of the interview you decide you would like us to not cite or reference your comments, we will oblige.
+
+- **Integrity and authenticity in remote data collection.** As data collection increasingly moves online, new risks have emerged. For example, participants may use AI tools or automated systems to complete surveys or interviews in exchange for incentives, raising concerns about data validity and the authenticity of responses.
+
+Across all of these examples, researchers make deliberate decisions about who is included in a study, how the target population is defined, and how participants are recruited. These choices shape the representativeness and validity of findings, and they have downstream consequences for public policy, health care, business decision-making, and increasingly, for artificial intelligence systems trained on these data.
+
+### No data, no problem, no action
+
+In this next subsection, we examine real-world cases where the absence of data directly limits analysis, accountability, and policy action.
+
+#### Library of Missing Datasets
 
 Do you agree or disagree that we should answer the following questions with data?
 
@@ -265,11 +343,11 @@ Do you agree or disagree that we should answer the following questions with data
 - Total number of local and state police departments using stingray phone trackers (IMSI-catchers)
 - How much Spotify pays each of its artists per play of song
 
-What if you were then told that there are no such datasets created or available to answer these questions?
+Now consider: what if there are no reliable, publicly available datasets that fully answer these questions?
 
 ![The image from Mimi Ọnụọha's The Library of Missing Datasets 3.0](www/images/02_mo_the-library-of-missing-datasetss-v-3.0_01_rt.jpg){#fig-1990-census-race fig-align="center" width=50%}
 
-These questions are part of a mixed-media installation by [Mimi Ọnụọha](https://mimionuoha.com/) called, The Library of Missing Datasets, which is on [version 3.0](https://mimionuoha.com/the-library-of-missing-datasets-v3). This piece is a physical repository of those things that have been excluded in a society where so much is collected.
+These questions are part of a mixed-media installation by [Mimi Ọnụọha](https://mimionuoha.com/) called, The Library of Missing Datasets, which is on [version 3.0](https://mimionuoha.com/the-library-of-missing-datasets-v3). Although the project has not been updated since 2021–2022, it continues to raise important questions about why certain data do not exist, and what those absences reveal about data collection priorities and power.
 
 From Mimi Onuoha's website,
 
@@ -283,48 +361,18 @@ From Mimi Onuoha's website,
 
 exercise_number <- exercise_number + 1
 ```
-Mimi Ọnụọha created the list of questions for "The Library of Missing Datasets 3.0" in 2022. Her GitHub repo indicates that one of the illustrative examples from her version 2 installation in 2018 is no longer missing.
+Mimi Ọnụọha created the list of questions for "The Library of Missing Datasets 3.0" in 2022. In earlier versions of the installation, she also tracked how some datasets transitioned from “missing” to “available” over time. For example:
 
 > Civilians killed in encounters with police or law enforcement agencies [update: this is no longer a missing dataset]
 
-In the next 10 to 15 minutes, pick one of the example questions from the "Library of Missing Datasets 3.0" and try to find a *publicly available dataset* that answers that question.
+In the next 10–15 minutes, choose one example from the Library of Missing Datasets and attempt to locate a *publicly available dataset* that could reasonably address it.
 
-Did you find a dataset that works? If not, did you find a dataset that was close? Why did the dataset not answer the question?
+- Were you able to find a dataset that directly answers the question? If not, did you find something close?
+- What does the absence (or partial presence) of data tell you about priorities in data collection and governance?
 
 :::
 
-Mimi Ọnụọha says there are many reasons why some potentially important datasets are missing and highlights four reasons:
-
-1. Those who have the resources to collect data lack the incentive to (corollary: often those who have access to a dataset are the same ones who have the ability to remove, hide, or obscure it).
-
-> Police brutality towards civilians provides a powerful example. Though policing and crime are among the most data-driven areas of public policy, traditionally there has been little history of standardized and rigorous data collected about police brutality. Nowadays we have a political and cultural climate where this issue has become one of public discussion. Public interest campaigns like Fatal Encounters and the Guardian’s The Counted have helped fill that void. But even for these individuals/organizations, the work is difficult and time-consuming. The group who would make the most sense to monitor this issue—the law enforcement agents who create the data set in the first place—have no incentive to actually gather such data, which could prove incriminating.
-
-2. The data to be collected resist simple quantification (corollary: we prioritize collecting things that fit our modes of collection).
-
-> The defining tension of data collection is the struggle of taking a messy, organic world and defining it in formats that are neat, clean, and structured. Some things are difficult to collect and quantify by nature of their structure. We don't know how much US currency is outside of our borders. There's no incentive for other countries to monitor US currency within their countries, and the very nature of cash and the anonymity it affords makes it difficult to track. But then there are other subjects that resist quantification entirely. Things like emotions are hard to quantify (at this time, at least). Institutional racism is subtle and deniable; it reveals itself more in effects than acts. Not all things are easily quantifiable, and at times the very desire to render the world more abstract, trackable, and machine-readable is an idea that itself deserves questioning.
-
-3. The act of collection involves more work than the benefit the presence of the data is perceived to give.
-
-> Sexual assault and harassment are woefully underreported. And while there are many reasons why this is, one major one is that in many cases the very act of reporting sexual assault is a very intensive, painful, and difficult process. For some, the benefit of reporting isn't perceived to be equal or greater than the cost of the process.
-
-4. There are advantages to nonexistence.
-
-> Every missing dataset is a testament to this fact. Just as the presence of data benefits someone, so too does the absence. This is important to keep in mind. However, there's an even more specific angle to this point. To collect, record, and archive aspects of the world is an intentional act, one that typically benefits those who have the power to decide what should be collected. Often, remaining outside of the bounds of collection can be a form of response for a situationally-disadvantaged group. In short, sometimes a missing dataset can function as a form of protection.
-
-::: callout
-#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
-
-```{r}
-#| echo: false
-
-exercise_number <- exercise_number + 1
-```
-
-If you could not find a dataset, why do you think that dataset doesn't exist based on the four reasons Mimi Ọnụọha highlighted?
- 
-:::
-
-### Asian Americans are highly educated, born in the U.S., and speak English
+#### Asian Americans are highly educated, born in the U.S., and speak English
 
 Not collecting data is one issue. Another, which could be just as or even more detrimental to society, is collecting the wrong kind of data. If we are not careful with how we design data collection, we could create harmful narratives about certain areas of society, especially underrepresented groups.
 
@@ -360,10 +408,19 @@ Hence, at the end of the presentation, Dr. Lee's slide stated, "No data, no prob
 
 exercise_number <- exercise_number + 1
 ```
-After learning about this use case, answer the following:
+Choose one publicly available dataset that interests you. Examples include data from the U.S. Census Bureau, Bureau of Labor Statistics, Centers for Disease Control and Prevention, local governments, sports statistics, weather records, Spotify, Zillow, or another source.
 
-- What is your reaction to this situation?
-- Can you think of other situations where a lack of data would lead to no action because no one knows there is a problem?
+For this activity, you are not analyzing the data. Instead, you are investigating how the data were created.
+
+Answer the following questions:
+
+- What dataset did you choose, and what does it measure? Who collects the data, and for what purpose?
+
+- How are the data collected? How are people, places, or events defined and categorized (what is not collected)? Which of the three data types (primary, secondary, or administrative) best describes the dataset?
+
+- How might these definitions or categories influence downstream decisions? Consider how they could affect research findings, resource allocation, policy decisions, AI systems, or who is included or excluded from services.
+
+After 10 minutes, be prepared to briefly describe your dataset, identify one important design decision you discovered, and explain why it matters.
 
 :::
 
@@ -376,16 +433,33 @@ Due July 13th, Sunday, at 11:59 pm EDT on Canvas
 
 ### Read
 
-- Chapter 4: How Do Data Privacy Methods Avoid Invalidating Results?
+- Chapter 3: How Do Data Privacy Methods Expand Access to Data?
 
 ### Optional additional read
 
-- [Do No Harm Guide: Applying Equity Awareness in Data Privacy Methods](https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-privacy-methods).
+- [The Future of Public Data Lies in the States, But It’s Complicated](https://issues.org/public-data-states-bowen/).
 
 ### Write (600 to 1200 words)
 
-Choose a community you belong to (e.g., your hometown, childhood community, or Stonehill College) and identify how it uses public federal datasets (e.g., from the U.S. Census Bureau, Department of Transportation, etc.) to inform a policy decision.
+Choose a community you belong to (e.g., your hometown, workplace, religious organization, college community, or another community that is meaningful to you). Identify a public dataset or data collection effort that is used to inform decisions affecting that community. Examples may include data collected by the U.S. Census Bureau, Bureau of Labor Statistics, Centers for Disease Control and Prevention, Department of Transportation, local governments, or other public agencies.
 
-Describe the specific use case you’ve identified and analyze how limiting or expanding access to that data (or multiple data sources) could impact your community.
+Describe the dataset and explain how it is collected, who collects it, and how it is used to inform decisions, policies, or resource allocation.
+In your discussion paper, address the following questions:
+
+1.	Data Collection and Acquisition
+    - How are the data acquired (e.g., surveys, administrative records, sensors, web scraping, third-party data, or other methods)?
+    - Who is responsible for collecting and maintaining the data?
+2.	Representation and Data Quality
+    - Who is represented in the data?
+    - Are there populations that may be underrepresented, excluded, or difficult to measure? (e.g., children, veterans, persons with disabilities)
+    - How might missing or inaccurate data affect decisions made using the dataset?
+3.	Privacy, Security, and Ethics
+    - What privacy, security, and/or ethical concerns arise from collecting this information?
+    - How would limiting or expanding access to this dataset affect your community in making decisions?
+    - What might be the privacy, security, and/or ethical risks could result from collecting or linking additional information?
 
 Example (that you can’t use): [School district lines](https://apps.urban.org/features/dividing-lines-school-segregation/).
+
+Cite all references using APA format, including the real-world example you picked.
+
+**AI Reflection (Prepare to discuss in class):** What risks might arise if AI systems are trained on incomplete, biased, or unrepresentative data? How might that impact your community?

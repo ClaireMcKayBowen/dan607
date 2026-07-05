@@ -12,10 +12,10 @@ book:
       chapters:
         - 00_basics.qmd
         - 01_security-privacy-ethics.qmd
-    #     
-    # - part: Week 2 - Data Collection and Acquisition
-    #   chapters: 
-    #     - 02_data-collection.qmd
+
+    - part: Week 2 - Data Collection and Acquisition
+      chapters:
+        - 02_data-collection.qmd
     # 
     # - part: Week 3 - Data Storage and Sharing
     #   chapters: 

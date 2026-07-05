@@ -24,8 +24,8 @@ exercise_number <- 1
 
 This week introduces the core concepts that will guide the rest of the course. You will learn how to:
 
-- Define (at least for this class) data governance terms, such as security, privacy, ethics, and equity.
-- Explain how privacy, security, ethical, and equity considerations arise throughout the data lifecycle.
+- Define (at least for this class) data governance terms, such as security, privacy, and ethical.
+- Explain how privacy, security, and ethical considerations arise throughout the data lifecycle.
 - Evaluate common assumptions about data collection, tracking, and information sharing in an increasingly data-driven and AI-enabled world.
 
 :::
@@ -379,18 +379,18 @@ Data privacy adversaries are known by many names, including  *intruders, attacke
 
 :::
 
-* Adversaries aim to receive information that's typically unintended for them as data users. For example, data privacy adversaries may try to reconstruct personal information from published statistics, even though the published statistics may be intended for a general public audience.
-* The inappropriateness of adversaries can stem from many places; adversaries may be acting illegally, unethically, or in violation of organizational policies. 
+- Adversaries aim to receive information that's typically unintended for them as data users. For example, data privacy adversaries may try to reconstruct personal information from published statistics, even though the published statistics may be intended for a general public audience.
+- The inappropriateness of adversaries can stem from many places; adversaries may be acting illegally, unethically, or in violation of organizational policies. 
 
 There are two major categories of data privacy threats:
 
-* **Input privacy** threats occur when adversaries gain unauthorized data access *as it is being communicated through data processing to its final audiences.* Example threats include:
-  * An email service provider accessing a file attachment containing raw personal information.
-  * A large language model reading a file in its context containing sensitive data.
+- **Input privacy** threats occur when adversaries gain unauthorized data access *as it is being communicated through data processing to its final audiences.* Example threats include:
+  - An email service provider accessing a file attachment containing raw personal information.
+  - A large language model reading a file in its context containing sensitive data.
 
-* **Output privacy** threats occur when adversaries interpret or modify data *as it is being published to its final audiences* in order to extract sensitive information. Example threats include: 
-  * A table of workplace survey results allows a manager to infer which of their direct reports is the least happy with their manager's performance.
-  * A dataset of financial statements allows an auditor to deduce that a business has not paid their taxes properly.
+- **Output privacy** threats occur when adversaries interpret or modify data *as it is being published to its final audiences* in order to extract sensitive information. Example threats include: 
+  - A table of workplace survey results allows a manager to infer which of their direct reports is the least happy with their manager's performance.
+  - A dataset of financial statements allows an auditor to deduce that a business has not paid their taxes properly.
 
 -   There are differing notions of what should and shouldn't be private, which may include being able to opt out of or opt into disclosure protections.
 
@@ -643,7 +643,7 @@ Data privacy best practices resist simple technical or legal standardization, as
 
 :::
 
-We've just started exploring the world of security, privacy, ethics, and equity. Throughout this course, we'll integrate these definitions, concepts, and ideas into our discussions, applying them to the data lifecycle, which we define as:
+We've just started exploring the world of security, privacy, and ethical. Throughout this course, we'll integrate these definitions, concepts, and ideas into our discussions, applying them to the data lifecycle, which we define as:
 
 - data collection or acquisition (week 2)
 
@@ -659,7 +659,7 @@ We've just started exploring the world of security, privacy, ethics, and equity.
 
 ::: {.callout-important}
 ## No set taxonomony in the field!
-All definitions used (including the data life cycle) are my opinionated definitions. Since many different fields work in data security, privacy, ethics, and equity, there is no standard taxonomy, which causes a lot of confusion. I set a standard definition in all my work, including this course, to ensure we are using the same common language. However, note that when reading other materials or literature, you might encounter conflicting terminology.
+All definitions used (including the data life cycle) are my opinionated definitions. Since many different fields work in data security, privacy, and ethical, there is no standard taxonomy, which causes a lot of confusion. I set a standard definition in all my work, including this course, to ensure we are using the same common language. However, note that when reading other materials or literature, you might encounter conflicting terminology.
 
 ::: 
 
