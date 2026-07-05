@@ -8,14 +8,26 @@ editor_options:
   chunk_output_type: console
 ---
 
-![A data lifecycle diagram highlighting the 'Data collection and acquisition' phase in blue, with all other phases faded out. This stage refers to designing and obtaining data from various sources.](www/images/02_data-lifecycle-collection.png){#fig-data-collection fig-align="center" width=100%}
-
 ```{r}
 #| echo: false
 
 exercise_number <- 1
 
 ```
+
+![A data lifecycle diagram highlighting the 'Data collection and acquisition' phase in blue, with all other phases faded out. This stage refers to designing and obtaining data from various sources.](www/images/02_data-lifecycle-collection.png){#fig-data-collection fig-align="center" width=100%}
+
+:::{.callout-note}
+
+### Overview
+
+This week focuses on the first stage of the data lifecycle: data collection and acquisition. You will learn how to:
+
+- Describe how different types of data (primary, secondary, and administrative) are collected and how they differ in purpose and design.
+- Explain how data collection decisions--such as sampling, incentives, and definitions of populations--affect representation, bias, and data quality.
+- Evaluate what is included and excluded in data collection, and how missing or poorly designed data can shape research, policy, and AI systems.
+
+:::
 
 We start with data collection and learn about the different types of data, the importance of how we collect that data, and the issues for society caused by the absence of or poorly designed data collection.
 
@@ -277,7 +289,7 @@ Consider the following:
 
 Large-scale surveys and data collections, such as the decennial census, are expensive. The 2020 Census is estimated to have cost over \$6 billion, including the development and testing of data collection methods, hiring and deploying field workers for nonresponse follow-up, and post-collection data processing and quality assurance. Because resources are always limited, cost is often a major driver of how data are collected. 
 
-@sears1986college highlighted that psychology research has historically relied heavily on convenience samples; particularly undergraduate college students. These participants are relatively inexpensive to recruit and are often compensated with course credit. Many of us have likely completed similar surveys in undergraduate psychology courses (I remember participating in undergrad!). As a result, several foundational research in behavioral science has been conducted on Western, educated, industrialized, and relatively young populations in controlled laboratory settings rather than on the broader populations those studies aim to represent. Although researchers have long recognized this limitation and data collection methods have evolved (e.g., online survey platforms), convenience sampling remains common because it is easy and cost-effective. 
+@sears1986college highlights that psychology research has historically relied heavily on convenience samples, particularly undergraduate college students. These participants are relatively inexpensive to recruit and are often compensated with course credit. Many of us have likely completed similar surveys in undergraduate psychology courses (I remember participating in undergrad!). As a result, several foundational research in behavioral science has been conducted on Western, educated, industrialized, and relatively young populations in controlled laboratory settings rather than on the broader populations those studies aim to represent. Although researchers have long recognized this limitation and data collection methods have evolved (e.g., online survey platforms), convenience sampling remains common because it is easy and cost-effective. 
 
 However, we should keep in mind that the easiest populations to reach are not always the populations we most need to study.
 
@@ -287,7 +299,7 @@ However, we should keep in mind that the easiest populations to reach are not al
 
 **Convenience sampling** (also known as grab sampling, accidental sampling, or opportunity sampling) is a type of non-probability sampling that involves the sample being drawn from that part of the population that is close at hand.[^con-samp]
 
-[con-samp]: [Convenience sampling](https://en.wikipedia.org/wiki/Convenience_sampling)
+[^con-samp]: "Convenience sampling (also known as grab sampling, accidental sampling, or opportunity sampling) is a type of non-probability sampling that involves the sample being drawn from that part of the population that is close at hand. Convenience sampling is not often recommended by official statistical agencies for research due to the possibility of sampling error and lack of representation of the population. It can be useful in some situations, for example, where convenience sampling is the only possible option. A trade-off exists between this method's speed and accuracy. Collected samples may not accurately represent the population of interest and can be a source of bias; however, larger sample sizes reduce the likelihood of sampling error occurring." [Convenience sampling](https://en.wikipedia.org/wiki/Convenience_sampling)
 
 :::
 
@@ -463,3 +475,5 @@ Example (that you can’t use): [School district lines](https://apps.urban.org/f
 Cite all references using APA format, including the real-world example you picked.
 
 **AI Reflection (Prepare to discuss in class):** What risks might arise if AI systems are trained on incomplete, biased, or unrepresentative data? How might that impact your community?
+
+# References

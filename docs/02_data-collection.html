@@ -209,6 +209,7 @@ div.csl-indent {
   <li><a href="#optional-additional-read" id="toc-optional-additional-read" class="nav-link" data-scroll-target="#optional-additional-read"><span class="header-section-number">3.4.2</span> Optional additional read</a></li>
   <li><a href="#write-600-to-1200-words-1" id="toc-write-600-to-1200-words-1" class="nav-link" data-scroll-target="#write-600-to-1200-words-1"><span class="header-section-number">3.4.3</span> Write (600 to 1200 words)</a></li>
   </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -243,6 +244,24 @@ div.csl-indent {
 Figure&nbsp;3.1: A data lifecycle diagram highlighting the ‘Data collection and acquisition’ phase in blue, with all other phases faded out. This stage refers to designing and obtaining data from various sources.
 </figcaption>
 </figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Overview
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This week focuses on the first stage of the data lifecycle: data collection and acquisition. You will learn how to:</p>
+<ul>
+<li>Describe how different types of data (primary, secondary, and administrative) are collected and how they differ in purpose and design.</li>
+<li>Explain how data collection decisions–such as sampling, incentives, and definitions of populations–affect representation, bias, and data quality.</li>
+<li>Evaluate what is included and excluded in data collection, and how missing or poorly designed data can shape research, policy, and AI systems.</li>
+</ul>
+</div>
 </div>
 <p>We start with data collection and learn about the different types of data, the importance of how we collect that data, and the issues for society caused by the absence of or poorly designed data collection.</p>
 <p>But first…</p>
@@ -601,7 +620,7 @@ Figure&nbsp;3.8: Office Space Boss meme that says, “Yeah…if you could just d
 <section id="representation-in-data-comes-at-a-price" class="level3" data-number="3.3.2">
 <h3 data-number="3.3.2" class="anchored" data-anchor-id="representation-in-data-comes-at-a-price"><span class="header-section-number">3.3.2</span> Representation in data comes at a price</h3>
 <p>Large-scale surveys and data collections, such as the decennial census, are expensive. The 2020 Census is estimated to have cost over $6 billion, including the development and testing of data collection methods, hiring and deploying field workers for nonresponse follow-up, and post-collection data processing and quality assurance. Because resources are always limited, cost is often a major driver of how data are collected.</p>
-<p><span class="citation" data-cites="sears1986college">Sears (<a href="#ref-sears1986college" role="doc-biblioref">1986</a>)</span> highlighted that psychology research has historically relied heavily on convenience samples; particularly undergraduate college students. These participants are relatively inexpensive to recruit and are often compensated with course credit. Many of us have likely completed similar surveys in undergraduate psychology courses (I remember participating in undergrad!). As a result, several foundational research in behavioral science has been conducted on Western, educated, industrialized, and relatively young populations in controlled laboratory settings rather than on the broader populations those studies aim to represent. Although researchers have long recognized this limitation and data collection methods have evolved (e.g., online survey platforms), convenience sampling remains common because it is easy and cost-effective.</p>
+<p><span class="citation" data-cites="sears1986college">Sears (<a href="#ref-sears1986college" role="doc-biblioref">1986</a>)</span> highlights that psychology research has historically relied heavily on convenience samples, particularly undergraduate college students. These participants are relatively inexpensive to recruit and are often compensated with course credit. Many of us have likely completed similar surveys in undergraduate psychology courses (I remember participating in undergrad!). As a result, several foundational research in behavioral science has been conducted on Western, educated, industrialized, and relatively young populations in controlled laboratory settings rather than on the broader populations those studies aim to represent. Although researchers have long recognized this limitation and data collection methods have evolved (e.g., online survey platforms), convenience sampling remains common because it is easy and cost-effective.</p>
 <p>However, we should keep in mind that the easiest populations to reach are not always the populations we most need to study.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -613,8 +632,7 @@ Figure&nbsp;3.8: Office Space Boss meme that says, “Yeah…if you could just d
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Convenience sampling</strong> (also known as grab sampling, accidental sampling, or opportunity sampling) is a type of non-probability sampling that involves the sample being drawn from that part of the population that is close at hand.[^con-samp]</p>
-<p>[con-samp]: <a href="https://en.wikipedia.org/wiki/Convenience_sampling">Convenience sampling</a></p>
+<p><strong>Convenience sampling</strong> (also known as grab sampling, accidental sampling, or opportunity sampling) is a type of non-probability sampling that involves the sample being drawn from that part of the population that is close at hand.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
 </div>
 </div>
 <p>There are other trade-offs to consider when balancing accuracy of data collection against other practical challenges:</p>
@@ -701,10 +719,10 @@ Figure&nbsp;3.9: The image from Mimi Ọnụọha’s The Library of Missing Dat
 <section id="asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english" class="level4">
 <h4 class="anchored" data-anchor-id="asian-americans-are-highly-educated-born-in-the-u.s.-and-speak-english">Asian Americans are highly educated, born in the U.S., and speak English</h4>
 <p>Not collecting data is one issue. Another, which could be just as or even more detrimental to society, is collecting the wrong kind of data. If we are not careful with how we design data collection, we could create harmful narratives about certain areas of society, especially underrepresented groups.</p>
-<p>An example of this is work done by my colleague, <a href="https://surveydatascience.isr.umich.edu/slee">Dr.&nbsp;Sunghee Lee</a> of the University of Michigan. She presented her in the same conference session as me, where she discussed how incomplete data on Asian-American populations risks fueling a vicious circle of inaction and growing inequality. One of her projects compared the socio-demographics of Asian-American respondents reported in four large-scale sample surveys against the same characteristics collected by the US Census Bureau’s American Community Survey,<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> which is often referred to as the gold standard survey on the United States populations and housing information <span class="citation" data-cites="tarran2023">(<a href="#ref-tarran2023" role="doc-biblioref">Tarran 2023</a>)</span>.</p>
-<p>When comparing these surveys, Dr.&nbsp;Lee found that the four surveys often differed in important respects. For example, Asian Americans accounted for seven percent of adults aged 18 and over in the American Community Survey. In contrast, the General Social Survey<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> and Behavioral Risk Factor Surveillance Survey<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> accounted for only four percent and two percent, respectively. The American Community Survey shows 27 percent of Asian-American respondents are educated to high-school level or below, the equivalent grouping in the Behavioral Risk Factor Surveillance Survey accounted for 18 percent.</p>
+<p>An example of this is work done by my colleague, <a href="https://surveydatascience.isr.umich.edu/slee">Dr.&nbsp;Sunghee Lee</a> of the University of Michigan. She presented her in the same conference session as me, where she discussed how incomplete data on Asian-American populations risks fueling a vicious circle of inaction and growing inequality. One of her projects compared the socio-demographics of Asian-American respondents reported in four large-scale sample surveys against the same characteristics collected by the US Census Bureau’s American Community Survey,<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> which is often referred to as the gold standard survey on the United States populations and housing information <span class="citation" data-cites="tarran2023">(<a href="#ref-tarran2023" role="doc-biblioref">Tarran 2023</a>)</span>.</p>
+<p>When comparing these surveys, Dr.&nbsp;Lee found that the four surveys often differed in important respects. For example, Asian Americans accounted for seven percent of adults aged 18 and over in the American Community Survey. In contrast, the General Social Survey<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> and Behavioral Risk Factor Surveillance Survey<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> accounted for only four percent and two percent, respectively. The American Community Survey shows 27 percent of Asian-American respondents are educated to high-school level or below, the equivalent grouping in the Behavioral Risk Factor Surveillance Survey accounted for 18 percent.</p>
 <p>However, none of these surveys, except the American Community Survey, collected data on Asian Americans’ proficiency with spoken English.</p>
-<p>According to the American Community Survey, 31 percent of Asian-American adults have “limited English proficiency.” Dr.&nbsp;Lee’s research found that none of the four selected surveys (General Social Survey and Behavioral Risk Factor Surveillance Survey, plus the Current Population Survey<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> and National Health Interview Survey<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>) offered questionnaires in Asian languages; only English and Spanish.</p>
+<p>According to the American Community Survey, 31 percent of Asian-American adults have “limited English proficiency.” Dr.&nbsp;Lee’s research found that none of the four selected surveys (General Social Survey and Behavioral Risk Factor Surveillance Survey, plus the Current Population Survey<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> and National Health Interview Survey<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>) offered questionnaires in Asian languages; only English and Spanish.</p>
 <p>Due to the poorly designed surveys, anyone using these data will find that most Asian Americans are born in the US and/or who have high levels of English proficiency, missing the true geographic and ethnic heterogeneity of the Asian American population. This underrepresentation of certain Asian-American subgroups encourages a potential vicious cycle of having no “data-driven” proof to collect such information. This means that issues affecting certain population groups are not identified, meaning no action needs to be taken.</p>
 <p>Hence, at the end of the presentation, Dr.&nbsp;Lee’s slide stated, “No data, no problem, no action”.</p>
 <div id="fig-no-data" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
@@ -794,6 +812,10 @@ Figure&nbsp;3.10: Roll Safe Think About It meme that says, “Can’t have any i
 <p>Example (that you can’t use): <a href="https://apps.urban.org/features/dividing-lines-school-segregation/">School district lines</a>.</p>
 <p>Cite all references using APA format, including the real-world example you picked.</p>
 <p><strong>AI Reflection (Prepare to discuss in class):</strong> What risks might arise if AI systems are trained on incomplete, biased, or unrepresentative data? How might that impact your community?</p>
+</section>
+</section>
+<section id="references" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> References</h1>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -814,7 +836,6 @@ Tarran, Brian. 2023. <span>“JSM Session Touches on Equity.”</span> <em>Amsta
 </div>
 </div>
 </section>
-</section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
@@ -823,11 +844,12 @@ Tarran, Brian. 2023. <span>“JSM Session Touches on Equity.”</span> <em>Amsta
 <li id="fn3"><p>National Institute of Standards and Technology (NIST). <em>Confidentiality</em>. NIST Computer Security Resource Center Glossary. https://csrc.nist.gov/glossary/term/confidentiality<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Paradata are a by-product of data collection. Types of paradata vary from contact attempt history records for interviewer-assisted operations, to form tracing using tracking numbers in mail surveys, to keystroke or mouse-click history for internet self-response surveys. Because paradata are a by-product of a given data collection operation, their format, layout, and content are a function of the system that generated the data.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5"><p>“The American Community Survey helps local officials, community leaders, and businesses understand the changes taking place in their communities. It is the premier source for detailed population and housing information about our nation.” <a href="https://www.census.gov/programs-surveys/acs">U.S. Census Bureau’s page on the American Community Survey</a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>“The American Community Survey helps local officials, community leaders, and businesses understand the changes taking place in their communities. It is the premier source for detailed population and housing information about our nation.” <a href="https://www.census.gov/programs-surveys/acs">U.S. Census Bureau’s page on the American Community Survey</a>.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>“[C]onducted every two years, NORC interviews a representative sample of Americans about a range of topics. The questions address belief in God, confidence in government institutions, race relations, abortion, spending patterns, gun rights, social isolation—even pet ownership.” <a href="https://www.norc.org/research/projects/gss.html">NORC at the University of Chicago’s page on the General Social Survey</a>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>“The Behavioral Risk Factor Surveillance System (BRFSS) is the nation’s premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services.” <a href="https://www.cdc.gov/brfss/index.html">U.S. Centers for Disease Control and Prevention’s page on the Behavioral Risk Factor Surveillance System</a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>“The Current Population Survey, sponsored jointly by the U.S. Census Bureau and the U.S. Bureau of Labor Statistics, is the primary source of labor force statistics for the population of the United States.” <a href="https://www.census.gov/programs-surveys/cps.html">U.S. Census Bureau’s page on the Current Population Survey</a>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>“The National Health Interview Survey on a broad range of health topics are collected through personal household interviews. Survey results have been instrumental in providing data to track health status, health care access, and progress toward achieving national health objectives.” <a href="https://www.cdc.gov/nchs/nhis/index.htm">U.S. Centers for Disease Control and Prevention’s page on the National Health Interview Survey</a>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>“Convenience sampling (also known as grab sampling, accidental sampling, or opportunity sampling) is a type of non-probability sampling that involves the sample being drawn from that part of the population that is close at hand. Convenience sampling is not often recommended by official statistical agencies for research due to the possibility of sampling error and lack of representation of the population. It can be useful in some situations, for example, where convenience sampling is the only possible option. A trade-off exists between this method’s speed and accuracy. Collected samples may not accurately represent the population of interest and can be a source of bias; however, larger sample sizes reduce the likelihood of sampling error occurring.” <a href="https://en.wikipedia.org/wiki/Convenience_sampling">Convenience sampling</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>“The American Community Survey helps local officials, community leaders, and businesses understand the changes taking place in their communities. It is the premier source for detailed population and housing information about our nation.” <a href="https://www.census.gov/programs-surveys/acs">U.S. Census Bureau’s page on the American Community Survey</a>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>“[C]onducted every two years, NORC interviews a representative sample of Americans about a range of topics. The questions address belief in God, confidence in government institutions, race relations, abortion, spending patterns, gun rights, social isolation—even pet ownership.” <a href="https://www.norc.org/research/projects/gss.html">NORC at the University of Chicago’s page on the General Social Survey</a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>“The Behavioral Risk Factor Surveillance System (BRFSS) is the nation’s premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services.” <a href="https://www.cdc.gov/brfss/index.html">U.S. Centers for Disease Control and Prevention’s page on the Behavioral Risk Factor Surveillance System</a>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>“The Current Population Survey, sponsored jointly by the U.S. Census Bureau and the U.S. Bureau of Labor Statistics, is the primary source of labor force statistics for the population of the United States.” <a href="https://www.census.gov/programs-surveys/cps.html">U.S. Census Bureau’s page on the Current Population Survey</a>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>“The National Health Interview Survey on a broad range of health topics are collected through personal household interviews. Survey results have been instrumental in providing data to track health status, health care access, and progress toward achieving national health objectives.” <a href="https://www.cdc.gov/nchs/nhis/index.htm">U.S. Centers for Disease Control and Prevention’s page on the National Health Interview Survey</a>.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
