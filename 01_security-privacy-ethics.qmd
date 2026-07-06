@@ -681,7 +681,7 @@ Due July 6, at 11:59 PM EDT on Canvas
 
 ### Write (600 to 1200 words)
 
-Find and summarize a real-world example of data being used unethically, a violation of privacy, a security breach, or a failure of responsible AI. The example must have occurred since January 2025.
+Find and summarize a real-world example of data being used unethically, a violation of privacy, a security breach, or a failure of responsible AI. The example must have occurred since January 2024.
 
 In your summary, address the following questions:
 
