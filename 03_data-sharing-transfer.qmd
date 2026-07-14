@@ -40,6 +40,18 @@ exercise_number <- 1
 
 ```
 
+:::{.callout-note}
+### Overview
+
+This week focuses on the data sharing and transfer stage of the data lifecycle. You will learn how to:
+
+- Explain why data sharing is important for scientific rigor, public accountability, cost reduction, training, and advancing research and policy.
+- Describe different approaches for sharing sensitive data, such as secure enclaves and public-use data files.
+- Evaluate how privacy, security, and ethical considerations influence decisions about who can access data and under what conditions.
+- Apply privacy-enhancing technologies (PETs) and statistical disclosure control methods to balance data privacy with data utility.
+
+:::
+
 ## Importance of sharing data
 
 {{< video https://www.youtube.com/embed/N2zK3sAtr-4 >}}
@@ -148,12 +160,12 @@ exercise_number <- exercise_number + 1
 
 As we’ve explored secure data access methods, such as secure enclaves and restricted file transfers. It’s clear that strong protections are essential for safeguarding sensitive information.
 
-Given the current infrastructure for secure data access (e.g., FSRDCs, remote secure setups, restricted file transfers), what are the privacy, security, ethical, and equity implications of these systems?
+Given the current infrastructure for secure data access (e.g., FSRDCs, remote secure setups, restricted file transfers), what are the privacy, security, and ethical implications of these systems?
 
 Things to consider in answering this question:
 
 - Who gets access to high-quality, confidential data—and who doesn’t?
-- How do geographic, institutional, or citizenship requirements influence equity in research?
+- How do geographic, institutional, or citizenship requirements influence accessibility in research?
 - Are current security measures proportionate to the risks they’re trying to mitigate?
 - How might these systems reinforce or challenge power imbalances in data use?
 

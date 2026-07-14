@@ -342,6 +342,25 @@ Figure&nbsp;5.1: A data lifecycle diagram emphasizing the ‘Data sharing and tr
 </figcaption>
 </figure>
 </div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Overview
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This week focuses on the data sharing and transfer stage of the data lifecycle. You will learn how to:</p>
+<ul>
+<li>Explain why data sharing is important for scientific rigor, public accountability, cost reduction, training, and advancing research and policy.</li>
+<li>Describe different approaches for sharing sensitive data, such as secure enclaves and public-use data files.</li>
+<li>Evaluate how privacy, security, and ethical considerations influence decisions about who can access data and under what conditions.</li>
+<li>Apply privacy-enhancing technologies (PETs) and statistical disclosure control methods to balance data privacy with data utility.</li>
+</ul>
+</div>
+</div>
 <section id="importance-of-sharing-data" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="importance-of-sharing-data"><span class="header-section-number">5.1</span> Importance of sharing data</h2>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/N2zK3sAtr-4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
@@ -464,11 +483,11 @@ Figure&nbsp;5.2: Image of the locations of all 35 FSRDCs in the United States as
 </div>
 <div class="callout-body-container callout-body">
 <p>As we’ve explored secure data access methods, such as secure enclaves and restricted file transfers. It’s clear that strong protections are essential for safeguarding sensitive information.</p>
-<p>Given the current infrastructure for secure data access (e.g., FSRDCs, remote secure setups, restricted file transfers), what are the privacy, security, ethical, and equity implications of these systems?</p>
+<p>Given the current infrastructure for secure data access (e.g., FSRDCs, remote secure setups, restricted file transfers), what are the privacy, security, and ethical implications of these systems?</p>
 <p>Things to consider in answering this question:</p>
 <ul>
 <li>Who gets access to high-quality, confidential data—and who doesn’t?</li>
-<li>How do geographic, institutional, or citizenship requirements influence equity in research?</li>
+<li>How do geographic, institutional, or citizenship requirements influence accessibility in research?</li>
 <li>Are current security measures proportionate to the risks they’re trying to mitigate?</li>
 <li>How might these systems reinforce or challenge power imbalances in data use?</li>
 </ul>
@@ -595,7 +614,7 @@ Figure&nbsp;5.2: Image of the locations of all 35 FSRDCs in the United States as
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Each person in the painting in <a href="#fig-sunday-data" class="quarto-xref">Figure&nbsp;<span>5.3</span></a> is currently re-identifiable. The goal of PETs is to preserve certain statistical qualities of the data (in this metaphor, the general image of the painting) while also maintaining privacy. We will demonstrate how each PETs change both the re-identifiability of the individuals and the larger image of the painting.</p>
 <p>These illustrative images were originally published in <span class="citation" data-cites="bowen2021protecting">Bowen (<a href="#ref-bowen2021protecting" role="doc-biblioref">2021</a>)</span> and are used with the author’s permission.</p>
-<div id="fig-sunday-data" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Georges Seurat's *A Sunday Afternoon on the Island of La Grande Jatte (1884)*; no disclosure control techniques applied." data-fig-align="center" width="100%">
+<div id="fig-sunday-data" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-align="center" alt="Georges Seurat's *A Sunday Afternoon on the Island of La Grande Jatte (1884)*; no disclosure control techniques applied.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sunday-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/03_sunday.jpg" id="fig-sunday-data" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%" alt="Georges Seurat's *A Sunday Afternoon on the Island of La Grande Jatte (1884)*; no disclosure control techniques applied.">
@@ -1280,7 +1299,7 @@ This warning is displayed once every 8 hours.</code></pre>
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p><strong>Suppression</strong> refers to omitting data or information about certain subgroups or data point(s). For example, excluding counts or proportions that are based on very small sample sizes.</p>
 <p>In <a href="#fig-sunday-suppressed" class="quarto-xref">Figure&nbsp;<span>5.6</span></a>, we can see that many individuals from the painting have been removed entirely.</p>
-<div id="fig-sunday-suppressed" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Many individuals have been suppressed from the painting and are no longer present." data-fig-align="center" width="100%">
+<div id="fig-sunday-suppressed" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-align="center" alt="Many individuals have been suppressed from the painting and are no longer present.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sunday-suppressed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/03_sunday-suppressed.png" id="fig-sunday-suppressed" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%" alt="Many individuals have been suppressed from the painting and are no longer present.">
@@ -1644,7 +1663,7 @@ Figure&nbsp;5.10
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p><strong>Rounding</strong> adjusts continuous variables or numeric outputs to be less exact.</p>
 <p>In <a href="#fig-sunday-rounding" class="quarto-xref">Figure&nbsp;<span>5.11</span></a>, lines around the objects in the painting are softened or blurred, making it harder to distinguish details.</p>
-<div id="fig-sunday-rounding" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The details of the image are less exact, representing rounding." data-fig-align="center" width="100%">
+<div id="fig-sunday-rounding" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-align="center" alt="The details of the image are less exact, representing rounding.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sunday-rounding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/03_sunday-rounding.png" id="fig-sunday-rounding" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%" alt="The details of the image are less exact, representing rounding.">
@@ -1756,7 +1775,7 @@ Figure&nbsp;5.12
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p><strong>Generalization,</strong> sometimes called coarsening or aggregation, refers to combining more narrow levels of the data (i.e., counties) into broader levels (i.e., states).</p>
 <p>In <a href="#fig-sunday-generalization" class="quarto-xref">Figure&nbsp;<span>5.13</span></a>, the color palette of the painting is limited to a single shade of a given color, creating coarser groups.</p>
-<div id="fig-sunday-generalization" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The color palette of the painting is limited to a single shade of each color, creating broader groups from the individual values." data-fig-align="center" width="100%">
+<div id="fig-sunday-generalization" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-align="center" alt="The color palette of the painting is limited to a single shade of each color, creating broader groups from the individual values.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sunday-generalization-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/03_sunday-generalization.png" id="fig-sunday-generalization" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%" alt="The color palette of the painting is limited to a single shade of each color, creating broader groups from the individual values.">
@@ -1860,7 +1879,7 @@ Figure&nbsp;5.14
 <div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <p><strong>Top coding/bottom coding</strong> limits values above/below a threshold to the threshold value (i.e., individuals over age 95 are recoded to age 95 or a “95 and over” category).</p>
 <p>In <a href="#fig-sunday-top" class="quarto-xref">Figure&nbsp;<span>5.15</span></a>, we represent this process of recoding values above or below a threshold by changing the lighter colors to white.</p>
-<div id="fig-sunday-top" class="quarto-float quarto-figure quarto-figure-center anchored" alt="All lighter values have been recoded, making it harder to isolate extreme individuals." data-fig-align="center" width="100%">
+<div id="fig-sunday-top" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-align="center" alt="All lighter values have been recoded, making it harder to isolate extreme individuals.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sunday-top-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/03_sunday-top-coding.png" id="fig-sunday-top" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%" alt="All lighter values have been recoded, making it harder to isolate extreme individuals.">
