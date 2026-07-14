@@ -401,7 +401,7 @@ There are two major categories of data privacy threats:
 ::: callout-tip
 ### Data Security
 
-**Data Security** is a condition that results from the establishment and maintenance of protective measures that enable an organization to perform its mission or critical functions despite risks posed by threats to its use of systems. Protective measures may involve a combination of deterrence, avoidance, prevention, detection, recovery, and correction that should form part of the organization’s risk management approach.. [^1] 
+**Data Security** is a condition that results from the establishment and maintenance of protective measures that enable an organization to perform its mission or critical functions despite risks posed by threats to its use of systems. Protective measures may involve a combination of deterrence, avoidance, prevention, detection, recovery, and correction that should form part of the organization’s risk management approach. [^1] 
 
 [^1]: National Institute of Standards and Technology (NIST). *Security*. NIST Computer Security Resource Center Glossary. https://csrc.nist.gov/glossary/term/security
 :::
@@ -659,7 +659,7 @@ We've just started exploring the world of security, privacy, and ethical. Throug
 
 ::: {.callout-important}
 ## No set taxonomony in the field!
-All definitions used (including the data life cycle) are my opinionated definitions. Since many different fields work in data security, privacy, and ethical, there is no standard taxonomy, which causes a lot of confusion. I set a standard definition in all my work, including this course, to ensure we are using the same common language. However, note that when reading other materials or literature, you might encounter conflicting terminology.
+All definitions used (including the data life cycle) are my opinionated definitions. Since many different fields work in data security, privacy, and ethics, there is no standard taxonomy, which causes a lot of confusion. I set a standard definition in all my work, including this course, to ensure we are using the same common language. However, note that when reading other materials or literature, you might encounter conflicting terminology.
 
 ::: 
 
@@ -702,4 +702,4 @@ Cite all references using APA format, including the real-world example you picke
 
 **AI Reflection (Prepare to discuss in class):** Use any generative AI tool to summarize the real-world example you picked. Compare the AI-generated summary to your own review.  What did the AI miss, oversimplify, or misunderstand about the privacy, security, or ethical issues involved?
 
-# References
+## References

@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Data Storage – DAT 607: Security, Privacy, and Ethics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./03_data-sharing-transfer.html" rel="next">
+<link href="./02_data-collection.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="www/styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_data-storage.html">Week 3 - Data Storage and Sharing</a></li><li class="breadcrumb-item"><a href="./03_data-storage.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">DAT 607: Security, Privacy, and Ethics</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to DAT 607 - Summer 2026</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 1 - Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DAT 607 Basics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_security-privacy-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Governance: Security, Privacy, and Ethics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 2 - Data Collection and Acquisition</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_data-collection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquisition</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 3 - Data Storage and Sharing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_data-storage.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_data-sharing-transfer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#quick-recap-on-week-2" id="toc-quick-recap-on-week-2" class="nav-link active" data-scroll-target="#quick-recap-on-week-2"><span class="header-section-number">4.1</span> Quick recap on week 2</a>
+  <ul class="collapse">
+  <li><a href="#data-types" id="toc-data-types" class="nav-link" data-scroll-target="#data-types"><span class="header-section-number">4.1.1</span> Data types</a></li>
+  <li><a href="#data-collections-challenges" id="toc-data-collections-challenges" class="nav-link" data-scroll-target="#data-collections-challenges"><span class="header-section-number">4.1.2</span> Data collections challenges</a></li>
+  <li><a href="#week-3-assignment" id="toc-week-3-assignment" class="nav-link" data-scroll-target="#week-3-assignment"><span class="header-section-number">4.1.3</span> Week 3 Assignment</a></li>
+  </ul></li>
+  <li><a href="#why-is-data-storage-so-important" id="toc-why-is-data-storage-so-important" class="nav-link" data-scroll-target="#why-is-data-storage-so-important"><span class="header-section-number">4.2</span> Why is data storage so important?</a>
+  <ul class="collapse">
+  <li><a href="#more-definitions" id="toc-more-definitions" class="nav-link" data-scroll-target="#more-definitions"><span class="header-section-number">4.2.1</span> More definitions</a></li>
+  <li><a href="#data-cleaning" id="toc-data-cleaning" class="nav-link" data-scroll-target="#data-cleaning"><span class="header-section-number">4.2.2</span> Data cleaning</a></li>
+  <li><a href="#educational-attainment-example" id="toc-educational-attainment-example" class="nav-link" data-scroll-target="#educational-attainment-example"><span class="header-section-number">4.2.3</span> Educational attainment example</a></li>
+  <li><a href="#credit-data" id="toc-credit-data" class="nav-link" data-scroll-target="#credit-data"><span class="header-section-number">4.2.4</span> Credit data</a></li>
+  </ul></li>
+  <li><a href="#data-security-basics" id="toc-data-security-basics" class="nav-link" data-scroll-target="#data-security-basics"><span class="header-section-number">4.3</span> Data security basics</a>
+  <ul class="collapse">
+  <li><a href="#virtual-data-storage" id="toc-virtual-data-storage" class="nav-link" data-scroll-target="#virtual-data-storage"><span class="header-section-number">4.3.1</span> Virtual data storage</a></li>
+  <li><a href="#physical-data-storage" id="toc-physical-data-storage" class="nav-link" data-scroll-target="#physical-data-storage"><span class="header-section-number">4.3.2</span> Physical data storage</a></li>
+  </ul></li>
+  <li><a href="#importance-of-meta-data" id="toc-importance-of-meta-data" class="nav-link" data-scroll-target="#importance-of-meta-data"><span class="header-section-number">4.4</span> Importance of meta data</a>
+  <ul class="collapse">
+  <li><a href="#findable" id="toc-findable" class="nav-link" data-scroll-target="#findable"><span class="header-section-number">4.4.1</span> Findable</a></li>
+  <li><a href="#accessible" id="toc-accessible" class="nav-link" data-scroll-target="#accessible"><span class="header-section-number">4.4.2</span> Accessible</a></li>
+  <li><a href="#interoperable" id="toc-interoperable" class="nav-link" data-scroll-target="#interoperable"><span class="header-section-number">4.4.3</span> Interoperable</a></li>
+  <li><a href="#reusable" id="toc-reusable" class="nav-link" data-scroll-target="#reusable"><span class="header-section-number">4.4.4</span> Reusable</a></li>
+  <li><a href="#fair-r-preparing-data-for-artificial-intelligence" id="toc-fair-r-preparing-data-for-artificial-intelligence" class="nav-link" data-scroll-target="#fair-r-preparing-data-for-artificial-intelligence"><span class="header-section-number">4.4.5</span> FAIR-R: Preparing data for artificial intelligence</a></li>
+  <li><a href="#searching-for-metadata" id="toc-searching-for-metadata" class="nav-link" data-scroll-target="#searching-for-metadata"><span class="header-section-number">4.4.6</span> Searching for metadata</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.5</span> References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_data-storage.html">Week 3 - Data Storage and Sharing</a></li><li class="breadcrumb-item"><a href="./03_data-storage.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="fig-data-storage" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-storage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/03_data-lifecycle-storage.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-storage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: A data lifecycle diagram emphasizing the ‘Data storage’ stage in gray, with the remaining stages shown in lighter colors. This stage involves housing the collected data in physical or degital repositories.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Overview
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This week focuses on the data storage stage of the data lifecycle. You will learn how to:</p>
+<ul>
+<li>Describe how data change while in data storage, including the differences between original, cleaned, gold standard, confidential, and public datasets.</li>
+<li>Explain how data cleaning, documentation, and quality assurance practices affect the accuracy, usability, and downstream use of data.</li>
+<li>Evaluate how security, privacy, and ethical considerations influence decisions about storing, sharing, and protecting data.</li>
+<li>Apply the FAIR principles and FAIR-R framework to assess whether data are findable, accessible, interoperable, reusable, and ready for responsible AI applications.</li>
+</ul>
+</div>
+</div>
+<section id="quick-recap-on-week-2" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="quick-recap-on-week-2"><span class="header-section-number">4.1</span> Quick recap on week 2</h2>
+<section id="data-types" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="data-types"><span class="header-section-number">4.1.1</span> Data types</h3>
+<p>We learned about the three principal types of qualitative and quantitative data:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Primary data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Primary</strong> is any data directly collected by an entity.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Secondary data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Secondary</strong> is any data collected by another organization that a stakeholder uses for analysis.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Administrative data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Administrative</strong> is any data collected by governments or other organizations, as part of their management and operation of a program or service, that provide information on registrations, transactions, and other regular tasks.</p>
+</div>
+</div>
+</section>
+<section id="data-collections-challenges" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="data-collections-challenges"><span class="header-section-number">4.1.2</span> Data collections challenges</h3>
+<p>We’ve discussed several challenges surrounding security, privacy, and ethics in data collection. Specifically, we learned that data are made, not found, which means…</p>
+<ul>
+<li>defining groups and other variables and how those decisions impacts our communities and downstream uses.</li>
+<li>deciding whether to collect the data or not, and if so, how to collect that data while balancing various things, such as cost, convenience, and incentives.</li>
+<li>recognizing that a lack of data results in a lack of action.</li>
+</ul>
+</section>
+<section id="week-3-assignment" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="week-3-assignment"><span class="header-section-number">4.1.3</span> Week 3 Assignment</h3>
+<section id="read" class="level4">
+<h4 class="anchored" data-anchor-id="read">Read</h4>
+<ul>
+<li>Chapter 3: How Do Data Privacy Methods Expand Access to Data?</li>
+</ul>
+</section>
+<section id="optional-additional-read" class="level4">
+<h4 class="anchored" data-anchor-id="optional-additional-read">Optional additional read</h4>
+<ul>
+<li><a href="https://issues.org/public-data-states-bowen/">The Future of Public Data Lies in the States, But It’s Complicated</a>.</li>
+</ul>
+</section>
+<section id="write-600-to-1200-words" class="level4">
+<h4 class="anchored" data-anchor-id="write-600-to-1200-words">Write (600 to 1200 words)</h4>
+<p>Choose a community you belong to (e.g., your hometown, workplace, religious organization, college community, or another community that is meaningful to you). Identify a public dataset or data collection effort that is used to inform decisions affecting that community. Examples may include data collected by the U.S. Census Bureau, Bureau of Labor Statistics, Centers for Disease Control and Prevention, Department of Transportation, local governments, or other public agencies.</p>
+<p>Describe the dataset and explain how it is collected, who collects it, and how it is used to inform decisions, policies, or resource allocation. In your discussion paper, address the following questions:</p>
+<ol type="1">
+<li>Data Collection and Acquisition
+<ul>
+<li>How are the data acquired (e.g., surveys, administrative records, sensors, web scraping, third-party data, or other methods)?</li>
+<li>Who is responsible for collecting and maintaining the data?</li>
+</ul></li>
+<li>Representation and Data Quality
+<ul>
+<li>Who is represented in the data?</li>
+<li>Are there populations that may be underrepresented, excluded, or difficult to measure? (e.g., children, veterans, persons with disabilities)</li>
+<li>How might missing or inaccurate data affect decisions made using the dataset?</li>
+</ul></li>
+<li>Privacy, Security, and Ethics
+<ul>
+<li>What privacy, security, and/or ethical concerns arise from collecting this information?</li>
+<li>How would limiting or expanding access to this dataset affect your community in making decisions?</li>
+<li>What might be the privacy, security, and/or ethical risks could result from collecting or linking additional information?</li>
+</ul></li>
+</ol>
+<p>Example (that you can’t use): <a href="https://apps.urban.org/features/dividing-lines-school-segregation/">School district lines</a>.</p>
+<p>Cite all references using APA format, including the real-world example you picked.</p>
+<p><strong>AI Reflection (Prepare to discuss in class):</strong> What risks might arise if AI systems are trained on incomplete, biased, or unrepresentative data? How might that impact your community?</p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 1</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>What dataset did you choose, and what community does it represent?</p></li>
+<li><p>If an AI system were trained using your dataset, what is the biggest risk you identified? Why?</p></li>
+<li><p>What populations or perspectives might be missing or underrepresented in the data? How could that affect the AI system’s outputs or decisions?</p></li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="why-is-data-storage-so-important" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="why-is-data-storage-so-important"><span class="header-section-number">4.2</span> Why is data storage so important?</h2>
+<blockquote class="blockquote">
+<p>Archives and domain repositories that preserve and disseminate social and behavioral data perform a critical service to the scholarly community and to society at large by ensuring that these culturally significant materials are accessible in perpetuity. The success of the archiving endeavor, however, ultimately depends on researchers’ willingness to deposit their data and documentation for others to use.</p>
+</blockquote>
+<p>From Inter-university Consortium for Political and Social Research <span class="citation" data-cites="icpsr">(<a href="#ref-icpsr" role="doc-biblioref">ICPSR, n.d.</a>)</span>, one of the world’s largest data archives of social science data for research and education.</p>
+<section id="more-definitions" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="more-definitions"><span class="header-section-number">4.2.1</span> More definitions</h3>
+<p>As data move through their lifecycle, they often exist in multiple versions. The following terms distinguish common stages in that process.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Original dataset:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Original dataset</strong> is the raw, unedited, and unprotected version of the data as originally collected.</p>
+<p>For example, raw 2020 Decennial Census microdata, which are never publicly released.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Cleaned dataset
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Cleaned dataset</strong> is a version of the original data that has been reviewed and corrected for errors, inconsistencies, missing values, or other quality issues.</p>
+<p>For example, the Census Edited File is a cleaned version of the 2020 Census data used to produce official statistics and data products.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Gold standard dataset
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Gold standard dataset</strong> is a curated version of the cleaned data that has been prepared for a specific analytical or operational purpose.</p>
+<p>For example, the Census Edited File is further transformed to produce datasets such as the Redistricting Data File, which states use to redraw legislative and congressional districts.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Confidential data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Confidential dataset</strong> is a dataset that contains information that could directly or indirectly identify individuals, households, businesses, or other protected entities and therefore cannot be publicly released.</p>
+<p>For example, the Census Edited File is confidential. The file is only accessible to individuals sworn to protect confidentiality (e.g., those with Special Sworn Status) and only within secure environments such as a Federal Statistical Research Data Center.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Public dataset or statistics
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Public dataset</strong> is a version of the data that has been reviewed and modified, when necessary, to protect confidentiality before public release.</p>
+<p>For example, the U.S. Census Bureau’s public-use datasets and statistical tables or the Bureau of Labor Statistics’ published unemployment statistics.</p>
+</div>
+</div>
+<div id="fig-data-storage" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-storage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/03_medallion-arrchitecture.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-storage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: Diagram illustrating the medallion architecture for data processing. On the left, multiple Data Sources feed into a Bronze layer labeled “Raw Data Ingestion.” Data then moves to the Silver layer, labeled “Filtered. Cleaned. Augmented.” Next, it progresses to the Gold layer, labeled “Business Level Data.” Finally, the curated data are used to create Products, including Analytics, Reporting, and Statistics/Data Science. A large arrow labeled Data Quality runs beneath the Bronze, Silver, and Gold layers, indicating that data quality improves as data move through each stage.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>No set taxonomony in the field!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All definitions used (including the data life cycle) are my opinionated definitions. Since many different fields work in data security, privacy, and ethics, there is no standard taxonomy, which causes a lot of confusion. I set a standard definition in all my work, including this course, to ensure we are using the same common language. However, note that when reading other materials or literature, you might encounter conflicting terminology.</p>
+</div>
+</div>
+<p>Different levels of security and privacy are needed for different versions of the data.</p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 2</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You are given a dataset from an online wine retailer containing customers’ date of birth, age, gender, and purchase history. Your task is to estimate the average age, by gender, of customers who purchased a particular product.</p>
+<p>Before writing any code or calculating summary statistics, what is the first thing you should do with the data? Why?</p>
+<p>Hint: Pay particular attention to the date of birth variable.</p>
+</div>
+</div>
+</section>
+<section id="data-cleaning" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="data-cleaning"><span class="header-section-number">4.2.2</span> Data cleaning</h3>
+<p>After data collection, data curators typically need to clean the raw data, which are often messy, inconsistent, incomplete, or contain errors. In most data projects, data cleaning is the most time-consuming stage, often requiring more effort than data collection or analysis. This critical step transforms raw data into a consistent, usable format for analysis, reporting, and other downstream uses.</p>
+<p>One widely used framework for organizing data is tidy data, which has three defining characteristics:</p>
+<ol type="1">
+<li>Each variable forms a column.</li>
+<li>Each observation forms a row.</li>
+<li>Each type of observational unit forms a dataframe.</li>
+</ol>
+<div id="fig-tidydata" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tidydata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/03_what_is_tidydata.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tidydata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3: Artwork by Allison Horst.
+</figcaption>
+</figure>
+</div>
+<p>Given the conceptual focus of this course, we will not complete coding exercises on data cleaning. Instead, we will focus on the key principles and decisions involved in preparing data for analysis.</p>
+<p>There is no single “correct” workflow for cleaning data, and you will find many different recommendations in textbooks and online resources. Despite these differences, most approaches emphasize the same core tasks, which we discuss below.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Create backups!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Always create a backup copy of the original data before making any changes. If something goes wrong during the cleaning process, you can always return to the original dataset.</p>
+</div>
+</div>
+<section id="check-for-data-quality-issues" class="level4">
+<h4 class="anchored" data-anchor-id="check-for-data-quality-issues">Check for data quality issues</h4>
+<p>Common data quality issues include duplicate records, spelling errors, incorrect values or signs (e.g., entering a negative value instead of a positive one), inconsistent coding, and totals that do not match the sum of their components (e.g., the populations of all counties in Massachusetts should add up to the state’s total population).</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Be careful about outliers
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Some data cleaning guides recommend removing outliers. However, you should proceed with caution. An outlier may represent a data entry error, but it may also reflect a real and important phenomenon. Before removing any observations, investigate why they are unusual and document your decision.</p>
+</div>
+</div>
+</section>
+<section id="standardize-the-data" class="level4">
+<h4 class="anchored" data-anchor-id="standardize-the-data">Standardize the data</h4>
+<p>Standardization includes tasks such as making text case consistent, removing extra spaces and non-printing characters, standardizing date and time formats (a very common source of problems), and ensuring that variables use consistent units of measurement.</p>
+</section>
+<section id="decide-how-to-handle-missing-data" class="level4">
+<h4 class="anchored" data-anchor-id="decide-how-to-handle-missing-data">Decide how to handle missing data</h4>
+<p>Missing data can substantially affect downstream analyses and conclusions. Clearly document how missing values were handled. Common approaches include removing incomplete records or imputing missing values using appropriate statistical methods.</p>
+</section>
+<section id="validate-the-data-cleaning-quality-assurance" class="level4">
+<h4 class="anchored" data-anchor-id="validate-the-data-cleaning-quality-assurance">Validate the data cleaning (Quality assurance)</h4>
+<p>After cleaning the data, perform quality assurance checks to confirm that the cleaning process produced the intended results and did not introduce new errors.</p>
+</section>
+</section>
+<section id="educational-attainment-example" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="educational-attainment-example"><span class="header-section-number">4.2.3</span> Educational attainment example</h3>
+<p>Suppose a researcher gathers data from various participants who have filled out a form about educational attainment. The raw data might look something like this:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Fictitious dataset of educational attainment.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Race</th>
+<th style="text-align: left;">Age</th>
+<th style="text-align: left;">Education</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">peter hunter</td>
+<td style="text-align: left;">caucasian</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">bachelors</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beth SMITH</td>
+<td style="text-align: left;">african-american</td>
+<td style="text-align: left;">32</td>
+<td style="text-align: left;">Master’s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ryan chadwick</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">40</td>
+<td style="text-align: left;">PHD</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Silvia Li</td>
+<td style="text-align: left;">asian</td>
+<td style="text-align: left;">28</td>
+<td style="text-align: left;">bachelors</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Larry Thomas</td>
+<td style="text-align: left;">asian</td>
+<td style="text-align: left;">twenty-three</td>
+<td style="text-align: left;">high school diploma</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Anne-Marie</td>
+<td style="text-align: left;">caucasian</td>
+<td style="text-align: left;">35</td>
+<td style="text-align: left;">Bachelor’s</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 3</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Based on the initial data collection of this raw data, answer the following (2 minutes to type or write your answer out):</p>
+<ol type="1">
+<li>What data quality issues do you notice?</li>
+<li>Which issues can be corrected confidently?</li>
+<li>Which issues would require you to go back to the original respondent or data source?</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Possible issues
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Inconsistent Name Formats:</strong> Mixed capitalization and punctuation.</li>
+<li><strong>Inconsistent Race Descriptions:</strong> Different capitalization and spelling conventions.</li>
+<li><strong>Inconsistent Age Formats:</strong> One value is written as text instead of a number.</li>
+<li><strong>Inconsistent Education Levels:</strong> Mixed capitalization, abbreviations, and wording.</li>
+<li><strong>Potential ambiguity:</strong> We do not know whether categories such as race or education were entered as free text or selected from predefined options.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Possible cleaning steps
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Standardizing Name Formats:
+<ul>
+<li>Capitalize all names properly.</li>
+<li>Correct: “John Doe” instead of “john doe”.</li>
+</ul></li>
+<li>Standardizing Race Descriptions:
+<ul>
+<li>Ensure race descriptions are consistent.</li>
+<li>Correct: “African-American” instead of “african-american”.</li>
+</ul></li>
+<li>Standardizing Age Formats:
+<ul>
+<li>Convert all ages to numeric format.</li>
+<li>Correct: “23” instead of “twenty-three”.</li>
+</ul></li>
+<li>Standardizing Education Levels:
+<ul>
+<li>Use consistent terms and capitalizations.</li>
+<li>Correct: “Bachelor’s” instead of “bachelors” and “Ph.D.” instead of “PHD”.</li>
+</ul></li>
+<li><strong>Document every change so the cleaning process is reproducible and transparent.</strong></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Cleaned version of the fictitious dataset.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Race</th>
+<th style="text-align: right;">Age</th>
+<th style="text-align: left;">Education</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Peter Hunter</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Bachelor’s</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beth Smith</td>
+<td style="text-align: left;">African American</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">Master’s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ryan Chadwick</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">Ph.D.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Silvia Li</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">Bachelor’s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Larry Thomas</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">High School Diploma</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Anne-Marie</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">Bachelor’s</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 4</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The dataset is now cleaner, but there is still one important concern.</p>
+<ul>
+<li>Which values could still contain errors even though they are formatted consistently?</li>
+<li>How could we verify the accuracy of the data?</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Cleaning improves consistency, but it does not guarantee accuracy.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For example:</p>
+<ul>
+<li>Is Larry actually 23 years old, or did someone incorrectly convert “twenty-three” from another value?</li>
+<li>Did respondents use the education categories consistently?</li>
+<li>Did respondents self-identify their race, or did someone assign those categories afterward?</li>
+<li>Were names entered correctly, or were typographical errors introduced during data entry?</li>
+</ul>
+<p>Many potential errors cannot be resolved through cleaning alone. They require returning to the original data source or documentation.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Cognitive testing and questionnaire evaluation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Prior to launching a survey, most entities should conduct cognitive interviews<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and other survey evaulations to ensure the surveys are easy to understand (avoiding misinterpretations of the questions), can be completed within the suggested time frame, and capture the correct information, among other things.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 5</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose you are tasked with merging another dataset with this one to include income. However, some other entity collected the data on a separate population and only has race and education as common variables. What are the potential issues for merging the datasets?</p>
+<p><strong>Hint:</strong> Reflect on our discussion on data collection.</p>
+</div>
+</div>
+</section>
+<section id="credit-data" class="level3" data-number="4.2.4">
+<h3 data-number="4.2.4" class="anchored" data-anchor-id="credit-data"><span class="header-section-number">4.2.4</span> Credit data</h3>
+<p>Suppose you have credit bureau data that is rich in information but lacks details on race and ethnicity. Including this information could provide valuable insights, as there are documented cases showing how credit scores contribute to racial homeownership gaps <span class="citation" data-cites="choi2019explaining">(<a href="#ref-choi2019explaining" role="doc-biblioref">Choi et al. 2019</a>)</span> and how credit screening affects hiring decisions <span class="citation" data-cites="traub2016bad">(<a href="#ref-traub2016bad" role="doc-biblioref">Traub and McElwee 2016</a>)</span>.</p>
+<p>A team member suggests using imputation–a method for estimating missing values–to infer race and ethnicity based on individuals’ names, ages, and ZIP codes.</p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 6</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What are your thoughts on this scenario and this approach to creating race and ethnicity variables? (Take 2 minutes to type or write your response.)</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Open only after discussion
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The most widely used method for imputing race and ethnicity on administrative data is Bayesian Improved Surname Geocoding, which the RAND Corporation developed for the US Department of Health and Human Services and which is also used by the Equal Opportunity Employment Commission and the Consumer Financial Protection Bureau (CFPB). The latest method involving this tool, Medicare Bayesian Improved Surname Geocoding 2.0, combines name, administrative data, and census data based on address in a calibrated Bayesian framework (a multinomial logistic regression model) to estimate probabilities by race and ethnicity for each record in a dataset.</p>
+</blockquote>
+<p>From <span class="citation" data-cites="stern2021ethics">Stern and Narayanan (<a href="#ref-stern2021ethics" role="doc-biblioref">2021</a>)</span>, where they tested Bayesian Improved Surname Geocoding to learn from a case study in an attempt to incorporate equity in imputing race and ethnicity onto a nationally representative sample of credit bureau data.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="data-security-basics" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="data-security-basics"><span class="header-section-number">4.3</span> Data security basics</h2>
+<blockquote class="blockquote">
+<p>The only system which is truly secure is one which is switched off and unplugged locked in a titanium lined safe, buried in a concrete bunker, and is surrounded by nerve gas and very highly paid armed guards. Even then, I wouldn’t stake my life on it.</p>
+</blockquote>
+<p>~ Gene Spafford, Director, Computer Operations, Audit, and Security Technology (COAST) Project, Purdue University</p>
+<p>For all data, you should document how and where you will store copies of your research files to ensure their safety. You should also specify how many copies you will maintain and how you will synchronize them. (You do <strong>not</strong> want multiple versions of the same data floating around wtih inconsistencies among them!)</p>
+<p>After determining how to synchronize your files, one best practice for protecting data is to store multiple copies in multiple locations. How and where you store data depends on the contents of the data, applicable privacy laws, workplace practices, contractual agreements, and other factors. We will discuss some of these issues today and in future classes, but keep in mind that many additional considerations exist. You should always consult with your institution’s or workplace’s data security officer when handling confidential data.</p>
+<section id="virtual-data-storage" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="virtual-data-storage"><span class="header-section-number">4.3.1</span> Virtual data storage</h3>
+<div id="fig-one-simply-unlocked" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-one-simply-unlocked-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/03_one-simply-unlocked-computer.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-one-simply-unlocked-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.4: One Does Not Simply meme from the movie,“Lord of the Rings,” that says, “One Does not Simply Walk Awary and Leave your Computer Unlocked.”
+</figcaption>
+</figure>
+</div>
+<p>Most universities, privacy companies, government agencies, and other organizations maintain confidential storage systems that are separate from nonconfidential storage systems. Any confidential data stored on disks should use some form of encryption, such as Pretty Good Privacy (PGP)<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, at the folder level.</p>
+<p>Anyone using an account or computer with access to confidential data must not leave the session unattended, must log out at the end of the session, and must secure any storage media containing confidential data.</p>
+<p>Other good data security practices include:</p>
+<ul>
+<li>limiting access to confidential data to authorized users, such as through secure login credentials</li>
+<li>using multiple levels of encryption</li>
+<li>preventing individuals from making copies of confidential data to nonconfidential disks (or copying the data without authorization)</li>
+<li>maintaining virus protection and intrusion detection systems</li>
+</ul>
+</section>
+<section id="physical-data-storage" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="physical-data-storage"><span class="header-section-number">4.3.2</span> Physical data storage</h3>
+<div id="fig-hiding-plants" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hiding-plants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/03_hiding-plants.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hiding-plants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.5: A scene from the TV Show, “Futurama,” with the character Leela is trying to hide papers. The text says, “Too much papers! Not enough hiding plants!
+</figcaption>
+</figure>
+</div>
+<p>If confidential data are stored on a PC, the data should be encrypted or stored on removable storage media that are secured in a locked cabinet when not in use.</p>
+<p>All storage media (e.g., CDs, internal and external hard drives, flash drives) that contain confidential data must be explicitly labeled “confidential.” The project security officer or project manager (depending on your workplace) should maintain a log for each piece of confidential storage media and record the dates of the following events:</p>
+<ul>
+<li>receipt of the item from an external source</li>
+<li>creation of the item at the institution</li>
+<li>destruction of the item</li>
+<li>transfer of responsibility for the item to another person (even within the institution)</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Security and privacy trainings and audits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Frequently, workplaces and/or entities that allow data use require annual training sessions on the appropriate handling of confidential data.</p>
+<p>Additionally, they may conduct semiannual reviews of confidential data logs to ensure that all confidential media are properly accounted for.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="importance-of-meta-data" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="importance-of-meta-data"><span class="header-section-number">4.4</span> Importance of meta data</h2>
+<blockquote class="blockquote">
+<p>Metadata are essential for maximizing the usefulness of data. Because it is often impossible for secondary researchers to ask questions of the original data producers, metadata are the de facto form of communication between them. Comprehensive metadata standardizes how the data are described, enables a deeper comprehension of a dataset, facilitates data searches by variables, and offers a variety of display options on the Web.</p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Meta data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Metadata</strong> is “information about the data collections that help others discover, understand, and use them.”</p>
+<p>From ICPSR’s webpage on <a href="https://www.icpsr.umich.edu/web/pages/datamanagement/lifecycle/metadata.html">Metadata</a>.</p>
+</div>
+</div>
+<p>The lack of metadata across public datasets from local, state, territory, tribal, and federal government agencies is one reason why the Open, Public, Electronic and Necessary (OPEN) Government Data Act was included as a section of the <a href="https://www.datacoalition.org/resources/Documents/BILLS-115HR4174ih-FEBP.pdf">2018 Foundations for Evidence-Based Policymaking Act</a>. This bipartisan U.S. law encouraged the federal government to modernize its data infrastructure, including data management practices, statistical efficiency, and data accessibility.</p>
+<p>To conceptually understand what information should be included in metadata, we will follow the FAIR guiding principles. FAIR aims to make data findable, accessible, interoperable, and reusable <span class="citation" data-cites="wilkinson2016fair">(<a href="#ref-wilkinson2016fair" role="doc-biblioref"><span class="nocase">Wilkinson et al.</span> 2016</a>)</span>.</p>
+<p>As AI becomes increasingly integrated into research, policy, and decision-making, data must also be prepared for machine learning and AI applications. This requires going beyond simply making data available. Data must be sufficiently documented, structured, contextualized, and governed so that AI systems can interpret and use the data appropriately.</p>
+<p>One emerging framework for thinking about this additional requirement is FAIR-R, where the additional “R” represents AI Ready. FAIR-R extends the FAIR principles by emphasizing that data should not only be available for reuse but also prepared for responsible use by AI systems. AI-ready data should include clear documentation of data provenance, collection methods, limitations, quality considerations, context, and appropriate use.</p>
+<p>In practice, FAIR-R reinforces many ideas already embedded within FAIR, but places greater emphasis on whether data can be understood and responsibly used by automated systems. For example, an AI system may be able to access a dataset, but without information about how the data were collected, who was included or excluded, how variables were defined, and what limitations exist, the resulting analysis may be misleading or harmful.</p>
+<p>We will first examine the FAIR principles and then discuss how FAIR-R extends these concepts for an AI-enabled world.</p>
+<p>Also, check out <a href="https://www.go-fair.org/fair-principles/">GO FAIR</a>, “a bottom-up, stakeholder-driven and self-governed initiative that aims to implement the FAIR data principles.” I borrow examples from this site.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Document, Discover, and Interoperate
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://ddialliance.org/">Document, Discover, and Interoperate</a> (DDI) is a standard that follows the FAIR principles and many major data repositories like ICPSR uses DDI!</p>
+</div>
+</div>
+<div id="fig-charlie-metadata" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-charlie-metadata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/03_charlie-metadata.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-charlie-metadata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.6: Charlie Conspiracy meme from the TV Show, “Always Sunny in Philidelphia,” that says, “Searching for the right data without a catalog.”
+</figcaption>
+</figure>
+</div>
+<section id="findable" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="findable"><span class="header-section-number">4.4.1</span> Findable</h3>
+<p><strong>1. Data and metadata are assigned a globally unique, eternally persistent identifier.</strong></p>
+<p>Two common examples are <a href="https://orcid.org/">ORCID</a> (Open Researcher and Contributor ID) and <a href="https://www.doi.org/">DOI</a> (Digital Object Identifier). Both are used in a paper I recently published <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2023.2270795">here</a>.</p>
+<p><strong>2. Data are described with rich metadata.</strong></p>
+<p>More details the better! Imagine what information you would like to know. Some potential information could be descriptive about the context, quality and condition, how the data were collected and cleaned, or characteristics of the data.</p>
+<p><strong>3. Metadata clearly and explicitly include the identifier of the data they describe.</strong></p>
+<blockquote class="blockquote">
+<p>The metadata and the dataset they describe are usually separate files. The association between a metadata file and the dataset should be made explicit by mentioning a dataset’s globally unique and persistent identifier in the metadata</p>
+</blockquote>
+<p><strong>4. (Meta)data are registered or indexed in a searchable resource.</strong></p>
+<p>Even if the data have identifies and rich metadata, that doesn’t guarantee that the data is findable. This is why data curators will often use well-known data repositories to house their data, such as <a href="https://www.icpsr.umich.edu/web/pages/ICPSR/index.html">ICPSR</a> and <a href="https://dataverse.harvard.edu/">Harvard Dataverse</a> (Urban has one too called the <a href="https://datacatalog.urban.org/">Urban Data Catalog</a>!).</p>
+</section>
+<section id="accessible" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="accessible"><span class="header-section-number">4.4.2</span> Accessible</h3>
+<p><strong>1. (Meta)data are retrievable by their identifier using a standardized communication protocol.</strong></p>
+<ul>
+<li><strong>The protocol is open, free, and universally implementable.</strong></li>
+<li><strong>The protocol allows for an authentication and authorization procedure, where necessary.</strong></li>
+</ul>
+<p>Hypertext Transfer Protocol Secure (HTTPS), File Transfer Protocol Secure (FTPS), and Phone numbers (arguably not universally-implementable, but close enough) are all examples of such identifiers.</p>
+<p><strong>2. Metadata are accessible, even when data are no longer available.</strong></p>
+<blockquote class="blockquote">
+<p>Datasets tend to degrade or disappear over time because there is a cost to maintaining an online presence for data resources. When this happens, links become invalid and users waste time hunting for data that might no longer be there. Storing the metadata generally is much easier and cheaper. Hence, principle Accessible 2 states that metadata should persist even when the data are no longer sustained. Accessible 2 is related to the registration and indexing issues described in F4.</p>
+</blockquote>
+</section>
+<section id="interoperable" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="interoperable"><span class="header-section-number">4.4.3</span> Interoperable</h3>
+<p><strong>1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</strong></p>
+<p>Data should be readable and interpretable by both humans and computers without needing specialized tools. The goal is a common understanding of digital objects using a standard knowledge representation language. This language should have a precise formal specification, be accessible for learning, and support interoperability across multiple scenarios.</p>
+<p><strong>2. (Meta)data use vocabularies that follow the FAIR principles.</strong></p>
+<p>When describing data or metadata, we use vocabularies that must be FAIR so they can be found, accessed, interoperated, and reused by humans and machines. These vocabularies should have globally unique and persistent identifiers, be well-documented, and easily accessible. Communities should set FAIRness standards, ensuring vocabularies meet criteria such as unique identifiers (Findable 1), resolvable via standard protocols (Accessible 1), and described in a formal, accessible language (Identifiable 1).</p>
+<p><strong>3. (Meta)data include qualified references to other (meta)data.</strong></p>
+<p>A qualified reference is a cross-reference that specifies its intent, such as “X is regulator of Y” rather than just “X is associated with Y.” The goal is to create meaningful links between (meta)data resources to enrich contextual knowledge, while balancing the effort required to develop a good data model. Specify relationships such as one dataset building on another or needing complementary data, and describe scientific links between datasets. Additionally, all datasets should be properly cited with globally unique and persistent identifiers.</p>
+</section>
+<section id="reusable" class="level3" data-number="4.4.4">
+<h3 data-number="4.4.4" class="anchored" data-anchor-id="reusable"><span class="header-section-number">4.4.4</span> Reusable</h3>
+<p><strong>1. (Meta)data are richly described with a plurality of accurate and relevant attributes</strong></p>
+<p>Others can more easily reuse the data if there are many labels/information attached to the data. Some examples are what was the purpose of the data collection, what are the limitations, what were the conditions for the data collection, has the data been cleaned, are the variables explained or self-explanatory, etc.</p>
+<ul>
+<li><strong>(Meta)data are released with a clear and accessible data usage license.</strong></li>
+</ul>
+<p>Here is a <a href="https://choosealicense.com/licenses/">page</a> to help choose a license.</p>
+<ul>
+<li><strong>(Meta)data are associated with detailed provenance.</strong></li>
+</ul>
+<blockquote class="blockquote">
+<p>For others to reuse your data, they should know where the data came from (i.e., clear story of origin/history, see Readability 1), who to cite and/or how you wish to be acknowledged. Include a description of the workflow that led to your data: Who generated or collected it? How has it been processed? Has it been published before? Does it contain data from someone else that you may have transformed or completed? Ideally, this workflow is described in a machine-readable format.</p>
+</blockquote>
+<ul>
+<li><strong>(Meta)data meet domain-relevant community standards.</strong></li>
+</ul>
+<p>Data reuse is easier when datasets are similar: same type, standardized organization, sustainable formats, and common documentation templates. FAIR data should meet these standards to enhance usability. If deviations from standard practices are necessary, reasons should be specified in the metadata. Note that FAIR principles do not address data quality, which depends on the intended application.</p>
+</section>
+<section id="fair-r-preparing-data-for-artificial-intelligence" class="level3" data-number="4.4.5">
+<h3 data-number="4.4.5" class="anchored" data-anchor-id="fair-r-preparing-data-for-artificial-intelligence"><span class="header-section-number">4.4.5</span> FAIR-R: Preparing data for artificial intelligence</h3>
+<p>The FAIR principles provide an important foundation for responsible data stewardship by emphasizing that data should be <strong>Findable, Accessible, Interoperable, and Reusable</strong>. However, as AI becomes increasingly integrated into research, government, and decision-making, an additional question emerges:</p>
+<p><strong>Are data prepared for responsible use by AI systems?</strong></p>
+<p>The FAIR-R framework extends the FAIR principles by adding an additional “R” for <strong>AI Readiness</strong> <span class="citation" data-cites="verhulst2025moving">(<a href="#ref-verhulst2025moving" role="doc-biblioref">Verhulst et al. 2025</a>)</span>. FAIR-R recognizes that data suitable for human reuse may not necessarily be suitable for AI applications. AI systems require data that are not only available but also sufficiently documented, structured, contextualized, and governed.</p>
+<p>AI-ready data should support applications such as AI training, fine-tuning, and augmentation while maintaining appropriate safeguards around quality, transparency, and responsible use <span class="citation" data-cites="verhulst2025moving">(<a href="#ref-verhulst2025moving" role="doc-biblioref">Verhulst et al. 2025</a>)</span>.</p>
+<p>FAIR-R builds on many concepts already included in FAIR but places additional emphasis on:</p>
+<ul>
+<li><strong>Data quality and documentation:</strong> AI systems depend on accurate and well-documented data. Users should understand how data were collected, processed, cleaned, and transformed, as well as the limitations of the data.</li>
+<li><strong>Data labeling and structure:</strong> AI systems often require additional information about variables, categories, relationships, and annotations to interpret data correctly.</li>
+<li><strong>Provenance and transparency:</strong> AI users need to understand the origin of data, how they were created, and what changes were made throughout the data lifecycle.</li>
+<li><strong>Ethical and responsible use:</strong> AI-ready data should include information about appropriate uses, privacy protections, legal requirements, and potential biases or limitations.</li>
+<li><strong>Standards and interoperability:</strong> Data should be structured using common standards that allow both humans and machines to understand and work with the data.</li>
+</ul>
+<p>FAIR-R is not a replacement for FAIR. Instead, it extends FAIR by recognizing that the growth of AI creates new requirements for data stewardship. A dataset can be technically reusable but still not be ready for AI applications if users cannot determine whether the data are appropriate, representative, sufficiently documented, or ethically suitable for the intended purpose.</p>
+<p>For example, a government dataset may be publicly available and downloadable, but without information about the population covered, missing data, collection methods, definitions of key variables, and known limitations, an AI system may produce inaccurate or biased results. Making data AI-ready requires investing in the documentation and governance practices that allow both humans and machines to use data responsibly.</p>
+<p>FAIR-R highlights an important shift in data stewardship: the goal is not simply to make more data available, but to make data available <strong>with the context, quality, and governance needed to create trustworthy insights.</strong></p>
+</section>
+<section id="searching-for-metadata" class="level3" data-number="4.4.6">
+<h3 data-number="4.4.6" class="anchored" data-anchor-id="searching-for-metadata"><span class="header-section-number">4.4.6</span> Searching for metadata</h3>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 7</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will be given 20 minutes to complete this in-class activity.</p>
+<p>Each of you have been assigned a topic that has been randomized (see table below).</p>
+<ol type="1">
+<li><strong>Find a digital object and identify its metadata:</strong> Based on your assigned topic, find an article, dataset, image, or other digital object that matches or is highly related to that topic. Select an object from a digital repository or platform that provides enough metadata to answer <em>at least half</em> of the following questions:</li>
+</ol>
+<ul>
+<li>What is the title of the digital object?</li>
+<li>Who is the author, creator, or organization responsible for the object?</li>
+<li>When was the digital object created or published?</li>
+<li>What keywords, topics, or subject categories are associated with the object?</li>
+<li>What is the abstract, summary, or description of the object?</li>
+<li>What file formats are available?</li>
+<li>What information is provided about how the data or object were created or collected?</li>
+<li>What information is provided about licensing, permissions, or appropriate use?</li>
+</ul>
+<p>Below are a few repositories you could use as a starting point, but feel free to use any search tools at your disposal (e.g., use your Google-Fu) to find a digital object with a reasonable amount of metadata.</p>
+<ul>
+<li><a href="https://data.gov/">Data.Gov</a></li>
+<li><a href="https://data.fivethirtyeight.com/">FiveThirtyEight</a></li>
+<li><a href="https://figshare.com/">figshare</a></li>
+<li><a href="https://markets.ft.com/data/">Financial Times</a></li>
+<li><a href="https://dataverse.harvard.edu/">Harvard Dataverse</a></li>
+<li><a href="https://www.icpsr.umich.edu/web/pages/ICPSR/index.html">ICPSR</a></li>
+<li><a href="https://developer.imdb.com/non-commercial-datasets/">IMDb Non-Commercial Datasets</a></li>
+<li><a href="https://data.mendeley.com/">Mendeley Data</a></li>
+<li><a href="https://data.nhm.ac.uk/">Natural History Museum Data Portal</a></li>
+<li><a href="https://zenodo.org/">Zenodo</a></li>
+</ul>
+<ol start="2" type="1">
+<li><strong>Assess the metadata using FAIR principles:</strong> Based on the metadata you found, evaluate the quality of the digital object.</li>
+</ol>
+<ul>
+<li><strong>Findable:</strong> Could another person easily discover this object? Does it have a persistent identifier, searchable metadata, or useful keywords?</li>
+<li><strong>Accessible:</strong> Can users access the object and its metadata through a clear and understandable process?</li>
+<li><strong>Interoperable:</strong> Are the metadata and data described using common standards, formats, or terminology that allow others (including computers) to understand them?</li>
+<li><strong>Reusable:</strong> Does the documentation provide enough context for others to understand and appropriately use the object?</li>
+</ul>
+<ol start="3" type="1">
+<li>Assess AI readiness using FAIR-R</li>
+</ol>
+<p>Consider whether this digital object is ready for use in AI applications.</p>
+<ul>
+<li>Does the metadata provide enough context for an AI system to understand the data?</li>
+<li>Are the data sources, collection methods, processing steps, and limitations documented?</li>
+<li>Are variables, labels, and potential biases clearly described?</li>
+<li>Would someone know whether this data is appropriate for training or evaluating an AI system?</li>
+</ul>
+</div>
+</div>
+<p><strong>Topic assignments:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Student Last Name</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bennett</td>
+<td>Financial trade</td>
+</tr>
+<tr class="even">
+<td>DiSandro</td>
+<td>Domestic education</td>
+</tr>
+<tr class="odd">
+<td>Gentile</td>
+<td>Medical images</td>
+</tr>
+<tr class="even">
+<td>Hayes</td>
+<td>Classical music</td>
+</tr>
+<tr class="odd">
+<td>Imperati</td>
+<td>Digital advertising</td>
+</tr>
+<tr class="even">
+<td>Possamai</td>
+<td>Automobiles</td>
+</tr>
+<tr class="odd">
+<td>Ricket</td>
+<td>Internet searches</td>
+</tr>
+<tr class="even">
+<td>Rious</td>
+<td>Journalism</td>
+</tr>
+<tr class="odd">
+<td>Rossi</td>
+<td>Phone calls or text messages</td>
+</tr>
+<tr class="even">
+<td>Santosh</td>
+<td>Domestic politics</td>
+</tr>
+<tr class="odd">
+<td>Spadea</td>
+<td>Genetics</td>
+</tr>
+<tr class="even">
+<td>Sudoval</td>
+<td>Mental health</td>
+</tr>
+<tr class="odd">
+<td>Trotta</td>
+<td>Clothing retail</td>
+</tr>
+<tr class="even">
+<td>Wadsworth</td>
+<td>Forgeries</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="references" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="references"><span class="header-section-number">4.5</span> References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-choi2019explaining" class="csl-entry" role="listitem">
+Choi, Jung Hyun, Alanna McCargo, Michael Neal, Laurie Goodman, and Caitlin Young. 2019. <span>“Explaining the Black-White Homeownership Gap.”</span> <em>Urban Institute</em>. <a href="https://www.urban.org/research/publication/explaining-black-white-homeownership-gap-closer-look-disparities-across-local-markets">https://www.urban.org/research/publication/explaining-black-white-homeownership-gap-closer-look-disparities-across-local-markets</a>.
+</div>
+<div id="ref-icpsr" class="csl-entry" role="listitem">
+ICPSR. n.d. <em>Guide to Social Science Data Preparation and Archiving: Best Practice Throughout the Data Life Cycle: 6th Edition</em>. <a href="https://www.icpsr.umich.edu/web/pages/deposit/guide/">https://www.icpsr.umich.edu/web/pages/deposit/guide/</a>.
+</div>
+<div id="ref-stern2021ethics" class="csl-entry" role="listitem">
+Stern, Alena, and Ajjit Narayanan. 2021. <em>Ethics and Empathy in Using Imputation to Disaggregate Data for Racial Equity</em>. <a href="https://www.urban.org/research/publication/ethics-and-empathy-using-imputation-disaggregate-data-racial-equity-case-study-imputing-credit-bureau-data">https://www.urban.org/research/publication/ethics-and-empathy-using-imputation-disaggregate-data-racial-equity-case-study-imputing-credit-bureau-data</a>.
+</div>
+<div id="ref-traub2016bad" class="csl-entry" role="listitem">
+Traub, Amy, and Sean McElwee. 2016. <span>“Bad Credit Shouldn’t Block Employment: How to Make State Bans on Employment Credit Checks More Effective.”</span> <em>Washington, DC: Demos</em>.
+</div>
+<div id="ref-verhulst2025moving" class="csl-entry" role="listitem">
+Verhulst, Stefaan, Andrew J Zahuranec, and Hannah Chafetz. 2025. <span>“Moving Toward the Fair-r Principles: Advancing AI-Ready Data.”</span> <em>Available at SSRN</em>.
+</div>
+<div id="ref-wilkinson2016fair" class="csl-entry" role="listitem">
+<span class="nocase">Wilkinson, Mark D, Michel Dumontier, IJsbrand Jan Aalbersberg, et al.</span> 2016. <span>“The FAIR Guiding Principles for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3 (1): 1–9.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>“Cognitive tests, pilot tests, focus groups, and other tools can be used to understand how respondents interpret your questions and instructions, understand the meaning of survey questions, and to write better questions. This type of testing can also evaluate different survey techniques used in the field to increase response or cooperation, and can help you sort out the meaning of survey responses.” <a href="https://psr.iq.harvard.edu/book/overview-cognitive-testing-and-questionnaire-evaluation">Overview of Cognitive Testing and Questionnaire Evaluation</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>“Pretty Good Privacy is an encryption program that provides cryptographic privacy and authentication for data communication.” from https://en.wikipedia.org/wiki/Pretty_Good_Privacy<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./02_data-collection.html" class="pagination-link" aria-label="Data Collection and Acquisition">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquisition</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./03_data-sharing-transfer.html" class="pagination-link" aria-label="Data Sharing and Transfer">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -16,11 +16,11 @@ book:
     - part: Week 2 - Data Collection and Acquisition
       chapters:
         - 02_data-collection.qmd
-    # 
-    # - part: Week 3 - Data Storage and Sharing
-    #   chapters: 
-    #     - 03_data-storage.qmd
-    #     - 03_data-sharing-transfer.qmd
+
+    - part: Week 3 - Data Storage and Sharing
+      chapters:
+        - 03_data-storage.qmd
+        - 03_data-sharing-transfer.qmd
     # 
     # - part: Week 4 - Data Analysis and Presentation Prep
     #   chapters: 

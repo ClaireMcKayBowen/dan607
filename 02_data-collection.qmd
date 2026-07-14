@@ -58,7 +58,7 @@ Data privacy adversaries are known by many names, including  *intruders, attacke
 ::: callout-tip
 ### Data Security
 
-**Data Security** is a condition that results from the establishment and maintenance of protective measures that enable an organization to perform its mission or critical functions despite risks posed by threats to its use of systems. Protective measures may involve a combination of deterrence, avoidance, prevention, detection, recovery, and correction that should form part of the organization’s risk management approach.. [^1] 
+**Data Security** is a condition that results from the establishment and maintenance of protective measures that enable an organization to perform its mission or critical functions despite risks posed by threats to its use of systems. Protective measures may involve a combination of deterrence, avoidance, prevention, detection, recovery, and correction that should form part of the organization’s risk management approach. [^1] 
 
 [^1]: National Institute of Standards and Technology (NIST). *Security*. NIST Computer Security Resource Center Glossary. https://csrc.nist.gov/glossary/term/security
 :::
@@ -171,7 +171,7 @@ exercise_number <- exercise_number + 1
 
 ![This is Fine meme that says, "When your dataset includes sensitive personal info...and you didn’t ask if people were okay with that..."](www/images/02_this-is-fine.jpg){#fig-this-is-fine fig-align="center" width=80%}
 
-## Data types
+## Data Types
 There are generally three principal types of qualitative and quantitative data.
 
 ### Primary data
@@ -219,10 +219,10 @@ Administrative data are collected for the administration of an organization or p
 
 exercise_number <- exercise_number + 1
 ```
-Working in small groups (4 to 5), choose one of the three data types.
+Working in small groups (3 to 5), choose one of the three data types (or I may assign).
 
  - Identify one real-world example of your assigned data type. Who collects the data, and for what purpose?
- - What are the main strengths and limitiations of using this type of data?
+ - What are the main strengths and limitations of using this type of data?
  - What privacy, security, and/or ethical concerns should be considered when collecting these data?
  - If an AI system were trained using these data, what challenges or risks might arise? Consider issues such as data quality, representation, bias, or misuse.
  
@@ -249,7 +249,7 @@ Quote from "Do No Harm Guide: Collecting, Analyzing, and Reporting Gender and Se
 
 One of the most important (and often overlooked) aspects of data collection is how we define people, places, and events (and more!). Categories such as race, ethnicity, disability, household, veteran status, employment, and rural/urban are not naturally occurring facts. Researchers, policymakers, and organizations made decisions about what to measure and how to measure it.
 
-These decisions have real-world consequences. They determine who is counted (or not!), how resources are allocated (or not!), what disparities can be identified, and how AI systems and statistical models learn about the topic. As our society changes, these definitions must also evolve to remain accurate, inclusive, and fit-for-purpose.
+These decisions have real-world consequences. They determine who is counted (or not!), how resources are allocated (or not!), what disparities can be identified (or not!), and how AI systems and statistical models learn about the topic (or not!). As our society changes, these definitions must also evolve to remain accurate, inclusive, and fit-for-purpose.
 
 ![1980 Census Race Question](www/images/02_1980-census-race-question.jpg){#fig-1980-census-race fig-align="center" width=100%}
 
@@ -476,4 +476,4 @@ Cite all references using APA format, including the real-world example you picke
 
 **AI Reflection (Prepare to discuss in class):** What risks might arise if AI systems are trained on incomplete, biased, or unrepresentative data? How might that impact your community?
 
-# References
+## References
