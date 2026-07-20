@@ -17,56 +17,72 @@ exercise_number <- 1
 
 ```
 
-![A data lifecycle diagram emphasizing the 'Data analysis' stage in pink, with the remaining stages shown in lighter colors. This stage involves exploring, processing, and interpreting data to insights and trends for decision-making.](www/images/data-lifecycle-analysis.png){#fig-data-analysise fig-align="center" width=100%}
+![A data lifecycle diagram emphasizing the 'Data analysis' stage in pink, with the remaining stages shown in lighter colors. This stage involves exploring, processing, and interpreting data to insights and trends for decision-making.](www/images/04_data-lifecycle-analysis.png){#fig-data-analysise fig-align="center" width=100%}
 
-For this week, we will learn about how to evaluate and analyze data while considering security, privacy, ethics, and equity.
+:::{.callout-note}
+### Overview
 
-## Quick recap on week 3 (with some week 2)
+This week focuses on the data analysis stage of the data lifecycle. You will learn how to:
 
-We've discussed several challenges surrounding security, privacy, ethics, and equity in data collection, storage, and sharing.
+- Describe the privacy-utility tradeoff and how privacy-enhancing technologies (PETs) balance data protection with data usefulness with the intent for downstream uses/analyses.
+- Evaluate data utility and disclosure risks using different metrics and approaches.
+- Critically assess how data-driven findings are produced, interpreted, and communicated.
 
-### Data collection
+:::
 
-For data collection, we learned the importance of:
+For this week, we will learn about how to evaluate and analyze data while considering security, privacy, and ethics.
 
-- Deciding whether to collect the data or not.
-- Defining groups and other variables that impacts our communities.
-- Recognizing that a lack of data results in a lack of action.
+## Quick recap on week 3
 
 ### Data storage 
 
-We covered the following topics:
-
-  - The overall process and considerations for cleaning data, especially how to handle missing data.
-  - Best practices for virtual and physical storage of data, including the FAIR principles for creating proper metadata.
-  
 Even more definitions...
-
-![Key stakeholders in the data ecosystem](www/images/01_stakeholders.png){#fig-stakeholders fig-align="center"}
 
 ::: {.callout-tip}
 ## Original dataset:
 
-**Original dataset** is the uncleaned, unprotected version of the data.
+**Original dataset** is the raw, unedited, and unprotected version of the data as originally collected.
 
 For example, raw 2020 Decennial Census microdata, which are never publicly released.
 ::: 
 
 ::: {.callout-tip}
-## Confidential or gold standard dataset
+## Cleaned dataset
 
-**Confidential or gold standard dataset** is the cleaned version (meaning edited for inaccuracies or inconsistencies) of the data; often referred to as the gold standard or actual data for analysis. 
+**Cleaned dataset** is a version of the original data that has been reviewed and corrected for errors, inconsistencies, missing values, or other quality issues.
 
-For example, the Census Edited File that is the final confidential data for the 2020 Census. This dataset is never publicly released but may be made available to others who are sworn to protect confidentiality (i.e., Special Sworn Status) and who are provided access in a secure environment, such as a Federal Statistical Research Data Center.
+For example, the Census Edited File is a cleaned version of the 2020 Census data used to produce official statistics and data products.
+
 ::: 
 
 ::: {.callout-tip}
+## Gold standard dataset
+
+**Gold standard dataset** is a curated version of the cleaned data that has been prepared for a specific analytical or operational purpose.
+
+For example, the Census Edited File is further transformed to produce datasets such as the Redistricting Data File, which states use to redraw legislative and congressional districts.
+::: 
+
+::: {.callout-tip}
+## Confidential data
+
+**Confidential dataset** is a dataset that contains information that could directly or indirectly identify individuals, households, businesses, or other protected entities and therefore cannot be publicly released.
+
+For example, the Census Edited File is confidential. The file is only accessible to individuals sworn to protect confidentiality (e.g., those with Special Sworn Status) and only within secure environments such as a Federal Statistical Research Data Center.
+
+::: 
+
+::: {.callout-tip}
+
 ## Public dataset or statistics
 
-**Public dataset** is the publicly released version of the confidential data.
+**Public dataset** is a version of the data that has been reviewed and modified, when necessary, to protect confidentiality before public release.
 
-For example, the US Census Bureau's public tables and datasets or the Bureau of Labor Statistics reporting the unemployment rate statistics.
+For example, the U.S. Census Bureau's public-use datasets and statistical tables or the Bureau of Labor Statistics' published unemployment statistics.
+
 ::: 
+
+![Diagram illustrating the medallion architecture for data processing. On the left, multiple Data Sources feed into a Bronze layer labeled "Raw Data Ingestion." Data then moves to the Silver layer, labeled "Filtered. Cleaned. Augmented." Next, it progresses to the Gold layer, labeled "Business Level Data." Finally, the curated data are used to create Products, including Analytics, Reporting, and Statistics/Data Science. A large arrow labeled Data Quality runs beneath the Bronze, Silver, and Gold layers, indicating that data quality improves as data move through each stage.](www/images/03_medallion-arrchitecture.png){#fig-data-storage fig-align="center" width=100%}
 
 ### Data sharing and transfer
 
@@ -85,23 +101,78 @@ We also learned about the two general ways people access data:
 
 - Chapter 5: What Makes Datasets Difficult for Data Privacy?
 
-#### Watch (Optional)
+#### Read Optional
+-	Chapter 4: How Do Data Privacy Methods Avoid Invalidating Results?
+-	[Do No Harm Guide: Applying Equity Awareness in Data Privacy Methods](https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-privacy-methods)
+
+
+#### Watch
 
 - [Scientific Studies: Last Week Tonight with John Oliver (HBO)](https://www.youtube.com/watch?v=0Rnq1NpHdmw)
 
 #### Write (600 to 1200 words)
 
-Find a news analysis story[^story] published within the last year (2024 – 2025) and answer the following questions:
+**Topic assignments:**
 
-- What does the article claim?
-- Does the content of the article apply to you, your family, and/or your community?
-- What makes you believe the conclusions?
-- Who wrote the article?
-- Where did the article get their facts?
-- What "red flags" (if any) do you notice?
-- Would the story change if there was more or less access to data? What would be that story?
+Student Last Name | Topic
+-----|-----
+Bennett | Financial trade
+DiSandro | Domestic education
+Gentile | Medical images
+Hayes | Classical music
+Imperati | Digital advertising
+Possamai | Automobiles
+Ricket | Internet searches
+Rious | Journalism
+Rossi | Phone calls or text messages
+Santosh | Domestic politics
+Spadea | Genetics
+Sudoval | Mental health
+Trotta | Clothing retail
+Wadsworth | Forgeries 
 
-[^story]: "An article written to inform readers about recent events. The author reports and attempts to deepen understanding of recent events—for example, by providing background information and other kinds of additional context." – [CSUSM Library](https://libguides.csusm.edu/news/different_news_types)
+
+##### 1. Find a digital object and identify its metadata
+
+Based on your assigned topic, find an article, dataset, image, or other digital object that matches or is highly related to that topic. Select an object from a digital repository or platform that provides enough metadata to answer *at least half* of the following questions:
+
+  - What is the title of the digital object?
+  - Who is the author, creator, or organization responsible for the object?
+  - When was the digital object created or published?
+  - What keywords, topics, or subject categories are associated with the object?
+  - What is the abstract, summary, or description of the object?
+  - What file formats are available?
+  - What information is provided about how the data or object were created or collected?
+  - What information is provided about licensing, permissions, or appropriate use?
+
+Below are a few repositories you could use as a starting point, but feel free to use any search tools at your disposal (e.g., use your Google-Fu) to find a digital object with a reasonable amount of metadata.
+
+  - [Data.Gov](https://data.gov/)
+  - [FiveThirtyEight](https://data.fivethirtyeight.com/)
+  - [figshare](https://figshare.com/)
+  - [Financial Times](https://markets.ft.com/data/)
+  - [Harvard Dataverse](https://dataverse.harvard.edu/)
+  - [ICPSR](https://www.icpsr.umich.edu/web/pages/ICPSR/index.html)
+  - [IMDb Non-Commercial Datasets](https://developer.imdb.com/non-commercial-datasets/)
+  - [Mendeley Data](https://data.mendeley.com/)
+  - [Natural History Museum Data Portal](https://data.nhm.ac.uk/)
+  - [Zenodo](https://zenodo.org/)
+
+##### 2. Assess the metadata using FAIR principles
+Based on the metadata you found, evaluate the quality of the digital object.
+
+  - **Findable:** Could another person easily discover this object? Does it have a persistent identifier, searchable metadata, or useful keywords?
+  - **Accessible:** Can users access the object and its metadata through a clear and understandable process?
+  - **Interoperable:** Are the metadata and data described using common standards, formats, or terminology that allow others (including computers) to understand them?
+  - **Reusable:** Does the documentation provide enough context for others to understand and appropriately use the object?
+  
+##### 3. Assess AI readiness using FAIR-R
+Consider whether this digital object is ready for use in AI applications.
+
+  - Does the metadata provide enough context for an AI system to understand the data?
+  - Are the data sources, collection methods, processing steps, and limitations documented?
+  - Are variables, labels, and potential biases clearly described?
+  - Would someone know whether this data is appropriate for training or evaluating an AI system?
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -112,18 +183,11 @@ Find a news analysis story[^story] published within the last year (2024 – 2025
 exercise_number <- exercise_number + 1
 ```
 
-From the required reading, we learned that we must carefully take into account how the data are collected, analyzed, disseminated. If we don't, we risk missing a vital piece of the data story, especially when data sets are aggregated, and cause more unintended harm to those we are trying to protect.
+1. What digital object did you choose, and what was one thing you learned from examining its metadata that you had never considered before?
 
-With this in mind...
+2. Looking at your object through the FAIR-R lens, what information was missing (or difficult to find) that would make it harder for an AI system to use the data responsibly?
 
-1. What did you learn about your own biases or assumptions while analyzing the article for your homework assignment?
-Did anything surprise you about what you believed at first versus what you concluded after digging into the facts and authorship?
-
-2. If you were to rewrite the article, what would you change or expand upon and why?
-Would you choose a different source? Would you evaluate the credibility or red flags differently?
-
-3. How might the conclusions or message of the article change if you read it from the perspective of someone with different lived experience—such as a policymaker, someone from another country, or someone directly impacted by the issue?
-What ethical or privacy implications become more or less salient when shifting that lens?
+3. Based on what you found, would you trust your digital object to train or evaluate an AI system? Why or why not?
  
 :::
 
@@ -141,11 +205,9 @@ As mentioned in the textbook, data curators and privacy experts must fine-tune t
 
 ![First panel: "f(x)" and the "It's Fine meme." Second panel: "f^(-1)" and the "It's Fine Meme", but a flame is sitting in the chair saying "It's fine." surrounded by dogs.](www/images/04_its-fine-inverse.jpg){#fig-process-actors width=75%}
 
-## What is the privacy-utility tradeoff?
+### Privacy-utility tradeoff?
 
 ![Weighing Seth Meyers GIF by Late Night with Seth Meyers](www/images/04_seth-meyers-balance.gif){#fig-seth-meyers-balance fig-align="center"}
-
-## Privacy-Utility Tradeoff
 
 One of the most important challenges in statistical disclosure protection is managing the fundamental tradeoff between privacy loss and statistical utility. As we will see throughout this class, this tradeoff plays a central role in determining the technical approaches to data protection and in shaping ethical and equitable decisionmaking.
 
@@ -161,7 +223,32 @@ The privacy-utility tradeoff describes the relationship between the amount of pr
 
 ## Assessing utility
 
-Generally there are three ways to measure utility of the data:
+::: {.callout-tip}
+
+## Definition: Data utility, Quality, Accuracy, or Usefulness
+
+**Data utility, quality, accuracy, or usefulness** is how useful or accurate the data are for research and analysis purposes.
+
+::: 
+
+::: {.callout-tip}
+
+## Definition: Utility Metrics
+
+**Utility metrics** are metrics that measure a public use dataset's degree of usefulness for downstream data processing.
+
+:::
+
+Why produce utility metrics? 
+
+1. Assess how public use data can or cannot be used.
+   - e.g., can I use public use data to estimate the effect of degree type on migration in and out of the state? 
+   - e.g., can I use public use data to estimate the number of students with subsidized healthcare coverage? 
+2. Motivate moving the needle on the privacy-utility trade-off.
+   - e.g., does the relationship between degree type and migration need to be more accurate so public use data can be useful to practitioners? 
+   - e.g., is the estimate of the number of students with subsidized healthcare coverage accurate enough that I could include more noise in that variable? 
+
+Generally there are three ways to measure utility of the public use data:
 
 -   General (or global) utility metrics;
 -   Specific utility metrics; and
@@ -172,7 +259,8 @@ Generally there are three ways to measure utility of the data:
 ::: callout-tip
 ### General utility
 
-**General utility**, sometimes called global utility, measures the univariate and multivariate distributional similarity between the confidential data and the public data (e.g., sample means, sample variances, and the variance-covariance matrix).
+**General utility** metrics measure differences between public data and confidential data independent of pre-specified use cases.
+
 :::
 
 General utility metrics are useful because they provide a sense of how "fit for use" public data is for analysis without making assumptions about the uses of the public data.
@@ -190,7 +278,8 @@ Some univariate general utility measures could include comparisons of:
 ::: callout-tip
 ##### Correlation fit
 
-**Correlation fit** measures how well the synthesizer recreates the linear relationships between variables in the confidential dataset.
+**Correlation fit** measures how well the public use data recreates the linear relationships between variables in the confidential dataset.
+
 :::
 
 To calculate correlation fit:
@@ -206,7 +295,10 @@ To calculate correlation fit:
 ::: callout-tip
 ##### Discriminant based methods
 
-**Discriminant based methods** measure how well a predictive model can distinguish (i.e., discriminate) between records from the confidential and public data (most commonly applied to synthetic data).
+**Discriminant based methods** measure how well a predictive model can distinguish (i.e., discriminate) between records from the confidential and synthetic data.
+
+Simply put, the harder it is for the predictive model to distinguish records from one another, the *higher the general utility* of the public data.
+
 :::
 
 -   The confidential data and public data should theoretically be drawn from the same super population.
@@ -234,7 +326,8 @@ There are several different discriminant-based metrics, but it is beyond this co
 ::: callout-tip
 ### Specific utility
 
-**Specific utility**, sometimes called outcome specific utility, measures the similarity of results for a specific analysis (or analyses) of the confidential and public data (e.g., comparing the coefficients in regression models).
+**Specific utility** or analysis-specific utility metrics measure differences between public data and confidential data *for pre-specified use cases.*
+
 :::
 
 Specific utility metrics measure how suitable a public dataset is for specific analyses.
@@ -253,13 +346,14 @@ Specific utility metrics measure how suitable a public dataset is for specific a
 #### Regression confidence interval overlap
 
 ::: callout-tip
-##### Regression confidence interval overlap
+##### Confidence Interval Overlap (CIO)
 
-**Regression confidence interval overlap** quantifies how well confidence intervals from estimates on the public data recreate confidence intervals from the confidential data.
+**Confidence interval overlap (CIO)** quantifies how well confidence intervals from estimates on the synthetic data recreate confidence intervals from the confidential data. 
 
-1 indicates perfect overlap (it is typically impossible to achieve a 1 on real-world data). 0 indicates intervals that are adjacent but not overlapping. Negative values indicate gaps between the intervals.
+1 indicates perfect overlap. 0 indicates intervals that are adjacent but not overlapping. Negative values indicate gaps between the intervals.
 
-It is common to compare intervals from linear regression models and logistic regression models.
+A common example is comparing intervals from linear regression models and logistic regression models. 
+
 :::
 
 ![Confidence interval overlap as a measure of specific utility](www/images/04_confidence-interval-overlap.png){width=75%}
@@ -288,6 +382,7 @@ There are generally three kinds of disclosure risk:
 #### Identity disclosure
 
 **Identity disclosure** occurs if the data intruder associates a known individual with a public data record (e.g., a record linkage attack or when a data adversary combines one or more external data sources to identify individuals in the public data).
+
 :::
 
 @sweeney2013identifying used voter data to re-identify individuals in the Personal Genome Project.
@@ -374,12 +469,7 @@ Inferential disclosure is a specialized type of attribute disclosure, so the met
 exercise_number <- exercise_number + 1
 ```
 
-Suppose you've been asked to prepare a public-use version of a comprehensive K–12 education dataset. The original dataset includes sensitive information about all students in a state, such as names, ages, genders, home addresses, and standardized test scores.
-
-1. What PETs methods would you apply to protect student privacy?
-2. What checks or evaluations would you perform to assess whether the dataset has been sufficiently protected against re-identification or misuse? Hint: Think back to the recent reading assignment - Chapter 4.
-3. How would you balance privacy protection with the need to preserve the usefulness of the data for researchers and policymakers? Hint: Think back to the recent reading assignment - Chapter 4.
-4. What are the potential ethical and equity issues in how you choose and apply PETs methods (e.g., different impacts across student groups or school districts)
+TBD
 
 :::
 
@@ -398,49 +488,93 @@ There are often two sides to every story, especially when it comes to how people
 exercise_number <- exercise_number + 1
 ```
 
-You will be given 30 minutes to complete this in-class activity (with a check-in at 15 minutes to assess progress).
+Each of you will work in pairs or groups of three. You will have 30 minutes to complete this activity, with a check-in after 15 minutes to assess your progress.
 
-Each of you has been assigned a random "topic" (see table below).
+Each pair (or trio) will choose one question from the list below.
 
-For your assigned question, come up with at least two different statistics that are technically correct but seem to contradict each other (or at least are drastically different) based on data from the United States. For each statistic, answer the following:
+**Step 1 (individually): Answer the question without AI**
 
-  - What information did you use to answer your question?
-  - Did the digital object that contained the information follow the FAIR principles?
-  - How did you access that information?
-    - Did the storage and transfer of that information take into account security and privacy?
-  - How did you use that information to answer your question?
-  - Do you have any ethical and/or equity concerns about this information?
+Without using a generative AI tool, answer your assigned question using U.S. data and statistics.
+
+As you work, consider the following:
+
+- What information did you use to answer the question?
+- How did you access the information?
+- Did the storage and transfer of that information appear to take security and privacy into account?
+- How did you use the information to answer the question?
+- Do you have any ethical concerns about the information or how it was collected, stored, or used?
+
+**Step 2 (within your partner or group): Ask AI the same question**
+
+Working together, ask a generative AI system the same question.
+
+Compare the AI's response with your own research and with the answers each member of your group found.
+
+Discuss the following:
+
+- Did the AI produce the same statistic(s) that you found? If not, why might the answers differ?
+- Did the AI present its answer with appropriate uncertainty or caveats, or did it sound more certain than the evidence supports?
+- Based on your own research, would you trust the AI's answer? Why or why not?
 
 :::
 
+**Assigned Pairs/Groups:**
+
+```{r}
+#| warning: false
+
+set.seed(42)
+
+library(tidyverse)
+library(dplyr)
+
+students <- c("Bennett", 
+              "DiSandro", 
+              "Gentile", 
+              "Hayes", 
+              "Imperati", 
+              "Possamai", 
+              "Ricket", 
+              "Rious", 
+              "Rossi", 
+              "Santosh", 
+              "Spadea", 
+              "Sudoval",
+              "Trotta", 
+              "Wadsworth")
+
+n <- length(students)
+
+students |>
+  sample(n, replace = FALSE)
+
+```
+
 **Topic assignments:**
 
-<!-- GIVE TWO TOPICS -->
+- What percent of marriages end in divorce?
+- What is the average student loan debt?
+- What is the primary factor that causes homelessness?
+- At what age do mental health disorders develop in people?
+- At what age are women less likely to get pregnant?
+- At what year after being founded do most startup companies fail?
+- What percentage of immigrants are taking jobs from Americans?
+- What is the average cost of raising a child?
+- What percentage of crimes are committed by someone known to the victim?
+- What percentage of welfare recipients are able-bodied adults who don't work?
+- Does the unemployment rate accurately reflect joblessness?
+- What percentage of energy consumption comes from renewable sources?
 
-Student Last Name | Topic
------|-----
-Androlewicz | What percent of marriages end in divorce?
-Boyar | What is the percentage of African American men incarcerated compared to those in college?
-Choate | What is the carbon footprint of raising a child?
-Clayman | What is the gender pay gap?
-Cousins | At what age are women less likely to get pregnant?
-Daversa | What is the average student loan debt?
-Dowdy | What is the rate of illegal immigration?
-Duhil de Benaze | What is the primary factor that causes homelessness?
-Espinal-Guzman | What is the rate of sexual assault?
-Gallishaw | At what age do mental health disorders develop in people?
-Garratt | What is the teenage pregnancy rate?
-Kim | At what year after being founded do most startup companies fail?
-Morris | What percentage of immigrants are taking jobs from Americans?
-Mueller | What is the average cost of raising a child?
-O'Brien | What percentage of crimes are committed by someone known to the victim?
-OKeefe | What percentage of welfare recipients are able-bodied adults who don't work?
-Pacheoco | What is the fraud rate of using food stamps?
-Pushard | Does the unemployment rate accurately reflect joblessness?
-Scott | What percentage of immigrants are undocumented?
-Thadeio | What is the percentage of abortions performed on teenagers?
-Thorbahn | What is the percentage of gun violence?
-Washington | What percentage of energy consumption comes from renewable sources?
+<!-- Boyar | What is the percentage of African American men incarcerated compared to those in college? -->
+<!-- Choate | What is the carbon footprint of raising a child? -->
+<!-- Clayman | What is the gender pay gap? -->
+<!-- Dowdy | What is the rate of illegal immigration? -->
+<!-- Espinal-Guzman | What is the rate of sexual assault? -->
+<!-- Garratt | What is the teenage pregnancy rate? -->
+<!-- Pacheoco | What is the fraud rate of using food stamps? -->
+<!-- Scott | What percentage of immigrants are undocumented? -->
+<!-- Thadeio | What is the percentage of abortions performed on teenagers? -->
+<!-- Thorbahn | What is the percentage of gun violence? -->
  <!-- | What is the percentage of voter fraud? -->
 
 ## Week 5 Assignment
@@ -453,23 +587,37 @@ Due July 27, at 11:59 PM EDT on Canvas
 ### Read
 
 - Chapter 6: What Data Privacy Laws Exist?
+- [A Day in the Life with Federal Government Data](https://apdu.org/2025/11/a-day-in-the-life-with-federal-government-data/)
 
 ### Optional additional read
 
-- [Do No Harm Guide: Applying Equity Awareness in Data Visualization](https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-visualization).
+- [Data Brokers: Last Week Tonight with John Oliver (HBO)](https://www.youtube.com/watch?v=wqn3gR1WTcA).
 
 ### Optional watch
 
 - [Data Brokers: Last Week Tonight with John Oliver (HBO)](https://www.youtube.com/watch?v=wqn3gR1WTcA)
 
-### Collect data
-For one day, record how often private companies collect *your data* from the moment you wake up to the moment you go to bed. For example, opening a social media app or browsing the web.
-
 ### Write (600 to 1200 words)
 
-Based on your data log, answer the following questions:
+Find a news analysis story* published within the last year (2025-2026) that relies on data, research findings, surveys, administrative records, or statistical analysis. Evaluate how data were analyzed and used to support the story's conclusions.
 
-- Is any of the information collected by private companies protected by a state or federal law?
-- What could a private company do with that information for the public good?
-- What could a private company do with that information that may harm or violate your personal privacy?
-- What are the data equity and ethical impacts of collecting this information?
+- What are the main findings or claims of the article?
+- What data sources were used to support those claims?
+- How were the data analyzed or interpreted?
+- What assumptions, limitations, biases, or uncertainties might affect the conclusions?
+- How do the privacy, security, and ethical considerations surrounding the data affect the analysis?
+- Would the story's conclusions change if more data, less data, or different data were available? Why or why not? (Reflect on your week 3 assignment.)
+- Do you agree with the article's claims?
+
+Cite all references using APA format, including the article you picked.
+
+*"An article written to inform readers about recent events. The author reports and attempts to deepen understanding of recent events—for example, by providing background information and other kinds of additional context." – [CSUSM Library](https://libguides.csusm.edu/news/different_news_types)
+
+**AI Reflection (Prepare to discuss in class):** Use any generative AI tool to identify:
+- The article's main claims
+- The evidence supporting those claims
+- Potential limitations, biases, or weaknesses in the analysis
+- Whether the conclusions appear justified
+Compare the AI's response to your own assessment.
+
+## References

@@ -21,11 +21,11 @@ book:
       chapters:
         - 03_data-storage.qmd
         - 03_data-sharing-transfer.qmd
-    # 
-    # - part: Week 4 - Data Analysis and Presentation Prep
-    #   chapters: 
-    #     - 04_data-analysis.qmd
-    #     - 04_better-presentations.qmd
+
+    - part: Week 4 - Data Analysis and Presentation Prep
+      chapters:
+        - 04_data-analysis.qmd
+        - 04_better-presentations.qmd
     # 
     # - part: Week 5 - Data Dissemination
     #   chapters: 

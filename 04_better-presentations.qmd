@@ -79,15 +79,31 @@ set.seed(42)
 library(tidyverse)
 library(dplyr)
 
-students <- c("Androlewicz", "Boyar", "Choate", "Clayman", "Cousins", "Daversa", 
-              "Dowdy", "Duhil de Benaze", "Espinal-Guzman", "Gallishaw", "Garratt", "Kim",
-              "Morris", "Mueller", "O’Brien", "OKeefe", "Pacheoco",
-              "Pushard", "Scott", "Thadeio", "Thorbahn", "Washington")
+students <- c("Bennett", 
+              "DiSandro", 
+              "Gentile", 
+              "Hayes", 
+              "Imperati", 
+              "Possamai", 
+              "Ricket", 
+              "Rious", 
+              "Rossi", 
+              "Santosh", 
+              "Spadea", 
+              "Sudoval",
+              "Trotta", 
+              "Wadsworth")
 
 n <- length(students)
 
-audience <- c("family-friends", "classmates-coworkers",
-              "funders-media", "local-government-policymaker")
+audience <- c(
+  "family-friends",
+  "classmates-coworkers",
+  "industry-professionals",
+  "government-policymakers",
+  "nonprofit-community-leaders",
+  "media-general-public"
+)
 
 audience |>
   sample(n, replace = TRUE) |>
