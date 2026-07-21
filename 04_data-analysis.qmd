@@ -460,19 +460,6 @@ It is possible to learn confidential attributes without perfectly re-identifying
 
 Inferential disclosure is a specialized type of attribute disclosure, so the metrics discussed above apply here as well. Inference disclosure risk is very hard to predict, so many federal agencies tend to disregard this type of risk.
 
-::: callout
-#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
-
-```{r}
-#| echo: false
-
-exercise_number <- exercise_number + 1
-```
-
-TBD
-
-:::
-
 ## There are lies, damned lies, and statistics...
 
 ![Valerie, from the movie, "Princess Bride," saying, "Liar!"](www/images/04_liar.gif){#fig-liar fig-align="center"}
@@ -589,13 +576,14 @@ Due July 27, at 11:59 PM EDT on Canvas
 - Chapter 6: What Data Privacy Laws Exist?
 - [A Day in the Life with Federal Government Data](https://apdu.org/2025/11/a-day-in-the-life-with-federal-government-data/)
 
-### Optional additional read
-
-- [Data Brokers: Last Week Tonight with John Oliver (HBO)](https://www.youtube.com/watch?v=wqn3gR1WTcA).
-
-### Optional watch
+### Watch
 
 - [Data Brokers: Last Week Tonight with John Oliver (HBO)](https://www.youtube.com/watch?v=wqn3gR1WTcA)
+
+### Optional read
+
+- [Part 1: Is Data Privacy Dead? The Answer Must be No](https://apdu.org/2026/07/part-1-is-data-privacy-dead-the-answer-must-be-no/)
+- [Part 2: Is Data Privacy Dead? The Answer Must be No](https://apdu.org/2026/07/part-2-is-data-privacy-dead-the-answer-must-be-no/)
 
 ### Write (600 to 1200 words)
 
@@ -614,6 +602,7 @@ Cite all references using APA format, including the article you picked.
 *"An article written to inform readers about recent events. The author reports and attempts to deepen understanding of recent events—for example, by providing background information and other kinds of additional context." – [CSUSM Library](https://libguides.csusm.edu/news/different_news_types)
 
 **AI Reflection (Prepare to discuss in class):** Use any generative AI tool to identify:
+
 - The article's main claims
 - The evidence supporting those claims
 - Potential limitations, biases, or weaknesses in the analysis

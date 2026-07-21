@@ -294,8 +294,8 @@ div.csl-indent {
   <li><a href="#week-5-assignment" id="toc-week-5-assignment" class="nav-link" data-scroll-target="#week-5-assignment"><span class="header-section-number">6.6</span> Week 5 Assignment</a>
   <ul class="collapse">
   <li><a href="#read-1" id="toc-read-1" class="nav-link" data-scroll-target="#read-1"><span class="header-section-number">6.6.1</span> Read</a></li>
-  <li><a href="#optional-additional-read" id="toc-optional-additional-read" class="nav-link" data-scroll-target="#optional-additional-read"><span class="header-section-number">6.6.2</span> Optional additional read</a></li>
-  <li><a href="#optional-watch" id="toc-optional-watch" class="nav-link" data-scroll-target="#optional-watch"><span class="header-section-number">6.6.3</span> Optional watch</a></li>
+  <li><a href="#watch-1" id="toc-watch-1" class="nav-link" data-scroll-target="#watch-1"><span class="header-section-number">6.6.2</span> Watch</a></li>
+  <li><a href="#optional-read" id="toc-optional-read" class="nav-link" data-scroll-target="#optional-read"><span class="header-section-number">6.6.3</span> Optional read</a></li>
   <li><a href="#write-600-to-1200-words-1" id="toc-write-600-to-1200-words-1" class="nav-link" data-scroll-target="#write-600-to-1200-words-1"><span class="header-section-number">6.6.4</span> Write (600 to 1200 words)</a></li>
   </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.7</span> References</a></li>
@@ -1036,19 +1036,6 @@ Figure&nbsp;6.10: Record linkage attack
 </div>
 </div>
 <p>Inferential disclosure is a specialized type of attribute disclosure, so the metrics discussed above apply here as well. Inference disclosure risk is very hard to predict, so many federal agencies tend to disregard this type of risk.</p>
-<div class="callout callout-style-simple callout-none no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 2</span>
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>TBD</p>
-</div>
-</div>
 </section>
 </section>
 <section id="there-are-lies-damned-lies-and-statistics" class="level2" data-number="6.5">
@@ -1070,7 +1057,7 @@ Figure&nbsp;6.11: Valerie, from the movie, “Princess Bride,” saying, “Liar
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 3</span>
+<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 2</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1104,14 +1091,25 @@ Figure&nbsp;6.11: Valerie, from the movie, “Princess Bride,” saying, “Liar
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a>students <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Bennett"</span>, <span class="st">"DiSandro"</span>, <span class="st">"Gentile"</span>, <span class="st">"Hayes"</span>, <span class="st">"Imperati"</span>, <span class="st">"Possamai"</span>, </span>
-<span id="cb1-7"><a href="#cb1-7"></a>              <span class="st">"Ricket"</span>, <span class="st">"Rious"</span>, <span class="st">"Rossi"</span>, <span class="st">"Santosh"</span>, <span class="st">"Spadea"</span>, <span class="st">"Sudoval"</span>,</span>
-<span id="cb1-8"><a href="#cb1-8"></a>              <span class="st">"Trotta"</span>, <span class="st">"Wadsworth"</span>)</span>
-<span id="cb1-9"><a href="#cb1-9"></a></span>
-<span id="cb1-10"><a href="#cb1-10"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(students)</span>
-<span id="cb1-11"><a href="#cb1-11"></a></span>
-<span id="cb1-12"><a href="#cb1-12"></a>students <span class="sc">|&gt;</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a>  <span class="fu">sample</span>(n, <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-6"><a href="#cb1-6"></a>students <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Bennett"</span>, </span>
+<span id="cb1-7"><a href="#cb1-7"></a>              <span class="st">"DiSandro"</span>, </span>
+<span id="cb1-8"><a href="#cb1-8"></a>              <span class="st">"Gentile"</span>, </span>
+<span id="cb1-9"><a href="#cb1-9"></a>              <span class="st">"Hayes"</span>, </span>
+<span id="cb1-10"><a href="#cb1-10"></a>              <span class="st">"Imperati"</span>, </span>
+<span id="cb1-11"><a href="#cb1-11"></a>              <span class="st">"Possamai"</span>, </span>
+<span id="cb1-12"><a href="#cb1-12"></a>              <span class="st">"Ricket"</span>, </span>
+<span id="cb1-13"><a href="#cb1-13"></a>              <span class="st">"Rious"</span>, </span>
+<span id="cb1-14"><a href="#cb1-14"></a>              <span class="st">"Rossi"</span>, </span>
+<span id="cb1-15"><a href="#cb1-15"></a>              <span class="st">"Santosh"</span>, </span>
+<span id="cb1-16"><a href="#cb1-16"></a>              <span class="st">"Spadea"</span>, </span>
+<span id="cb1-17"><a href="#cb1-17"></a>              <span class="st">"Sudoval"</span>,</span>
+<span id="cb1-18"><a href="#cb1-18"></a>              <span class="st">"Trotta"</span>, </span>
+<span id="cb1-19"><a href="#cb1-19"></a>              <span class="st">"Wadsworth"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20"></a></span>
+<span id="cb1-21"><a href="#cb1-21"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(students)</span>
+<span id="cb1-22"><a href="#cb1-22"></a></span>
+<span id="cb1-23"><a href="#cb1-23"></a>students <span class="sc">|&gt;</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a>  <span class="fu">sample</span>(n, <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] "Bennett"   "Imperati"  "Wadsworth" "Rossi"     "Santosh"   "Hayes"    
  [7] "DiSandro"  "Rious"     "Sudoval"   "Spadea"    "Possamai"  "Trotta"   
@@ -1167,16 +1165,17 @@ Figure&nbsp;6.11: Valerie, from the movie, “Princess Bride,” saying, “Liar
 <li><a href="https://apdu.org/2025/11/a-day-in-the-life-with-federal-government-data/">A Day in the Life with Federal Government Data</a></li>
 </ul>
 </section>
-<section id="optional-additional-read" class="level3" data-number="6.6.2">
-<h3 data-number="6.6.2" class="anchored" data-anchor-id="optional-additional-read"><span class="header-section-number">6.6.2</span> Optional additional read</h3>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=wqn3gR1WTcA">Data Brokers: Last Week Tonight with John Oliver (HBO)</a>.</li>
-</ul>
-</section>
-<section id="optional-watch" class="level3" data-number="6.6.3">
-<h3 data-number="6.6.3" class="anchored" data-anchor-id="optional-watch"><span class="header-section-number">6.6.3</span> Optional watch</h3>
+<section id="watch-1" class="level3" data-number="6.6.2">
+<h3 data-number="6.6.2" class="anchored" data-anchor-id="watch-1"><span class="header-section-number">6.6.2</span> Watch</h3>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=wqn3gR1WTcA">Data Brokers: Last Week Tonight with John Oliver (HBO)</a></li>
+</ul>
+</section>
+<section id="optional-read" class="level3" data-number="6.6.3">
+<h3 data-number="6.6.3" class="anchored" data-anchor-id="optional-read"><span class="header-section-number">6.6.3</span> Optional read</h3>
+<ul>
+<li><a href="https://apdu.org/2026/07/part-1-is-data-privacy-dead-the-answer-must-be-no/">Part 1: Is Data Privacy Dead? The Answer Must be No</a></li>
+<li><a href="https://apdu.org/2026/07/part-2-is-data-privacy-dead-the-answer-must-be-no/">Part 2: Is Data Privacy Dead? The Answer Must be No</a></li>
 </ul>
 </section>
 <section id="write-600-to-1200-words-1" class="level3" data-number="6.6.4">
@@ -1193,7 +1192,13 @@ Figure&nbsp;6.11: Valerie, from the movie, “Princess Bride,” saying, “Liar
 </ul>
 <p>Cite all references using APA format, including the article you picked.</p>
 <p>*“An article written to inform readers about recent events. The author reports and attempts to deepen understanding of recent events—for example, by providing background information and other kinds of additional context.” – <a href="https://libguides.csusm.edu/news/different_news_types">CSUSM Library</a></p>
-<p><strong>AI Reflection (Prepare to discuss in class):</strong> Use any generative AI tool to identify: - The article’s main claims - The evidence supporting those claims - Potential limitations, biases, or weaknesses in the analysis - Whether the conclusions appear justified Compare the AI’s response to your own assessment.</p>
+<p><strong>AI Reflection (Prepare to discuss in class):</strong> Use any generative AI tool to identify:</p>
+<ul>
+<li>The article’s main claims</li>
+<li>The evidence supporting those claims</li>
+<li>Potential limitations, biases, or weaknesses in the analysis</li>
+<li>Whether the conclusions appear justified Compare the AI’s response to your own assessment.</li>
+</ul>
 </section>
 </section>
 <section id="references" class="level2" data-number="6.7">
