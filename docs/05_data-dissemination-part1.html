@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>8&nbsp; Data Dissemination: Part 1 – DAT 607: Security, Privacy, and Ethics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./05_data-dissemination-part2.html" rel="next">
+<link href="./04_better-presentations.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="www/styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05_data-dissemination-part1.html">Week 5 - Data Dissemination</a></li><li class="breadcrumb-item"><a href="./05_data-dissemination-part1.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">DAT 607: Security, Privacy, and Ethics</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to DAT 607 - Summer 2026</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 1 - Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">DAT 607 Basics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_security-privacy-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Governance: Security, Privacy, and Ethics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 2 - Data Collection and Acquisition</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_data-collection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Collection and Acquisition</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 3 - Data Storage and Sharing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_data-storage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Storage</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_data-sharing-transfer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Sharing and Transfer</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 4 - Data Analysis and Presentation Prep</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_data-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_better-presentations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Better Presentations</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 5 - Data Dissemination</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_data-dissemination-part1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_data-dissemination-part2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 2</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#quick-recap-on-week-4" id="toc-quick-recap-on-week-4" class="nav-link active" data-scroll-target="#quick-recap-on-week-4"><span class="header-section-number">8.1</span> Quick recap on week 4</a>
+  <ul class="collapse">
+  <li><a href="#privacy-utility-tradeoff" id="toc-privacy-utility-tradeoff" class="nav-link" data-scroll-target="#privacy-utility-tradeoff"><span class="header-section-number">8.1.1</span> Privacy-utility tradeoff</a></li>
+  <li><a href="#assessing-utility" id="toc-assessing-utility" class="nav-link" data-scroll-target="#assessing-utility"><span class="header-section-number">8.1.2</span> Assessing utility</a></li>
+  <li><a href="#assessing-disclosure-risk" id="toc-assessing-disclosure-risk" class="nav-link" data-scroll-target="#assessing-disclosure-risk"><span class="header-section-number">8.1.3</span> Assessing disclosure risk</a></li>
+  <li><a href="#hidden-stories-in-news-reports" id="toc-hidden-stories-in-news-reports" class="nav-link" data-scroll-target="#hidden-stories-in-news-reports"><span class="header-section-number">8.1.4</span> Hidden stories in news reports</a></li>
+  <li><a href="#week-5-assignment" id="toc-week-5-assignment" class="nav-link" data-scroll-target="#week-5-assignment"><span class="header-section-number">8.1.5</span> Week 5 Assignment</a></li>
+  </ul></li>
+  <li><a href="#u.s.-data-privacy-laws" id="toc-u.s.-data-privacy-laws" class="nav-link" data-scroll-target="#u.s.-data-privacy-laws"><span class="header-section-number">8.2</span> U.S. Data Privacy Laws</a>
+  <ul class="collapse">
+  <li><a href="#cipsea" id="toc-cipsea" class="nav-link" data-scroll-target="#cipsea"><span class="header-section-number">8.2.1</span> CIPSEA</a></li>
+  <li><a href="#title-13-u.s.-code-of-1953" id="toc-title-13-u.s.-code-of-1953" class="nav-link" data-scroll-target="#title-13-u.s.-code-of-1953"><span class="header-section-number">8.2.2</span> Title 13, U.S. Code of 1953</a></li>
+  <li><a href="#title-26-u.s.-code-of-1939" id="toc-title-26-u.s.-code-of-1939" class="nav-link" data-scroll-target="#title-26-u.s.-code-of-1939"><span class="header-section-number">8.2.3</span> Title 26, U.S. Code of 1939</a></li>
+  <li><a href="#privacy-act-of-1974" id="toc-privacy-act-of-1974" class="nav-link" data-scroll-target="#privacy-act-of-1974"><span class="header-section-number">8.2.4</span> Privacy Act of 1974</a></li>
+  <li><a href="#the-family-educational-rights-and-privacy-act-ferpa-of-1974" id="toc-the-family-educational-rights-and-privacy-act-ferpa-of-1974" class="nav-link" data-scroll-target="#the-family-educational-rights-and-privacy-act-ferpa-of-1974"><span class="header-section-number">8.2.5</span> The Family Educational Rights and Privacy Act (FERPA) of 1974</a></li>
+  <li><a href="#the-health-insurance-portability-and-accountability-act-hipaa-of-1996" id="toc-the-health-insurance-portability-and-accountability-act-hipaa-of-1996" class="nav-link" data-scroll-target="#the-health-insurance-portability-and-accountability-act-hipaa-of-1996"><span class="header-section-number">8.2.6</span> The Health Insurance Portability and Accountability Act (HIPAA) of 1996</a></li>
+  <li><a href="#state-privacy-laws" id="toc-state-privacy-laws" class="nav-link" data-scroll-target="#state-privacy-laws"><span class="header-section-number">8.2.7</span> State privacy laws</a></li>
+  <li><a href="#california-consumer-privacy-act-of-2018" id="toc-california-consumer-privacy-act-of-2018" class="nav-link" data-scroll-target="#california-consumer-privacy-act-of-2018"><span class="header-section-number">8.2.8</span> California Consumer Privacy Act of 2018</a></li>
+  </ul></li>
+  <li><a href="#patchwork-of-data-privacy-laws" id="toc-patchwork-of-data-privacy-laws" class="nav-link" data-scroll-target="#patchwork-of-data-privacy-laws"><span class="header-section-number">8.3</span> Patchwork of Data Privacy Laws</a>
+  <ul class="collapse">
+  <li><a href="#data-sharing-legal-challenges" id="toc-data-sharing-legal-challenges" class="nav-link" data-scroll-target="#data-sharing-legal-challenges"><span class="header-section-number">8.3.1</span> Data Sharing Legal Challenges</a></li>
+  <li><a href="#gaps-in-the-patchwork-of-data-privacy-laws" id="toc-gaps-in-the-patchwork-of-data-privacy-laws" class="nav-link" data-scroll-target="#gaps-in-the-patchwork-of-data-privacy-laws"><span class="header-section-number">8.3.2</span> Gaps in the Patchwork of Data Privacy Laws</a></li>
+  <li><a href="#to-share-or-not-to-share-share-data" id="toc-to-share-or-not-to-share-share-data" class="nav-link" data-scroll-target="#to-share-or-not-to-share-share-data"><span class="header-section-number">8.3.3</span> To Share or Not to Share Share Data?</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8.4</span> References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05_data-dissemination-part1.html">Week 5 - Data Dissemination</a></li><li class="breadcrumb-item"><a href="./05_data-dissemination-part1.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 1</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="fig-data-analysise" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-analysise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_data-lifecycle-dissemination.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-analysise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: A data lifecycle diagram emphasizing the ‘Data dissemination’ stage in green, with the remaining stages shown in lighter colors. This stage involves creating written, digital, and verbal products to relevant stakeholders.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Overview
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This week focuses on the data dissemination stage of the data lifecycle. You will learn how to:</p>
+<ul>
+<li>Explain the major U.S. data privacy laws and regulations governing the collection, sharing, dissemination, and protection of confidential information, including CIPSEA, Title 13, Title 26, the Privacy Act, FERPA, HIPAA, CCPA, and emerging state privacy laws.</li>
+<li>Assess the strengths and limitations of the United States’ patchwork approach to data privacy and discuss how it affects research, evidence-based policymaking, and the responsible use of administrative and survey data.</li>
+</ul>
+</div>
+</div>
+<section id="quick-recap-on-week-4" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="quick-recap-on-week-4"><span class="header-section-number">8.1</span> Quick recap on week 4</h2>
+<section id="privacy-utility-tradeoff" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="privacy-utility-tradeoff"><span class="header-section-number">8.1.1</span> Privacy-utility tradeoff</h3>
+<p>The privacy-utility tradeoff describes the relationship between the amount of privacy protection applied to a dataset and the utility (or usefulness) of that data for analysis.</p>
+<ul>
+<li><p>Privacy loss is often referred to as the risk that confidential or sensitive information about individuals, records, or entities being directly observed or inferred from the release of public data and statistics.</p></li>
+<li><p>Utility can be defined as the quality, qunatity, ease of access, permitted use and dissemination, and more (e.g., research, policy analysis, public reporting).</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Data utility, Quality, Accuracy, or Usefulness
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Data utility, quality, accuracy, or usefulness</strong> is how useful or accurate the data are for research and analysis purposes.</p>
+</div>
+</div>
+<div id="fig-tradeoff" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tradeoff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/04_privacy-utility-tradeoff.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tradeoff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: <em>Generally</em>, as privacy increases, the image quality (utility) decreases, and vice versa.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="assessing-utility" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="assessing-utility"><span class="header-section-number">8.1.2</span> Assessing utility</h3>
+<p>Generally there are three ways to measure utility of the data:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>General utility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>General utility</strong>, sometimes called global utility, measures the univariate and multivariate distributional similarity between the confidential data and the public data (e.g., sample means, sample variances, and the variance-covariance matrix).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Specific utility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Specific utility</strong> or analysis-specific utility metrics measure differences between public data and confidential data <em>for pre-specified use cases.</em></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Fit-for-purpose
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Fit-for-purpose</strong>, are something in between the previous two utility metric types to quickly assess the quality of the public data compared to the confidential data. They are not global measures, because they focus on certain features of the data, but may not be specific to an analysis that data users and stakeholders are interested in like analysis-specific utility metrics.</p>
+</div>
+</div>
+</section>
+<section id="assessing-disclosure-risk" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="assessing-disclosure-risk"><span class="header-section-number">8.1.3</span> Assessing disclosure risk</h3>
+<p>Note that most thresholds for acceptable disclosure risk are often determined by law.</p>
+<p>There are generally three kinds of disclosure risk:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Identity disclosure metrics
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Identity disclosure metrics</strong> evaluate how often we correctly re-identify confidential records in the public data.</p>
+<p><strong>Note:</strong> These metrics require major assumptions about attacker information.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Attribute disclosure
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Attribute disclosure</strong> occurs if the data intruder determines new characteristics (or attributes) of an individual based on the information available through public data or statistics (e.g., if a dataset shows that all people age 50 or older in a city are on Medicaid, then the data adversary knows that any person in that city above age 50 is on Medicaid). This information is learned without idenfying a specific individual in the data!</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Inferential disclosure
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Inferential disclosure</strong> occurs if the data intruder predicts the value of some characteristic from an individual more accurately with the public data or statistic than would otherwise have been possible (e.g., if a public homeownership dataset reports a high correlation between the purchase price of a home and family income, a data adversary could infer another person’s income based on purchase price listed on Redfin or Zillow).</p>
+</div>
+</div>
+</section>
+<section id="hidden-stories-in-news-reports" class="level3" data-number="8.1.4">
+<h3 data-number="8.1.4" class="anchored" data-anchor-id="hidden-stories-in-news-reports"><span class="header-section-number">8.1.4</span> Hidden stories in news reports</h3>
+<div id="fig-science-news-cycle" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-science-news-cycle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_phd-comics-news.gif" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-science-news-cycle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: Piled HIgher and Deeper comic, “The Science News Cycle.”
+</figcaption>
+</figure>
+</div>
+<p>There are often two sides to every story, especially when it comes to how people collect, store, transfer, and analyze data. In this in-class activity, we will apply the ideas and concepts we’ve learned so far to answer a question in multiple ways that are technically correct, even if the different answers contradict one another.</p>
+</section>
+<section id="week-5-assignment" class="level3" data-number="8.1.5">
+<h3 data-number="8.1.5" class="anchored" data-anchor-id="week-5-assignment"><span class="header-section-number">8.1.5</span> Week 5 Assignment</h3>
+<section id="read" class="level4">
+<h4 class="anchored" data-anchor-id="read">Read</h4>
+<ul>
+<li>Chapter 6: What Data Privacy Laws Exist?</li>
+<li><a href="https://apdu.org/2025/11/a-day-in-the-life-with-federal-government-data/">A Day in the Life with Federal Government Data</a></li>
+</ul>
+</section>
+<section id="watch" class="level4">
+<h4 class="anchored" data-anchor-id="watch">Watch</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=wqn3gR1WTcA">Data Brokers: Last Week Tonight with John Oliver (HBO)</a></li>
+</ul>
+</section>
+<section id="optional-read" class="level4">
+<h4 class="anchored" data-anchor-id="optional-read">Optional read</h4>
+<ul>
+<li><a href="https://apdu.org/2026/07/part-1-is-data-privacy-dead-the-answer-must-be-no/">Part 1: Is Data Privacy Dead? The Answer Must be No</a></li>
+<li><a href="https://apdu.org/2026/07/part-2-is-data-privacy-dead-the-answer-must-be-no/">Part 2: Is Data Privacy Dead? The Answer Must be No</a></li>
+</ul>
+</section>
+<section id="write-600-to-1200-words" class="level4">
+<h4 class="anchored" data-anchor-id="write-600-to-1200-words">Write (600 to 1200 words)</h4>
+<p>Find a news analysis story* published within the last year (2025-2026) that relies on data, research findings, surveys, administrative records, or statistical analysis. Evaluate how data were analyzed and used to support the story’s conclusions.</p>
+<ul>
+<li>What are the main findings or claims of the article?</li>
+<li>What data sources were used to support those claims?</li>
+<li>How were the data analyzed or interpreted?</li>
+<li>What assumptions, limitations, biases, or uncertainties might affect the conclusions?</li>
+<li>How do the privacy, security, and ethical considerations surrounding the data affect the analysis?</li>
+<li>Would the story’s conclusions change if more data, less data, or different data were available? Why or why not? (Reflect on your week 3 assignment.)</li>
+<li>Do you agree with the article’s claims?</li>
+</ul>
+<p>Cite all references using APA format, including the article you picked.</p>
+<p>*“An article written to inform readers about recent events. The author reports and attempts to deepen understanding of recent events—for example, by providing background information and other kinds of additional context.” – <a href="https://libguides.csusm.edu/news/different_news_types">CSUSM Library</a></p>
+<p><strong>AI Reflection (Prepare to discuss in class):</strong> Use any generative AI tool to identify:</p>
+<ul>
+<li>The article’s main claims</li>
+<li>The evidence supporting those claims</li>
+<li>Potential limitations, biases, or weaknesses in the analysis</li>
+<li>Whether the conclusions appear justified Compare the AI’s response to your own assessment.</li>
+</ul>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 1</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>How closely did the AI’s analysis align with your own? Where did the AI identify strengths, weaknesses, assumptions, or biases that you overlooked (if at all), and where did it miss important context or make claims that you disagreed with (if at all)? Why do you think those differences occurred?</p></li>
+<li><p>If you were an editor deciding whether to publish this news story, would you trust the AI’s assessment alone to evaluate the quality of the article? What additional information, expertise, or verification would still be necessary before deciding whether the article’s conclusions are well supported?</p></li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="u.s.-data-privacy-laws" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="u.s.-data-privacy-laws"><span class="header-section-number">8.2</span> U.S. Data Privacy Laws</h2>
+<div id="fig-wonka-privacy-policy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-wonka-privacy-policy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_wonka-privacy-policy.jpg" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wonka-privacy-policy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.4: Creepy condescending Wonka meme that says, “Please tell me more about your privacy policy.”
+</figcaption>
+</figure>
+</div>
+<p>Prior to releasing any information (e.g., data and statistics), you must review the legal requirements. As you learned from the book and the questionnaire in the first week of class, the United States has no federal law regulating how personal data can be collected, stored, and used. A privacy policy does not equate to data privacy protections.</p>
+<p>The laws governing data collection and dissemination are limited to specific federal agencies (e.g., U.S. Census Bureau) or specific data types (e.g., education).</p>
+<section id="cipsea" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="cipsea"><span class="header-section-number">8.2.1</span> CIPSEA</h3>
+<section id="what-is-cipsea" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-cipsea">What is CIPSEA?</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Confidential Information Protection and Statistical Efficiency Act (CIPSEA)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>CIPSEA establishes uniform confidentiality protections for information collected for statistical purposes by U.S. statistical agencies, and it allows some data sharing between the Bureau of Labor Statistics, Bureau of Economic Analysis, and Census Bureau. The agencies report to Office of Management and Budget on particular actions related to confidentiality and data sharing.</p>
+<p>The law gives the agencies standardized approaches to protecting information from respondents so that it will not be exposed in ways that lead to inappropriate or surprising identification of the respondent. By default the respondent’s data is used for statistical purposes only. If the respondent gives informed consent, the data can be put to some other use.</p>
+</blockquote>
+<p>From <a href="https://en.wikipedia.org/wiki/Confidential_Information_Protection_and_Statistical_Efficiency_Act">Wiki</a>.</p>
+<blockquote class="blockquote">
+<p>A reauthorization of CIPSEA in 2018-19 gave the statistical agencies more opportunities to use administrative data for statistical purposes, and required them to more deeply analyze risks to privacy and confidentiality of respondents.</p>
+</blockquote>
+<p>Foundations for Evidence-Based Policymaking Act of 2018 is often referred to as the Evidence Act and updated CIPSEA.</p>
+</div>
+</div>
+</section>
+<section id="what-data-falls-under-cipsea" class="level4">
+<h4 class="anchored" data-anchor-id="what-data-falls-under-cipsea">What data falls under CIPSEA?</h4>
+<ul>
+<li>Information collected under a pledge of confidentiality</li>
+<li>Business, household, and individual data collected solely for statistical purposes</li>
+<li>Administrative records used within approved statistical programs</li>
+</ul>
+</section>
+<section id="what-does-statistical-purpose-mean" class="level4">
+<h4 class="anchored" data-anchor-id="what-does-statistical-purpose-mean">What does “statistical purpose” mean?</h4>
+<ul>
+<li>Producing aggregate statistics (e.g., estimating or analyzing a group); not about specific individuals or entities</li>
+<li>Research and analysis intended to describe populations or trends</li>
+</ul>
+</section>
+<section id="what-are-the-restrictions" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-restrictions">What are the restrictions?</h4>
+<ul>
+<li>Cannot use protected data for administrative, enforcement, tax, benefits, or regulatory actions</li>
+<li>Cannot disclose respondent identities</li>
+<li>Cannot use data in a manner inconsistent with the confidentiality pledge</li>
+</ul>
+</section>
+<section id="what-are-the-penalties" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-penalties">What are the penalties?</h4>
+<ul>
+<li>Fines up to $250,000 and up to 5 years imprisonment</li>
+</ul>
+</section>
+</section>
+<section id="title-13-u.s.-code-of-1953" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="title-13-u.s.-code-of-1953"><span class="header-section-number">8.2.2</span> Title 13, U.S. Code of 1953</h3>
+<section id="what-is-title-13" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-title-13">What is Title 13?</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Title 13, U.S. Code of 1953
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The Census Bureau is bound by Title 13 of the United States Code. These laws not only provide authority for the work we do, but also provide strong protection for the information we collect from individuals and businesses.</p>
+<p>Title 13 provides the following protections to individuals and businesses:</p>
+<ul>
+<li>Private information is never published. It is against the law to disclose or publish any private information that identifies an individual or business such, including names, addresses (including GPS coordinates), Social Security Numbers, and telephone numbers.</li>
+<li>The Census Bureau collects information to produce statistics. Personal information cannot be used against respondents by any government agency or court.</li>
+<li>Census Bureau employees are sworn to protect confidentiality. People sworn to uphold Title 13 are legally required to maintain the confidentiality of your data. Every person with access to your data is sworn for life to protect your information and understands that the penalties for violating this law are applicable for a lifetime.</li>
+<li>Violating the law is a serious federal crime. Anyone who violates this law will face severe penalties, including a federal prison sentence of up to five years, a fine of up to $250,000, or both.</li>
+</ul>
+</blockquote>
+<p>From the <a href="https://www.census.gov/about/history/bureau-history/agency-history-timeline/title-13.html">U.S. Census Bureau</a></p>
+</div>
+</div>
+<ul>
+<li>The law authorizing Census Bureau operations</li>
+<li>Establishes confidentiality protections for Census-collected information</li>
+</ul>
+</section>
+<section id="what-data-falls-under-title-13" class="level4">
+<h4 class="anchored" data-anchor-id="what-data-falls-under-title-13">What data falls under Title 13?</h4>
+<ul>
+<li>All Census Bureau data, such as decennial census and survey responses for the Census Bureau</li>
+</ul>
+</section>
+<section id="what-are-the-restrictions-1" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-restrictions-1">What are the restrictions?</h4>
+<ul>
+<li>“Disclose or publish any private information that identifies an individual or business such, including names, addresses (including GPS coordinates), Social Security Numbers, and telephone numbers.”</li>
+<li>Limits use to authorized statistical purposes</li>
+</ul>
+</section>
+<section id="what-are-the-penalties-1" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-penalties-1">What are the penalties?</h4>
+<ul>
+<li>Fines up to $250,000 and up to 5 years imprisonment</li>
+</ul>
+</section>
+</section>
+<section id="title-26-u.s.-code-of-1939" class="level3" data-number="8.2.3">
+<h3 data-number="8.2.3" class="anchored" data-anchor-id="title-26-u.s.-code-of-1939"><span class="header-section-number">8.2.3</span> Title 26, U.S. Code of 1939</h3>
+<section id="what-is-title-26" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-title-26">What is Title 26?</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Title 26, U.S. Code of 1939
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The Internal Revenue Code (IRC) is the body of law that codifies all federal tax laws, including income, estate, gift, excise, alcohol, tobacco, and employment taxes. U.S. tax laws began to be codified in 1874, but there was no central, comprehensive source for them at that time. The IRC was originally compiled in 1939 and overhauled in 1954 and 1986. This code is the definitive source of all tax laws in the United States and has the force of law in and of itself.</p>
+<p>These laws constitute Title 26 of the U.S. Code (26 U.S.C.A. § 1 et seq. [1986]) and are implemented by the Internal Revenue Service (IRS) through its Treasury Regulations and Revenue Rulings.</p>
+<p>Congress made major statutory changes to Title 26 in 1939, 1954, and 1986. Because of the extensive revisions made in the Tax Reform Act of 1986, Title 26 is now known as the Internal Revenue Code of 1986 (Pub. L. No.&nbsp;99-514, § 2, 100 Stat. 2095 [Oct.&nbsp;22, 1986]).</p>
+</blockquote>
+<p>From the <a href="https://www.census.gov/about/history/bureau-history/agency-history-timeline/title-26.html">U.S. Census Bureau</a></p>
+</div>
+</div>
+<ul>
+<li>Federal tax code that enforces strict confidentiality requirements governing tax-return information</li>
+</ul>
+</section>
+<section id="what-data-falls-under-title-26" class="level4">
+<h4 class="anchored" data-anchor-id="what-data-falls-under-title-26">What data falls under Title 26?</h4>
+<ul>
+<li>All administrative tax data, such as individual tax returns, business tax returns, and other tax return information</li>
+</ul>
+</section>
+<section id="what-are-the-restrictions-2" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-restrictions-2">What are the restrictions?</h4>
+<ul>
+<li>No disclosure of any tax records</li>
+</ul>
+</section>
+<section id="what-are-the-penalties-2" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-penalties-2">What are the penalties?</h4>
+<ul>
+<li>Depends on the type of tax record disclosure, but all penalties include some form of criminal, civil, and administrative penalties, such as jail time and fines of up to $500,000</li>
+</ul>
+</section>
+</section>
+<section id="privacy-act-of-1974" class="level3" data-number="8.2.4">
+<h3 data-number="8.2.4" class="anchored" data-anchor-id="privacy-act-of-1974"><span class="header-section-number">8.2.4</span> Privacy Act of 1974</h3>
+<section id="what-is-the-privacy-act" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-the-privacy-act">What is the Privacy Act?</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Privacy Act of 1974
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The Privacy Act of 1974 a United States federal law, establishes a Code of Fair Information Practice that governs the collection, maintenance, use, and dissemination of personally identifiable information about individuals that is maintained in systems of records by federal agencies.</p>
+</blockquote>
+<p>From <a href="https://en.wikipedia.org/wiki/Privacy_Act_of_1974">Wiki</a>.</p>
+</div>
+</div>
+<ul>
+<li>The Privacy Act of 1974 is a “…foundational federal privacy law, providing guardrails for when and how personal data is handled and shared by the federal government.” - <a href="https://apdu.org/apdu-in-action/data-privacy-resources/">APDU’s Data Privacy Resources</a>.</li>
+</ul>
+</section>
+<section id="what-data-falls-under-the-privacy-act" class="level4">
+<h4 class="anchored" data-anchor-id="what-data-falls-under-the-privacy-act">What data falls under the Privacy Act?</h4>
+<ul>
+<li>Protects natural, living individuals, which are defined as “a citizen of the United States or an alien lawfully admitted for permanent residence”</li>
+<li>U.S. persons definition excludes deceased persons, non-US persons (e.g., vistors), and organizations (i.e., both for-profit and non-profit entities)</li>
+</ul>
+</section>
+<section id="what-are-sorns" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-sorns">What are SORNs?</h4>
+<ul>
+<li>SORNs (system of records notices) are how federal agencies tell the public when they collect personal information that meets certain conditions.</li>
+<li>“Think of a SORN as a public rulebook. Once an agency publishes a SORN in the Federal Register, they must follow it.” - <a href="https://apdu.org/apdu-in-action/Data-Privacy-Resources/How-to-Review-a-SORN/">How to Review a Privacy Act System of Records Notice</a></li>
+</ul>
+</section>
+<section id="what-are-the-penalties-3" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-penalties-3">What are the penalties?</h4>
+<ul>
+<li>“If any officer or employee of a government agency knowingly and willfully discloses personally identifiable information will be found guilty of a misdemeanor and fined a maximum of $5,000. Also, if any agency employee or official willfully maintains a system of records without disclosing its existence and relevant details as specified above can be fined a maximum of $5,000. The same misdemeanor penalty (and $5,000 maximum fine) can be applied to anyone who knowingly and willfully requests an individual’s record from an agency under false pretenses.” - <a href="https://epic.org/the-privacy-act-of-1974/">EPIC</a></li>
+</ul>
+</section>
+<section id="any-recent-developments" class="level4">
+<h4 class="anchored" data-anchor-id="any-recent-developments">Any recent developments?</h4>
+<div id="fig-2026-privacy-report" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2026-privacy-report-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_privacy-trust-effective-government-privacy-act-1974.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2026-privacy-report-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.5: The cover of the “Privacy, Trust, and Effective Government: A Bipartisan Blueprint for Modernizing the privacy Act” report that was prepared by the Office of Congresswoman Lori Trahan.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><a href="https://trahan.house.gov/news/documentsingle.aspx?DocumentID=3491">Trahan Announces Effort to Reform Privacy Act of 1974, Protect Americans’ Data from Government Abuse</a></li>
+<li><a href="https://trahan.house.gov/uploadedfiles/2026.02_trahan_privacy_act_report.pdf">Privacy, Trust, and Effective Government: A Bipartisan Blueprint for Modernizing the Privacy Act</a></li>
+</ul>
+</section>
+</section>
+<section id="the-family-educational-rights-and-privacy-act-ferpa-of-1974" class="level3" data-number="8.2.5">
+<h3 data-number="8.2.5" class="anchored" data-anchor-id="the-family-educational-rights-and-privacy-act-ferpa-of-1974"><span class="header-section-number">8.2.5</span> The Family Educational Rights and Privacy Act (FERPA) of 1974</h3>
+<section id="what-is-ferpa" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-ferpa">What is FERPA?</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>The Family Educational Rights and Privacy Act (FERPA) of 1974
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The FERPA is a federal law that affords parents the right to have access to their children’s education records, the right to seek to have the records amended, and the right to have some control over the disclosure of personally identifiable information from the education records. When a student turns 18 years old, or enters a postsecondary institution at any age, the rights under FERPA transfer from the parents to the student (“eligible student”). The FERPA statute is found at 20 U.S.C. § 1232g and the FERPA regulations are found at 34 CFR Part 99.</p>
+</blockquote>
+<p>From the <a href="https://studentprivacy.ed.gov/faq/what-ferpa">U.S. Department of Education</a></p>
+</div>
+</div>
+<ul>
+<li>Federal law protecting the privacy of student education records and applies to all educational institutions that receive funding from the U.S. government</li>
+</ul>
+</section>
+<section id="what-data-falls-under-ferpa" class="level4">
+<h4 class="anchored" data-anchor-id="what-data-falls-under-ferpa">What data falls under FERPA?</h4>
+<p>Protects parents and students and related to any information associated with a student record, such as…</p>
+<ul>
+<li>academic transcripts</li>
+<li>disciplinary record</li>
+<li>enrollment information</li>
+<li>other PII associated with the student record</li>
+</ul>
+</section>
+<section id="what-are-the-restrictions-3" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-restrictions-3">What are the restrictions?</h4>
+<ul>
+<li>Generally prohibits disclosure of PII education records without consent unless an exception applies</li>
+<li>Limits who may access student records</li>
+</ul>
+</section>
+<section id="what-are-the-penalties-4" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-penalties-4">What are the penalties?</h4>
+<ul>
+<li>Withdrawal of U.S. Department of Education funds from the institution or agency that has violated the law (e.g., schools, school districts, and state education agencies)</li>
+<li>“A third party who improperly discloses personally identifiable information from student records can be prohibited from receiving access to records at the education agency or institution for at least 5 years. State laws on privacy may also apply penalties.” - <a href="https://nces.ed.gov/pubs2004/privacy/section_6faq.asp">NCES</a></li>
+</ul>
+</section>
+</section>
+<section id="the-health-insurance-portability-and-accountability-act-hipaa-of-1996" class="level3" data-number="8.2.6">
+<h3 data-number="8.2.6" class="anchored" data-anchor-id="the-health-insurance-portability-and-accountability-act-hipaa-of-1996"><span class="header-section-number">8.2.6</span> The Health Insurance Portability and Accountability Act (HIPAA) of 1996</h3>
+<section id="what-is-hipaa" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-hipaa">What is HIPAA?</h4>
+<div id="fig-pussy-hat" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pussy-hat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_pussy-hat.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pussy-hat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.6: Kat Coyle, the designer of the pussy hat, wearing a pink knitted hat referred to as the pussy hat.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>The Health Insurance Portability and Accountability Act (HIPAA) of 1996
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The HIPAA Privacy Rule establishes national standards to protect individuals’ medical records and other individually identifiable health information (collectively defined as “protected health information”) and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically. The Rule requires appropriate safeguards to protect the privacy of protected health information and sets limits and conditions on the uses and disclosures that may be made of such information without an individual’s authorization. The Rule also gives individuals rights over their protected health information, including rights to examine and obtain a copy of their health records, to direct a covered entity to transmit to a third party an electronic copy of their protected health information in an electronic health record, and to request corrections.</p>
+</blockquote>
+<p>From the <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html">The HIPAA Privacy Rule from U.S. Department of Human and Health Services</a>.</p>
+<p>On June 25, 2024: <a href="https://www.federalregister.gov/documents/2024/04/26/2024-08503/hipaa-privacy-rule-to-support-reproductive-health-care-privacy">HIPAA Privacy Rule To Support Reproductive Health Care Privacy</a> will “…strengthen privacy protections for medical records and health information for women.”</p>
+<p>Effective as of June 18, 2025: <a href="https://www.hhs.gov/hipaa/for-professionals/special-topics/reproductive-health/final-rule-fact-sheet/index.html">HIPAA Privacy Rule Final Rule to Support Reproductive Health Care Privacy: Fact Sheet</a> states that “…the U.S. District Court for the Northern District of Texas issued an order declaring unlawful and vacating most of the HIPAA Privacy Rule to Support Reproductive Health Care Privacy at 89 Federal Register 32976 (April 26, 2024).”</p>
+</div>
+</div>
+<ul>
+<li>Federal law establishing privacy and security protections for health information as it relates to certain health records</li>
+</ul>
+</section>
+<section id="what-data-falls-under-hipaa" class="level4">
+<h4 class="anchored" data-anchor-id="what-data-falls-under-hipaa">What data falls under HIPAA?</h4>
+<p>Protected health information (PHI), from <a href="https://www.hipaajournal.com/what-is-considered-protected-health-information-under-hipaa/">HIPAA Journal</a>:</p>
+<ul>
+<li>Is created or received by a health care provider, health plan, public health authority, employer, life insurer, school or university, or health care clearinghouse; and</li>
+<li>Relates to the past, present, or future physical or mental health or condition of an individual; the provision of health care to an individual; or the past, present, or future payment for the provision of health care to an individual.</li>
+</ul>
+<p>HIPAA does not protect health data from apps like fitness trackers or businesses/schools (e.g., student health data from a nurse’s office is protected under FERPA and not HIPAA).</p>
+</section>
+<section id="what-are-the-restrictions-4" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-restrictions-4">What are the restrictions?</h4>
+<ul>
+<li>Generally prohibits disclosure of PHI</li>
+<li>Limits who may access PHI records</li>
+</ul>
+</section>
+<section id="what-are-the-penalties-5" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-penalties-5">What are the penalties?</h4>
+<ul>
+<li>“The penalties for HIPAA violations include civil monetary penalties ranging from $145 to $2,190,294 per violation, depending on the level of culpability. Criminal penalties can also be imposed for intentional HIPAA violations, leading to fines and potential imprisonment.” - <a href="https://www.hipaajournal.com/what-are-the-penalties-for-hipaa-violations-7096/">HIPAA Journal</a></li>
+</ul>
+</section>
+</section>
+<section id="state-privacy-laws" class="level3" data-number="8.2.7">
+<h3 data-number="8.2.7" class="anchored" data-anchor-id="state-privacy-laws"><span class="header-section-number">8.2.7</span> State privacy laws</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href=""><font color="#1696d2"><strong>June 29, 2026</strong></font></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href=""><font color="#fdbf11"><strong>July 7, 2025</strong></font></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href=""><font color="#ec008b"><strong>June 17, 2024</strong></font></a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="fig-iapp-state" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-iapp-state-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_2026-state-law.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-iapp-state-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.7: IAPP’s U.S. State Privacy Legislation Tracker Image, last updated June 29, 2026 .
+</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="fig-iapp-state" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-iapp-state-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_2025-state-law.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-iapp-state-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.8: IAPP’s U.S. State Privacy Legislation Tracker Image, last updated July 7, 2025 .
+</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="fig-iapp-state" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-iapp-state-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="www/images/05_2024-state-law.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-iapp-state-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.9: IAPP’s U.S. State Privacy Legislation Tracker Image, last updated June 17, 2024.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>The International Association of Privacy Professionals (IAPP)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> has a great <a href="https://iapp.org/resources/article/us-state-privacy-legislation-tracker/">U.S. State Privacy Legislation Tracker</a>.</p>
+<blockquote class="blockquote">
+<p>State-level momentum for comprehensive privacy bills is at an all-time high. The IAPP Westin Research Center actively tracks the proposed and enacted comprehensive privacy bills from across the U.S. to help our members stay informed of the changing state privacy landscape. This information is compiled into a chart, map , and a directory with information specific to states with enacted laws.</p>
+<p>This tracker only includes bills intended to be comprehensive approaches to governing the use of personal information. If a bill does not appear, it does not qualify due to its scope, coverage or rights. Industry-specific, information-specific and narrowly scoped bills, e.g., data security bills, are not included. The IAPP published an article outlining its current stance concerning which state privacy laws are considered comprehensive. The IAPP may adjust this position in the future in light of new information, bills, stakeholders or member feedback.</p>
+<p>If you are aware of a comprehensive bill absent from the tracker, please share it with us at research@iapp.org. The IAPP additionally hosts a US State AI Governance Legislation Tracker, which focuses on cross-sectoral state AI governance bills that apply to private sector organizations, and a US Federal Privacy Legislation Tracker, which informs of developments within the federal privacy landscape.</p>
+<p>The state privacy law chart tracks U.S. state comprehensive consumer privacy bills across the legislative process, identifying and mapping out fourteen provisions that commonly appear in comprehensive privacy laws. If a bill includes a provision, an “X” is placed in the corresponding column. The provisions are broken into two categories — consumer rights and business obligations — and are described more fully in the chart. Although many of the proposed bills will fail to become law, comparing the key provisions helps break down how privacy is developing in the U.S.</p>
+<p>The map tracks the status of statutes and bills that are enacted or in the legislative process.</p>
+</blockquote>
+</section>
+<section id="california-consumer-privacy-act-of-2018" class="level3" data-number="8.2.8">
+<h3 data-number="8.2.8" class="anchored" data-anchor-id="california-consumer-privacy-act-of-2018"><span class="header-section-number">8.2.8</span> California Consumer Privacy Act of 2018</h3>
+<section id="what-is-ccpa" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-ccpa">What is CCPA?</h4>
+<p>From the <a href="https://oag.ca.gov/privacy/ccpa">State of California Department of Justice</a>:</p>
+<p>The California Consumer Privacy Act (CCPA) gives consumers more control over the personal information that businesses collect about them, with accompanying regulations that provide guidance on how to implement the law, which includes:</p>
+<ul>
+<li>The right to know about the personal information a business collects about them and how it is used and shared;</li>
+<li>The right to delete personal information collected from them (with some exceptions);</li>
+<li>The right to opt-out of the sale or sharing of their personal information; and</li>
+<li>The right to non-discrimination for exercising their CCPA rights.</li>
+</ul>
+<p>In November 2020, California voters approved Proposition 24, the California Privacy Rights Act, which amended the CCPA and added additional privacy protections that took effect on January 1, 2023. As of this date, consumers have new rights in addition to those above, such as:</p>
+<ul>
+<li>The right to correct inaccurate personal information that a business has about them; and</li>
+<li>The right to limit the use and disclosure of sensitive personal information collected about them.</li>
+</ul>
+<p>Businesses subject to the CCPA have several responsibilities, including responding to consumer requests to exercise these rights and providing consumers with certain notices explaining their privacy practices. The CCPA applies to many businesses, including data brokers.</p>
+</section>
+</section>
+</section>
+<section id="patchwork-of-data-privacy-laws" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="patchwork-of-data-privacy-laws"><span class="header-section-number">8.3</span> Patchwork of Data Privacy Laws</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Always consult your organization’s legal consel or general counsel!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Always consult your organization’s legal counsel before collecting, storing, sharing, analyzing, disseminating, archiving, or destroying confidential, restricted, protected health information (PHI), personally identifiable information (PII), or other sensitive data. The United States has a patchwork of federal, state, local, tribal, and sector-specific privacy laws and regulations that may overlap, supersede, or impose additional requirements depending on the type of data, who collected it, how it is used, and where it is stored, shared, or transferred.</p>
+<p>This is especially important when data are shared or transferred between organizations. Each organization is responsible for complying with its own legal and regulatory obligations, and legal counsel for different organizations may interpret applicable laws, regulations, contracts, or data-sharing agreements differently (e.g., MOU, MOA, DUA, NDA). As a result, negotiating a data-sharing agreement can be as much a legal and policy exercise as it is a technical one.</p>
+</div>
+</div>
+<section id="data-sharing-legal-challenges" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="data-sharing-legal-challenges"><span class="header-section-number">8.3.1</span> Data Sharing Legal Challenges</h3>
+<p>This patchwork of laws and interpretations is one reason why data sharing is often more difficult than many people expect. Even when linking datasets could substantially improve research, program administration, or evidence-based policymaking, organizations may be unable (or unwilling) to share data because of legal restrictions, differing interpretations of those restrictions, or concerns about privacy, confidentiality, and liability.</p>
+<p>For example, a state education agency may wish to link student records with health and human services data, such as SNAP or TANF participation, to evaluate program effectiveness or better understand student outcomes. However, differences in governing privacy laws (e.g., FERPA, HIPAA, state privacy laws), agency authorities, and legal interpretations may make such data sharing difficult or, in some cases, impossible.</p>
+</section>
+<section id="gaps-in-the-patchwork-of-data-privacy-laws" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="gaps-in-the-patchwork-of-data-privacy-laws"><span class="header-section-number">8.3.2</span> Gaps in the Patchwork of Data Privacy Laws</h3>
+<p>The following from <a href="https://apdu.org/2026/07/part-2-is-data-privacy-dead-the-answer-must-be-no/">Part 2: Is Data Privacy Dead? The Answer Must be No</a>:</p>
+<p>Although new technologies and associated risks are rapidly evolving, such as the widespread use of AI, there is no single federal law that comprehensively covers data privacy and confidentiality. While the Privacy Act of 1974 serves as a backbone, there is a patchwork of laws in the United States that each attempt to address an aspect of privacy, confidentiality, and security of personal data. The laws we have are often limited to specific federal agencies (e.g., <a href="https://www.census.gov/about/policies/privacy/data_stewardship/title_13_-_protection_of_confidential_information.html">Title 13 confidentiality protections for data at the U.S. Census Bureau</a>) or specific data types (e.g., <a href="https://studentprivacy.ed.gov/ferpa">Family Educational Rights and Privacy Act privacy and confidentiality protections for education records</a>).</p>
+<p>Gaps in the patchwork, including the <a href="https://www.theguardian.com/tv-and-radio/2022/apr/11/john-oliver-last-week-tonight-data-brokers">lack of a federal-level consumer data privacy law</a>, have allowed the multibillion-dollar data broker industry to flourish with <a href="https://epic.org/issues/consumer-privacy/data-brokers/">little to no regulation</a>. Furthermore, our foundational laws, like the Privacy Act of 1974, were created long before personal computers, the internet, smartphones, and social media. In fact, more than a decade ago the Government Accountability Office noted that advances in technology had “rendered some of the provisions of the Privacy Act and the E-Government Act of 2002 inadequate to fully protect all personally identifiable information collected, used, and maintained by the federal government.” <span class="citation" data-cites="gao2012privacy">(<a href="#ref-gao2012privacy" role="doc-biblioref">U.S. Government Accountability Office 2012</a>)</span> And yet, despite some amendments, the Privacy Act of 1974 has remained substantially the same for more than 50 years. Some states have worked to bolster their <a href="https://cdt.org/area-of-focus/privacy-data/state-privacy-resources/">state data privacy laws</a>, but those laws don’t cover every state and may be preempted by federal law.</p>
+</section>
+<section id="to-share-or-not-to-share-share-data" class="level3" data-number="8.3.3">
+<h3 data-number="8.3.3" class="anchored" data-anchor-id="to-share-or-not-to-share-share-data"><span class="header-section-number">8.3.3</span> To Share or Not to Share Share Data?</h3>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">None</span><span style="color:#1696d2;">Class Activity 2</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Working in groups of 3–4 students, review the assigned scenario. For your scenario, discuss the following questions:</p>
+<ol type="1">
+<li>What laws or regulations may apply?</li>
+</ol>
+<ul>
+<li>CIPSEA</li>
+<li>Title 13</li>
+<li>Title 26</li>
+<li>Privacy Act</li>
+<li>FERPA</li>
+<li>HIPAA</li>
+<li>CCPA or state privacy laws</li>
+<li>Other (specify)</li>
+</ul>
+<p>2.What types of data or information are involved?</p>
+<ul>
+<li>PII</li>
+<li>PHI</li>
+<li>Student records</li>
+<li>Tax information</li>
+<li>Administrative records</li>
+<li>Publicly available information</li>
+<li>Other confidential or sensitive information</li>
+</ul>
+<ol start="3" type="1">
+<li><p>What are the key governance, legal, technical, or ethical challenges?</p></li>
+<li><p>What approaches or safeguards could enable responsible data use?</p></li>
+</ol>
+<ul>
+<li>Data Use Agreement (DUA) / Memorandum of Understanding (MOU) / Non-Disclosure Agreement (NDA)</li>
+<li>Secure computing environment</li>
+<li>Privacy-enhancing technologies (PETs)</li>
+<li>Human review</li>
+<li>Disclosure review</li>
+<li>Data governance processes</li>
+<li>Other</li>
+</ul>
+<ol start="5" type="1">
+<li>What would be your recommendation?</li>
+</ol>
+</div>
+</div>
+<section id="scenario-1-linking-education-data-across-state-lines" class="level4">
+<h4 class="anchored" data-anchor-id="scenario-1-linking-education-data-across-state-lines">Scenario 1: Linking Education Data Across State Lines</h4>
+<p>A group of states wants to better understand why some students successfully transition from high school into college and the workforce while others face challenges and why some leave the state for college and not return to their home state.</p>
+<p>Researchers propose creating a multi-state data system that links education records from each state’s Statewide Longitudinal Data System with other administrative records, including workforce, health, and social service data. The goal is to study how student experiences, access to services, and state policies influence long-term outcomes.</p>
+<p>Although each state supports improving services for youth, they face challenges sharing data across state boundaries. Each state has different privacy laws, data governance policies, agency approval processes, and technical systems. Some states are concerned about whether they have the legal authority to share student-level records with another state, while others are concerned about maintaining public trust when sensitive information is combined across jurisdictions.</p>
+<p>The states ask your team to recommend whether this multi-state data sharing effort should move forward and what governance structure and privacy protections would be needed.</p>
+</section>
+<section id="scenario-2-expediting-access-to-administrative-data-for-program-improvement" class="level4">
+<h4 class="anchored" data-anchor-id="scenario-2-expediting-access-to-administrative-data-for-program-improvement">Scenario 2: Expediting Access to Administrative Data for Program Improvement</h4>
+<p>A county Department of Human Services wants to use its administrative data to improve benefit programs and make faster operational decisions. Agency leaders want to answer questions such as:</p>
+<ul>
+<li>Are eligible residents enrolling in available programs?</li>
+<li>Where are application delays occurring?</li>
+<li>Are outreach efforts reaching the intended populations?</li>
+<li>How are policy changes affecting program participation?</li>
+</ul>
+<p>The agency has extensive administrative records from programs such as Medicaid, SNAP, TANF, unemployment insurance, and workforce services. However, accessing these data currently requires lengthy legal reviews, manual disclosure assessments, and approval from multiple program administrators. A typical request can take six to nine months before analysts can begin their work.</p>
+<p>Agency leaders want to create a process that allows authorized users to access data more quickly while protecting confidential information. Options under consideration include:</p>
+<ul>
+<li>Pre-approved data access processes</li>
+<li>Standardized data use agreements</li>
+<li>Data access tiers based on user needs</li>
+<li>Secure computing environments</li>
+<li>Public-use datasets or aggregate dashboards</li>
+<li>Other approaches</li>
+</ul>
+<p>The agency asks your team to recommend how it can streamline access to administrative data while maintaining privacy, security, and public trust.</p>
+</section>
+<section id="scenario-3-governing-an-ai-powered-data-discovery-tool" class="level4">
+<h4 class="anchored" data-anchor-id="scenario-3-governing-an-ai-powered-data-discovery-tool">Scenario 3: Governing an AI-Powered Data Discovery Tool</h4>
+<p>A federal agency wants to make it easier for researchers and policymakers to discover relevant government data. The agency proposes creating an AI-powered data concierge that can answer questions about available datasets, explain documentation, identify related sources, and help users navigate data access processes.</p>
+<p>The AI system would use information from many federal and state sources, including publicly available dataset descriptions, metadata, reports, documentation, and statistical summaries. For example, a researcher could ask: “What datasets are available to study workforce outcomes for adults receiving public assistance?” or “What are the primary factors that lead to homelessness in the US?” The chatbot would identify relevant datasets and explain how they can be accessed or provide an answer with citations and links to the appropriate data used for the analysis.</p>
+<p>Although the information used by the chatbot is publicly available, agency leaders are concerned about new risks created when AI combines information across many sources. The chatbot could provide inaccurate answers, misinterpret documentation, reveal sensitive insights through combining datasets, or create false impressions about what data are available.</p>
+<p>The agency asks your team to recommend how to design and govern an AI-powered data discovery tool that improves access to information while ensuring accuracy, transparency, privacy, and responsible use.</p>
+<p><strong>Assigned Groups:</strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">set.seed</span>(<span class="dv">20260728</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a>students <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Bennett"</span>, </span>
+<span id="cb1-7"><a href="#cb1-7"></a>              <span class="st">"DiSandro"</span>, </span>
+<span id="cb1-8"><a href="#cb1-8"></a>              <span class="st">"Gentile"</span>, </span>
+<span id="cb1-9"><a href="#cb1-9"></a>              <span class="st">"Hayes"</span>, </span>
+<span id="cb1-10"><a href="#cb1-10"></a>              <span class="st">"Imperati"</span>, </span>
+<span id="cb1-11"><a href="#cb1-11"></a>              <span class="st">"Possamai"</span>, </span>
+<span id="cb1-12"><a href="#cb1-12"></a>              <span class="st">"Ricket"</span>, </span>
+<span id="cb1-13"><a href="#cb1-13"></a>              <span class="st">"Rious"</span>, </span>
+<span id="cb1-14"><a href="#cb1-14"></a>              <span class="st">"Rossi"</span>, </span>
+<span id="cb1-15"><a href="#cb1-15"></a>              <span class="st">"Santosh"</span>, </span>
+<span id="cb1-16"><a href="#cb1-16"></a>              <span class="st">"Spadea"</span>, </span>
+<span id="cb1-17"><a href="#cb1-17"></a>              <span class="st">"Sudoval"</span>,</span>
+<span id="cb1-18"><a href="#cb1-18"></a>              <span class="st">"Trotta"</span>, </span>
+<span id="cb1-19"><a href="#cb1-19"></a>              <span class="st">"Wadsworth"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20"></a></span>
+<span id="cb1-21"><a href="#cb1-21"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(students)</span>
+<span id="cb1-22"><a href="#cb1-22"></a></span>
+<span id="cb1-23"><a href="#cb1-23"></a>students <span class="sc">|&gt;</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a>  <span class="fu">sample</span>(n, <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Sudoval"   "Trotta"    "Hayes"     "Spadea"    "Rious"     "Bennett"  
+ [7] "Imperati"  "Ricket"    "Rossi"     "Wadsworth" "DiSandro"  "Possamai" 
+[13] "Santosh"   "Gentile"  </code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="references" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="references"><span class="header-section-number">8.4</span> References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-gao2012privacy" class="csl-entry" role="listitem">
+U.S. Government Accountability Office. 2012. <em>Privacy: Federal Law Should Be Updated to Address Changing Technology Landscape</em>. nos. GAO-12-961T. <a href="https://www.gao.gov/products/gao-12-961t">https://www.gao.gov/products/gao-12-961t</a>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The International Association of Privacy Professionals is a nonprofit, non-advocacy membership association founded in 2000.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./04_better-presentations.html" class="pagination-link" aria-label="Better Presentations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Better Presentations</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./05_data-dissemination-part2.html" class="pagination-link" aria-label="Data Dissemination: Part 2">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Data Dissemination: Part 2</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

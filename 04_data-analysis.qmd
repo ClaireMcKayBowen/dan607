@@ -211,7 +211,7 @@ As mentioned in the textbook, data curators and privacy experts must fine-tune t
 
 One of the most important challenges in statistical disclosure protection is managing the fundamental tradeoff between privacy loss and statistical utility. As we will see throughout this class, this tradeoff plays a central role in determining the technical approaches to data protection and in shaping ethical and equitable decisionmaking.
 
-![Infusing noise](www/images/04_privacy-utility-tradeoff.png){#fig-privacy-utility-trade-off fig-align="center"}
+![*Generally*, as privacy increases, the image quality (utility) decreases, and vice versa.](www/images/04_privacy-utility-tradeoff.png){#fig-privacy-utility-trade-off fig-align="center"}
 
 The privacy-utility tradeoff describes the relationship between the amount of privacy protection applied to a dataset and the utility (or usefulness) of that data for analysis.
 
@@ -225,7 +225,7 @@ The privacy-utility tradeoff describes the relationship between the amount of pr
 
 ::: {.callout-tip}
 
-## Definition: Data utility, Quality, Accuracy, or Usefulness
+## Data utility, Quality, Accuracy, or Usefulness
 
 **Data utility, quality, accuracy, or usefulness** is how useful or accurate the data are for research and analysis purposes.
 
@@ -233,7 +233,7 @@ The privacy-utility tradeoff describes the relationship between the amount of pr
 
 ::: {.callout-tip}
 
-## Definition: Utility Metrics
+## Utility Metrics
 
 **Utility metrics** are metrics that measure a public use dataset's degree of usefulness for downstream data processing.
 
@@ -364,9 +364,14 @@ The final group of utility metrics are called fit-for-purpose and are not discus
 
 @drechsler2022challenges highlights how global utility metrics can be too broad and miss aspects of the synthetic dataset that do not align with the confidential dataset. On the other hand, analysis-specific metrics may perform well for the selected analyses on the synthetic data but not for others. This is why it is critical to determine the proper analysis, but it is difficult to anticipate all downstream data uses. For example, decennial census data products in the United States are utilized in thousands of different ways, making it impossible to predict all potential use cases. Therefore, fit-for-purpose metrics help privacy experts and researchers assess if their synthesis makes sense before implementing other utility metrics. Some examples include ensuring population totals or ages are positive.
 
-## Assessing disclosure risk
+::: callout-tip
+### Fit-for-purpose
 
-<!-- ![Rory from the TV show, "Gilmore Girls," saying, "I'd say that was a fair assessment."](www/images/assessment-gilmore.gif){#fig-assessment-gilmore fig-align="center"} -->
+**Fit-for-purpose**, are something in between the previous two utility metric types to quickly assess the quality of the public data compared to the confidential data. They are not global measures, because they focus on certain features of the data, but may not be specific to an analysis that data users and stakeholders are interested in like analysis-specific utility metrics.
+
+:::
+
+## Assessing disclosure risk
 
 We now pivot to evaluating the disclosure risks of public data. Note that most thresholds for acceptable disclosure risk are often determined by law.
 
@@ -377,13 +382,6 @@ There are generally three kinds of disclosure risk:
 -   Inferential disclosure risk
 
 ### Identity disclosure metrics
-
-::: callout-tip
-#### Identity disclosure
-
-**Identity disclosure** occurs if the data intruder associates a known individual with a public data record (e.g., a record linkage attack or when a data adversary combines one or more external data sources to identify individuals in the public data).
-
-:::
 
 @sweeney2013identifying used voter data to re-identify individuals in the Personal Genome Project.
 

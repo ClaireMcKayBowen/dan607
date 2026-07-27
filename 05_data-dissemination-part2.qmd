@@ -16,7 +16,7 @@ exercise_number <- 1
 
 ```
 
-![A data lifecycle diagram emphasizing the 'Data dissemination' stage in green, with the remaining stages shown in lighter colors. This stage involves creating written, digital, and verbal products to relevant stakeholders.](www/images/data-lifecycle-dissemination.png){#fig-data-analysise fig-align="center" width=100%}
+![A data lifecycle diagram emphasizing the 'Data dissemination' stage in green, with the remaining stages shown in lighter colors. This stage involves creating written, digital, and verbal products to relevant stakeholders.](www/images/05_data-lifecycle-dissemination.png){#fig-data-analysise fig-align="center" width=100%}
 
 For part 2, we focus on the importance of your target audience, different types of dissemination, and data visualization.
 
@@ -273,39 +273,37 @@ Due August 3rd, 11:59 pm EDT
 
 - [Government Data of the People, by the People, for the People: Navigating Citizen Privacy Concerns](https://www.aeaweb.org/articles?id=10.1257/jep.38.2.181).
 
+### Collect Data
+
+- For one day, record how often your data being collected, shared, or used by private companies (e.g., social media, web browsing, streaming services, online shopping, fitness trackers, mobile apps, or loyalty programs).
+- For one day (can be the same day or another), record at least five services, products, or decisions you benefit from that rely on public government data (e.g., navigation apps, weather forecasts, public health services, emergency alerts, and school funding).
+
 ### Write (600 to 1200 words)
 
-Throughout this course, we’ve explored the intersections of data privacy, security, and ethics. Drawing on the topic you picked for your presentation (or can be an example from course readings and discussions so far), respond to the following prompts:
+Based on your data log, answer the following questions:
 
-- What data did the AI system, algorithm, or example you selected use to shape what was shown to you (e.g., content, recommendations, decisions)?
-- Does this scenario apply broadly to the general population, or primarily to a specific subgroup? Explain your reasoning.
-- Could the example you discussed be repurposed or modified to serve a public good? If so, what changes would be necessary?
-- Would those changes raise new considerations around security, privacy, or ethics? If yes, describe them.
+1.	Data in Your Everyday Life
+  - How do private and public data affect your daily activities?
+  - Which examples surprised you the most?
+  
+2.	Privacy Laws and Regulations
+  - Are any of the private-sector data uses protected or regulated by state or federal laws?
+  - How do the rules governing private-sector data differ from those governing public government data?
+  
+3.	Benefits and Risks of Data Sharing
+  - How can organizations use these data to create public value or improve services?
+  - How might these same data be used in ways that harm individuals, communities, or privacy?
+  - What ethical concerns arise when data are shared, disseminated, or combined with other data sources (e.g., private with public)?
+  
+4.	Reflection: Reflecting on your data collection, should more information be publicly available, less information be publicly available, or does it depend on the type of data? Explain your reasoning.
 
-## Week 6 Assignment (ALTERNATIVE!)
+**AI Reflection (Prepare to discuss in class):** Select one private company from your data log and review its privacy policy.
 
-::: {.callout-important}
-## DEADLINE
-Due August 3rd, 11:59 pm EDT
-::: 
+- What types of data does the company collect, share, or sell?
+- How might these data be used to train, improve, or evaluate AI systems?
+- Were you surprised by anything disclosed in the privacy policy?
+- Did the policy clearly explain how AI may use your information? Why or why not?
+  
+Be prepared to discuss whether current privacy notices provide meaningful transparency about AI and data sharing practices.
 
-### Read
-
-- Chapter 7: What Is the Future of Data Privacy?
-- [Government Data of the People, by the People, for the People: Navigating Citizen Privacy Concerns](https://www.aeaweb.org/articles?id=10.1257/jep.38.2.181).
-
-### Listen
-
-- [Diving into Economic Perspectives - Government Data of the People, by the People, for the People: Navigating Citizen Privacy Concerns](https://open.spotify.com/episode/3l0Xl3FCNEuqxcb5HqapqP)
-
-### Write (600 to 1200 Words)
-
-An academic reached out to me to share that he's been experimenting with an AI-generated podcast based on technical articles from the Journal of Economic Perspectives, the assigned article reading, so he can learn about economics while walking.
-
-Based on your readings and listening to the AI generated podcast...
-
-1. How did your understanding of the article differ between reading it and listening to the AI‑generated podcast? Did one format make the ideas clearer or raise new questions for you?
-
-2. What do you see as the potential benefits and drawbacks of using AI‑generated podcasts (or similar tools) to engage with complex topics like privacy and administrative data?
-
-3. If more academic content were delivered through AI‑generated audio, what ethical or quality concerns should educators and researchers keep in mind?
+## References

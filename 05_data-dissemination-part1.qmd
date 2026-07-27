@@ -16,21 +16,35 @@ exercise_number <- 1
 
 ```
 
-![A data lifecycle diagram emphasizing the 'Data dissemination' stage in green, with the remaining stages shown in lighter colors. This stage involves creating written, digital, and verbal products to relevant stakeholders.](www/images/data-lifecycle-dissemination.png){#fig-data-analysise fig-align="center" width=100%}
+![A data lifecycle diagram emphasizing the 'Data dissemination' stage in green, with the remaining stages shown in lighter colors. This stage involves creating written, digital, and verbal products to relevant stakeholders.](www/images/05_data-lifecycle-dissemination.png){#fig-data-analysise fig-align="center" width=100%}
 
-For this week, we will learn the different aspects of disseminating data while considering security, privacy, ethics, and equity. In part 1, we focus on the legal and policy side before disseminating your work.
+:::{.callout-note}
+### Overview
+
+This week focuses on the data dissemination stage of the data lifecycle. You will learn how to:
+
+- Explain the major U.S. data privacy laws and regulations governing the collection, sharing, dissemination, and protection of confidential information, including CIPSEA, Title 13, Title 26, the Privacy Act, FERPA, HIPAA, CCPA, and emerging state privacy laws.
+- Assess the strengths and limitations of the United States' patchwork approach to data privacy and discuss how it affects research, evidence-based policymaking, and the responsible use of administrative and survey data.
+
+:::
 
 ## Quick recap on week 4
 
 ### Privacy-utility tradeoff
 
-There is often a tension between privacy and data utility. This tension is referred to in the privacy literature as the **privacy-utility tradeoff**.
+The privacy-utility tradeoff describes the relationship between the amount of privacy protection applied to a dataset and the utility (or usefulness) of that data for analysis.
 
-::: callout-tip
-### Data Utility
+- Privacy loss is often referred to as the risk that confidential or sensitive information about individuals, records, or entities being directly observed or inferred from the release of public data and statistics.
 
-**Data utility,** quality, accuracy, or usefulness is how practically useful or accurate to the data are for research and analysis purposes.
-:::
+- Utility can be defined as the quality, qunatity, ease of access, permitted use and dissemination, and more (e.g., research, policy analysis, public reporting).
+
+::: {.callout-tip}
+
+## Data utility, Quality, Accuracy, or Usefulness
+
+**Data utility, quality, accuracy, or usefulness** is how useful or accurate the data are for research and analysis purposes.
+
+::: 
 
 ![*Generally*, as privacy increases, the image quality (utility) decreases, and vice versa.](www/images/04_privacy-utility-tradeoff.png){#fig-tradeoff fig-align="center"}
 
@@ -47,7 +61,8 @@ Generally there are three ways to measure utility of the data:
 ::: callout-tip
 ### Specific utility
 
-**Specific utility**, sometimes called outcome specific utility, measures the similarity of results for a specific analysis (or analyses) of the confidential and public data (e.g., comparing the coefficients in regression models).
+**Specific utility** or analysis-specific utility metrics measure differences between public data and confidential data *for pre-specified use cases.*
+
 :::
 
 ::: callout-tip
@@ -63,9 +78,11 @@ Note that most thresholds for acceptable disclosure risk are often determined by
 There are generally three kinds of disclosure risk:
 
 ::: callout-tip
-#### Identity disclosure
+#### Identity disclosure metrics
 
-**Identity disclosure** occurs if the data intruder associates a known individual with a public data record (e.g., a record linkage attack or when a data adversary combines one or more external data sources to identify individuals in the public data).
+**Identity disclosure metrics** evaluate how often we correctly re-identify confidential records in the public data.
+
+**Note:** These metrics require major assumptions about attacker information.
 :::
 
 ::: callout-tip
@@ -91,26 +108,40 @@ There are often two sides to every story, especially when it comes to how people
 #### Read
 
 - Chapter 6: What Data Privacy Laws Exist?
+- [A Day in the Life with Federal Government Data](https://apdu.org/2025/11/a-day-in-the-life-with-federal-government-data/)
 
-#### Optional additional read
-
-- [Do No Harm Guide: Applying Equity Awareness in Data Visualization](https://www.urban.org/research/publication/do-no-harm-guide-applying-equity-awareness-data-visualization).
-
-#### Optional watch
+#### Watch
 
 - [Data Brokers: Last Week Tonight with John Oliver (HBO)](https://www.youtube.com/watch?v=wqn3gR1WTcA)
 
-#### Collect data
-For one day, record how often private companies collect *your data* from the moment you wake up to the moment you go to bed. For example, opening a social media app or browsing the web.
+#### Optional read
+
+- [Part 1: Is Data Privacy Dead? The Answer Must be No](https://apdu.org/2026/07/part-1-is-data-privacy-dead-the-answer-must-be-no/)
+- [Part 2: Is Data Privacy Dead? The Answer Must be No](https://apdu.org/2026/07/part-2-is-data-privacy-dead-the-answer-must-be-no/)
 
 #### Write (600 to 1200 words)
 
-Based on your data log, answer the following questions:
+Find a news analysis story* published within the last year (2025-2026) that relies on data, research findings, surveys, administrative records, or statistical analysis. Evaluate how data were analyzed and used to support the story's conclusions.
 
-- Is any of the information collected by private companies protected by a state or federal law?
-- What could a private company do with that information for the public good?
-- What could a private company do with that information that may harm or violate your personal privacy?
-- What are the data equity and ethical impacts of collecting this information?
+- What are the main findings or claims of the article?
+- What data sources were used to support those claims?
+- How were the data analyzed or interpreted?
+- What assumptions, limitations, biases, or uncertainties might affect the conclusions?
+- How do the privacy, security, and ethical considerations surrounding the data affect the analysis?
+- Would the story's conclusions change if more data, less data, or different data were available? Why or why not? (Reflect on your week 3 assignment.)
+- Do you agree with the article's claims?
+
+Cite all references using APA format, including the article you picked.
+
+*"An article written to inform readers about recent events. The author reports and attempts to deepen understanding of recent events—for example, by providing background information and other kinds of additional context." – [CSUSM Library](https://libguides.csusm.edu/news/different_news_types)
+
+**AI Reflection (Prepare to discuss in class):** Use any generative AI tool to identify:
+
+- The article's main claims
+- The evidence supporting those claims
+- Potential limitations, biases, or weaknesses in the analysis
+- Whether the conclusions appear justified
+Compare the AI's response to your own assessment.
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -121,17 +152,13 @@ Based on your data log, answer the following questions:
 exercise_number <- exercise_number + 1
 ```
 
-Throughout this course, we’ve been exploring security, privacy, and ethics across the data lifecycle. In this assignment, you examined how various entities (most often private companies) collected your information over the course of a single day. Based on your experience...
+1. How closely did the AI's analysis align with your own? Where did the AI identify strengths, weaknesses, assumptions, or biases that you overlooked (if at all), and where did it miss important context or make claims that you disagreed with (if at all)? Why do you think those differences occurred?
 
-1. Looking back at your data log, was there anything that surprised you about the frequency or types of data collected? How might this awareness influence your future digital behavior?
-
-2. In writing your essay, did you encounter any tension between your personal views on security and privacy and what current laws allow? How did you navigate or reconcile that tension?
-
-3. Do you have any ethical concerns about how your information is being collected and potentially used?
+2. If you were an editor deciding whether to publish this news story, would you trust the AI's assessment alone to evaluate the quality of the article? What additional information, expertise, or verification would still be necessary before deciding whether the article's conclusions are well supported?
  
 :::
 
-## Data privacy laws in the United States of America
+## U.S. Data Privacy Laws
 
 ![Creepy condescending Wonka meme that says, "Please tell me more about your privacy policy."](www/images/05_wonka-privacy-policy.jpg){#fig-wonka-privacy-policy width=50%}
 
@@ -139,10 +166,11 @@ Prior to releasing any information (e.g., data and statistics), you must review 
 
 The laws governing data collection and dissemination are limited to specific federal agencies (e.g., U.S. Census Bureau) or specific data types (e.g., education).
 
-### Federal privacy laws
+### CIPSEA
 
+#### What is CIPSEA?
 ::: callout-note
-### Confidential Information Protection and Statistical Efficiency Act of 2002 
+### Confidential Information Protection and Statistical Efficiency Act (CIPSEA)
 
 > CIPSEA establishes uniform confidentiality protections for information collected for statistical purposes by U.S. statistical agencies, and it allows some data sharing between the Bureau of Labor Statistics, Bureau of Economic Analysis, and Census Bureau. The agencies report to Office of Management and Budget on particular actions related to confidentiality and data sharing.
 >
@@ -156,34 +184,30 @@ Foundations for Evidence-Based Policymaking Act of 2018 is often referred to as 
 
 ::: 
 
-::: callout-note
-### Children's Online Privacy Act of 1998
+#### What data falls under CIPSEA?
 
-> This Act protects children's privacy by giving parents tools to control what information is collected from their children online. The Act requires the Commission to promulgate regulations requiring operators of commercial websites and online services directed to children under 13 or knowingly collecting personal information from children under 13 to: (a) notify parents of their information practices; (b) obtain verifiable parental consent for the collection, use, or disclosure of children’s personal information; (c) let parents prevent further maintenance or use or future collection of their child’s personal information; (d) provide parents access to their child’s personal information; (e) not require a child to provide more personal information than is reasonably necessary to participate in an activity; and (f) maintain reasonable procedures to protect the confidentiality, security, and integrity of the personal information. In order to encourage active industry self-regulation, the Act also includes a "safe harbor" provision allowing industry groups and others to request Commission approval of self-regulatory guidelines to govern participating websites’ compliance with the Rule.
+- Information collected under a pledge of confidentiality
+- Business, household, and individual data collected solely for statistical purposes
+- Administrative records used within approved statistical programs
 
-From the [Federal Trade Commission](https://www.ftc.gov/legal-library/browse/statutes/childrens-online-privacy-protection-act).
-::: 
+#### What does "statistical purpose" mean?
 
-::: callout-note
-### The Family Educational Rights and Privacy Act (FERPA) of 1974
+- Producing aggregate statistics (e.g., estimating or analyzing a group); not about specific individuals or entities
+- Research and analysis intended to describe populations or trends
 
-> The FERPA is a federal law that affords parents the right to have access to their children’s education records, the right to seek to have the records amended, and the right to have some control over the disclosure of personally identifiable information from the education records. When a student turns 18 years old, or enters a postsecondary institution at any age, the rights under FERPA transfer from the parents to the student (“eligible student”). The FERPA statute is found at 20 U.S.C. § 1232g and the FERPA regulations are found at 34 CFR Part 99.
+#### What are the restrictions?
 
-From the [U.S. Department of Education](https://studentprivacy.ed.gov/faq/what-ferpa)
-::: 
+- Cannot use protected data for administrative, enforcement, tax, benefits, or regulatory actions
+- Cannot disclose respondent identities
+- Cannot use data in a manner inconsistent with the confidentiality pledge
 
-![Kat Coyle, the designer of the pussy hat, wearing a pink knitted hat referred to as the pussy hat.](www/images/pussy-hat.jpeg){#fig-pussy-hat}
+#### What are the penalties?
 
-::: callout-note
-### The Health Insurance Portability and Accountability Act (HIPAA) of 1996 
+- Fines up to \$250,000 and up to 5 years imprisonment
 
-> The HIPAA Privacy Rule establishes national standards to protect individuals' medical records and other individually identifiable health information (collectively defined as “protected health information”) and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically. The Rule requires appropriate safeguards to protect the privacy of protected health information and sets limits and conditions on the uses and disclosures that may be made of such information without an individual’s authorization. The Rule also gives individuals rights over their protected health information, including rights to examine and obtain a copy of their health records, to direct a covered entity to transmit to a third party an electronic copy of their protected health information in an electronic health record, and to request corrections.
+### Title 13, U.S. Code of 1953
 
-From the [The HIPAA Privacy Rule from U.S. Department of Human and Health Services](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html).
-
-Effective as of June 25, 2024: [HIPAA Privacy Rule To Support Reproductive Health Care Privacy](https://www.federalregister.gov/documents/2024/04/26/2024-08503/hipaa-privacy-rule-to-support-reproductive-health-care-privacy) will "...strengthen privacy protections for medical records and health information for women."
-
-::: 
+#### What is Title 13?
 
 ::: callout-note
 ### Title 13, U.S. Code of 1953
@@ -197,8 +221,28 @@ Effective as of June 25, 2024: [HIPAA Privacy Rule To Support Reproductive Healt
 > - Census Bureau employees are sworn to protect confidentiality. People sworn to uphold Title 13 are legally required to maintain the confidentiality of your data. Every person with access to your data is sworn for life to protect your information and understands that the penalties for violating this law are applicable for a lifetime.
 > - Violating the law is a serious federal crime. Anyone who violates this law will face severe penalties, including a federal prison sentence of up to five years, a fine of up to $250,000, or both.
 
-From the [U.S. Census Bureau](https://www.census.gov/history/www/reference/privacy_confidentiality/title_13_us_code.html)
+From the [U.S. Census Bureau](https://www.census.gov/about/history/bureau-history/agency-history-timeline/title-13.html)
 ::: 
+
+- The law authorizing Census Bureau operations
+- Establishes confidentiality protections for Census-collected information
+
+#### What data falls under Title 13?
+
+- All Census Bureau data, such as decennial census and survey responses for the Census Bureau
+
+#### What are the restrictions?
+
+- "Disclose or publish any private information that identifies an individual or business such, including names, addresses (including GPS coordinates), Social Security Numbers, and telephone numbers."
+- Limits use to authorized statistical purposes
+
+#### What are the penalties?
+
+- Fines up to \$250,000 and up to 5 years imprisonment
+
+### Title 26, U.S. Code of 1939
+
+#### What is Title 26?
 
 ::: callout-note
 ### Title 26, U.S. Code of 1939
@@ -209,26 +253,168 @@ From the [U.S. Census Bureau](https://www.census.gov/history/www/reference/priva
 >
 > Congress made major statutory changes to Title 26 in 1939, 1954, and 1986. Because of the extensive revisions made in the Tax Reform Act of 1986, Title 26 is now known as the Internal Revenue Code of 1986 (Pub. L. No. 99-514, § 2, 100 Stat. 2095 [Oct. 22, 1986]).
 
-From the [U.S. Census Bureau](https://www.census.gov/history/www/reference/privacy_confidentiality/title_26_us_code_1.html)
+From the [U.S. Census Bureau](https://www.census.gov/about/history/bureau-history/agency-history-timeline/title-26.html)
 
 :::
 
+- Federal tax code that enforces strict confidentiality requirements governing tax-return information
+
+#### What data falls under Title 26?
+
+- All administrative tax data, such as individual tax returns, business tax returns, and other tax return information
+
+#### What are the restrictions?
+
+- No disclosure of any tax records
+
+#### What are the penalties?
+
+- Depends on the type of tax record disclosure, but all penalties include some form of criminal, civil, and administrative penalties, such as jail time and fines of up to \$500,000
+
+### Privacy Act of 1974
+
+#### What is the Privacy Act?
+
+::: callout-note
+### Privacy Act of 1974
+
+> The Privacy Act of 1974 a United States federal law, establishes a Code of Fair Information Practice that governs the collection, maintenance, use, and dissemination of personally identifiable information about individuals that is maintained in systems of records by federal agencies.
+
+From [Wiki](https://en.wikipedia.org/wiki/Privacy_Act_of_1974).
+
+::: 
+
+- The Privacy Act of 1974 is a "...foundational federal privacy law, providing guardrails for when and how personal data is handled and shared by the federal government." - [APDU's Data Privacy Resources](https://apdu.org/apdu-in-action/data-privacy-resources/).
+
+#### What data falls under the Privacy Act?
+
+- Protects natural, living individuals, which are defined as "a citizen of the United States or an alien lawfully admitted for permanent residence"
+- U.S. persons definition excludes deceased persons, non-US persons (e.g., vistors), and organizations (i.e., both for-profit and non-profit entities)
+
+#### What are SORNs?
+
+- SORNs (system of records notices) are how federal agencies tell the public when they collect personal information that meets certain conditions.
+- "Think of a SORN as a public rulebook. Once an agency publishes a SORN in the Federal Register, they must follow it." - [How to Review a Privacy Act System of Records Notice](https://apdu.org/apdu-in-action/Data-Privacy-Resources/How-to-Review-a-SORN/)
+
+#### What are the penalties?
+
+- "If any officer or employee of a government agency knowingly and willfully discloses personally identifiable information will be found guilty of a misdemeanor and fined a maximum of \$5,000. Also, if any agency employee or official willfully maintains a system of records without disclosing its existence and relevant details as specified above can be fined a maximum of \$5,000. The same misdemeanor penalty (and $5,000 maximum fine) can be applied to anyone who knowingly and willfully requests an individual’s record from an agency under false pretenses." - [EPIC](https://epic.org/the-privacy-act-of-1974/)
+
+#### Any recent developments?
+![The cover of the "Privacy, Trust, and Effective Government: A Bipartisan Blueprint for Modernizing the privacy Act" report that was prepared by the Office of Congresswoman Lori Trahan.](www/images/05_privacy-trust-effective-government-privacy-act-1974.png){#fig-2026-privacy-report fig-align="center" width=60%}
+
+
+- [Trahan Announces Effort to Reform Privacy Act of 1974, Protect Americans’ Data from Government Abuse](https://trahan.house.gov/news/documentsingle.aspx?DocumentID=3491)
+- [Privacy, Trust, and Effective Government: A Bipartisan Blueprint for Modernizing the Privacy Act](https://trahan.house.gov/uploadedfiles/2026.02_trahan_privacy_act_report.pdf)
+
+### The Family Educational Rights and Privacy Act (FERPA) of 1974
+
+#### What is FERPA?
+
+::: callout-note
+### The Family Educational Rights and Privacy Act (FERPA) of 1974
+
+> The FERPA is a federal law that affords parents the right to have access to their children’s education records, the right to seek to have the records amended, and the right to have some control over the disclosure of personally identifiable information from the education records. When a student turns 18 years old, or enters a postsecondary institution at any age, the rights under FERPA transfer from the parents to the student (“eligible student”). The FERPA statute is found at 20 U.S.C. § 1232g and the FERPA regulations are found at 34 CFR Part 99.
+
+From the [U.S. Department of Education](https://studentprivacy.ed.gov/faq/what-ferpa)
+::: 
+
+- Federal law protecting the privacy of student education records and applies to all educational institutions that receive funding from the U.S. government 
+
+#### What data falls under FERPA?
+
+Protects parents and students and related to any information associated with a student record, such as...
+
+- academic transcripts
+- disciplinary record
+- enrollment information
+- other PII associated with the student record
+
+#### What are the restrictions?
+
+- Generally prohibits disclosure of PII education records without consent unless an exception applies
+- Limits who may access student records
+
+#### What are the penalties?
+
+- Withdrawal of U.S. Department of Education funds from the institution or agency that has violated the law (e.g., schools, school districts, and state education agencies)
+- "A third party who improperly discloses personally identifiable information from student records can be prohibited from receiving access to records at the education agency or institution for at least 5 years. State laws on privacy may also apply penalties." - [NCES](https://nces.ed.gov/pubs2004/privacy/section_6faq.asp)
+
+### The Health Insurance Portability and Accountability Act (HIPAA) of 1996 
+
+#### What is HIPAA?
+
+![Kat Coyle, the designer of the pussy hat, wearing a pink knitted hat referred to as the pussy hat.](www/images/05_pussy-hat.jpeg){#fig-pussy-hat}
+
+::: callout-note
+### The Health Insurance Portability and Accountability Act (HIPAA) of 1996 
+
+> The HIPAA Privacy Rule establishes national standards to protect individuals' medical records and other individually identifiable health information (collectively defined as “protected health information”) and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically. The Rule requires appropriate safeguards to protect the privacy of protected health information and sets limits and conditions on the uses and disclosures that may be made of such information without an individual’s authorization. The Rule also gives individuals rights over their protected health information, including rights to examine and obtain a copy of their health records, to direct a covered entity to transmit to a third party an electronic copy of their protected health information in an electronic health record, and to request corrections.
+
+From the [The HIPAA Privacy Rule from U.S. Department of Human and Health Services](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html).
+
+On June 25, 2024: [HIPAA Privacy Rule To Support Reproductive Health Care Privacy](https://www.federalregister.gov/documents/2024/04/26/2024-08503/hipaa-privacy-rule-to-support-reproductive-health-care-privacy) will "...strengthen privacy protections for medical records and health information for women."
+
+Effective as of June 18, 2025: [HIPAA Privacy Rule Final Rule to Support Reproductive Health Care Privacy: Fact Sheet](https://www.hhs.gov/hipaa/for-professionals/special-topics/reproductive-health/final-rule-fact-sheet/index.html) states that "...the U.S. District Court for the Northern District of Texas issued an order declaring unlawful and vacating most of the HIPAA Privacy Rule to Support Reproductive Health Care Privacy at 89 Federal Register 32976 (April 26, 2024)."
+
+::: 
+
+- Federal law establishing privacy and security protections for health information as it relates to certain health records
+
+#### What data falls under HIPAA?
+
+Protected health information (PHI), from [HIPAA Journal](https://www.hipaajournal.com/what-is-considered-protected-health-information-under-hipaa/):
+
+- Is created or received by a health care provider, health plan, public health authority, employer, life insurer, school or university, or health care clearinghouse; and
+- Relates to the past, present, or future physical or mental health or condition of an individual; the provision of health care to an individual; or the past, present, or future payment for the provision of health care to an individual.
+
+HIPAA does not protect health data from apps like fitness trackers or businesses/schools (e.g., student health data from a nurse's office is protected under FERPA and not HIPAA).
+
+#### What are the restrictions?
+
+- Generally prohibits disclosure of PHI
+- Limits who may access PHI records
+
+#### What are the penalties?
+
+- "The penalties for HIPAA violations include civil monetary penalties ranging from \$145 to \$2,190,294 per violation, depending on the level of culpability. Criminal penalties can also be imposed for intentional HIPAA violations, leading to fines and potential imprisonment." - [HIPAA Journal](https://www.hipaajournal.com/what-are-the-penalties-for-hipaa-violations-7096/)
+
 ### State privacy laws
 
+::: panel-tabset
+### <font color="#1696d2">**June 29, 2026**</font>
+
+![IAPP's U.S. State Privacy Legislation Tracker Image, last updated June 29, 2026 .](www/images/05_2026-state-law.jpg){#fig-iapp-state fig-align="center" width=100%}
+
+### <font color="#fdbf11">**July 7, 2025**</font>
+
 ![IAPP's U.S. State Privacy Legislation Tracker Image, last updated July 7, 2025 .](www/images/05_2025-state-law.png){#fig-iapp-state fig-align="center" width=100%}
+
+
+### <font color="#ec008b">**June 17, 2024**</font>
+
+![IAPP's U.S. State Privacy Legislation Tracker Image, last updated June 17, 2024.](www/images/05_2024-state-law.png){#fig-iapp-state fig-align="center" width=100%}
+
+:::
 
 The International Association of Privacy Professionals (IAPP)[^IAPP] has a great
 [U.S. State Privacy Legislation Tracker](https://iapp.org/resources/article/us-state-privacy-legislation-tracker/).
 
->State-level momentum for comprehensive privacy bills is at an all-time high. The IAPP Westin Research Center actively tracks the proposed and enacted comprehensive privacy bills from across the U.S. to help our members stay informed of the changing state privacy landscape. This information is compiled into a chart, map and a directory with information specific to states with enacted laws. The IAPP additionally hosts a US State Privacy topic page, which regularly updates with the latest state privacy news and resources, and a US State AI Governance Legislation Tracker, which tracks US state cross-sectoral laws with direct application to the use of AI systems in the private sector.
+>State-level momentum for comprehensive privacy bills is at an all-time high. The IAPP Westin Research Center actively tracks the proposed and enacted comprehensive privacy bills from across the U.S. to help our members stay informed of the changing state privacy landscape. This information is compiled into a chart, map , and a directory with information specific to states with enacted laws.
+>
+>This tracker only includes bills intended to be comprehensive approaches to governing the use of personal information. If a bill does not appear, it does not qualify due to its scope, coverage or rights. Industry-specific, information-specific and narrowly scoped bills, e.g., data security bills, are not included. The IAPP published an article outlining its current stance concerning which state privacy laws are considered comprehensive. The IAPP may adjust this position in the future in light of new information, bills, stakeholders or member feedback.
+>
+>If you are aware of a comprehensive bill absent from the tracker, please share it with us at research@iapp.org. The IAPP additionally hosts a US State AI Governance Legislation Tracker, which focuses on cross-sectoral state AI governance bills that apply to private sector organizations, and a US Federal Privacy Legislation Tracker, which informs of developments within the federal privacy landscape.
+>
+>The state privacy law chart tracks U.S. state comprehensive consumer privacy bills across the legislative process, identifying and mapping out fourteen provisions that commonly appear in comprehensive privacy laws. If a bill includes a provision, an "X" is placed in the corresponding column. The provisions are broken into two categories — consumer rights and business obligations — and are described more fully in the chart. Although many of the proposed bills will fail to become law, comparing the key provisions helps break down how privacy is developing in the U.S.
+>
+>The map tracks the status of statutes and bills that are enacted or in the legislative process.
 
 [^IAPP]: The International Association of Privacy Professionals is a nonprofit, non-advocacy membership association founded in 2000.
 
+### California Consumer Privacy Act of 2018
 
-![Candalf You Shall Not Pass Meme that says, "This too shall pass."](www/images/05_this-too-shall-pass.jpg){#fig-shall-pass}
-
-### California Privacy Act of 2018
-
+#### What is CCPA?
 From the [State of California Department of Justice](https://oag.ca.gov/privacy/ccpa):
 
 The California Consumer Privacy Act (CCPA) gives consumers more control over the personal information that businesses collect about them, with accompanying regulations that provide guidance on how to implement the law, which includes:
@@ -245,89 +431,33 @@ In November 2020, California voters approved Proposition 24, the California Priv
 
 Businesses subject to the CCPA have several responsibilities, including responding to consumer requests to exercise these rights and providing consumers with certain notices explaining their privacy practices. The CCPA applies to many businesses, including data brokers.
 
-::: callout
-#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
-```{r}
-#| echo: false
-
-exercise_number <- exercise_number + 1
-```
-
-1. If you could change or update one data privacy law (state or federal), what would it be and why?
-
-2. What types of personal data do you think are most in need of stronger legal protections today?
-
-:::
-
-<!-- ### General Data Protection Regulation -->
-
-<!-- The General Data Protection Regulation or GDPR, is a set of European Union data privacy laws and protections. The 99 articles of GDPR covers a range of topics from what rights does a person have for their personal data to how companies are penalized for violating the law. -->
-
-<!-- #### Key aspects of GDPR -->
-
-<!-- - The data containing identifiers are key for GDPR to consider the information as personal data. -->
-<!-- - GDPR separates personal data into two categories: general personal data and sensitive personal -->
-<!-- data.  -->
-<!-- - Sensitive data is racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, the processing of genetic data and biometric data for the purpose of uniquely identifying a natural person, and sex life or sexual orientation. -->
-
-<!-- Revealing this type of personal data is prohibited. GDPR precludes the processing of sensitive personal information and only for special circumstances can a company process such data. -->
-
-<!-- GDPR defines those responsible for protecting personal data, as: -->
-
-<!-- - the *controller* one responsible for deciding the purpose and processing of the personal data. -->
-<!-- - the *processor* acts on behalf of the controller while processing personal data. -->
-
-<!-- #### Seven principles for proceessing personal data -->
-
-<!-- GDPR states the seven principles for processing personal data. These seven principles are called: -->
-
-<!-- 1. Lawfulness, Fairness, and Transparency; -->
-<!-- 2. Purpose Limitation; -->
-<!-- 3. Data Minimization; -->
-<!-- 4. Accuracy; -->
-<!-- 5. Storage Limitation; -->
-<!-- 6. Integrity and Confidentiality; and -->
-<!-- 7. Accountability. -->
-
-<!-- #### The right to privacy and the right to be forgotten -->
-
-<!-- GDPR monitors what organizations do with people’s personal data, empowers people to control how their personal data are being collected and used by others, and forces organizations to justify anything they do with people’s personal data. -->
-
-<!-- organizations to use personal data if at least one of the six lawful bases apply. These bases are referred as: -->
-
-<!-- 1. consent, which must be “...freely given, specific, informed and unambiguous indication of the data subject’s wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her.” -->
-
-<!-- 2. performance of a contract, where a processor requires someone’s personal data to complete specific steps outlined in a contract or prior to entering into a contract. -->
-
-<!-- 3. legal obligation, when a company must use personal data to comply with other laws. -->
-
-<!-- 4. vital interest, where a business can access personal data to protect the person’s life and others. -->
-
-<!-- 5. public interest, such that an organization might perform certain tasks for people’s public interest or to complete official functions. -->
-
-<!-- 6. legitimate interest, where these interests may include situations where someone would expect an organization to collect personal data, use the data in ways that are low-risk, or make a compelling argument on the benefits outweighing the risks. -->
-
-## Identifying the technical and policy solutions
+## Patchwork of Data Privacy Laws
 
 ::: {.callout-important}
-Technical and policy approaches in combination are necessary for effective management of disclosure risks.
-::: 
+## Always consult your organization's legal consel or general counsel!
 
-Agencies and private companies can use a variety of technical and policy approaches, possibly in combination, to achieve disclosure risk/usefulness trade-offs that are acceptable to various stakeholders. Confronted with myriad options, how can an entity arrive at an ideal approach?
+Always consult your organization's legal counsel before collecting, storing, sharing, analyzing, disseminating, archiving, or destroying confidential, restricted, protected health information (PHI), personally identifiable information (PII), or other sensitive data. The United States has a patchwork of federal, state, local, tribal, and sector-specific privacy laws and regulations that may overlap, supersede, or impose additional requirements depending on the type of data, who collected it, how it is used, and where it is stored, shared, or transferred.
 
-Answers to this question are necessarily context specific. However, some decision points are common to many data dissemination scenarios.
+This is especially important when data are shared or transferred between organizations. Each organization is responsible for complying with its own legal and regulatory obligations, and legal counsel for different organizations may interpret applicable laws, regulations, contracts, or data-sharing agreements differently (e.g., MOU, MOA, DUA, NDA). As a result, negotiating a data-sharing agreement can be as much a legal and policy exercise as it is a technical one.
 
-![Model decision matrix of disclosure-protection strategies given potential disclosure harms and data usefulness from @national2024toward.](www/images/05_tech-policy-chart.png){#fig-tech-policy fig-align="center" width=100%}
+:::
 
-> In the interior cells, “Access” refers to approaches that could be particularly effective for managing disclosure risk/usefulness trade-offs. “RD” refers to restricted data, which includes policy approaches like secure data enclaves, licensing and other data-use agreements, penalties and incentives for responsible use, and query auditing. “DL” refers to disclosure limitation, which includes techniques like formal privacy, secure multiparty computation, and synthetic data approaches. “Tiers” refers to tiered access, which may include validation/verification of results from redacted data and access to confidential data under policy restrictions. “Privacy” refers to a general characterization of the desired privacy protections/guarantees on blended data products.
+### Data Sharing Legal Challenges
 
-### Current statistical data privacy workflow
+This patchwork of laws and interpretations is one reason why data sharing is often more difficult than many people expect. Even when linking datasets could substantially improve research, program administration, or evidence-based policymaking, organizations may be unable (or unwilling) to share data because of legal restrictions, differing interpretations of those restrictions, or concerns about privacy, confidentiality, and liability.
 
-The current standard workflow for statistical data privacy applications includes three main components: (1) data, (2) privacy practitioner(s), and (3) decisionmaker(s). At the start, privacy practitioners review the data (at the least the data schema[^schema]) and talk with the decisionmakers. From there, the privacy practitioners determine the privacy loss and utility framework of definitions, with possible input from the data and the decisionmakers. Decisionmakers then choose the threshold levels of privacy loss and utility, which depend on the legal or societal context and any practical constraints.
+For example, a state education agency may wish to link student records with health and human services data, such as SNAP or TANF participation, to evaluate program effectiveness or better understand student outcomes. However, differences in governing privacy laws (e.g., FERPA, HIPAA, state privacy laws), agency authorities, and legal interpretations may make such data sharing difficult or, in some cases, impossible.
 
-[^schema]: For example, the variables contained in the data, the number of observations, or the range of values for each variable.
+### Gaps in the Patchwork of Data Privacy Laws
 
-From here, the privacy practitioner selects the PETs that meets the desired privacy loss and utility definitions and thresholds. This decision may also use information from the data. Finally, after all the prior decisions are made, the privacy practitioner implements the PETs on the data. In some instances, feedback loops exist.
+The following from [Part 2: Is Data Privacy Dead? The Answer Must be No](https://apdu.org/2026/07/part-2-is-data-privacy-dead-the-answer-must-be-no/):
+
+Although new technologies and associated risks are rapidly evolving, such as the widespread use of AI, there is no single federal law that comprehensively covers data privacy and confidentiality. While the Privacy Act of 1974 serves as a backbone, there is a patchwork of laws in the United States that each attempt to address an aspect of privacy, confidentiality, and security of personal data. The laws we have are often limited to specific federal agencies (e.g., [Title 13 confidentiality protections for data at the U.S. Census Bureau](https://www.census.gov/about/policies/privacy/data_stewardship/title_13_-_protection_of_confidential_information.html)) or specific data types (e.g., [Family Educational Rights and Privacy Act privacy and confidentiality protections for education records](https://studentprivacy.ed.gov/ferpa)).
+
+Gaps in the patchwork, including the [lack of a federal-level consumer data privacy law](https://www.theguardian.com/tv-and-radio/2022/apr/11/john-oliver-last-week-tonight-data-brokers), have allowed the multibillion-dollar data broker industry to flourish with [little to no regulation](https://epic.org/issues/consumer-privacy/data-brokers/). Furthermore, our foundational laws, like the Privacy Act of 1974, were created long before personal computers, the internet, smartphones, and social media. In fact, more than a decade ago the Government Accountability Office noted that advances in technology had "rendered some of the provisions of the Privacy Act and the E-Government Act of 2002 inadequate to fully protect all personally identifiable information collected, used, and maintained by the federal government." [@gao2012privacy] And yet, despite some amendments, the Privacy Act of 1974 has remained substantially the same for more than 50 years. Some states have worked to bolster their [state data privacy laws](https://cdt.org/area-of-focus/privacy-data/state-privacy-resources/), but those laws don’t cover every state and may be preempted by federal law.
+
+
+### To Share or Not to Share Share Data?
 
 ::: callout
 #### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
@@ -337,151 +467,116 @@ From here, the privacy practitioner selects the PETs that meets the desired priv
 exercise_number <- exercise_number + 1
 ```
 
-Based on what we've learned so far from in the class, what are the issues with this workflow?
+Working in groups of 3–4 students, review the assigned scenario. For your scenario, discuss the following questions:
+
+1. What laws or regulations may apply?
+
+- CIPSEA
+- Title 13
+- Title 26
+- Privacy Act
+- FERPA
+- HIPAA
+- CCPA or state privacy laws
+- Other (specify)
+
+2.What types of data or information are involved?
+
+- PII
+- PHI
+- Student records
+- Tax information
+- Administrative records
+- Publicly available information
+- Other confidential or sensitive information
+
+3. What are the key governance, legal, technical, or ethical challenges?
+
+4. What approaches or safeguards could enable responsible data use?
+- Data Use Agreement (DUA) / Memorandum of Understanding (MOU) / Non-Disclosure Agreement (NDA)
+- Secure computing environment
+- Privacy-enhancing technologies (PETs)
+- Human review
+- Disclosure review
+- Data governance processes
+- Other
+
+5. What would be your recommendation?
 
 :::
 
-![The Rock saying, "This doesn't work."](www/images/05_doesnt-work.gif){#fig-doesnt-work}
+#### Scenario 1: Linking Education Data Across State Lines
 
-### Aspirational equitable statistical data privacy workflow
+A group of states wants to better understand why some students successfully transition from high school into college and the workforce while others face challenges and why some leave the state for college and not return to their home state.
 
-As discussed in the class activity, there are obvious issues with the previous workflow. This is why @bowen2023no proposed an aspirational workflow. It is called aspirational because we do not expect every step to always be possible in a real-world implementation. That being said, considering these steps can help make equity part of the process from beginning to end. Below, we describe the six steps of the process in greater detail.
+Researchers propose creating a multi-state data system that links education records from each state's Statewide Longitudinal Data System with other administrative records, including workforce, health, and social service data. The goal is to study how student experiences, access to services, and state policies influence long-term outcomes.
 
-![A visual representation of the aspirational equitable statistical data privacy workflow from @bowen2023no.](www/images/05_aspirational-workflow.png){#fig-aspirational fig-align="center" width=100%}
+Although each state supports improving services for youth, they face challenges sharing data across state boundaries. Each state has different privacy laws, data governance policies, agency approval processes, and technical systems. Some states are concerned about whether they have the legal authority to share student-level records with another state, while others are concerned about maintaining public trust when sensitive information is combined across jurisdictions.
 
-1. Identify groups in the data 
+The states ask your team to recommend whether this multi-state data sharing effort should move forward and what governance structure and privacy protections would be needed.
 
-2. Identify appropriate representatives for the groups
+#### Scenario 2: Expediting Access to Administrative Data for Program Improvement
 
-3. Determine privacy and utility definitions and preferences with representatives and decisionmakers
+A county Department of Human Services wants to use its administrative data to improve benefit programs and make faster operational decisions. Agency leaders want to answer questions such as:
 
-    a. Define statistical utility and privacy loss
-    b. Choose group-level preferences for statistical utility and privacy loss thresholds
+- Are eligible residents enrolling in available programs?
+- Where are application delays occurring?
+- Are outreach efforts reaching the intended populations?
+- How are policy changes affecting program participation?
 
-4. Communicate constraints to representatives and decisionmakers
+The agency has extensive administrative records from programs such as Medicaid, SNAP, TANF, unemployment insurance, and workforce services. However, accessing these data currently requires lengthy legal reviews, manual disclosure assessments, and approval from multiple program administrators. A typical request can take six to nine months before analysts can begin their work.
 
-    a. Use metrics and visuals for group-level tradeoff curves
-    b. Explain technical shortcomings related to group size
+Agency leaders want to create a process that allows authorized users to access data more quickly while protecting confidential information. Options under consideration include:
 
-5. Choose a statistical data privacy implementation that best satisfies definitions, preferences, and constraints
+- Pre-approved data access processes
+- Standardized data use agreements
+- Data access tiers based on user needs
+- Secure computing environments
+- Public-use datasets or aggregate dashboards
+- Other approaches
 
-6. Publish each step of the process
+The agency asks your team to recommend how it can streamline access to administrative data while maintaining privacy, security, and public trust.
 
-Every step in the process has limitations, so the entire process must be transparent. Because each of the prior steps is aspirational and may require significant growth in the field, transparency is one of the most immediate actions that practitioners can take. The process could be reported in public presentations, documentations, or regular meetings [@murray2016data; @cohen2022guide]. This transparency allows outside groups and entities to critique the decisions, offer input during the process, and understand what decisions were made. With feedback, each step of the process can be refined, such as selecting group representatives, choosing preferences, or navigating technical shortcomings.
+#### Scenario 3: Governing an AI-Powered Data Discovery Tool
 
-### A Framework for Managing Disclosure Risks in Blended Data
+A federal agency wants to make it easier for researchers and policymakers to discover relevant government data. The agency proposes creating an AI-powered data concierge that can answer questions about available datasets, explain documentation, identify related sources, and help users navigate data access processes.
 
-> The framework begins with a simple but critical question for agencies considering a data-blending project: What do we want to accomplish with blended data, and why?
-[@national2024toward]
+The AI system would use information from many federal and state sources, including publicly available dataset descriptions, metadata, reports, documentation, and statistical summaries. For example, a researcher could ask: "What datasets are available to study workforce outcomes for adults receiving public assistance?" or "What are the primary factors that lead to homelessness in the US?" The chatbot would identify relevant datasets and explain how they can be accessed or provide an answer with citations and links to the appropriate data used for the analysis.
 
-  1. Determine auspice and purpose of the blended data project.
-  
-      a. What are the anticipated final products of data blending?
-      b. What are potential downstream uses of blended data?
-      c. What are potential considerations for disclosure risks and harms, and data usefulness?
-    
-  2. Determine ingredient data files.
-  
-      a. What data sources are available to accomplish blending, and what are the interests of data holders?
-      b. What steps can be taken to reduce disclosure risks and enhance usefulness when compiling ingredient files?
-    
-  3. Obtain access to ingredient data files.
-  
-      a. What are the disclosure risks associated with procuring ingredient data?
-      b. What are the disclosure risk/usefulness trade-offs in the plan for accessing ingredient files?
-    
-  4. Blend ingredient data files.
-  
-      a. When blending requires linking records from ingredient files, what linkage strategies can be used?
-      b. Are resultant blended data sufficiently useful to meet the blending objective?
-    
-  5. Select approaches that meet the end objective of data blending.
-  
-      a. What are the best-available scientific methods for disclosure limitation to accomplish the blended data objective, and are sufficient resources available to implement those methods?
-      b. How can stakeholders be engaged in the decision-making process?
-      c. What is the mitigation plan for confidentiality breaches?
-    
-  6. Develop and execute a maintenance plan.
-  
-      a. How will agencies track data provenance and update files when beneficial?
-      b. What is the decision-making process for continuing access to or sunsetting the blended data product, and how do participating agencies contribute to those decisions?
-      c. How will agencies communicate decisions about disclosure management policies with stakeholders?
+Although the information used by the chatbot is publicly available, agency leaders are concerned about new risks created when AI combines information across many sources. The chatbot could provide inaccurate answers, misinterpret documentation, reveal sensitive insights through combining datasets, or create false impressions about what data are available.
 
-## College Scorecard Example
+The agency asks your team to recommend how to design and govern an AI-powered data discovery tool that improves access to information while ensuring accuracy, transparency, privacy, and responsible use.
 
-The following description is from @national2024toward, which I helped write and lead this part of the report. The College Score card is a great example of how to consider the technical and policy solutions to release confidential data for the public good.
+**Assigned Groups:**
 
-The [College Scorecard](https://collegescorecard.ed.gov/) involves an approach to blending aggregated data from the Statistics of Income (SOI) Program of IRS with College Scorecard data (U.S. Department of Education) from the Department of Education (ED).
-
-### Determine auspice and purpose
-
-The College Scorecard is intended to help future college students and their families search for and compare colleges by field of study, costs, admissions, economic outcomes, and other statistics. Since 2016, ED has provided the College Scorecard as a web-based search tool (i.e., data product) that users can query repeatedly; public-use microdata files are not required. The unit of analysis is the college, and the data are summaries of the features of the college and its students. ED desired to add earning metrics to the College Scorecard. Such blended data could offer the public additional insights into student outcomes at various educational institutions; however, tax records contain very sensitive information and are protected by Title 26, requiring rigorous privacy guarantees.
-
-From @fig-tech-policy, we might characterize the College Scorecard containing earnings information as being at the intersection of “Modest Impact” usefulness and “Significant and Lasting” disclosure risks.
-
-### Identify ingredient data files
-
-To create the blended data, ED requires earnings data on college graduates. ED therefore turned to SOI for such data. Education data are subject to FERPA, whereas SOI data are subject to Title 26 rules. This means certain fields may be released as is (e.g., institution), but others require confidentiality protection (e.g., earnings data at the field-of-study or institution level). There is no federal source of average earnings per college, requiring the agencies to blend data at the individual student level. Therefore, the ingredient data file from ED includes recipients of federal student aid,[^aid] and the ingredient data file from IRS includes individuals’ earnings. These files need to be linked to accomplish the blending.
-
-[^aid]: It is important to note that not all students who are in need receive federal student aid, so
-there may be some bias in generating the College Scorecard.
-
-### Obtain ingredient data files
-
-Because SOI data derive from tax records, individual students’ earnings cannot be shared outside the agency without special agreements. Thus, SOI needs to blend its data with the data supplied by ED. However, Internal Revenue Code (IRC) § 6108(b) permits SOI to release aggregated-level statistics to ED. The IRC authorizes the Secretary of the Treasury to make special statistical studies and compilations involving tax return information as defined in IRC § 6103(b)(2).
-
-### Blend ingredient data files
-
-ED provides student-level records—that is, recipients of federal student aid—to SOI to conduct the matching at IRS. The data-sharing arrangement allows SOI to match student information to IRS administrative tax records, which are W-2 (i.e., wage and tax statement) and 1040-SE (i.e., net earnings from self-employment) data. Matching is done on social security numbers.
-
-### Select disclosure-protection approaches
-For the first 3 years of the product, the College Scorecard used classical disclosure approaches (e.g., data suppression, rounding, aggregation, and top-coding) to protect blended data. During this time, ED and SOI continued to reassess the disclosure risk/ usefulness trade-offs of their dissemination strategy. In 2020, ED and SOI wanted to produce a second data file with greater granularity than available at the institution level—one that contained information at the credential and field-of-study level. But SOI became concerned about potential complementary disclosures in creating two datasets from the same ingredient data, as their disclosure approaches did not account for multiple data releases.
-
-SOI also determined that using the classical disclosure approaches to release the second, more granular data file would suppress and alter substantial amounts of blended data, thereby degrading the potential usefulness of the data product.
-
-In an update of disclosure-protection processes, SOI decided to use SafeTables, a software package developed by [Tumult Labs](ttps://www.tmlt.io/) that produces statistics from a formally private, noise-addition algorithm. SOI saw three benefits of using a formally private framework. First was the potential ability to quantify privacy risks when releasing datasets. Second was establishing a privacy-loss budget and a mechanism to examine specific points on the disclosure risk/usefulness trade-off. SOI’s final reason was composition: SOI could potentially track total privacy loss across multiple releases of outputs.[^safetables]
-
-[^safetables]: Additionally, the use of SafeTables allowed suppression of fewer table cells than would have been required had simple cell suppression been used.
-
-Although formal privacy methods are used, the approach of ED and SOI to releasing College Scorecard data is a hybrid between formal privacy and classical disclosure approaches. ED and SOI suppress outputs from SafeTables that differ excessively (per their definition) from the confidential data values to enhance usefulness of published data. Therefore, the end product is not technically formally private; the decision to suppress is based on confidential data values, which violates the formal privacy guarantee. SOI accepted the implied higher disclosure risks, suppressing the noisiest results, because the program deemed it important that students have accurate statistics upon which to make potentially life-changing decisions.
-
-::: callout-tip
-### Definition of Formal Privacy
-
-Although the privacy community has not fully agreed on a common definition, the U.S. Census Bureau[^05_differential-privacy-1] defines **formal privacy** as a subset of SDC methods that give "formal and quantifiable guarantees on inference disclosure risk and known algorithmic mechanisms for releasing data that satisfy these guarantees."
-
-[^05_differential-privacy-1]: "Consistency of data products and formally private methods for the 2020 census," U.S. Census Bureau, p. 43, https://irp.fas.org/agency/dod/jason/census-privacy.pdf
-
-In general, formally private methods have the following features [@bowen2021philosophy]:
-
--   Ability to quantify and adjust the privacy-utility trade-off, typically through parameters.
--   Ability to rigorously and mathematically prove the maximum privacy loss that can result from the release of information.
--   Formal privacy definitions also allow one to *compose* multiple statistics. In other words, a data curator can compute the total privacy loss from multiple individual information releases.
-:::
-
-To help determine the privacy-loss budget prior to suppressing values, SOI and ED used an evaluation tool called CSExplorer. Also developed by Tumult Labs, this tool allows the client (i.e., SOI and ED) to review and evaluate the disclosure risk/usefulness trade-offs of the output statistics for various privacy-loss budgets. SOI first used the tool to examine the effects of several privacy-loss budgets on various usefulness metrics. Once SOI identified a set of appropriate privacy-loss budgets, ED had access to a limited version of CSExplorer that was in the range of SOI’s selected privacy-loss budgets. ED then could explore the statistical outputs based on those privacy-loss budgets to examine and decide upon which suppression thresholds to use and other specifications for the final data product release.
-
-This tool allowed ED and SOI to have thoughtful, in-depth discussions about trade-offs between privacy and usefulness.
-
-### Develop and execute a maintenance plan
-
-The College Scorecard does not publicize its disclosure-protection processes on its website, and it keeps values of privacy parameters internal. Providing such information along with source code for the disclosure-protection algorithms would improve transparency. @national2024toward is also unaware of mitigation strategies for potential breaches.
-
-We conclude this case study by mentioning an application with similar goals as the College Scorecard, namely the Census Bureau’s Post-Secondary Employment Outcomes (PSEO) dataset. This data product provides tables of earnings and employment outcomes of graduates from postsecondary institutions [@foote2019releasing], although it does not involve IRS data. The PSEO also applies a formal privacy method to publish the tables.
-
-::: callout
-#### [`r paste("Class Activity", exercise_number)`]{style="color:#1696d2;"}
 ```{r}
-#| echo: false
+#| warning: false
 
-exercise_number <- exercise_number + 1
+set.seed(20260728)
+
+library(tidyverse)
+library(dplyr)
+
+students <- c("Bennett", 
+              "DiSandro", 
+              "Gentile", 
+              "Hayes", 
+              "Imperati", 
+              "Possamai", 
+              "Ricket", 
+              "Rious", 
+              "Rossi", 
+              "Santosh", 
+              "Spadea", 
+              "Sudoval",
+              "Trotta", 
+              "Wadsworth")
+
+n <- length(students)
+
+students |>
+  sample(n, replace = FALSE)
+
 ```
 
-After reviewing the two proposed workflows and the accompanying example, answer the following questions:
-
-- Do these workflows effectively address the concerns and issues you had with the current/original workflow?
-- What are some possible challenges in executing these new workflows?
-- Are there any additional improvements or adjustments you would suggest for these new workflows?
-:::
-
-![Gene Wilder saying, "It. Could. Work."](www/images/05_could-work.gif){#fig-could-work}
+## References
