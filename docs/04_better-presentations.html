@@ -261,6 +261,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 6 - Final Presentations + Data Termination, Archival, and the Future</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_data-termination.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_final-presentations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Final Presentations</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -392,37 +421,54 @@ Figure&nbsp;7.1: WOT meme that says, “We could get killed or worse…forced to
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a>students <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Bennett"</span>, <span class="st">"DiSandro"</span>, <span class="st">"Gentile"</span>, <span class="st">"Hayes"</span>, <span class="st">"Imperati"</span>, <span class="st">"Possamai"</span>, </span>
-<span id="cb1-7"><a href="#cb1-7"></a>              <span class="st">"Ricket"</span>, <span class="st">"Rious"</span>, <span class="st">"Rossi"</span>, <span class="st">"Santosh"</span>, <span class="st">"Spadea"</span>, <span class="st">"Sudoval"</span>,</span>
-<span id="cb1-8"><a href="#cb1-8"></a>              <span class="st">"Trotta"</span>, <span class="st">"Wadsworth"</span>)</span>
-<span id="cb1-9"><a href="#cb1-9"></a></span>
-<span id="cb1-10"><a href="#cb1-10"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(students)</span>
-<span id="cb1-11"><a href="#cb1-11"></a></span>
-<span id="cb1-12"><a href="#cb1-12"></a>audience <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"family-friends"</span>, <span class="st">"classmates-coworkers"</span>,</span>
-<span id="cb1-13"><a href="#cb1-13"></a>              <span class="st">"funders-media"</span>, <span class="st">"local-government-policymaker"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14"></a></span>
-<span id="cb1-15"><a href="#cb1-15"></a>audience <span class="sc">|&gt;</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>  <span class="fu">sample</span>(n, <span class="at">replace =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>  <span class="fu">bind_cols</span>(students) <span class="sc">|&gt;</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a>  <span class="fu">print</span>(<span class="at">n =</span> n)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-6"><a href="#cb1-6"></a>students <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Bennett"</span>, </span>
+<span id="cb1-7"><a href="#cb1-7"></a>              <span class="st">"DiSandro"</span>, </span>
+<span id="cb1-8"><a href="#cb1-8"></a>              <span class="st">"Gentile"</span>, </span>
+<span id="cb1-9"><a href="#cb1-9"></a>              <span class="st">"Hayes"</span>, </span>
+<span id="cb1-10"><a href="#cb1-10"></a>              <span class="st">"Imperati"</span>, </span>
+<span id="cb1-11"><a href="#cb1-11"></a>              <span class="st">"Possamai"</span>, </span>
+<span id="cb1-12"><a href="#cb1-12"></a>              <span class="st">"Ricket"</span>, </span>
+<span id="cb1-13"><a href="#cb1-13"></a>              <span class="st">"Rioux"</span>, </span>
+<span id="cb1-14"><a href="#cb1-14"></a>              <span class="st">"Rossi"</span>, </span>
+<span id="cb1-15"><a href="#cb1-15"></a>              <span class="st">"Santosh"</span>, </span>
+<span id="cb1-16"><a href="#cb1-16"></a>              <span class="st">"Spadea"</span>, </span>
+<span id="cb1-17"><a href="#cb1-17"></a>              <span class="st">"Sudoval"</span>,</span>
+<span id="cb1-18"><a href="#cb1-18"></a>              <span class="st">"Trotta"</span>, </span>
+<span id="cb1-19"><a href="#cb1-19"></a>              <span class="st">"Wadsworth"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20"></a></span>
+<span id="cb1-21"><a href="#cb1-21"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(students)</span>
+<span id="cb1-22"><a href="#cb1-22"></a></span>
+<span id="cb1-23"><a href="#cb1-23"></a>audience <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-24"><a href="#cb1-24"></a>  <span class="st">"family-friends"</span>,</span>
+<span id="cb1-25"><a href="#cb1-25"></a>  <span class="st">"classmates-coworkers"</span>,</span>
+<span id="cb1-26"><a href="#cb1-26"></a>  <span class="st">"industry-professionals"</span>,</span>
+<span id="cb1-27"><a href="#cb1-27"></a>  <span class="st">"government-policymakers"</span>,</span>
+<span id="cb1-28"><a href="#cb1-28"></a>  <span class="st">"nonprofit-community-leaders"</span>,</span>
+<span id="cb1-29"><a href="#cb1-29"></a>  <span class="st">"media-general-public"</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a>)</span>
+<span id="cb1-31"><a href="#cb1-31"></a></span>
+<span id="cb1-32"><a href="#cb1-32"></a>audience <span class="sc">|&gt;</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a>  <span class="fu">sample</span>(n, <span class="at">replace =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a>  <span class="fu">bind_cols</span>(students) <span class="sc">|&gt;</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a>  <span class="fu">print</span>(<span class="at">n =</span> n)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 14 × 2
-   ...1                         ...2     
-   &lt;chr&gt;                        &lt;chr&gt;    
- 1 family-friends               Bennett  
- 2 family-friends               DiSandro 
- 3 family-friends               Gentile  
- 4 family-friends               Hayes    
- 5 classmates-coworkers         Imperati 
- 6 local-government-policymaker Possamai 
- 7 classmates-coworkers         Ricket   
- 8 classmates-coworkers         Rious    
- 9 family-friends               Rossi    
-10 local-government-policymaker Santosh  
-11 funders-media                Spadea   
-12 local-government-policymaker Sudoval  
-13 funders-media                Trotta   
-14 local-government-policymaker Wadsworth</code></pre>
+   ...1                        ...2     
+   &lt;chr&gt;                       &lt;chr&gt;    
+ 1 family-friends              Bennett  
+ 2 nonprofit-community-leaders DiSandro 
+ 3 family-friends              Gentile  
+ 4 family-friends              Hayes    
+ 5 classmates-coworkers        Imperati 
+ 6 government-policymakers     Possamai 
+ 7 classmates-coworkers        Ricket   
+ 8 classmates-coworkers        Rioux    
+ 9 family-friends              Rossi    
+10 government-policymakers     Santosh  
+11 family-friends              Spadea   
+12 nonprofit-community-leaders Sudoval  
+13 media-general-public        Trotta   
+14 government-policymakers     Wadsworth</code></pre>
 </div>
 </div>
 </section>

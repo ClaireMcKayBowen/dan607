@@ -32,14 +32,10 @@ book:
         - 05_data-dissemination-part1.qmd
         - 05_data-dissemination-part2.qmd
 
-    # - part: Week 6 - Data Destruction, Termination, and the Future
-    #   chapters: 
-    #     - 06_data-termination.qmd
-    #     
-    # - part: Week 7 - Final Presentations
-    #   chapters: 
-    #     - 07_final-presentations.qmd
-    #     
+    - part: Week 6 - Final Presentations + Data Termination, Archival, and the Future
+      chapters:
+        - 06_data-termination.qmd
+        - 06_final-presentations.qmd
     # - references.qmd
 
 bibliography: references.bib
