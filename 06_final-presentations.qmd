@@ -111,20 +111,20 @@ sample(c("Bennett",
 
 Time (EDT) | Student Order
 ----- | ----- 
-7:10 pm - 8:10 pm | Ricket
+7:10 pm - 8:10 pm | Santosh
+-- | Ricket
 -- | Sudoval
 -- | Gentile
 -- | Imperati
 -- | DiSandro
 -- | Spadea
 -- | Rossi
--- | Hayes
 **8:10 pm - 8:15 pm** | **Break**
-8:15 pm - 8:45 pm | Bennett
+8:15 pm - 8:45 pm | Hayes
+-- | Bennett
 -- | Rioux
 -- | Trotta
 -- | Wadsworth
--- | Santosh
 
 ### Vote for your favorite presentation
 
