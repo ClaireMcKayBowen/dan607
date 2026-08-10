@@ -309,6 +309,29 @@ window.Quarto = {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 6 - Final Presentations + Data Termination, Archival, and the Future</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_data-termination.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_final-presentations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Final Presentations</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -661,7 +684,7 @@ Figure&nbsp;5.2: Image of the locations of all 35 FSRDCs in the United States as
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Each person in the painting in <a href="#fig-sunday-data" class="quarto-xref">Figure&nbsp;<span>5.3</span></a> is currently re-identifiable. The goal of PETs is to preserve certain statistical qualities of the data (in this metaphor, the general image of the painting) while also maintaining privacy. We will demonstrate how each PETs change both the re-identifiability of the individuals and the larger image of the painting.</p>
 <p>These illustrative images were originally published in <span class="citation" data-cites="bowen2021protecting">Bowen (<a href="#ref-bowen2021protecting" role="doc-biblioref">2021</a>)</span> and are used with the author’s permission.</p>
-<div id="fig-sunday-data" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" alt="Georges Seurat's *A Sunday Afternoon on the Island of La Grande Jatte (1884)*; no disclosure control techniques applied." data-fig-align="center">
+<div id="fig-sunday-data" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Georges Seurat's *A Sunday Afternoon on the Island of La Grande Jatte (1884)*; no disclosure control techniques applied." width="100%" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sunday-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/03_sunday.jpg" id="fig-sunday-data" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%" alt="Georges Seurat's *A Sunday Afternoon on the Island of La Grande Jatte (1884)*; no disclosure control techniques applied.">
@@ -1346,7 +1369,7 @@ This warning is displayed once every 8 hours.</code></pre>
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p><strong>Suppression</strong> refers to omitting data or information about certain subgroups or data point(s). For example, excluding counts or proportions that are based on very small sample sizes.</p>
 <p>In <a href="#fig-sunday-suppressed" class="quarto-xref">Figure&nbsp;<span>5.6</span></a>, we can see that many individuals from the painting have been removed entirely.</p>
-<div id="fig-sunday-suppressed" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" alt="Many individuals have been suppressed from the painting and are no longer present." data-fig-align="center">
+<div id="fig-sunday-suppressed" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Many individuals have been suppressed from the painting and are no longer present." width="100%" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sunday-suppressed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/03_sunday-suppressed.png" id="fig-sunday-suppressed" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%" alt="Many individuals have been suppressed from the painting and are no longer present.">
@@ -1710,7 +1733,7 @@ Figure&nbsp;5.10
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p><strong>Rounding</strong> adjusts continuous variables or numeric outputs to be less exact.</p>
 <p>In <a href="#fig-sunday-rounding" class="quarto-xref">Figure&nbsp;<span>5.11</span></a>, lines around the objects in the painting are softened or blurred, making it harder to distinguish details.</p>
-<div id="fig-sunday-rounding" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" alt="The details of the image are less exact, representing rounding." data-fig-align="center">
+<div id="fig-sunday-rounding" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The details of the image are less exact, representing rounding." width="100%" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sunday-rounding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/03_sunday-rounding.png" id="fig-sunday-rounding" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%" alt="The details of the image are less exact, representing rounding.">
@@ -1822,7 +1845,7 @@ Figure&nbsp;5.12
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p><strong>Generalization,</strong> sometimes called coarsening or aggregation, refers to combining more narrow levels of the data (i.e., counties) into broader levels (i.e., states).</p>
 <p>In <a href="#fig-sunday-generalization" class="quarto-xref">Figure&nbsp;<span>5.13</span></a>, the color palette of the painting is limited to a single shade of a given color, creating coarser groups.</p>
-<div id="fig-sunday-generalization" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" alt="The color palette of the painting is limited to a single shade of each color, creating broader groups from the individual values." data-fig-align="center">
+<div id="fig-sunday-generalization" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The color palette of the painting is limited to a single shade of each color, creating broader groups from the individual values." width="100%" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sunday-generalization-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/03_sunday-generalization.png" id="fig-sunday-generalization" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%" alt="The color palette of the painting is limited to a single shade of each color, creating broader groups from the individual values.">
@@ -1926,7 +1949,7 @@ Figure&nbsp;5.14
 <div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <p><strong>Top coding/bottom coding</strong> limits values above/below a threshold to the threshold value (i.e., individuals over age 95 are recoded to age 95 or a “95 and over” category).</p>
 <p>In <a href="#fig-sunday-top" class="quarto-xref">Figure&nbsp;<span>5.15</span></a>, we represent this process of recoding values above or below a threshold by changing the lighter colors to white.</p>
-<div id="fig-sunday-top" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" alt="All lighter values have been recoded, making it harder to isolate extreme individuals." data-fig-align="center">
+<div id="fig-sunday-top" class="quarto-float quarto-figure quarto-figure-center anchored" alt="All lighter values have been recoded, making it harder to isolate extreme individuals." width="100%" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sunday-top-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="www/images/03_sunday-top-coding.png" id="fig-sunday-top" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:100.0%" alt="All lighter values have been recoded, making it harder to isolate extreme individuals.">

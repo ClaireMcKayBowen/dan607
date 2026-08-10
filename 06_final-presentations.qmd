@@ -30,20 +30,20 @@ The presentation topic can be anything you learned in this course. It can be on 
 
 | Student Last Name | Target Audience              | Presentation Topic |
 |-------------------|------------------------------|--------------------|
-| Bennett           | Family/Friends                | Workforce Equity and Ethical Oversight in Emerging Technology Pipelines |
-| DiSandro          | Nonprofit/Community Leaders   | Qantas data breach, with a deeper dive into what happened and what privacy and security measures could have been taken |
-| Gentile           | Family/Friends                | TBD |
-| Hayes             | Family/Friends                | Data representation and quality are important and how they affect our communities |
-| Imperati          | Classmates/Coworkers         | Change Healthcare data leak |
-| Possamai          | Government/Policymakers      | TBD |
-| Ricket            | Classmates/Coworkers         | TBD |
-| Rioux             | Classmates/Coworkers         | TBD |
-| Rossi             | Family/Friends                | Security and Privacy with Social Media Platforms |
-| Santosh           | Government/Policymakers      | Privacy, data governance, and ethical issues surrounding fitness trackers and smartwatches |
-| Spadea            | Family/Friends                | Data Governance; Smartphone apps for monitoring students |
-| Sudoval           | Nonprofit/Community Leaders   | Stingray trackers/towers |
-| Trotta            | Media/General Public          | Public safety vs. privacy of Ring doorbell data sharing |
-| Wadsworth         | Government/Policymakers      | AI advancement over the past 10 years |
+| Bennett | Family/Friends | Workforce Equity and Ethical Oversight in Emerging Technology Pipelines |
+| DiSandro | Family/Friends | Qantas data breach, with a deeper dive into what happened and what privacy and security measures could have been taken |
+| Gentile | Family/Friends | TBD |
+| Hayes | Family/Friends | Data representation and quality are important and how they affect our communities |
+| Imperati | Classmates/Coworkers | Change Healthcare data leak |
+| Possamai | Local Government/Policymakers | TBD |
+| Ricket | Classmates/Coworkers | TBD |
+| Rioux | Classmates/Coworkers | TBD |
+| Rossi | Family/Friends | Security and Privacy with Social Media Platforms |
+| Santosh | Local Government/Policymakers | Privacy, data governance, and ethical issues surrounding fitness trackers and smartwatches |
+| Spadea | Funders/Media | Data Governance; Smartphone apps for monitoring students |
+| Sudoval | Local Government/Policymakers | Stingray trackers/towers |
+| Trotta | Funders/Media | Public safety vs. privacy of Ring doorbell data sharing |
+| Wadsworth | Local Government/Policymakers | AI advancement over the past 10 years |
 
 
 ### Evaluation of the presentation

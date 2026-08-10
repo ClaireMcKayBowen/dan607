@@ -99,10 +99,8 @@ n <- length(students)
 audience <- c(
   "family-friends",
   "classmates-coworkers",
-  "industry-professionals",
-  "government-policymakers",
-  "nonprofit-community-leaders",
-  "media-general-public"
+  "funders-media",
+  "local-government-policymaker"
 )
 
 audience |>

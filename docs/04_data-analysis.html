@@ -280,6 +280,29 @@ div.csl-indent {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 6 - Final Presentations + Data Termination, Archival, and the Future</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_data-termination.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Data Destruction or Termination + Future Challenges</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_final-presentations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Final Presentations</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -691,7 +714,7 @@ Figure&nbsp;6.6: Weighing Seth Meyers GIF by Late Night with Seth Meyers
 <img src="www/images/04_privacy-utility-tradeoff.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-privacy-utility-trade-off-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.7: Infusing noise
+Figure&nbsp;6.7: <em>Generally</em>, as privacy increases, the image quality (utility) decreases, and vice versa.
 </figcaption>
 </figure>
 </div>
@@ -921,11 +944,23 @@ Figure&nbsp;6.9: A comparison of discriminant metrics on a good synthesis and a 
 <h3 data-number="6.3.3" class="anchored" data-anchor-id="fit-for-purpose"><span class="header-section-number">6.3.3</span> Fit-for-purpose</h3>
 <p>The final group of utility metrics are called fit-for-purpose and are not discussed as often in the literature. <span class="citation" data-cites="drechsler2022challenges">Drechsler (<a href="#ref-drechsler2022challenges" role="doc-biblioref">2022</a>)</span> states how fit-for-purpose measures could be considered something in between the previous two utility metric types. In other words, fit-for-purpose metrics are not global measures, because they focus on certain features of the data, but may not be specific to an analysis that data users and stakeholders are interested in like analysis-specific utility metrics.</p>
 <p><span class="citation" data-cites="drechsler2022challenges">Drechsler (<a href="#ref-drechsler2022challenges" role="doc-biblioref">2022</a>)</span> highlights how global utility metrics can be too broad and miss aspects of the synthetic dataset that do not align with the confidential dataset. On the other hand, analysis-specific metrics may perform well for the selected analyses on the synthetic data but not for others. This is why it is critical to determine the proper analysis, but it is difficult to anticipate all downstream data uses. For example, decennial census data products in the United States are utilized in thousands of different ways, making it impossible to predict all potential use cases. Therefore, fit-for-purpose metrics help privacy experts and researchers assess if their synthesis makes sense before implementing other utility metrics. Some examples include ensuring population totals or ages are positive.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Fit-for-purpose
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Fit-for-purpose</strong>, are something in between the previous two utility metric types to quickly assess the quality of the public data compared to the confidential data. They are not global measures, because they focus on certain features of the data, but may not be specific to an analysis that data users and stakeholders are interested in like analysis-specific utility metrics.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="assessing-disclosure-risk" class="level2" data-number="6.4">
 <h2 data-number="6.4" class="anchored" data-anchor-id="assessing-disclosure-risk"><span class="header-section-number">6.4</span> Assessing disclosure risk</h2>
-<!-- ![Rory from the TV show, "Gilmore Girls," saying, "I'd say that was a fair assessment."](www/images/assessment-gilmore.gif){#fig-assessment-gilmore fig-align="center"} -->
 <p>We now pivot to evaluating the disclosure risks of public data. Note that most thresholds for acceptable disclosure risk are often determined by law.</p>
 <p>There are generally three kinds of disclosure risk:</p>
 <ul>
@@ -935,19 +970,6 @@ Figure&nbsp;6.9: A comparison of discriminant metrics on a good synthesis and a 
 </ul>
 <section id="identity-disclosure-metrics" class="level3" data-number="6.4.1">
 <h3 data-number="6.4.1" class="anchored" data-anchor-id="identity-disclosure-metrics"><span class="header-section-number">6.4.1</span> Identity disclosure metrics</h3>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Identity disclosure
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Identity disclosure</strong> occurs if the data intruder associates a known individual with a public data record (e.g., a record linkage attack or when a data adversary combines one or more external data sources to identify individuals in the public data).</p>
-</div>
-</div>
 <p><span class="citation" data-cites="sweeney2013identifying">Sweeney et al. (<a href="#ref-sweeney2013identifying" role="doc-biblioref">2013</a>)</span> used voter data to re-identify individuals in the Personal Genome Project.</p>
 <div id="fig-identity-disclosure-risk" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
